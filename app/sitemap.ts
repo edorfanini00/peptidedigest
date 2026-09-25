@@ -19,15 +19,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/peptide-sciences-shutdown-market-impact`,
-      lastModified: new Date("2026-03-18"),
+      lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
     },
     {
       url: `${base}/what-makes-a-compliant-peptide-supplier-2026`,
-      lastModified: new Date("2026-09-10"),
+      lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
     },
     {
       url: `${base}/bpc-157-research-overview-2026`,
@@ -37,21 +37,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/fda-july-2026-advisory-committee-bpc157-tb500`,
-      lastModified: new Date("2026-07-28"),
+      lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
     },
     {
       url: `${base}/tb500-thymosin-beta-4-research-summary`,
-      lastModified: new Date("2026-09-03"),
+      lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.85,
     },
     {
       url: `${base}/amino-asylum-raid-2026-summary`,
-      lastModified: new Date("2026-03-22"),
+      lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.85,
     },
     {
       url: `${base}/what-happened-to-peptide-sciences`,
