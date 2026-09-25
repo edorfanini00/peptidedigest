@@ -81,7 +81,7 @@ const articleJsonLd = {
         {
           "@type": "Question",
           name: "Are research peptides intended for human use?",
-          acceptedAnswer: { "@type": "Answer", text: "No. Research-use-only products are not for human consumption. A COA does not establish that a product is safe or approved for use in people." },
+          acceptedAnswer: { "@type": "Answer", text: "No. Research use only products are not for human consumption. A COA does not establish that a product is safe or approved for use in people." },
         },
       ],
     },
@@ -142,7 +142,7 @@ export default function ApexRaidedArticle() {
           </h2>
 
           <p>
-            Local coverage identifies 503 Prosperity Way — the address of Apex Waste Management and Apex Research — and a home in Dakota Dunes. KTIV also found other registered businesses connected to the Apex name at a nearby address on Prosperity Way. Shared addresses and registrations do not, by themselves, establish illegal activity.
+            Local coverage identifies 503 Prosperity Way, the address of Apex Waste Management and Apex Research, and a home in Dakota Dunes. KTIV also found other registered businesses connected to the Apex name at a nearby address on Prosperity Way. Shared addresses and registrations do not, by themselves, establish illegal activity.
           </p>
 
           <p>
@@ -202,12 +202,12 @@ export default function ApexRaidedArticle() {
             How to compare an Apex Peptides alternative
           </h2>
 
-          <p>Evaluate the offered material and the seller separately. A research-use-only label or a polished certificate is not a compliance guarantee.</p>
+          <p>Evaluate the offered material and the seller separately. A research use only label or a polished certificate is not a compliance guarantee.</p>
 
           <ul className="list-disc list-inside space-y-2 pl-2">
             <li><strong>Intended use:</strong> Review product claims and sales materials. Research products are not for human consumption.</li>
             <li><strong>Batch documentation:</strong> Match the certificate of analysis to the lot offered. Check identity testing as well as reported purity.</li>
-            <li><strong>Test scope:</strong> Ask which methods were used and whether additional tests — such as endotoxin analysis — are required for your experiment.</li>
+            <li><strong>Test scope:</strong> Ask which methods were used and whether additional tests, such as endotoxin analysis, are required for your experiment.</li>
             <li><strong>Seller identity:</strong> Verify the legal seller and where material is manufactured and shipped. A US address alone does not establish domestic manufacture.</li>
             <li><strong>Order terms:</strong> Confirm stock, dispatch estimates and the refund policy in writing.</li>
           </ul>
@@ -238,7 +238,7 @@ export default function ApexRaidedArticle() {
                 { q: "Has Apex Peptides shut down permanently?", a: "The cited reports do not establish a permanent closure or reopening date. Seek written confirmation from the seller about an outstanding order." },
                 { q: "Why was Apex Peptides raided?", a: "The local reports reviewed for this update do not disclose a specific reason. Allegations supplied separately to this publication have not been established by those public records." },
                 { q: "What should I check in an Apex Peptides alternative?", a: "Check the legal seller, current order terms and the COA for the offered lot. IQON Health is a commercial partner, not a supplier independently certified by this article." },
-                { q: "Are research peptides intended for human use?", a: "No. Research-use-only products are not for human consumption. A COA does not establish that a product is safe or approved for use in people." },
+                { q: "Are research peptides intended for human use?", a: "No. Research use only products are not for human consumption. A COA does not establish that a product is safe or approved for use in people." },
               ].map(({ q, a }) => (
                 <div key={q}>
                   <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>

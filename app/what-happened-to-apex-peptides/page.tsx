@@ -117,7 +117,7 @@ export default function WhatHappenedApex() {
 
           <p>
             Other suppliers&apos; cases do not answer that question.{" "}
-            <a href="https://www.peptidesciences.com" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Peptide Sciences calls its shutdown voluntary</a>;{" "}
+            <a href="https://www.peptidesciences.com" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Peptide Sciences calls its shutdown voluntary</a>.{" "}
             <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">the Paradigm Peptides record</a> documents a separate prosecution. Neither establishes what investigators are examining at Apex.
           </p>
 
@@ -142,7 +142,7 @@ export default function WhatHappenedApex() {
             <li>Check that the material and its intended use meet your institution&apos;s requirements.</li>
           </ul>
 
-          <p>IQON Health appears here as a commercial partner. Apply these checks to its products too; this article does not certify a supplier&apos;s compliance or guarantee a shipping date.</p>
+          <p>IQON Health appears here as a commercial partner. Apply these checks to its products too. This article does not certify a supplier&apos;s compliance or guarantee a shipping date.</p>
 
           <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
             <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
@@ -155,10 +155,10 @@ export default function WhatHappenedApex() {
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What happened to Apex Peptides?", a: "Local news reported searches of Apex-linked properties on September 23, 2026. USPIS led the investigation; FBI and local police participated. No charges have been publicly announced." },
+              { q: "What happened to Apex Peptides?", a: "Local news reported searches of Apex-linked properties on September 23, 2026. USPIS led the investigation, with FBI and local police participating. No charges have been publicly announced." },
               { q: "Is Apex Peptides shut down?", a: "The website appears non-operational. The reports reviewed here do not establish a permanent closure or reopening date." },
               { q: "Who raided Apex Peptides?", a: "KTIV identifies the U.S. Postal Inspection Service as leading the investigation, with FBI (Omaha and Minneapolis) and North Sioux City Police participating." },
-              { q: "What is a good alternative to Apex Peptides?", a: "When comparing suppliers, verify the legal seller, batch documentation for the offered lot and current order terms. IQON Health is a commercial partner here; confirm its documentation before purchasing." },
+              { q: "What is a good alternative to Apex Peptides?", a: "When comparing suppliers, verify the legal seller, batch documentation for the offered lot and current order terms. IQON Health is a commercial partner here. Confirm its documentation before purchasing." },
               { q: "Why was Apex Peptides raided?", a: "The local reports reviewed here do not disclose a specific reason. No charges have been publicly announced." },
             ].map(({ q, a }) => (
               <div key={q}>

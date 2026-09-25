@@ -44,7 +44,7 @@ const jsonLd = {
 const timeline = [
   { date: "December 10, 2025", company: "Paradigm Peptides", action: "Matthew Kawa and Jennifer Stechkober enter guilty pleas (Northern District of Indiana)", category: "Charges", source: "https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" },
   { date: "March 6, 2026", company: "Peptide Sciences", action: "Company posts voluntary-shutdown notice on its website, discontinues research-product sales", category: "Shutdown", source: "https://www.peptidesciences.com" },
-  { date: "July 30, 2026", company: "Paradigm Peptides", action: "Kawa sentenced to 70 months; Stechkober to 16 months; $5 million money judgment entered against Kawa", category: "Sentence", source: "https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" },
+  { date: "July 30, 2026", company: "Paradigm Peptides", action: "Kawa sentenced to 70 months. Stechkober sentenced to 16 months. $5 million money judgment entered against Kawa", category: "Sentence", source: "https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" },
   { date: "September 23, 2026", company: "Apex Peptides (reported)", action: "Local news reports searches of Apex-linked properties at 503 Prosperity Way, North Sioux City. Website goes offline. No charges publicly announced.", category: "Raid", source: "https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" },
 ];
 
@@ -149,14 +149,14 @@ export default function EnforcementTimeline() {
           </h2>
 
           <p>
-            Review the offered lot, not just the brand. Check whether the certificate matches the batch, what laboratory performed the analysis and what properties were measured. IQON Health is a commercial partner; apply the same review to its products.
+            Review the offered lot, not just the brand. Check whether the certificate matches the batch, what laboratory performed the analysis and what properties were measured. IQON Health is a commercial partner. Apply the same review to its products.
           </p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
               { q: "What peptide companies closed or faced enforcement in 2026?", a: "Peptide Sciences announced a voluntary shutdown in March 2026. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." },
-              { q: "Was the Paradigm Peptides case a March 2026 prosecution?", a: "No. The guilty pleas were in December 2025; sentencing was July 30, 2026. The business operated between 2019 and 2024." },
+              { q: "Was the Paradigm Peptides case a March 2026 prosecution?", a: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. The business operated between 2019 and 2024." },
               { q: "What is the status of Amino Asylum?", a: "Industry sources report it shut down in June 2025. No public government record naming the company and confirming the specific legal action has been identified." },
             ].map(({ q, a }) => (
               <div key={q}>
