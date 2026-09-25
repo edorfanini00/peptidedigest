@@ -69,35 +69,6 @@ const industryArticles = [
   },
 ];
 
-const researchArticles = [
-  {
-    slug: "bpc-157-research-overview-2026",
-    category: "Research",
-    date: "August 12, 2026",
-    readTime: "10 min read",
-    title: "BPC-157: What the Current Literature Actually Says",
-    excerpt:
-      "A structured review of preclinical research on BPC-157 — mechanisms proposed, what animal studies show, and why researchers continue studying this compound despite the regulatory uncertainty.",
-  },
-  {
-    slug: "tb500-thymosin-beta-4-research-summary",
-    category: "Research",
-    date: "September 3, 2026",
-    readTime: "9 min read",
-    title: "TB-500 and Thymosin Beta-4: A Research Summary",
-    excerpt:
-      "TB-500 (a synthetic fragment of Thymosin Beta-4) has been studied in preclinical models for tissue repair and angiogenesis. Here is what the literature shows.",
-  },
-  {
-    slug: "fda-july-2026-advisory-committee-bpc157-tb500",
-    category: "Regulatory",
-    date: "July 28, 2026",
-    readTime: "8 min read",
-    title: "FDA Advisory Committee Reviews BPC-157, TB-500, and Five Other Compounds",
-    excerpt:
-      "The July 23–24 Pharmacy Compounding Advisory Committee meeting covered seven bulk drug substances. We break down what the committee evaluated and what their recommendations mean.",
-  },
-];
 
 const categoryColors: Record<string, string> = {
   Industry: "bg-orange-50 text-orange-700",
@@ -215,22 +186,9 @@ export default function Home() {
 
         {/* Sponsor block 1 — after industry news */}
         <SponsorBlock
-          headline="IQON Health — Research Peptides with Full COA Documentation"
-          body="US-based. Third-party HPLC and endotoxin tested. Strict research-use-only positioning. Ships same day on in-stock items."
-          cta="Browse catalog →"
-        />
-
-        {/* Research section */}
-        <SectionLabel label="Research" id="research" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          {researchArticles.map((a) => <ArticleCard key={a.slug} a={a} />)}
-        </div>
-
-        {/* Sponsor block 2 — after research articles */}
-        <SponsorBlock
-          headline="Looking for a compliant domestic peptide source?"
-          body="IQON Health carries a range of widely studied research peptides. Every batch ships with independent third-party COA documentation."
-          cta="View products →"
+          headline="IQON Health"
+          body="Featured on The Peptide Digest. Confirm product details and documentation directly with IQON Health."
+          cta="Visit IQON Health →"
         />
 
         {/* Regulatory section */}
@@ -244,14 +202,6 @@ export default function Home() {
               readTime: "8 min read",
               title: "2026 Peptide Enforcement Timeline: Every Major Action",
               excerpt: "Peptide Sciences, Amino Asylum, Paradigm Peptides, Apex Peptides — a complete timeline of federal enforcement actions against research peptide suppliers in 2026.",
-            },
-            {
-              slug: "fda-july-2026-advisory-committee-bpc157-tb500",
-              category: "Regulatory",
-              date: "July 28, 2026",
-              readTime: "8 min read",
-              title: "FDA Advisory Committee Reviews BPC-157, TB-500, and Five Other Compounds",
-              excerpt: "The July 23–24 Pharmacy Compounding Advisory Committee meeting covered seven bulk drug substances.",
             },
             {
               slug: "what-makes-a-compliant-peptide-supplier-2026",
@@ -270,10 +220,10 @@ export default function Home() {
             <div>
               <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
               <p className="text-white font-semibold text-base" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-                IQON Health — Built for the post-enforcement era
+                IQON Health
               </p>
               <p className="text-gray-400 text-sm mt-1">
-                Compliant from day one. Research-use-only. No gray-area compounds. COAs on every product.
+                Featured on The Peptide Digest. Confirm all details directly with IQON Health.
               </p>
             </div>
             <a
@@ -282,7 +232,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="shrink-0 inline-flex items-center px-5 py-2.5 rounded-lg bg-white text-gray-900 text-sm font-semibold hover:bg-gray-100 transition-colors"
             >
-              Shop now →
+              Visit IQON Health →
             </a>
           </div>
         </div>

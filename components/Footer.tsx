@@ -15,7 +15,6 @@ export function Footer() {
         <div className="flex gap-8 text-xs text-gray-400">
           <div className="flex flex-col gap-2">
             <span className="text-gray-600 font-medium text-xs uppercase tracking-wide mb-1">Topics</span>
-            <Link href="/#research" className="hover:text-gray-700 transition-colors">Research</Link>
             <Link href="/#regulatory" className="hover:text-gray-700 transition-colors">Regulatory</Link>
             <Link href="/#industry" className="hover:text-gray-700 transition-colors">Industry</Link>
           </div>

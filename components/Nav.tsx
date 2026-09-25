@@ -8,7 +8,6 @@ export function Nav() {
           The Peptide Digest
         </Link>
         <div className="flex items-center gap-6 text-sm text-gray-500">
-          <Link href="/#research" className="hover:text-gray-900 transition-colors">Research</Link>
           <Link href="/#regulatory" className="hover:text-gray-900 transition-colors">Regulatory</Link>
           <Link href="/#industry" className="hover:text-gray-900 transition-colors">Industry</Link>
           <Link href="/#about" className="hover:text-gray-900 transition-colors">About</Link>

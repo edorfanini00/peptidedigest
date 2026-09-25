@@ -30,24 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${base}/bpc-157-research-overview-2026`,
-      lastModified: new Date("2026-08-12"),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${base}/fda-july-2026-advisory-committee-bpc157-tb500`,
-      lastModified: new Date("2026-09-25"),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: `${base}/tb500-thymosin-beta-4-research-summary`,
-      lastModified: new Date("2026-09-25"),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
       url: `${base}/amino-asylum-raid-2026-summary`,
       lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",

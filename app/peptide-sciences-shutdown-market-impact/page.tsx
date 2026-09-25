@@ -73,7 +73,7 @@ export default function PeptideSciencesMarketImpact() {
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
             When Peptide Sciences went dark on March 6, 2026, researchers had no warning. Three months later, the secondary effects are coming into focus — supplier consolidation, pricing pressure, and a market reshaped by enforcement in ways that may be permanent.
           </p>
-          <p>Peptide Sciences had operated continuously for over a decade and was widely regarded as a reference-level supplier. Its catalog covered BPC-157, TB-500, Retatrutide, GHK-Cu, Selank, and dozens of other compounds. When the homepage disappeared behind a brief voluntary shutdown notice, the market lost a significant anchor.</p>
+          <p>Peptide Sciences had operated continuously for over a decade and was widely regarded as a reference-level supplier. Its catalog covered dozens of research compounds. When the homepage disappeared behind a brief voluntary shutdown notice, the market lost a significant anchor.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>The DOJ Context</h2>
           <p>The shutdown did not occur in a vacuum. The Department of Justice had been building cases across the research-peptide sector throughout 2025. In December 2025, Paradigm Peptides founders pleaded guilty to federal charges — their products had been found to contain a scheduled substance. In early 2026, federal agents raided Amino Asylum and Apex Peptides in quick succession.</p>
