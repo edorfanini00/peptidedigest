@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "What to Check in a Research Peptide Supplier: Documentation and Positioning",
@@ -52,7 +53,7 @@ export default function CompliantSupplier() {
           title={<>What to Check in a Research Peptide Supplier</>}
           dek={"After multiple enforcement actions in 2026, batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence."}
           meta={<><time dateTime="2026-09-10">September 10, 2026</time><span>Updated September 25, 2026</span></>}
-          image="labBeakers"
+          image="microscope"
         />
 
         <div className="article-body">
@@ -63,13 +64,7 @@ export default function CompliantSupplier() {
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>1. Research-only positioning across every channel</h2>
           <p>Check the supplier website, social media and any promotional materials for human-use claims, dosing language or implied health outcomes. A research disclaimer on a product page does not cover implied claims made elsewhere. The FDA enforcement letters show that net impression matters; it does not look only at formal labels.</p>
 
-          <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
-            <div className="flex-1">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-              <p className="text-sm font-medium text-gray-800">IQON Health is our commercial partner. Before ordering, check its research-only positioning and confirm the COA for the offered lot matches your laboratory requirements.</p>
-            </div>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">Browse →</a>
-          </div>
+          <IQONPartner vial="ghk" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>2. Batch-specific certificate of analysis</h2>
           <p>Ask for the COA matching the offered lot. The test report should identify the laboratory, name the sample, give the batch number, state the analysis date and report the tested properties and results. An HPLC purity result answers one question. A complete COA for injectable research material typically also includes endotoxin testing, with results in EU/mg.</p>
@@ -89,13 +84,7 @@ export default function CompliantSupplier() {
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>5. Consistent compound scope</h2>
           <p>FDA scrutiny has focused on compounds with evident consumer interest, including GLP-1 receptor agonists and others previously removed from or added to Category 2. A research catalog limited to compounds with established preclinical research literature and no implied clinical or consumer application carries less regulatory exposure than one tracking consumer demand. That is a practical observation, not a legal guarantee.</p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Our commercial partner. Third-party tested. Research-use-only. US-based. Apply the criteria above to its products before ordering.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
-            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
-          </div>
+          <IQONPartner vial="bac-water" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>

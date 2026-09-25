@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "What Happened to Apex Peptides? Searches and Order Questions",
@@ -60,7 +61,7 @@ export default function WhatHappenedApex() {
           category="Industry"
           title={<>What Happened to Apex Peptides?</>}
           meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
-          image="warehouse"
+          image="padlock"
         />
 
         <div className="article-body">
@@ -81,13 +82,7 @@ export default function WhatHappenedApex() {
             <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KSCJ reported on September 23</a> that agents removed boxes and that two unidentified people were led away in handcuffs. The report did not identify charges. KTIV also described a search of a Dakota Dunes home.
           </p>
 
-          <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
-            <div className="flex-1">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-              <p className="text-sm font-medium text-gray-800">Re-sourcing after the Apex Peptides searches? IQON Health is our commercial partner. Check its research catalog and confirm documentation for the offered lot before ordering.</p>
-            </div>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">View products →</a>
-          </div>
+          <IQONPartner vial="glutathione" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             Is Apex Peptides shut down?
@@ -111,13 +106,7 @@ export default function WhatHappenedApex() {
             <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">the Paradigm Peptides record</a> documents a separate prosecution. Neither establishes what investigators are examining at Apex.
           </p>
 
-          <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
-            <div className="flex-1">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-              <p className="text-sm font-medium text-gray-800">IQON Health is our commercial partner. Compare its research catalog against your laboratory specifications, and ask for lot-specific documentation before ordering.</p>
-            </div>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">Browse →</a>
-          </div>
+          <IQONPartner vial="ghk" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             What to do about an order or replacement supplier
@@ -134,13 +123,7 @@ export default function WhatHappenedApex() {
 
           <p>IQON Health appears here as a commercial partner. Apply these checks to its products too. This article does not certify a supplier&apos;s compliance or guarantee a shipping date.</p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Compliant Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Confirm current availability before ordering.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
-            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
-          </div>
+          <IQONPartner vial="bac-water" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>

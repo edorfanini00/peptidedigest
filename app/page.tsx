@@ -4,6 +4,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { SectionLabel } from "@/components/Editorial";
 import { images, type ImageKey } from "@/components/images";
+import { IQONPartner } from "@/components/IQONPartner";
 
 interface CardArticle {
   slug: string;
@@ -23,7 +24,7 @@ const featuredArticle: CardArticle = {
   title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know",
   excerpt:
     "Local reports place federal searches at Apex-linked properties on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
-  image: "federalBuilding",
+  image: "warehouse",
 };
 
 const industryArticles: CardArticle[] = [
@@ -55,7 +56,7 @@ const industryArticles: CardArticle[] = [
     title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
     excerpt:
       "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what it means for supplier documentation.",
-    image: "courthouse",
+    image: "gavel",
   },
 ];
 
@@ -78,7 +79,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "FDA's August 24, 2026 Warning Letters to Online Peptide Sellers",
     excerpt:
       "FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding.",
-    image: "documents",
+    image: "envelopes",
   },
   {
     slug: "state-crackdown-research-peptides-2026",
@@ -108,7 +109,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "What to Check in a Research Peptide Supplier",
     excerpt:
       "Batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence.",
-    image: "labBeakers",
+    image: "microscope",
   },
 ];
 
@@ -148,26 +149,6 @@ function ArticleCard({ a, sizes }: { a: CardArticle; sizes: string }) {
   );
 }
 
-// Inline sponsor block — looks editorial
-function SponsorBlock({ headline, body, cta }: { headline: string; body: string; cta: string }) {
-  return (
-    <div className="my-14 border-y border-[color:var(--color-rule)] bg-[color:var(--color-card)] px-5 py-6 sm:px-7 flex flex-col md:flex-row md:items-center gap-5">
-      <div className="flex-1">
-        <div className="kicker text-[color:var(--color-muted)] mb-1">Partner</div>
-        <p className="font-serif text-lg font-semibold text-[color:var(--color-ink)] mb-1">{headline}</p>
-        <p className="text-[0.95rem] text-[color:var(--color-muted)]">{body}</p>
-      </div>
-      <a
-        href="https://www.iqonhealth.com/shop"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="shrink-0 self-start md:self-auto inline-flex items-center px-5 py-2.5 rounded-full border border-[color:var(--color-ink)] text-[color:var(--color-ink)] text-sm font-semibold hover:bg-[color:var(--color-ink)] hover:text-[color:var(--color-paper)] transition-colors"
-      >
-        {cta}
-      </a>
-    </div>
-  );
-}
 
 export default function Home() {
   const lead = images[featuredArticle.image];
@@ -242,11 +223,7 @@ export default function Home() {
         </div>
 
         {/* Sponsor block 1 — after industry news */}
-        <SponsorBlock
-          headline="IQON Health"
-          body="Featured on The Peptide Digest. Confirm product details and documentation directly with IQON Health."
-          cta="Visit IQON Health →"
-        />
+        <IQONPartner vial="nad" />
 
         {/* Regulatory section */}
         <SectionLabel label="Regulatory" id="regulatory" />
@@ -256,24 +233,8 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Sponsor block 3 — after regulatory, pre-footer (light) */}
-        <div className="my-14 rounded-sm border border-[color:var(--color-rule)] bg-[color:var(--color-paper-deep)] px-5 py-6 sm:px-7 flex flex-col md:flex-row md:items-center justify-between gap-5">
-          <div>
-            <div className="kicker text-[color:var(--color-muted)] mb-1">Partner</div>
-            <p className="font-serif text-lg font-semibold text-[color:var(--color-ink)]">IQON Health</p>
-            <p className="text-[0.95rem] text-[color:var(--color-muted)] mt-1">
-              Featured on The Peptide Digest. Confirm all details directly with IQON Health.
-            </p>
-          </div>
-          <a
-            href="https://www.iqonhealth.com/shop"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 self-start md:self-auto inline-flex items-center px-5 py-2.5 rounded-full border border-[color:var(--color-ink)] text-[color:var(--color-ink)] text-sm font-semibold hover:bg-[color:var(--color-ink)] hover:text-[color:var(--color-paper)] transition-colors"
-          >
-            Visit IQON Health →
-          </a>
-        </div>
+        {/* Partner block 2 */}
+        <IQONPartner vial="glutathione" />
 
         {/* About */}
         <div id="about" className="scroll-mt-20 border-t border-[color:var(--color-rule)] pt-10 max-w-[42rem]">

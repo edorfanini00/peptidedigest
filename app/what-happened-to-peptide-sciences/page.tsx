@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
@@ -41,17 +42,6 @@ const jsonLd = {
   ],
 };
 
-function InlinePartner({ text, cta }: { text: string; cta: string }) {
-  return (
-    <div className="my-6 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
-      <div className="flex-1">
-        <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-        <p className="text-sm font-medium text-gray-800">{text}</p>
-      </div>
-      <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">{cta}</a>
-    </div>
-  );
-}
 
 export default function PeptideSciencesShutdown() {
   return (
@@ -88,7 +78,7 @@ export default function PeptideSciencesShutdown() {
             The notice does not give a reopening date. An earlier version of this article claimed thousands of customers received no refunds or had orders go unfulfilled; that specific claim went beyond what the notice and available evidence established, and we have removed it.
           </p>
 
-          <InlinePartner text="Looking for a Peptide Sciences alternative? IQON Health is our commercial partner. Review its research catalog and confirm current stock and documentation directly." cta="View products →" />
+          <IQONPartner vial="ghk" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Was the shutdown caused by FDA or DOJ action?</h2>
 
@@ -101,7 +91,7 @@ export default function PeptideSciencesShutdown() {
             <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">March 31, 2026 warning letter to Gram Peptides</a> explains how product claims can show intended human use. That is regulatory context, not evidence that the FDA or DOJ directed the Peptide Sciences shutdown.
           </p>
 
-          <InlinePartner text="Before ordering from IQON Health, request the COA for the offered batch and check the tests against your laboratory requirements. Not for human consumption." cta="Browse →" />
+          <IQONPartner vial="bac-water" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Orders, successor claims and research alternatives</h2>
 
@@ -113,13 +103,7 @@ export default function PeptideSciencesShutdown() {
             For a Peptide Sciences alternative, start with the offered lot and your laboratory requirements. Verify the seller and the COA rather than relying on brand familiarity. IQON Health is a commercial partner of this publication; the same checks apply to its catalog.
           </p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Confirm availability before ordering.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
-            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
-          </div>
+          <IQONPartner vial="nad" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>

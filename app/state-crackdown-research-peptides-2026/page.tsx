@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 const URL = "https://peptidedigest.co/state-crackdown-research-peptides-2026";
 const TITLE = "Which States Are Cracking Down on Research-Grade Peptides in 2026?";
@@ -164,6 +165,10 @@ export default function StateCrackdown2026() {
             <strong>Ohio.</strong> The Ohio Board of Pharmacy&apos;s <a className={a} href={S.ohio} target="_blank" rel="noopener noreferrer">guidance on common clinic and med spa violations</a>, updated December 8, 2025, says any drug marked &ldquo;for research purposes only&rdquo; is unlawful for prescriber clinics and med spas to possess, &ldquo;regardless if the patient &lsquo;consents.&rsquo;&rdquo; It says such products must be disposed of immediately. The same document says the board has summarily suspended more than 30 clinics and med spas since the start of 2025, for a range of violations.
           </p>
 
+
+          <IQONPartner vial="nad" variant="inline" />
+
+
           <h2 className={h2} style={serif}>How do the state actions compare?</h2>
           <div className="my-6 space-y-4">
             {actions.map((item) => (
@@ -187,12 +192,7 @@ export default function StateCrackdown2026() {
             No. These are state licensing and pharmacy rules. LumaLex attorney Dustin Robinson <a className={a} href={S.lumalex} target="_blank" rel="noopener noreferrer">argues</a> the boards &ldquo;did not create a new prohibition&rdquo; but restated existing standard-of-care duties. On the federal side, <a className={a} href={S.mcdermott} target="_blank" rel="noopener noreferrer">McDermott Will &amp; Schulte</a> notes that FDA sent warning letters to five online sellers in August 2026, and that an FDA advisory committee vote in July 2026 on compounding eligibility for six peptides was non-binding. <a className={a} href={S.reuters} target="_blank" rel="noopener noreferrer">Reuters</a> described that advisory meeting as a separate track.
           </p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={serif}>IQON Health</h3>
-            <p className="text-sm text-gray-500 mb-4">Confirm all details directly with IQON Health before purchasing.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Visit IQON Health →</a>
-          </div>
+          <IQONPartner vial="glutathione" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>

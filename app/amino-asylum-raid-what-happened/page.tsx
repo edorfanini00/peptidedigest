@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "Amino Asylum Raid Reports: What Happened and What Is Documented",
@@ -42,17 +43,6 @@ const jsonLd = {
   ],
 };
 
-function InlinePartner({ text, cta }: { text: string; cta: string }) {
-  return (
-    <div className="my-6 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
-      <div className="flex-1">
-        <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-        <p className="text-sm font-medium text-gray-800">{text}</p>
-      </div>
-      <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">{cta}</a>
-    </div>
-  );
-}
 
 export default function AminoAsylumRaid() {
   return (
@@ -90,7 +80,7 @@ export default function AminoAsylumRaid() {
             That DOJ page also describes testosterone in products sold as SARMs by Paradigm Peptides. An earlier version of this article incorrectly assigned those findings and guilty pleas to Amino Asylum. We have removed that conflation. It cannot be used to explain the reported Amino Asylum raid.
           </p>
 
-          <InlinePartner text="Looking for an Amino Asylum alternative for research? IQON Health is our commercial partner. Check its catalog and ask for documentation on the offered lot before ordering." cta="View products →" />
+          <IQONPartner vial="bac-water" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Orders and research supplier checks</h2>
 
@@ -102,15 +92,9 @@ export default function AminoAsylumRaid() {
             If you need an Amino Asylum alternative for laboratory research, request documentation for the batch offered. Check how the laboratory established identity and measured purity. A purity percentage alone does not answer every question about composition, and a COA is not proof of suitability for human use.
           </p>
 
-          <InlinePartner text="IQON Health is our commercial partner. Review the offered batch documentation before purchase. This placement does not certify test coverage or guarantee fulfillment." cta="Browse →" />
+          <IQONPartner vial="nad" variant="inline" />
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Confirm documentation and availability before ordering.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
-            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
-          </div>
+          <IQONPartner vial="glutathione" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>

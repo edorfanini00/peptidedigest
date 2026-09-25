@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 import { KeyFacts, PullQuote } from "@/components/Editorial";
 
 export const metadata: Metadata = {
@@ -90,19 +91,6 @@ const articleJsonLd = {
   ],
 };
 
-function InlinePartner({ text, cta }: { text: string; cta: string }) {
-  return (
-    <div className="my-6 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4 not-prose">
-      <div className="flex-1">
-        <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-        <p className="text-sm font-medium text-gray-800">{text}</p>
-      </div>
-      <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">
-        {cta}
-      </a>
-    </div>
-  );
-}
 
 export default function ApexRaidedArticle() {
   return (
@@ -115,7 +103,7 @@ export default function ApexRaidedArticle() {
           title={<>Apex Peptides Raid: What Researchers Need to Know</>}
           dek={"Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier."}
           meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
-          image="federalBuilding"
+          image="warehouse"
         />
 
         <div className="article-body">
@@ -166,10 +154,7 @@ export default function ApexRaidedArticle() {
             The searches also do not settle whether Apex Peptides has permanently shut down. A website outage or unanswered message cannot establish the status of every order. Customers should seek written confirmation of fulfillment or a refund rather than rely on a predicted reopening date.
           </p>
 
-          <InlinePartner
-            text="IQON Health is featured on this publication. Verify all terms directly with the seller before purchasing."
-            cta="Visit IQON Health →"
-          />
+          <IQONPartner vial="nad" variant="inline" />
 
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
@@ -215,23 +200,7 @@ export default function ApexRaidedArticle() {
             <li><strong>Order terms:</strong> Confirm stock, dispatch estimates and the refund policy in writing.</li>
           </ul>
 
-          <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 flex items-center gap-6">
-            <div className="flex-1">
-              <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-                IQON Health
-              </h3>
-              <p className="text-sm text-gray-500 mb-4">
-                Confirm all details directly with IQON Health before purchasing.
-              </p>
-              <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
-                Visit IQON Health →
-              </a>
-            </div>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0">
-              <img src="/iqon-vial.png" alt="IQON Health vial" width={386} height={480} className="w-24 sm:w-32 h-auto" loading="lazy" />
-            </a>
-          </div>
+          <IQONPartner vial="glutathione" />
 
 
 

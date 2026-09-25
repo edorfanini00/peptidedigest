@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 const URL = "https://peptidedigest.co/eli-lilly-lawsuits-research-peptide-sellers";
 const TITLE = "Eli Lilly Sues Research Use Only Peptide Sellers: The 2026 Cases Explained";
@@ -159,17 +160,16 @@ export default function Page() {
             According to an analysis by the law firm <a href={SRC.frier} className={a} {...ext}>Frier Levitt</a>, the complaints do not assert patent infringement. Most rely on state unfair competition and consumer protection statutes. Frier Levitt notes that the federal drug statute, the FDCA, does not give private companies a general right to sue over its violations, so state law is the route. The one federal false advertising count under the Lanham Act is in the Aesthetic Envy case. The CourtListener dockets are consistent with that: the <a href={SRC.dEnvy} className={a} {...ext}>Aesthetic Envy docket</a> lists a Lanham Act cause, while the five Texas dockets, including <a href={SRC.dLegendary} className={a} {...ext}>Legendary Peptides</a>, list diversity jurisdiction.
           </p>
 
+
+          <IQONPartner vial="ghk" variant="inline" />
+
+
           <h2 className={h2} style={serif}>Where do the cases stand now?</h2>
           <p>
             All six are at an early stage. The public dockets show service steps: a summons returned executed in the <a href={SRC.dLegendary} className={a} {...ext}>Legendary Peptides case</a> on August 18, 2026, and in the <a href={SRC.dTexas} className={a} {...ext}>Texas Peptides case</a> on August 19, 2026, and a waiver of service in the <a href={SRC.dStriker} className={a} {...ext}>Striker Pharmacy case</a> on August 25, 2026. On September 11, 2026, the court in the Legendary Peptides case entered an order on a motion for an extension of time to respond. No judgment has been entered in any of the six cases.
           </p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={serif}>IQON Health</h3>
-            <p className="text-sm text-gray-500 mb-4">Confirm all details directly with IQON Health before purchasing.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Visit IQON Health →</a>
-          </div>
+          <IQONPartner vial="bac-water" />
 
           <h2 className={h2} style={serif}>How is this different from an FDA warning letter or a criminal case?</h2>
           <p>

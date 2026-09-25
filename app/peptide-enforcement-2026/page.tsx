@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "2026 Peptide Enforcement: The Major Documented Actions",
@@ -116,6 +117,10 @@ export default function EnforcementTimeline() {
             ))}
           </div>
 
+
+          <IQONPartner vial="glutathione" variant="inline" />
+
+
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             What these events show
           </h2>
@@ -128,12 +133,7 @@ export default function EnforcementTimeline() {
             Regulatory activity in 2026 also included FDA warning letters to individual sellers for product claims that indicated human use despite research disclaimers.
           </p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Our commercial partner. Third-party tested. Research-use-only. US-based. Check any offered lot against its certificate before ordering.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
-          </div>
+          <IQONPartner vial="glutathione" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             If you are replacing a disrupted supplier

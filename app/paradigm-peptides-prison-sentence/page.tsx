@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "Paradigm Peptides Sentence: Matthew Kawa Receives 70 Months",
@@ -41,17 +42,6 @@ const jsonLd = {
   ],
 };
 
-function InlinePartner({ text, cta }: { text: string; cta: string }) {
-  return (
-    <div className="my-6 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
-      <div className="flex-1">
-        <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-        <p className="text-sm font-medium text-gray-800">{text}</p>
-      </div>
-      <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">{cta}</a>
-    </div>
-  );
-}
 
 export default function ParadigmPeptidesSentence() {
   return (
@@ -64,7 +54,7 @@ export default function ParadigmPeptidesSentence() {
           title={<>Paradigm Peptides: Matthew Kawa Sentenced to 70 Months</>}
           dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and research supplier documentation checks."}
           meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 25, 2026</span></>}
-          image="courthouse"
+          image="gavel"
         />
 
         <div className="article-body">
@@ -90,7 +80,7 @@ export default function ParadigmPeptidesSentence() {
             The DOJ says investigators found that many products labeled as SARMs contained testosterone instead. Its case page identifies testosterone as a controlled substance. These findings concern Paradigm Peptides products; they should not be generalized to another supplier without evidence.
           </p>
 
-          <InlinePartner text="IQON Health is our commercial partner. Before ordering, check the COA for the offered lot and the laboratory that performed the analysis. Not for human consumption." cta="View COAs →" />
+          <IQONPartner vial="nad" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the case says about testing claims</h2>
 
@@ -102,7 +92,7 @@ export default function ParadigmPeptidesSentence() {
             For a research purchase, ask for the report matching the offered lot. Check the sample description, laboratory identity and analytical methods. If a report cannot be authenticated, request confirmation from the issuing laboratory directly. Read the test scope: purity, identity and endotoxin results answer different questions.
           </p>
 
-          <InlinePartner text="IQON Health is our commercial partner. Ask for batch-specific documentation before purchase. This placement does not constitute an independent audit of the supplier." cta="Browse →" />
+          <IQONPartner vial="glutathione" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the sentence does and does not show</h2>
 
@@ -114,13 +104,7 @@ export default function ParadigmPeptidesSentence() {
             Researchers should treat supplier claims as claims to check. A research label does not authenticate a product, and a certificate does not establish legal compliance. The documented testing failures in this case make batch verification a practical step in any procurement decision.
           </p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Confirm batch documentation before ordering.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
-            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
-          </div>
+          <IQONPartner vial="ghk" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>

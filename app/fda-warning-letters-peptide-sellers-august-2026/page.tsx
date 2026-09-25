@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { IQONPartner } from "@/components/IQONPartner";
 
 const URL = "https://peptidedigest.co/fda-warning-letters-peptide-sellers-august-2026";
 const TITLE = "FDA's August 24, 2026 Warning Letters to Online Peptide Sellers";
@@ -95,7 +96,7 @@ export default function Page() {
           title={<>{TITLE}</>}
           dek={"FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding."}
           meta={<><time dateTime="2026-09-25">September 25, 2026</time></>}
-          image="documents"
+          image="envelopes"
         />
 
         <div className="article-body">
@@ -158,6 +159,10 @@ export default function Page() {
             ArentFox Schiff reads the batch the same way. Its lawyers wrote that FDA &ldquo;looks past the label to the net impression of the website as a whole,&rdquo; and that RUO labeling alone &ldquo;is unlikely to withstand FDA scrutiny when the surrounding marketing context points toward human use&rdquo; (<a className={a} href={SRC.afs} target="_blank" rel="noopener noreferrer">ArentFox Schiff</a>). That is a law firm&apos;s analysis, not an FDA statement.
           </p>
 
+
+          <IQONPartner vial="bac-water" variant="inline" />
+
+
           <h2 className={h2} style={serif}>Why does bacteriostatic water matter in these letters?</h2>
           <p>
             FDA treated it as a link between the vial and the injection. The Peptide Partners letter says the reconstitution solution was sold &ldquo;to be used to reconstitute the peptide products sold on your website, which are drugs intended for injection,&rdquo; so the solution is &ldquo;a drug&rdquo; (<a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">FDA</a>). The Tex Peptides letter makes the same finding about its bacteriostatic water (<a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">FDA</a>).
@@ -166,12 +171,7 @@ export default function Page() {
             The letters to Peptide Partners, Royal Peptides and Tex Peptides also say injectable products &ldquo;bypass some of the body&rsquo;s key defenses against toxins and microorganisms.&rdquo;
           </p>
 
-          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={serif}>IQON Health</h3>
-            <p className="text-sm text-gray-500 mb-4">Confirm all details directly with IQON Health before purchasing.</p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Visit IQON Health →</a>
-          </div>
+          <IQONPartner vial="nad" />
 
           <h2 className={h2} style={serif}>Is a warning letter a criminal charge?</h2>
           <p>
