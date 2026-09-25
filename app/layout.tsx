@@ -125,6 +125,17 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-QLTHZGWLMP');
             gtag('config', 'AW-18474455082');
+            // Track every click on an IQON shop link
+            document.addEventListener('click', function(e) {
+              var el = e.target.closest('a[href*="iqonhealth.com"]');
+              if (el) {
+                gtag('event', 'iqon_shop_click', {
+                  event_category: 'outbound',
+                  event_label: el.href,
+                  transport_type: 'beacon'
+                });
+              }
+            });
           `}
         </Script>
         {children}
