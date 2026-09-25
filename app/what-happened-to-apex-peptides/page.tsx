@@ -4,23 +4,20 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "What Happened to Apex Peptides? The Full Story",
+  title: "What Happened to Apex Peptides? Searches and Order Questions",
   description:
-    "Apex Peptides was raided by federal agents on September 24, 2026. Here is exactly what happened, who was involved, and what it means for researchers who were sourcing from them.",
-  alternates: {
-    canonical: "https://peptidedigest.co/what-happened-to-apex-peptides",
-  },
+    "What happened to Apex Peptides: September 23, 2026 searches, reported FBI involvement, unresolved shutdown questions and checks for a research supplier alternative.",
+  alternates: { canonical: "https://peptidedigest.co/what-happened-to-apex-peptides" },
   openGraph: {
-    title: "What Happened to Apex Peptides? The Full Story",
-    description:
-      "Federal agents raided Apex Peptides on September 24, 2026. Full breakdown of what happened, what agencies were involved, and where to source now.",
+    title: "What Happened to Apex Peptides?",
+    description: "Federal agents searched Apex-linked properties on September 23, 2026. What local reporting confirms and what to do if you had an outstanding order.",
     type: "article",
     publishedTime: "2026-09-24T14:00:00.000Z",
   },
   twitter: {
     card: "summary_large_image",
     title: "What Happened to Apex Peptides?",
-    description: "Federal agents raided Apex Peptides on September 24, 2026. The full story.",
+    description: "September 23 searches, reported FBI involvement, open questions and supplier checks.",
   },
 };
 
@@ -30,9 +27,9 @@ const jsonLd = {
     {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-apex-peptides#article",
-      headline: "What Happened to Apex Peptides? The Full Story",
+      headline: "What Happened to Apex Peptides? Searches and Order Questions",
       datePublished: "2026-09-24T14:00:00.000Z",
-      dateModified: "2026-09-24T14:00:00.000Z",
+      dateModified: "2026-09-25T12:00:00.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/what-happened-to-apex-peptides" },
@@ -42,46 +39,11 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        {
-          "@type": "Question",
-          name: "What happened to Apex Peptides?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "On September 24, 2026, federal agents from the U.S. Postal Inspection Service, the FBI, and IRS Criminal Investigation raided a North Sioux City, South Dakota address connected to Apex Peptides. The Apex Peptides website went non-operational following the raid. No charges have been publicly announced as of publication.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is Apex Peptides shut down?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "As of September 24, 2026, Apex Peptides appears to be non-operational following the federal raid. Orders are not being processed and the site is offline.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Who raided Apex Peptides?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The U.S. Postal Inspection Service led the investigation, with FBI agents from the Omaha and Minneapolis field offices, IRS Criminal Investigation, the Union County Sheriff's Office, and North Sioux City Police all participating.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is a good alternative to Apex Peptides?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "IQON Health (iqonhealth.com) is a compliant US-based research peptide supplier with third-party COA documentation on every product. They have operated with a strict research-use-only model and are currently shipping.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Why was Apex Peptides raided?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No official charges have been announced. The raid follows a broader 2026 federal enforcement pattern targeting research-peptide suppliers where marketing and distribution implied human use rather than legitimate research-only operations.",
-          },
-        },
+        { "@type": "Question", name: "What happened to Apex Peptides?", acceptedAnswer: { "@type": "Answer", text: "Local news reported searches of Apex-linked properties on September 23, 2026. The U.S. Postal Inspection Service led the investigation, with FBI and local police involved. The Apex Peptides website went non-operational. No charges have been publicly announced." } },
+        { "@type": "Question", name: "Is Apex Peptides shut down?", acceptedAnswer: { "@type": "Answer", text: "The Apex Peptides website appears non-operational following the searches. The public reports reviewed here do not establish a permanent closure or reopening date." } },
+        { "@type": "Question", name: "Who raided Apex Peptides?", acceptedAnswer: { "@type": "Answer", text: "KTIV reports the U.S. Postal Inspection Service led the investigation, with FBI and North Sioux City Police participating. The KSCJ September 23 report describes agents removing boxes from 503 Prosperity Way." } },
+        { "@type": "Question", name: "What is a good alternative to Apex Peptides?", acceptedAnswer: { "@type": "Answer", text: "When comparing suppliers, check the legal seller identity, current order terms and the COA for the specific lot offered. IQON Health is a commercial partner of The Peptide Digest. Confirm documentation and availability directly before ordering." } },
+        { "@type": "Question", name: "Why was Apex Peptides raided?", acceptedAnswer: { "@type": "Answer", text: "The local reports reviewed here do not disclose the specific reason. No charges have been publicly announced. Source allegations supplied to this publication separately have not been attributed." } },
       ],
     },
   ],
@@ -100,13 +62,13 @@ export default function WhatHappenedApex() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          What Happened to Apex Peptides? The Full Story
+          What Happened to Apex Peptides?
         </h1>
 
         <div className="flex items-center gap-4 text-xs text-gray-400 mb-8 pb-8 border-b border-gray-200">
           <time dateTime="2026-09-24">September 24, 2026</time>
           <span>·</span>
-          <span>5 min read</span>
+          <span>Updated September 25, 2026</span>
           <span>·</span>
           <span>The Peptide Digest Staff</span>
         </div>
@@ -114,72 +76,78 @@ export default function WhatHappenedApex() {
         <div className="text-[15px] leading-relaxed space-y-5 text-gray-700">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            On September 24, 2026, Apex Peptides — one of the more prominent research-peptide suppliers in the US market — went offline after federal agents raided addresses connected to the company in North Sioux City, South Dakota.
+            Apex Peptides is linked in local reporting to businesses searched by federal agents on September 23, 2026. The searches are documented. A permanent shutdown, the reason for the investigation and the fate of individual orders are not established by those reports.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            What Happened
+            What local reporting confirms
           </h2>
+
           <p>
-            The U.S. Postal Inspection Service, operating out of Minneapolis, led a coordinated operation alongside FBI agents from the Omaha and Minneapolis field offices, IRS Criminal Investigation, the Union County Sheriff&apos;s Office, and North Sioux City Police. More than a dozen marked and unmarked vehicles were present at 503 Prosperity Way — a commercial building housing Apex Waste Management and Apex Research, businesses tied to the same principals behind Apex Peptides.
+            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KTIV&apos;s reporting</a> connects Apex Peptides to businesses at the searched properties. The U.S. Postal Inspection Service led the investigation, with the FBI and local police participating. The business address identified in coverage is 503 Prosperity Way in North Sioux City, South Dakota.
           </p>
+
           <p>
-            A residential property in the Dakota Dunes neighborhood was searched simultaneously. Several boxes of materials were removed from both locations over the course of the day.
+            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KSCJ reported on September 23</a> that agents removed boxes and that two unidentified people were led away in handcuffs. The report did not identify charges. KTIV also described a search of a Dakota Dunes home.
           </p>
 
           <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
             <div className="flex-1">
               <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-              <p className="text-sm font-medium text-gray-800">Re-sourcing after the Apex Peptides raid — IQON Health is open, compliant, and shipping. Third-party tested, research-use-only.</p>
+              <p className="text-sm font-medium text-gray-800">Re-sourcing after the Apex Peptides searches? IQON Health is our commercial partner. Check its research catalog and confirm documentation for the offered lot before ordering.</p>
             </div>
             <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">View products →</a>
           </div>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            Is Apex Peptides Shut Down?
+            Is Apex Peptides shut down?
           </h2>
+
           <p>
-            As of September 24, 2026, the Apex Peptides website is non-operational and orders are not being processed. No charges have been publicly announced, but the involvement of three separate federal agencies — Postal Inspection Service, FBI, and IRS CI — indicates an active criminal investigation with significant scope.
+            We cannot establish permanent closure from the cited news reports. An unavailable storefront does not tell customers whether existing orders will ship or be refunded. Ask for a written update, and retain the response with your purchase records.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            Why Did This Happen?
+            Why was Apex Peptides raided?
           </h2>
+
           <p>
-            The official reason for the raid has not been publicly stated. However, the Apex Peptides raid fits a clear pattern. 2026 has seen concentrated federal enforcement against research-peptide suppliers — Peptide Sciences was shut down by the DOJ in March, Amino Asylum was raided in March, and Paradigm Peptides faced federal charges the same month.
+            The reports reviewed here do not disclose the reason for the searches. They do not support assigning a specific offense to the company or its owners. Screenshots supplied separately to this publication contain allegations, but the original source&apos;s identity is still pending for attribution.
           </p>
+
           <p>
-            The common thread in these actions: suppliers whose &quot;research-use-only&quot; label was inconsistent with their actual marketing. Influencer sponsorships implying weight loss, anti-aging, or athletic performance; dosing guidance on social channels; before-and-after testimonials — these patterns drew regulatory attention regardless of product labeling.
+            Other suppliers&apos; cases do not answer that question.{" "}
+            <a href="https://www.peptidesciences.com" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Peptide Sciences calls its shutdown voluntary</a>;{" "}
+            <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">the Paradigm Peptides record</a> documents a separate prosecution. Neither establishes what investigators are examining at Apex.
           </p>
 
           <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
             <div className="flex-1">
               <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-              <p className="text-sm font-medium text-gray-800">IQON Health has maintained strict research-only positioning through the entire 2026 enforcement cycle. COAs on every batch. Ships now.</p>
+              <p className="text-sm font-medium text-gray-800">IQON Health is our commercial partner. Compare its research catalog against your laboratory specifications, and ask for lot-specific documentation before ordering.</p>
             </div>
             <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">Browse →</a>
           </div>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            What Should Apex Peptides Customers Do Now?
+            What to do about an order or replacement supplier
           </h2>
-          <p>
-            If you had pending orders with Apex Peptides, those orders are unlikely to be fulfilled. For researchers needing to re-source, the criteria that matter most right now:
-          </p>
+
+          <p>Save the order confirmation and your communications. Ask the seller about dispatch or a refund. Check your payment provider&apos;s dispute window if the order remains unresolved. When comparing an Apex Peptides alternative:</p>
+
           <ul className="list-disc list-inside space-y-2 pl-2">
-            <li>Strict research-use-only positioning — no human-use claims anywhere</li>
-            <li>Independent third-party COAs with HPLC purity and endotoxin testing</li>
-            <li>US-based fulfillment with a documented operating history</li>
-            <li>No gray-area compounds under active FDA review</li>
+            <li>Match the offered batch number to the COA and product label.</li>
+            <li>Check the laboratory, analytical methods and which properties were actually tested.</li>
+            <li>Verify the seller&apos;s identity and confirm fulfillment and refund terms.</li>
+            <li>Check that the material and its intended use meet your institution&apos;s requirements.</li>
           </ul>
-          <p>
-            IQON Health meets all of these criteria and is currently shipping with same-day processing on in-stock items.
-          </p>
+
+          <p>IQON Health appears here as a commercial partner. Apply these checks to its products too; this article does not certify a supplier&apos;s compliance or guarantee a shipping date.</p>
 
           <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
             <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Compliant Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Ships same day.</p>
+            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Confirm current availability before ordering.</p>
             <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
             <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
           </div>
@@ -187,11 +155,11 @@ export default function WhatHappenedApex() {
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What happened to Apex Peptides?", a: "Federal agents from the USPIS, FBI, and IRS CI raided addresses connected to Apex Peptides on September 24, 2026. The website went offline and orders are not being processed." },
-              { q: "Is Apex Peptides shut down?", a: "As of September 24, 2026, yes — the site is non-operational and no orders are being fulfilled." },
-              { q: "Who raided Apex Peptides?", a: "The U.S. Postal Inspection Service led the operation, with the FBI (Omaha and Minneapolis), IRS Criminal Investigation, Union County Sheriff, and North Sioux City Police participating." },
-              { q: "What is a good alternative to Apex Peptides?", a: "IQON Health (iqonhealth.com) — compliant, third-party tested, US-based, research-use-only. Currently shipping." },
-              { q: "Why was Apex Peptides raided?", a: "No charges announced publicly yet. The raid follows a 2026 enforcement pattern targeting suppliers whose marketing implied human use despite research-only labeling." },
+              { q: "What happened to Apex Peptides?", a: "Local news reported searches of Apex-linked properties on September 23, 2026. USPIS led the investigation; FBI and local police participated. No charges have been publicly announced." },
+              { q: "Is Apex Peptides shut down?", a: "The website appears non-operational. The reports reviewed here do not establish a permanent closure or reopening date." },
+              { q: "Who raided Apex Peptides?", a: "KTIV identifies the U.S. Postal Inspection Service as leading the investigation, with FBI (Omaha and Minneapolis) and North Sioux City Police participating." },
+              { q: "What is a good alternative to Apex Peptides?", a: "When comparing suppliers, verify the legal seller, batch documentation for the offered lot and current order terms. IQON Health is a commercial partner here; confirm its documentation before purchasing." },
+              { q: "Why was Apex Peptides raided?", a: "The local reports reviewed here do not disclose a specific reason. No charges have been publicly announced." },
             ].map(({ q, a }) => (
               <div key={q}>
                 <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
@@ -204,9 +172,9 @@ export default function WhatHappenedApex() {
             <h2 className="text-base font-semibold text-gray-900 mb-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Related Coverage</h2>
             <div className="space-y-3">
               {[
-                { slug: "apex-peptides-raided-what-researchers-need-to-know", title: "Apex Peptides Raided: What Researchers Need to Know" },
-                { slug: "peptide-enforcement-2026", title: "2026 Peptide Enforcement Timeline: Every Major Action" },
-                { slug: "compliant-research-peptide-supplier", title: "What a Compliant Research Peptide Supplier Looks Like in 2026" },
+                { slug: "apex-peptides-raided-what-researchers-need-to-know", title: "Apex Peptides Raid: What Researchers Need to Know" },
+                { slug: "peptide-enforcement-2026", title: "2026 Peptide Enforcement: The Major Documented Actions" },
+                { slug: "compliant-research-peptide-supplier", title: "What to Check in a Research Peptide Supplier" },
               ].map((r) => (
                 <Link key={r.slug} href={`/${r.slug}`} className="flex items-center gap-2 group">
                   <span className="text-sm text-gray-700 group-hover:text-blue-700 transition-colors">{r.title} →</span>
@@ -215,7 +183,7 @@ export default function WhatHappenedApex() {
             </div>
           </div>
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">For informational purposes only. Not medical or legal advice. Based on publicly available sources at time of publication.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. Sources linked above. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

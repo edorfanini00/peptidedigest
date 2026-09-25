@@ -1,0 +1,37 @@
+[
+  {
+    "key": "peptide-sciences",
+    "url": "https://www.peptidesciences.com",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "kawa-case",
+    "url": "https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa",
+    "final_url": "https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa",
+    "status": 200
+  },
+  {
+    "key": "kawa-sentence",
+    "url": "https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison",
+    "final_url": "https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison",
+    "status": 200
+  },
+  {
+    "key": "apex-ktiv",
+    "url": "https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/",
+    "final_url": "https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/",
+    "status": 200
+  },
+  {
+    "key": "amino-secondary",
+    "url": "https://peptideexaminer.com/vendors/amino-asylum",
+    "final_url": "https://peptideexaminer.com/vendors/amino-asylum/",
+    "status": 200
+  },
+  {
+    "key": "fda-gram",
+    "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026",
+    "final_url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026",
+    "status": 200
+  }
+]

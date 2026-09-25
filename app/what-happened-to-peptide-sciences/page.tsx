@@ -4,12 +4,12 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "What Happened to Peptide Sciences? The Full Story",
-  description: "Peptide Sciences shut down on March 6, 2026 after years of escalating FDA and DOJ enforcement. Here is exactly what happened, why, and where researchers are sourcing now.",
+  title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
+  description: "Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier.",
   alternates: { canonical: "https://peptidedigest.co/what-happened-to-peptide-sciences" },
   openGraph: {
-    title: "What Happened to Peptide Sciences? The Full Story",
-    description: "Peptide Sciences went dark on March 6, 2026. No warning to customers, no refunds, no explanation. Full breakdown of what led to the shutdown.",
+    title: "What Happened to Peptide Sciences?",
+    description: "Peptide Sciences posted a voluntary-shutdown notice on March 6, 2026. What the notice says, what it does not say, and how to find a research alternative.",
     type: "article",
     publishedTime: "2026-03-10T12:00:00.000Z",
   },
@@ -21,9 +21,9 @@ const jsonLd = {
     {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-peptide-sciences#article",
-      headline: "What Happened to Peptide Sciences? The Full Story",
+      headline: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
       datePublished: "2026-03-10T12:00:00.000Z",
-      dateModified: "2026-09-24T12:00:00.000Z",
+      dateModified: "2026-09-25T12:00:00.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "what happened to peptide sciences, peptide sciences shut down, peptide sciences alternative, peptide sciences DOJ, peptidesciences.com offline",
@@ -31,10 +31,10 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What happened to Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "On March 6, 2026, Peptide Sciences posted a three-sentence notice on their homepage and went dark. The shutdown followed years of escalating FDA enforcement, including warning letters and pressure on the broader research-peptide market. Thousands of customers had pending orders that were never fulfilled." } },
-        { "@type": "Question", name: "Why did Peptide Sciences shut down?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences operated in an increasingly hostile regulatory environment. The FDA had issued warning letters to dozens of research-peptide vendors in 2024-2025 for marketing unapproved drugs, and enforcement escalated to criminal investigations. Peptide Sciences appears to have shut down voluntarily before facing formal action." } },
-        { "@type": "Question", name: "What is the best Peptide Sciences alternative?", acceptedAnswer: { "@type": "Answer", text: "IQON Health (iqonhealth.com) is a compliant US-based alternative with third-party COA documentation, strict research-use-only positioning, and same-day shipping on in-stock items." } },
-        { "@type": "Question", name: "Will Peptide Sciences come back?", acceptedAnswer: { "@type": "Answer", text: "As of September 2026, there is no indication that Peptide Sciences will reopen. The site remains offline and no public statement has been made beyond the original shutdown notice." } },
+        { "@type": "Question", name: "What happened to Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences posted a voluntary-shutdown notice on its website on March 6, 2026. The notice says the company decided to discontinue research-product sales. It does not state that the DOJ or any agency directed the closure." } },
+        { "@type": "Question", name: "Did the DOJ shut down Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "The company's notice does not say that. The sources reviewed for this article do not establish a DOJ-directed closure." } },
+        { "@type": "Question", name: "Is Peptide Sciences coming back?", acceptedAnswer: { "@type": "Answer", text: "The published notice does not announce a reopening date. It warns that claimed successors and third-party sellers using its identity are unauthorized." } },
+        { "@type": "Question", name: "What is a Peptide Sciences alternative?", acceptedAnswer: { "@type": "Answer", text: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Health is a commercial partner on this page, not an independently certified replacement." } },
       ],
     },
   ],
@@ -64,54 +64,92 @@ export default function PeptideSciencesShutdown() {
           <span className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full font-medium">Industry</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          What Happened to Peptide Sciences? The Full Story
+          What Happened to Peptide Sciences?
         </h1>
         <div className="flex items-center gap-4 text-xs text-gray-400 mb-8 pb-8 border-b border-gray-200">
-          <time dateTime="2026-03-10">March 10, 2026</time><span>·</span><span>6 min read</span><span>·</span><span>The Peptide Digest Staff</span>
+          <time dateTime="2026-03-10">March 10, 2026</time><span>·</span><span>Updated September 25, 2026</span><span>·</span><span>The Peptide Digest Staff</span>
         </div>
         <div className="text-[15px] leading-relaxed space-y-5 text-gray-700">
+
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            On March 6, 2026, at roughly 2:00 PM Eastern, the homepage of peptidesciences.com changed. Where there had been a full research peptide catalog, there was now a three-sentence notice. No warning, no refunds, no explanation beyond the word "voluntary."
+            Peptide Sciences says it has voluntarily shut down operations and discontinued the sale of its research products. That is the explanation in the company&apos;s{" "}
+            <a href="https://www.peptidesciences.com" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">published shutdown notice</a>. The notice does not say the DOJ closed the business.
           </p>
-          <p>For thousands of researchers, Peptide Sciences had been the default supplier for years — one of the longest-running and most widely cited vendors in the market, with a catalog spanning BPC-157, TB-500, Retatrutide, GHK-Cu, and dozens more compounds. Its disappearance left a significant gap overnight.</p>
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>The Regulatory Build-Up</h2>
-          <p>The shutdown did not come out of nowhere. The FDA had been escalating enforcement against research-peptide vendors since 2024. In December 2024, the agency issued warning letters to multiple vendors — including Prime Peptides, Xcel Peptides, and SwissChems — specifically targeting those marketing GLP-1 compounds like semaglutide and retatrutide as "research use only" when end-use patterns were unmistakable.</p>
-          <p>By September 2025, more than 50 warning letters had gone out across the industry. The same month, federal agents conducted a physical warehouse raid on Amino Asylum. In December 2025, the founders of Paradigm Peptides pleaded guilty to federal charges after an investigation found their products contained a controlled substance.</p>
-          <InlinePartner text="Peptide Sciences customers looking for a compliant alternative — IQON Health is open, third-party tested, and shipping same day." cta="View products →" />
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the Shutdown Actually Means</h2>
-          <p>Peptide Sciences appears to have shut down voluntarily, likely under legal pressure rather than as the result of a raid or indictment — at least based on available public information. The "voluntary" framing in their notice may reflect advice of counsel.</p>
-          <p>The FDA's position throughout this enforcement cycle has been consistent: "for research use only" labeling does not provide legal protection when the actual marketing, distribution, and customer base clearly indicate consumer use. Peptide Sciences was a major player in a market where that gap was the central legal risk.</p>
-          <InlinePartner text="IQON Health maintains strict research-only positioning. No human-use claims, no dosing guidance. COAs on every batch." cta="Browse →" />
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Where Do Researchers Go Now?</h2>
-          <p>The vendors that have continued operating through the 2025-2026 enforcement period share a common profile: genuine research-only positioning across all channels, independent third-party testing, US-based sourcing with documentation, and conservative compound catalogs that avoid FDA-reviewed substances.</p>
-          <p>IQON Health is one such supplier — operating with strict research-use-only positioning, third-party HPLC and endotoxin testing on every batch, and same-day shipping on in-stock items.</p>
+
+          <p>
+            The notice remains more useful than a guessed reason for the closure. It confirms the end of research-product sales but does not explain the company&apos;s internal decision or resolve the status of each customer&apos;s order.
+          </p>
+
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What Peptide Sciences has said</h2>
+
+          <p>
+            The company says it retains the rights to its name and trademarks. It also warns that third parties claiming to be affiliated with Peptide Sciences, to be its successor or to sell its products are not authorized. A familiar logo on another site is not evidence of continuity.
+          </p>
+
+          <p>
+            The notice does not give a reopening date. An earlier version of this article claimed thousands of customers received no refunds or had orders go unfulfilled; that specific claim went beyond what the notice and available evidence established, and we have removed it.
+          </p>
+
+          <InlinePartner text="Looking for a Peptide Sciences alternative? IQON Health is our commercial partner. Review its research catalog and confirm current stock and documentation directly." cta="View products →" />
+
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Was the shutdown caused by FDA or DOJ action?</h2>
+
+          <p>
+            The word &quot;voluntary&quot; is the company&apos;s description. It does not reveal whether legal advice, regulation or business conditions affected the decision. We have not established a government order requiring this closure and should not present one as the cause.
+          </p>
+
+          <p>
+            The FDA has challenged research-use disclaimers at other sellers. Its{" "}
+            <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">March 31, 2026 warning letter to Gram Peptides</a> explains how product claims can show intended human use. That is regulatory context, not evidence that the FDA or DOJ directed the Peptide Sciences shutdown.
+          </p>
+
+          <InlinePartner text="Before ordering from IQON Health, request the COA for the offered batch and check the tests against your laboratory requirements. Not for human consumption." cta="Browse →" />
+
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Orders, successor claims and research alternatives</h2>
+
+          <p>
+            If you have an unresolved purchase, retain the receipt and ask the original seller for a written update. Check your payment provider&apos;s dispute deadlines. Be cautious about sending money to a site that claims it can recover an old order or continue the former business.
+          </p>
+
+          <p>
+            For a Peptide Sciences alternative, start with the offered lot and your laboratory requirements. Verify the seller and the COA rather than relying on brand familiarity. IQON Health is a commercial partner of this publication; the same checks apply to its catalog.
+          </p>
+
           <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
             <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>IQON Health — Research Peptides</h3>
-            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Same-day shipping.</p>
+            <p className="text-sm text-gray-500 mb-4">Third-party tested. Research-use-only. US-based. COAs on every product. Confirm availability before ordering.</p>
             <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">Browse the catalog →</a>
+            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
           </div>
+
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What happened to Peptide Sciences?", a: "On March 6, 2026, Peptide Sciences posted a brief shutdown notice and went offline. Thousands of pending orders were never fulfilled. The shutdown followed years of escalating FDA enforcement across the research-peptide market." },
-              { q: "Why did Peptide Sciences shut down?", a: "The company appears to have shut down voluntarily under regulatory pressure. The FDA had been escalating enforcement against research-peptide vendors, and Peptide Sciences operated in a market where 'research-only' labeling was under intense scrutiny." },
-              { q: "What is the best Peptide Sciences alternative?", a: "IQON Health (iqonhealth.com) — compliant, third-party tested, US-based, research-use-only. Currently shipping with same-day processing." },
-              { q: "Will Peptide Sciences come back?", a: "As of September 2026 there is no indication of a reopening. The site remains offline." },
-            ].map(({ q, a }) => (<div key={q}><h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3><p className="text-sm text-gray-500">{a}</p></div>))}
+              { q: "What happened to Peptide Sciences?", a: "Peptide Sciences posted a voluntary-shutdown notice on its website on March 6, 2026. The notice says the company decided to discontinue research-product sales. It does not state that the DOJ or any agency directed the closure." },
+              { q: "Did the DOJ shut down Peptide Sciences?", a: "The company's notice does not say that. The sources reviewed for this article do not establish a DOJ-directed closure." },
+              { q: "Is Peptide Sciences coming back?", a: "The published notice does not announce a reopening date. It warns that claimed successors and third-party sellers using its identity are unauthorized." },
+              { q: "What is a Peptide Sciences alternative?", a: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Health is a commercial partner on this page, not an independently certified replacement." },
+            ].map(({ q, a }) => (
+              <div key={q}>
+                <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
+                <p className="text-sm text-gray-500">{a}</p>
+              </div>
+            ))}
           </div>
+
           <div className="mt-8 pt-6 border-t border-gray-200">
             <h2 className="text-base font-semibold text-gray-900 mb-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Related Coverage</h2>
             <div className="space-y-3">
               {[
-                { slug: "apex-peptides-raided-what-researchers-need-to-know", title: "Apex Peptides Raided by Federal Agents" },
-                { slug: "amino-asylum-raid-what-happened", title: "Amino Asylum Raid: What Happened" },
-                { slug: "paradigm-peptides-prison-sentence", title: "Paradigm Peptides Owner Sentenced to 70 Months in Prison" },
-                { slug: "peptide-enforcement-2026", title: "2026 Peptide Enforcement Timeline" },
+                { slug: "peptide-enforcement-2026", title: "2026 Peptide Enforcement: The Major Documented Actions" },
+                { slug: "compliant-research-peptide-supplier", title: "What to Check in a Research Peptide Supplier" },
+                { slug: "paradigm-peptides-prison-sentence", title: "Paradigm Peptides: Matthew Kawa Sentenced to 70 Months" },
               ].map((r) => (<Link key={r.slug} href={`/${r.slug}`} className="block text-sm text-gray-700 hover:text-blue-700 transition-colors">{r.title} →</Link>))}
             </div>
           </div>
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">For informational purposes only. Not medical or legal advice.</p>
+
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

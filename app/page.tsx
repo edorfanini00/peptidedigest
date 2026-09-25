@@ -229,7 +229,7 @@ export default function Home() {
         {/* Sponsor block 2 — after research articles */}
         <SponsorBlock
           headline="Looking for a compliant domestic peptide source?"
-          body="IQON Health carries BPC-157, TB-500, and other widely studied research compounds. Every batch ships with independent COA documentation."
+          body="IQON Health carries a range of widely studied research peptides. Every batch ships with independent third-party COA documentation."
           cta="View products →"
         />
 
