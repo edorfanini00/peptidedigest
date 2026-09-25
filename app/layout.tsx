@@ -113,15 +113,17 @@ export default function RootLayout({
         <link rel="canonical" href="https://peptidedigest.co" />
       </head>
       <body>
+        {/* Google tag — fires both GA4 and Google Ads */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18474455082"
+          src="https://www.googletagmanager.com/gtag/js?id=G-QLTHZGWLMP"
           strategy="afterInteractive"
         />
-        <Script id="google-ads" strategy="afterInteractive">
+        <Script id="google-tags" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('config', 'G-QLTHZGWLMP');
             gtag('config', 'AW-18474455082');
           `}
         </Script>

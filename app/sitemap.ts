@@ -53,5 +53,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${base}/what-happened-to-peptide-sciences`,
+      lastModified: new Date("2026-09-24"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/amino-asylum-raid-what-happened`,
+      lastModified: new Date("2026-09-24"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/paradigm-peptides-prison-sentence`,
+      lastModified: new Date("2026-09-24"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/peptide-enforcement-2026`,
+      lastModified: new Date("2026-09-24"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
   ];
 }

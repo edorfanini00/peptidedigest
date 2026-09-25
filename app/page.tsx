@@ -40,6 +40,33 @@ const industryArticles = [
     excerpt:
       "Federal agents raided Amino Asylum's operations in March 2026 as part of the same enforcement wave that took down Peptide Sciences. A factual summary of what is known.",
   },
+  {
+    slug: "what-happened-to-peptide-sciences",
+    category: "Industry",
+    date: "March 10, 2026",
+    readTime: "7 min read",
+    title: "What Happened to Peptide Sciences? The Full Story",
+    excerpt:
+      "Peptide Sciences went dark on March 6, 2026 — no warning, no refunds, no explanation. A full breakdown of the DOJ enforcement action and what it means for the research community.",
+  },
+  {
+    slug: "amino-asylum-raid-what-happened",
+    category: "Industry",
+    date: "January 15, 2026",
+    readTime: "6 min read",
+    title: "Amino Asylum Raided by FDA: What Happened",
+    excerpt:
+      "FDA agents raided Amino Asylum's warehouse in June 2025. Both founders pleaded guilty in December 2025. Products contained testosterone sold as SARMs. Full story here.",
+  },
+  {
+    slug: "paradigm-peptides-prison-sentence",
+    category: "Industry",
+    date: "August 1, 2026",
+    readTime: "6 min read",
+    title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
+    excerpt:
+      "Matthew Kawa, owner of Paradigm Peptides, was sentenced to 70 months in federal prison on July 30, 2026. $5 million money judgment. Forged COAs. The complete breakdown.",
+  },
 ];
 
 const researchArticles = [
@@ -210,6 +237,14 @@ export default function Home() {
         <SectionLabel label="Regulatory" id="regulatory" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           {[
+            {
+              slug: "peptide-enforcement-2026",
+              category: "Regulatory",
+              date: "September 24, 2026",
+              readTime: "8 min read",
+              title: "2026 Peptide Enforcement Timeline: Every Major Action",
+              excerpt: "Peptide Sciences, Amino Asylum, Paradigm Peptides, Apex Peptides — a complete timeline of federal enforcement actions against research peptide suppliers in 2026.",
+            },
             {
               slug: "fda-july-2026-advisory-committee-bpc157-tb500",
               category: "Regulatory",
