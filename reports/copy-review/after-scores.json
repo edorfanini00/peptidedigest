@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "apex-peptides-raided-what-researchers-need-to-know",
+    "score": 3,
+    "words": 1067,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          1
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [
+        [
+          "two or more em-dashes in one sentence",
+          "Local coverage identifies 503 Prosperity Way \u2014 the address of Apex Was"
+        ],
+        [
+          "two or more em-dashes in one sentence",
+          "Test scope: Ask which methods were used and whether additional tests \u2014"
+        ]
+      ],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "1067 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (1)\n  punctuation cadence:\n    \u00b7 two or more em-dashes in one sentence  (Local coverage identifies 503 Prosperity Way \u2014 the address of Apex Was)\n    \u00b7 two or more em-dashes in one sentence  (Test scope: Ask which methods were used and whether additional tests \u2014)\n\n  score 3/5  needs a cleanse\n"
+  },
+  {
+    "slug": "what-happened-to-apex-peptides",
+    "score": 3,
+    "words": 666,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          1
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [
+        [
+          "semicolon-heavy for web copy",
+          "4 found"
+        ]
+      ],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "666 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (1)\n  punctuation cadence:\n    \u00b7 semicolon-heavy for web copy  (4 found)\n\n  score 3/5  needs a cleanse\n"
+  },
+  {
+    "slug": "what-happened-to-peptide-sciences",
+    "score": 4,
+    "words": 647,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          1
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "647 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (1)\n\n  score 4/5  needs a cleanse\n"
+  },
+  {
+    "slug": "amino-asylum-raid-what-happened",
+    "score": 4,
+    "words": 604,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          6
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "604 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (6)\n\n  score 4/5  needs a cleanse\n"
+  },
+  {
+    "slug": "paradigm-peptides-prison-sentence",
+    "score": 4,
+    "words": 660,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          6
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "660 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (6)\n\n  score 4/5  needs a cleanse\n"
+  },
+  {
+    "slug": "peptide-enforcement-2026",
+    "score": 3,
+    "words": 444,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          5
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [
+        [
+          "semicolon-heavy for web copy",
+          "4 found"
+        ]
+      ],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "444 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (5)\n  punctuation cadence:\n    \u00b7 semicolon-heavy for web copy  (4 found)\n\n  score 3/5  needs a cleanse\n"
+  },
+  {
+    "slug": "compliant-research-peptide-supplier",
+    "score": 4,
+    "words": 584,
+    "hits": {
+      "vocab": [
+        [
+          "paradigm",
+          1
+        ]
+      ],
+      "phrases": [],
+      "punctuation": [],
+      "rhythm": [],
+      "proof": []
+    },
+    "cli_exit": 1,
+    "cli_output": "584 words of visible copy\n\n  AI vocabulary:\n    \u00b7 paradigm  (1)\n\n  score 4/5  needs a cleanse\n"
+  }
+]
