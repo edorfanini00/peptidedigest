@@ -115,7 +115,7 @@ export default function RootLayout({
       <body>
         {/* Google tag — fires both GA4 and Google Ads */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-QLTHZGWLMP"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18474455082"
           strategy="afterInteractive"
         />
         <Script id="google-tags" strategy="afterInteractive">
