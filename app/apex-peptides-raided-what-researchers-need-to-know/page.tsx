@@ -69,6 +69,18 @@ export default function ApexRaidedArticle() {
             As of publication, Apex Peptides&apos; website appears non-operational. No charges have been publicly announced, though federal enforcement actions of this scope — involving the Postal Inspection Service, FBI, and IRS CI simultaneously — typically indicate an ongoing criminal investigation.
           </p>
 
+          {/* Inline partner — after "What Was Targeted" */}
+          <div className="my-6 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
+            <div className="flex-1">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
+              <p className="text-sm font-medium text-gray-800">Apex Peptides customers re-sourcing after this week — IQON Health is open and shipping. Third-party tested, research-use-only.</p>
+            </div>
+            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer"
+              className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">
+              View products →
+            </a>
+          </div>
+
           <h2
             className="text-xl font-semibold text-gray-900 pt-4"
             style={{ fontFamily: "var(--font-lora), Georgia, serif" }}
@@ -98,6 +110,18 @@ export default function ApexRaidedArticle() {
           <p>
             The suppliers that have operated through multiple enforcement cycles without disruption tend to look different: strict research-only positioning across all customer-facing materials, third-party testing documentation from independent labs, transparent supply-chain disclosures, and conservative compound selection limited to those with established research literature.
           </p>
+
+          {/* Inline partner — mid article */}
+          <div className="my-6 rounded-lg border border-gray-200 bg-gray-50 p-4 flex items-start gap-4">
+            <div className="flex-1">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
+              <p className="text-sm font-medium text-gray-800">IQON Health has operated with a strict research-only model through the full 2026 enforcement cycle. COAs on every batch. US-based fulfillment.</p>
+            </div>
+            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer"
+              className="shrink-0 text-xs font-semibold text-blue-700 hover:text-blue-900 transition-colors whitespace-nowrap">
+              Browse →
+            </a>
+          </div>
 
           <h2
             className="text-xl font-semibold text-gray-900 pt-4"
