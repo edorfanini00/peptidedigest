@@ -166,9 +166,10 @@ export default function ApexRaidedArticle() {
           </p>
 
           <InlinePartner
-            text="Apex Peptides customers re-sourcing after this week — IQON Health is our commercial partner. Check its catalog and confirm documentation and fulfillment terms before ordering. Not for human consumption."
-            cta="View products →"
+            text="IQON Health is a paid advertiser on this publication. Verify all terms directly with the seller before purchasing."
+            cta="Visit IQON Health →"
           />
+
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             How this differs from other peptide company closures
@@ -211,31 +212,20 @@ export default function ApexRaidedArticle() {
             <li><strong>Order terms:</strong> Confirm stock, dispatch estimates and the refund policy in writing.</li>
           </ul>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            Our commercial partner: IQON Health
-          </h2>
-
-          <p>
-            IQON Health has paid commercial placements on this page. Researchers considering its catalog should apply the same documentation checks described above. The placement is not an independent certification of legal compliance or product quality.
-          </p>
-
-          <p>
-            Confirm the current product listing and fulfillment terms directly with IQON Health. We do not guarantee same-day dispatch or the scope of testing for every lot.
-          </p>
-
           <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Advertisement</div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-                IQON Health — Documented. US-based. Research only.
-              </h3>
-              <p className="text-sm text-gray-500 mb-4">
-                Third-party tested batches. COA on every lot. Confirm availability and documentation before ordering. Not for human consumption.
-              </p>
+              IQON Health
+            </h3>
+            <p className="text-sm text-gray-500 mb-4">
+              Paid advertisement. Confirm all details directly with IQON Health before purchasing. This publication does not independently verify advertiser claims.
+            </p>
             <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
-              Browse the catalog →
+              Visit IQON Health →
             </a>
-            <p className="text-xs text-gray-400 mt-3">All products for research use only. Not for human consumption.</p>
           </div>
+
+
 
           <div className="mt-14 pt-10 border-t border-gray-200">
             <h2 className="text-xl font-semibold text-gray-900 mb-6" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
