@@ -1,62 +1,51 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { SectionLabel } from "@/components/Editorial";
+import { images, type ImageKey } from "@/components/images";
 
-const featuredArticle = {
+interface CardArticle {
+  slug: string;
+  category: string;
+  date: string;
+  readTime: string;
+  title: string;
+  excerpt: string;
+  image: ImageKey;
+}
+
+const featuredArticle: CardArticle = {
   slug: "apex-peptides-raided-what-researchers-need-to-know",
   category: "Industry",
   date: "September 24, 2026",
   readTime: "6 min read",
   title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know",
   excerpt:
-    "Federal agents from the U.S. Postal Inspection Service, FBI, and IRS CI converged on a North Sioux City address linked to Apex Peptides. Here is what happened, what it means for the research community, and how to evaluate alternative suppliers.",
+    "Local reports place federal searches at Apex-linked properties on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
+  image: "federalBuilding",
 };
 
-const industryArticles = [
-  {
-    slug: "peptide-sciences-shutdown-market-impact",
-    category: "Industry",
-    date: "March 18, 2026",
-    readTime: "5 min read",
-    title: "Peptide Sciences Shutdown: The Market Fallout Three Months Later",
-    excerpt:
-      "After DOJ enforcement action took Peptide Sciences offline in March, the research-peptide market reorganized rapidly. A look at what changed and where researchers are sourcing today.",
-  },
-  {
-    slug: "what-makes-a-compliant-peptide-supplier-2026",
-    category: "Industry",
-    date: "September 10, 2026",
-    readTime: "7 min read",
-    title: "What a Compliant Research Peptide Supplier Looks Like in 2026",
-    excerpt:
-      "Third-party COAs, endotoxin testing, research-only positioning, transparent sourcing — we outline what separates low-risk suppliers from those operating in the gray zone.",
-  },
-  {
-    slug: "amino-asylum-raid-2026-summary",
-    category: "Industry",
-    date: "March 22, 2026",
-    readTime: "4 min read",
-    title: "Amino Asylum Raid: What Was Alleged and What It Means",
-    excerpt:
-      "Federal agents raided Amino Asylum's operations in March 2026 as part of the same enforcement wave that took down Peptide Sciences. A factual summary of what is known.",
-  },
+const industryArticles: CardArticle[] = [
   {
     slug: "what-happened-to-peptide-sciences",
     category: "Industry",
     date: "March 10, 2026",
     readTime: "7 min read",
-    title: "What Happened to Peptide Sciences? The Full Story",
+    title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
     excerpt:
-      "Peptide Sciences went dark on March 6, 2026 — no warning, no refunds, no explanation. A full breakdown of the DOJ enforcement action and what it means for the research community.",
+      "Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier.",
+    image: "labFlasks",
   },
   {
     slug: "amino-asylum-raid-what-happened",
     category: "Industry",
     date: "January 15, 2026",
     readTime: "6 min read",
-    title: "Amino Asylum Raided by FDA: What Happened",
+    title: "Amino Asylum Shutdown Reports: What Is Documented",
     excerpt:
-      "FDA agents raided Amino Asylum's warehouse in June 2025. Both founders pleaded guilty in December 2025. Products contained testosterone sold as SARMs. Full story here.",
+      "Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and how to evaluate a research alternative.",
+    image: "shippingBox",
   },
   {
     slug: "paradigm-peptides-prison-sentence",
@@ -65,76 +54,114 @@ const industryArticles = [
     readTime: "6 min read",
     title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
     excerpt:
-      "Matthew Kawa, owner of Paradigm Peptides, was sentenced to 70 months in federal prison on July 30, 2026. $5 million money judgment. Forged COAs. The complete breakdown.",
+      "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what it means for supplier documentation.",
+    image: "courthouse",
   },
 ];
 
+const regulatoryArticles: CardArticle[] = [
+  {
+    slug: "eli-lilly-lawsuits-research-peptide-sellers",
+    category: "Litigation",
+    date: "September 25, 2026",
+    readTime: "6 min read",
+    title: "Eli Lilly Sues Research Use Only Peptide Sellers: The 2026 Cases Explained",
+    excerpt:
+      "On August 12, 2026, Eli Lilly filed six federal civil lawsuits, four against online research use only peptide sellers. Here are the parties, courts, claims and what the cases signal.",
+    image: "courthouse",
+  },
+  {
+    slug: "fda-warning-letters-peptide-sellers-august-2026",
+    category: "Regulatory",
+    date: "September 25, 2026",
+    readTime: "6 min read",
+    title: "FDA's August 24, 2026 Warning Letters to Online Peptide Sellers",
+    excerpt:
+      "FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding.",
+    image: "documents",
+  },
+  {
+    slug: "state-crackdown-research-peptides-2026",
+    category: "Regulatory",
+    date: "September 25, 2026",
+    readTime: "6 min read",
+    title: "Which States Are Cracking Down on Research-Grade Peptides in 2026?",
+    excerpt:
+      "Alabama, Mississippi and South Carolina medical boards told licensed providers in 2026 they may not use research-grade peptides with patients. Ohio's pharmacy board says clinics cannot possess them.",
+    image: "federalBuilding",
+  },
+  {
+    slug: "peptide-enforcement-2026",
+    category: "Regulatory",
+    date: "September 24, 2026",
+    readTime: "8 min read",
+    title: "2026 Peptide Enforcement: The Major Documented Actions",
+    excerpt:
+      "Peptide Sciences' voluntary shutdown, the Paradigm Peptides sentence and the Apex Peptides search reports, in one documented timeline.",
+    image: "documents",
+  },
+  {
+    slug: "compliant-research-peptide-supplier",
+    category: "Guide",
+    date: "September 24, 2026",
+    readTime: "6 min read",
+    title: "What to Check in a Research Peptide Supplier",
+    excerpt:
+      "Batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence.",
+    image: "labBeakers",
+  },
+];
 
-const categoryColors: Record<string, string> = {
-  Industry: "bg-orange-50 text-orange-700",
-  Regulatory: "bg-blue-50 text-blue-700",
-  Research: "bg-green-50 text-green-700",
-};
-
-function SectionLabel({ label, id }: { label: string; id?: string }) {
+function CardMeta({ a }: { a: CardArticle }) {
   return (
-    <div id={id} className="flex items-center gap-3 mb-6">
-      <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 shrink-0">{label}</h2>
-      <div className="flex-1 h-px bg-gray-200" />
+    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[color:var(--color-muted)]">
+      <span className="kicker text-[color:var(--color-accent)]">{a.category}</span>
+      <span aria-hidden>·</span>
+      <span>{a.readTime}</span>
     </div>
   );
 }
 
-function ArticleCard({ a }: { a: typeof industryArticles[0] }) {
+function ArticleCard({ a, sizes }: { a: CardArticle; sizes: string }) {
+  const img = images[a.image];
   return (
-    <article className="flex flex-col">
-      <div className="flex items-center gap-2 mb-3">
-        <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${categoryColors[a.category]}`}>
-          {a.category}
-        </span>
-        <span className="text-xs text-gray-400">{a.readTime}</span>
-      </div>
-      <Link href={`/${a.slug}`} className="group flex-1">
-        <h3
-          className="text-lg font-semibold text-gray-900 leading-snug mb-2 group-hover:text-blue-700 transition-colors"
-          style={{ fontFamily: "var(--font-lora), Georgia, serif" }}
-        >
+    <article className="group flex flex-col">
+      <Link href={`/${a.slug}`} className="block overflow-hidden bg-[color:var(--color-paper-deep)] aspect-[16/10] mb-4">
+        <Image
+          src={img.src}
+          width={img.width}
+          height={img.height}
+          alt={img.alt}
+          sizes={sizes}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        />
+      </Link>
+      <CardMeta a={a} />
+      <Link href={`/${a.slug}`} className="mt-2 flex-1">
+        <h3 className="font-serif text-[1.3rem] leading-[1.25] font-semibold text-[color:var(--color-ink)] group-hover:text-[color:var(--color-accent)] transition-colors">
           {a.title}
         </h3>
-        <p className="text-sm text-gray-500 leading-relaxed">{a.excerpt}</p>
+        <p className="mt-2 text-[0.975rem] leading-relaxed text-[color:var(--color-muted)]">{a.excerpt}</p>
       </Link>
-      <div className="mt-3 text-xs text-gray-400">{a.date}</div>
+      <div className="mt-3 text-xs text-[color:var(--color-muted)]">{a.date}</div>
     </article>
   );
 }
 
 // Inline sponsor block — looks editorial
-function SponsorBlock({
-  headline,
-  body,
-  cta,
-}: {
-  headline: string;
-  body: string;
-  cta: string;
-}) {
+function SponsorBlock({ headline, body, cta }: { headline: string; body: string; cta: string }) {
   return (
-    <div className="my-12 border border-gray-200 rounded-xl bg-gray-50 p-6 flex flex-col md:flex-row md:items-center gap-5">
+    <div className="my-14 border-y border-[color:var(--color-rule)] bg-[color:var(--color-card)] px-5 py-6 sm:px-7 flex flex-col md:flex-row md:items-center gap-5">
       <div className="flex-1">
-        <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-        <p
-          className="text-base font-semibold text-gray-900 mb-1"
-          style={{ fontFamily: "var(--font-lora), Georgia, serif" }}
-        >
-          {headline}
-        </p>
-        <p className="text-sm text-gray-500">{body}</p>
+        <div className="kicker text-[color:var(--color-muted)] mb-1">Partner</div>
+        <p className="font-serif text-lg font-semibold text-[color:var(--color-ink)] mb-1">{headline}</p>
+        <p className="text-[0.95rem] text-[color:var(--color-muted)]">{body}</p>
       </div>
       <a
         href="https://www.iqonhealth.com/shop"
         target="_blank"
         rel="noopener noreferrer"
-        className="shrink-0 inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors"
+        className="shrink-0 self-start md:self-auto inline-flex items-center px-5 py-2.5 rounded-full border border-[color:var(--color-ink)] text-[color:var(--color-ink)] text-sm font-semibold hover:bg-[color:var(--color-ink)] hover:text-[color:var(--color-paper)] transition-colors"
       >
         {cta}
       </a>
@@ -143,45 +170,75 @@ function SponsorBlock({
 }
 
 export default function Home() {
+  const lead = images[featuredArticle.image];
+  const [second, third, ...rest] = industryArticles;
   return (
     <>
       <Nav />
 
-      <main className="max-w-5xl mx-auto px-6 pt-12 pb-6">
-
-        {/* Featured article */}
-        <div className="mb-10 border-b border-gray-200 pb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${categoryColors[featuredArticle.category]}`}>
-              {featuredArticle.category}
-            </span>
-            <span className="text-xs text-gray-400">{featuredArticle.date}</span>
-            <span className="text-xs text-gray-400">·</span>
-            <span className="text-xs text-gray-400">{featuredArticle.readTime}</span>
-          </div>
-          <Link href={`/${featuredArticle.slug}`} className="group">
-            <h1
-              className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 group-hover:text-blue-700 transition-colors"
-              style={{ fontFamily: "var(--font-lora), Georgia, serif" }}
-            >
-              {featuredArticle.title}
-            </h1>
-          </Link>
-          <p className="text-gray-500 text-lg leading-relaxed max-w-2xl">
-            {featuredArticle.excerpt}
-          </p>
-          <Link
-            href={`/${featuredArticle.slug}`}
-            className="inline-flex items-center mt-5 text-sm font-medium text-blue-700 hover:text-blue-900 transition-colors"
-          >
-            Read full article →
-          </Link>
+      <main className="max-w-6xl mx-auto px-5 sm:px-6 pt-6 sm:pt-10 pb-6">
+        {/* Masthead date line */}
+        <div className="flex items-center justify-between border-b-2 border-[color:var(--color-ink)] pb-2 mb-8 text-xs text-[color:var(--color-muted)]">
+          <span className="kicker">Research · Regulation · Industry</span>
+          <span className="hidden sm:inline">Independent reporting</span>
         </div>
+
+        {/* Top story + two secondary stories */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 mb-12 border-b border-[color:var(--color-rule)]">
+          <article className="lg:col-span-8 group">
+            <Link href={`/${featuredArticle.slug}`} className="block">
+              <figure>
+                <div className="overflow-hidden bg-[color:var(--color-paper-deep)] aspect-[16/10] -mx-5 sm:mx-0">
+                  <Image
+                    src={lead.src}
+                    width={lead.width}
+                    height={lead.height}
+                    alt={lead.alt}
+                    preload
+                    sizes="(max-width: 1024px) 100vw, 740px"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                </div>
+                <figcaption className="mt-2 text-xs text-[color:var(--color-muted)]">
+                  {lead.caption} <span className="credit">Photo: {lead.photographer} / Unsplash</span>
+                </figcaption>
+              </figure>
+            </Link>
+            <div className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[color:var(--color-muted)]">
+              <span className="kicker text-[color:var(--color-accent)]">{featuredArticle.category}</span>
+              <span aria-hidden>·</span>
+              <span>{featuredArticle.date}</span>
+              <span aria-hidden>·</span>
+              <span>{featuredArticle.readTime}</span>
+            </div>
+            <Link href={`/${featuredArticle.slug}`}>
+              <h1 className="mt-3 font-serif font-bold text-[color:var(--color-ink)] text-[2rem] sm:text-[2.6rem] lg:text-[2.9rem] leading-[1.08] tracking-[-0.015em] group-hover:text-[color:var(--color-accent)] transition-colors">
+                {featuredArticle.title}
+              </h1>
+            </Link>
+            <p className="mt-4 font-serif text-[1.15rem] sm:text-[1.25rem] leading-[1.5] text-[color:var(--color-muted)] max-w-[40rem]">
+              {featuredArticle.excerpt}
+            </p>
+            <Link
+              href={`/${featuredArticle.slug}`}
+              className="inline-flex items-center mt-5 text-sm font-semibold text-[color:var(--color-ink)] border-b border-[color:var(--color-ink)] pb-0.5 hover:text-[color:var(--color-accent)] hover:border-[color:var(--color-accent)] transition-colors"
+            >
+              Read full article →
+            </Link>
+          </article>
+
+          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-10 lg:border-l lg:border-[color:var(--color-rule)] lg:pl-10">
+            <ArticleCard a={second} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px" />
+            <ArticleCard a={third} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px" />
+          </div>
+        </section>
 
         {/* Industry section */}
         <SectionLabel label="Industry" id="industry" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          {industryArticles.map((a) => <ArticleCard key={a.slug} a={a} />)}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mb-4">
+          {rest.map((a) => (
+            <ArticleCard key={a.slug} a={a} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 270px" />
+          ))}
         </div>
 
         {/* Sponsor block 1 — after industry news */}
@@ -193,62 +250,38 @@ export default function Home() {
 
         {/* Regulatory section */}
         <SectionLabel label="Regulatory" id="regulatory" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-          {[
-            {
-              slug: "peptide-enforcement-2026",
-              category: "Regulatory",
-              date: "September 24, 2026",
-              readTime: "8 min read",
-              title: "2026 Peptide Enforcement Timeline: Every Major Action",
-              excerpt: "Peptide Sciences, Amino Asylum, Paradigm Peptides, Apex Peptides — a complete timeline of federal enforcement actions against research peptide suppliers in 2026.",
-            },
-            {
-              slug: "what-makes-a-compliant-peptide-supplier-2026",
-              category: "Regulatory",
-              date: "September 10, 2026",
-              readTime: "7 min read",
-              title: "What a Compliant Research Peptide Supplier Looks Like in 2026",
-              excerpt: "As enforcement actions increase, compliance differentiation between suppliers matters more than ever. Here is what to look for.",
-            },
-          ].map((a) => <ArticleCard key={a.slug} a={a} />)}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 mb-4">
+          {regulatoryArticles.map((a) => (
+            <ArticleCard key={a.slug} a={a} sizes="(max-width: 768px) 100vw, 540px" />
+          ))}
         </div>
 
-        {/* Sponsor block 3 — after regulatory, pre-footer */}
-        <div className="my-12 rounded-xl border border-gray-200 overflow-hidden">
-          <div className="bg-gray-900 px-6 py-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Partner</div>
-              <p className="text-white font-semibold text-base" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-                IQON Health
-              </p>
-              <p className="text-gray-400 text-sm mt-1">
-                Featured on The Peptide Digest. Confirm all details directly with IQON Health.
-              </p>
-            </div>
-            <a
-              href="https://www.iqonhealth.com/shop"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center px-5 py-2.5 rounded-lg bg-white text-gray-900 text-sm font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Visit IQON Health →
-            </a>
+        {/* Sponsor block 3 — after regulatory, pre-footer (light) */}
+        <div className="my-14 rounded-sm border border-[color:var(--color-rule)] bg-[color:var(--color-paper-deep)] px-5 py-6 sm:px-7 flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div>
+            <div className="kicker text-[color:var(--color-muted)] mb-1">Partner</div>
+            <p className="font-serif text-lg font-semibold text-[color:var(--color-ink)]">IQON Health</p>
+            <p className="text-[0.95rem] text-[color:var(--color-muted)] mt-1">
+              Featured on The Peptide Digest. Confirm all details directly with IQON Health.
+            </p>
           </div>
+          <a
+            href="https://www.iqonhealth.com/shop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 self-start md:self-auto inline-flex items-center px-5 py-2.5 rounded-full border border-[color:var(--color-ink)] text-[color:var(--color-ink)] text-sm font-semibold hover:bg-[color:var(--color-ink)] hover:text-[color:var(--color-paper)] transition-colors"
+          >
+            Visit IQON Health →
+          </a>
         </div>
 
         {/* About */}
-        <div id="about" className="border-t border-gray-200 pt-10">
-          <h2
-            className="text-xl font-semibold text-gray-900 mb-3"
-            style={{ fontFamily: "var(--font-lora), Georgia, serif" }}
-          >
-            About The Peptide Digest
-          </h2>
-          <p className="text-gray-500 text-sm leading-relaxed max-w-2xl">
+        <div id="about" className="scroll-mt-20 border-t border-[color:var(--color-rule)] pt-10 max-w-[42rem]">
+          <h2 className="font-serif text-2xl font-semibold text-[color:var(--color-ink)] mb-3">About The Peptide Digest</h2>
+          <p className="text-[color:var(--color-body)] text-[1.05rem] leading-relaxed">
             The Peptide Digest is an independent publication covering the science, regulation, and market developments around research peptides. We follow the regulatory and enforcement landscape closely and aim to give researchers and industry observers clear, factual information without hype or agenda.
           </p>
-          <p className="text-gray-400 text-xs mt-3">
+          <p className="text-[color:var(--color-muted)] text-xs mt-3">
             Content is for informational purposes only. Nothing here constitutes medical advice or an endorsement of any product.
           </p>
         </div>

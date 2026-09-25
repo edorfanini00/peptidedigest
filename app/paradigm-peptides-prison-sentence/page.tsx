@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { ArticleHero } from "@/components/ArticleHero";
 
 export const metadata: Metadata = {
   title: "Paradigm Peptides Sentence: Matthew Kawa Receives 70 Months",
@@ -57,19 +58,16 @@ export default function ParadigmPeptidesSentence() {
     <>
       <Nav />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <main className="max-w-2xl mx-auto px-6 py-12">
-        <div className="flex items-center gap-2 text-xs text-gray-400 mb-8">
-          <Link href="/" className="hover:text-gray-700 transition-colors">The Peptide Digest</Link>
-          <span>/</span>
-          <span className="bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium">Criminal</span>
-        </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          Paradigm Peptides: Matthew Kawa Sentenced to 70 Months
-        </h1>
-        <div className="flex items-center gap-4 text-xs text-gray-400 mb-8 pb-8 border-b border-gray-200">
-          <time dateTime="2026-08-01">August 1, 2026</time><span>·</span><span>Updated September 25, 2026</span><span>·</span><span>The Peptide Digest Staff</span>
-        </div>
-        <div className="text-[15px] leading-relaxed space-y-5 text-gray-700">
+      <main className="article-shell">
+        <ArticleHero
+          category="Criminal"
+          title={<>Paradigm Peptides: Matthew Kawa Sentenced to 70 Months</>}
+          dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and research supplier documentation checks."}
+          meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 25, 2026</span></>}
+          image="courthouse"
+        />
+
+        <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
             Matthew Kawa, owner of Paradigm Peptides, was sentenced to 70 months in federal prison on July 30, 2026. His sister and employee, Jennifer Stechkober, received 16 months. The dates and prison terms appear in the{" "}

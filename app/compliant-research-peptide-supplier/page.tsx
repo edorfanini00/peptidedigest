@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { ArticleHero } from "@/components/ArticleHero";
 
 export const metadata: Metadata = {
   title: "What to Check in a Research Peptide Supplier: Documentation and Positioning",
@@ -45,26 +46,16 @@ export default function CompliantSupplier() {
     <>
       <Nav />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <main className="max-w-2xl mx-auto px-6 py-12">
-        <div className="flex items-center gap-2 text-xs text-gray-400 mb-8">
-          <Link href="/" className="hover:text-gray-700 transition-colors">The Peptide Digest</Link>
-          <span>/</span>
-          <span className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full font-medium">Industry</span>
-        </div>
+      <main className="article-shell">
+        <ArticleHero
+          category="Industry"
+          title={<>What to Check in a Research Peptide Supplier</>}
+          dek={"After multiple enforcement actions in 2026, batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence."}
+          meta={<><time dateTime="2026-09-10">September 10, 2026</time><span>Updated September 25, 2026</span></>}
+          image="labBeakers"
+        />
 
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          What to Check in a Research Peptide Supplier
-        </h1>
-
-        <div className="flex items-center gap-4 text-xs text-gray-400 mb-8 pb-8 border-b border-gray-200">
-          <time dateTime="2026-09-10">September 10, 2026</time>
-          <span>·</span>
-          <span>Updated September 25, 2026</span>
-          <span>·</span>
-          <span>The Peptide Digest Staff</span>
-        </div>
-
-        <div className="text-[15px] leading-relaxed space-y-5 text-gray-700">
+        <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
             Choosing a research peptide supplier involves assessing claims that cannot be verified by reading a label. The 2026 enforcement period illustrates this: some suppliers described as tested and domestic were neither. Five checks help separate stated policies from evidence.
           </p>

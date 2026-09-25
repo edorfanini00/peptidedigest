@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { ArticleHero } from "@/components/ArticleHero";
+import { KeyFacts, PullQuote } from "@/components/Editorial";
 
 export const metadata: Metadata = {
   title: "Apex Peptides raid: what researchers need to know",
@@ -107,26 +109,16 @@ export default function ApexRaidedArticle() {
     <>
       <Nav />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <main className="max-w-2xl mx-auto px-6 py-12">
-        <div className="flex items-center gap-2 text-xs text-gray-400 mb-8">
-          <Link href="/" className="hover:text-gray-700 transition-colors">The Peptide Digest</Link>
-          <span>/</span>
-          <span className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full font-medium">Industry</span>
-        </div>
+      <main className="article-shell">
+        <ArticleHero
+          category="Industry"
+          title={<>Apex Peptides Raid: What Researchers Need to Know</>}
+          dek={"Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier."}
+          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
+          image="federalBuilding"
+        />
 
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          Apex Peptides Raid: What Researchers Need to Know
-        </h1>
-
-        <div className="flex items-center gap-4 text-xs text-gray-400 mb-8 pb-8 border-b border-gray-200">
-          <time dateTime="2026-09-24">September 24, 2026</time>
-          <span>·</span>
-          <span>Updated September 25, 2026</span>
-          <span>·</span>
-          <span>The Peptide Digest Staff</span>
-        </div>
-
-        <div className="text-[15px] leading-relaxed space-y-5 text-gray-700">
+        <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
             Federal agents searched properties connected to Apex businesses in North Sioux City, South Dakota, on September 23, 2026. Local reporting links those businesses to Apex Peptides. The reports establish that searches took place; they do not establish the specific charges or the outcome for peptide orders.
@@ -136,6 +128,15 @@ export default function ApexRaidedArticle() {
             <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KTIV reports</a> that the U.S. Postal Inspection Service led the investigation, with the FBI and local police involved.{" "}
             <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KSCJ&apos;s September 23 report</a> describes agents removing boxes from 503 Prosperity Way. The search date was September 23, not September 24 as an earlier version of this article stated.
           </p>
+
+          <KeyFacts
+            items={[
+              "KTIV reports that the U.S. Postal Inspection Service led the investigation, with the FBI and local police involved.",
+              "Local coverage identifies 503 Prosperity Way, the address of Apex Waste Management and Apex Research, and a home in Dakota Dunes.",
+              "A search does not prove guilt, and the number of agencies involved does not establish a particular offense.",
+              "Customers should seek written confirmation of fulfillment or a refund rather than rely on a predicted reopening date.",
+            ]}
+          />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             Which Apex properties were searched?
@@ -185,6 +186,8 @@ export default function ApexRaidedArticle() {
             FDA scrutiny of research labeling is relevant background, not evidence against Apex. In its{" "}
             <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">March 31, 2026 warning letter to Gram Peptides</a>, the FDA cited product claims as evidence of intended human use despite research disclaimers. That letter concerns a different supplier.
           </p>
+
+          <PullQuote>A research use only label or a polished certificate is not a compliance guarantee.</PullQuote>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             If you have an outstanding Apex order

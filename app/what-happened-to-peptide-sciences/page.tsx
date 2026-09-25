@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { ArticleHero } from "@/components/ArticleHero";
 
 export const metadata: Metadata = {
   title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
@@ -57,19 +58,16 @@ export default function PeptideSciencesShutdown() {
     <>
       <Nav />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <main className="max-w-2xl mx-auto px-6 py-12">
-        <div className="flex items-center gap-2 text-xs text-gray-400 mb-8">
-          <Link href="/" className="hover:text-gray-700 transition-colors">The Peptide Digest</Link>
-          <span>/</span>
-          <span className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full font-medium">Industry</span>
-        </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-5" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          What Happened to Peptide Sciences?
-        </h1>
-        <div className="flex items-center gap-4 text-xs text-gray-400 mb-8 pb-8 border-b border-gray-200">
-          <time dateTime="2026-03-10">March 10, 2026</time><span>·</span><span>Updated September 25, 2026</span><span>·</span><span>The Peptide Digest Staff</span>
-        </div>
-        <div className="text-[15px] leading-relaxed space-y-5 text-gray-700">
+      <main className="article-shell">
+        <ArticleHero
+          category="Industry"
+          title={<>What Happened to Peptide Sciences?</>}
+          dek={"Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier."}
+          meta={<><time dateTime="2026-03-10">March 10, 2026</time><span>Updated September 25, 2026</span></>}
+          image="labFlasks"
+        />
+
+        <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
             Peptide Sciences says it has voluntarily shut down operations and discontinued the sale of its research products. That is the explanation in the company&apos;s{" "}
