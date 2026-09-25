@@ -116,7 +116,7 @@ export default function StateCrackdown2026() {
           title={<>{TITLE}</>}
           dek={"Alabama, Mississippi and South Carolina medical boards told licensed providers in 2026 they may not use research-grade peptides with patients. Ohio's pharmacy board says clinics cannot possess them."}
           meta={<><time dateTime="2026-09-25">September 25, 2026</time></>}
-          image="federalBuilding"
+          image="alabamaCapitol"
         />
 
         <div className="article-body">

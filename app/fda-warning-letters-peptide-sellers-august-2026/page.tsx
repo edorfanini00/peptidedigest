@@ -96,7 +96,7 @@ export default function Page() {
           title={<>{TITLE}</>}
           dek={"FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding."}
           meta={<><time dateTime="2026-09-25">September 25, 2026</time></>}
-          image="envelopes"
+          image="fdaSign"
         />
 
         <div className="article-body">

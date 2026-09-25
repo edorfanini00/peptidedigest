@@ -24,7 +24,7 @@ const featuredArticle: CardArticle = {
   title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know",
   excerpt:
     "Local reports place federal searches at Apex-linked properties on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
-  image: "warehouse",
+  image: "fbiErt",
 };
 
 const industryArticles: CardArticle[] = [
@@ -36,7 +36,7 @@ const industryArticles: CardArticle[] = [
     title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
     excerpt:
       "Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier.",
-    image: "labFlasks",
+    image: "researchVials",
   },
   {
     slug: "amino-asylum-raid-what-happened",
@@ -46,7 +46,7 @@ const industryArticles: CardArticle[] = [
     title: "Amino Asylum Shutdown Reports: What Is Documented",
     excerpt:
       "Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and how to evaluate a research alternative.",
-    image: "shippingBox",
+    image: "padlock",
   },
   {
     slug: "paradigm-peptides-prison-sentence",
@@ -56,7 +56,7 @@ const industryArticles: CardArticle[] = [
     title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
     excerpt:
       "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what it means for supplier documentation.",
-    image: "gavel",
+    image: "dojBuilding",
   },
 ];
 
@@ -69,7 +69,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "How to Read a Research Peptide Certificate of Analysis (COA)",
     excerpt:
       "Purity, identity, lot numbers and the lab's name: what each part of a peptide COA tells you, and how to check that the report is real.",
-    image: "labBeakers",
+    image: "hplc",
   },
   {
     slug: "what-does-research-use-only-mean",
@@ -89,7 +89,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "Eli Lilly Sues Research Use Only Peptide Sellers: The 2026 Cases Explained",
     excerpt:
       "On August 12, 2026, Eli Lilly filed six federal civil lawsuits, four against online research use only peptide sellers. Here are the parties, courts, claims and what the cases signal.",
-    image: "courthouse",
+    image: "lillyHq",
   },
   {
     slug: "fda-warning-letters-peptide-sellers-august-2026",
@@ -99,7 +99,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "FDA's August 24, 2026 Warning Letters to Online Peptide Sellers",
     excerpt:
       "FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding.",
-    image: "envelopes",
+    image: "fdaSign",
   },
   {
     slug: "state-crackdown-research-peptides-2026",
@@ -109,7 +109,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "Which States Are Cracking Down on Research-Grade Peptides in 2026?",
     excerpt:
       "Alabama, Mississippi and South Carolina medical boards told licensed providers in 2026 they may not use research-grade peptides with patients. Ohio's pharmacy board says clinics cannot possess them.",
-    image: "federalBuilding",
+    image: "alabamaCapitol",
   },
   {
     slug: "peptide-enforcement-2026",
@@ -119,7 +119,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "2026 Peptide Enforcement: The Major Documented Actions",
     excerpt:
       "Peptide Sciences' voluntary shutdown, the Paradigm Peptides sentence and the Apex Peptides search reports, in one documented timeline.",
-    image: "documents",
+    image: "gavel",
   },
   {
     slug: "compliant-research-peptide-supplier",
@@ -129,7 +129,7 @@ const regulatoryArticles: CardArticle[] = [
     title: "What to Check in a Research Peptide Supplier",
     excerpt:
       "Batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence.",
-    image: "microscope",
+    image: "lcms",
   },
 ];
 
@@ -201,7 +201,7 @@ export default function Home() {
                   />
                 </div>
                 <figcaption className="mt-2 text-xs text-[color:var(--color-muted)]">
-                  {lead.caption} <span className="credit">Photo: {lead.photographer} / Unsplash</span>
+                  {lead.caption} <span className="credit">Photo: {"credit" in lead && lead.credit ? lead.credit.replace(/^Photo: /, "") : `${lead.photographer} / Unsplash`}</span>
                 </figcaption>
               </figure>
             </Link>

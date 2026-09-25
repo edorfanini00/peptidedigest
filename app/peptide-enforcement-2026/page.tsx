@@ -73,7 +73,7 @@ export default function EnforcementTimeline() {
           title={<>2026 Peptide Enforcement: The Major Documented Actions</>}
           dek={"Timeline of 2026 enforcement actions against research peptide suppliers: Peptide Sciences voluntary shutdown, Paradigm Peptides sentence, and Apex Peptides search reports."}
           meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
-          image="documents"
+          image="gavel"
         />
 
         <div className="article-body">

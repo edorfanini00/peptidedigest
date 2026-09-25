@@ -51,7 +51,7 @@ export function ArticleHero({ category, title, dek, meta, image }: ArticleHeroPr
           <span className="credit">
             Photo:{" "}
             <a href={img.sourceUrl} target="_blank" rel="noopener noreferrer">
-              {img.photographer} / Unsplash
+              {"credit" in img && img.credit ? img.credit.replace(/^Photo: /, "") : `${img.photographer} / Unsplash`}
             </a>
           </span>
         </figcaption>

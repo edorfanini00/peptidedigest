@@ -54,7 +54,7 @@ export default function PeptideSciencesShutdown() {
           title={<>What Happened to Peptide Sciences?</>}
           dek={"Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier."}
           meta={<><time dateTime="2026-03-10">March 10, 2026</time><span>Updated September 25, 2026</span></>}
-          image="labFlasks"
+          image="researchVials"
         />
 
         <div className="article-body">

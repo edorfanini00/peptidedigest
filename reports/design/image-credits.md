@@ -23,6 +23,19 @@ Every image is **illustrative stock**. Captions on the site say so; none depicts
 | microscope.jpg | A researcher working at a laboratory microscope | National Cancer Institute | https://unsplash.com/photos/rHfsPolwIgk |
 | test-tubes.jpg | A rack of laboratory test tubes | National Cancer Institute | https://unsplash.com/photos/RuTQYiOOz0Y |
 
+### Wikimedia Commons (license per row)
+| File | Subject | Author (license) | Source |
+|---|---|---|---|
+| fbi-evidence-team.jpg | FBI Evidence Response Team members in protective suits collecting evidence outdoors | FBI (Public domain) | https://commons.wikimedia.org/wiki/File:FBI_Evidence_Response_Team_2.jpg |
+| north-sioux-city.jpg | City hall in North Sioux City, South Dakota | TheCatalyst31 (CC0) | https://commons.wikimedia.org/wiki/File:City_hall,_North_Sioux_City,_SD.jpg |
+| doj-building.jpg | Robert F. Kennedy Department of Justice Building in Washington, D.C. | APK (CC BY 4.0) | https://commons.wikimedia.org/wiki/File:Robert_F._Kennedy_Department_of_Justice_Building.jpg |
+| hplc-system.jpg | An HPLC system on a laboratory bench | Dqwyy (CC0) | https://commons.wikimedia.org/wiki/File:High-performance_liquid_chromatography.jpg |
+| lilly-hq.jpg | Eli Lilly Corporate Center in Indianapolis, Indiana | Momoneymoproblemz (CC BY-SA 4.0) | https://commons.wikimedia.org/wiki/File:Eli_Lilly_Corporate_Center,_Indianapolis,_Indiana,_USA.jpg |
+| fda-white-oak.jpg | FDA sign at the entrance to the White Oak campus | U.S. Food and Drug Administration (Public domain) | https://commons.wikimedia.org/wiki/File:FDA_Sign_%26_Bldg_21_at_Entrance_(5204602349).jpg |
+| alabama-capitol.jpg | Alabama State Capitol in Montgomery | DXR (CC BY-SA 4.0) | https://commons.wikimedia.org/wiki/File:Alabama_State_Capitol,_Montgomery,_South_view_20160713_1.jpg |
+| lc-ms-lab.jpg | A liquid chromatograph with mass spectrometer in a laboratory | Sarka Na kopci (CC BY-SA 4.0) | https://commons.wikimedia.org/wiki/File:Liquid_chromatograph_with_mass_spectrometer_in_CAFIA_laboratory,_Czech_Republic.png |
+| research-vials.jpg | Gloved hand working with research sample vials and well plates | National Center for Advancing Translational Sciences (Public domain) | https://commons.wikimedia.org/wiki/File:Vials_(32419676518).jpg |
+
 ## Not used
 - `laboratory-glassware-with-colorful-liquids-sH8iXXPbf9Q` — resolves to an **Unsplash+ (premium)** asset (plus.unsplash.com), not free-licensed; download returned 403. Skipped.
 - `cardboard-shipping-boxes-on-dark-surface-wKeZstqxKTQ` — visible Amazon branding. Skipped.

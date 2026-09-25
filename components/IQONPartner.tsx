@@ -43,15 +43,15 @@ export function IQONPartner({
     );
   }
   return (
-    <aside className="not-prose my-10 overflow-hidden rounded-2xl border border-[color:var(--color-rule)] bg-[color:var(--color-accent-soft)]">
-      <div className="grid grid-cols-[1fr_auto] items-center gap-4 p-6 sm:p-8">
+    <aside className="not-prose my-10 overflow-hidden max-w-full rounded-2xl border border-[color:var(--color-rule)] bg-[color:var(--color-accent-soft)]">
+      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 p-5 sm:p-8">
         <div>
           <h3 className="font-serif text-2xl sm:text-[1.75rem] font-bold text-[color:var(--color-ink)] leading-tight">IQON Health</h3>
           <p className="mt-2 text-[15px] text-[color:var(--color-body)] max-w-sm">{text}</p>
           <a href={SHOP} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center whitespace-nowrap rounded-full bg-[color:var(--color-ink)] px-6 py-3 text-sm font-semibold text-white hover:bg-[color:var(--color-accent)] transition-colors">{cta}</a>
           <p className="mt-3 text-xs text-[color:var(--color-muted)]">For research use only. Not for human consumption.</p>
         </div>
-        <a href={SHOP} target="_blank" rel="noopener noreferrer" className="block w-32 sm:w-44">
+        <a href={SHOP} target="_blank" rel="noopener noreferrer" className="block w-24 sm:w-44">
           <Image src={src} alt={vialAlt[vial]} width={260} height={348} className="w-full h-auto object-contain drop-shadow-xl" />
         </a>
       </div>

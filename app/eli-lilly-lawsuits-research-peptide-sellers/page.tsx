@@ -106,7 +106,7 @@ export default function Page() {
           title={<>{TITLE}</>}
           dek={"On August 12, 2026, Eli Lilly filed six federal civil lawsuits, four against online research use only peptide sellers. Here are the parties, courts, claims and what the cases signal."}
           meta={<><time dateTime="2026-09-25">September 25, 2026</time></>}
-          image="courthouse"
+          image="lillyHq"
         />
 
         <div className="article-body">

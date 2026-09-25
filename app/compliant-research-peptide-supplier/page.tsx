@@ -53,7 +53,7 @@ export default function CompliantSupplier() {
           title={<>What to Check in a Research Peptide Supplier</>}
           dek={"After multiple enforcement actions in 2026, batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence."}
           meta={<><time dateTime="2026-09-10">September 10, 2026</time><span>Updated September 25, 2026</span></>}
-          image="microscope"
+          image="lcms"
         />
 
         <div className="article-body">

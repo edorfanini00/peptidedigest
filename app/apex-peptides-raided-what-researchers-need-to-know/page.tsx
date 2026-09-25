@@ -103,7 +103,7 @@ export default function ApexRaidedArticle() {
           title={<>Apex Peptides Raid: What Researchers Need to Know</>}
           dek={"Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier."}
           meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
-          image="warehouse"
+          image="fbiErt"
         />
 
         <div className="article-body">

@@ -55,7 +55,7 @@ export default function AminoAsylumRaid() {
           title={<>Amino Asylum Raid: What Happened and What Is Documented</>}
           dek={"Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and how to evaluate a research alternative."}
           meta={<><time dateTime="2026-01-15">January 15, 2026</time><span>Updated September 25, 2026</span></>}
-          image="shippingBox"
+          image="padlock"
         />
 
         <div className="article-body">

@@ -287,3 +287,5 @@ main p, main li { overflow-wrap: break-word; }
 
 .article-body > ul { list-style: disc outside; padding-left: 1.4rem; }
 .article-body > ol { list-style: decimal outside; padding-left: 1.4rem; }
+
+.caption .credit, .caption .credit a { white-space: normal; overflow-wrap: anywhere; }

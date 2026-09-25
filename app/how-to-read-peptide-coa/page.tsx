@@ -98,7 +98,7 @@ export default function Page() {
           title={<>{TITLE}</>}
           dek={"Purity, identity, lot numbers and the lab's name: what each part of a peptide COA tells you, and how to check that the report is real."}
           meta={<><time dateTime="2026-09-25">September 25, 2026</time></>}
-          image="labBeakers"
+          image="hplc"
         />
 
         <div className="article-body">

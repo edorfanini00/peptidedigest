@@ -54,7 +54,7 @@ export default function ParadigmPeptidesSentence() {
           title={<>Paradigm Peptides: Matthew Kawa Sentenced to 70 Months</>}
           dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and research supplier documentation checks."}
           meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 25, 2026</span></>}
-          image="gavel"
+          image="dojBuilding"
         />
 
         <div className="article-body">
