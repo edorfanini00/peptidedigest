@@ -226,11 +226,11 @@ export default function ApexRaidedArticle() {
           <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
             <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-              IQON Health — Research Peptides
-            </h3>
-            <p className="text-sm text-gray-500 mb-4">
-              Third-party tested. Research-use-only. US-based. COAs on every product. Confirm availability and documentation before ordering.
-            </p>
+                IQON Health — Documented. US-based. Research only.
+              </h3>
+              <p className="text-sm text-gray-500 mb-4">
+                Third-party tested batches. COA on every lot. Confirm availability and documentation before ordering. Not for human consumption.
+              </p>
             <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
               Browse the catalog →
             </a>
