@@ -6,6 +6,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/how-to-read-peptide-coa`,
+      lastModified: new Date("2026-09-25"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/what-does-research-use-only-mean`,
+      lastModified: new Date("2026-09-25"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/eli-lilly-lawsuits-research-peptide-sellers`,
       lastModified: new Date("2026-09-25"),
       changeFrequency: "monthly",
