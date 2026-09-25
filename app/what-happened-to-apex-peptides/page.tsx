@@ -61,7 +61,7 @@ export default function WhatHappenedApex() {
           category="Industry"
           title={<>What Happened to Apex Peptides?</>}
           meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
-          image="northSiouxCity"
+          image="apexWarehouse"
         />
 
         <div className="article-body">

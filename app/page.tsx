@@ -24,7 +24,7 @@ const featuredArticle: CardArticle = {
   title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know",
   excerpt:
     "Local reports place federal searches at Apex-linked properties on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
-  image: "fbiErt",
+  image: "apexRaid",
 };
 
 const industryArticles: CardArticle[] = [

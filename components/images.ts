@@ -239,6 +239,26 @@ export const images = {
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Vials_(32419676518).jpg",
     credit: "Photo: National Center for Advancing Translational Sciences / Wikimedia Commons (Public domain)",
   },
+  apexRaid: {
+    src: "/images/apex-raid-illustration.jpg",
+    width: 1600,
+    height: 893,
+    alt: "Illustration of FBI agents carrying evidence boxes out of a warehouse loading door",
+    caption: "AI-generated illustration of a federal search. Not a photo of the Apex Peptides search.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Photo: Illustration / The Peptide Digest",
+  },
+  apexWarehouse: {
+    src: "/images/apex-warehouse-illustration.jpg",
+    width: 1600,
+    height: 893,
+    alt: "Illustration of FBI agents outside a taped-off metal warehouse",
+    caption: "AI-generated illustration. Not a photo of any Apex-linked property.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Photo: Illustration / The Peptide Digest",
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
