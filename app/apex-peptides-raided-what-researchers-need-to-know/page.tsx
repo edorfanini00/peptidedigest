@@ -212,16 +212,21 @@ export default function ApexRaidedArticle() {
             <li><strong>Order terms:</strong> Confirm stock, dispatch estimates and the refund policy in writing.</li>
           </ul>
 
-          <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-              IQON Health
-            </h3>
-            <p className="text-sm text-gray-500 mb-4">
-              Confirm all details directly with IQON Health before purchasing.
-            </p>
-            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
-              Visit IQON Health →
+          <div className="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 flex items-center gap-6">
+            <div className="flex-1">
+              <div className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">Partner</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
+                IQON Health
+              </h3>
+              <p className="text-sm text-gray-500 mb-4">
+                Confirm all details directly with IQON Health before purchasing.
+              </p>
+              <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-5 py-2.5 rounded-lg bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors">
+                Visit IQON Health →
+              </a>
+            </div>
+            <a href="https://www.iqonhealth.com/shop" target="_blank" rel="noopener noreferrer" className="shrink-0">
+              <img src="/iqon-vial.png" alt="IQON Health vial" width={386} height={480} className="w-24 sm:w-32 h-auto" loading="lazy" />
             </a>
           </div>
 
