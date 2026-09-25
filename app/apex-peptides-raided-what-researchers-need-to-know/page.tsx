@@ -71,7 +71,7 @@ const articleJsonLd = {
           name: "What happened to Apex Peptides?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "On September 24, 2026, federal agents from the U.S. Postal Inspection Service, FBI, and IRS Criminal Investigation raided a North Sioux City, South Dakota address connected to Apex Peptides. More than a dozen agencies participated. The Apex Peptides website went non-operational following the raid.",
+            text: "On September 24, 2026, federal agents from the U.S. Postal Inspection Service, FBI, IRS Criminal Investigation, FDA, and the Union County Sheriff raided seven simultaneous locations connected to Apex Peptides in North Sioux City, South Dakota and the surrounding area. Owners Jared Miller and Riley Isaacson were arrested at a regional airport before boarding a private jet to Las Vegas. Ryan Isaacson, an investor and Riley's brother, had his home searched. The Apex Peptides website went non-operational following the raids.",
           },
         },
         {
@@ -190,11 +190,27 @@ export default function ApexRaidedArticle() {
           </h2>
 
           <p>
-            The primary address raided — 503 Prosperity Way in North Sioux City — housed several businesses, including Apex Waste Management and Apex Research. Apex Peptides was listed at a separate Sergeant Bluff, Iowa address but is connected to the same principals. The residential property searched belongs to Ryan Isaacson, whose twin brother Riley Isaacson is president of Apex Waste Management and Apex Research.
+            The primary address raided was in North Sioux City, South Dakota — a building that housed Apex Peptides alongside Apex Waste Management and at least five other shell companies believed to have been set up to funnel and launder proceeds. Apex Peptides had previously operated out of a sprinkler building in Sergeant Bluff, Iowa before relocating to a purpose-built facility.
           </p>
 
           <p>
-            As of publication, Apex Peptides&apos; website appears non-operational. No charges have been publicly announced, though federal enforcement actions of this scope — involving the Postal Inspection Service, FBI, and IRS CI simultaneously — typically indicate an ongoing criminal investigation.
+            The owners of Apex Peptides are identified in community reports as <strong>Jared Miller and Riley Isaacson</strong>. <strong>Ryan Isaacson</strong>, Riley&apos;s brother and an investor in the operation, had his home searched as part of the same warrant sweep. In total, seven locations were hit simultaneously: the main commercial building, four residential properties in the Dakota Dunes neighborhood (reportedly purchased for cash earlier this year), a separate business address in town, and several storage units.
+          </p>
+
+          <p>
+            Miller and Isaacson were arrested at a regional airport before they could board a private jet to Las Vegas, where they were scheduled to attend a Raiders game and had booked a shared suite with the owner of a luxury watch retailer — reportedly weeks after purchasing 100 watches from the same dealer. The lifestyle surrounding the operation included multiple Lamborghinis, Audis, Ford Raptors, a helicopter, and four houses paid for in cash. Community accounts describe $1,000 cash tips at local bars.
+          </p>
+
+          <p>
+            According to community accounts citing postal and local law enforcement sources, the investigation originated as a mail fraud case and expanded to include <strong>illegal narcotics distribution, money laundering, tax evasion, and sale of prescription drugs</strong>. The FDA seized at least two bank accounts. The local sheriff was separately involved in a parallel investigation related to distribution of steroids at local gyms — where, according to local accounts, Apex had been handing out free product vials for years.
+          </p>
+
+          <p>
+            The scale of the alleged operation is striking: community sources put annual revenue at approximately <strong>$150 million</strong>, with $4 million in a single Labor Day weekend. The company is also alleged to have supplied local IV clinics under the table, with clinic staff reportedly sourcing Apex product and distributing it to patients — a distribution pattern that falls squarely outside any legitimate research-use framing.
+          </p>
+
+          <p>
+            As of publication, the Apex Peptides website is non-operational. No formal charges have been publicly filed, though the scale and coordination of the enforcement action — seven simultaneous locations, four federal agencies, pre-planned airport intercept — indicates an investigation that had been running for some time before the raids.
           </p>
 
           <InlinePartner
