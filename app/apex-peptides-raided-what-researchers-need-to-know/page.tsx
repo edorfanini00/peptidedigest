@@ -4,7 +4,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know | Peptide Digest",
+  title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know | The Peptide Digest",
   description:
     "Federal agents from the U.S. Postal Inspection Service, FBI, and IRS CI raided Apex Peptides on September 24, 2026. Here is what happened, what it means, and how to evaluate alternative research peptide suppliers.",
   openGraph: {
@@ -22,7 +22,7 @@ export default function ApexRaidedArticle() {
       <main className="max-w-2xl mx-auto px-6 py-12">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs text-gray-400 mb-8">
-          <Link href="/" className="hover:text-gray-700 transition-colors">Peptide Digest</Link>
+          <Link href="/" className="hover:text-gray-700 transition-colors">The Peptide Digest</Link>
           <span>/</span>
           <span className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full font-medium">Industry</span>
         </div>
@@ -40,7 +40,7 @@ export default function ApexRaidedArticle() {
           <span>·</span>
           <span>6 min read</span>
           <span>·</span>
-          <span>Peptide Digest Staff</span>
+          <span>The Peptide Digest Staff</span>
         </div>
 
         {/* Article body */}
@@ -181,7 +181,7 @@ export default function ApexRaidedArticle() {
           </div>
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            This article is for informational purposes only. Peptide Digest does not provide medical advice, legal counsel, or product endorsements. All information is based on publicly available sources at the time of publication.
+            This article is for informational purposes only. The Peptide Digest does not provide medical advice, legal counsel, or product endorsements. All information is based on publicly available sources at the time of publication.
           </p>
         </div>
 

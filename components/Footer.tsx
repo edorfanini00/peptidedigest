@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="text-base font-semibold text-gray-900 mb-1" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            Peptide Digest
+            The Peptide Digest
           </div>
           <p className="text-xs text-gray-400 max-w-xs">
             Independent coverage of peptide science, regulatory developments, and industry news. For informational purposes only.
@@ -27,7 +27,7 @@ export function Footer() {
         </div>
       </div>
       <div className="max-w-5xl mx-auto px-6 mt-8 pt-6 border-t border-gray-100 text-xs text-gray-400">
-        © {new Date().getFullYear()} Peptide Digest. All rights reserved. Content is for informational purposes only and does not constitute medical advice.
+        © {new Date().getFullYear()} The Peptide Digest. All rights reserved. Content is for informational purposes only and does not constitute medical advice.
       </div>
     </footer>
   );

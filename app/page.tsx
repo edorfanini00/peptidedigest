@@ -258,10 +258,10 @@ export default function Home() {
             className="text-xl font-semibold text-gray-900 mb-3"
             style={{ fontFamily: "var(--font-lora), Georgia, serif" }}
           >
-            About Peptide Digest
+            About The Peptide Digest
           </h2>
           <p className="text-gray-500 text-sm leading-relaxed max-w-2xl">
-            Peptide Digest is an independent publication covering the science, regulation, and market developments around research peptides. We follow the regulatory and enforcement landscape closely and aim to give researchers and industry observers clear, factual information without hype or agenda.
+            The Peptide Digest is an independent publication covering the science, regulation, and market developments around research peptides. We follow the regulatory and enforcement landscape closely and aim to give researchers and industry observers clear, factual information without hype or agenda.
           </p>
           <p className="text-gray-400 text-xs mt-3">
             Content is for informational purposes only. Nothing here constitutes medical advice or an endorsement of any product.

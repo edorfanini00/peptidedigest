@@ -5,7 +5,7 @@ export function Nav() {
     <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold tracking-tight text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-          Peptide Digest
+          The Peptide Digest
         </Link>
         <div className="flex items-center gap-6 text-sm text-gray-500">
           <Link href="/#research" className="hover:text-gray-900 transition-colors">Research</Link>

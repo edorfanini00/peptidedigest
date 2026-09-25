@@ -18,11 +18,11 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Peptide Digest — Research, Science & Industry News",
+  title: "The Peptide Digest — Research, Science & Industry News",
   description: "Independent coverage of peptide research, regulatory developments, and the science behind compounds studied in labs worldwide.",
   metadataBase: new URL("https://peptidedigest.com"),
   openGraph: {
-    siteName: "Peptide Digest",
+    siteName: "The Peptide Digest",
     type: "website",
   },
 };
