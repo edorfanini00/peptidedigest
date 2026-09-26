@@ -72,26 +72,20 @@ export default function WhatHappenedApex() {
           <IQONPartner vial="glutathione" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
           <h2>What do local reports confirm?</h2>
-          <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV reported</a> searches at a North Sioux City property associated with Apex Waste Management and Apex Research and at a Dakota Dunes home on September 23. KTIV names the U.S. Postal Inspection Service as lead, with the FBI, IRS Criminal Investigation, Union County Sheriff&apos;s Office and North Sioux City Police present. Its review links Apex Peptides to the broader business group. Five more related registrations at a nearby unfinished building were reported, but KTIV did not report a search there.
-          </p>
-          <p>
-            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ observed</a> two unidentified people led away in handcuffs. <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business">KCAU said</a> it did not know whether charges had been filed. Their identities, arrests and charging status cannot be inferred from the observation.
-          </p>
+          <p><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s account</a> puts agents at 503 Prosperity Way in North Sioux City and at a Dakota Dunes home on September 23. The Postal Inspection Service led, with FBI, IRS Criminal Investigation and local agencies present, KTIV reported. Agents loaded a trailer, but officials did not identify what they collected. A search documents investigative action, not the reason or a finding of guilt.</p>
+          <p>The location is the critical qualification. KTIV lists several businesses at the searched property, yet says Apex Peptides, Apex Waste Management and Apex Research share a primary address in Sergeant Bluff. Its review also found five related registrations at an unfinished building at 498 Prosperity Way, but did not report a search there. Business affiliations connect the story to Apex Peptides; they do not establish a search of a distinct peptide facility.</p>
+          <p><a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a> and <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business/">KCAU</a> described two unidentified people escorted in handcuffs. KCAU did not know whether charges had been filed. It would be wrong to identify those people or convert the observation into a documented arrest.</p>
 
           <h2>Is Apex Peptides shut down?</h2>
-          <p>
-            On September 24, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU found workers inside Apex Waste Management</a>. Its separate check of the Apex Peptides website found a temporary-closure notice and all but one product removed. The waste-management visit does not answer whether peptide orders were shipping. The dated website observation does not establish a permanent closure or reopening date.
-          </p>
+          <p><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU checked the website on September 24</a> and saw a temporary-closure notice and all but one product removed. Its reporter also found workers inside Apex Waste Management. Those are two different observations about two related operations: workers at the waste business do not prove peptide shipments resumed, and a website message does not prove the company will never reopen.</p>
+          <p>A reader waiting for a package needs an order-specific answer. The cited reports do not say whether existing orders were fulfilled, cancelled or refunded. Treat the closure notice as a dated report rather than a live inventory or fulfillment feed.</p>
 
           <h2>Why were the properties searched?</h2>
-          <p>
-            Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">told KSCJ</a> the investigation was active and declined to give further details. The cited reports do not disclose the reason for the searches or identify charges arising from them. Agency participation alone is not evidence of a particular offense.
-          </p>
+          <p>Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">told KSCJ</a> agents were at multiple locations and declined details because the investigation was active. The reporting cited here does not identify a charge arising from these searches or explain their purpose. Participation by the Postal Inspection Service or IRS Criminal Investigation is not, by itself, evidence of a particular offense.</p>
 
           <h2>What can customers do about an order?</h2>
-          <p>Save the order confirmation and correspondence. Ask the seller for written fulfillment or refund status, and check the payment provider&apos;s dispute window if unresolved. For laboratory purchases, compare the legal seller, documentation for the offered lot and current order terms. Research products are not for human consumption.</p>
-
+          <p>Save the order confirmation, payment record and correspondence. Ask the original seller for written fulfillment or refund status; check your payment provider&apos;s dispute window if the order remains unresolved. No news report can settle an individual transaction without its records.</p>
+          <p>For an Apex Peptides alternative in laboratory work, check the legal seller, the specific lot&apos;s documentation and the current terms rather than assuming a familiar name or catalog guarantees continuity. Research materials are not for human consumption. A dated company update on orders or a public case filing could answer questions the search footage cannot.</p>
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">Frequently Asked Questions</h2>
             {(jsonLd["@graph"][1] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (

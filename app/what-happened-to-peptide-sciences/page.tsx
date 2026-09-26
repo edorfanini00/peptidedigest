@@ -33,7 +33,7 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What happened to Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences posted a voluntary-shutdown notice on its website on March 6, 2026. The notice says the company decided to discontinue research-product sales. It does not state that the DOJ or any agency directed the closure." } },
+        { "@type": "Question", name: "What happened to Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences says on its website that it voluntarily shut down operations and discontinued research-product sales. The notice does not say the DOJ or another agency directed the closure." } },
         { "@type": "Question", name: "Did the DOJ shut down Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "The company's notice does not say that. The sources reviewed for this article do not establish a DOJ-directed closure." } },
         { "@type": "Question", name: "Is Peptide Sciences coming back?", acceptedAnswer: { "@type": "Answer", text: "The published notice does not announce a reopening date. It warns that claimed successors and third-party sellers using its identity are unauthorized." } },
         { "@type": "Question", name: "What is a Peptide Sciences alternative?", acceptedAnswer: { "@type": "Answer", text: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Health is a commercial partner on this page, not an independently certified replacement." } },
@@ -65,45 +65,23 @@ export default function PeptideSciencesShutdown() {
 
           <IQONPartner vial="ghk" variant="inline" />
 
-          <p>
-            The notice remains more useful than a guessed reason for the closure. It confirms the end of research-product sales but does not explain the company&apos;s internal decision or resolve the status of each customer&apos;s order.
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the company&apos;s notice actually establish?</h2>
+          <p><a href="https://www.peptidesciences.com/">Peptide Sciences says</a> it decided to voluntarily shut down operations and discontinue sales of its research products. That is a statement from the company about its own decision. It does not identify a date of the decision, explain the business rationale, publish an order-by-order plan or give a reopening date. The company&apos;s wording should not be turned into a claim about individual refunds.</p>
+          <p>The notice retains the company&apos;s rights to its name and intellectual property and says websites or individuals claiming affiliation, successor status or permission to sell its products are unauthorized. That warning is the most concrete consumer-facing detail beyond the shutdown: a matching logo or a purported successor storefront does not verify the legal seller. The notice provides a reporting email for suspected misuse, but does not promise that emailing it will resolve an old order.</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What Peptide Sciences has said</h2>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Did the FDA or DOJ force the closure?</h2>
+          <p>The company&apos;s notice says &quot;voluntarily.&quot; It does not claim an agency ordered it to close. That word also cannot tell us which legal, financial or operational considerations informed its decision. Without a document linking a government action to this company, the cause remains unestablished.</p>
+          <p>The distinction becomes clearer beside a real regulator&apos;s document. The <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026">FDA&apos;s March 31 letter to Gram Peptides</a> identifies a different company, the product claims FDA reviewed and the conduct it alleged. It explains why a research-only label does not settle intended use if marketing points to human use. That letter is evidence about Gram Peptides, not proof that Peptide Sciences received a warning or was shut down by the government.</p>
 
-          <p>
-            The company says it retains the rights to its name and trademarks. It also warns that third parties claiming to be affiliated with Peptide Sciences, to be its successor or to sell its products are not authorized. A familiar logo on another site is not evidence of continuity.
-          </p>
-
-          <p>
-            The notice does not give a reopening date. An earlier version of this article claimed thousands of customers received no refunds or had orders go unfulfilled; that specific claim went beyond what the notice and available evidence established, and we have removed it.
-          </p>
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Was the shutdown caused by FDA or DOJ action?</h2>
-
-          <p>
-            The word &quot;voluntary&quot; is the company&apos;s description. It does not reveal whether legal advice, regulation or business conditions affected the decision. We have not established a government order requiring this closure and should not present one as the cause.
-          </p>
-
-          <p>
-            The FDA has challenged research-use disclaimers at other sellers. Its{" "}
-            <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">March 31, 2026 warning letter to Gram Peptides</a> explains how product claims can show intended human use. That is regulatory context, not evidence that the FDA or DOJ directed the Peptide Sciences shutdown.
-          </p>
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Orders, successor claims and research alternatives</h2>
-
-          <p>
-            If you have an unresolved purchase, retain the receipt and ask the original seller for a written update. Check your payment provider&apos;s dispute deadlines. Be cautious about sending money to a site that claims it can recover an old order or continue the former business.
-          </p>
-
-          <p>
-            For a Peptide Sciences alternative, start with the offered lot and your laboratory requirements. Verify the seller and the COA rather than relying on brand familiarity. IQON Health is a commercial partner of this publication; the same checks apply to its catalog.
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What about old orders and supposed successor stores?</h2>
+          <p>Keep your receipt, payment record and correspondence and seek a written update through a verified channel for the original seller. Check the payment provider&apos;s dispute deadline if your order remains unresolved. Do not assume a new site can retrieve or honor the original order merely because it uses the former company&apos;s branding; the company&apos;s notice disavows successor claims.</p>
+          <p>For a Peptide Sciences alternative, compare the legal seller, batch-specific certificate of analysis and current order terms against your laboratory requirements. A certificate is evidence about the tested sample, not proof of human-use suitability or of a seller&apos;s relationship to Peptide Sciences. IQON Health advertises here as a commercial partner and should face the same checks, not be presented as an endorsed successor.</p>
+          <p>The notice settles the company&apos;s stated decision to stop selling. A dated company update on outstanding orders would settle something different; rumors about an agency action or a replacement storefront do neither.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What happened to Peptide Sciences?", a: "Peptide Sciences posted a voluntary-shutdown notice on its website on March 6, 2026. The notice says the company decided to discontinue research-product sales. It does not state that the DOJ or any agency directed the closure." },
+              { q: "What happened to Peptide Sciences?", a: "Peptide Sciences says on its website that it voluntarily shut down operations and discontinued research-product sales. The notice does not say the DOJ or another agency directed the closure." },
               { q: "Did the DOJ shut down Peptide Sciences?", a: "The company's notice does not say that. The sources reviewed for this article do not establish a DOJ-directed closure." },
               { q: "Is Peptide Sciences coming back?", a: "The published notice does not announce a reopening date. It warns that claimed successors and third-party sellers using its identity are unauthorized." },
               { q: "What is a Peptide Sciences alternative?", a: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Health is a commercial partner on this page, not an independently certified replacement." },

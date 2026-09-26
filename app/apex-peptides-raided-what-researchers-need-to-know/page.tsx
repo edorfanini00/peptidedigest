@@ -96,29 +96,22 @@ export default function ApexRaidedArticle() {
           ]} />
 
           <h2>What happened on September 23?</h2>
-          <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s scene reporting</a> places agents at 503 Prosperity Way around 10 a.m. and describes another search at a Dakota Dunes home that morning. At the North Sioux City property, agents brought in evidence-collection equipment, loaded a trailer and left shortly after 4 p.m. KTIV says authorities did not disclose what was taken. Its reporting identifies the U.S. Postal Inspection Service as leading, with the FBI, IRS Criminal Investigation, Union County Sheriff&apos;s Office and North Sioux City Police present.
-          </p>
-          <p>
-            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ reported</a> two unidentified people led away in handcuffs. <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business">KCAU said</a> their identities and whether charges had been filed were unknown. That observation does not establish an arrest or identify anyone as charged.
-          </p>
+          <p><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV placed reporters at 503 Prosperity Way</a> in North Sioux City around 10 a.m. Its crew saw investigators bring collection equipment inside and load a trailer; agents left after 4 p.m. KTIV also reported a search at a Dakota Dunes home that morning. It could see boxes, papers and a tote of packaged items but said authorities had not identified what was taken. Appearance cannot establish the contents of evidence or the suspected offense.</p>
+          <p>KTIV identified the U.S. Postal Inspection Service as leading, with the FBI, IRS Criminal Investigation and local officers present. Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">confirmed to KSCJ</a> that agents, including postal inspectors, were at multiple locations; he declined details because the investigation was active. The agencies&apos; presence tells us who participated, not what investigators believe happened.</p>
+          <p><a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a> and <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business/">KCAU</a> reported two unidentified people escorted in handcuffs. KCAU explicitly did not know whether charges had been filed. Neither account establishes their identities, an arrest or a conviction.</p>
 
           <h2>How is Apex Peptides connected to the properties?</h2>
-          <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s review of business records</a> identifies Apex Waste Management and Apex Research with the searched North Sioux City property and links Apex Peptides through related business filings. It also found five related registrations at a nearby unfinished building at 498 Prosperity Way. The report does not say that second building was searched. Shared registrations do not make every Apex business the same operation.
-          </p>
+          <p><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s filing review</a> distinguishes the searched waste-management address from Apex Peptides: its reporting lists several businesses at 503 Prosperity Way, while Apex Peptides, Apex Waste Management and Apex Research list a primary address in Sergeant Bluff, Iowa. It also found five registrations at 498 Prosperity Way, an unfinished building nearby; KTIV did not report a search there. Common names and filings are a connection, not evidence that every location or each business was searched.</p>
+          <p>That distinction matters when a headline says &quot;Apex Peptides raided.&quot; The search is documented at an Apex-linked property, and the peptide storefront is connected through business records. The reports reviewed here do not identify an independently searched Apex Peptides facility.</p>
 
           <h2>What changed on September 24?</h2>
-          <p>
-            <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU visited Apex Waste Management</a> the next morning and spoke with a worker inside. Separately, KCAU reported that the Apex Peptides website said the business was temporarily closed and that all but one product had been removed. A worker at the waste-management premises does not establish that peptide orders were being fulfilled; a temporary website notice does not establish permanent closure. These are observations from September 24, not a live status check.
-          </p>
-          <p>
-            Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">told KSCJ</a> that agents had been at multiple Sioux City-area locations but declined further detail because the investigation was active. The cited reports do not disclose the reason for the searches or identify charges arising from them.
-          </p>
+          <p><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU spoke to a worker</a> at Apex Waste Management the next morning. It separately observed a temporary-closure notice on the Apex Peptides site, with all but one product removed. A person working at one business cannot verify order fulfillment at another. Equally, a temporary notice is evidence of what the site displayed when KCAU checked, not a permanent shutdown determination or a present-day status check.</p>
+          <p>The contrast with KTIV&apos;s report that operations did not appear normal is less contradictory than it sounds: a worker was present, while KTIV&apos;s attempted calls went unanswered and a driver had difficulty making a delivery. Neither observation tracks peptide purchases. An official statement or dated order-specific response would answer more than either scene can.</p>
 
           <h2>What if you have an outstanding order?</h2>
-          <p>Keep the receipt, order number and correspondence. Ask the seller for written confirmation of fulfillment or a refund. If the order remains unresolved, check your payment provider&apos;s dispute deadline. For a laboratory project, record the lot already in use and review any replacement against the protocol before changing materials.</p>
-          <p>When comparing research suppliers, verify the legal seller, documentation for the specific offered lot and current order terms. Research products are not for human consumption.</p>
+          <p>Preserve the receipt, order number, payment record and messages. Request a written fulfillment or refund update from the seller, and check the payment provider&apos;s applicable dispute deadline. The reporting offers no basis to promise a refund or describe the status of any individual order.</p>
+          <p>For a laboratory replacement, compare the exact offered lot with your protocol and ask for its batch-specific documentation, the seller&apos;s identity and current terms. A different supplier&apos;s product is not automatically interchangeable; research products are not for human consumption.</p>
+          <p>The next meaningful update would be a dated company statement on orders or an official filing explaining the investigation. Neither the search alone nor the temporary notice resolves those questions.</p>
 
           <div className="mt-14 pt-10 border-t border-gray-200">
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
@@ -149,17 +142,12 @@ export default function ApexRaidedArticle() {
                 <span className="shrink-0 text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 bg-orange-50 text-orange-700">{r.category}</span>
                 <div>
                   <p className="text-sm font-medium text-gray-800 group-hover:text-blue-700 transition-colors leading-snug">{r.title}</p>
-                  <p>
-            The distinction matters for anyone waiting on an order: a search at an affiliated property and a temporary website notice do not document fulfillment, refunds or a permanent closure. A dated company statement or official filing could settle those questions; the searches alone cannot.
-          </p>
-
-          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
-
           <p className="text-xs text-gray-400 mt-0.5">{r.date}</p>
                 </div>
               </Link>
             ))}
           </div>
+          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
         </div>
       </main>
       <Footer />
