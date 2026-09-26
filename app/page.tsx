@@ -106,7 +106,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "What Does Research Use Only (RUO) Actually Mean in 2026?",
     excerpt:
-      "Research use only is a labeling category FDA defined for lab products that are not ready for clinical use. FDA says the label must match how a product is actually marketed, and its August 2026 warning letters said RUO statements did not change its findings.",
+      "FDA's research use only labeling rule addresses in vitro diagnostic products in the laboratory research phase, not all lab products or peptides. FDA looks at intended use beyond the label; its August 2026 warning letters said RUO statements did not change its findings about the named peptide sellers' products.",
     image: "magnifier",
   },
   {
