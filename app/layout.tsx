@@ -118,7 +118,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="canonical" href="https://peptidedigest.co" />
       </head>
       <body>
         {/* Google tag — fires both GA4 and Google Ads */}

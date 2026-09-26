@@ -47,7 +47,6 @@ const articleJsonLd = {
         { "@type": "Thing", name: "Apex Peptides" },
         { "@type": "Thing", name: "Research Peptides" },
         { "@type": "Thing", name: "US Postal Inspection Service" },
-        { "@type": "Thing", name: "US Postal Inspection Service" },
       ],
       keywords: "Apex Peptides raided, Apex Peptides FBI, research peptide enforcement 2026, Apex Peptides alternative, research peptide supplier",
       articleSection: "Industry",
