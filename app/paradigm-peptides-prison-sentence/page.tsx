@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months. Both pleaded guilty in December 2025, according to the DOJ case page." },
+  { q: "Why was the Paradigm Peptides owner sentenced?", a: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation." },
+  { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from the $78,317.52 joint restitution order recorded on the case page." },
+  { q: "What is a Paradigm Peptides alternative?", a: "Evaluate a research seller's identity and offered batch documentation independently. IQON Health is a commercial partner here; confirm its details directly before purchasing." },
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -29,18 +36,11 @@ const jsonLd = {
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "paradigm peptides shut down, paradigm peptides prison, Matthew Kawa sentenced, paradigm peptides alternative, what happened to paradigm peptides",
+      citation: ["https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa", "https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison"],
     },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        { "@type": "Question", name: "What happened to Paradigm Peptides?", acceptedAnswer: { "@type": "Answer", text: "Its owner, Matthew Kawa, received 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months, according to the DOJ case record. Both pleaded guilty in December 2025." } },
-        { "@type": "Question", name: "Why was the Paradigm Peptides owner sentenced?", acceptedAnswer: { "@type": "Answer", text: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation. The government described false product and testing claims." } },
-        { "@type": "Question", name: "Was there a $5 million judgment?", acceptedAnswer: { "@type": "Answer", text: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from the restitution order." } },
-      ],
-    },
+    { "@type": "FAQPage", mainEntity: faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
   ],
 };
-
 
 export default function ParadigmPeptidesSentence() {
   return (
@@ -64,50 +64,38 @@ export default function ParadigmPeptidesSentence() {
 
           <IQONPartner vial="nad" variant="inline" />
 
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What happened between the sales and the sentence?</h2>
           <p>
-            The{" "}
-            <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing announcement</a>{" "}
-            also reports a $5 million money judgment against Kawa. Both defendants were ordered to pay restitution. These are documented outcomes of this prosecution, not evidence about other peptide sellers.
+            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Northern District of Indiana case page</a> describes Paradigm Peptides as Kawa&apos;s online business, shipping from Michigan City, Indiana, to customers across the United States. It gives the relevant purchase period for potential victims as April 2019 through March 2024. On December 10, 2025, Kawa and Stechkober entered guilty pleas to charges in the information; both were sentenced July 30, 2026. Those are separate milestones, not one 2026 raid or an inference that another company pleaded guilty.
+          </p>
+          <p>
+            The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing release</a> reports that Kawa pleaded guilty to introducing unapproved new drugs in interstate commerce with intent to defraud and mislead and to illegal importation. Stechkober pleaded guilty to the drug-introduction charge. The case page independently records the 70-month and 16-month prison terms.
           </p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the defendants pleaded guilty to</h2>
-
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What did investigators find in products sold as SARMs?</h2>
           <p>
-            According to the DOJ, both defendants pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead. Kawa also pleaded guilty to illegally importing merchandise. The government said the company imported products while falsely claiming domestic manufacture and testing.
+            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ case record</a> says investigators determined that many products advertised, labeled and sold as SARMs contained testosterone, a controlled substance. That is a specific mismatch between label and tested contents; it is not evidence that every peptide sold by Paradigm had the same contents or that another supplier&apos;s inventory was contaminated.
+          </p>
+          <p>
+            The sentencing release also says Kawa represented that products were tested for quality when he had not tested them before sale. A claimed testing program and a product&apos;s actual composition are different questions. A researcher checking any supplier should match a certificate to the offered lot, inspect the method and contact the named laboratory when authenticity is uncertain. Even a genuine purity result does not establish identity, sterility or legal status unless those questions were actually tested.
           </p>
 
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What do the two financial orders mean?</h2>
           <p>
-            The DOJ says investigators found that many products labeled as SARMs contained testosterone instead. Its case page identifies testosterone as a controlled substance. These findings concern Paradigm Peptides products; they should not be generalized to another supplier without evidence.
+            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">case page</a> records $78,317.52 in restitution, jointly and severally owed by Kawa and Stechkober. The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">sentencing announcement</a> separately describes a $5 million money judgment against Kawa. The figures are not two descriptions of the same order, and neither tells an individual purchaser that a refund has been approved.
           </p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the case says about testing claims</h2>
-
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can former customers and researchers establish?</h2>
           <p>
-            The sentencing announcement says Kawa did not test products for quality before selling them, despite telling customers they were tested. That documented claim is serious enough on its own. The linked sources do not establish whether certificates of analysis were forged; we have removed that specific claim from an earlier version of this article.
+            DOJ&apos;s <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">case page</a> invites people who bought from Paradigm Peptides or the named defendants during the April 2019–March 2024 period to contact its victim-witness office if they believe they may be victims. It expressly says a buyer may or may not qualify. That is a more useful next step than assuming every prior order is covered by restitution.
           </p>
-
           <p>
-            For a research purchase, ask for the report matching the offered lot. Check the sample description, laboratory identity and analytical methods. If a report cannot be authenticated, request confirmation from the issuing laboratory directly. Read the test scope: purity, identity and endotoxin results answer different questions.
-          </p>
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the sentence does and does not show</h2>
-
-          <p>
-            The case record lists guilty pleas on December 10, 2025, and sentencing on July 30, 2026. The prosecution concerned sales during an earlier operating period (2019 to 2024). It was not a new March 2026 prosecution, as earlier coverage on this site suggested.
-          </p>
-
-          <p>
-            Researchers should treat supplier claims as claims to check. A research label does not authenticate a product, and a certificate does not establish legal compliance. The documented testing failures in this case make batch verification a practical step in any procurement decision.
+            This prosecution demonstrates what a record of guilty pleas, sentencing and product findings can establish about one business. It does not turn an FDA warning letter to another seller into a conviction, or prove that a research-use-only label always disguises human use. A Paradigm Peptides alternative still calls for independently checking seller identity, authorized scope and batch documentation, rather than inheriting trust from a competitor&apos;s conviction.
           </p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
-            {[
-              { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026, with a $5 million money judgment. Jennifer Stechkober received 16 months. Both pleaded guilty in December 2025." },
-              { q: "Why was the Paradigm Peptides owner sentenced?", a: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation." },
-              { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from the restitution order." },
-              { q: "What is a Paradigm Peptides alternative?", a: "Verify the seller and the documentation for the offered batch. IQON Health is a commercial partner here — check its documentation before ordering." },
-            ].map(({ q, a }) => (<div key={q}><h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3><p className="text-sm text-gray-500">{a}</p></div>))}
+            {faqs.map(({ q, a }) => (<div key={q}><h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3><p className="text-sm text-gray-500">{a}</p></div>))}
           </div>
 
           <div className="mt-8 pt-6 border-t border-gray-200">

@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "What happens next in the cases?",
-    a: "As of late September 2026, the public dockets show early procedural steps only, such as service of summons and, in the Legendary Peptides case, an order on a motion for more time to respond. No judgment has been entered in any of the six cases.",
+    a: "The public CourtListener docket for Astra LLC records a September 2, 2026 notice of voluntary dismissal after an amended complaint. The other linked dockets show procedural entries; these records do not establish a liability judgment. CourtListener cautions that its PACER/RECAP coverage may be incomplete.",
   },
 ];
 
@@ -123,15 +123,14 @@ export default function Page() {
               <li>Defendants: four online research use only sellers, one med spa and one compounding pharmacy.</li>
               <li>Courts: five cases in federal district courts in Texas and one in California, per the <a href={SRC.dEnvy} className={a} {...ext}>CourtListener dockets</a>.</li>
               <li>Relief sought: a permanent injunction, damages, disgorgement of profits and attorneys&apos; fees, per the <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary Peptides complaint</a>.</li>
-              <li>Status: early procedural stage as of September 2026. No judgment, no finding of liability.</li>
+              <li>Status: the <a href={SRC.dAstra} className={a} {...ext}>Astra docket</a> records a September 2 notice of voluntary dismissal. A filing or dismissal does not itself establish liability.</li>
             </ul>
           </div>
 
-          <h2 className={h2} style={serif}>What did Eli Lilly file, and against whom?</h2>
+          <h2 className={h2} style={serif}>Why are four research sellers in a six-case filing?</h2>
           <p>
-            Lilly&apos;s <a href={SRC.lilly} className={a} {...ext}>August 12, 2026 news release</a> said the suits target &ldquo;compounding pharmacies, medical spas, and online sellers that falsely claim their drugs are for &lsquo;research-use only&rsquo; when they are actually intended for human use.&rdquo; <a href={SRC.cbs} className={a} {...ext}>CBS News</a> identified Astra Peptides, Legendary Peptides, Texas Peptides and Lone Star Peptide as the four firms that advertise the product &ldquo;for research use&rdquo; without a prescription. <a href={SRC.cnbc} className={a} {...ext}>Reuters, via CNBC</a>, listed the same six defendants.
+            Lilly&apos;s <a href={SRC.lilly} className={a} {...ext}>August 12 announcement</a> names six defendants. Four marketed themselves as online research sellers: Astra Peptides, Legendary Peptides, Texas Peptides and Lone Star Peptide. The other two, Striker Pharmacy and Aesthetic Envy, are a compounding pharmacy and a med spa. Grouping them together captures Lilly&apos;s claim about sales of purported retatrutide, but the business models and courts are not interchangeable.
           </p>
-
           <div className="my-6 space-y-3">
             {cases.map((c) => (
               <div key={c.no} className="p-4 rounded-lg border border-gray-200 bg-white">
@@ -141,47 +140,39 @@ export default function Page() {
               </div>
             ))}
           </div>
-
           <p>
-            One detail differs between sources. Lilly&apos;s release lists the Aesthetic Envy case as filed in the Northern District of California. The <a href={SRC.dEnvy} className={a} {...ext}>CourtListener docket</a> places it in the Eastern District of California under a preliminary number, 2:26-at-01347. We have not seen a transfer order.
+            One court detail requires care: Lilly&apos;s announcement identifies the Aesthetic Envy filing as Northern District of California, while the linked <a href={SRC.dEnvy} className={a} {...ext}>CourtListener entry</a> records an Eastern District of California preliminary docket number. Without the transfer or filing history, that conflict cannot be resolved from the announcement alone. The four research-seller cases are in Texas federal courts.
           </p>
 
-          <h2 className={h2} style={serif}>What does Lilly allege against the research use only sellers?</h2>
+          <h2 className={h2} style={serif}>What is Lilly trying to prove about the research label?</h2>
           <p>
-            The complaints we opened follow the same template. The <a href={SRC.astraComplaint} className={a} {...ext}>Astra complaint</a>, filed in the San Antonio Division of the Western District of Texas, opens by saying Astra &ldquo;claims to be an online seller of purportedly &lsquo;research use only&rsquo; products&rdquo; and that &ldquo;in reality, it is selling illegal drugs to consumers.&rdquo; The <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary Peptides complaint</a>, filed in the Beaumont Division of the Eastern District of Texas, uses nearly identical language.
+            In its <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary Peptides complaint</a>, Lilly quotes the seller describing itself as a supplier of third-party-tested compounds for research use only. Lilly then alleges that the site sold purported retatrutide to consumers, including buyers in several named states. The <a href={SRC.astraComplaint} className={a} {...ext}>Astra complaint</a> makes a similar accusation. Those are a plaintiff&apos;s descriptions of the defendants&apos; conduct, not judicial findings that a disclaimer was false.
           </p>
           <p>
-            The Legendary Peptides complaint also cites the company&apos;s own website, quoting its description of itself as a &ldquo;Texas-based supplier of third-party tested compounds for research use only.&rdquo; Lilly alleges that the company sold to consumers in Alaska, Colorado, Connecticut, North Carolina, South Carolina, Tennessee, Texas and Washington, and that those sales violate each state&apos;s law against selling unapproved new drugs. It also says the FDA has sent at least 16 warning letters related to retatrutide.
-          </p>
-          <p>
-            These are Lilly&apos;s claims. None of the defendants has been found liable. CBS News reported that the companies did not respond to requests for comment on the day of filing, and that three of them took down pages advertising the product.
+            The distinction matters because an &ldquo;RUO&rdquo; label is only one piece of evidence about intended use. Product pages, surrounding marketing and how a seller presents a compound can point elsewhere. <a href={SRC.fda} className={a} {...ext}>FDA guidance on unapproved GLP-1 products</a> separately describes products labeled for research but sold to consumers with human-use instructions. FDA&apos;s general position does not decide Lilly&apos;s individual lawsuits.
           </p>
 
-          <h2 className={h2} style={serif}>What legal claims is Lilly using?</h2>
+          <h2 className={h2} style={serif}>Why state-law claims instead of a patent suit?</h2>
           <p>
-            According to an analysis by the law firm <a href={SRC.frier} className={a} {...ext}>Frier Levitt</a>, the complaints do not assert patent infringement. Most rely on state unfair competition and consumer protection statutes. Frier Levitt notes that the federal drug statute, the FDCA, does not give private companies a general right to sue over its violations, so state law is the route. The one federal false advertising count under the Lanham Act is in the Aesthetic Envy case. The CourtListener dockets are consistent with that: the <a href={SRC.dEnvy} className={a} {...ext}>Aesthetic Envy docket</a> lists a Lanham Act cause, while the five Texas dockets, including <a href={SRC.dLegendary} className={a} {...ext}>Legendary Peptides</a>, list diversity jurisdiction.
+            The <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary filing</a> asks a court to address alleged sales under state unfair-competition and consumer-protection theories. <a href={SRC.frier} className={a} {...ext}>Frier Levitt&apos;s legal analysis</a> notes that a private drug developer cannot simply prosecute an FDA violation under the federal drug statute. That helps explain why Lilly invokes state law while citing federal drug rules as context. The legal route also means a filing alone does not establish a nationwide ban on all research peptides.
+          </p>
+          <p>
+            The Aesthetic Envy case differs: its <a href={SRC.dEnvy} className={a} {...ext}>docket</a> lists a federal Lanham Act cause. A docket&apos;s jurisdiction field is a filing descriptor, not a ruling on the merits; neither diversity jurisdiction in the Texas cases nor a federal cause in California proves Lilly&apos;s factual allegations.
           </p>
 
-
-          <h2 className={h2} style={serif}>Where do the cases stand now?</h2>
+          <h2 className={h2} style={serif}>What can the public dockets tell us?</h2>
           <p>
-            All six are at an early stage. The public dockets show service steps: a summons returned executed in the <a href={SRC.dLegendary} className={a} {...ext}>Legendary Peptides case</a> on August 18, 2026, and in the <a href={SRC.dTexas} className={a} {...ext}>Texas Peptides case</a> on August 19, 2026, and a waiver of service in the <a href={SRC.dStriker} className={a} {...ext}>Striker Pharmacy case</a> on August 25, 2026. On September 11, 2026, the court in the Legendary Peptides case entered an order on a motion for an extension of time to respond. No judgment has been entered in any of the six cases.
+            Service returns show that litigation was moving, not that Lilly won. The <a href={SRC.dLegendary} className={a} {...ext}>Legendary docket</a> records an August service return and an extension request. Crucially, the <a href={SRC.dAstra} className={a} {...ext}>Astra docket</a> records an amended complaint on August 31 and a notice of voluntary dismissal on September 2. A voluntary dismissal is not a liability ruling, and the accessible docket does not explain the parties&apos; reasons. CourtListener warns that PACER/RECAP entries may lag, so a claim that all six suits remain active would overstate these records.
           </p>
 
-          <h2 className={h2} style={serif}>How is this different from an FDA warning letter or a criminal case?</h2>
+          <h2 className={h2} style={serif}>How does this differ from FDA enforcement or prosecution?</h2>
           <p>
-            A warning letter is an FDA notice of alleged violations. A criminal case starts with charges filed by prosecutors and can end in a conviction. These lawsuits are neither. They are civil complaints filed by a private company that says it is harmed by the sales. Lilly said it has separately referred more than 200 individuals and entities to the FDA, the Department of Justice, state attorneys general, law enforcement and licensing boards, per its <a href={SRC.lilly} className={a} {...ext}>news release</a>. A referral is not a charge.
+            Lilly is the plaintiff in private civil suits seeking court remedies, including injunctions and financial relief. An <Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA warning letter</Link> communicates an agency&apos;s alleged violations and requests a response. Criminal charges come from prosecutors and require a separate criminal proceeding. Lilly says it referred more than 200 entities or individuals to government bodies, but a referral itself charges nobody (<a href={SRC.lilly} className={a} {...ext}>Lilly release</a>).
           </p>
 
-          <h2 className={h2} style={serif}>What do the lawsuits signal for the research peptide market?</h2>
+          <h2 className={h2} style={serif}>What should a research-market reader watch next?</h2>
           <p>
-            Three things stand out. First, a drug developer is now suing research use only sellers by name, instead of only reporting them. <a href={SRC.fierce} className={a} {...ext}>Fierce Pharma</a> noted that Lilly previously sued companies over compounded versions of its approved products in 2023 and 2024. This round reaches online research use only storefronts.
-          </p>
-          <p>
-            Second, the label alone is under attack. The <a href={SRC.fda} className={a} {...ext}>FDA&apos;s page on unapproved GLP-1 drugs</a> says the agency has warned companies whose products were &ldquo;falsely labeled &lsquo;for research purposes&rsquo; or &lsquo;not for human consumption&rsquo;&rdquo; and sold to consumers with dosing instructions. Frier Levitt&apos;s view is that a research use only label &ldquo;is not necessarily a legal shield&rdquo; and that litigants will look at the full marketing picture.
-          </p>
-          <p>
-            Third, the pressure is spreading to intermediaries. Lilly&apos;s release called on social media and e-commerce platforms, card companies, payment processors and shipping carriers to cut off sellers, and said it has reported more than 14,000 websites, ads, posts and listings in over 100 countries. Lilly executive Max Denning told <a href={SRC.cbs} className={a} {...ext}>CBS News</a>, &ldquo;Six lawsuits is not going to be the solution to everything, but it is a start.&rdquo;
+            Watch the pleadings for each defendant&apos;s response, then court rulings on the specific state-law theories and requested injunctions. Lilly also asked online platforms, payment processors and shipping companies to act against sellers in its <a href={SRC.lilly} className={a} {...ext}>announcement</a>. That request is a commercial pressure tactic, not a court order against every research storefront. The unresolved issue in these cases is whether Lilly can prove its allegations about these defendants&apos; marketing and sales under the claims it actually filed.
           </p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
