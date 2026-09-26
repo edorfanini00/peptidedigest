@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://peptidedigest.co/what-happened-to-peptide-sciences" },
   openGraph: {
     title: "What Happened to Peptide Sciences?",
-    description: "Peptide Sciences posted a voluntary-shutdown notice on March 6, 2026. What the notice says, what it does not say, and how to find a research alternative.",
+    description: "Peptide Sciences posted an undated voluntary-shutdown notice. What the notice says, what it does not say, and how to assess a research alternative.",
     type: "article",
     publishedTime: "2026-03-10T12:00:00.000Z",
   },

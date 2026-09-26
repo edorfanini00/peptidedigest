@@ -146,7 +146,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "8 min read",
     title: "2026 Peptide Enforcement: The Major Documented Actions",
     excerpt:
-      "Peptide Sciences' voluntary shutdown, the Paradigm Peptides sentence and the Apex Peptides search reports, in one documented timeline.",
+      "Dated 2026 actions involving Paradigm Peptides and Apex-linked properties, with Peptide Sciences' undated shutdown notice kept separate.",
     image: "gavel",
   },
   {
