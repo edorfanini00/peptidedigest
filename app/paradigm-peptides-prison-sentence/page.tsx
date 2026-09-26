@@ -8,7 +8,7 @@ import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "Paradigm Peptides Sentence: Matthew Kawa Receives 70 Months",
-  description: "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and research supplier documentation checks.",
+  description: "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what the court orders establish.",
   alternates: { canonical: "https://peptidedigest.co/paradigm-peptides-prison-sentence" },
   openGraph: {
     title: "Paradigm Peptides: Matthew Kawa Sentenced to 70 Months",
@@ -22,7 +22,7 @@ const faqs = [
   { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months, according to the DOJ sentencing release. Both had pleaded guilty in December 2025." },
   { q: "Why was the Paradigm Peptides owner sentenced?", a: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation." },
   { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from $78,317.52 in restitution ordered for both defendants." },
-  { q: "What is a Paradigm Peptides alternative?", a: "Evaluate a research seller's identity and offered batch documentation independently. IQON Labs is a commercial partner here; confirm its details directly before purchasing." },
+  { q: "What is a Paradigm Peptides alternative?", a: "The conviction concerns Paradigm, not other sellers. Our separate supplier guide covers research-vendor documentation; IQON Labs is a paid commercial partner, not a court-endorsed alternative." },
 ];
 
 const jsonLd = {
@@ -53,7 +53,7 @@ export default function ParadigmPeptidesSentence() {
         <ArticleHero
           category="Criminal"
           title={<>Paradigm Peptides: Matthew Kawa Sentenced to 70 Months</>}
-          dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and research supplier documentation checks."}
+          dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what the court orders establish."}
           meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 26, 2026</span></>}
           image="dojBuilding"
         />
@@ -70,14 +70,14 @@ export default function ParadigmPeptidesSentence() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What did investigators find in products sold as SARMs?</h2>
           <p>The mismatch at the center of the product findings was specific: investigators found testosterone, a controlled substance, in many items marketed and labeled as SARMs. That finding concerns the investigated products. It is not a test of every peptide Paradigm sold, much less of inventory at unrelated sellers. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
-          <p>The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing release</a> says Kawa told buyers his products had been quality-tested when they had not been tested before sale. A label can misstate what is inside, and a testing claim can misstate what was checked. For laboratory purchases, a report tied to the offered lot and independently traceable to its issuing lab carries more information than an unsupported testing badge.</p>
+          <p>The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing release</a> says Kawa told buyers his products had been quality-tested when they had not been tested before sale. A label can misstate what is inside, and a testing claim can misstate what was checked. The case shows why the distinction between an asserted test and a documented test matters; it does not establish what any other seller has tested.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What do the two financial orders mean?</h2>
           <p>The sentencing announcement lists $78,317.52 in restitution ordered for both defendants and a separate $5 million money judgment against Kawa. Neither figure guarantees that a particular customer will receive a refund. The terms serve different purposes and should not be added up as a promised pool for buyers. (<a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can former customers and researchers establish?</h2>
-          <p>DOJ invites people who purchased from Paradigm Peptides or the named defendants during April 2019–March 2024 to contact its victim-witness office if they think they may qualify. The case page cautions that a purchaser may or may not be a victim under the process. Keep transaction records before making that inquiry. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
-          <p>If you are comparing a Paradigm Peptides alternative for research, check that new seller&apos;s identity, current terms and lot-specific documentation. Paradigm&apos;s conviction tells you what happened in its case; it cannot certify another company&apos;s catalog. Research products are not for human consumption.</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the DOJ say about potential victims?</h2>
+          <p>The DOJ case page identifies purchases from Paradigm Peptides or the named defendants during April 2019–March 2024 in describing its victim-witness process. It invites potential victims to contact its victim-witness office but cautions that a purchaser may or may not qualify. This is a DOJ case-specific process, not a finding that every purchaser is entitled to restitution. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
+          <p>Paradigm&apos;s conviction does not establish the quality of a Paradigm Peptides alternative. Our <Link href="/compliant-research-peptide-supplier" className="text-blue-700 underline">separate research-supplier guide</Link> explains documentation limits; IQON Labs is a paid commercial partner, not a seller certified by this reporting. Research products are not for human consumption.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -95,7 +95,7 @@ export default function ParadigmPeptidesSentence() {
             </div>
           </div>
 
-          <p>The court outcome settles the defendants&apos; pleas and sentences, but an individual buyer&apos;s eligibility for restitution still depends on the victim-witness process. The DOJ case page, rather than a replacement seller&apos;s offer, is the route for that question.</p>
+          <p>The sentencing record establishes the prison terms and financial orders in this case, not a judgment about every product Paradigm sold or any unrelated supplier. Whether individual purchasers qualify under the DOJ victim-witness process remains a separate question.</p>
 
           <IQONPartner vial="ghk" />
 

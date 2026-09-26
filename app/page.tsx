@@ -45,7 +45,7 @@ const industryArticles: CardArticle[] = [
     readTime: "7 min read",
     title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
     excerpt:
-      "Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier.",
+      "Peptide Sciences says it voluntarily shut down research-product sales. Its notice disavows claimed successors but does not identify a government-ordered closure.",
     image: "researchVials",
   },
   {
@@ -55,7 +55,7 @@ const industryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "Amino Asylum Shutdown Reports: What Is Documented",
     excerpt:
-      "Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and how to evaluate a research alternative.",
+      "Amino Asylum shutdown reports point to June 2025. The agency remains unidentified in that account; the Paradigm Peptides prosecution is a separate case.",
     image: "padlock",
   },
   {
@@ -65,7 +65,7 @@ const industryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
     excerpt:
-      "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what it means for supplier documentation.",
+      "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months, a separate $5 million judgment and a case-specific victim-witness process.",
     image: "dojBuilding",
   },
 ];
