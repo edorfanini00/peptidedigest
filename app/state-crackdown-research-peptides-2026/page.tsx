@@ -122,7 +122,7 @@ export default function StateCrackdown2026() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">A patient consent form does not turn a research-grade peptide into a treatment a clinician may provide, according to state medical boards in Alabama, Mississippi and South Carolina. Their 2026 notices also push clinics to check who supplies the product. Ohio&apos;s pharmacy guidance, updated in late 2025, adds a direct restriction on clinics possessing drugs labeled for research purposes only. These are state professional rules and warnings, not a single new federal law.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">State medical boards in Alabama, Mississippi and South Carolina say a patient consent form does not turn a research-grade peptide into a treatment a clinician may provide. Their 2026 notices also push clinics to check who supplies the product. Ohio&apos;s pharmacy guidance, updated in late 2025, adds a direct restriction on clinics possessing drugs labeled for research purposes only. These are state professional rules and warnings, not a single new federal law.</p>
 
           <IQONPartner vial="nad" variant="inline" />
 
@@ -139,7 +139,7 @@ export default function StateCrackdown2026() {
 
           <h2 className={h2} style={serif}>What changed for an Alabama practitioner?</h2>
           <p>Alabama&apos;s Board of Medical Examiners said physicians may not compound, administer or dispense non-FDA-approved or research-grade peptides to patients. Its notice also addresses recommending, supplying and prescribing them. A patient&apos;s acknowledgment of the product&apos;s research status does not relieve a professional of the duty of care, the board said. <a className={a} href={S.albme} target="_blank" rel="noopener noreferrer">Alabama Board of Medical Examiners&apos; notice</a></p>
-          <p>The notice extends the warning to delegated practice by nurse midwives, nurse practitioners and physician assistants, saying the products do not appear on their approved formularies. It distinguishes a patient independently obtaining a product from a clinician&apos;s participation. WSFA reported the notice on May 26, 2026. <a className={a} href={S.wsfa} target="_blank" rel="noopener noreferrer">WSFA reported</a></p>
+          <p>The notice extends the warning to delegated practice by nurse midwives, nurse practitioners and physician assistants, saying the products do not appear on their approved formularies. It distinguishes a patient independently obtaining a product from a clinician&apos;s participation. The notice was public by May 26, 2026. <a className={a} href={S.wsfa} target="_blank" rel="noopener noreferrer">May 26 coverage</a></p>
 
           <h2 className={h2} style={serif}>How does Mississippi extend the warning?</h2>
           <p>Mississippi brought three boards together on August 19: medical licensure, nursing and pharmacy. Their joint statement addresses a wider group of healthcare providers and rejects both delegation and research-grade consent paperwork as ways around professional obligations. <a className={a} href={S.msPdf} target="_blank" rel="noopener noreferrer">joint statement dated August 19, 2026</a></p>
@@ -147,7 +147,7 @@ export default function StateCrackdown2026() {
 
           <h2 className={h2} style={serif}>What is distinctive about South Carolina?</h2>
           <p>South Carolina&apos;s medical board likewise says patient consent does not cure the problem. It tells practitioners to verify that prescription drugs and components come from pharmacy-board-permitted facilities and warns that buying or distributing from unpermitted sources can lead to professional discipline. <a className={a} href={S.sc} target="_blank" rel="noopener noreferrer">medical board notice</a></p>
-          <p>The South Carolina PDF has no date printed on it; a legal analysis described its release in August 2026. That timing should not be narrowed to a day without an official dated notice. Its supply-chain requirement is distinct from an analytical report about what&apos;s in a sample. <a className={a} href={S.lumalex} target="_blank" rel="noopener noreferrer">LumaLex described</a></p>
+          <p>The South Carolina PDF has no date printed on it; <a className={a} href={S.lumalex} target="_blank" rel="noopener noreferrer">an August legal analysis</a> places its release that month. That timing should not be narrowed to a day without an official dated notice. Its supply-chain requirement is distinct from an analytical report about what&apos;s in a sample.</p>
 
           <h2 className={h2} style={serif}>Why is Ohio on a 2026 list if its guidance dates to 2025?</h2>
           <p>Ohio&apos;s pharmacy board guidance was updated December 8, 2025, but remains relevant to 2026 clinic purchasing. It says prescriber clinics and med spas may not order, possess or administer drugs labeled for research purposes only, even with patient consent. It calls for a distributor-license check before buying and annually thereafter. <a className={a} href={S.ohio} target="_blank" rel="noopener noreferrer">Board of Pharmacy guidance</a></p>

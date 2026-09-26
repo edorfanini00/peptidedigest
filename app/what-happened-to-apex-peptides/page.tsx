@@ -67,25 +67,25 @@ export default function WhatHappenedApex() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">Apex Peptides&apos; website displayed a temporary-closure notice on September 24, according to KCAU, one day after federal agents searched an Apex-linked waste-management property. KCAU found all but one product removed from the peptide site. The notice did not say what would happen to orders already placed.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">On September 24, Apex Peptides&apos; website displayed a temporary-closure notice, and all but one product had been removed from the site, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU observed</a>. Federal agents had searched an Apex-linked waste-management property the day before. The notice did not say what would happen to orders already placed.</p>
 
           <IQONPartner vial="glutathione" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
           <h2>What do local reports confirm?</h2>
-          <p>On September 23, agents searched 503 Prosperity Way in North Sioux City and a Dakota Dunes home, KTIV reported. The Postal Inspection Service led, joined by the FBI, IRS Criminal Investigation and local officers. KTIV saw investigators load material but officials did not identify what they took or why. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
-          <p>KTIV&apos;s filing review lists Apex Peptides alongside Apex Waste Management and Apex Research at a primary address in Sergeant Bluff, Iowa. The searched property was the waste-management site at 503 Prosperity Way; a nearby unfinished building at 498 carried five related registrations. KTIV did not report a search of 498 or a distinct peptide facility.</p>
+          <p>On September 23, agents searched 503 Prosperity Way in North Sioux City and a Dakota Dunes home. The Postal Inspection Service led, joined by the FBI, IRS Criminal Investigation and local officers. KTIV saw investigators load material but officials did not identify what they took or why. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
+          <p>A <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">review of business filings</a> lists Apex Peptides alongside Apex Waste Management and Apex Research at a primary address in Sergeant Bluff, Iowa. The searched property was the waste-management site at 503 Prosperity Way; a nearby unfinished building at 498 carried five related registrations. KTIV did not report a search of 498 or a distinct peptide facility.</p>
           <p>KSCJ reported that two people were seen led away in handcuffs. It said their identities and any charges had not been revealed as of Wednesday night. The report does not establish whether charges were later filed. (<a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a>)</p>
 
           <h2>Is Apex Peptides shut down?</h2>
           <p>KCAU saw the temporary notice and a nearly empty catalog on September 24. Its reporter also found workers inside Apex Waste Management. Work at the waste business does not tell a customer whether a peptide order is moving, while a temporary message on the peptide site does not establish a permanent shutdown. (<a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU</a>)</p>
-          <p>An order confirmation and written seller response are more useful to an individual purchaser than a photo of the searched building. The local reports contain no order ledger, refund policy announcement or reopening date for Apex Peptides.</p>
+          <p>An order confirmation and written seller response are more useful to an individual purchaser than a photo of the searched building. No cited account provides an order ledger, refund policy announcement or reopening date for Apex Peptides.</p>
 
           <h2>Why were the properties searched?</h2>
           <p>Postal inspector Travis Fondow told KSCJ that agents had been at multiple locations and declined to explain the active investigation. That leaves the purpose of the search open; the participating agencies alone do not identify a particular charge. (<a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">KSCJ</a>)</p>
 
           <h2>What can customers do about an order?</h2>
           <p>Keep your order confirmation, transaction record and correspondence. Ask the original seller for shipping or refund information in writing and, if unresolved, check your payment provider&apos;s dispute deadline before it expires.</p>
-          <p>If laboratory work requires another source, check its legal seller, current terms and documents for the offered lot. Research products are not for human consumption. A dated Apex statement about existing orders or an official case filing would answer more than the September search reports.</p>
+          <p>If laboratory work requires another source, check its legal seller, current terms and documents for the offered lot. Research products are not for human consumption. A dated Apex statement about existing orders or an official case filing could resolve questions the searches leave open.</p>
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">Frequently Asked Questions</h2>
             {(jsonLd["@graph"][2] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (

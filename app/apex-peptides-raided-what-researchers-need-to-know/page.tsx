@@ -89,19 +89,19 @@ export default function ApexRaidedArticle() {
           <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
           <KeyFacts items={[
-            "September 23: Agents searched a North Sioux City Apex-linked property and a Dakota Dunes home, according to KTIV.",
+            "September 23: Agents searched a North Sioux City Apex-linked property and a Dakota Dunes home.",
             "KTIV identifies the U.S. Postal Inspection Service as the lead, alongside the FBI, IRS Criminal Investigation and local agencies.",
-            "September 24: KCAU found workers at Apex Waste Management and reported a temporary-closure notice on the Apex Peptides website.",
+            "September 24: Workers were at Apex Waste Management; KCAU observed a temporary-closure notice on the Apex Peptides website.",
             "The cited reports do not explain the searches or identify charges arising from them; permanent closure is not established.",
           ]} />
 
           <h2>What happened on September 23?</h2>
           <p>KTIV&apos;s crew saw agents arrive at 503 Prosperity Way around 10 a.m., carry collection equipment inside and load a trailer before leaving after 4 p.m. It also reported a search at a Dakota Dunes home. KTIV saw boxes, papers and packaged items but said authorities had not identified what was taken. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
-          <p>The U.S. Postal Inspection Service led the operation, according to KTIV; the FBI, IRS Criminal Investigation and local officers participated. Postal inspector Travis Fondow told KSCJ that agents were at multiple locations and declined further details while the investigation was active. Their presence does not identify a suspected offense. (<a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">KSCJ</a>)</p>
+          <p>The U.S. Postal Inspection Service led the operation; the FBI, IRS Criminal Investigation and local officers participated. Postal inspector Travis Fondow told KSCJ that agents were at multiple locations and declined further details while the investigation was active. Their presence does not identify a suspected offense. (<a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">KSCJ</a>)</p>
           <p>KSCJ reported that two people were seen led away in handcuffs. It said their identities and any charges had not been revealed as of Wednesday night. That account does not establish whether charges were later filed. (<a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a>)</p>
 
           <h2>How is Apex Peptides connected to the properties?</h2>
-          <p>The addresses explain why &apos;Apex Peptides raided&apos; is an imprecise shorthand. KTIV placed the search at the waste-management property, while its business-filing review lists Apex Peptides, Apex Waste Management and Apex Research with a primary address in Sergeant Bluff, Iowa. Five related registrations pointed to 498 Prosperity Way, a nearby unfinished building; KTIV did not report a search of that building. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
+          <p>The addresses explain why &apos;Apex Peptides raided&apos; is an imprecise shorthand. The search was at the waste-management property; a <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">business-filing review</a> lists Apex Peptides, Apex Waste Management and Apex Research with a primary address in Sergeant Bluff, Iowa. Five related registrations pointed to 498 Prosperity Way, a nearby unfinished building; KTIV did not report a search of that building. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
           <p>The filings connect the companies. They do not place investigators inside a separately identified Apex Peptides facility. That matters to a researcher trying to distinguish a site outage or halted order from a documented search of a peptide operation.</p>
 
           <h2>What changed on September 24?</h2>
