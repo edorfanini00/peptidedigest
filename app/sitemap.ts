@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://peptidedigest.co";
-  const now = new Date("2026-09-24");
+  const now = new Date("2026-09-26");
 
   return [
     {
@@ -43,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/apex-peptides-raided-what-researchers-need-to-know`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/what-happened-to-apex-peptides`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
