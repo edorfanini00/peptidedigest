@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
@@ -34,9 +35,9 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What should I look for in a research peptide supplier?", acceptedAnswer: { "@type": "Answer", text: "Check research-only positioning across all channels, a batch-specific COA from a named independent laboratory, and the seller's registration history. IQON Health is a commercial partner on this page." } },
-        { "@type": "Question", name: "What is a COA for peptides?", acceptedAnswer: { "@type": "Answer", text: "A Certificate of Analysis is a laboratory report covering identity, purity and other tested properties for a named sample. A complete COA identifies the laboratory, the sample, the batch and each result." } },
-        { "@type": "Question", name: "Which peptide suppliers are compliant in 2026?", acceptedAnswer: { "@type": "Answer", text: "We cannot certify compliance. IQON Health is a commercial partner that has not received a public enforcement action we are aware of. Verify its documentation yourself." } },
+        { "@type": "Question", name: "What should I look for in a research peptide supplier?", acceptedAnswer: { "@type": "Answer", text: "Check research-only positioning across all channels, a batch-specific COA with a named laboratory, and the seller's identifiable legal entity. IQON Health is a commercial partner on this page." } },
+        { "@type": "Question", name: "What is a COA for peptides?", acceptedAnswer: { "@type": "Answer", text: "A Certificate of Analysis is a laboratory report covering identity, purity and other tested properties for a named sample. A useful COA identifies the laboratory, tested sample, lot, methods and reported results; it only speaks to tests actually performed." } },
+        { "@type": "Question", name: "Which peptide suppliers are compliant in 2026?", acceptedAnswer: { "@type": "Answer", text: "We cannot certify a supplier as compliant from its website or COA. IQON Health is a commercial placement; apply the same lot and claims checks to it." } },
       ],
     },
   ],
@@ -63,33 +64,31 @@ export default function CompliantSupplier() {
 
           <IQONPartner vial="ghk" variant="inline" />
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>1. Research-only positioning across every channel</h2>
-          <p>Check the supplier website, social media and any promotional materials for human-use claims, dosing language or implied health outcomes. A research disclaimer on a product page does not cover implied claims made elsewhere. The FDA enforcement letters show that net impression matters; it does not look only at formal labels.</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>1. Compare the disclaimer with the rest of the storefront</h2>
+          <p>A research-only footer is easy to print. It takes longer to read the product description, related blog posts and items sold together. In its August 2026 <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">Peptide Partners warning letter</a>, FDA cited health-related descriptions and a reconstitution solution sold alongside products it considered drugs. The agency expressly said the research disclaimer did not overcome the website evidence of human-use intent. That finding concerns the products and presentation described in that letter; it is not a blanket ruling on every research catalog.</p>
+          <p>Read the storefront as a whole rather than treating the label as a pass/fail badge. A seller can change copy without changing a product, and a product page can contradict a general policy page. This is a way to identify questions, not a compliance certification.</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>2. Batch-specific certificate of analysis</h2>
-          <p>Ask for the COA matching the offered lot. The test report should identify the laboratory, name the sample, give the batch number, state the analysis date and report the tested properties and results. An HPLC purity result answers one question. A complete COA for injectable research material typically also includes endotoxin testing, with results in EU/mg.</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>2. Follow the COA back to a particular sample</h2>
+          <p>A certificate of analysis is useful only if its sample identification connects to the offered lot. Compare the report ID, compound name, lot identifier, dates, laboratory and named methods with the seller's listing and package. If the identifiers do not match, ask which sample was tested before interpreting a purity figure. Our <Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">COA reading guide</Link> explains why HPLC peak area and a mass-spectrometry identity result answer different questions.</p>
+          <p>The report also has a scope. A chromatographic purity result does not establish how much material is in a vial, whether a separate vial has the same composition, or whether microbial and endotoxin tests were performed. Do not infer an unlisted test from a clean-looking number. FDA's <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q2r2-validation-analytical-procedures" className="text-blue-700 underline">analytical validation guidance</a> addresses methods in the regulated drug context, not approval of a seller's research COA.</p>
 
-          <p>
-            The{" "}
-            <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Paradigm Peptides prosecution</a>{" "}
-            documented false COA representations. A certificate is only as good as the process that produced it. If you cannot identify the issuing laboratory, ask the supplier for contact information so you can confirm the report directly.
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>3. Check who actually performed the work</h2>
+          <p>A laboratory logo is an assertion until the named lab confirms the report. Find the lab's contact details independently, send its report number and ask whether the document and listed results match its records. A lab may decline to release client data; silence is not proof of fraud. Equally, a seller-hosted QR page is not independent confirmation.</p>
+          <p>If a report claims ISO/IEC 17025 accreditation, check the accreditor's directory and the lab's applicable testing scope. <a href="https://www.iso.org/ISO-IEC-17025-testing-and-calibration-laboratories.html" className="text-blue-700 underline">ISO explains</a> that the standard concerns testing and calibration laboratory competence. Accreditation is not an FDA product approval and does not authenticate every document carrying a lab name.</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>3. Known laboratory identity</h2>
-          <p>Independent testing means a laboratory outside the seller organization. An HPLC report from the supplier facility cannot confirm what an independent test would find. If the supplier cannot name the laboratory, that is relevant information.</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>4. Separate seller identity from seller reputation</h2>
+          <p>Record the legal seller name and contact details before comparing a marketing brand with an enforcement record. A similarly named company is not necessarily the same entity. FDA warning letters identify the addressee, date, products and the agency's observations; they are not criminal convictions. The <a href="https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline">Paradigm Peptides sentencing release</a>, by contrast, describes guilty pleas and sentence and says the business falsely represented its testing. Those are different evidentiary stages.</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>4. Seller identity and account history</h2>
-          <p>Some suppliers that entered the market during the peptide demand increase of the mid-2020s operated briefly before problems emerged. Checking registration records and available transaction history takes time. One verifiable signal: an enforcement history or warning-letter record is publicly searchable via the FDA database.</p>
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>5. Consistent compound scope</h2>
-          <p>FDA scrutiny has focused on compounds with evident consumer interest, including GLP-1 receptor agonists and others previously removed from or added to Category 2. A research catalog limited to compounds with established preclinical research literature and no implied clinical or consumer application carries less regulatory exposure than one tracking consumer demand. That is a practical observation, not a legal guarantee.</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>5. Resist the shortcut of a supposedly safe catalog</h2>
+          <p>No list of compounds makes a seller categorically compliant. FDA's analysis in the Peptide Partners letter turns on intended use shown by the website and accompanying products, not merely the name of a molecule. Review each listing on its own terms, including the claims and the specific tests disclosed. For the legal distinction between an RUO label and an approved product, see <Link href="/what-does-research-use-only-mean" className="text-blue-700 underline">our RUO explainer</Link>.</p>
+          <p>The result of this review is not a ranked "best peptide source 2026." It is a record of what can and cannot be verified about a particular seller and lot. IQON Health is a commercial placement on this page, not an exception to the checks.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What should I look for in a research peptide supplier?", a: "Check research-only positioning across all channels, a batch-specific COA from a named independent laboratory and the seller's registration history. IQON Health is a commercial partner on this page." },
-              { q: "What is a COA for peptides?", a: "A Certificate of Analysis is a laboratory report covering identity, purity and other tested properties for a named sample. A complete COA identifies the laboratory, the sample, the batch and each result." },
-              { q: "Which peptide suppliers are compliant in 2026?", a: "We cannot certify compliance. IQON Health is a commercial partner that has not received a public enforcement action we are aware of. Verify its documentation yourself before ordering." },
+              { q: "What should I look for in a research peptide supplier?", a: "Check research-only positioning across all channels, a batch-specific COA with a named laboratory and the seller's identifiable legal entity. IQON Health is a commercial partner on this page." },
+              { q: "What is a COA for peptides?", a: "A Certificate of Analysis is a laboratory report covering identity, purity and other tested properties for a named sample. A useful COA identifies the laboratory, tested sample, lot, methods and reported results; it only speaks to tests actually performed." },
+              { q: "Which peptide suppliers are compliant in 2026?", a: "We cannot certify a supplier as compliant from its website or COA. IQON Health is a commercial placement; apply the same lot and claims checks to it." },
             ].map(({ q, a }) => (
               <div key={q}>
                 <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
