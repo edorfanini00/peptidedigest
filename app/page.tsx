@@ -23,7 +23,7 @@ const featuredArticle: CardArticle = {
   readTime: "6 min read",
   title: "Apex Peptides Update: Federal Searches and a Temporary Closure Notice",
   excerpt:
-    "Local reports place federal searches at Apex-linked properties on September 23, 2026. The September 23 searches, a September 24 temporary-closure notice and what remains unanswered about peptide orders.",
+    "Local reports place federal searches at Apex-linked properties on September 23, 2026. The searched property, the September 24 website notice and the distinction between them.",
   image: "apexRaid",
 };
 
@@ -33,9 +33,9 @@ const industryArticles: CardArticle[] = [
     category: "Industry",
     date: "September 24, 2026",
     readTime: "6 min read",
-    title: "What Happened to Apex Peptides? Searches and Order Questions",
+    title: "What Happened to Apex Peptides? Searches and Closure Questions",
     excerpt:
-      "What the September 23 searches and a reported temporary closure do, and do not, establish about Apex Peptides and customer orders.",
+      "A search at an Apex-linked waste property and a temporary notice on the peptide website are distinct events.",
     image: "apexWarehouse",
   },
   {
