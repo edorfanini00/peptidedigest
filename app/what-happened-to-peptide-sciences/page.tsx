@@ -25,7 +25,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/what-happened-to-peptide-sciences#article",
       headline: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
       datePublished: "2026-03-10T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "what happened to peptide sciences, peptide sciences shut down, peptide sciences alternative, peptide sciences DOJ, peptidesciences.com offline",
@@ -60,9 +60,10 @@ export default function PeptideSciencesShutdown() {
         <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Peptide Sciences says it has voluntarily shut down operations and discontinued the sale of its research products. That is the explanation in the company&apos;s{" "}
-            <a href="https://www.peptidesciences.com" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">published shutdown notice</a>. The notice does not say the DOJ closed the business.
+            Peptide Sciences says it voluntarily ended operations and stopped selling its research products. Its own shutdown notice does not say the DOJ closed the business and gives no detailed explanation of the decision. That makes the notice a firmer source for what happened than speculation about why.
           </p>
+
+          <IQONPartner vial="ghk" variant="inline" />
 
           <p>
             The notice remains more useful than a guessed reason for the closure. It confirms the end of research-product sales but does not explain the company&apos;s internal decision or resolve the status of each customer&apos;s order.
@@ -78,8 +79,6 @@ export default function PeptideSciencesShutdown() {
             The notice does not give a reopening date. An earlier version of this article claimed thousands of customers received no refunds or had orders go unfulfilled; that specific claim went beyond what the notice and available evidence established, and we have removed it.
           </p>
 
-          <IQONPartner vial="ghk" variant="inline" />
-
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Was the shutdown caused by FDA or DOJ action?</h2>
 
           <p>
@@ -91,8 +90,6 @@ export default function PeptideSciencesShutdown() {
             <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">March 31, 2026 warning letter to Gram Peptides</a> explains how product claims can show intended human use. That is regulatory context, not evidence that the FDA or DOJ directed the Peptide Sciences shutdown.
           </p>
 
-          <IQONPartner vial="bac-water" variant="inline" />
-
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Orders, successor claims and research alternatives</h2>
 
           <p>
@@ -102,8 +99,6 @@ export default function PeptideSciencesShutdown() {
           <p>
             For a Peptide Sciences alternative, start with the offered lot and your laboratory requirements. Verify the seller and the COA rather than relying on brand familiarity. IQON Health is a commercial partner of this publication; the same checks apply to its catalog.
           </p>
-
-          <IQONPartner vial="nad" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -130,6 +125,12 @@ export default function PeptideSciencesShutdown() {
               ].map((r) => (<Link key={r.slug} href={`/${r.slug}`} className="block text-sm text-gray-700 hover:text-blue-700 transition-colors">{r.title} →</Link>))}
             </div>
           </div>
+
+          <p>
+            The company’s notice also rejects purported successors using its name. That establishes its stated position, not the fate of every outstanding order or the merits of any alternative seller. A dated company update would be needed to answer those remaining questions.
+          </p>
+
+          <IQONPartner vial="nad" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>

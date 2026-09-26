@@ -76,7 +76,7 @@ const jsonLd = {
       headline: TITLE,
       description: DESC,
       datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -111,8 +111,10 @@ export default function Page() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Eli Lilly filed six federal civil lawsuits on August 12, 2026, and four of them name online sellers that label their products &ldquo;research use only.&rdquo; Lilly alleges those sellers offered its unapproved investigational compound, retatrutide, for human use. These are civil cases brought by a company. No one has been charged with a crime, and no court has ruled on the merits.
+            Eli Lilly filed six civil lawsuits on August 12, 2026. Four name online sellers advertising research-use-only products. The company alleges the sellers offered its investigational compound retatrutide for human use, despite the labeling. These are Lilly’s allegations in civil litigation, not criminal charges or findings on the merits.
           </p>
+
+          <IQONPartner vial="ghk" variant="inline" />
 
           <div className="rounded-lg border border-gray-200 bg-white p-5">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</h2>
@@ -161,15 +163,10 @@ export default function Page() {
           </p>
 
 
-          <IQONPartner vial="ghk" variant="inline" />
-
-
           <h2 className={h2} style={serif}>Where do the cases stand now?</h2>
           <p>
             All six are at an early stage. The public dockets show service steps: a summons returned executed in the <a href={SRC.dLegendary} className={a} {...ext}>Legendary Peptides case</a> on August 18, 2026, and in the <a href={SRC.dTexas} className={a} {...ext}>Texas Peptides case</a> on August 19, 2026, and a waiver of service in the <a href={SRC.dStriker} className={a} {...ext}>Striker Pharmacy case</a> on August 25, 2026. On September 11, 2026, the court in the Legendary Peptides case entered an order on a motion for an extension of time to respond. No judgment has been entered in any of the six cases.
           </p>
-
-          <IQONPartner vial="bac-water" />
 
           <h2 className={h2} style={serif}>How is this different from an FDA warning letter or a criminal case?</h2>
           <p>
@@ -205,6 +202,12 @@ export default function Page() {
               <li><Link href="/state-crackdown-research-peptides-2026" className={a}>State actions on research peptides in 2026</Link></li>
             </ul>
           </div>
+
+          <p>
+            The cases test a specific allegation about how these sellers marketed a named product. They do not establish that every research-use-only listing is unlawful. The complaints and later court orders, rather than Lilly’s announcement alone, are the documents to watch for what a court actually decides.
+          </p>
+
+          <IQONPartner vial="bac-water" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Published September 25, 2026. Allegations in civil complaints are unproven. For information only, not medical or legal advice. Research products are not for human consumption.

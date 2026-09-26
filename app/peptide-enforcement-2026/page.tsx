@@ -25,7 +25,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/peptide-enforcement-2026#article",
       headline: "2026 Peptide Enforcement: The Major Documented Actions",
       datePublished: "2026-09-24T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/peptide-enforcement-2026" },
@@ -37,7 +37,6 @@ const jsonLd = {
         { "@type": "Question", name: "What peptide companies closed or faced enforcement in 2026?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences announced a voluntary shutdown in March 2026. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." } },
         { "@type": "Question", name: "Was the Paradigm Peptides case a March 2026 prosecution?", acceptedAnswer: { "@type": "Answer", text: "No. The guilty pleas were in December 2025; sentencing was July 30, 2026. The business operated between 2019 and 2024." } },
         { "@type": "Question", name: "What is the status of Amino Asylum?", acceptedAnswer: { "@type": "Answer", text: "Industry sources report it shut down in June 2025. No public government record naming the company and confirming the specific legal action has been identified." } },
-        { "@type": "Question", name: "Are research peptides still available from compliant suppliers?", acceptedAnswer: { "@type": "Answer", text: "Yes. Suppliers maintaining strict research-only positioning and third-party documentation have continued to operate. Enforcement has focused on companies whose marketing implied human use." } },
       ],
     },
   ],
@@ -78,8 +77,10 @@ export default function EnforcementTimeline() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Federal enforcement activity involving research peptide sellers reached documented records in 2026. This timeline separates confirmed outcomes from reports still attributed to industry sources.
+            The events often grouped as “2026 peptide enforcement” are not the same kind of event. Peptide Sciences announced a voluntary shutdown; the Paradigm Peptides case reached sentencing; local outlets reported searches at Apex-linked properties. Amino Asylum’s warehouse account remains industry-attributed. This timeline keeps each claim at the level its evidence supports.
           </p>
+
+          <IQONPartner vial="glutathione" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             Documented events
@@ -118,9 +119,6 @@ export default function EnforcementTimeline() {
           </div>
 
 
-          <IQONPartner vial="glutathione" variant="inline" />
-
-
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             What these events show
           </h2>
@@ -132,8 +130,6 @@ export default function EnforcementTimeline() {
           <p>
             Regulatory activity in 2026 also included FDA warning letters to individual sellers for product claims that indicated human use despite research disclaimers.
           </p>
-
-          <IQONPartner vial="glutathione" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             If you are replacing a disrupted supplier
@@ -156,6 +152,12 @@ export default function EnforcementTimeline() {
               </div>
             ))}
           </div>
+
+          <p>
+            A shutdown notice, a criminal sentence and a reported search answer different questions. The record does not turn a voluntary closure into an enforcement action, nor a search into a charge. Future filings or dated company statements may fill gaps; until then, those distinctions are the timeline’s most useful result.
+          </p>
+
+          <IQONPartner vial="glutathione" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Updated September 25, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.

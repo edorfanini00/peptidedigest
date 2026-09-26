@@ -31,7 +31,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/what-happened-to-apex-peptides#article",
       headline: "What Happened to Apex Peptides? Searches and Order Questions",
       datePublished: "2026-09-24T14:00:00.000Z",
-      dateModified: "2026-09-26T19:42:34Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/what-happened-to-apex-peptides" },
@@ -66,7 +66,7 @@ export default function WhatHappenedApex() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Federal agents searched properties connected to several Apex businesses on September 23, 2026. Local reports link Apex Peptides through business filings, but do not establish that its own facility was searched. On September 24, its website displayed a temporary-closure notice, according to KCAU. A permanent shutdown and the status of existing orders are not established.
+            What happened to Apex Peptides is still partly an open question. Agents searched Apex-linked properties on September 23, 2026, and KCAU reported a temporary-closure notice on the peptide website the next day. The reporting does not show that the peptide facility was searched, that the business closed permanently or what became of individual orders.
           </p>
 
           <IQONPartner vial="glutathione" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
@@ -92,8 +92,6 @@ export default function WhatHappenedApex() {
           <h2>What can customers do about an order?</h2>
           <p>Save the order confirmation and correspondence. Ask the seller for written fulfillment or refund status, and check the payment provider&apos;s dispute window if unresolved. For laboratory purchases, compare the legal seller, documentation for the offered lot and current order terms. Research products are not for human consumption.</p>
 
-          <IQONPartner vial="bac-water" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
-
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">Frequently Asked Questions</h2>
             {(jsonLd["@graph"][1] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
@@ -106,6 +104,12 @@ export default function WhatHappenedApex() {
           </div>
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: September 23 searches</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 website and workplace observations</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
+          <p>
+            The strongest answer remains limited to the dated search reports and the website notice KCAU observed. Neither proves a permanent shutdown or an order outcome. Customers can preserve their own records; an official filing or direct, dated company response would provide stronger answers.
+          </p>
+
+          <IQONPartner vial="bac-water" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources linked above. For information only, not medical or legal advice. IQON Health is a commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>

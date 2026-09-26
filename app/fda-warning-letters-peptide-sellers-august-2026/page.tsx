@@ -59,7 +59,7 @@ const jsonLd = {
       headline: TITLE,
       description: DESC,
       datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -101,8 +101,10 @@ export default function Page() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            On August 24, 2026, FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, saying the products on their websites were unapproved new drugs. FDA also said the sellers&apos; &ldquo;research use only&rdquo; labels did not change that finding. These are warning letters. No company in this batch has been charged with a crime.
+            FDA’s August 24, 2026 letters told five online peptide sellers that products on their sites were unapproved new drugs. The agency said research-use-only wording did not override the human-use signals it found in the marketing. A warning letter states FDA’s position and requests correction; it is not a criminal conviction.
           </p>
+
+          <IQONPartner vial="bac-water" variant="inline" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>
@@ -160,9 +162,6 @@ export default function Page() {
           </p>
 
 
-          <IQONPartner vial="bac-water" variant="inline" />
-
-
           <h2 className={h2} style={serif}>Why does bacteriostatic water matter in these letters?</h2>
           <p>
             FDA treated it as a link between the vial and the injection. The Peptide Partners letter says the reconstitution solution was sold &ldquo;to be used to reconstitute the peptide products sold on your website, which are drugs intended for injection,&rdquo; so the solution is &ldquo;a drug&rdquo; (<a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">FDA</a>). The Tex Peptides letter makes the same finding about its bacteriostatic water (<a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">FDA</a>).
@@ -170,8 +169,6 @@ export default function Page() {
           <p>
             The letters to Peptide Partners, Royal Peptides and Tex Peptides also say injectable products &ldquo;bypass some of the body&rsquo;s key defenses against toxins and microorganisms.&rdquo;
           </p>
-
-          <IQONPartner vial="nad" />
 
           <h2 className={h2} style={serif}>Is a warning letter a criminal charge?</h2>
           <p>
@@ -207,6 +204,12 @@ export default function Page() {
               <li><Link href="/what-happened-to-peptide-sciences" className={a}>What happened to Peptide Sciences</Link></li>
             </ul>
           </div>
+
+          <p>
+            The practical lesson of the letters is about evidence of intended use: FDA examined the surrounding presentation, not only the disclaimer. The sellers’ responses and any subsequent agency action would show what happened after the warnings; the letters themselves do not supply that outcome.
+          </p>
+
+          <IQONPartner vial="nad" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Published September 25, 2026. Sources: the FDA warning letters linked above and the ArentFox Schiff alert dated September 18, 2026. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.

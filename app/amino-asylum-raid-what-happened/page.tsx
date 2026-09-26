@@ -25,7 +25,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/amino-asylum-raid-what-happened#article",
       headline: "Amino Asylum Raid Reports: What Happened and What Is Documented",
       datePublished: "2026-01-15T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "amino asylum raid, amino asylum shut down, amino asylum FDA, amino asylum alternative, what happened to amino asylum",
@@ -61,8 +61,10 @@ export default function AminoAsylumRaid() {
         <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            <a href="https://peptideexaminer.com/vendors/amino-asylum" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">PeptideExaminer reports</a> that Amino Asylum&apos;s warehouse was raided in June 2025 and its storefront stopped operating. That is an industry account. We have not identified an FDA or DOJ announcement naming Amino Asylum that confirms the agency, charges or outcome.
+            The difficult part of the Amino Asylum story is the gap between a repeated warehouse account and an agency record. PeptideExaminer reported a June 2025 raid and storefront shutdown. We have not found a public FDA or DOJ announcement naming Amino Asylum that identifies charges or an outcome; the Paradigm Peptides guilty pleas belong to a different company.
           </p>
+
+          <IQONPartner vial="bac-water" variant="inline" />
 
           <p>
             People searching for the Amino Asylum raid often encounter the same shutdown account repeated alongside details from other suppliers&apos; cases. Those details need to stay separate. A report about a website going offline is not a court finding about why it happened.
@@ -80,8 +82,6 @@ export default function AminoAsylumRaid() {
             That DOJ page also describes testosterone in products sold as SARMs by Paradigm Peptides. An earlier version of this article incorrectly assigned those findings and guilty pleas to Amino Asylum. We have removed that conflation. It cannot be used to explain the reported Amino Asylum raid.
           </p>
 
-          <IQONPartner vial="bac-water" variant="inline" />
-
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Orders and research supplier checks</h2>
 
           <p>
@@ -91,10 +91,6 @@ export default function AminoAsylumRaid() {
           <p>
             If you need an Amino Asylum alternative for laboratory research, request documentation for the batch offered. Check how the laboratory established identity and measured purity. A purity percentage alone does not answer every question about composition, and a COA is not proof of suitability for human use.
           </p>
-
-          <IQONPartner vial="nad" variant="inline" />
-
-          <IQONPartner vial="glutathione" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -117,6 +113,12 @@ export default function AminoAsylumRaid() {
               ].map((r) => (<Link key={r.slug} href={`/${r.slug}`} className="block text-sm text-gray-700 hover:text-blue-700 transition-colors">{r.title} →</Link>))}
             </div>
           </div>
+
+          <p>
+            Until an agency document names Amino Asylum and identifies an action, the warehouse account remains attributed reporting, not a proven prosecution. A dated public filing would change that assessment; another retelling of the same account would not.
+          </p>
+
+          <IQONPartner vial="glutathione" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>

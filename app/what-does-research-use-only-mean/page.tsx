@@ -60,7 +60,7 @@ const jsonLd = {
       headline: TITLE,
       description: DESC,
       datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -102,8 +102,10 @@ export default function Page() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            &ldquo;Research use only&rdquo; is a labeling statement FDA created for lab products that are still in the research phase and are not meant for clinical use. It is a warning printed on the product. It is not a license, an exemption on its own, or a guarantee of how FDA will classify something. FDA decides that based on intended use, and in 2026 it has said plainly that a website can outweigh the label.
+            “Research use only” describes a product’s stated laboratory purpose; it does not by itself confer FDA approval or settle intended use. FDA’s diagnostic-device labeling rule and guidance explain the phrase in their own context. Its 2026 warning letters show why a disclaimer cannot neutralize marketing that signals human use.
           </p>
+
+          <IQONPartner vial="nad" variant="inline" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>
@@ -146,8 +148,6 @@ export default function Page() {
             The guidance even addresses buyer sign-offs. A program where customers certify they won&apos;t misuse a product is &ldquo;one factor to consider,&rdquo; but the existence of such a program &ldquo;alone would not relieve manufacturers&rdquo; of their responsibilities.
           </p>
 
-          <IQONPartner vial="nad" variant="inline" />
-
           <h2 className={h2} style={serif}>What did the August 2026 warning letters say about RUO?</h2>
           <p>
             They applied the same idea to peptide sellers, this time under the drug rules rather than the device rules. On August 24, 2026, FDA&apos;s Center for Drug Evaluation and Research sent warning letters to five online sellers. We read the letters to Peptide Partners LLC and Royal Peptides LLC in full.
@@ -184,8 +184,6 @@ export default function Page() {
             This article explains public documents. It is not legal advice.
           </p>
 
-          <IQONPartner vial="ghk" />
-
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
             {faqs.map(({ q, a: ans }) => (
@@ -204,6 +202,12 @@ export default function Page() {
               <li><Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>Eli Lilly&apos;s lawsuits against research peptide sellers</Link></li>
             </ul>
           </div>
+
+          <p>
+            Read the label alongside the rest of the presentation. The phrase describes an intended research context, but it does not verify a batch, authorize patient use or shield contradictory claims. The FDA’s specific observations in a warning letter carry more weight than a seller’s isolated disclaimer.
+          </p>
+
+          <IQONPartner vial="ghk" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Published September 25, 2026. Sources: 21 CFR 809.10 (eCFR), FDA&apos;s November 2013 RUO/IUO guidance, FDA warning letters 735063 and 734884, the Alabama Board of Medical Examiners notice and the Mississippi boards&apos; joint statement, all linked above. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.

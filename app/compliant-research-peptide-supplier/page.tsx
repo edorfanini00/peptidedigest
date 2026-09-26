@@ -25,7 +25,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/compliant-research-peptide-supplier#article",
       headline: "What to Check in a Research Peptide Supplier: Documentation and Positioning",
       datePublished: "2026-09-10T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/compliant-research-peptide-supplier" },
@@ -58,13 +58,13 @@ export default function CompliantSupplier() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Choosing a research peptide supplier involves assessing claims that cannot be verified by reading a label. The 2026 enforcement period illustrates this: some suppliers described as tested and domestic were neither. Five checks help separate stated policies from evidence.
+            A research peptide supplier can show a polished certificate while leaving the central questions unanswered: does that report match this lot, and can the named laboratory confirm it? The checks below separate the seller’s claims from documents a buyer can actually test. A research-use-only label is not a substitute for either.
           </p>
+
+          <IQONPartner vial="ghk" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>1. Research-only positioning across every channel</h2>
           <p>Check the supplier website, social media and any promotional materials for human-use claims, dosing language or implied health outcomes. A research disclaimer on a product page does not cover implied claims made elsewhere. The FDA enforcement letters show that net impression matters; it does not look only at formal labels.</p>
-
-          <IQONPartner vial="ghk" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>2. Batch-specific certificate of analysis</h2>
           <p>Ask for the COA matching the offered lot. The test report should identify the laboratory, name the sample, give the batch number, state the analysis date and report the tested properties and results. An HPLC purity result answers one question. A complete COA for injectable research material typically also includes endotoxin testing, with results in EU/mg.</p>
@@ -84,8 +84,6 @@ export default function CompliantSupplier() {
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>5. Consistent compound scope</h2>
           <p>FDA scrutiny has focused on compounds with evident consumer interest, including GLP-1 receptor agonists and others previously removed from or added to Category 2. A research catalog limited to compounds with established preclinical research literature and no implied clinical or consumer application carries less regulatory exposure than one tracking consumer demand. That is a practical observation, not a legal guarantee.</p>
 
-          <IQONPartner vial="bac-water" />
-
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
@@ -99,6 +97,12 @@ export default function CompliantSupplier() {
               </div>
             ))}
           </div>
+
+          <p>
+            No checklist certifies a supplier as compliant. The useful outcome is narrower: identify the lot-specific records and marketing claims that can be checked, then treat missing or unverifiable evidence as missing rather than filling the gap with a seller’s assurances.
+          </p>
+
+          <IQONPartner vial="bac-water" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">Updated September 25, 2026. For information only, not legal advice. IQON Health is a paid commercial partner, not a supplier independently audited by this article. Research products are not for human consumption.</p>
         </div>

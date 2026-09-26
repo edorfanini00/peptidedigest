@@ -25,7 +25,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/paradigm-peptides-prison-sentence#article",
       headline: "Paradigm Peptides Sentence: Matthew Kawa Receives 70 Months",
       datePublished: "2026-08-01T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "paradigm peptides shut down, paradigm peptides prison, Matthew Kawa sentenced, paradigm peptides alternative, what happened to paradigm peptides",
@@ -36,7 +36,6 @@ const jsonLd = {
         { "@type": "Question", name: "What happened to Paradigm Peptides?", acceptedAnswer: { "@type": "Answer", text: "Its owner, Matthew Kawa, received 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months, according to the DOJ case record. Both pleaded guilty in December 2025." } },
         { "@type": "Question", name: "Why was the Paradigm Peptides owner sentenced?", acceptedAnswer: { "@type": "Answer", text: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation. The government described false product and testing claims." } },
         { "@type": "Question", name: "Was there a $5 million judgment?", acceptedAnswer: { "@type": "Answer", text: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from the restitution order." } },
-        { "@type": "Question", name: "What is a good Paradigm Peptides alternative?", acceptedAnswer: { "@type": "Answer", text: "Verify the seller and the documentation for the offered batch. IQON Health is a commercial partner of this publication, not a supplier independently certified by this article." } },
       ],
     },
   ],
@@ -60,9 +59,10 @@ export default function ParadigmPeptidesSentence() {
         <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Matthew Kawa, owner of Paradigm Peptides, was sentenced to 70 months in federal prison on July 30, 2026. His sister and employee, Jennifer Stechkober, received 16 months. The dates and prison terms appear in the{" "}
-            <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ case record</a>.
+            Matthew Kawa, the owner of Paradigm Peptides, received a 70-month federal prison sentence on July 30, 2026. Jennifer Stechkober received 16 months. The Justice Department also reported a $5 million money judgment against Kawa. Unlike a warning letter or an uncharged search, this case reached guilty pleas and sentencing.
           </p>
+
+          <IQONPartner vial="nad" variant="inline" />
 
           <p>
             The{" "}
@@ -80,8 +80,6 @@ export default function ParadigmPeptidesSentence() {
             The DOJ says investigators found that many products labeled as SARMs contained testosterone instead. Its case page identifies testosterone as a controlled substance. These findings concern Paradigm Peptides products; they should not be generalized to another supplier without evidence.
           </p>
 
-          <IQONPartner vial="nad" variant="inline" />
-
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the case says about testing claims</h2>
 
           <p>
@@ -92,8 +90,6 @@ export default function ParadigmPeptidesSentence() {
             For a research purchase, ask for the report matching the offered lot. Check the sample description, laboratory identity and analytical methods. If a report cannot be authenticated, request confirmation from the issuing laboratory directly. Read the test scope: purity, identity and endotoxin results answer different questions.
           </p>
 
-          <IQONPartner vial="glutathione" variant="inline" />
-
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the sentence does and does not show</h2>
 
           <p>
@@ -103,8 +99,6 @@ export default function ParadigmPeptidesSentence() {
           <p>
             Researchers should treat supplier claims as claims to check. A research label does not authenticate a product, and a certificate does not establish legal compliance. The documented testing failures in this case make batch verification a practical step in any procurement decision.
           </p>
-
-          <IQONPartner vial="ghk" />
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -126,6 +120,12 @@ export default function ParadigmPeptidesSentence() {
               ].map((r) => (<Link key={r.slug} href={`/${r.slug}`} className="block text-sm text-gray-700 hover:text-blue-700 transition-colors">{r.title} →</Link>))}
             </div>
           </div>
+
+          <p>
+            The case record supports conclusions about Paradigm and its defendants, not about unrelated sellers. Its sharpest documentation lesson is the gap between a product label or testing representation and what investigators established about the products. A different supplier’s certificate still has to be checked on its own terms.
+          </p>
+
+          <IQONPartner vial="ghk" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>

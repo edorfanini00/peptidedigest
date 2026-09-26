@@ -39,7 +39,7 @@ const articleJsonLd = {
       description:
         "Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
       datePublished: "2026-09-24T12:00:00.000Z",
-      dateModified: "2026-09-26T19:42:34Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know" },
@@ -83,7 +83,7 @@ export default function ApexRaidedArticle() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Federal agents searched a North Sioux City property associated with several Apex businesses and a Dakota Dunes home on September 23, 2026. Business filings link Apex Peptides to the broader group, but the reports do not establish a separate search of an Apex Peptides facility. The reason for the searches remains undisclosed in the cited reports.
+            Federal agents searched Apex-linked properties on September 23, 2026, but the property and the peptide storefront are not interchangeable. KTIV reported activity at 503 Prosperity Way and a Dakota Dunes home; business filings connect Apex Peptides to the group. The cited reports do not establish a separate search of an Apex Peptides facility or disclose the reason for the searches.
           </p>
 
           <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
@@ -120,8 +120,6 @@ export default function ApexRaidedArticle() {
           <p>Keep the receipt, order number and correspondence. Ask the seller for written confirmation of fulfillment or a refund. If the order remains unresolved, check your payment provider&apos;s dispute deadline. For a laboratory project, record the lot already in use and review any replacement against the protocol before changing materials.</p>
           <p>When comparing research suppliers, verify the legal seller, documentation for the specific offered lot and current order terms. Research products are not for human consumption.</p>
 
-          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
-
           <div className="mt-14 pt-10 border-t border-gray-200">
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
@@ -151,7 +149,13 @@ export default function ApexRaidedArticle() {
                 <span className="shrink-0 text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 bg-orange-50 text-orange-700">{r.category}</span>
                 <div>
                   <p className="text-sm font-medium text-gray-800 group-hover:text-blue-700 transition-colors leading-snug">{r.title}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{r.date}</p>
+                  <p>
+            The distinction matters for anyone waiting on an order: a search at an affiliated property and a temporary website notice do not document fulfillment, refunds or a permanent closure. A dated company statement or official filing could settle those questions; the searches alone cannot.
+          </p>
+
+          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+
+          <p className="text-xs text-gray-400 mt-0.5">{r.date}</p>
                 </div>
               </Link>
             ))}

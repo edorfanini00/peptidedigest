@@ -70,7 +70,7 @@ const jsonLd = {
       headline: TITLE,
       description: DESCRIPTION,
       datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -121,8 +121,10 @@ export default function StateCrackdown2026() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Three state medical boards told licensed providers in 2026 that they may not give patients research-grade peptides. Alabama went first on May 26, 2026. Mississippi followed with a joint statement on August 19, 2026, and South Carolina issued its own notice in August. Ohio&apos;s pharmacy board had already said clinics cannot possess drugs labeled for research use only.
+            Alabama, Mississippi and South Carolina boards warned licensed providers against using research-grade peptides with patients in 2026. Ohio’s pharmacy board separately says clinics cannot possess drugs marked for research use. These are different state authorities speaking to professional conduct, not one new national criminal law.
           </p>
+
+          <IQONPartner vial="nad" variant="inline" />
 
           <div className="rounded-xl border border-gray-200 bg-white p-5">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3">Key facts</h2>
@@ -166,9 +168,6 @@ export default function StateCrackdown2026() {
           </p>
 
 
-          <IQONPartner vial="nad" variant="inline" />
-
-
           <h2 className={h2} style={serif}>How do the state actions compare?</h2>
           <div className="my-6 space-y-4">
             {actions.map((item) => (
@@ -192,8 +191,6 @@ export default function StateCrackdown2026() {
             No. These are state licensing and pharmacy rules. LumaLex attorney Dustin Robinson <a className={a} href={S.lumalex} target="_blank" rel="noopener noreferrer">argues</a> the boards &ldquo;did not create a new prohibition&rdquo; but restated existing standard-of-care duties. On the federal side, <a className={a} href={S.mcdermott} target="_blank" rel="noopener noreferrer">McDermott Will &amp; Schulte</a> notes that FDA sent warning letters to five online sellers in August 2026, and that an FDA advisory committee vote in July 2026 on compounding eligibility for six peptides was non-binding. <a className={a} href={S.reuters} target="_blank" rel="noopener noreferrer">Reuters</a> described that advisory meeting as a separate track.
           </p>
 
-          <IQONPartner vial="glutathione" />
-
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
             {faqs.map(({ q, a: ans }) => (
@@ -212,6 +209,12 @@ export default function StateCrackdown2026() {
               <li><Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">What happened to Peptide Sciences</Link></li>
             </ul>
           </div>
+
+          <p>
+            The notices matter most to licensed providers and clinics because they spell out what the boards consider impermissible. They do not establish that a patient consent form cures the problem, or that every state has enacted identical rules. Check the named board’s current notice before drawing conclusions about a particular jurisdiction.
+          </p>
+
+          <IQONPartner vial="glutathione" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Published September 25, 2026. For information only, not medical or legal advice. Board notices describe regulators&apos; positions and are not court rulings. Research products are not for human consumption.

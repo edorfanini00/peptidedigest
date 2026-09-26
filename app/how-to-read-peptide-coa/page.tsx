@@ -59,7 +59,7 @@ const jsonLd = {
       headline: TITLE,
       description: DESC,
       datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -103,8 +103,10 @@ export default function Page() {
 
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            A peptide Certificate of Analysis (COA) is a lab report for one specific lot. A useful one names the testing lab, gives the lot number and test dates, reports HPLC purity with a chromatogram, and confirms identity by mass spectrometry. If any of those pieces is missing, or the lab cannot confirm it issued the report, the document tells you very little.
+            Start with the lot number. If a peptide certificate of analysis does not identify the material it tested, a purity percentage cannot tell you whether it belongs to the product in front of you. Then check the laboratory, dates, analytical method and identity result. A chromatogram or mass spectrum answers a different question from a marketing claim.
           </p>
+
+          <IQONPartner vial="glutathione" variant="inline" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>
@@ -149,8 +151,6 @@ export default function Page() {
           <p>
             Mass spec also catches problems HPLC can miss. A deletion sequence, where one amino acid dropped out during synthesis, can run close to the target on a column but will weigh less. An oxidized residue adds 16 daltons. Both are common synthesis or storage impurities (<a className={a} href={SRC.dhondt} target="_blank" rel="noopener noreferrer">D&apos;Hondt et al., 2014</a>). A COA that reports purity but skips identity leaves open whether the main peak is the compound on the label.
           </p>
-
-          <IQONPartner vial="glutathione" variant="inline" />
 
           <h2 className={h2} style={serif}>Why do the lot number and dates matter?</h2>
           <p>
@@ -204,8 +204,6 @@ export default function Page() {
             ))}
           </div>
 
-          <IQONPartner vial="bac-water" />
-
           <div className="mt-10 pt-6 border-t border-gray-200">
             <h2 className="text-sm font-semibold text-gray-900 mb-3">Related coverage</h2>
             <ul className="space-y-2 text-sm">
@@ -214,6 +212,12 @@ export default function Page() {
               <li><Link href="/peptide-enforcement-2026" className={a}>2026 Peptide Enforcement: The Major Documented Actions</Link></li>
             </ul>
           </div>
+
+          <p>
+            A certificate is evidence about a tested sample, not a blanket guarantee about every vial sold under a brand. Match the lot, check what each method measured and seek confirmation from the listed lab. If that chain breaks, the displayed purity number cannot repair it.
+          </p>
+
+          <IQONPartner vial="bac-water" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Published September 25, 2026. Sources: Mant et al. (Methods Mol Biol, 2007), D&apos;Hondt et al. (J Pharm Biomed Anal, 2014), FDA guidance on analytical procedures, ISO and ILAC, all linked above. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.
