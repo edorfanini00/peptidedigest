@@ -11,9 +11,32 @@ export interface EditorialImage {
   photographer: string;
   sourceUrl: string;
   credit?: string;
+  kind?: "illustration";
 }
 
 export const images = {
+  empowerControls: {
+    src: "/images/empower-aseptic-controls.webp",
+    width: 1800,
+    height: 1208,
+    alt: "Conceptual illustration of an aseptic workspace with blank containers and an airflow instrument",
+    caption: "AI-generated editorial illustration, not a photograph of the event. Conceptual aseptic workspace; not Empower Pharmacy.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
+  peptideStorage: {
+    src: "/images/peptide-storage-laboratory.webp",
+    width: 1800,
+    height: 1208,
+    alt: "Conceptual illustration of blank sample tubes arranged in a laboratory cold storage compartment",
+    caption: "AI-generated editorial illustration of laboratory sample storage, not a photograph of a study.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
   labBeakers: {
     src: "/images/lab-beakers.jpg",
     width: 1600,
