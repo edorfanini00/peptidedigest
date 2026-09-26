@@ -12,6 +12,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${base}/empower-pharmacy-fda-warning-letter-september-2026`,
+      lastModified: new Date("2026-09-26T16:12:21-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-freeze-thaw-stability-lab-evidence`,
+      lastModified: new Date("2026-09-26T16:12:21-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/how-to-read-peptide-coa`,
       lastModified: now,
       changeFrequency: "monthly",

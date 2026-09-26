@@ -72,6 +72,24 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "empower-pharmacy-fda-warning-letter-september-2026",
+    category: "Regulatory",
+    date: "September 26, 2026",
+    readTime: "9 min read",
+    title: "Empower Pharmacy FDA warning: what the September letter establishes",
+    excerpt: "The November 2025 inspection, the September 18 letter and the evidence FDA wants for sterile production controls. A warning is not a recall.",
+    image: "empowerControls",
+  },
+  {
+    slug: "peptide-freeze-thaw-stability-lab-evidence",
+    category: "Science",
+    date: "September 26, 2026",
+    readTime: "8 min read",
+    title: "Does freezing and thawing damage research peptides? What laboratory studies show",
+    excerpt: "Three bench studies distinguish peptide recovery, average instrument signal and measurement variability. None supplies a universal shelf life.",
+    image: "peptideStorage",
+  },
+  {
     slug: "how-to-read-peptide-coa",
     category: "Guide",
     date: "September 25, 2026",
