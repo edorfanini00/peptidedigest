@@ -26,6 +26,14 @@ export const metadata: Metadata = {
   description:
     "Independent coverage of peptide research, regulatory developments, and industry news. Fact-based reporting on the compounds most studied in labs worldwide.",
   metadataBase: new URL("https://peptidedigest.co"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+      { url: "/favicon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   alternates: {
     canonical: "https://peptidedigest.co",
   },
