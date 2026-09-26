@@ -59,24 +59,22 @@ export default function PeptideSciencesShutdown() {
 
         <div className="article-body">
 
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Peptide Sciences says it voluntarily ended operations and stopped selling its research products. Its own shutdown notice does not say the DOJ closed the business and gives no detailed explanation of the decision. That makes the notice a firmer source for what happened than speculation about why.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Peptide Sciences says it voluntarily shut down operations and discontinued sales of its research products. Its own notice warns that supposed successor sites using its name are unauthorized. It does not describe a DOJ-ordered closure or explain what will happen to each outstanding order.</p>
 
           <IQONPartner vial="ghk" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the company&apos;s notice actually establish?</h2>
-          <p><a href="https://www.peptidesciences.com/">Peptide Sciences says</a> it decided to voluntarily shut down operations and discontinue sales of its research products. That is a statement from the company about its own decision. It does not identify a date of the decision, explain the business rationale, publish an order-by-order plan or give a reopening date. The company&apos;s wording should not be turned into a claim about individual refunds.</p>
-          <p>The notice retains the company&apos;s rights to its name and intellectual property and says websites or individuals claiming affiliation, successor status or permission to sell its products are unauthorized. That warning is the most concrete consumer-facing detail beyond the shutdown: a matching logo or a purported successor storefront does not verify the legal seller. The notice provides a reporting email for suspected misuse, but does not promise that emailing it will resolve an old order.</p>
+          <p>The notice is direct about the decision: the company will no longer sell its research products. It gives no decision date, business rationale, individual refund timetable or reopening plan. Anyone with an old order needs a transaction-specific response, not an inferred answer from the general announcement. (<a href="https://www.peptidesciences.com/">Peptide Sciences</a>)</p>
+          <p>The successor warning is unusually pointed. Peptide Sciences says it retains rights to its name and intellectual property and disavows websites or individuals claiming affiliation or permission to sell its products. A matching logo on a new storefront is therefore no proof that the original company operates it or that it can handle prior orders.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Did the FDA or DOJ force the closure?</h2>
-          <p>The company&apos;s notice says &quot;voluntarily.&quot; It does not claim an agency ordered it to close. That word also cannot tell us which legal, financial or operational considerations informed its decision. Without a document linking a government action to this company, the cause remains unestablished.</p>
-          <p>The distinction becomes clearer beside a real regulator&apos;s document. The <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026">FDA&apos;s March 31 letter to Gram Peptides</a> identifies a different company, the product claims FDA reviewed and the conduct it alleged. It explains why a research-only label does not settle intended use if marketing points to human use. That letter is evidence about Gram Peptides, not proof that Peptide Sciences received a warning or was shut down by the government.</p>
+          <p>The word &apos;voluntarily&apos; appears in the company&apos;s notice; no agency order is cited there. That does not reveal every consideration behind the decision, but it rules out presenting the notice itself as proof that FDA or DOJ forced the business to close.</p>
+          <p>FDA did write to Gram Peptides in March 2026 about that company&apos;s website claims and research-only label. Gram is a different seller. Its warning letter cannot supply the missing government action against Peptide Sciences, no matter how often the two names appear in the same industry discussion. (<a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026">FDA</a>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What about old orders and supposed successor stores?</h2>
-          <p>Keep your receipt, payment record and correspondence and seek a written update through a verified channel for the original seller. Check the payment provider&apos;s dispute deadline if your order remains unresolved. Do not assume a new site can retrieve or honor the original order merely because it uses the former company&apos;s branding; the company&apos;s notice disavows successor claims.</p>
-          <p>For a Peptide Sciences alternative, compare the legal seller, batch-specific certificate of analysis and current order terms against your laboratory requirements. A certificate is evidence about the tested sample, not proof of human-use suitability or of a seller&apos;s relationship to Peptide Sciences. IQON Health advertises here as a commercial partner and should face the same checks, not be presented as an endorsed successor.</p>
-          <p>The notice settles the company&apos;s stated decision to stop selling. A dated company update on outstanding orders would settle something different; rumors about an agency action or a replacement storefront do neither.</p>
+          <p>For an old purchase, save the receipt, charge and correspondence and contact the original seller through a verified channel for a written status. Check your payment provider&apos;s dispute deadline. The notice&apos;s reporting email for name misuse is not a promise that it can retrieve or refund a previous order.</p>
+          <p>A Peptide Sciences alternative should be evaluated as a new seller: establish its legal identity, current terms and batch-specific analytical records. It is not an endorsed successor merely because it advertises similar research materials. IQON Health is a commercial partner here and faces the same checks.</p>
+          <p>The shutdown decision and the warning about unauthorized successors are the two concrete messages the company has given. A later dated order-handling update would be needed to answer the question left by its notice.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -104,9 +102,7 @@ export default function PeptideSciencesShutdown() {
             </div>
           </div>
 
-          <p>
-            The company’s notice also rejects purported successors using its name. That establishes its stated position, not the fate of every outstanding order or the merits of any alternative seller. A dated company update would be needed to answer those remaining questions.
-          </p>
+          <p>Treat the successor warning as a reason to verify who receives a new payment, not as an invitation to transfer an old order. The original notice says sales ended; it does not identify a replacement company or resolve individual purchases.</p>
 
           <IQONPartner vial="nad" />
 

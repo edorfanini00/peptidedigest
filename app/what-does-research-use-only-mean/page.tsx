@@ -101,9 +101,7 @@ export default function Page() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            “Research use only” describes a product’s stated laboratory purpose; it does not by itself confer FDA approval or settle intended use. FDA’s diagnostic-device labeling rule and guidance explain the phrase in their own context. Its 2026 warning letters show why a disclaimer cannot neutralize marketing that signals human use.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">&apos;Research use only&apos; tells a buyer how a product is being presented, not whether FDA approved it or whether its marketing complies with law. The phrase has a specific place in diagnostic-device labeling rules. FDA&apos;s August 2026 letters to peptide sellers show the other side of the question: what the rest of a storefront says the product is for.</p>
 
           <IQONPartner vial="nad" variant="inline" />
 
@@ -119,17 +117,17 @@ export default function Page() {
           </div>
 
           <h2 className={h2} style={serif}>Where does the phrase &ldquo;research use only&rdquo; come from?</h2>
-          <p><Src href={SRC.ecfr}>21 CFR 809.10(c)</Src> sets labeling conditions for certain in vitro diagnostic products during laboratory research. Its wording is specific: &ldquo;For Research Use Only. Not for use in diagnostic procedures.&rdquo; The diagnostic context matters. That rule does not automatically classify a peptide offered as a chemical reagent, and it does not provide a universal safe harbor for anything with RUO on a label.</p>
+          <p>The exact regulatory wording in 21 CFR 809.10(c) is &apos;For Research Use Only. Not for use in diagnostic procedures.&apos; It concerns certain in vitro diagnostic products during laboratory research. A peptide vial offered through an online catalog does not gain a general legal exemption merely by borrowing that sentence.</p>
           <h2 className={h2} style={serif}>What does FDA&apos;s 2013 guidance say an RUO label is for?</h2>
-          <p><Src href={SRC.guidancePage}>FDA&apos;s guidance</Src> explains the distinction between research-stage diagnostic products and products marketed for clinical diagnosis. It addresses how the manufacturer distributes and promotes the product, not just the words printed on it. Guidance states the agency&apos;s thinking; the cited regulation and governing statutes retain their own legal force. Applying this IVD guidance directly to every peptide vial would erase that distinction.</p>
+          <p>FDA&apos;s 2013 RUO guidance explains how makers of research-stage diagnostic products should distribute and promote them consistently with that intended use. It is guidance in the diagnostic-device context, not a one-page rule that classifies every chemical reagent. The regulation and applicable statutes still control their own categories.</p>
           <h2 className={h2} style={serif}>Why doesn&apos;t the label settle the question?</h2>
-          <p>The regulatory question is what the seller intends the product to be used for, assessed from available evidence. Website claims, product descriptions and accompanying items can conflict with a research disclaimer. A buyer declaration that a product is only for research does not undo contradictory seller conduct. This is why reading the whole sales presentation tells you more than reading one sticker.</p>
+          <p>Look beyond the sticker. A seller&apos;s website may describe effects on disease or the body while a footer says research only. Product pages, linked guides and items sold alongside the product can give regulators evidence of a different intended use. A buyer&apos;s declaration cannot undo contradictory seller marketing.</p>
           <h2 className={h2} style={serif}>What did the August 2026 warning letters say about RUO?</h2>
-          <p>Here the legal context changes from diagnostic devices to drug intended use. The <Src href={SRC.partners}>Peptide Partners letter</Src> says that despite its research-use statements, the website&apos;s claims established human drug intent for products FDA named. FDA also cited a reconstitution solution sold for use with those products. In the <Src href={SRC.royal}>Royal Peptides letter</Src>, the agency examined accompanying supplies and guides. These are FDA&apos;s allegations and regulatory findings in warning letters, not convictions or proof that all similarly labeled products have the same status. Our <Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>letter-by-letter account</Link> gives the specific examples.</p>
+          <p>The August Peptide Partners letter made that conflict explicit: FDA acknowledged &apos;research use only&apos; and &apos;not for human or veterinary use&apos; statements but said other site claims showed human drug intent for the named products. In its Royal Peptides letter, FDA also examined guides and accompanying supplies. These are agency findings in warning letters, not convictions and not a ruling on every similarly labeled item. (<Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>Related article</Link>)</p>
           <h2 className={h2} style={serif}>What have state boards said about research-grade products?</h2>
-          <p><Src href={SRC.alabama}>Alabama&apos;s medical board notice</Src> and <Src href={SRC.mississippi}>Mississippi&apos;s joint board statement</Src> address licensed healthcare professionals and patient use. They reject the idea that calling a substance research-grade or obtaining patient consent by itself resolves professional obligations. These board notices are not national rules for every laboratory transaction. Their audience and authority differ from FDA&apos;s seller warning letters.</p>
+          <p>State medical boards answer a separate question about care of patients. Alabama and Mississippi told licensed providers that calling a peptide research-grade or obtaining patient consent does not remove their professional duties. Their notices address clinicians, while FDA&apos;s letters address named online sellers.</p>
           <h2 className={h2} style={serif}>So what does RUO mean for a reader in 2026?</h2>
-          <p>It describes a claimed research context. It does not authenticate a COA, establish FDA approval, authorize patient use or decide whether a seller&apos;s conduct complies with law. To understand a specific dispute, locate the applicable product category, read the regulator&apos;s cited evidence and distinguish a warning letter from a court judgment. See also the <Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>private litigation coverage</Link>; a civil complaint is yet another kind of document, with allegations to be tested rather than established findings.</p>
+          <p>For a researcher, the label also says nothing about whether a COA matches the offered lot, whether a seller is who it says it is or whether any result applies to human use. To understand a dispute, identify the product category and the actual marketing, then distinguish the regulator&apos;s letter from a court&apos;s ruling or a private party&apos;s lawsuit. (<Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>Related article</Link>)</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
@@ -150,9 +148,7 @@ export default function Page() {
             </ul>
           </div>
 
-          <p>
-            Read the label alongside the rest of the presentation. The phrase describes an intended research context, but it does not verify a batch, authorize patient use or shield contradictory claims. The FDA’s specific observations in a warning letter carry more weight than a seller’s isolated disclaimer.
-          </p>
+          <p>RUO is a claim about intended research context, not a shield against contrary product claims. The precise meaning in a particular case comes from the product, its presentation and the relevant authority—not from three words in isolation.</p>
 
           <IQONPartner vial="ghk" />
 

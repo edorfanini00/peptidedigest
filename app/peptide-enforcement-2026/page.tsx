@@ -73,9 +73,7 @@ export default function EnforcementTimeline() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            The events often grouped as “2026 peptide enforcement” are not the same kind of event. Peptide Sciences announced a voluntary shutdown; the Paradigm Peptides case reached sentencing; local outlets reported searches at Apex-linked properties. Amino Asylum’s warehouse account remains industry-attributed. This timeline keeps each claim at the level its evidence supports.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">A 2026 peptide enforcement timeline can mislead if every supplier headline is treated as a raid. Paradigm Peptides reached federal sentencing in July; FDA issued warning letters in August; agents searched an Apex-linked property in September. Peptide Sciences announced a voluntary closure, not a government action. The events require different answers for buyers and researchers.</p>
 
           <IQONPartner vial="glutathione" variant="inline" />
 
@@ -100,22 +98,22 @@ export default function EnforcementTimeline() {
           </div>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Why a closure is not a raid</h2>
-          <p>Peptide Sciences&apos; own notice announced the end of research-product sales. That establishes what the company said it would do, not why every business decision was made. A voluntary shutdown belongs in this industry chronology because readers encounter it alongside enforcement stories, but it should not be counted as a government enforcement action. See the <Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">separate closure account</Link>.</p>
+          <p>Peptide Sciences said it stopped selling research products and warned against unauthorized successor sites. It did not say DOJ closed it. The consequence for an old customer is an order and identity question, not a criminal-case outcome: establish who held the purchase and whether a purported replacement is really connected to the original company. (<Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">Related article</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the Paradigm court outcome establishes</h2>
-          <p>The <a href="https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline">Justice Department&apos;s sentencing release</a> identifies defendants, guilty pleas and prison terms. It also describes false claims about testing and FDA approval. Unlike a warning letter, the pleas and sentences are criminal-case outcomes. They belong to Paradigm Peptides, not Amino Asylum or another company with a similar product catalog. The 2025 pleas and 2026 sentencing are separate milestones.</p>
+          <p>Paradigm is the criminal case in this group. Matthew Kawa and Jennifer Stechkober pleaded guilty in December 2025 and were sentenced in July 2026 to 70 and 16 months respectively, according to DOJ. The release also describes false testing and FDA-approval representations. Those findings belong to the named business and defendants, not another seller whose products look similar. (<a href="https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline">DOJ</a>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What FDA&apos;s August letters add</h2>
-          <p>FDA&apos;s <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">Peptide Partners letter</a> describes website language and accompanying products that, in FDA&apos;s view, showed human drug intent despite RUO statements. That is a specific regulatory notice, with an invitation to respond, not proof of a prosecution or universal ruling on all peptide suppliers. Our <Link href="/fda-warning-letters-peptide-sellers-august-2026" className="text-blue-700 underline">warning-letter report</Link> sets out the individual addressees.</p>
+          <p>FDA&apos;s August letter to Peptide Partners offers a different test: the agency compared research-only disclaimers with the seller&apos;s product claims and accompanying items and alleged unapproved-drug marketing. The addressee had an opportunity to respond. The letter is not a plea, sentence or blanket judgment about every research catalog; the five recipients and examples appear in our warning-letter report. (<a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">FDA</a>, <Link href="/fda-warning-letters-peptide-sellers-august-2026" className="text-blue-700 underline">Related article</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the Apex search does not establish</h2>
-          <p><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline">KTIV documented</a> agents at 503 Prosperity Way and a search of a home, then used business filings to identify ties among companies. The nearby unfinished building at 498 Prosperity Way is a different address. That account does not supply a charging document against Apex Peptides or establish the contents of seized materials. For the distinction between the searched property, connected entities and order questions, see <Link href="/apex-peptides-raided-what-researchers-need-to-know" className="text-blue-700 underline">our Apex report</Link>.</p>
+          <p>On September 23, agents searched 503 Prosperity Way, identified in local reporting as an Apex Waste Management property, and a Dakota Dunes home. KTIV traced related business filings and distinguished a nearby unfinished building at 498 Prosperity Way. KCAU saw a temporary notice on the Apex Peptides website the next day. Neither report states why the searches occurred or supplies an order-by-order update. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline">KTIV</a>, <Link href="/apex-peptides-raided-what-researchers-need-to-know" className="text-blue-700 underline">Related article</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Where does Amino Asylum fit?</h2>
-          <p>Reports of a June 2025 Amino Asylum shutdown predate this year&apos;s timeline. Without a public government record tying the named company to a specific action, they remain industry-attributed rather than a documented 2026 enforcement milestone. The <Link href="/amino-asylum-raid-what-happened" className="text-blue-700 underline">Amino Asylum account</Link> separates that uncertainty from the Paradigm pleas.</p>
+          <p>A June 2025 Amino Asylum warehouse claim predates this timeline. PeptideExaminer reported it, but no agency document identifying the company, searched premises and action is linked in that account. Paradigm&apos;s pleas do not close that gap; our Amino Asylum report explains the limited attribution. (<Link href="/amino-asylum-raid-what-happened" className="text-blue-700 underline">Related article</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can a disrupted buyer actually check?</h2>
-          <p>A new supplier&apos;s popularity does not establish a batch&apos;s composition or a seller&apos;s legal status. Match a certificate to the offered lot, ask what methods were used and independently confirm the issuing laboratory when possible. The <Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">COA guide</Link> gives the limits of those tests. IQON Health is a commercial placement here and receives no editorial certification.</p>
+          <p>For an interrupted laboratory purchase, first ask the original seller for written order status and check your payment provider&apos;s deadline. When considering another supplier, match the offered lot to its COA and verify the issuer if possible. The COA guide explains the limits of the measurements. IQON Health advertises here but gains no editorial certification from any of these events. (<Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">Related article</Link>)</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -131,9 +129,7 @@ export default function EnforcementTimeline() {
             ))}
           </div>
 
-          <p>
-            A shutdown notice, a criminal sentence and a reported search answer different questions. The record does not turn a voluntary closure into an enforcement action, nor a search into a charge. Future filings or dated company statements may fill gaps; until then, those distinctions are the timeline’s most useful result.
-          </p>
+          <p>The timeline&apos;s most consequential difference is procedural: Paradigm has sentenced defendants; FDA&apos;s five sellers received notices; Apex remains a reported search and temporary website notice. A future filing may change the Apex entry, while a company order update could answer questions no enforcement headline can.</p>
 
           <IQONPartner vial="glutathione" />
 

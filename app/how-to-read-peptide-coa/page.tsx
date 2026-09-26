@@ -102,9 +102,7 @@ export default function Page() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Start with the lot number. If a peptide certificate of analysis does not identify the material it tested, a purity percentage cannot tell you whether it belongs to the product in front of you. Then check the laboratory, dates, analytical method and identity result. A chromatogram or mass spectrum answers a different question from a marketing claim.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">A peptide certificate of analysis can display &apos;98% purity&apos; and still leave the essential question unanswered: was the sample in that report drawn from the lot you are being offered? Start with the lot and report identifiers, then read the HPLC and mass-spectrometry results as different measurements. Neither turns a seller&apos;s PDF into a guarantee about every vial.</p>
 
           <IQONPartner vial="glutathione" variant="inline" />
 
@@ -120,21 +118,21 @@ export default function Page() {
           </div>
 
           <h2 className={h2} style={serif}>What is a peptide COA supposed to show?</h2>
-          <p>The useful unit is a tested sample, not a brand. A report should connect a named sample and lot to dated results, methods and the laboratory that issued them. FDA&apos;s <a className={a} href={SRC.fdaMethods}>analytical procedures guidance</a> concerns regulated drug submissions; a seller&apos;s research COA is not automatically subject to that approval framework. It is still reasonable to ask what was measured and what was not.</p>
+          <p>A useful COA identifies the sample, lot, lab, methods and analysis date together. If one of those links is missing, request it before comparing a percentage with a product listing. FDA guidance on analytical procedures concerns regulated submissions, not automatic approval of a research seller&apos;s certificate. <a className={a} href={SRC.fdaMethods}>analytical procedures guidance</a></p>
           <div className="my-4 space-y-3">{fields.map((f) => (<div key={f.name} className="p-4 rounded-lg border border-gray-200 bg-white"><p className="text-sm font-semibold text-gray-900">{f.name}</p><p className="text-sm text-gray-500">{f.note}</p></div>))}</div>
           <h2 className={h2} style={serif}>How do you read the HPLC purity number?</h2>
-          <p>High-performance liquid chromatography separates components of a sample before a detector records peaks over time. A reported area percentage commonly compares the main peak&apos;s integrated detector signal with the total integrated signal under that method. A 98% area result therefore is not a statement that 98% of a vial&apos;s mass is the listed peptide. The method, detector and integration choices matter. <a className={a} href={SRC.mant}>Mant and colleagues</a> describe reversed-phase separation in peptide analysis.</p>
-          <p>Ask for the chromatogram and method conditions, then ask whether minor peaks were integrated and what the detector could miss. Water, counterions and substances without a comparable detector response need separate assessment. A trace alone cannot establish identity; a pristine-looking plot is not evidence of manipulation without the underlying data.</p>
+          <p>High-performance liquid chromatography separates material before a detector records peaks. The familiar area-percentage figure compares detector signals under the stated method; 98% peak area is not the same as 98% of the vial&apos;s mass. Detector response, integration and separation conditions all affect what the number means. <a className={a} href={SRC.mant}>Mant and colleagues</a></p>
+          <p>Ask for the chromatogram and method, including how smaller peaks were handled. Water, counterions and substances poorly detected under that method may not appear as comparable peaks. A neat trace can be genuine and incomplete; it neither proves identity nor proves manipulation by its appearance alone.</p>
           <h2 className={h2} style={serif}>What does the mass spec result prove?</h2>
-          <p>Mass spectrometry adds a different comparison: the reported observed mass against the mass expected for the named molecule. A plausible match supports identity for the analyzed component, although isomers or other molecules can share a mass. It cannot by itself establish purity, sequence, amount per vial or absence of contaminants. <a className={a} href={SRC.dhondt}>D&apos;Hondt and colleagues</a> discuss multiple impurity classes in synthetic peptides. Read HPLC and mass spec together rather than allowing either to certify what it did not test.</p>
+          <p>A mass spectrum compares an observed mass with what is expected for the named molecule. A close match supports the identity of the analyzed component, but molecules with the same mass can still differ, and the result does not establish sequence, purity, vial content or the absence of contamination. Read it alongside the separation result, not in place of one. <a className={a} href={SRC.dhondt}>D&apos;Hondt and colleagues</a></p>
           <h2 className={h2} style={serif}>Why do the lot number and dates matter?</h2>
-          <p>Imagine a report for lot A attached to a listing shipping lot B. Even impeccable analytical work on A says nothing direct about B. Match identifiers character by character. Then check sample receipt, analysis and issuance dates in that order, if provided. An older test describes the sampled material at the testing time; it does not establish the condition of every package today.</p>
+          <p>Suppose a listing offers lot B but links a report for lot A. The lab may have done excellent work on A; that report still does not describe B. Compare identifiers character by character and note sample-receipt, test and issue dates where given. Older testing cannot certify every package&apos;s present condition.</p>
           <h2 className={h2} style={serif}>How do you know the testing lab is real?</h2>
-          <p>Look up the named laboratory independently rather than trusting contact information embedded in the PDF. <a className={a} href={SRC.iso}>ISO/IEC 17025</a> concerns laboratory competence, while accreditation and its scope should be checked through the relevant accreditation body&apos;s directory. A lab can be accredited for some tests but not the exact method on a particular report. Accreditation does not turn a research product into an FDA-approved drug.</p>
+          <p>Find the lab independently of the seller&apos;s document. ISO/IEC 17025 accreditation is about competence within a specified testing scope; the accreditation body&apos;s directory can show whether the claimed method is included. It is neither an FDA product approval nor a shortcut for authenticating one PDF. <a className={a} href={SRC.iso}>ISO/IEC 17025</a></p>
           <h2 className={h2} style={serif}>What are the red flags on a peptide COA?</h2>
-          <p>A mismatched lot or unidentifiable issuer breaks the link before the purity percentage matters. Missing method details, repeated report IDs for different samples, an absent chromatogram for an asserted HPLC result, or a mass figure without a stated expected value all deserve questions. None alone proves forgery. A report can be genuine yet narrow: if endotoxin or microbial testing is absent, that property remains untested by the document, not automatically safe or unsafe.</p>
+          <p>A mismatched lot or an issuer that cannot be identified breaks the document chain first. Missing method details, reused report numbers, no chromatogram for a claimed HPLC run or an observed mass with no expected comparator all warrant follow-up. None of these signs alone proves forgery. If microbial or endotoxin results are absent, the COA simply does not answer those questions.</p>
           <h2 className={h2} style={serif}>How do you verify a COA with the lab?</h2>
-          <p>Use a contact channel found on the lab&apos;s own site. Give the report ID, lot identifier and date and ask whether it issued that document and whether the supplied copy matches its records. A lab may decline to share client information, so refusal is not proof of fraud; a confirmed mismatch is a concrete reason to stop relying on the report. A QR code is useful only if it resolves to an independently verified laboratory service, not a seller-controlled copy.</p>
+          <p>Use the lab&apos;s own contact channel to provide the report number, lot and date, and ask whether it issued the supplied document. Privacy may limit what it will confirm; silence is not proof of fraud. A confirmed mismatch is a reason to stop relying on the report, while a QR code that leads only to a seller&apos;s own site is not independent verification.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
@@ -155,9 +153,7 @@ export default function Page() {
             </ul>
           </div>
 
-          <p>
-            A certificate is evidence about a tested sample, not a blanket guarantee about every vial sold under a brand. Match the lot, check what each method measured and seek confirmation from the listed lab. If that chain breaks, the displayed purity number cannot repair it.
-          </p>
+          <p>The defensible conclusion is tied to the specific tested sample and methods. Match the offered lot, check the reported measurements and seek lab confirmation where possible. If the chain fails, a large purity number cannot substitute for it.</p>
 
           <IQONPartner vial="bac-water" />
 

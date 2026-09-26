@@ -58,40 +58,24 @@ export default function ParadigmPeptidesSentence() {
 
         <div className="article-body">
 
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Matthew Kawa, the owner of Paradigm Peptides, received a 70-month federal prison sentence on July 30, 2026. Jennifer Stechkober received 16 months. The Justice Department also reported a $5 million money judgment against Kawa. Unlike a warning letter or an uncharged search, this case reached guilty pleas and sentencing.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Paradigm Peptides owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026; Jennifer Stechkober received 16 months. The Justice Department said products sold as SARMs contained testosterone and that Kawa claimed quality testing he had not performed before sale. This is a completed criminal case against named defendants, not a rumor about a supplier raid.</p>
 
           <IQONPartner vial="nad" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What happened between the sales and the sentence?</h2>
-          <p>
-            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Northern District of Indiana case page</a> describes Paradigm Peptides as Kawa&apos;s online business, shipping from Michigan City, Indiana, to customers across the United States. It gives the relevant purchase period for potential victims as April 2019 through March 2024 and records the December 10, 2025 guilty pleas by Kawa and Stechkober. The later sentencing release documents their July 30, 2026 sentences. Those are separate milestones, not one 2026 raid or an inference that another company pleaded guilty.
-          </p>
-          <p>
-            The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing release</a> reports that Kawa pleaded guilty to introducing unapproved new drugs in interstate commerce with intent to defraud and mislead and to illegal importation. Stechkober pleaded guilty to the drug-introduction charge. The release records their 70-month and 16-month prison terms.
-          </p>
+          <p>From Michigan City, Indiana, Kawa&apos;s online business shipped products across the United States. The DOJ case page identifies April 2019 through March 2024 as the relevant purchase period for people considering its victim-witness process. Kawa and Stechkober pleaded guilty on December 10, 2025; sentencing followed in July 2026. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
+          <p>Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead and to illegal importation, according to the sentencing release. Stechkober pleaded guilty to the drug-introduction charge. Their prison terms were 70 months and 16 months respectively. (<a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What did investigators find in products sold as SARMs?</h2>
-          <p>
-            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ case record</a> says investigators determined that many products advertised, labeled and sold as SARMs contained testosterone, a controlled substance. That is a specific mismatch between label and tested contents; it is not evidence that every peptide sold by Paradigm had the same contents or that another supplier&apos;s inventory was contaminated.
-          </p>
-          <p>
-            The sentencing release also says Kawa represented that products were tested for quality when he had not tested them before sale. A claimed testing program and a product&apos;s actual composition are different questions. A researcher checking any supplier should match a certificate to the offered lot, inspect the method and contact the named laboratory when authenticity is uncertain. Even a genuine purity result does not establish identity, sterility or legal status unless those questions were actually tested.
-          </p>
+          <p>The mismatch at the center of the product findings was specific: investigators found testosterone, a controlled substance, in many items marketed and labeled as SARMs. That finding concerns the investigated products. It is not a test of every peptide Paradigm sold, much less of inventory at unrelated sellers. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
+          <p>The sentencing release also says Kawa told buyers his products had been quality-tested when they had not been tested before sale. A label can misstate what is inside, and a testing claim can misstate what was checked. For laboratory purchases, a report tied to the offered lot and independently traceable to its issuing lab carries more information than an unsupported testing badge.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What do the two financial orders mean?</h2>
-          <p>
-            The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing announcement</a> says both defendants were ordered to pay $78,317.52 in restitution and describes a separate $5 million money judgment against Kawa. The figures are not two descriptions of the same order, and neither tells an individual purchaser that a refund has been approved.
-          </p>
+          <p>The sentencing announcement lists $78,317.52 in restitution ordered for both defendants and a separate $5 million money judgment against Kawa. Neither figure guarantees that a particular customer will receive a refund. The terms serve different purposes and should not be added up as a promised pool for buyers. (<a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can former customers and researchers establish?</h2>
-          <p>
-            DOJ&apos;s <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">case page</a> invites people who bought from Paradigm Peptides or the named defendants during the April 2019–March 2024 period to contact its victim-witness office if they believe they may be victims. It expressly says a buyer may or may not qualify. That is a more useful next step than assuming every prior order is covered by restitution.
-          </p>
-          <p>
-            This prosecution demonstrates what a record of guilty pleas, sentencing and product findings can establish about one business. It does not turn an FDA warning letter to another seller into a conviction, or prove that a research-use-only label always disguises human use. A Paradigm Peptides alternative still calls for independently checking seller identity, authorized scope and batch documentation, rather than inheriting trust from a competitor&apos;s conviction.
-          </p>
+          <p>DOJ invites people who purchased from Paradigm Peptides or the named defendants during April 2019–March 2024 to contact its victim-witness office if they think they may qualify. The case page cautions that a purchaser may or may not be a victim under the process. Keep transaction records before making that inquiry. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
+          <p>If you are comparing a Paradigm Peptides alternative for research, check that new seller&apos;s identity, current terms and lot-specific documentation. Paradigm&apos;s conviction tells you what happened in its case; it cannot certify another company&apos;s catalog. Research products are not for human consumption.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -109,9 +93,7 @@ export default function ParadigmPeptidesSentence() {
             </div>
           </div>
 
-          <p>
-            The case record supports conclusions about Paradigm and its defendants, not about unrelated sellers. Its sharpest documentation lesson is the gap between a product label or testing representation and what investigators established about the products. A different supplier’s certificate still has to be checked on its own terms.
-          </p>
+          <p>The court outcome settles the defendants&apos; pleas and sentences, but an individual buyer&apos;s eligibility for restitution still depends on the victim-witness process. The DOJ case page, rather than a replacement seller&apos;s offer, is the route for that question.</p>
 
           <IQONPartner vial="ghk" />
 

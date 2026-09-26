@@ -110,9 +110,7 @@ export default function Page() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Eli Lilly filed six civil lawsuits on August 12, 2026. Four name online sellers advertising research-use-only products. The company alleges the sellers offered its investigational compound retatrutide for human use, despite the labeling. These are Lilly’s allegations in civil litigation, not criminal charges or findings on the merits.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Eli Lilly sued six sellers on August 12, 2026, alleging they marketed purported retatrutide despite the drug still being investigational. Four of the defendants are online research-product sellers. Lilly says the research-only label did not match how the products were offered to consumers. The complaints are civil allegations, not findings of liability or criminal charges.</p>
 
           <IQONPartner vial="ghk" variant="inline" />
 
@@ -128,9 +126,7 @@ export default function Page() {
           </div>
 
           <h2 className={h2} style={serif}>Why are four research sellers in a six-case filing?</h2>
-          <p>
-            Lilly&apos;s <a href={SRC.lilly} className={a} {...ext}>August 12 announcement</a> names six defendants. Four marketed themselves as online research sellers: Astra Peptides, Legendary Peptides, Texas Peptides and Lone Star Peptide. The other two, Striker Pharmacy and Aesthetic Envy, are a compounding pharmacy and a med spa. Grouping them together captures Lilly&apos;s claim about sales of purported retatrutide, but the business models and courts are not interchangeable.
-          </p>
+          <p>Lilly named Astra Peptides, Legendary Peptides, Texas Peptides and Lone Star Peptide among the six defendants. Striker Pharmacy and Aesthetic Envy operate different models, a compounding pharmacy and a med spa. The shared allegation concerns purported retatrutide sales; it does not make all six cases identical. <a href={SRC.lilly} className={a} {...ext}>August 12 announcement</a></p>
           <div className="my-6 space-y-3">
             {cases.map((c) => (
               <div key={c.no} className="p-4 rounded-lg border border-gray-200 bg-white">
@@ -140,40 +136,24 @@ export default function Page() {
               </div>
             ))}
           </div>
-          <p>
-            One court detail requires care: Lilly&apos;s announcement identifies the Aesthetic Envy filing as Northern District of California, while the linked <a href={SRC.dEnvy} className={a} {...ext}>CourtListener entry</a> records an Eastern District of California preliminary docket number. Without the transfer or filing history, that conflict cannot be resolved from the announcement alone. The four research-seller cases are in Texas federal courts.
-          </p>
+          <p>One docket detail complicates the roundup: Lilly&apos;s announcement puts Aesthetic Envy in the Northern District of California, while the linked CourtListener entry initially shows an Eastern District of California number. The four research-seller suits were filed in Texas federal courts; the California history needs a complete filing trail before assigning a definitive district. <a href={SRC.dEnvy} className={a} {...ext}>CourtListener entry</a></p>
 
           <h2 className={h2} style={serif}>What is Lilly trying to prove about the research label?</h2>
-          <p>
-            In its <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary Peptides complaint</a>, Lilly quotes the seller describing itself as a supplier of third-party-tested compounds for research use only. Lilly then alleges that the site sold purported retatrutide to consumers, including buyers in several named states. The <a href={SRC.astraComplaint} className={a} {...ext}>Astra complaint</a> makes a similar accusation. Those are a plaintiff&apos;s descriptions of the defendants&apos; conduct, not judicial findings that a disclaimer was false.
-          </p>
-          <p>
-            The distinction matters because an &ldquo;RUO&rdquo; label is only one piece of evidence about intended use. Product pages, surrounding marketing and how a seller presents a compound can point elsewhere. <a href={SRC.fda} className={a} {...ext}>FDA guidance on unapproved GLP-1 products</a> separately describes products labeled for research but sold to consumers with human-use instructions. FDA&apos;s general position does not decide Lilly&apos;s individual lawsuits.
-          </p>
+          <p>In the Legendary complaint, Lilly quotes the seller&apos;s research-only and third-party-testing language, then alleges sales of purported retatrutide to consumers in multiple states. Its Astra complaint makes a related claim. The defendants&apos; marketing and Lilly&apos;s characterization are evidence submitted for a civil dispute, not a court determination that a particular disclaimer was false. <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary Peptides complaint</a> <a href={SRC.astraComplaint} className={a} {...ext}>Astra complaint</a></p>
+          <p>That is why the surrounding sales pitch matters. A research label can coexist with product pages or instructions suggesting human use; FDA has separately raised this concern about unapproved GLP-1 products. But an FDA policy statement does not adjudicate Lilly&apos;s allegations against these particular defendants. <a href={SRC.fda} className={a} {...ext}>FDA guidance on unapproved GLP-1 products</a></p>
 
           <h2 className={h2} style={serif}>Why state-law claims instead of a patent suit?</h2>
-          <p>
-            The <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary filing</a> asks a court to address alleged sales under state unfair-competition and consumer-protection theories. <a href={SRC.frier} className={a} {...ext}>Frier Levitt&apos;s legal analysis</a> notes that a private drug developer cannot simply prosecute an FDA violation under the federal drug statute. That helps explain why Lilly invokes state law while citing federal drug rules as context. The legal route also means a filing alone does not establish a nationwide ban on all research peptides.
-          </p>
-          <p>
-            The Aesthetic Envy case differs: its <a href={SRC.dEnvy} className={a} {...ext}>docket</a> lists a federal Lanham Act cause. A docket&apos;s jurisdiction field is a filing descriptor, not a ruling on the merits; neither diversity jurisdiction in the Texas cases nor a federal cause in California proves Lilly&apos;s factual allegations.
-          </p>
+          <p>Lilly&apos;s Legendary complaint invokes state unfair-competition and consumer-protection theories and asks for an injunction and financial relief. As Frier Levitt&apos;s analysis notes, a private drug company cannot bring a federal prosecution for someone else&apos;s alleged FDA violation. The chosen causes of action matter: a lawsuit is a request for a court ruling, not a nationwide prohibition on every research-product listing. <a href={SRC.legendaryComplaint} className={a} {...ext}>Legendary filing</a> <a href={SRC.frier} className={a} {...ext}>Frier Levitt&apos;s legal analysis</a></p>
+          <p>Aesthetic Envy&apos;s docket instead lists a federal Lanham Act cause. Neither a jurisdiction label on a docket nor a complaint&apos;s legal theory proves the factual allegations. The specific pleadings and any later orders determine what each court is being asked to decide. <a href={SRC.dEnvy} className={a} {...ext}>docket</a></p>
 
           <h2 className={h2} style={serif}>What can the public dockets tell us?</h2>
-          <p>
-            Service returns show that litigation was moving, not that Lilly won. The <a href={SRC.dLegendary} className={a} {...ext}>Legendary docket</a> records an August service return and an extension request. Crucially, the <a href={SRC.dAstra} className={a} {...ext}>Astra docket</a> records an amended complaint on August 31 and a notice of voluntary dismissal on September 2. A voluntary dismissal is not a liability ruling, and the accessible docket does not explain the parties&apos; reasons. CourtListener warns that PACER/RECAP entries may lag, so a claim that all six suits remain active would overstate these records.
-          </p>
+          <p>The accessible dockets already differ. Legendary shows service and an extension request; Astra shows an amended complaint on August 31 followed by a September 2 voluntary-dismissal notice. That dismissal is not a judgment that Astra did or did not make the alleged sales. CourtListener&apos;s PACER/RECAP coverage can lag, so these public entries are a dated window, not a live status guarantee for every case. <a href={SRC.dLegendary} className={a} {...ext}>Legendary docket</a> <a href={SRC.dAstra} className={a} {...ext}>Astra docket</a></p>
 
           <h2 className={h2} style={serif}>How does this differ from FDA enforcement or prosecution?</h2>
-          <p>
-            Lilly is the plaintiff in private civil suits seeking court remedies, including injunctions and financial relief. An <Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA warning letter</Link> communicates an agency&apos;s alleged violations and requests a response. Criminal charges come from prosecutors and require a separate criminal proceeding. Lilly says it referred more than 200 entities or individuals to government bodies, but a referral itself charges nobody (<a href={SRC.lilly} className={a} {...ext}>Lilly release</a>).
-          </p>
+          <p>These are Lilly&apos;s private civil suits. FDA warning letters are agency notices asking recipients to respond; criminal cases are brought by prosecutors. Lilly also said it referred more than 200 entities or people to government bodies, but a referral is not a charge. Keep each action&apos;s actor and remedy distinct. <Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA warning letter</Link> <a href={SRC.lilly} className={a} {...ext}>Lilly release</a></p>
 
           <h2 className={h2} style={serif}>What should a research-market reader watch next?</h2>
-          <p>
-            Watch the pleadings for each defendant&apos;s response, then court rulings on the specific state-law theories and requested injunctions. Lilly also asked online platforms, payment processors and shipping companies to act against sellers in its <a href={SRC.lilly} className={a} {...ext}>announcement</a>. That request is a commercial pressure tactic, not a court order against every research storefront. The unresolved issue in these cases is whether Lilly can prove its allegations about these defendants&apos; marketing and sales under the claims it actually filed.
-          </p>
+          <p>Lilly asked payment processors, shipping companies and online platforms to help curb sales in its announcement. That request could affect distribution independently of a court judgment, but it is not an injunction against every research seller. The next substantive answers will come from defendants&apos; responses and rulings on Lilly&apos;s actual claims. <a href={SRC.lilly} className={a} {...ext}>announcement</a></p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
@@ -194,9 +174,7 @@ export default function Page() {
             </ul>
           </div>
 
-          <p>
-            The cases test a specific allegation about how these sellers marketed a named product. They do not establish that every research-use-only listing is unlawful. The complaints and later court orders, rather than Lilly’s announcement alone, are the documents to watch for what a court actually decides.
-          </p>
+          <p>For now the suits describe a targeted challenge to alleged marketing of one investigational compound, not a finding about all RUO products. Astra&apos;s dismissal notice also shows why each docket needs its own status check before calling the entire August batch active.</p>
 
           <IQONPartner vial="bac-water" />
 

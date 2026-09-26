@@ -100,9 +100,7 @@ export default function Page() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            FDA’s August 24, 2026 letters told five online peptide sellers that products on their sites were unapproved new drugs. The agency said research-use-only wording did not override the human-use signals it found in the marketing. A warning letter states FDA’s position and requests correction; it is not a criminal conviction.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">FDA sent five online peptide sellers warning letters dated August 24, 2026 after reviewing their websites in July. Its central finding was that research-only disclaimers could not outweigh product descriptions and accompanying resources suggesting human drug use. The letters demand a response; they are not seizures, charges or convictions.</p>
 
           <IQONPartner vial="bac-water" variant="inline" />
 
@@ -118,50 +116,32 @@ export default function Page() {
           </div>
 
           <h2 className={h2} style={serif}>Which sellers got letters, and what was reviewed?</h2>
-          <p>
-            Each FDA letter is dated August 24, 2026, and describes a July review of that recipient&apos;s website. The names below link to the agency&apos;s actual letters, not a list of criminal defendants. The named products and examples differ by site.
-          </p>
+          <p>The addressees and products are named in the agency&apos;s individual letters below. Each describes content FDA saw during a July website review, so a product page edited later would not erase what the letter says FDA examined at the time.</p>
           <div className="my-4 space-y-3">
             {letters.map((l) => (
               <div key={l.ref} className="p-4 rounded-lg border border-gray-200 bg-white">
                 <p className="text-sm font-semibold text-gray-900">{l.name}</p>
-                <p className="text-sm text-gray-500">Reference {l.ref}. Website reviewed: {l.site}.</p>
+                <p className="text-sm text-gray-500">Across the five notices, FDA called the listed offerings unapproved new drugs under the FD&amp;C Act and explained the marketing it saw as evidence of intended use. A website review cannot itself establish the chemical contents of every vial shipped by those sellers.</p>
                 <a href={l.href} className="text-xs text-blue-700 underline mt-1 inline-block" target="_blank" rel="noopener noreferrer">Read the FDA letter →</a>
               </div>
             ))}
           </div>
-          <p>
-            FDA&apos;s shared legal theory is that products offered on these sites were unapproved new drugs under section 505(a) of the FD&amp;C Act. The letters explain what site content FDA regarded as evidence of intended drug use. They are agency notices, not laboratory findings that every vial contained what its label claimed.
-          </p>
+          <p>Peptide Partners&apos; site was a useful example of how the agency built its case. FDA cited seven products, including a reconstitution solution, and highlighted product descriptions referring to disease-related effects such as retinal protection. Those claims, FDA said, pointed toward use on the body despite the site&apos;s research language.</p>
 
           <h2 className={h2} style={serif}>How did a product page become evidence of intended use?</h2>
-          <p>
-            <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Peptide Partners&apos; letter</a> cites seven named products, including a reconstitution solution. FDA quotes disease-related claims drawn from product descriptions of research studies, including a suggestion about protecting the retina. It treats those claims as evidence that the site presented the products for effects on the body or disease, regardless of a research label elsewhere.
-          </p>
-          <p>
-            <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal Peptides&apos; letter</a> likewise cites seven products and quotes its product and comparison pages. One page used &ldquo;Advanced Research Use&rdquo; while listing mitochondrial repair, anti-aging and neuroprotection. FDA did not treat the word &ldquo;research&rdquo; as cancelling those claimed uses. These are the agency&apos;s findings about the reviewed pages, not evidence that any particular recipient has been convicted.
-          </p>
+          <p>At Royal Peptides, FDA cited seven products and pages describing mitochondrial repair, anti-aging and neuroprotection under an &apos;Advanced Research Use&apos; heading. The agency read the claimed effects together with the label, not as two mutually exclusive versions of the storefront. <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Peptide Partners&apos; letter</a></p>
+          <p>Peptide Partners displayed both &apos;for research use only&apos; and &apos;not for human or veterinary use&apos; statements. FDA explicitly acknowledged those words before concluding that other website claims signaled intended human drug use. The issue was the contradiction between disclaimer and presentation, not a blanket ban on printing RUO. <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal Peptides&apos; letter</a></p>
 
           <h2 className={h2} style={serif}>Why did FDA look beyond the research-use-only disclaimer?</h2>
-          <p>
-            The <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Peptide Partners letter</a> directly acknowledges labeling stating &ldquo;for research use only&rdquo; and &ldquo;not for human or veterinary use.&rdquo; FDA says evidence from the same website nevertheless established intended human drug use. Read together, the disclaimer and surrounding site make the agency&apos;s reasoning more concrete than the simplistic claim that the words RUO are themselves illegal.
-          </p>
-          <p>
-            In the <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal letter</a>, FDA also points to the seller&apos;s peptide guide, calculator and bacteriostatic water offering as part of the site context. The letter says those resources collectively provide means to prepare an injectable drug for human administration. We do not reproduce preparation steps: the important distinction is how accompanying resources can undermine a stated research-only purpose.
-          </p>
+          <p>Royal&apos;s peptide guide, calculator and bacteriostatic-water offering also featured in FDA&apos;s analysis. The agency said the combined resources could facilitate preparation of injectable drugs for people. The letter&apos;s allegation concerns the entire sales context; this article does not reproduce the preparation instructions. <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Peptide Partners letter</a></p>
+          <p>FDA treated Peptide Partners&apos; reconstitution solution as its own unapproved drug because the site offered it for preparing the other products for injection. The Tex Peptides letter raised a similar issue with bacteriostatic water. This is about the intended use of those particular offerings, not a ruling that every laboratory water product is unlawful. <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal letter</a></p>
 
           <h2 className={h2} style={serif}>Why did water sold alongside peptides draw scrutiny?</h2>
-          <p>
-            FDA treated the Peptide Partners reconstitution solution as a separate unapproved drug because, according to its <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">letter</a>, the product was offered to prepare the other listed products for injection. The <a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">Tex Peptides letter</a> makes a comparable determination about bacteriostatic water. FDA emphasizes that injectable products bypass bodily defenses against contamination. This is the agency&apos;s intended-use analysis of these specific offerings, not a universal finding about every laboratory water product.
-          </p>
+          <p>Each seller was asked to describe corrections within 15 business days of receiving its letter, or explain why it disagreed. The period runs from receipt, not necessarily the August 24 date. FDA warned that inadequate correction could bring seizure or injunction without another warning; the letters themselves did neither. <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">letter</a> <a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">Tex Peptides letter</a></p>
 
           <h2 className={h2} style={serif}>What happens after a warning letter?</h2>
-          <p>
-            Each recipient was asked to explain corrective steps within 15 business days of receiving its letter, or explain why it disagreed. That clock runs from receipt, not automatically from the date printed at the top. FDA warns that inadequate correction may lead to regulatory or legal action, including seizure or injunction, without another warning (<a className={a} href={SRC.nuscience} target="_blank" rel="noopener noreferrer">NuScience letter</a>). The warning is not itself a seizure, an indictment or a conviction.
-          </p>
-          <p>
-            The five letters establish FDA&apos;s August position and the examples it found in July. They do not by themselves establish whether the sellers answered, changed their sites or faced later action. To answer that separate question, a reader needs a dated agency update or subsequent proceeding, rather than an inference from the letters.
-          </p>
+          <p>The unanswered follow-up is what each seller did after receiving its notice. A later agency action or dated response would show more. The five letters document FDA&apos;s August allegations and its July observations, not a final disposition for the companies. <a className={a} href={SRC.nuscience} target="_blank" rel="noopener noreferrer">NuScience letter</a></p>
+          <p>Read a letter as a record of what FDA told a named seller to fix. Its product-page examples show why disclaimers did not settle intended use, while the response process and any later enforcement remain separate events.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
