@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -70,6 +71,7 @@ const cases = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Litigation", "https://peptidedigest.co/eli-lilly-lawsuits-research-peptide-sellers"),
     {
       "@type": "NewsArticle",
       "@id": `${URL}#article`,

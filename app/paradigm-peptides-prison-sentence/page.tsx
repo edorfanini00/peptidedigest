@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -27,6 +28,7 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Criminal", "https://peptidedigest.co/paradigm-peptides-prison-sentence"),
     {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/paradigm-peptides-prison-sentence#article",

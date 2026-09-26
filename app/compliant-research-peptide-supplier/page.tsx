@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -20,8 +21,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Industry", "https://peptidedigest.co/compliant-research-peptide-supplier"),
     {
-      "@type": "NewsArticle",
+      "@type": "Article",
       "@id": "https://peptidedigest.co/compliant-research-peptide-supplier#article",
       headline: "What to Check in a Research Peptide Supplier: Documentation and Positioning",
       datePublished: "2026-09-10T12:00:00.000Z",

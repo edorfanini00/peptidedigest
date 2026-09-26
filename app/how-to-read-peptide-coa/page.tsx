@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -53,8 +54,9 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Guide", "https://peptidedigest.co/how-to-read-peptide-coa"),
     {
-      "@type": "NewsArticle",
+      "@type": "Article",
       "@id": `${URL}#article`,
       headline: TITLE,
       description: DESC,
