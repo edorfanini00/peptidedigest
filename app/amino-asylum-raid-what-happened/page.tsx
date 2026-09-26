@@ -70,10 +70,10 @@ export default function AminoAsylumRaid() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Why do the Paradigm guilty pleas keep appearing in this story?</h2>
           <p>The December 2025 pleas belonged to Matthew Kawa and Jennifer Stechkober in the Paradigm Peptides case. The Justice Department identified Paradigm R.E. LLC as Kawa&apos;s business and described products advertised as SARMs that investigators found contained testosterone. It did not identify Amino Asylum as that defendant. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa">DOJ</a>)</p>
-          <p>Paradigm&apos;s later prison sentences also cannot be transferred to Amino Asylum. The two company names may appear in the same searches for research-product enforcement, but the criminal case names its own defendants and products.</p>
+          <p>That mix-up has a practical cost. Paradigm&apos;s <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa">DOJ case page</a> provides a victim-witness contact for its own case; it is not an Amino Asylum order-resolution channel. A buyer who follows the wrong case may miss the payment provider&apos;s actual dispute deadline.</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can the FDA&apos;s other letters explain?</h2>
-          <p>FDA&apos;s March 2026 warning to Gram Peptides shows a different regulatory route: the agency cited that seller&apos;s website claims despite research-only wording. Gram is the named recipient. The letter offers no evidence of an FDA letter, let alone a warehouse search, directed at Amino Asylum. (<a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026">FDA</a>)</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What would establish an Amino Asylum agency action?</h2>
+          <p>A warning letter names its recipient, reviewed site and alleged violations. For contrast, FDA&apos;s <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026">March 2026 letter to Gram Peptides</a> identifies Gram and describes website claims despite research-only wording; it says nothing about Amino Asylum. A warrant, agency statement or case filing naming Amino Asylum would be needed to pin down the reported warehouse action&apos;s authority and outcome.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What if you had an order or need a research alternative?</h2>
           <p>If your Amino Asylum purchase is unresolved, keep the confirmation, payment record and messages, ask the seller for a written status and check your payment provider&apos;s dispute window. Do not assume a site using familiar branding can retrieve an older transaction.</p>
@@ -96,7 +96,7 @@ export default function AminoAsylumRaid() {
             </div>
           </div>
 
-          <p>For now, the June warehouse account remains attributed to PeptideExaminer. Paradigm&apos;s court record belongs to Paradigm, and an unresolved order needs an answer from the seller or payment provider rather than another retelling of the raid claim.</p>
+          <p>The next meaningful update would identify the agency and premises in a record about Amino Asylum itself. Until then, the reported warehouse action cannot tell an individual buyer whether their payment or shipment was resolved.</p>
 
           <IQONPartner vial="glutathione" />
 
