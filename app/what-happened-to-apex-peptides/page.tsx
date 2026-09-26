@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -26,12 +27,13 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Industry", "https://peptidedigest.co/what-happened-to-apex-peptides"),
     {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-apex-peptides#article",
       headline: "What Happened to Apex Peptides? Searches and Order Questions",
       datePublished: "2026-09-24T14:00:00.000Z",
-      dateModified: "2026-09-26T19:42:34Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/what-happened-to-apex-peptides" },
@@ -65,38 +67,28 @@ export default function WhatHappenedApex() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Federal agents searched properties connected to several Apex businesses on September 23, 2026. Local reports link Apex Peptides through business filings, but do not establish that its own facility was searched. On September 24, its website displayed a temporary-closure notice, according to KCAU. A permanent shutdown and the status of existing orders are not established.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Apex Peptides&apos; website displayed a temporary-closure notice on September 24, according to KCAU, one day after federal agents searched an Apex-linked waste-management property. KCAU found all but one product removed from the peptide site. The notice did not say what would happen to orders already placed.</p>
 
           <IQONPartner vial="glutathione" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
           <h2>What do local reports confirm?</h2>
-          <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV reported</a> searches at a North Sioux City property associated with Apex Waste Management and Apex Research and at a Dakota Dunes home on September 23. KTIV names the U.S. Postal Inspection Service as lead, with the FBI, IRS Criminal Investigation, Union County Sheriff&apos;s Office and North Sioux City Police present. Its review links Apex Peptides to the broader business group. Five more related registrations at a nearby unfinished building were reported, but KTIV did not report a search there.
-          </p>
-          <p>
-            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ observed</a> two unidentified people led away in handcuffs. <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business">KCAU said</a> it did not know whether charges had been filed. Their identities, arrests and charging status cannot be inferred from the observation.
-          </p>
+          <p>On September 23, agents searched 503 Prosperity Way in North Sioux City and a Dakota Dunes home, KTIV reported. The Postal Inspection Service led, joined by the FBI, IRS Criminal Investigation and local officers. KTIV saw investigators load material but officials did not identify what they took or why. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
+          <p>KTIV&apos;s filing review lists Apex Peptides alongside Apex Waste Management and Apex Research at a primary address in Sergeant Bluff, Iowa. The searched property was the waste-management site at 503 Prosperity Way; a nearby unfinished building at 498 carried five related registrations. KTIV did not report a search of 498 or a distinct peptide facility.</p>
+          <p>KSCJ reported that two people were seen led away in handcuffs. It said their identities and any charges had not been revealed as of Wednesday night. The report does not establish whether charges were later filed. (<a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a>)</p>
 
           <h2>Is Apex Peptides shut down?</h2>
-          <p>
-            On September 24, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU found workers inside Apex Waste Management</a>. Its separate check of the Apex Peptides website found a temporary-closure notice and all but one product removed. The waste-management visit does not answer whether peptide orders were shipping. The dated website observation does not establish a permanent closure or reopening date.
-          </p>
+          <p>KCAU saw the temporary notice and a nearly empty catalog on September 24. Its reporter also found workers inside Apex Waste Management. Work at the waste business does not tell a customer whether a peptide order is moving, while a temporary message on the peptide site does not establish a permanent shutdown. (<a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU</a>)</p>
+          <p>An order confirmation and written seller response are more useful to an individual purchaser than a photo of the searched building. The local reports contain no order ledger, refund policy announcement or reopening date for Apex Peptides.</p>
 
           <h2>Why were the properties searched?</h2>
-          <p>
-            Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">told KSCJ</a> the investigation was active and declined to give further details. The cited reports do not disclose the reason for the searches or identify charges arising from them. Agency participation alone is not evidence of a particular offense.
-          </p>
+          <p>Postal inspector Travis Fondow told KSCJ that agents had been at multiple locations and declined to explain the active investigation. That leaves the purpose of the search open; the participating agencies alone do not identify a particular charge. (<a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">KSCJ</a>)</p>
 
           <h2>What can customers do about an order?</h2>
-          <p>Save the order confirmation and correspondence. Ask the seller for written fulfillment or refund status, and check the payment provider&apos;s dispute window if unresolved. For laboratory purchases, compare the legal seller, documentation for the offered lot and current order terms. Research products are not for human consumption.</p>
-
-          <IQONPartner vial="bac-water" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
-
+          <p>Keep your order confirmation, transaction record and correspondence. Ask the original seller for shipping or refund information in writing and, if unresolved, check your payment provider&apos;s dispute deadline before it expires.</p>
+          <p>If laboratory work requires another source, check its legal seller, current terms and documents for the offered lot. Research products are not for human consumption. A dated Apex statement about existing orders or an official case filing would answer more than the September search reports.</p>
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">Frequently Asked Questions</h2>
-            {(jsonLd["@graph"][1] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
+            {(jsonLd["@graph"][2] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
               <div key={name}><h3 className="text-sm font-semibold text-gray-900 mb-1">{name}</h3><p className="text-sm text-gray-500">{acceptedAnswer.text}</p></div>
             ))}
           </div>
@@ -106,6 +98,10 @@ export default function WhatHappenedApex() {
           </div>
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: September 23 searches</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 website and workplace observations</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
+          <p>The immediate, documented answer is a search at an Apex-linked waste property and a temporary notice on the peptide storefront the following day. Neither gives a customer a shipment date; preserve your own transaction record while seeking a direct answer.</p>
+
+          <IQONPartner vial="bac-water" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources linked above. For information only, not medical or legal advice. IQON Health is a commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>

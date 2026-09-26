@@ -29,6 +29,16 @@ const featuredArticle: CardArticle = {
 
 const industryArticles: CardArticle[] = [
   {
+    slug: "what-happened-to-apex-peptides",
+    category: "Industry",
+    date: "September 24, 2026",
+    readTime: "6 min read",
+    title: "What Happened to Apex Peptides? Searches and Order Questions",
+    excerpt:
+      "What the September 23 searches and a reported temporary closure do, and do not, establish about Apex Peptides and customer orders.",
+    image: "apexWarehouse",
+  },
+  {
     slug: "what-happened-to-peptide-sciences",
     category: "Industry",
     date: "March 10, 2026",
@@ -96,7 +106,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "What Does Research Use Only (RUO) Actually Mean in 2026?",
     excerpt:
-      "Research use only is a labeling category FDA defined for lab products that are not ready for clinical use. FDA says the label must match how a product is actually marketed, and its August 2026 warning letters said RUO statements did not change its findings.",
+      "FDA's research use only labeling rule addresses in vitro diagnostic products in the laboratory research phase, not all lab products or peptides. FDA looks at intended use beyond the label; its August 2026 warning letters said RUO statements did not change its findings about the named peptide sellers' products.",
     image: "magnifier",
   },
   {
@@ -106,7 +116,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "Eli Lilly Sues Research Use Only Peptide Sellers: The 2026 Cases Explained",
     excerpt:
-      "On August 12, 2026, Eli Lilly filed six federal civil lawsuits, four against online research use only peptide sellers. Here are the parties, courts, claims and what the cases signal.",
+      "Eli Lilly filed six federal civil lawsuits in August 2026, four against online research use only peptide sellers. One case was voluntarily dismissed on September 2; the others require separate docket checks.",
     image: "lillyHq",
   },
   {
@@ -116,7 +126,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "FDA's August 24, 2026 Warning Letters to Online Peptide Sellers",
     excerpt:
-      "FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding.",
+      "FDA sent August 2026 warning letters to online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC. What the letters allege and why an RUO label alone did not change FDA’s assessment.",
     image: "fdaSign",
   },
   {
@@ -136,13 +146,13 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "8 min read",
     title: "2026 Peptide Enforcement: The Major Documented Actions",
     excerpt:
-      "Peptide Sciences' voluntary shutdown, the Paradigm Peptides sentence and the Apex Peptides search reports, in one documented timeline.",
+      "Dated 2026 actions involving Paradigm Peptides and Apex-linked properties, with Peptide Sciences' undated shutdown notice kept separate.",
     image: "gavel",
   },
   {
     slug: "compliant-research-peptide-supplier",
     category: "Guide",
-    date: "September 24, 2026",
+    date: "September 10, 2026",
     readTime: "6 min read",
     title: "What to Check in a Research Peptide Supplier",
     excerpt:

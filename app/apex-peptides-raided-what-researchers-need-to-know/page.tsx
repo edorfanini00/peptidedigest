@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Industry", "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know"),
     {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know#article",
@@ -39,7 +41,7 @@ const articleJsonLd = {
       description:
         "Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
       datePublished: "2026-09-24T12:00:00.000Z",
-      dateModified: "2026-09-26T19:42:34Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know" },
@@ -82,9 +84,7 @@ export default function ApexRaidedArticle() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Federal agents searched a North Sioux City property associated with several Apex businesses and a Dakota Dunes home on September 23, 2026. Business filings link Apex Peptides to the broader group, but the reports do not establish a separate search of an Apex Peptides facility. The reason for the searches remains undisclosed in the cited reports.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Federal agents searched the Apex Waste Management property at 503 Prosperity Way in North Sioux City on September 23, 2026. The next day, KCAU found a temporary-closure notice on Apex Peptides&apos; website. For customers, that notice raises an immediate order question; neither the search nor the notice says whether an existing peptide order will ship.</p>
 
           <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
@@ -96,36 +96,27 @@ export default function ApexRaidedArticle() {
           ]} />
 
           <h2>What happened on September 23?</h2>
-          <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s scene reporting</a> places agents at 503 Prosperity Way around 10 a.m. and describes another search at a Dakota Dunes home that morning. At the North Sioux City property, agents brought in evidence-collection equipment, loaded a trailer and left shortly after 4 p.m. KTIV says authorities did not disclose what was taken. Its reporting identifies the U.S. Postal Inspection Service as leading, with the FBI, IRS Criminal Investigation, Union County Sheriff&apos;s Office and North Sioux City Police present.
-          </p>
-          <p>
-            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ reported</a> two unidentified people led away in handcuffs. <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business">KCAU said</a> their identities and whether charges had been filed were unknown. That observation does not establish an arrest or identify anyone as charged.
-          </p>
+          <p>KTIV&apos;s crew saw agents arrive at 503 Prosperity Way around 10 a.m., carry collection equipment inside and load a trailer before leaving after 4 p.m. It also reported a search at a Dakota Dunes home. KTIV saw boxes, papers and packaged items but said authorities had not identified what was taken. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
+          <p>The U.S. Postal Inspection Service led the operation, according to KTIV; the FBI, IRS Criminal Investigation and local officers participated. Postal inspector Travis Fondow told KSCJ that agents were at multiple locations and declined further details while the investigation was active. Their presence does not identify a suspected offense. (<a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">KSCJ</a>)</p>
+          <p>KSCJ reported that two people were seen led away in handcuffs. It said their identities and any charges had not been revealed as of Wednesday night. That account does not establish whether charges were later filed. (<a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a>)</p>
 
           <h2>How is Apex Peptides connected to the properties?</h2>
-          <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s review of business records</a> identifies Apex Waste Management and Apex Research with the searched North Sioux City property and links Apex Peptides through related business filings. It also found five related registrations at a nearby unfinished building at 498 Prosperity Way. The report does not say that second building was searched. Shared registrations do not make every Apex business the same operation.
-          </p>
+          <p>The addresses explain why &apos;Apex Peptides raided&apos; is an imprecise shorthand. KTIV placed the search at the waste-management property, while its business-filing review lists Apex Peptides, Apex Waste Management and Apex Research with a primary address in Sergeant Bluff, Iowa. Five related registrations pointed to 498 Prosperity Way, a nearby unfinished building; KTIV did not report a search of that building. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
+          <p>The filings connect the companies. They do not place investigators inside a separately identified Apex Peptides facility. That matters to a researcher trying to distinguish a site outage or halted order from a documented search of a peptide operation.</p>
 
           <h2>What changed on September 24?</h2>
-          <p>
-            <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU visited Apex Waste Management</a> the next morning and spoke with a worker inside. Separately, KCAU reported that the Apex Peptides website said the business was temporarily closed and that all but one product had been removed. A worker at the waste-management premises does not establish that peptide orders were being fulfilled; a temporary website notice does not establish permanent closure. These are observations from September 24, not a live status check.
-          </p>
-          <p>
-            Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">told KSCJ</a> that agents had been at multiple Sioux City-area locations but declined further detail because the investigation was active. The cited reports do not disclose the reason for the searches or identify charges arising from them.
-          </p>
+          <p>KCAU found employees inside Apex Waste Management on September 24. On the peptide website, it saw a temporary-closure notice with all but one product removed. Workers at the waste business declined to discuss Wednesday&apos;s activities with KCAU. The reporting did not establish whether the peptide storefront was fulfilling orders, and the dated website notice did not announce a permanent closure. (<a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU</a>)</p>
+          <p>KTIV also reported unanswered calls and a delivery driver who struggled to reach the waste property before completing a delivery when an Isaacson brother arrived. Those details describe access to that property that morning, not the fate of customers&apos; peptide packages.</p>
 
           <h2>What if you have an outstanding order?</h2>
-          <p>Keep the receipt, order number and correspondence. Ask the seller for written confirmation of fulfillment or a refund. If the order remains unresolved, check your payment provider&apos;s dispute deadline. For a laboratory project, record the lot already in use and review any replacement against the protocol before changing materials.</p>
-          <p>When comparing research suppliers, verify the legal seller, documentation for the specific offered lot and current order terms. Research products are not for human consumption.</p>
-
-          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <p>If you placed an order, save the confirmation, order number and payment record. Ask the original seller for a written shipping or refund status, then check the payment provider&apos;s own dispute deadline if the matter stays unresolved. No blanket refund or delivery outcome appears in the cited reporting.</p>
+          <p>For laboratory replacement stock, compare the actual offered lot with your protocol, seek its batch documentation and check the new seller&apos;s identity and order terms. A different catalog is not automatically interchangeable; research products are not for human consumption.</p>
+          <p>A dated company explanation about orders, or an official filing describing the searches, would change this account. Until then the verified sequence is a September 23 property search followed by KCAU&apos;s September 24 observation of a temporary notice on the peptide site.</p>
 
           <div className="mt-14 pt-10 border-t border-gray-200">
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
-              {(articleJsonLd["@graph"][1] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
+              {(articleJsonLd["@graph"][2] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
                 <div key={name}><h3 className="text-sm font-semibold text-gray-900 mb-1">{name}</h3><p className="text-sm text-gray-500 leading-relaxed">{acceptedAnswer.text}</p></div>
               ))}
             </div>
@@ -151,11 +142,12 @@ export default function ApexRaidedArticle() {
                 <span className="shrink-0 text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 bg-orange-50 text-orange-700">{r.category}</span>
                 <div>
                   <p className="text-sm font-medium text-gray-800 group-hover:text-blue-700 transition-colors leading-snug">{r.title}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{r.date}</p>
+          <p className="text-xs text-gray-400 mt-0.5">{r.date}</p>
                 </div>
               </Link>
             ))}
           </div>
+          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
         </div>
       </main>
       <Footer />

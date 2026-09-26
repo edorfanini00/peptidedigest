@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { articleBreadcrumbSchema } from "@/components/articleBreadcrumbSchema";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -53,13 +54,14 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    articleBreadcrumbSchema("Regulatory", "https://peptidedigest.co/fda-warning-letters-peptide-sellers-august-2026"),
     {
       "@type": "NewsArticle",
       "@id": `${URL}#article`,
       headline: TITLE,
       description: DESC,
       datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T20:29:10.000Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -78,11 +80,11 @@ const serif = { fontFamily: "var(--font-lora), Georgia, serif" };
 const a = "text-blue-700 underline";
 
 const letters = [
-  { name: "Peptide Partners LLC", ref: "735063", site: "peptide.partners", href: SRC.partners },
-  { name: "Royal Peptides LLC", ref: "734884", site: "royal-peptides.com", href: SRC.royal },
-  { name: "TXP Innovations LLC dba Tex Peptides", ref: "735067", site: "texpeptide.com", href: SRC.tex },
-  { name: "NuScience Peptides LLC", ref: "733652", site: "nusciencepeptides.com", href: SRC.nuscience },
-  { name: "Peak Performance Peptides", ref: "735127", site: "pppepz.com", href: SRC.peak },
+  { name: "Peptide Partners LLC", ref: "735063", site: "peptide.partners", href: SRC.partners, detail: "FDA cited six peptide listings, including an SS-31 page discussing retinal protection, plus a reconstitution solution it treated as a separate drug." },
+  { name: "Royal Peptides LLC", ref: "734884", site: "royal-peptides.com", href: SRC.royal, detail: "Seven products were named. A product page paired an ‘Advanced Research Use’ label with claims about mitochondrial repair, anti-aging and neuroprotection; FDA also cited a peptide guide and calculator." },
+  { name: "TXP Innovations LLC dba Tex Peptides", ref: "735067", site: "texpeptide.com", href: SRC.tex, detail: "FDA identified six peptide products and bacteriostatic water. Its examples included a GLP-1 SEM page describing diabetes and obesity uses." },
+  { name: "NuScience Peptides LLC", ref: "733652", site: "nusciencepeptides.com", href: SRC.nuscience, detail: "The letter named eight peptide offerings and BAC water. One GLP-1 Sema page linked to a PubChem passage about weight loss; FDA also noted a peptide calculator." },
+  { name: "Peak Performance Peptides", ref: "735127", site: "pppepz.com", href: SRC.peak, detail: "FDA named five peptide products and ‘Bac water’; its cited SS-31 page discussed neuroprotection and cardiovascular benefits. The letter separately noted multiple strengths for some other products." },
 ];
 
 export default function Page() {
@@ -100,9 +102,9 @@ export default function Page() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            On August 24, 2026, FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, saying the products on their websites were unapproved new drugs. FDA also said the sellers&apos; &ldquo;research use only&rdquo; labels did not change that finding. These are warning letters. No company in this batch has been charged with a crime.
-          </p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">FDA sent five online peptide sellers warning letters dated August 24, 2026 after reviewing their websites in July. Its central finding was that research-only disclaimers could not outweigh product descriptions and accompanying resources suggesting human drug use. The letters demand a response; they are not seizures, charges or convictions.</p>
+
+          <IQONPartner vial="bac-water" variant="inline" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>
@@ -115,79 +117,30 @@ export default function Page() {
             </ul>
           </div>
 
-          <h2 className={h2} style={serif}>Who received the August 24 letters?</h2>
-          <p>
-            A <a className={a} href={SRC.afs} target="_blank" rel="noopener noreferrer">September 18, 2026 alert from the law firm ArentFox Schiff</a> lists five recipients. We opened each FDA letter to confirm the date and the website FDA reviewed.
-          </p>
+          <h2 className={h2} style={serif}>Which sellers got letters, and what was reviewed?</h2>
+          <p>The addressees and products are named in the agency&apos;s individual letters below. Each describes content FDA saw during a July website review, so a product page edited later would not erase what the letter says FDA examined at the time.</p>
           <div className="my-4 space-y-3">
             {letters.map((l) => (
               <div key={l.ref} className="p-4 rounded-lg border border-gray-200 bg-white">
                 <p className="text-sm font-semibold text-gray-900">{l.name}</p>
-                <p className="text-sm text-gray-500">Reference {l.ref}. Website reviewed: {l.site}.</p>
-                <a href={l.href} className="text-xs text-blue-700 underline mt-1 inline-block" target="_blank" rel="noopener noreferrer">Read the FDA letter →</a>
+                <p className="text-xs text-gray-500">July 2026 website review: {l.site} · FDA reference {l.ref}</p>
+                <p className="text-sm text-gray-700">{l.detail}</p>
+                <a href={l.href} className="text-xs text-blue-700 underline mt-1 inline-block" target="_blank" rel="noopener noreferrer">Read {l.name}&apos;s FDA letter →</a>
               </div>
             ))}
           </div>
-          <p>
-            The Peptide Partners letter was sent to a Sarasota, Florida address. The Tex Peptides letter was addressed to its CEO in Dallas, Texas (<a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">FDA</a>).
-          </p>
+          <h2 className={h2} style={serif}>How did a product page become evidence of intended use?</h2>
+          <p>Royal&apos;s SS-31 page described mitochondrial repair, anti-aging and neuroprotection under an &apos;Advanced Research Use&apos; heading. In the <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal letter</a>, FDA read those claimed effects alongside the research label. Peptide Partners&apos; SS-31 page instead described possible retinal protection, among other disease-related examples in the <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Partners letter</a>. Neither example requires assuming what a shipped vial contained: the pages themselves were the evidence of intended use.</p>
 
-          <h2 className={h2} style={serif}>What did FDA say Peptide Partners did?</h2>
-          <p>
-            FDA listed seven Peptide Partners products, including a &ldquo;Reconstitution Solution (BAC),&rdquo; as unapproved new drugs. The agency quoted the company&apos;s product pages, which summarized lab and clinical studies in disease terms. One quoted line said a lab study suggested a product &ldquo;could be a potential treatment to protect the retina&rdquo; (<a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">FDA letter 735063</a>).
-          </p>
-          <p>
-            FDA said those statements showed the products were intended to treat disease or affect the body, which makes them drugs under section 201(g)(1). Because no approved application covers them, FDA called them unapproved new drugs.
-          </p>
+          <h2 className={h2} style={serif}>Why did FDA look beyond the research-use-only disclaimer?</h2>
+          <p>The <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Peptide Partners letter</a> explicitly notes &apos;for research use only&apos; and &apos;not for human or veterinary use&apos; statements, then points to the seller&apos;s other claims. The <a className={a} href={SRC.nuscience} target="_blank" rel="noopener noreferrer">NuScience letter</a> goes a step further: its GLP-1 Sema listing linked to a PubChem passage about weight loss. Even a link to outside scientific material became part of the website presentation FDA examined. A disclaimer did not settle how the agency interpreted that presentation.</p>
 
-          <h2 className={h2} style={serif}>What did FDA say Royal Peptides did?</h2>
-          <p>
-            The Royal Peptides letter also named seven products, including a blend sold as &ldquo;BIMORELIN.&rdquo; FDA quoted product pages and blog-style comparison pages on royal-peptides.com. One quoted page listed &ldquo;Advanced Research Use: Mitochondrial repair, anti-aging, neuroprotection&rdquo; (<a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">FDA letter 734884</a>).
-          </p>
-          <p>
-            FDA&apos;s examples included pages written in cautious research language. The agency still treated them as evidence of intended drug use when read with the rest of the site.
-          </p>
+          <h2 className={h2} style={serif}>Why did water sold alongside peptides draw scrutiny?</h2>
+          <p>At <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal</a>, FDA cited bacteriostatic water alongside a peptide guide and calculator as resources that together could facilitate preparation for injection. In its <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Partners letter</a> and <a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">Tex letter</a>, it went further: a reconstitution solution and bacteriostatic water, respectively, were themselves listed as unapproved drugs because of their stated use with the sellers&apos; peptide products. The <a className={a} href={SRC.peak} target="_blank" rel="noopener noreferrer">Peak letter</a> likewise named &apos;Bac water&apos;; the <a className={a} href={SRC.nuscience} target="_blank" rel="noopener noreferrer">NuScience letter</a> named BAC water and noted a calculator. These are findings about each storefront&apos;s intended uses, not a determination about all laboratory water.</p>
 
-          <h2 className={h2} style={serif}>What does &ldquo;research use only&rdquo; mean to FDA?</h2>
-          <p>
-            In these letters, it is a statement FDA weighs against everything else the seller shows. Footnote 1 of the Peptide Partners letter says: &ldquo;Despite statements on your product labeling marketing your products &lsquo;for research use only&rsquo; and &lsquo;not for human or veterinary use,&rsquo; evidence obtained from your website establishes that your products are intended to be drugs for human use&rdquo; (<a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">FDA</a>).
-          </p>
-          <p>
-            The Royal Peptides footnote uses the same structure. It notes the site&apos;s &ldquo;not for human or animal consumption&rdquo; statement, then points to bacteriostatic water sold alongside a &ldquo;peptide guide&rdquo; and &ldquo;peptide calculator.&rdquo; FDA said those resources &ldquo;collectively provide the means to prepare an injectable drug for human administration&rdquo; (<a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">FDA</a>).
-          </p>
-          <p>
-            ArentFox Schiff reads the batch the same way. Its lawyers wrote that FDA &ldquo;looks past the label to the net impression of the website as a whole,&rdquo; and that RUO labeling alone &ldquo;is unlikely to withstand FDA scrutiny when the surrounding marketing context points toward human use&rdquo; (<a className={a} href={SRC.afs} target="_blank" rel="noopener noreferrer">ArentFox Schiff</a>). That is a law firm&apos;s analysis, not an FDA statement.
-          </p>
-
-
-          <IQONPartner vial="bac-water" variant="inline" />
-
-
-          <h2 className={h2} style={serif}>Why does bacteriostatic water matter in these letters?</h2>
-          <p>
-            FDA treated it as a link between the vial and the injection. The Peptide Partners letter says the reconstitution solution was sold &ldquo;to be used to reconstitute the peptide products sold on your website, which are drugs intended for injection,&rdquo; so the solution is &ldquo;a drug&rdquo; (<a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">FDA</a>). The Tex Peptides letter makes the same finding about its bacteriostatic water (<a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">FDA</a>).
-          </p>
-          <p>
-            The letters to Peptide Partners, Royal Peptides and Tex Peptides also say injectable products &ldquo;bypass some of the body&rsquo;s key defenses against toxins and microorganisms.&rdquo;
-          </p>
-
-          <IQONPartner vial="nad" />
-
-          <h2 className={h2} style={serif}>Is a warning letter a criminal charge?</h2>
-          <p>
-            No. A warning letter lists violations FDA says it found and asks the company to respond. It is not an indictment, and nobody has been convicted of anything based on these letters. Each letter says the list is not exhaustive, and that failing to fix the violations &ldquo;may result in regulatory or legal action without further notice including, without limitation, seizure and injunction&rdquo; (<a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">FDA</a>).
-          </p>
-          <p>
-            Companies can also answer back. The letters invite recipients to send information if they believe their products do not violate the law.
-          </p>
-
-          <h2 className={h2} style={serif}>How does this fit with other FDA actions in 2026?</h2>
-          <p>
-            ArentFox Schiff places the batch alongside two earlier rounds aimed at telehealth companies. According to the firm, FDA issued 30 warning letters on March 30 and 25 more during the week of June 15. Those letters used a misbranding theory. The August 24 letters rest on the separate unapproved new drug theory (<a className={a} href={SRC.afs} target="_blank" rel="noopener noreferrer">ArentFox Schiff</a>).
-          </p>
-          <p>
-            For criminal cases involving peptide sellers, which are a different category, see our <Link href="/peptide-enforcement-2026" className={a}>2026 enforcement timeline</Link>.
-          </p>
+          <h2 className={h2} style={serif}>What happens after a warning letter?</h2>
+          <p>Each seller was asked to describe corrections within 15 business days <em>of receipt</em>, or explain why it disagreed, with its own reference number in the response subject line. The <a className={a} href={SRC.partners} target="_blank" rel="noopener noreferrer">Partners</a>, <a className={a} href={SRC.royal} target="_blank" rel="noopener noreferrer">Royal</a>, <a className={a} href={SRC.tex} target="_blank" rel="noopener noreferrer">Tex</a>, <a className={a} href={SRC.nuscience} target="_blank" rel="noopener noreferrer">NuScience</a> and <a className={a} href={SRC.peak} target="_blank" rel="noopener noreferrer">Peak</a> letters all say this. Receipt may differ from the August 24 date. FDA warned inadequate correction could bring seizure or injunction without further notice; these five notices do not document either action.</p>
+          <p>A dated response or later FDA action would establish what changed after the letters. Until then, the July website examples explain the agency&apos;s allegations, not the final outcome for any seller.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
@@ -207,6 +160,12 @@ export default function Page() {
               <li><Link href="/what-happened-to-peptide-sciences" className={a}>What happened to Peptide Sciences</Link></li>
             </ul>
           </div>
+
+          <p>
+            The practical lesson of the letters is about evidence of intended use: FDA examined the surrounding presentation, not only the disclaimer. The sellers’ responses and any subsequent agency action would show what happened after the warnings; the letters themselves do not supply that outcome.
+          </p>
+
+          <IQONPartner vial="nad" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
             Published September 25, 2026. Sources: the FDA warning letters linked above and the ArentFox Schiff alert dated September 18, 2026. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.
