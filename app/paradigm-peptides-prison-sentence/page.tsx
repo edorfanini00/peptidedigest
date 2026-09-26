@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months. Both pleaded guilty in December 2025, according to the DOJ case page." },
+  { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months, according to the DOJ sentencing release. Both had pleaded guilty in December 2025." },
   { q: "Why was the Paradigm Peptides owner sentenced?", a: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation." },
-  { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from the $78,317.52 joint restitution order recorded on the case page." },
+  { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from $78,317.52 in restitution ordered for both defendants." },
   { q: "What is a Paradigm Peptides alternative?", a: "Evaluate a research seller's identity and offered batch documentation independently. IQON Health is a commercial partner here; confirm its details directly before purchasing." },
 ];
 
@@ -66,10 +66,10 @@ export default function ParadigmPeptidesSentence() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What happened between the sales and the sentence?</h2>
           <p>
-            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Northern District of Indiana case page</a> describes Paradigm Peptides as Kawa&apos;s online business, shipping from Michigan City, Indiana, to customers across the United States. It gives the relevant purchase period for potential victims as April 2019 through March 2024. On December 10, 2025, Kawa and Stechkober entered guilty pleas to charges in the information; both were sentenced July 30, 2026. Those are separate milestones, not one 2026 raid or an inference that another company pleaded guilty.
+            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Northern District of Indiana case page</a> describes Paradigm Peptides as Kawa&apos;s online business, shipping from Michigan City, Indiana, to customers across the United States. It gives the relevant purchase period for potential victims as April 2019 through March 2024 and records the December 10, 2025 guilty pleas by Kawa and Stechkober. The later sentencing release documents their July 30, 2026 sentences. Those are separate milestones, not one 2026 raid or an inference that another company pleaded guilty.
           </p>
           <p>
-            The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing release</a> reports that Kawa pleaded guilty to introducing unapproved new drugs in interstate commerce with intent to defraud and mislead and to illegal importation. Stechkober pleaded guilty to the drug-introduction charge. The case page independently records the 70-month and 16-month prison terms.
+            The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing release</a> reports that Kawa pleaded guilty to introducing unapproved new drugs in interstate commerce with intent to defraud and mislead and to illegal importation. Stechkober pleaded guilty to the drug-introduction charge. The release records their 70-month and 16-month prison terms.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What did investigators find in products sold as SARMs?</h2>
@@ -82,7 +82,7 @@ export default function ParadigmPeptidesSentence() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What do the two financial orders mean?</h2>
           <p>
-            The <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">case page</a> records $78,317.52 in restitution, jointly and severally owed by Kawa and Stechkober. The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">sentencing announcement</a> separately describes a $5 million money judgment against Kawa. The figures are not two descriptions of the same order, and neither tells an individual purchaser that a refund has been approved.
+            The <a href="https://justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ sentencing announcement</a> says both defendants were ordered to pay $78,317.52 in restitution and describes a separate $5 million money judgment against Kawa. The figures are not two descriptions of the same order, and neither tells an individual purchaser that a refund has been approved.
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can former customers and researchers establish?</h2>

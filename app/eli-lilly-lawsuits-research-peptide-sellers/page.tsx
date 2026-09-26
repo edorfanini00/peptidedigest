@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "Are these criminal charges?",
-    a: "No. These are private civil lawsuits brought by a company, not charges brought by prosecutors. Nobody has been charged or convicted in these cases, and no court has ruled on the merits. Everything Lilly says in the complaints is an allegation.",
+    a: "No. These are private civil lawsuits brought by a company, not criminal charges brought by prosecutors. The linked public CourtListener dockets reviewed for this article did not establish a ruling on the merits; their PACER/RECAP coverage may be incomplete. Lilly's assertions in the complaints remain allegations, not findings established by those records.",
   },
   {
     q: "What does Lilly want from the courts?",

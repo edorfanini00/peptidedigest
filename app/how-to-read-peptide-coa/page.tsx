@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is a Certificate of Analysis for a research peptide?",
-    a: "It is a lab report tied to one production lot. It should list the compound, the lot number, the lab that ran the tests, the test dates, the methods used and the results, usually an HPLC purity figure and a mass spectrometry identity check.",
+    a: "It is a lab report about a tested sample identified with a claimed lot. Check the compound, lot identifier, issuing lab, test dates, methods and actual results, such as an HPLC purity figure or mass spectrometry identity check. Verify that the sample really represents the offered lot rather than assuming the document certifies every vial.",
   },
   {
     q: "What does HPLC purity actually measure?",

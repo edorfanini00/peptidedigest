@@ -29,6 +29,16 @@ const featuredArticle: CardArticle = {
 
 const industryArticles: CardArticle[] = [
   {
+    slug: "what-happened-to-apex-peptides",
+    category: "Industry",
+    date: "September 24, 2026",
+    readTime: "6 min read",
+    title: "What Happened to Apex Peptides? Searches and Order Questions",
+    excerpt:
+      "What the September 23 searches and a reported temporary closure do, and do not, establish about Apex Peptides and customer orders.",
+    image: "apexWarehouse",
+  },
+  {
     slug: "what-happened-to-peptide-sciences",
     category: "Industry",
     date: "March 10, 2026",
