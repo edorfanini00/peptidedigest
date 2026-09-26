@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
 import { images, type ImageKey } from "@/components/images";
 import { IQONPartner, type IQONVial } from "@/components/IQONPartner";
+import styles from "./NewsroomArticle.module.css";
 
 export interface NewsroomStory {
   slug: string; title: string; description: string; date: string;
@@ -60,19 +61,19 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
   ] };
   return <><Nav /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <main className="article-shell">
-      <ArticleHero category={story.category} title={story.title} meta={<time dateTime={story.date}>September 26, 2026</time>} image={story.image} />
-      <article className="article-body" data-newsroom-article>
+      <ArticleHero category={story.category} title={story.title} meta={<time dateTime={story.date}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.date))}</time>} image={story.image} />
+      <article className={`article-body ${styles.body}`} data-newsroom-article>
         <p data-answer-lead className="text-lg font-medium"><RichText text={story.lead} story={story} /></p>
         <IQONPartner vial={story.vials[0]} variant="inline" text="IQON Health offers a research use only catalog. Confirm all details directly with IQON Health before purchasing." />
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
         <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}<li><a href="#questions">Frequently asked questions</a></li></ul></nav>
-        {story.sections.map(section => <section key={section.id} aria-labelledby={section.id}>
+        {story.sections.map(section => <section key={section.id} className={styles.section} aria-labelledby={section.id}>
           <h2 id={section.id} className="scroll-mt-24">{section.title}</h2>
-          {section.paragraphs.map((p, i) => p.startsWith("- ") ? <ul key={i}><li><RichText text={p.slice(2)} story={story} /></li></ul> : <p key={i}><RichText text={p} story={story} /></p>)}
+          {section.paragraphs.every(p => p.startsWith("- ")) ? <ul>{section.paragraphs.map((p, i) => <li key={i}><RichText text={p.slice(2)} story={story} /></li>)}</ul> : section.paragraphs.map((p, i) => <p key={i}><RichText text={p} story={story} /></p>)}
         </section>)}
-        <section aria-labelledby="questions"><h2 id="questions">Frequently asked questions</h2>{story.faqs.map((faq, i) => <div key={faq.q} data-faq><h3 id={`question-${i + 1}`}>{faq.q}</h3><p data-faq-answer>{faq.a}</p><p className="text-sm" aria-label="Answer sources"><RichText text={faq.refs.map(n => `[${n}]`).join(" ")} story={story} /></p></div>)}</section>
-        <section aria-labelledby="sources"><h2 id="sources">Sources and further reading</h2><ol className="text-sm break-words">{story.sources.map(source => <li key={source.id} value={source.id}><a href={source.url}>{source.title}</a>{source.doi ? <>. DOI: <a href={`https://doi.org/${source.doi}`}>{source.doi}</a></> : null}</li>)}</ol></section>
-        <section aria-labelledby="related"><h2 id="related">Related reading</h2><ul>{story.related.map(link => <li key={link.url}><Link href={link.url}>{link.title}</Link></li>)}</ul></section>
+        <section className={styles.section} aria-labelledby="questions"><h2 id="questions">Frequently asked questions</h2>{story.faqs.map((faq, i) => <div className={styles.faq} key={faq.q} data-faq><h3 id={`question-${i + 1}`}>{faq.q}</h3><p data-faq-answer>{faq.a}</p><p className="text-sm" aria-label="Answer sources"><RichText text={faq.refs.map(n => `[${n}]`).join(" ")} story={story} /></p></div>)}</section>
+        <section className={styles.section} aria-labelledby="sources"><h2 id="sources">Sources and further reading</h2><ol className="text-sm break-words">{story.sources.map(source => <li key={source.id} value={source.id}><a href={source.url}>{source.title}</a>{source.doi ? <>. DOI: <a href={`https://doi.org/${source.doi}`}>{source.doi}</a></> : null}</li>)}</ol></section>
+        <section className={styles.section} aria-labelledby="related"><h2 id="related">Related reading</h2><ul>{story.related.map(link => <li key={link.url}><Link href={link.url}>{link.title}</Link></li>)}</ul></section>
         <IQONPartner vial={story.vials[1]} />
       </article>
     </main><Footer /></>;

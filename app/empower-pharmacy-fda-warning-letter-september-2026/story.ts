@@ -106,7 +106,7 @@ export const story = {
     },
     {
       "q": "Is high production volume itself prohibited?",
-      "a": "Not by a simple published numerical cap in the materials reviewed. Section 503A concerns regularly or inordinate amounts making essentially copied products, and FDA points to volume alongside missing and apparently repeated patient specific determinations. The compounding trade association expressly warns against treating volume alone as the violation.",
+      "a": "Not by a simple published numerical cap in the materials reviewed. Section 503A concerns making essentially copied products regularly or in inordinate amounts, and FDA points to volume alongside missing and apparently repeated patient specific determinations. The compounding trade association expressly warns against treating volume alone as the violation.",
       "refs": [
         1,
         19
