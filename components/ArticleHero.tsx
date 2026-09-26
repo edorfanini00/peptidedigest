@@ -49,7 +49,7 @@ export function ArticleHero({ category, title, dek, meta, image }: ArticleHeroPr
         <figcaption className="caption">
           {img.caption}{" "}
           <span className="credit">
-            Photo:{" "}
+            {"kind" in img && img.kind === "illustration" ? "Illustration:" : "Photo:"}{" "}
             <a href={img.sourceUrl} target="_blank" rel="noopener noreferrer">
               {"credit" in img && img.credit ? img.credit.replace(/^Photo: /, "") : `${img.photographer} / Unsplash`}
             </a>

@@ -54,3 +54,28 @@ Every image is **illustrative stock**. Captions on the site say so; none depicts
 | /peptide-sciences-shutdown-market-impact | lab-beakers.jpg |
 | /compliant-research-peptide-supplier | lab-beakers.jpg |
 | /what-makes-a-compliant-peptide-supplier-2026 | lab-flasks.jpg |
+
+
+## Newsroom illustrations, September 26, 2026
+
+### empower-aseptic-controls
+
+- Model: nano_banana_pro; requested aspect 3:2, resolution 2k.
+- Job ID: 5765e5ca-510d-48bd-b75b-2bf079e04e43. Quote: 2 credits. Two 2 credit spend transactions recorded for this run; per-job attribution left to parent reconciliation.
+- Original: /Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-09-26/run-1552/empower-aseptic-controls.png
+- SHA256: 29e34d0689cdf0caa25ea45a0169fea205e3773c3a07ede8010fee1ca8104934
+- Source dimensions: 2528 × 1696. WebP: 1800 × 1208, quality 85, no upscaling, 131844 bytes.
+- Asset: /images/empower-aseptic-controls.webp
+- Credit: The Peptide Digest, AI-generated editorial illustration. Not documentary photography.
+- Full prompt: Photorealistic editorial illustration of the aseptic airflow controls discussed in a pharmacy inspection: an unoccupied stainless steel laminar airflow workbench inside a modern sterile compounding cleanroom, HEPA filter housing across the top, glass side panels, orderly sealed blank glass laboratory containers, a small professional airflow visualization instrument at one side and extremely subtle white airflow tracer wisps inside the empty hood. Close three-quarter documentary composition, realistic equipment proportions, soft warm neutral daylight, restrained white and stainless steel tones, fine surface detail, premium science magazine photography, horizontal 3:2. This is a conceptual illustration, not a reconstruction of any actual pharmacy or inspection. No people, no company names, no logos, no legible text, no agency insignia, no syringes, no pills, no drug packages, no dirty conditions, no dramatic contamination imagery, no arrows or molecular diagrams.
+
+### peptide-storage-laboratory
+
+- Model: nano_banana_pro; requested aspect 3:2, resolution 2k.
+- Job ID: 423c5956-54fd-48ad-8051-111d54e4a94f. Quote: 2 credits. Two 2 credit spend transactions recorded for this run; per-job attribution left to parent reconciliation.
+- Original: /Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-09-26/run-1552/peptide-storage-laboratory.png
+- SHA256: 8551a5271b73fb965eb36b78ebbcd58cefefbf12bf177f46bc1aea9251dcc472
+- Source dimensions: 2528 × 1696. WebP: 1800 × 1208, quality 85, no upscaling, 107460 bytes.
+- Asset: /images/peptide-storage-laboratory.webp
+- Credit: The Peptide Digest, AI-generated editorial illustration. Not documentary photography.
+- Full prompt: Photorealistic editorial science photograph concept about laboratory peptide sample stability during cold storage. Close-up of an open insulated laboratory sample storage box with a precise grid of small clear screw-cap analytical sample tubes with plain white caps and blank labels, held within the open compartment of a professional laboratory freezer. Subtle condensation confined to the outside rim of the metal shelf, dry organized tubes, cool soft interior light contrasted with warm off-white laboratory background out of focus. An unmarked closed sample logbook on the adjacent bench hints at recorded storage history. No hands or people. Realistic modest laboratory scale, credible scientific equipment, shallow depth of field, detailed glass and polymer textures, calm editorial composition, horizontal 3:2. No brands, no legible words or numerals, no syringes, no pills, no human use, no liquid pouring, no molecular diagrams, no medical treatment, no dramatic vapor clouds.
