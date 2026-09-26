@@ -4,28 +4,28 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
 import { IQONPartner } from "@/components/IQONPartner";
-import { KeyFacts, PullQuote } from "@/components/Editorial";
+import { KeyFacts } from "@/components/Editorial";
 
 export const metadata: Metadata = {
-  title: "Apex Peptides raid: what researchers need to know",
+  title: "Apex Peptides update: federal searches and a temporary closure notice",
   description:
     "Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
   alternates: {
     canonical: "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know",
   },
   openGraph: {
-    title: "Apex Peptides raid: what researchers need to know",
+    title: "Apex Peptides update: federal searches and a temporary closure notice",
     description:
-      "Federal agents searched Apex-linked properties on September 23, 2026. What local reporting confirms, what allegations remain unattributed, and supplier checks for researchers.",
+      "Federal agents searched Apex-linked properties on September 23, 2026. What local reporting confirms, what remains unanswered, and supplier checks for researchers.",
     type: "article",
     publishedTime: "2026-09-24T12:00:00.000Z",
     authors: ["The Peptide Digest"],
-    tags: ["Apex Peptides", "peptide industry", "FDA enforcement", "research peptides"],
+    tags: ["Apex Peptides", "peptide industry", "federal investigation", "research peptides"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Apex Peptides raid: what researchers need to know",
-    description: "What local reporting confirms, what is still unattributed, and supplier checks.",
+    title: "Apex Peptides update: federal searches and a temporary closure notice",
+    description: "What local reporting confirms, what remains unanswered, and supplier checks.",
   },
 };
 
@@ -35,18 +35,17 @@ const articleJsonLd = {
     {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know#article",
-      headline: "Apex Peptides raid: what researchers need to know",
+      headline: "Apex Peptides update: federal searches and a temporary closure notice",
       description:
         "Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
       datePublished: "2026-09-24T12:00:00.000Z",
-      dateModified: "2026-09-25T12:00:00.000Z",
+      dateModified: "2026-09-26T19:42:34Z",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know" },
       about: [
         { "@type": "Thing", name: "Apex Peptides" },
         { "@type": "Thing", name: "Research Peptides" },
-        { "@type": "Thing", name: "FDA Enforcement" },
         { "@type": "Thing", name: "US Postal Inspection Service" },
       ],
       keywords: "Apex Peptides raided, Apex Peptides FBI, research peptide enforcement 2026, Apex Peptides alternative, research peptide supplier",
@@ -56,36 +55,12 @@ const articleJsonLd = {
       "@type": "FAQPage",
       "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know#faq",
       mainEntity: [
-        {
-          "@type": "Question",
-          name: "What happened to Apex Peptides?",
-          acceptedAnswer: { "@type": "Answer", text: "Local news reported searches of Apex-linked properties on September 23, 2026. The public reports reviewed here do not establish the charges or the status of individual orders." },
-        },
-        {
-          "@type": "Question",
-          name: "Was the FBI involved in the Apex Peptides raid?",
-          acceptedAnswer: { "@type": "Answer", text: "KTIV reported FBI participation in an investigation led by the U.S. Postal Inspection Service. That does not establish what charges, if any, will follow." },
-        },
-        {
-          "@type": "Question",
-          name: "Has Apex Peptides shut down permanently?",
-          acceptedAnswer: { "@type": "Answer", text: "The cited reports do not establish a permanent closure or reopening date. Seek written confirmation from the seller about an outstanding order." },
-        },
-        {
-          "@type": "Question",
-          name: "Why was Apex Peptides raided?",
-          acceptedAnswer: { "@type": "Answer", text: "The local reports reviewed for this update do not disclose a specific reason. Allegations supplied separately to this publication have not been established by those public records." },
-        },
-        {
-          "@type": "Question",
-          name: "What should I check in an Apex Peptides alternative?",
-          acceptedAnswer: { "@type": "Answer", text: "Check the legal seller, current order terms and the COA for the offered lot. IQON Health is a commercial partner, not a supplier independently certified by this article." },
-        },
-        {
-          "@type": "Question",
-          name: "Are research peptides intended for human use?",
-          acceptedAnswer: { "@type": "Answer", text: "No. Research use only products are not for human consumption. A COA does not establish that a product is safe or approved for use in people." },
-        },
+        { "@type": "Question", name: "What happened to Apex Peptides?", acceptedAnswer: { "@type": "Answer", text: "Federal agents searched a North Sioux City property associated with several Apex businesses and a Dakota Dunes home on September 23, 2026. Business filings link Apex Peptides to the broader group, but the reports do not establish a separate search of an Apex Peptides facility." } },
+        { "@type": "Question", name: "Which agencies took part?", acceptedAnswer: { "@type": "Answer", text: "KTIV reports the U.S. Postal Inspection Service led the investigation, with FBI, IRS Criminal Investigation, Union County sheriff’s deputies and North Sioux City police present." } },
+        { "@type": "Question", name: "Is Apex Peptides permanently closed?", acceptedAnswer: { "@type": "Answer", text: "KCAU reported that the Apex Peptides website displayed a temporary-closure notice on September 24. The cited reports do not establish a permanent closure or the status of existing orders." } },
+        { "@type": "Question", name: "Why were the Apex properties searched?", acceptedAnswer: { "@type": "Answer", text: "The cited reports do not disclose the reason for the searches or identify charges arising from them." } },
+        { "@type": "Question", name: "Was the nearby unfinished building searched?", acceptedAnswer: { "@type": "Answer", text: "KTIV identified five related business registrations at a nearby unfinished building. It did not report a search of that building." } },
+        { "@type": "Question", name: "What should I do about an outstanding order?", acceptedAnswer: { "@type": "Answer", text: "Keep your receipt and correspondence, ask the seller for written order status and check your payment provider’s dispute deadline if the order remains unresolved." } },
       ],
     },
   ],
@@ -100,133 +75,65 @@ export default function ApexRaidedArticle() {
       <main className="article-shell">
         <ArticleHero
           category="Industry"
-          title={<>Apex Peptides Raid: What Researchers Need to Know</>}
+          title={<>Apex Peptides Update: Federal Searches and a Temporary Closure Notice</>}
           dek={"Local reports place the Apex-linked searches on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier."}
-          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
+          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 26, 2026</span></>}
           image="apexRaid"
         />
 
         <div className="article-body">
-
           <p className="text-lg text-gray-800 font-medium leading-relaxed">
-            Federal agents searched properties connected to Apex businesses in North Sioux City, South Dakota, on September 23, 2026. Local reporting links those businesses to Apex Peptides. The reports establish that searches took place; they do not establish the specific charges or the outcome for peptide orders.
+            Federal agents searched a North Sioux City property associated with several Apex businesses and a Dakota Dunes home on September 23, 2026. Business filings link Apex Peptides to the broader group, but the reports do not establish a separate search of an Apex Peptides facility. The reason for the searches remains undisclosed in the cited reports.
           </p>
 
+          <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+
+          <KeyFacts items={[
+            "September 23: Agents searched a North Sioux City Apex-linked property and a Dakota Dunes home, according to KTIV.",
+            "KTIV identifies the U.S. Postal Inspection Service as the lead, alongside the FBI, IRS Criminal Investigation and local agencies.",
+            "September 24: KCAU found workers at Apex Waste Management and reported a temporary-closure notice on the Apex Peptides website.",
+            "The cited reports do not explain the searches or identify charges arising from them; permanent closure is not established.",
+          ]} />
+
+          <h2>What happened on September 23?</h2>
           <p>
-            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KTIV reports</a> that the U.S. Postal Inspection Service led the investigation, with the FBI and local police involved.{" "}
-            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">KSCJ&apos;s September 23 report</a> describes agents removing boxes from 503 Prosperity Way. The search date was September 23, not September 24 as an earlier version of this article stated.
+            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s scene reporting</a> places agents at 503 Prosperity Way around 10 a.m. and describes another search at a Dakota Dunes home that morning. At the North Sioux City property, agents brought in evidence-collection equipment, loaded a trailer and left shortly after 4 p.m. KTIV says authorities did not disclose what was taken. Its reporting identifies the U.S. Postal Inspection Service as leading, with the FBI, IRS Criminal Investigation, Union County Sheriff&apos;s Office and North Sioux City Police present.
           </p>
-
-          <KeyFacts
-            items={[
-              "KTIV reports that the U.S. Postal Inspection Service led the investigation, with the FBI and local police involved.",
-              "Local coverage identifies 503 Prosperity Way, the address of Apex Waste Management and Apex Research, and a home in Dakota Dunes.",
-              "A search does not prove guilt, and the number of agencies involved does not establish a particular offense.",
-              "Customers should seek written confirmation of fulfillment or a refund rather than rely on a predicted reopening date.",
-            ]}
-          />
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            Which Apex properties were searched?
-          </h2>
-
           <p>
-            Local coverage identifies 503 Prosperity Way, the address of Apex Waste Management and Apex Research, and a home in Dakota Dunes. KTIV also found other registered businesses connected to the Apex name at a nearby address on Prosperity Way. Shared addresses and registrations do not, by themselves, establish illegal activity.
+            <a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ reported</a> two unidentified people led away in handcuffs. <a href="https://www.kcau9.com/news/local-news/irs-criminal-investigation-seen-at-north-sioux-city-business">KCAU said</a> their identities and whether charges had been filed were unknown. That observation does not establish an arrest or identify anyone as charged.
           </p>
 
+          <h2>How is Apex Peptides connected to the properties?</h2>
           <p>
-            KSCJ reported that two people were led away in handcuffs. Its report did not identify them or say what charges they faced. We cannot use that account to identify particular people as arrested or charged.
+            <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV&apos;s review of business records</a> identifies Apex Waste Management and Apex Research with the searched North Sioux City property and links Apex Peptides through related business filings. It also found five related registrations at a nearby unfinished building at 498 Prosperity Way. The report does not say that second building was searched. Shared registrations do not make every Apex business the same operation.
           </p>
 
+          <h2>What changed on September 24?</h2>
           <p>
-            Screenshots supplied to this publication describe additional searches and alleged arrests at an airport. The original source&apos;s identity has not been provided for attribution. Those details are source allegations, not findings established by the public reports linked here.
+            <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU visited Apex Waste Management</a> the next morning and spoke with a worker inside. Separately, KCAU reported that the Apex Peptides website said the business was temporarily closed and that all but one product had been removed. A worker at the waste-management premises does not establish that peptide orders were being fulfilled; a temporary website notice does not establish permanent closure. These are observations from September 24, not a live status check.
           </p>
-
           <p>
-            The supplied account also alleges financial offenses and distribution outside laboratory research. We are withholding personal accusations and revenue figures until they can be attributed and checked against records. That distinction does not dismiss the source; it prevents an allegation from becoming an asserted fact.
+            Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">told KSCJ</a> that agents had been at multiple Sioux City-area locations but declined further detail because the investigation was active. The cited reports do not disclose the reason for the searches or identify charges arising from them.
           </p>
 
-          <p>
-            A search does not prove guilt, and the number of agencies involved does not establish a particular offense. The local reports reviewed for this update do not explain what investigators were seeking or which materials they seized.
-          </p>
+          <h2>What if you have an outstanding order?</h2>
+          <p>Keep the receipt, order number and correspondence. Ask the seller for written confirmation of fulfillment or a refund. If the order remains unresolved, check your payment provider&apos;s dispute deadline. For a laboratory project, record the lot already in use and review any replacement against the protocol before changing materials.</p>
+          <p>When comparing research suppliers, verify the legal seller, documentation for the specific offered lot and current order terms. Research products are not for human consumption.</p>
 
-          <p>
-            The searches also do not settle whether Apex Peptides has permanently shut down. A website outage or unanswered message cannot establish the status of every order. Customers should seek written confirmation of fulfillment or a refund rather than rely on a predicted reopening date.
-          </p>
-
-          <IQONPartner vial="nad" variant="inline" />
-
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            How this differs from other peptide company closures
-          </h2>
-
-          <p>
-            Peptide Sciences describes its closure as voluntary in its{" "}
-            <a href="https://www.peptidesciences.com" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">own shutdown notice</a>. The{" "}
-            <a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ Paradigm Peptides case record</a> documents guilty pleas in December 2025 and sentencing in July 2026. Neither source establishes why the Apex searches occurred.
-          </p>
-
-          <p>
-            FDA scrutiny of research labeling is relevant background, not evidence against Apex. In its{" "}
-            <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/gram-peptides-721806-03312026" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">March 31, 2026 warning letter to Gram Peptides</a>, the FDA cited product claims as evidence of intended human use despite research disclaimers. That letter concerns a different supplier.
-          </p>
-
-          <PullQuote>A research use only label or a polished certificate is not a compliance guarantee.</PullQuote>
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            If you have an outstanding Apex order
-          </h2>
-
-          <p>
-            Keep your receipt, order number and correspondence. Ask the seller for a written status update. If the order remains unresolved, check the dispute deadline with your payment provider. Available remedies depend on the payment method and the circumstances of the purchase.
-          </p>
-
-          <p>
-            For an interrupted laboratory project, record the lot already in use before replacing it. A replacement sold under the same compound name may differ in specifications or testing. Have the person responsible for the protocol review that change.
-          </p>
-
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-            How to compare an Apex Peptides alternative
-          </h2>
-
-          <p>Evaluate the offered material and the seller separately. A research use only label or a polished certificate is not a compliance guarantee.</p>
-
-          <ul className="list-disc list-inside space-y-2 pl-2">
-            <li><strong>Intended use:</strong> Review product claims and sales materials. Research products are not for human consumption.</li>
-            <li><strong>Batch documentation:</strong> Match the certificate of analysis to the lot offered. Check identity testing as well as reported purity.</li>
-            <li><strong>Test scope:</strong> Ask which methods were used and whether additional tests, such as endotoxin analysis, are required for your experiment.</li>
-            <li><strong>Seller identity:</strong> Verify the legal seller and where material is manufactured and shipped. A US address alone does not establish domestic manufacture.</li>
-            <li><strong>Order terms:</strong> Confirm stock, dispatch estimates and the refund policy in writing.</li>
-          </ul>
-
-          <IQONPartner vial="glutathione" />
-
-
+          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
           <div className="mt-14 pt-10 border-t border-gray-200">
-            <h2 className="text-xl font-semibold text-gray-900 mb-6" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
-              Frequently Asked Questions
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
-              {[
-                { q: "What happened to Apex Peptides?", a: "Local news reported searches of Apex-linked properties on September 23, 2026. The public reports reviewed here do not establish the charges or the status of individual orders." },
-                { q: "Was the FBI involved in the Apex Peptides raid?", a: "KTIV reported FBI participation in an investigation led by the U.S. Postal Inspection Service. That does not establish what charges, if any, will follow." },
-                { q: "Has Apex Peptides shut down permanently?", a: "The cited reports do not establish a permanent closure or reopening date. Seek written confirmation from the seller about an outstanding order." },
-                { q: "Why was Apex Peptides raided?", a: "The local reports reviewed for this update do not disclose a specific reason. Allegations supplied separately to this publication have not been established by those public records." },
-                { q: "What should I check in an Apex Peptides alternative?", a: "Check the legal seller, current order terms and the COA for the offered lot. IQON Health is a commercial partner, not a supplier independently certified by this article." },
-                { q: "Are research peptides intended for human use?", a: "No. Research use only products are not for human consumption. A COA does not establish that a product is safe or approved for use in people." },
-              ].map(({ q, a }) => (
-                <div key={q}>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
-                  <p className="text-sm text-gray-500 leading-relaxed">{a}</p>
-                </div>
+              {(articleJsonLd["@graph"][1] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
+                <div key={name}><h3 className="text-sm font-semibold text-gray-900 mb-1">{name}</h3><p className="text-sm text-gray-500 leading-relaxed">{acceptedAnswer.text}</p></div>
               ))}
             </div>
           </div>
-
+          <h2>Sources</h2>
+          <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: Apex-linked businesses and search timeline</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 follow-up</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 25, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.
+            Updated September 26, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Health is a commercial partner. Research products are not for human consumption.
           </p>
         </div>
 

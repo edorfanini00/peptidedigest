@@ -21,9 +21,9 @@ const featuredArticle: CardArticle = {
   category: "Industry",
   date: "September 24, 2026",
   readTime: "6 min read",
-  title: "Apex Peptides Raided by Federal Agents: What Researchers Need to Know",
+  title: "Apex Peptides Update: Federal Searches and a Temporary Closure Notice",
   excerpt:
-    "Local reports place federal searches at Apex-linked properties on September 23, 2026. What is confirmed, what remains unanswered, and how to evaluate a research supplier.",
+    "Local reports place federal searches at Apex-linked properties on September 23, 2026. The September 23 searches, a September 24 temporary-closure notice and what remains unanswered about peptide orders.",
   image: "apexRaid",
 };
 
@@ -184,6 +184,8 @@ export default function Home() {
           <span className="hidden sm:inline">Independent reporting</span>
         </div>
 
+        <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+
         {/* Top story + two secondary stories */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 mb-12 border-b border-[color:var(--color-rule)]">
           <article className="lg:col-span-8 group">
@@ -241,9 +243,6 @@ export default function Home() {
             <ArticleCard key={a.slug} a={a} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 270px" />
           ))}
         </div>
-
-        {/* Sponsor block 1 — after industry news */}
-        <IQONPartner vial="nad" />
 
         {/* Regulatory section */}
         <SectionLabel label="Regulatory" id="regulatory" />
