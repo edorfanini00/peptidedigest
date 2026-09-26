@@ -38,7 +38,7 @@ const jsonLd = {
         { "@type": "Question", name: "What happened to Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences says on its website that it voluntarily shut down operations and discontinued research-product sales. The notice does not say the DOJ or another agency directed the closure." } },
         { "@type": "Question", name: "Did the DOJ shut down Peptide Sciences?", acceptedAnswer: { "@type": "Answer", text: "The company's notice does not say that. The sources reviewed for this article do not establish a DOJ-directed closure." } },
         { "@type": "Question", name: "Is Peptide Sciences coming back?", acceptedAnswer: { "@type": "Answer", text: "The published notice does not announce a reopening date. It warns that claimed successors and third-party sellers using its identity are unauthorized." } },
-        { "@type": "Question", name: "What is a Peptide Sciences alternative?", acceptedAnswer: { "@type": "Answer", text: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Health is a commercial partner on this page, not an independently certified replacement." } },
+        { "@type": "Question", name: "What is a Peptide Sciences alternative?", acceptedAnswer: { "@type": "Answer", text: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Labs is a commercial partner on this page, not an independently certified replacement." } },
       ],
     },
   ],
@@ -75,7 +75,7 @@ export default function PeptideSciencesShutdown() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What about old orders and supposed successor stores?</h2>
           <p>For an old purchase, save the receipt, charge and correspondence and contact the original seller through a verified channel for a written status. Check your payment provider&apos;s dispute deadline. The notice&apos;s reporting email for name misuse is not a promise that it can retrieve or refund a previous order.</p>
-          <p>A Peptide Sciences alternative should be evaluated as a new seller: establish its legal identity, current terms and batch-specific analytical records. It is not an endorsed successor merely because it advertises similar research materials. IQON Health is a commercial partner here and faces the same checks.</p>
+          <p>A Peptide Sciences alternative should be evaluated as a new seller: establish its legal identity, current terms and batch-specific analytical records. It is not an endorsed successor merely because it advertises similar research materials. IQON Labs is a commercial partner here and faces the same checks.</p>
           <p>The shutdown decision and the warning about unauthorized successors are the two concrete messages the company has given. A later dated order-handling update would be needed to answer the question left by its notice.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
@@ -84,7 +84,7 @@ export default function PeptideSciencesShutdown() {
               { q: "What happened to Peptide Sciences?", a: "Peptide Sciences says on its website that it voluntarily shut down operations and discontinued research-product sales. The notice does not say the DOJ or another agency directed the closure." },
               { q: "Did the DOJ shut down Peptide Sciences?", a: "The company's notice does not say that. The sources reviewed for this article do not establish a DOJ-directed closure." },
               { q: "Is Peptide Sciences coming back?", a: "The published notice does not announce a reopening date. It warns that claimed successors and third-party sellers using its identity are unauthorized." },
-              { q: "What is a Peptide Sciences alternative?", a: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Health is a commercial partner on this page, not an independently certified replacement." },
+              { q: "What is a Peptide Sciences alternative?", a: "Compare research suppliers using batch documentation, the legal seller's identity and current order terms. IQON Labs is a commercial partner on this page, not an independently certified replacement." },
             ].map(({ q, a }) => (
               <div key={q}>
                 <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
@@ -108,7 +108,7 @@ export default function PeptideSciencesShutdown() {
 
           <IQONPartner vial="nad" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. For information only, not medical or legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

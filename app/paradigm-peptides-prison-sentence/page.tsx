@@ -22,7 +22,7 @@ const faqs = [
   { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months, according to the DOJ sentencing release. Both had pleaded guilty in December 2025." },
   { q: "Why was the Paradigm Peptides owner sentenced?", a: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation." },
   { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from $78,317.52 in restitution ordered for both defendants." },
-  { q: "What is a Paradigm Peptides alternative?", a: "Evaluate a research seller's identity and offered batch documentation independently. IQON Health is a commercial partner here; confirm its details directly before purchasing." },
+  { q: "What is a Paradigm Peptides alternative?", a: "Evaluate a research seller's identity and offered batch documentation independently. IQON Labs is a commercial partner here; confirm its details directly before purchasing." },
 ];
 
 const jsonLd = {
@@ -99,7 +99,7 @@ export default function ParadigmPeptidesSentence() {
 
           <IQONPartner vial="ghk" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

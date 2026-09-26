@@ -62,7 +62,7 @@ const articleJsonLd = {
         { "@type": "Question", name: "Is Apex Peptides permanently closed?", acceptedAnswer: { "@type": "Answer", text: "KCAU reported that the Apex Peptides website displayed a temporary-closure notice on September 24. The cited reports do not establish a permanent closure or the status of existing orders." } },
         { "@type": "Question", name: "Why were the Apex properties searched?", acceptedAnswer: { "@type": "Answer", text: "The cited reports do not disclose the reason for the searches or identify charges arising from them." } },
         { "@type": "Question", name: "Was the nearby unfinished building searched?", acceptedAnswer: { "@type": "Answer", text: "KTIV identified five related business registrations at a nearby unfinished building. It did not report a search of that building." } },
-        { "@type": "Question", name: "What should I do about an outstanding order?", acceptedAnswer: { "@type": "Answer", text: "Keep your receipt and correspondence, ask the seller for written order status and check your payment provider’s dispute deadline if the order remains unresolved." } },
+        { "@type": "Question", name: "What is known about Apex Peptides orders after the searches?", acceptedAnswer: { "@type": "Answer", text: "The cited reports do not include an order ledger or a company announcement establishing whether existing orders shipped, were canceled or were refunded." } },
       ],
     },
   ],
@@ -84,9 +84,9 @@ export default function ApexRaidedArticle() {
         />
 
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">Federal agents searched the Apex Waste Management property at 503 Prosperity Way in North Sioux City on September 23, 2026. The next day, KCAU found a temporary-closure notice on Apex Peptides&apos; website. For customers, that notice raises an immediate order question; neither the search nor the notice says whether an existing peptide order will ship.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Federal agents searched the Apex Waste Management property at 503 Prosperity Way in North Sioux City on September 23, 2026. The next day, KCAU found a temporary-closure notice on Apex Peptides&apos; website. The notice documents an interruption to the peptide storefront, but neither it nor the search establishes whether orders were being fulfilled.</p>
 
-          <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <IQONPartner vial="nad" variant="inline" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
           <KeyFacts items={[
             "September 23: Agents searched a North Sioux City Apex-linked property and a Dakota Dunes home.",
@@ -102,15 +102,15 @@ export default function ApexRaidedArticle() {
 
           <h2>How is Apex Peptides connected to the properties?</h2>
           <p>The addresses explain why &apos;Apex Peptides raided&apos; is an imprecise shorthand. The search was at the waste-management property; a <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">business-filing review</a> lists Apex Peptides, Apex Waste Management and Apex Research with a primary address in Sergeant Bluff, Iowa. Five related registrations pointed to 498 Prosperity Way, a nearby unfinished building; KTIV did not report a search of that building. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
-          <p>The filings connect the companies. They do not place investigators inside a separately identified Apex Peptides facility. That matters to a researcher trying to distinguish a site outage or halted order from a documented search of a peptide operation.</p>
+          <p>The filings connect the companies. They do not place investigators inside a separately identified Apex Peptides facility. The distinction matters: a website notice and a search of a related business do not document a search of a peptide facility or establish the storefront’s eventual fate.</p>
 
           <h2>What changed on September 24?</h2>
           <p>KCAU found employees inside Apex Waste Management on September 24. On the peptide website, it saw a temporary-closure notice with all but one product removed. Workers at the waste business declined to discuss Wednesday&apos;s activities with KCAU. The reporting did not establish whether the peptide storefront was fulfilling orders, and the dated website notice did not announce a permanent closure. (<a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU</a>)</p>
-          <p>KTIV also reported unanswered calls and a delivery driver who struggled to reach the waste property before completing a delivery when an Isaacson brother arrived. Those details describe access to that property that morning, not the fate of customers&apos; peptide packages.</p>
+          <p>KTIV also reported unanswered calls and a delivery driver who struggled to reach the waste property before completing a delivery when an Isaacson brother arrived. Those details describe access to that property that morning, not the operating status of the peptide storefront.</p>
 
-          <h2>What if you have an outstanding order?</h2>
-          <p>If you placed an order, save the confirmation, order number and payment record. Ask the original seller for a written shipping or refund status, then check the payment provider&apos;s own dispute deadline if the matter stays unresolved. No blanket refund or delivery outcome appears in the cited reporting.</p>
-          <p>For laboratory replacement stock, compare the actual offered lot with your protocol, seek its batch documentation and check the new seller&apos;s identity and order terms. A different catalog is not automatically interchangeable; research products are not for human consumption.</p>
+          <h2>What remains unknown about Apex Peptides operations?</h2>
+          <p>The temporary notice and reduced catalog document the state of the website on September 24. They do not establish whether existing orders were shipped, canceled or refunded. The cited reporting supplies no order ledger or companywide fulfillment announcement.</p>
+          <p>For laboratories comparing research suppliers, the distinction is substantive: a different catalog does not make products interchangeable, and batch documentation and seller identity require separate evaluation. Our <Link href="/compliant-research-peptide-supplier">research supplier guide</Link> explains those limits. Research products are not for human consumption.</p>
           <p>A dated company explanation about orders, or an official filing describing the searches, would change this account. Until then the verified sequence is a September 23 property search followed by KCAU&apos;s September 24 observation of a temporary notice on the peptide site.</p>
 
           <div className="mt-14 pt-10 border-t border-gray-200">
@@ -124,7 +124,7 @@ export default function ApexRaidedArticle() {
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: Apex-linked businesses and search timeline</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 follow-up</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 26, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Health is a commercial partner. Research products are not for human consumption.
+            Updated September 26, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Labs is a commercial partner. Research products are not for human consumption.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function ApexRaidedArticle() {
           </h2>
           <div className="space-y-5">
             {[
-              { slug: "what-happened-to-apex-peptides", category: "Industry", title: "What Happened to Apex Peptides? Searches and Order Questions", date: "September 24, 2026" },
+              { slug: "what-happened-to-apex-peptides", category: "Industry", title: "What Happened to Apex Peptides? Searches and Closure Questions", date: "September 24, 2026" },
               { slug: "peptide-enforcement-2026", category: "Industry", title: "2026 Peptide Enforcement: The Major Documented Actions", date: "September 24, 2026" },
               { slug: "compliant-research-peptide-supplier", category: "Industry", title: "What to Check in a Research Peptide Supplier", date: "September 10, 2026" },
             ].map((r) => (
@@ -147,7 +147,7 @@ export default function ApexRaidedArticle() {
               </Link>
             ))}
           </div>
-          <IQONPartner vial="glutathione" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <IQONPartner vial="glutathione" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
         </div>
       </main>
       <Footer />

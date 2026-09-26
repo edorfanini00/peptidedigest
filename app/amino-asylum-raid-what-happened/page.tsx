@@ -39,7 +39,7 @@ const jsonLd = {
         { "@type": "Question", name: "Why was Amino Asylum raided?", acceptedAnswer: { "@type": "Answer", text: "The reason is not established by an identified primary record in this article. Findings from the Paradigm Peptides prosecution should not be assigned to Amino Asylum." } },
         { "@type": "Question", name: "Did Amino Asylum's founders plead guilty in December 2025?", acceptedAnswer: { "@type": "Answer", text: "The DOJ record cited here concerns Matthew Kawa and Jennifer Stechkober of Paradigm Peptides. It does not support that claim about Amino Asylum." } },
         { "@type": "Question", name: "Is Amino Asylum coming back?", acceptedAnswer: { "@type": "Answer", text: "We do not have an attributable reopening announcement. A site using similar branding does not by itself establish that the former operator has returned." } },
-        { "@type": "Question", name: "What should I check in an Amino Asylum alternative?", acceptedAnswer: { "@type": "Answer", text: "Verify the seller, order terms and batch documentation for your laboratory work. IQON Health is a commercial partner; assess it by the same criteria as any other supplier." } },
+        { "@type": "Question", name: "What should I check in an Amino Asylum alternative?", acceptedAnswer: { "@type": "Answer", text: "Verify the seller, order terms and batch documentation for your laboratory work. IQON Labs is a commercial partner; assess it by the same criteria as any other supplier." } },
       ],
     },
   ],
@@ -79,7 +79,7 @@ export default function AminoAsylumRaid() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What if you had an order or need a research alternative?</h2>
           <p>If your Amino Asylum purchase is unresolved, keep the confirmation, payment record and messages, ask the seller for a written status and check your payment provider&apos;s dispute window. Do not assume a site using familiar branding can retrieve an older transaction.</p>
-          <p>A laboratory choosing another seller should check its legal identity, current terms and documentation for the particular lot offered. A purity number alone does not cover identity, composition or human-use suitability. IQON Health advertises here; it has not been certified as a replacement by this reporting.</p>
+          <p>A laboratory choosing another seller should check its legal identity, current terms and documentation for the particular lot offered. A purity number alone does not cover identity, composition or human-use suitability. IQON Labs advertises here; it has not been certified as a replacement by this reporting.</p>
           <p>A warrant, charging document or agency statement naming Amino Asylum would answer the question the vendor account cannot: which authority took what action, at which site, and when.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
@@ -102,7 +102,7 @@ export default function AminoAsylumRaid() {
 
           <IQONPartner vial="glutathione" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

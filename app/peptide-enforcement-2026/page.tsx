@@ -107,7 +107,7 @@ export default function EnforcementTimeline() {
           <p>On September 23, agents searched 503 Prosperity Way, identified by <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline">KTIV</a> as an Apex Waste Management property, and a Dakota Dunes home. The station distinguished nearby 498 Prosperity Way in its business-record review. <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/" className="text-blue-700 underline">KCAU</a> reported a temporary closure notice on the Apex Peptides website the next day. Those reports do not identify an order-processing site or explain which peptide orders, if any, could be fulfilled. A dated company order update could answer that; a search report cannot. (<Link href="/apex-peptides-raided-what-researchers-need-to-know" className="text-blue-700 underline">Apex coverage</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can a disrupted buyer actually check?</h2>
-          <p>For an interrupted laboratory purchase, first ask the original seller for written order status and check your payment provider&apos;s deadline. When considering another supplier, match the offered lot to its COA and verify the issuer if possible. The COA guide explains the limits of the measurements. IQON Health advertises here but gains no editorial certification from any of these events. (<Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">Related article</Link>)</p>
+          <p>For an interrupted laboratory purchase, first ask the original seller for written order status and check your payment provider&apos;s deadline. When considering another supplier, match the offered lot to its COA and verify the issuer if possible. The COA guide explains the limits of the measurements. IQON Labs advertises here but gains no editorial certification from any of these events. (<Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">Related article</Link>)</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -128,7 +128,7 @@ export default function EnforcementTimeline() {
           <IQONPartner vial="glutathione" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 26, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.
+            Updated September 26, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.
           </p>
         </div>
       </main>
