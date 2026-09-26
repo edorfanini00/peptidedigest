@@ -54,7 +54,7 @@ export default function AminoAsylumRaid() {
           category="Industry"
           title={<>Amino Asylum Raid: What Happened and What Is Documented</>}
           dek={"Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and how to evaluate a research alternative."}
-          meta={<><time dateTime="2026-01-15">January 15, 2026</time><span>Updated September 25, 2026</span></>}
+          meta={<><time dateTime="2026-01-15">January 15, 2026</time><span>Updated September 26, 2026</span></>}
           image="padlock"
         />
 
@@ -104,7 +104,7 @@ export default function AminoAsylumRaid() {
 
           <IQONPartner vial="glutathione" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

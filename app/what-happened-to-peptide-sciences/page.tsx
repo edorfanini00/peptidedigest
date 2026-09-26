@@ -53,7 +53,7 @@ export default function PeptideSciencesShutdown() {
           category="Industry"
           title={<>What Happened to Peptide Sciences?</>}
           dek={"Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier."}
-          meta={<><time dateTime="2026-03-10">March 10, 2026</time><span>Updated September 25, 2026</span></>}
+          meta={<><time dateTime="2026-03-10">March 10, 2026</time><span>Updated September 26, 2026</span></>}
           image="researchVials"
         />
 
@@ -110,7 +110,7 @@ export default function PeptideSciencesShutdown() {
 
           <IQONPartner vial="nad" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

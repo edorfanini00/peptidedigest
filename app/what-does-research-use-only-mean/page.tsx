@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
@@ -113,24 +112,24 @@ export default function Page() {
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>The exact RUO wording comes from <Src href={SRC.ecfr}>21 CFR 809.10(c)(2)(i)</Src>: &ldquo;For Research Use Only. Not for use in diagnostic procedures.&rdquo;</li>
               <li>That rule covers in vitro diagnostic products, meaning lab tests and reagents. It was not written for vials sold to consumers.</li>
-              <li>FDA's <Src href={SRC.guidancePage}>RUO/IUO guidance</Src> was issued November 25, 2013, and says RUO labeling must be consistent with the manufacturer's intended use.</li>
-              <li>FDA's August 24, 2026 warning letters said RUO statements did not change its finding that the products were drugs (<Src href={SRC.partners}>Peptide Partners letter</Src>).</li>
+              <li>FDA&apos;s <Src href={SRC.guidancePage}>RUO/IUO guidance</Src> was issued November 25, 2013, and says RUO labeling must be consistent with the manufacturer&apos;s intended use.</li>
+              <li>FDA&apos;s August 24, 2026 warning letters said RUO statements did not change its finding that the products were drugs (<Src href={SRC.partners}>Peptide Partners letter</Src>).</li>
               <li>Alabama and Mississippi boards told licensed providers that research-grade peptides may not be given to patients (<Src href={SRC.alabama}>Alabama</Src>, <Src href={SRC.mississippi}>Mississippi</Src>).</li>
             </ul>
           </div>
 
           <h2 className={h2} style={serif}>Where does the phrase &ldquo;research use only&rdquo; come from?</h2>
           <p><Src href={SRC.ecfr}>21 CFR 809.10(c)</Src> sets labeling conditions for certain in vitro diagnostic products during laboratory research. Its wording is specific: &ldquo;For Research Use Only. Not for use in diagnostic procedures.&rdquo; The diagnostic context matters. That rule does not automatically classify a peptide offered as a chemical reagent, and it does not provide a universal safe harbor for anything with RUO on a label.</p>
-          <h2 className={h2} style={serif}>What does FDA's 2013 guidance say an RUO label is for?</h2>
-          <p><Src href={SRC.guidancePage}>FDA's guidance</Src> explains the distinction between research-stage diagnostic products and products marketed for clinical diagnosis. It addresses how the manufacturer distributes and promotes the product, not just the words printed on it. Guidance states the agency's thinking; the cited regulation and governing statutes retain their own legal force. Applying this IVD guidance directly to every peptide vial would erase that distinction.</p>
-          <h2 className={h2} style={serif}>Why doesn't the label settle the question?</h2>
+          <h2 className={h2} style={serif}>What does FDA&apos;s 2013 guidance say an RUO label is for?</h2>
+          <p><Src href={SRC.guidancePage}>FDA&apos;s guidance</Src> explains the distinction between research-stage diagnostic products and products marketed for clinical diagnosis. It addresses how the manufacturer distributes and promotes the product, not just the words printed on it. Guidance states the agency&apos;s thinking; the cited regulation and governing statutes retain their own legal force. Applying this IVD guidance directly to every peptide vial would erase that distinction.</p>
+          <h2 className={h2} style={serif}>Why doesn&apos;t the label settle the question?</h2>
           <p>The regulatory question is what the seller intends the product to be used for, assessed from available evidence. Website claims, product descriptions and accompanying items can conflict with a research disclaimer. A buyer declaration that a product is only for research does not undo contradictory seller conduct. This is why reading the whole sales presentation tells you more than reading one sticker.</p>
           <h2 className={h2} style={serif}>What did the August 2026 warning letters say about RUO?</h2>
-          <p>Here the legal context changes from diagnostic devices to drug intended use. The <Src href={SRC.partners}>Peptide Partners letter</Src> says that despite its research-use statements, the website's claims established human drug intent for products FDA named. FDA also cited a reconstitution solution sold for use with those products. In the <Src href={SRC.royal}>Royal Peptides letter</Src>, the agency examined accompanying supplies and guides. These are FDA's allegations and regulatory findings in warning letters, not convictions or proof that all similarly labeled products have the same status. Our <Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>letter-by-letter account</Link> gives the specific examples.</p>
+          <p>Here the legal context changes from diagnostic devices to drug intended use. The <Src href={SRC.partners}>Peptide Partners letter</Src> says that despite its research-use statements, the website&apos;s claims established human drug intent for products FDA named. FDA also cited a reconstitution solution sold for use with those products. In the <Src href={SRC.royal}>Royal Peptides letter</Src>, the agency examined accompanying supplies and guides. These are FDA&apos;s allegations and regulatory findings in warning letters, not convictions or proof that all similarly labeled products have the same status. Our <Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>letter-by-letter account</Link> gives the specific examples.</p>
           <h2 className={h2} style={serif}>What have state boards said about research-grade products?</h2>
-          <p><Src href={SRC.alabama}>Alabama's medical board notice</Src> and <Src href={SRC.mississippi}>Mississippi's joint board statement</Src> address licensed healthcare professionals and patient use. They reject the idea that calling a substance research-grade or obtaining patient consent by itself resolves professional obligations. These board notices are not national rules for every laboratory transaction. Their audience and authority differ from FDA's seller warning letters.</p>
+          <p><Src href={SRC.alabama}>Alabama&apos;s medical board notice</Src> and <Src href={SRC.mississippi}>Mississippi&apos;s joint board statement</Src> address licensed healthcare professionals and patient use. They reject the idea that calling a substance research-grade or obtaining patient consent by itself resolves professional obligations. These board notices are not national rules for every laboratory transaction. Their audience and authority differ from FDA&apos;s seller warning letters.</p>
           <h2 className={h2} style={serif}>So what does RUO mean for a reader in 2026?</h2>
-          <p>It describes a claimed research context. It does not authenticate a COA, establish FDA approval, authorize patient use or decide whether a seller's conduct complies with law. To understand a specific dispute, locate the applicable product category, read the regulator's cited evidence and distinguish a warning letter from a court judgment. See also the <Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>private litigation coverage</Link>; a civil complaint is yet another kind of document, with allegations to be tested rather than established findings.</p>
+          <p>It describes a claimed research context. It does not authenticate a COA, establish FDA approval, authorize patient use or decide whether a seller&apos;s conduct complies with law. To understand a specific dispute, locate the applicable product category, read the regulator&apos;s cited evidence and distinguish a warning letter from a court judgment. See also the <Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>private litigation coverage</Link>; a civil complaint is yet another kind of document, with allegations to be tested rather than established findings.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
@@ -145,9 +144,9 @@ export default function Page() {
           <div className="mt-10 pt-6 border-t border-gray-200">
             <h2 className="text-sm font-semibold text-gray-900 mb-3">Related coverage</h2>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA's August 24, 2026 Warning Letters to Online Peptide Sellers</Link></li>
+              <li><Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA&apos;s August 24, 2026 Warning Letters to Online Peptide Sellers</Link></li>
               <li><Link href="/state-crackdown-research-peptides-2026" className={a}>Which States Are Cracking Down on Research-Grade Peptides in 2026?</Link></li>
-              <li><Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>Eli Lilly's lawsuits against research peptide sellers</Link></li>
+              <li><Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>Eli Lilly&apos;s lawsuits against research peptide sellers</Link></li>
             </ul>
           </div>
 
@@ -158,7 +157,7 @@ export default function Page() {
           <IQONPartner vial="ghk" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Published September 25, 2026. Sources: 21 CFR 809.10 (eCFR), FDA's November 2013 RUO/IUO guidance, FDA warning letters 735063 and 734884, the Alabama Board of Medical Examiners notice and the Mississippi boards' joint statement, all linked above. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.
+            Published September 25, 2026. Sources: 21 CFR 809.10 (eCFR), FDA&apos;s November 2013 RUO/IUO guidance, FDA warning letters 735063 and 734884, the Alabama Board of Medical Examiners notice and the Mississippi boards&apos; joint statement, all linked above. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.
           </p>
         </div>
       </main>

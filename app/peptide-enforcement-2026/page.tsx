@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
@@ -36,7 +35,7 @@ const jsonLd = {
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "What peptide companies closed or faced enforcement in 2026?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences announced a voluntary shutdown in March 2026. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." } },
-        { "@type": "Question", name: "Was the Paradigm Peptides case a March 2026 prosecution?", acceptedAnswer: { "@type": "Answer", text: "No. The guilty pleas were in December 2025; sentencing was July 30, 2026. The business operated between 2019 and 2024." } },
+        { "@type": "Question", name: "Was the Paradigm Peptides case a March 2026 prosecution?", acceptedAnswer: { "@type": "Answer", text: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. The business operated between 2019 and 2024." } },
         { "@type": "Question", name: "What is the status of Amino Asylum?", acceptedAnswer: { "@type": "Answer", text: "Industry accounts place its shutdown in June 2025. This timeline has no primary government document establishing the specific alleged action against that company." } },
       ],
     },
@@ -69,7 +68,7 @@ export default function EnforcementTimeline() {
           category="Industry"
           title={<>2026 Peptide Enforcement: The Major Documented Actions</>}
           dek={"Timeline of 2026 enforcement actions against research peptide suppliers: Peptide Sciences voluntary shutdown, Paradigm Peptides sentence, and Apex Peptides search reports."}
-          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 25, 2026</span></>}
+          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 26, 2026</span></>}
           image="gavel"
         />
 
@@ -101,22 +100,22 @@ export default function EnforcementTimeline() {
           </div>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Why a closure is not a raid</h2>
-          <p>Peptide Sciences' own notice announced the end of research-product sales. That establishes what the company said it would do, not why every business decision was made. A voluntary shutdown belongs in this industry chronology because readers encounter it alongside enforcement stories, but it should not be counted as a government enforcement action. See the <Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">separate closure account</Link>.</p>
+          <p>Peptide Sciences&apos; own notice announced the end of research-product sales. That establishes what the company said it would do, not why every business decision was made. A voluntary shutdown belongs in this industry chronology because readers encounter it alongside enforcement stories, but it should not be counted as a government enforcement action. See the <Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">separate closure account</Link>.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the Paradigm court outcome establishes</h2>
-          <p>The <a href="https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline">Justice Department's sentencing release</a> identifies defendants, guilty pleas and prison terms. It also describes false claims about testing and FDA approval. Unlike a warning letter, the pleas and sentences are criminal-case outcomes. They belong to Paradigm Peptides, not Amino Asylum or another company with a similar product catalog. The 2025 pleas and 2026 sentencing are separate milestones.</p>
+          <p>The <a href="https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline">Justice Department&apos;s sentencing release</a> identifies defendants, guilty pleas and prison terms. It also describes false claims about testing and FDA approval. Unlike a warning letter, the pleas and sentences are criminal-case outcomes. They belong to Paradigm Peptides, not Amino Asylum or another company with a similar product catalog. The 2025 pleas and 2026 sentencing are separate milestones.</p>
 
-          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What FDA's August letters add</h2>
-          <p>FDA's <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">Peptide Partners letter</a> describes website language and accompanying products that, in FDA's view, showed human drug intent despite RUO statements. That is a specific regulatory notice, with an invitation to respond, not proof of a prosecution or universal ruling on all peptide suppliers. Our <Link href="/fda-warning-letters-peptide-sellers-august-2026" className="text-blue-700 underline">warning-letter report</Link> sets out the individual addressees.</p>
+          <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What FDA&apos;s August letters add</h2>
+          <p>FDA&apos;s <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">Peptide Partners letter</a> describes website language and accompanying products that, in FDA&apos;s view, showed human drug intent despite RUO statements. That is a specific regulatory notice, with an invitation to respond, not proof of a prosecution or universal ruling on all peptide suppliers. Our <Link href="/fda-warning-letters-peptide-sellers-august-2026" className="text-blue-700 underline">warning-letter report</Link> sets out the individual addressees.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What the Apex search does not establish</h2>
           <p><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" className="text-blue-700 underline">KTIV documented</a> agents at 503 Prosperity Way and a search of a home, then used business filings to identify ties among companies. The nearby unfinished building at 498 Prosperity Way is a different address. That account does not supply a charging document against Apex Peptides or establish the contents of seized materials. For the distinction between the searched property, connected entities and order questions, see <Link href="/apex-peptides-raided-what-researchers-need-to-know" className="text-blue-700 underline">our Apex report</Link>.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Where does Amino Asylum fit?</h2>
-          <p>Reports of a June 2025 Amino Asylum shutdown predate this year's timeline. Without a public government record tying the named company to a specific action, they remain industry-attributed rather than a documented 2026 enforcement milestone. The <Link href="/amino-asylum-raid-what-happened" className="text-blue-700 underline">Amino Asylum account</Link> separates that uncertainty from the Paradigm pleas.</p>
+          <p>Reports of a June 2025 Amino Asylum shutdown predate this year&apos;s timeline. Without a public government record tying the named company to a specific action, they remain industry-attributed rather than a documented 2026 enforcement milestone. The <Link href="/amino-asylum-raid-what-happened" className="text-blue-700 underline">Amino Asylum account</Link> separates that uncertainty from the Paradigm pleas.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What can a disrupted buyer actually check?</h2>
-          <p>A new supplier's popularity does not establish a batch's composition or a seller's legal status. Match a certificate to the offered lot, ask what methods were used and independently confirm the issuing laboratory when possible. The <Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">COA guide</Link> gives the limits of those tests. IQON Health is a commercial placement here and receives no editorial certification.</p>
+          <p>A new supplier&apos;s popularity does not establish a batch&apos;s composition or a seller&apos;s legal status. Match a certificate to the offered lot, ask what methods were used and independently confirm the issuing laboratory when possible. The <Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">COA guide</Link> gives the limits of those tests. IQON Health is a commercial placement here and receives no editorial certification.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -139,7 +138,7 @@ export default function EnforcementTimeline() {
           <IQONPartner vial="glutathione" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 25, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.
+            Updated September 26, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.
           </p>
         </div>
       </main>

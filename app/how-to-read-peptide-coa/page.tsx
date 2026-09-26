@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
@@ -114,28 +113,28 @@ export default function Page() {
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>HPLC peak area describes the detector signal under a stated method; mass spectrometry compares observed and expected mass.</li>
               <li>Reversed-phase HPLC is the standard workhorse for peptide separation (<a className={a} href={SRC.mant} target="_blank" rel="noopener noreferrer">Mant et al., 2007</a>).</li>
-              <li>Synthetic peptides carry predictable impurities such as deletion sequences, oxidation products and leftover counter ions like trifluoroacetate (<a className={a} href={SRC.dhondt} target="_blank" rel="noopener noreferrer">D'Hondt et al., 2014</a>).</li>
+              <li>Synthetic peptides carry predictable impurities such as deletion sequences, oxidation products and leftover counter ions like trifluoroacetate (<a className={a} href={SRC.dhondt} target="_blank" rel="noopener noreferrer">D&apos;Hondt et al., 2014</a>).</li>
               <li>A COA describes a tested sample tied to a lot; it does not certify every vial in that lot.</li>
               <li>ISO/IEC 17025 is the international standard for testing lab competence (<a className={a} href={SRC.iso} target="_blank" rel="noopener noreferrer">ISO</a>).</li>
             </ul>
           </div>
 
           <h2 className={h2} style={serif}>What is a peptide COA supposed to show?</h2>
-          <p>The useful unit is a tested sample, not a brand. A report should connect a named sample and lot to dated results, methods and the laboratory that issued them. FDA's <a className={a} href={SRC.fdaMethods}>analytical procedures guidance</a> concerns regulated drug submissions; a seller's research COA is not automatically subject to that approval framework. It is still reasonable to ask what was measured and what was not.</p>
+          <p>The useful unit is a tested sample, not a brand. A report should connect a named sample and lot to dated results, methods and the laboratory that issued them. FDA&apos;s <a className={a} href={SRC.fdaMethods}>analytical procedures guidance</a> concerns regulated drug submissions; a seller&apos;s research COA is not automatically subject to that approval framework. It is still reasonable to ask what was measured and what was not.</p>
           <div className="my-4 space-y-3">{fields.map((f) => (<div key={f.name} className="p-4 rounded-lg border border-gray-200 bg-white"><p className="text-sm font-semibold text-gray-900">{f.name}</p><p className="text-sm text-gray-500">{f.note}</p></div>))}</div>
           <h2 className={h2} style={serif}>How do you read the HPLC purity number?</h2>
-          <p>High-performance liquid chromatography separates components of a sample before a detector records peaks over time. A reported area percentage commonly compares the main peak's integrated detector signal with the total integrated signal under that method. A 98% area result therefore is not a statement that 98% of a vial's mass is the listed peptide. The method, detector and integration choices matter. <a className={a} href={SRC.mant}>Mant and colleagues</a> describe reversed-phase separation in peptide analysis.</p>
+          <p>High-performance liquid chromatography separates components of a sample before a detector records peaks over time. A reported area percentage commonly compares the main peak&apos;s integrated detector signal with the total integrated signal under that method. A 98% area result therefore is not a statement that 98% of a vial&apos;s mass is the listed peptide. The method, detector and integration choices matter. <a className={a} href={SRC.mant}>Mant and colleagues</a> describe reversed-phase separation in peptide analysis.</p>
           <p>Ask for the chromatogram and method conditions, then ask whether minor peaks were integrated and what the detector could miss. Water, counterions and substances without a comparable detector response need separate assessment. A trace alone cannot establish identity; a pristine-looking plot is not evidence of manipulation without the underlying data.</p>
           <h2 className={h2} style={serif}>What does the mass spec result prove?</h2>
-          <p>Mass spectrometry adds a different comparison: the reported observed mass against the mass expected for the named molecule. A plausible match supports identity for the analyzed component, although isomers or other molecules can share a mass. It cannot by itself establish purity, sequence, amount per vial or absence of contaminants. <a className={a} href={SRC.dhondt}>D'Hondt and colleagues</a> discuss multiple impurity classes in synthetic peptides. Read HPLC and mass spec together rather than allowing either to certify what it did not test.</p>
+          <p>Mass spectrometry adds a different comparison: the reported observed mass against the mass expected for the named molecule. A plausible match supports identity for the analyzed component, although isomers or other molecules can share a mass. It cannot by itself establish purity, sequence, amount per vial or absence of contaminants. <a className={a} href={SRC.dhondt}>D&apos;Hondt and colleagues</a> discuss multiple impurity classes in synthetic peptides. Read HPLC and mass spec together rather than allowing either to certify what it did not test.</p>
           <h2 className={h2} style={serif}>Why do the lot number and dates matter?</h2>
           <p>Imagine a report for lot A attached to a listing shipping lot B. Even impeccable analytical work on A says nothing direct about B. Match identifiers character by character. Then check sample receipt, analysis and issuance dates in that order, if provided. An older test describes the sampled material at the testing time; it does not establish the condition of every package today.</p>
           <h2 className={h2} style={serif}>How do you know the testing lab is real?</h2>
-          <p>Look up the named laboratory independently rather than trusting contact information embedded in the PDF. <a className={a} href={SRC.iso}>ISO/IEC 17025</a> concerns laboratory competence, while accreditation and its scope should be checked through the relevant accreditation body's directory. A lab can be accredited for some tests but not the exact method on a particular report. Accreditation does not turn a research product into an FDA-approved drug.</p>
+          <p>Look up the named laboratory independently rather than trusting contact information embedded in the PDF. <a className={a} href={SRC.iso}>ISO/IEC 17025</a> concerns laboratory competence, while accreditation and its scope should be checked through the relevant accreditation body&apos;s directory. A lab can be accredited for some tests but not the exact method on a particular report. Accreditation does not turn a research product into an FDA-approved drug.</p>
           <h2 className={h2} style={serif}>What are the red flags on a peptide COA?</h2>
           <p>A mismatched lot or unidentifiable issuer breaks the link before the purity percentage matters. Missing method details, repeated report IDs for different samples, an absent chromatogram for an asserted HPLC result, or a mass figure without a stated expected value all deserve questions. None alone proves forgery. A report can be genuine yet narrow: if endotoxin or microbial testing is absent, that property remains untested by the document, not automatically safe or unsafe.</p>
           <h2 className={h2} style={serif}>How do you verify a COA with the lab?</h2>
-          <p>Use a contact channel found on the lab's own site. Give the report ID, lot identifier and date and ask whether it issued that document and whether the supplied copy matches its records. A lab may decline to share client information, so refusal is not proof of fraud; a confirmed mismatch is a concrete reason to stop relying on the report. A QR code is useful only if it resolves to an independently verified laboratory service, not a seller-controlled copy.</p>
+          <p>Use a contact channel found on the lab&apos;s own site. Give the report ID, lot identifier and date and ask whether it issued that document and whether the supplied copy matches its records. A lab may decline to share client information, so refusal is not proof of fraud; a confirmed mismatch is a concrete reason to stop relying on the report. A QR code is useful only if it resolves to an independently verified laboratory service, not a seller-controlled copy.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={serif}>Frequently Asked Questions</h2>
@@ -151,7 +150,7 @@ export default function Page() {
             <h2 className="text-sm font-semibold text-gray-900 mb-3">Related coverage</h2>
             <ul className="space-y-2 text-sm">
               <li><Link href="/compliant-research-peptide-supplier" className={a}>What to look for in a research peptide supplier</Link></li>
-              <li><Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA's August 24, 2026 warning letters to online peptide sellers</Link></li>
+              <li><Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA&apos;s August 24, 2026 warning letters to online peptide sellers</Link></li>
               <li><Link href="/peptide-enforcement-2026" className={a}>2026 Peptide Enforcement: The Major Documented Actions</Link></li>
             </ul>
           </div>
@@ -163,7 +162,7 @@ export default function Page() {
           <IQONPartner vial="bac-water" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Published September 25, 2026. Sources: Mant et al. (Methods Mol Biol, 2007), D'Hondt et al. (J Pharm Biomed Anal, 2014), FDA guidance on analytical procedures, ISO and ILAC, all linked above. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.
+            Published September 25, 2026. Sources: Mant et al. (Methods Mol Biol, 2007), D&apos;Hondt et al. (J Pharm Biomed Anal, 2014), FDA guidance on analytical procedures, ISO and ILAC, all linked above. For informational purposes only. Not medical or legal advice. Research products are not for human consumption.
           </p>
         </div>
       </main>

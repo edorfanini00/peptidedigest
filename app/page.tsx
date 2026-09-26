@@ -88,7 +88,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "Eli Lilly Sues Research Use Only Peptide Sellers: The 2026 Cases Explained",
     excerpt:
-      "On August 12, 2026, Eli Lilly filed six federal civil lawsuits, four against online research use only peptide sellers. Here are the parties, courts, claims and what the cases signal.",
+      "Eli Lilly filed six federal civil lawsuits in August 2026, four against online research use only peptide sellers. One case was voluntarily dismissed on September 2; the others require separate docket checks.",
     image: "lillyHq",
   },
   {
@@ -98,7 +98,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "FDA's August 24, 2026 Warning Letters to Online Peptide Sellers",
     excerpt:
-      "FDA sent warning letters to five online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC, and said research use only labels did not change its finding.",
+      "FDA sent August 2026 warning letters to online peptide sellers, including Peptide Partners LLC and Royal Peptides LLC. What the letters allege and why an RUO label alone did not change FDA’s assessment.",
     image: "fdaSign",
   },
   {
@@ -124,7 +124,7 @@ const regulatoryArticles: CardArticle[] = [
   {
     slug: "compliant-research-peptide-supplier",
     category: "Guide",
-    date: "September 24, 2026",
+    date: "September 10, 2026",
     readTime: "6 min read",
     title: "What to Check in a Research Peptide Supplier",
     excerpt:

@@ -52,7 +52,7 @@ export default function ParadigmPeptidesSentence() {
           category="Criminal"
           title={<>Paradigm Peptides: Matthew Kawa Sentenced to 70 Months</>}
           dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and research supplier documentation checks."}
-          meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 25, 2026</span></>}
+          meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 26, 2026</span></>}
           image="dojBuilding"
         />
 
@@ -115,7 +115,7 @@ export default function ParadigmPeptidesSentence() {
 
           <IQONPartner vial="ghk" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 25, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Health is a paid commercial partner. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />
