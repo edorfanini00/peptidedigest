@@ -81,7 +81,7 @@ const a = "text-blue-700 underline";
 
 const letters = [
   { name: "Peptide Partners LLC", ref: "735063", site: "peptide.partners", href: SRC.partners, detail: "FDA cited six peptide listings, including an SS-31 page discussing retinal protection, plus a reconstitution solution it treated as a separate drug." },
-  { name: "Royal Peptides LLC", ref: "734884", site: "royal-peptides.com", href: SRC.royal, detail: "Seven peptide products were named. A product page paired an ‘Advanced Research Use’ label with claims about mitochondrial repair, anti-aging and neuroprotection; FDA also cited a peptide guide and calculator." },
+  { name: "Royal Peptides LLC", ref: "734884", site: "royal-peptides.com", href: SRC.royal, detail: "Seven products were named. A product page paired an ‘Advanced Research Use’ label with claims about mitochondrial repair, anti-aging and neuroprotection; FDA also cited a peptide guide and calculator." },
   { name: "TXP Innovations LLC dba Tex Peptides", ref: "735067", site: "texpeptide.com", href: SRC.tex, detail: "FDA identified six peptide products and bacteriostatic water. Its examples included a GLP-1 SEM page describing diabetes and obesity uses." },
   { name: "NuScience Peptides LLC", ref: "733652", site: "nusciencepeptides.com", href: SRC.nuscience, detail: "The letter named eight peptide offerings and BAC water. One GLP-1 Sema page linked to a PubChem passage about weight loss; FDA also noted a peptide calculator." },
   { name: "Peak Performance Peptides", ref: "735127", site: "pppepz.com", href: SRC.peak, detail: "FDA named five peptide products and ‘Bac water’; its cited SS-31 page discussed neuroprotection and cardiovascular benefits. The letter separately noted multiple strengths for some other products." },

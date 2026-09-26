@@ -36,7 +36,7 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What peptide companies closed or faced enforcement in 2026?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences announced a voluntary shutdown in March 2026. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." } },
+        { "@type": "Question", name: "What peptide companies closed or faced enforcement in 2026?", acceptedAnswer: { "@type": "Answer", text: "Peptide Sciences announced a voluntary shutdown in an undated company notice. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." } },
         { "@type": "Question", name: "Was the Paradigm Peptides case a March 2026 prosecution?", acceptedAnswer: { "@type": "Answer", text: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. The business operated between 2019 and 2024." } },
         { "@type": "Question", name: "What is the status of Amino Asylum?", acceptedAnswer: { "@type": "Answer", text: "Industry accounts place its shutdown in June 2025. This timeline has no primary government document establishing the specific alleged action against that company." } },
       ],
@@ -46,7 +46,7 @@ const jsonLd = {
 
 const timeline = [
   { date: "December 2025", company: "Paradigm Peptides", action: "Kawa and Stechkober pleaded guilty. This is the start of the case chronology here, not a 2026 charge against Amino Asylum.", category: "Pleas", source: "https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" },
-  { date: "March 2026", company: "Peptide Sciences", action: "The company announced it would discontinue research-product sales. Its notice described a voluntary closure, not a federal raid.", category: "Shutdown", source: "https://www.peptidesciences.com" },
+  { date: "Date not specified", company: "Peptide Sciences", action: "The company announced it would discontinue research-product sales. Its notice described a voluntary closure, not a federal raid.", category: "Shutdown", source: "https://www.peptidesciences.com" },
   { date: "July 2026", company: "Paradigm Peptides", action: "Federal prosecutors reported Kawa's 70-month and Stechkober's 16-month sentences, plus restitution and a money judgment against Kawa.", category: "Sentence", source: "https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" },
   { date: "August 24, 2026", company: "FDA seller letters", action: "FDA issued warning letters citing website claims and research disclaimers. A warning letter is not a criminal conviction.", category: "Regulatory", source: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" },
   { date: "September 23, 2026", company: "Apex-linked properties", action: "KTIV reported searches at a North Sioux City business property and a nearby home; its business-record review linked Apex Peptides to related entities. The reporting did not establish a charge against Apex Peptides.", category: "Raid", source: "https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/" },
@@ -114,7 +114,7 @@ export default function EnforcementTimeline() {
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What peptide companies closed or faced enforcement in 2026?", a: "Peptide Sciences announced a voluntary shutdown in March 2026. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." },
+              { q: "What peptide companies closed or faced enforcement in 2026?", a: "Peptide Sciences announced a voluntary shutdown in an undated company notice. Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting." },
               { q: "Was the Paradigm Peptides case a March 2026 prosecution?", a: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. The business operated between 2019 and 2024." },
               { q: "What is the status of Amino Asylum?", a: "Industry accounts place its shutdown in June 2025. This timeline has no primary government document establishing the specific alleged action against that company." },
             ].map(({ q, a }) => (
