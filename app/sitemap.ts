@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/enicepatide-phase-2-diabetes-results-september-2026`,
+      lastModified: new Date("2026-09-27T12:24:43+00:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-adsorption-glass-plastic-lab-results`,
+      lastModified: new Date("2026-09-27T12:24:43+00:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/compliant-research-peptide-supplier`,
       lastModified: now,
       changeFrequency: "monthly",

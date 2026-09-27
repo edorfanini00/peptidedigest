@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  enicepatideComparison: {
+    src: "/images/enicepatide-trial-comparison.webp",
+    width: 1800,
+    height: 1208,
+    alt: "Conceptual illustration of two empty transparent sample racks beside a closed notebook",
+    caption: "AI-generated editorial illustration of a trial comparison, not a photograph of Roche or the trial.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
+  peptideAdsorption: {
+    src: "/images/peptide-adsorption-detail.webp",
+    width: 1200,
+    height: 800,
+    alt: "Conceptual close view of an open plastic laboratory tube and a glass vial showing their container walls",
+    caption: "AI-generated editorial illustration of laboratory container surfaces, not a photograph of the studies.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
   empowerControls: {
     src: "/images/empower-aseptic-controls.webp",
     width: 1800,
