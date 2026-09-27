@@ -16,11 +16,11 @@ export interface EditorialImage {
 
 export const images = {
   enicepatideComparison: {
-    src: "/images/enicepatide-trial-comparison.webp",
+    src: "/images/enicepatide-hba1c-analysis.webp",
     width: 1800,
     height: 1208,
-    alt: "Conceptual illustration of two empty transparent sample racks beside a closed notebook",
-    caption: "AI-generated editorial illustration of a trial comparison, not a photograph of Roche or the trial.",
+    alt: "Illustration of an unbranded benchtop analyzer beside a blank worksheet headed HbA1c and a closed study binder",
+    caption: "AI-generated editorial illustration of HbA1c measurement, not a photograph of Roche equipment or the trial.",
     photographer: "The Peptide Digest",
     sourceUrl: "https://peptidedigest.co",
     credit: "The Peptide Digest",

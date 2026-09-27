@@ -30,7 +30,7 @@ export const story = {
       "paragraphs": [
         "In mass spectrometry, more peptide should ordinarily produce more signal in a predictable relationship.[3] If the wall captures a different fraction at each concentration, that relationship bends. Two nominally proportionate samples can deliver disproportionately different amounts to the detector.[3]",
         "A separate team tested this with a digest of six proteins.[3] It selected 18 detectable peptides, followed three measured signals per peptide across a dilution series, and ran samples in triplicate.[3] With formic acid in water as the sample solvent, 35% of the peptides had a weak concentration-to-signal fit by the study's cutoff of R² at or below 0.95.[3] Adding 5% acetonitrile to that solvent reduced that share to zero; the share with a very strong fit, R² above 0.99, rose from 35% to 83%.[3]",
-        "R² measures how closely points follow a fitted line. Those figures describe linearity, not a measured percentage of missing peptide recovered.[3] The authors interpreted the solvent response and the tendency of more hydrophobic peptides to behave worse as evidence for concentration-dependent adsorption.[3] Their setup included a vial and a flow path into the instrument, so the experiment alone cannot assign each molecule lost to a particular wall.[3]"
+        "R² measures how closely points follow a fitted line. Those figures describe linearity, not a measured percentage of missing peptide recovered.[3] The authors interpreted the solvent response and the tendency of more hydrophobic peptides, whose chemistry interacts poorly with water, to behave worse as evidence for concentration-dependent adsorption.[3] Their setup included a vial and a flow path into the instrument, so the experiment alone cannot assign each molecule lost to a particular wall.[3]"
       ]
     },
     {
@@ -39,8 +39,8 @@ export const story = {
       "paragraphs": [
         "A 2025 study posed a different test.[2] The researchers prepared a protein digest from HeLa cells, a standard human laboratory cell line, at concentrations from 1.1 to 20 nanograms per microliter, while holding the solution volume in polypropylene vials at 20 microliters.[2] They adjusted how much liquid entered the liquid chromatography and mass spectrometry system (LC-MS) to target the same 10 nanograms of digest each time.[2] If every prepared solution retained its full nominal concentration, the delivered signal would be much more alike.[2]",
         "It was not.[2] As the prepared mixture became more dilute, signal from peptides emerging late in the separation fell about fivefold between the concentration extremes.[2] The middle portion fell about threefold; the earliest portion changed little.[2] Later elution often tracks more hydrophobic chemistry in this separation, making the uneven loss important: a single total-signal correction might not restore every peptide in the mixture equally.[2] The paper reports three replicate analyses and fits a surface-binding model to the concentration effect.[2]",
-        "Vial material complicated the picture further.[2] In a separate, much more dilute digest comparison from the same paper, a treated commercial polypropylene vial delivered higher total peptide intensity than a custom vial molded from a more polar plastic.[2] Ordinary commercial polypropylene was lowest among the compared commercial vessels, with a commercial glass vial above it.[2] A material name, then, is a poor substitute for an actual recovery comparison in the intended analytical method. These results are about signal under the team's LC-MS conditions, not a universal ranking of container products.[2]",
-        "The qualification matters beyond plastic. Another group examined an intact 27-residue research peptide using four combinations of ordinary and low-binding preparation tubes and autosampler vials.[4] At 10 picograms per microliter, the peptide gave no detectable peak from ordinary autosampler vials under that setup; the strongest peak came when both stages used low-binding labware.[4] Yet the same study found that low-binding vessels did not by themselves solve weak low-concentration response for a larger intact protein.[4] One measured peptide charge state remained nonlinear even in the better vessels, which the researchers thought could be an instrument-source effect.[4]"
+        "Vial material complicated the picture further.[2] In a separate, much more dilute digest comparison from the same paper, a treated commercial polypropylene vial delivered higher total peptide intensity than a custom vial molded from a more polar plastic, whose chemical groups have a more uneven distribution of electrical charge.[2] Ordinary commercial polypropylene was lowest among the compared commercial vessels, with a commercial glass vial above it.[2] A material name, then, is a poor substitute for an actual recovery comparison in the intended analytical method. These results are about signal under the team's LC-MS conditions, not a universal ranking of container products.[2]",
+        "A study of an intact peptide found another limit to material comparisons. Another group examined an intact 27-residue research peptide using four combinations of ordinary and low-binding preparation tubes and autosampler vials.[4] At 10 picograms per microliter, the peptide gave no detectable peak from ordinary autosampler vials under that setup; the strongest peak came when both stages used low-binding labware.[4] Yet the same study found that low-binding vessels did not by themselves solve weak low-concentration response for a larger intact protein.[4] One measured peptide charge state, meaning the peptide detected carrying a particular number of electrical charges, remained nonlinear even in the better vessels, which the researchers thought could be an instrument-source effect.[4]"
       ]
     },
     {
@@ -81,13 +81,13 @@ export const story = {
     },
     {
       "id": 3,
-      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3694305/fullTextXML",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3694305/",
       "title": "Warwood et al. (2013), Journal of Proteomics, DOI 10.1016/j.jprot.2013.04.034"
     },
     {
       "id": 4,
-      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10989528/fullTextXML",
-      "title": "Murphy et al. (2021), intact peptide LC-MS, full-text XML"
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10989528/",
+      "title": "Murphy et al. (2021), Analytical Science Advances, DOI 10.1002/ansa.202000102"
     }
   ],
   "notice": "The concentrations and conditions below describe laboratory studies, not instructions for use in people. The IQON catalog placement is separate from these experiments.",
