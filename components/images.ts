@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  enicepatideComparison: {
+    src: "/images/enicepatide-hba1c-analysis.webp",
+    width: 1800,
+    height: 1208,
+    alt: "Illustration of an unbranded benchtop analyzer beside a blank worksheet headed HbA1c and a closed study binder",
+    caption: "AI-generated editorial illustration of HbA1c measurement, not a photograph of Roche equipment or the trial.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
+  peptideAdsorption: {
+    src: "/images/peptide-adsorption-detail.webp",
+    width: 1200,
+    height: 800,
+    alt: "Conceptual close view of an open plastic laboratory tube and a glass vial showing their container walls",
+    caption: "AI-generated editorial illustration of laboratory container surfaces, not a photograph of the studies.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
   empowerControls: {
     src: "/images/empower-aseptic-controls.webp",
     width: 1800,

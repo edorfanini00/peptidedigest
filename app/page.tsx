@@ -72,6 +72,24 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "enicepatide-phase-2-diabetes-results-september-2026",
+    category: "Clinical research",
+    date: "September 27, 2026",
+    readTime: "5 min read",
+    title: "Roche reports Phase 2 enicepatide results in adults with type 2 diabetes",
+    excerpt: "The 447 participant trial reported lower blood sugar and body weight. The public summary leaves the placebo comparison and endpoint timing unresolved.",
+    image: "enicepatideComparison",
+  },
+  {
+    slug: "peptide-adsorption-glass-plastic-lab-results",
+    category: "Science",
+    date: "September 27, 2026",
+    readTime: "7 min read",
+    title: "Why a peptide can disappear from a tube without breaking down",
+    excerpt: "Four bench studies trace peptide loss from container walls to distorted calibration curves, with different results across materials and methods.",
+    image: "peptideAdsorption",
+  },
+  {
     slug: "empower-pharmacy-fda-warning-letter-september-2026",
     category: "Regulatory",
     date: "September 26, 2026",
