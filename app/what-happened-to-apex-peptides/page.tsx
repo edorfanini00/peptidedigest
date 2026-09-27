@@ -99,7 +99,7 @@ export default function WhatHappenedApex() {
 
           <IQONPartner vial="bac-water" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources linked above. For information only, not medical or legal advice. IQON Labs is a commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources linked above. For information only, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

@@ -123,7 +123,7 @@ export default function ApexRaidedArticle() {
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: Apex-linked businesses and search timeline</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 follow-up</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 26, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Labs is a commercial partner. Research products are not for human consumption.
+            Updated September 26, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.
           </p>
         </div>
 

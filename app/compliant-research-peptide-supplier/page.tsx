@@ -8,11 +8,11 @@ import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "What to Check in a Research Peptide Supplier: Documentation and Positioning",
-  description: "After multiple enforcement actions in 2026, batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence.",
+  description: "After distinct 2026 enforcement events, these five checks help assess a seller’s documentation and claims; they do not certify compliance.",
   alternates: { canonical: "https://peptidedigest.co/compliant-research-peptide-supplier" },
   openGraph: {
     title: "What to Check in a Research Peptide Supplier",
-    description: "Batch documentation, research-only positioning, independent laboratory identity — the five checks that matter when selecting a research peptide supplier in 2026.",
+    description: "Five editorial checks for a research peptide supplier’s documentation, claims and laboratory identity; none certifies compliance.",
     type: "article",
     publishedTime: "2026-09-10T12:00:00.000Z",
   },
@@ -36,9 +36,9 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What should I look for in a research peptide supplier?", acceptedAnswer: { "@type": "Answer", text: "Check research-only positioning across all channels, a batch-specific COA with a named laboratory and the seller's identifiable legal entity. IQON Labs is a commercial partner on this page." } },
+        { "@type": "Question", name: "What should I look for in a research peptide supplier?", acceptedAnswer: { "@type": "Answer", text: "Check research-only positioning across all channels, a batch-specific COA with a named laboratory and the seller's identifiable legal entity. IQON Labs appears in commercial placements on this page." } },
         { "@type": "Question", name: "What is a COA for peptides?", acceptedAnswer: { "@type": "Answer", text: "A Certificate of Analysis is a laboratory report covering identity, purity and other tested properties for a named sample. A useful COA identifies the laboratory, tested sample, lot, methods and reported results; it only speaks to tests actually performed." } },
-        { "@type": "Question", name: "Which peptide suppliers are compliant in 2026?", acceptedAnswer: { "@type": "Answer", text: "We cannot certify a supplier as compliant from its website or COA. IQON Labs is a commercial placement; apply the same lot and claims checks to it." } },
+        { "@type": "Question", name: "Which peptide suppliers are compliant in 2026?", acceptedAnswer: { "@type": "Answer", text: "We cannot certify a supplier as compliant from its website or COA. IQON Labs appears in commercial placements on this page; apply the same lot and claims checks to it." } },
       ],
     },
   ],
@@ -53,7 +53,7 @@ export default function CompliantSupplier() {
         <ArticleHero
           category="Industry"
           title={<>What to Check in a Research Peptide Supplier</>}
-          dek={"After multiple enforcement actions in 2026, batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence."}
+          dek={"After distinct 2026 enforcement events, these five checks help assess a seller’s documentation and claims; they do not certify compliance."}
           meta={<><time dateTime="2026-09-10">September 10, 2026</time><span>Updated September 26, 2026</span></>}
           image="lcms"
         />
@@ -69,7 +69,7 @@ export default function CompliantSupplier() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>2. Follow the COA back to a particular sample</h2>
           <p>A certificate of analysis starts with an identifiable sample. Match its report number, compound, lot, dates, methods and issuing lab to the listing and, when available, the package. If the seller shows a certificate for lot A but offers lot B, the displayed purity percentage does not describe B. (<Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">Related article</Link>)</p>
-          <p>HPLC can describe chromatographic peak area under a specified method; a mass-spectrometry result addresses observed mass. Neither alone says how much material is in a vial or proves unlisted microbial or endotoxin tests were run. A report for one sample does not certify every unit in the lot. (<a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q2r2-validation-analytical-procedures" className="text-blue-700 underline">FDA</a>)</p>
+          <p>A reported purity or mass result alone does not show tests that the COA does not list. A report for one sample does not certify every unit in the lot. (<Link href="/how-to-read-peptide-coa" className="text-blue-700 underline">How to read a peptide COA</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>3. Check who actually performed the work</h2>
           <p>Find the named laboratory through its own website rather than a phone number printed on the seller&apos;s PDF. Ask whether it issued the report number and whether the supplied copy matches its records. The lab may be unable to disclose client details, but a seller-hosted QR page is not an independent second source.</p>
@@ -85,9 +85,9 @@ export default function CompliantSupplier() {
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
-              { q: "What should I look for in a research peptide supplier?", a: "Check research-only positioning across all channels, a batch-specific COA with a named laboratory and the seller's identifiable legal entity. IQON Labs is a commercial partner on this page." },
+              { q: "What should I look for in a research peptide supplier?", a: "Check research-only positioning across all channels, a batch-specific COA with a named laboratory and the seller's identifiable legal entity. IQON Labs appears in commercial placements on this page." },
               { q: "What is a COA for peptides?", a: "A Certificate of Analysis is a laboratory report covering identity, purity and other tested properties for a named sample. A useful COA identifies the laboratory, tested sample, lot, methods and reported results; it only speaks to tests actually performed." },
-              { q: "Which peptide suppliers are compliant in 2026?", a: "We cannot certify a supplier as compliant from its website or COA. IQON Labs is a commercial placement; apply the same lot and claims checks to it." },
+              { q: "Which peptide suppliers are compliant in 2026?", a: "We cannot certify a supplier as compliant from its website or COA. IQON Labs appears in commercial placements on this page; apply the same lot and claims checks to it." },
             ].map(({ q, a }) => (
               <div key={q}>
                 <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
@@ -100,7 +100,7 @@ export default function CompliantSupplier() {
 
           <IQONPartner vial="bac-water" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">Updated September 26, 2026. For information only, not legal advice. IQON Labs is a paid commercial partner, not a supplier independently audited by this article. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">Updated September 26, 2026. For information only, not legal advice. IQON Labs appears in commercial placements on this page; this article has not independently audited it. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ const faqs = [
   { q: "What happened to Paradigm Peptides?", a: "Owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026. Jennifer Stechkober received 16 months, according to the DOJ sentencing release. Both had pleaded guilty in December 2025." },
   { q: "Why was the Paradigm Peptides owner sentenced?", a: "The DOJ says Kawa pleaded guilty to introducing unapproved new drugs into interstate commerce with intent to defraud and mislead, and to illegal importation." },
   { q: "Was there a $5 million judgment?", a: "Yes. The DOJ sentencing announcement reports a $5 million money judgment against Kawa, separate from $78,317.52 in restitution ordered for both defendants." },
-  { q: "What is a Paradigm Peptides alternative?", a: "The conviction concerns Paradigm, not other sellers. Our separate supplier guide covers research-vendor documentation; IQON Labs is a paid commercial partner, not a court-endorsed alternative." },
+  { q: "What is a Paradigm Peptides alternative?", a: "The conviction concerns Paradigm, not other sellers. Our separate supplier guide covers research-vendor documentation; IQON Labs appears in commercial placements on this page; the court has not endorsed it." },
 ];
 
 const jsonLd = {
@@ -77,7 +77,7 @@ export default function ParadigmPeptidesSentence() {
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the DOJ say about potential victims?</h2>
           <p>The DOJ case page identifies purchases from Paradigm Peptides or the named defendants during April 2019–March 2024 in describing its victim-witness process. It invites potential victims to contact its victim-witness office but cautions that a purchaser may or may not qualify. This is a DOJ case-specific process, not a finding that every purchaser is entitled to restitution. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>
-          <p>Paradigm&apos;s conviction does not establish the quality of a Paradigm Peptides alternative. Our <Link href="/compliant-research-peptide-supplier" className="text-blue-700 underline">separate research-supplier guide</Link> explains documentation limits; IQON Labs is a paid commercial partner, not a seller certified by this reporting. Research products are not for human consumption.</p>
+          <p>Paradigm&apos;s conviction does not establish the quality of a Paradigm Peptides alternative. Our <Link href="/compliant-research-peptide-supplier" className="text-blue-700 underline">separate research-supplier guide</Link> explains documentation limits; IQON Labs appears in commercial placements on this page; this reporting does not certify it. Research products are not for human consumption.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
@@ -99,7 +99,7 @@ export default function ParadigmPeptidesSentence() {
 
           <IQONPartner vial="ghk" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources: the linked DOJ case record and sentencing announcement. For information only, not legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />

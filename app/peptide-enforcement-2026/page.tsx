@@ -37,8 +37,8 @@ const jsonLd = {
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "Which peptide enforcement actions are documented in 2026, and what does Peptide Sciences say?", acceptedAnswer: { "@type": "Answer", text: "Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting. Separately, Peptide Sciences announced a voluntary shutdown in an undated company notice; its closure cannot be placed in the 2026 chronology." } },
-        { "@type": "Question", name: "Was the Paradigm Peptides case a March 2026 prosecution?", acceptedAnswer: { "@type": "Answer", text: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. The business operated between 2019 and 2024." } },
-        { "@type": "Question", name: "What is the status of Amino Asylum?", acceptedAnswer: { "@type": "Answer", text: "Industry accounts place its shutdown in June 2025. This timeline has no primary government document establishing the specific alleged action against that company." } },
+        { "@type": "Question", name: "Was the Paradigm Peptides case a March 2026 prosecution?", acceptedAnswer: { "@type": "Answer", text: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. DOJ describes purchases from April 2019 through March 2024 for its victim-witness process." } },
+        { "@type": "Question", name: "What is the status of Amino Asylum?", acceptedAnswer: { "@type": "Answer", text: "PeptideExaminer reports a June 2025 warehouse raid and shutdown; no agency case document independently confirms that account here." } },
       ],
     },
   ],
@@ -98,7 +98,7 @@ export default function EnforcementTimeline() {
           </div>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Undated supplier notice outside the timeline</h2>
-          <p>Peptide Sciences&apos; <a href="https://www.peptidesciences.com" className="text-blue-700 underline">own notice</a> says it voluntarily stopped selling and warns that sites claiming to be successors lack authorization. The notice gives no date, so it cannot establish a 2026 closure. Its warning about unauthorized successors is a distinct company claim, not an enforcement finding. Amino Asylum&apos;s reported June 2025 warehouse action is different: <a href="https://peptideexaminer.com/vendors/amino-asylum/" className="text-blue-700 underline">PeptideExaminer</a> describes it, but supplies no named agency or case document. Its date also puts it outside the 2026 sequence. Neither account establishes a 2026 government action against the named seller. (<Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">Peptide Sciences</Link>; <Link href="/amino-asylum-raid-what-happened" className="text-blue-700 underline">Amino Asylum</Link>)</p>
+          <p>Peptide Sciences&apos; <a href="https://www.peptidesciences.com" className="text-blue-700 underline">own notice</a> says it voluntarily stopped selling and warns that sites claiming to be successors lack authorization. The notice gives no date, so it cannot establish a 2026 closure. Its warning about unauthorized successors is a distinct company claim, not an enforcement finding. <a href="https://peptideexaminer.com/vendors/amino-asylum" className="text-blue-700 underline">PeptideExaminer</a> reports a June 2025 warehouse raid and shutdown at Amino Asylum, but supplies no named agency or case document to independently confirm that account. Its date also puts it outside the 2026 sequence. Neither account establishes a 2026 government action against the named seller. (<Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">Peptide Sciences</Link>; <Link href="/amino-asylum-raid-what-happened" className="text-blue-700 underline">Amino Asylum</Link>)</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>A completed sentence versus an open response window</h2>
           <p>July brought a concluded criminal sentencing step for Paradigm: Matthew Kawa received 70 months and Jennifer Stechkober 16. The <a href="https://www.justice.gov/usao-ndin/pr/illinois-man-and-indiana-woman-sentenced-respectively-70-months-and-16-months-prison" className="text-blue-700 underline">DOJ sentencing release</a> also lists $78,317.52 in restitution ordered for both and a separate $5 million money judgment against Kawa. August&apos;s <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">Peptide Partners warning letter</a> instead asks the named seller to answer FDA within 15 business days of receipt. Its website-claim examples show why a research-only label did not settle FDA&apos;s intended-use assessment. (<Link href="/paradigm-peptides-prison-sentence" className="text-blue-700 underline">Paradigm case</Link>; <Link href="/fda-warning-letters-peptide-sellers-august-2026" className="text-blue-700 underline">All five FDA letters</Link>)</p>
@@ -113,8 +113,8 @@ export default function EnforcementTimeline() {
             <h2 className="text-lg font-semibold text-gray-900" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Frequently Asked Questions</h2>
             {[
               { q: "Which peptide enforcement actions are documented in 2026, and what does Peptide Sciences say?", a: "Matthew Kawa of Paradigm Peptides was sentenced on July 30, 2026. Apex-linked properties were searched in September 2026, per local reporting. Separately, Peptide Sciences announced a voluntary shutdown in an undated company notice; its closure cannot be placed in the 2026 chronology." },
-              { q: "Was the Paradigm Peptides case a March 2026 prosecution?", a: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. The business operated between 2019 and 2024." },
-              { q: "What is the status of Amino Asylum?", a: "Industry accounts place its shutdown in June 2025. This timeline has no primary government document establishing the specific alleged action against that company." },
+              { q: "Was the Paradigm Peptides case a March 2026 prosecution?", a: "No. The guilty pleas were in December 2025. Sentencing was July 30, 2026. DOJ describes purchases from April 2019 through March 2024 for its victim-witness process." },
+              { q: "What is the status of Amino Asylum?", a: "PeptideExaminer reports a June 2025 warehouse raid and shutdown; no agency case document independently confirms that account here." },
             ].map(({ q, a }) => (
               <div key={q}>
                 <h3 className="text-sm font-semibold text-gray-900 mb-1">{q}</h3>
@@ -128,7 +128,7 @@ export default function EnforcementTimeline() {
           <IQONPartner vial="glutathione" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 26, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.
+            Updated September 26, 2026. Sources are linked in the timeline. For information only, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.
           </p>
         </div>
       </main>

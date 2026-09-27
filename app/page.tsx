@@ -55,7 +55,7 @@ const industryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "Amino Asylum Shutdown Reports: What Is Documented",
     excerpt:
-      "Amino Asylum shutdown reports point to June 2025. The agency remains unidentified in that account; the Paradigm Peptides prosecution is a separate case.",
+      "PeptideExaminer reports a June 2025 Amino Asylum raid and shutdown, without an identified agency case document; Paradigm Peptides is a separate case.",
     image: "padlock",
   },
   {
@@ -156,7 +156,7 @@ const regulatoryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "What to Check in a Research Peptide Supplier",
     excerpt:
-      "Batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence.",
+      "Five editorial checks for a research peptide supplier’s documentation and claims; they do not certify compliance.",
     image: "lcms",
   },
 ];

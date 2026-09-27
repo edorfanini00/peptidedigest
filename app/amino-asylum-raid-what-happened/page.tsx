@@ -8,11 +8,11 @@ import { IQONPartner } from "@/components/IQONPartner";
 
 export const metadata: Metadata = {
   title: "Amino Asylum Raid Reports: What Happened and What Is Documented",
-  description: "Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and what record could establish the reported action.",
+  description: "PeptideExaminer reports a June 2025 Amino Asylum raid and shutdown. What its account says, why Paradigm is separate, and what record could confirm the action.",
   alternates: { canonical: "https://peptidedigest.co/amino-asylum-raid-what-happened" },
   openGraph: {
     title: "Amino Asylum Raid: What Happened",
-    description: "Industry sources report a June 2025 warehouse action. What is documented, why the Paradigm Peptides case is separate, and the missing agency record.",
+    description: "PeptideExaminer reports a June 2025 warehouse action; no agency case document confirms it here. The Paradigm Peptides case is separate.",
     type: "article",
     publishedTime: "2026-01-15T12:00:00.000Z",
   },
@@ -39,7 +39,7 @@ const jsonLd = {
         { "@type": "Question", name: "Why was Amino Asylum raided?", acceptedAnswer: { "@type": "Answer", text: "The reason is not established by an identified primary record in this article. Findings from the Paradigm Peptides prosecution should not be assigned to Amino Asylum." } },
         { "@type": "Question", name: "Did Amino Asylum's founders plead guilty in December 2025?", acceptedAnswer: { "@type": "Answer", text: "The DOJ record cited here concerns Matthew Kawa and Jennifer Stechkober of Paradigm Peptides. It does not support that claim about Amino Asylum." } },
         { "@type": "Question", name: "Is Amino Asylum coming back?", acceptedAnswer: { "@type": "Answer", text: "We do not have an attributable reopening announcement. A site using similar branding does not by itself establish that the former operator has returned." } },
-        { "@type": "Question", name: "Is an Amino Asylum alternative connected to the reported action?", acceptedAnswer: { "@type": "Answer", text: "The cited account does not establish that another seller succeeded Amino Asylum or was involved in the reported action. IQON Labs is a paid commercial partner here, not an independently certified replacement." } },
+        { "@type": "Question", name: "Is an Amino Asylum alternative connected to the reported action?", acceptedAnswer: { "@type": "Answer", text: "The cited account does not establish that another seller succeeded Amino Asylum or was involved in the reported action. IQON Labs appears in commercial placements on this page, not as an independently certified replacement." } },
       ],
     },
   ],
@@ -55,19 +55,19 @@ export default function AminoAsylumRaid() {
         <ArticleHero
           category="Industry"
           title={<>Amino Asylum Raid: What Happened and What Is Documented</>}
-          dek={"Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and what record could establish the reported action."}
+          dek={"PeptideExaminer reports a June 2025 Amino Asylum raid and shutdown. What its account says, why Paradigm is separate, and what record could confirm the action."}
           meta={<><time dateTime="2026-01-15">January 15, 2026</time><span>Updated September 26, 2026</span></>}
           image="padlock"
         />
 
         <div className="article-body">
 
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">An industry site reported a June 2025 raid and shutdown at Amino Asylum, but the public account has no named agency, warrant or case number. If you are looking for an Amino Asylum FDA action, the answer is not a confirmed prosecution. The guilty pleas often attached to this story were entered by people at Paradigm Peptides, a different business.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">PeptideExaminer reported a June 2025 raid and shutdown at Amino Asylum, but the public account has no named agency, warrant or case number. If you are looking for an Amino Asylum FDA action, the answer is not a confirmed prosecution. The guilty pleas often attached to this story were entered by people at Paradigm Peptides, a different business.</p>
 
           <IQONPartner vial="bac-water" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the June 2025 account say?</h2>
-          <p>PeptideExaminer described a warehouse raid, an offline storefront and customer reports of stalled orders. It also repeated claims about warning letters and product contents without linking an Amino Asylum-specific government document. Those reports make the site&apos;s account worth examining, but do not identify who searched the warehouse or what happened afterward. (<a href="https://peptideexaminer.com/vendors/amino-asylum/">PeptideExaminer</a>)</p>
+          <p>PeptideExaminer described a warehouse raid, an offline storefront and customer reports of stalled orders. It also repeated claims about warning letters and product contents without linking an Amino Asylum-specific government document. Those reports make the site&apos;s account worth examining, but do not identify who searched the warehouse or what happened afterward. (<a href="https://peptideexaminer.com/vendors/amino-asylum">PeptideExaminer</a>)</p>
           <p>The industry account does not identify an agency, warrant or case number. Without one, its warehouse description cannot establish the legal basis or outcome of the reported action.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Why do the Paradigm guilty pleas keep appearing in this story?</h2>
@@ -102,7 +102,7 @@ export default function AminoAsylumRaid() {
 
           <IQONPartner vial="glutathione" />
 
-          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Labs is a paid commercial partner. Research products are not for human consumption.</p>
+          <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources are linked in the text. For information only, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.</p>
         </div>
       </main>
       <Footer />
