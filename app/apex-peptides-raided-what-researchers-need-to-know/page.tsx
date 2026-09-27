@@ -4,7 +4,11 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { images } from "@/components/images";
 import { IQONPartner } from "@/components/IQONPartner";
+
+const hero = images.apexRaid;
+const heroUrl = `https://peptidedigest.co${hero.src}`;
 
 export const metadata: Metadata = {
   title: "Apex Peptides update: federal searches and a temporary closure notice",
@@ -21,11 +25,13 @@ export const metadata: Metadata = {
     publishedTime: "2026-09-25",
     authors: ["The Peptide Digest"],
     tags: ["Apex Peptides", "peptide industry", "federal investigation", "research peptides"],
+    images: [{ url: heroUrl, width: hero.width, height: hero.height, alt: hero.alt }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Apex Peptides update: federal searches and a temporary closure notice",
     description: "The searched addresses, agencies and September 24 storefront notice.",
+    images: [{ url: heroUrl, alt: hero.alt }],
   },
 };
 
@@ -37,6 +43,7 @@ const articleJsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know#article",
       headline: "Apex Peptides update: federal searches and a temporary closure notice",
+      image: { "@type": "ImageObject", url: heroUrl, width: hero.width, height: hero.height },
       description:
         "Local reports place the Apex-linked searches on September 23, 2026. How the searched properties connect to Apex Peptides and what the temporary notice establishes.",
       datePublished: "2026-09-25",

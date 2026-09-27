@@ -4,7 +4,11 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { images } from "@/components/images";
 import { IQONPartner } from "@/components/IQONPartner";
+
+const hero = images.apexWarehouse;
+const heroUrl = `https://peptidedigest.co${hero.src}`;
 
 export const metadata: Metadata = {
   title: "What Happened to Apex Peptides? Searches and Closure Questions",
@@ -16,11 +20,13 @@ export const metadata: Metadata = {
     description: "Federal agents searched Apex-linked properties on September 23, 2026. KCAU reported a temporary-closure notice on the peptide storefront the next day.",
     type: "article",
     publishedTime: "2026-09-25",
+    images: [{ url: heroUrl, width: hero.width, height: hero.height, alt: hero.alt }],
   },
   twitter: {
     card: "summary_large_image",
     title: "What Happened to Apex Peptides?",
     description: "September 23 searches, reported FBI involvement and KCAU's September 24 report of a temporary-closure notice.",
+    images: [{ url: heroUrl, alt: hero.alt }],
   },
 };
 
@@ -32,6 +38,7 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-apex-peptides#article",
       headline: "What Happened to Apex Peptides? Searches and Closure Questions",
+      image: { "@type": "ImageObject", url: heroUrl, width: hero.width, height: hero.height },
       datePublished: "2026-09-25",
       dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
