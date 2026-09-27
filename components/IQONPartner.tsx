@@ -3,24 +3,24 @@ import Image from "next/image";
 export type IQONVial = "nad" | "bac-water" | "glutathione" | "ghk";
 
 const vialAlt: Record<IQONVial, string> = {
-  nad: "IQON Health research vial",
-  "bac-water": "IQON Health research vial",
-  glutathione: "IQON Health research vial",
-  ghk: "IQON Health research vial",
+  nad: "IQON Labs research vial",
+  "bac-water": "IQON Labs research vial",
+  glutathione: "IQON Labs research vial",
+  ghk: "IQON Labs research vial",
 };
 
 const SHOP = "https://www.iqonhealth.com/shop";
 
 /**
- * Prominent IQON Health partner card with a product vial photo.
+ * Prominent IQON Labs partner card with a product vial photo.
  * variant="feature" = large end-of-article card; "inline" = compact mid-article card.
  * Copy stays neutral: no testing, purity, shipping, compliance or human-use claims (Google Ads policy).
  */
 export function IQONPartner({
   vial,
   variant = "feature",
-  text = "Confirm all details directly with IQON Health before purchasing.",
-  cta = "Visit IQON Health →",
+  text = "Confirm all details directly with IQON Labs before purchasing.",
+  cta = "Visit IQON Labs →",
 }: {
   vial: IQONVial;
   variant?: "feature" | "inline";
@@ -35,7 +35,7 @@ export function IQONPartner({
           <Image src={src} alt={vialAlt[vial]} width={120} height={160} className="h-full w-auto object-contain" />
         </a>
         <div className="flex-1 min-w-0">
-          <p className="font-serif text-lg font-semibold text-[color:var(--color-ink)] leading-snug">IQON Health</p>
+          <p className="font-serif text-lg font-semibold text-[color:var(--color-ink)] leading-snug">IQON Labs</p>
           <p className="text-sm text-[color:var(--color-muted)] mt-1">{text}</p>
           <a href={SHOP} target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-sm font-semibold text-[color:var(--color-accent)] hover:underline">{cta}</a>
         </div>
@@ -46,7 +46,7 @@ export function IQONPartner({
     <aside className="not-prose my-10 overflow-hidden max-w-full rounded-2xl border border-[color:var(--color-rule)] bg-[color:var(--color-accent-soft)]">
       <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 p-5 sm:p-8">
         <div>
-          <h3 className="font-serif text-2xl sm:text-[1.75rem] font-bold text-[color:var(--color-ink)] leading-tight">IQON Health</h3>
+          <h3 className="font-serif text-2xl sm:text-[1.75rem] font-bold text-[color:var(--color-ink)] leading-tight">IQON Labs</h3>
           <p className="mt-2 text-[15px] text-[color:var(--color-body)] max-w-sm">{text}</p>
           <a href={SHOP} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center whitespace-nowrap rounded-full bg-[color:var(--color-ink)] px-6 py-3 text-sm font-semibold text-white hover:bg-[color:var(--color-accent)] transition-colors">{cta}</a>
           <p className="mt-3 text-xs text-[color:var(--color-muted)]">For research use only. Not for human consumption.</p>

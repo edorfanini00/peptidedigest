@@ -19,11 +19,11 @@ interface CardArticle {
 const featuredArticle: CardArticle = {
   slug: "apex-peptides-raided-what-researchers-need-to-know",
   category: "Industry",
-  date: "September 24, 2026",
+  date: "September 25, 2026",
   readTime: "6 min read",
   title: "Apex Peptides Update: Federal Searches and a Temporary Closure Notice",
   excerpt:
-    "Local reports place federal searches at Apex-linked properties on September 23, 2026. The September 23 searches, a September 24 temporary-closure notice and what remains unanswered about peptide orders.",
+    "Local reports place federal searches at Apex-linked properties on September 23, 2026. The searched property, the September 24 website notice and the distinction between them.",
   image: "apexRaid",
 };
 
@@ -31,41 +31,41 @@ const industryArticles: CardArticle[] = [
   {
     slug: "what-happened-to-apex-peptides",
     category: "Industry",
-    date: "September 24, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
-    title: "What Happened to Apex Peptides? Searches and Order Questions",
+    title: "What Happened to Apex Peptides? Searches and Closure Questions",
     excerpt:
-      "What the September 23 searches and a reported temporary closure do, and do not, establish about Apex Peptides and customer orders.",
+      "A search at an Apex-linked waste property and a temporary notice on the peptide website are distinct events.",
     image: "apexWarehouse",
   },
   {
     slug: "what-happened-to-peptide-sciences",
     category: "Industry",
-    date: "March 10, 2026",
+    date: "September 25, 2026",
     readTime: "7 min read",
     title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
     excerpt:
-      "Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and how to assess an alternative supplier.",
+      "Peptide Sciences says it voluntarily shut down research-product sales. Its notice disavows claimed successors but does not identify a government-ordered closure.",
     image: "researchVials",
   },
   {
     slug: "amino-asylum-raid-what-happened",
     category: "Industry",
-    date: "January 15, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "Amino Asylum Shutdown Reports: What Is Documented",
     excerpt:
-      "Amino Asylum shutdown reports point to June 2025. What the coverage says, why the Paradigm Peptides case is separate, and how to evaluate a research alternative.",
+      "PeptideExaminer reports a June 2025 Amino Asylum raid and shutdown, without an identified agency case document; Paradigm Peptides is a separate case.",
     image: "padlock",
   },
   {
     slug: "paradigm-peptides-prison-sentence",
     category: "Industry",
-    date: "August 1, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
     excerpt:
-      "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what it means for supplier documentation.",
+      "The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months, a separate $5 million judgment and a case-specific victim-witness process.",
     image: "dojBuilding",
   },
 ];
@@ -142,7 +142,7 @@ const regulatoryArticles: CardArticle[] = [
   {
     slug: "peptide-enforcement-2026",
     category: "Regulatory",
-    date: "September 24, 2026",
+    date: "September 25, 2026",
     readTime: "8 min read",
     title: "2026 Peptide Enforcement: The Major Documented Actions",
     excerpt:
@@ -152,11 +152,11 @@ const regulatoryArticles: CardArticle[] = [
   {
     slug: "compliant-research-peptide-supplier",
     category: "Guide",
-    date: "September 10, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "What to Check in a Research Peptide Supplier",
     excerpt:
-      "Batch documentation and consistent positioning matter more than brand reputation. Five checks that separate supplier claims from evidence.",
+      "Five editorial checks for a research peptide supplier’s documentation and claims; they do not certify compliance.",
     image: "lcms",
   },
 ];
@@ -212,7 +212,7 @@ export default function Home() {
           <span className="hidden sm:inline">Independent reporting</span>
         </div>
 
-        <IQONPartner vial="nad" variant="inline" text="IQON Health offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+        <IQONPartner vial="nad" variant="inline" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
         {/* Top story + two secondary stories */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 mb-12 border-b border-[color:var(--color-rule)]">

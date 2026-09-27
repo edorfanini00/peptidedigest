@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: URL,
     type: "article",
-    publishedTime: "2026-09-25T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
   twitter: { card: "summary", title: TITLE, description: DESCRIPTION },
 };
@@ -42,7 +42,7 @@ const S = {
 const faqs = [
   {
     q: "What did Alabama say about research-grade peptides?",
-    a: "On May 26, 2026, the Alabama Board of Medical Examiners issued an official notice saying that under no circumstances may a physician compound, administer or dispense a non-FDA approved or research-grade peptide to a patient. The ban covers advising, recommending, supplying, prescribing and administering, and extends to nurse practitioners, nurse midwives and physician assistants.",
+    a: "The Alabama Board of Medical Examiners issued an official notice, reported by WSFA on May 26, 2026, saying that under no circumstances may a physician compound, administer or dispense a non-FDA approved or research-grade peptide to a patient. The ban covers advising, recommending, supplying, prescribing and administering, and extends to nurse practitioners, nurse midwives and physician assistants.",
   },
   {
     q: "Is the Alabama notice a criminal charge?",
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Which other states have issued similar warnings?",
-    a: "Mississippi's medical, nursing and pharmacy boards issued a joint statement on August 19, 2026. The South Carolina Board of Medical Examiners published a similar notice in August 2026. Ohio's Board of Pharmacy guidance, updated December 8, 2025, says drugs labeled for research purposes only are unlawful for prescriber clinics and med spas to possess.",
+    a: "Mississippi's medical, nursing and pharmacy boards issued a joint statement on August 19, 2026. The American Med Spa Association reported a South Carolina Board of Medical Examiners notice on August 18, 2026; the board PDF itself is undated. Ohio's Board of Pharmacy guidance, updated December 8, 2025, says drugs labeled for research purposes only are unlawful for prescriber clinics and med spas to possess.",
   },
   {
     q: "Can a patient consent form get around these rules?",
@@ -71,8 +71,8 @@ const jsonLd = {
       "@id": `${URL}#article`,
       headline: TITLE,
       description: DESCRIPTION,
-      datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -90,9 +90,9 @@ const actions = [
   { date: "November 6, 2025", state: "Alabama", body: "Attorney General (civil suit)", type: "Court order", text: "Cullman County judge signs a temporary restraining order and asset freeze against a Cullman IV clinic accused of giving patients research-grade drugs. Civil case under the Deceptive Trade Practices Act; allegations, not findings.", source: S.cullman },
   { date: "December 8, 2025", state: "Ohio", body: "Board of Pharmacy", type: "Guidance", text: "Guidance update says drugs labeled \u201cfor research purposes only\u201d are unlawful for prescriber clinics and med spas to possess, regardless of patient consent.", source: S.ohio },
   { date: "March 2026", state: "Alabama", body: "Board of Medical Examiners", type: "License action", text: "A physician assistant's license was suspended for distributing unapproved peptides, a board spokesperson told 1819 News.", source: S.news1819 },
-  { date: "May 26, 2026", state: "Alabama", body: "Board of Medical Examiners", type: "Notice", text: "Official notice bars physicians and the mid-level providers they supervise from advising, recommending, supplying, prescribing or administering research-grade peptides.", source: S.albme },
+  { date: "Public by May 26, 2026", state: "Alabama", body: "Board of Medical Examiners", type: "Notice", text: "Official notice bars physicians and the mid-level providers they supervise from advising, recommending, supplying, prescribing or administering research-grade peptides.", source: S.albme },
   { date: "August 19, 2026", state: "Mississippi", body: "Joint board statement", type: "Joint statement", text: "Three boards adopt near-identical language together and invite reports of unlicensed sellers shipping into the state.", source: S.msPdf },
-  { date: "August 2026", state: "South Carolina", body: "Board of Medical Examiners", type: "Notice", text: "Notice says physicians may not use research-grade or FDA-ineligible peptides, and buying from unpermitted facilities may be disciplined as unprofessional conduct.", source: S.sc },
+  { date: "Reported August 18, 2026", state: "South Carolina", body: "Board of Medical Examiners", type: "Notice", text: "Notice says physicians may not use research-grade or FDA-ineligible peptides, and buying from unpermitted facilities may be disciplined as unprofessional conduct.", source: S.sc },
 ];
 
 const typeColors: Record<string, string> = {
@@ -121,8 +121,9 @@ export default function StateCrackdown2026() {
           image="alabamaCapitol"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date note: September 25, 2026 is the earliest verifiable site record; the precise first-publication time is unconfirmed.</p>
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">A patient consent form does not turn a research-grade peptide into a treatment a clinician may provide, according to state medical boards in Alabama, Mississippi and South Carolina. Their 2026 notices also push clinics to check who supplies the product. Ohio&apos;s pharmacy guidance, updated in late 2025, adds a direct restriction on clinics possessing drugs labeled for research purposes only. These are state professional rules and warnings, not a single new federal law.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">State medical boards in Alabama, Mississippi and South Carolina say a patient consent form does not turn a research-grade peptide into a treatment a clinician may provide. Their 2026 notices also push clinics to check who supplies the product. Ohio&apos;s pharmacy guidance, updated in late 2025, adds a direct restriction on clinics possessing drugs labeled for research purposes only. These are state professional rules and warnings, not a single new federal law.</p>
 
           <IQONPartner vial="nad" variant="inline" />
 
@@ -139,7 +140,7 @@ export default function StateCrackdown2026() {
 
           <h2 className={h2} style={serif}>What changed for an Alabama practitioner?</h2>
           <p>Alabama&apos;s Board of Medical Examiners said physicians may not compound, administer or dispense non-FDA-approved or research-grade peptides to patients. Its notice also addresses recommending, supplying and prescribing them. A patient&apos;s acknowledgment of the product&apos;s research status does not relieve a professional of the duty of care, the board said. <a className={a} href={S.albme} target="_blank" rel="noopener noreferrer">Alabama Board of Medical Examiners&apos; notice</a></p>
-          <p>The notice extends the warning to delegated practice by nurse midwives, nurse practitioners and physician assistants, saying the products do not appear on their approved formularies. It distinguishes a patient independently obtaining a product from a clinician&apos;s participation. WSFA reported the notice on May 26, 2026. <a className={a} href={S.wsfa} target="_blank" rel="noopener noreferrer">WSFA reported</a></p>
+          <p>The notice extends the warning to delegated practice by nurse midwives, nurse practitioners and physician assistants, saying the products do not appear on their approved formularies. It distinguishes a patient independently obtaining a product from a clinician&apos;s participation. The notice was public by May 26, 2026. <a className={a} href={S.wsfa} target="_blank" rel="noopener noreferrer">May 26 coverage</a></p>
 
           <h2 className={h2} style={serif}>How does Mississippi extend the warning?</h2>
           <p>Mississippi brought three boards together on August 19: medical licensure, nursing and pharmacy. Their joint statement addresses a wider group of healthcare providers and rejects both delegation and research-grade consent paperwork as ways around professional obligations. <a className={a} href={S.msPdf} target="_blank" rel="noopener noreferrer">joint statement dated August 19, 2026</a></p>
@@ -147,7 +148,7 @@ export default function StateCrackdown2026() {
 
           <h2 className={h2} style={serif}>What is distinctive about South Carolina?</h2>
           <p>South Carolina&apos;s medical board likewise says patient consent does not cure the problem. It tells practitioners to verify that prescription drugs and components come from pharmacy-board-permitted facilities and warns that buying or distributing from unpermitted sources can lead to professional discipline. <a className={a} href={S.sc} target="_blank" rel="noopener noreferrer">medical board notice</a></p>
-          <p>The South Carolina PDF has no date printed on it; a legal analysis described its release in August 2026. That timing should not be narrowed to a day without an official dated notice. Its supply-chain requirement is distinct from an analytical report about what&apos;s in a sample. <a className={a} href={S.lumalex} target="_blank" rel="noopener noreferrer">LumaLex described</a></p>
+          <p>The South Carolina PDF has no date printed on it; <a className={a} href="https://www.americanmedspa.org/news/south-carolina-medical-board-warns-against-use-of-research-grade-peptides/" target="_blank" rel="noopener noreferrer">the American Med Spa Association reported it on August 18</a>. That timing should not be narrowed to a day without an official dated notice. Its supply-chain requirement is distinct from an analytical report about what&apos;s in a sample.</p>
 
           <h2 className={h2} style={serif}>Why is Ohio on a 2026 list if its guidance dates to 2025?</h2>
           <p>Ohio&apos;s pharmacy board guidance was updated December 8, 2025, but remains relevant to 2026 clinic purchasing. It says prescriber clinics and med spas may not order, possess or administer drugs labeled for research purposes only, even with patient consent. It calls for a distributor-license check before buying and annually thereafter. <a className={a} href={S.ohio} target="_blank" rel="noopener noreferrer">Board of Pharmacy guidance</a></p>
@@ -170,7 +171,7 @@ export default function StateCrackdown2026() {
               </div>
             ))}
           </div>
-          <p>A notice states a board&apos;s position; a suspension acts against a licensee. A separate Alabama civil complaint against Aurora IV and Wellness makes allegations and involved a temporary order, not a final ruling on every claim. A reported March 2026 physician-assistant suspension is another individual action. Collapsing those records into a nationwide criminal crackdown would obscure what each authority actually did. <a className={a} href={S.cullman} target="_blank" rel="noopener noreferrer">2025 Alabama civil suit against Aurora IV and Wellness</a> <a className={a} href={S.news1819} target="_blank" rel="noopener noreferrer">told 1819 News</a></p>
+          <p>A notice states a board&apos;s position; a suspension acts against a licensee. A separate 2025 Alabama civil complaint against Aurora IV and Wellness made allegations and led to a then-temporary order, not a final ruling on every claim; this describes that historical stage, not current case status. A reported March 2026 physician-assistant suspension is another individual action. Collapsing those records into a nationwide criminal crackdown would obscure what each authority actually did. <a className={a} href={S.cullman} target="_blank" rel="noopener noreferrer">2025 Alabama civil suit against Aurora IV and Wellness</a> <a className={a} href={S.news1819} target="_blank" rel="noopener noreferrer">told 1819 News</a></p>
           <p>For a licensed provider the practical questions are whether a board permits the proposed patient use and whether the supplier is authorized to supply the product. A consent form addresses neither on its own. The current notice and licensing record for the relevant state matter more than a broad &apos;state crackdown&apos; label.</p>
 
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
@@ -187,7 +188,7 @@ export default function StateCrackdown2026() {
             <h2 className="text-sm font-semibold text-gray-900 mb-3">Related coverage</h2>
             <ul className="space-y-2 text-sm">
               <li><Link href="/peptide-enforcement-2026" className="text-blue-700 underline">2026 Peptide Enforcement: The Major Documented Actions</Link></li>
-              <li><Link href="/paradigm-peptides-prison-sentence" className="text-blue-700 underline">The Kawa sentencing: 70 months for RUO marketing</Link></li>
+              <li><Link href="/paradigm-peptides-prison-sentence" className="text-blue-700 underline">The Kawa sentencing: 70 months in the Paradigm case</Link></li>
               <li><Link href="/what-happened-to-peptide-sciences" className="text-blue-700 underline">What happened to Peptide Sciences</Link></li>
             </ul>
           </div>

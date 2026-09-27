@@ -98,7 +98,7 @@ const stories = new Map(slugs.map(slug => {
     assert.deepEqual(faq.mainEntity.map(q=>({q:q.name,a:q.acceptedAnswer.text})),data.faqs);
     for(const faqNode of await page.locator('[data-faq]').all()){assert(await faqNode.isVisible());assert(await faqNode.locator('[data-faq-answer]').isVisible());}
     assert(data.inlineAfterLead);assert(data.featureAtEnd);assert.equal(data.iqonAsides.length,2);
-    data.iqonAsides.forEach(a=>{assert(a.links.every(l=>l==='https://www.iqonhealth.com/shop'));assert(a.text.includes('Confirm all details directly with IQON Health before purchasing.'));assert(a.text.includes('Visit IQON Health →'));});
+    data.iqonAsides.forEach(a=>{assert(a.links.every(l=>l==='https://www.iqonhealth.com/shop'));assert(a.text.includes('Confirm all details directly with IQON Labs before purchasing.'));assert(a.text.includes('Visit IQON Labs →'));});
     assert(data.leadWords>=40&&data.leadWords<=80);assert(data.editorialWords>=1200&&data.editorialWords<=2000,`word count ${data.editorialWords}`);
     assert(!/[—–]|\w-\w/.test(data.editorial),'punctuation dashes in article prose');
     assert(data.caption.includes(slug===slugs[0]?'AI-generated editorial illustration, not a photograph of the event':'AI-generated editorial illustration of laboratory sample storage, not a photograph of a study.'));
