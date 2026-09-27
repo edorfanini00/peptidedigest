@@ -4,23 +4,29 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
+import { images } from "@/components/images";
 import { IQONPartner } from "@/components/IQONPartner";
+
+const hero = images.apexWarehouse;
+const heroUrl = `https://peptidedigest.co${hero.src}`;
 
 export const metadata: Metadata = {
   title: "What Happened to Apex Peptides? Searches and Closure Questions",
   description:
-    "What happened to Apex Peptides: September 23, 2026 searches, reported FBI involvement, what the temporary closure notice does and does not establish.",
+    "What happened to Apex Peptides: September 23 searches, reported FBI involvement and the temporary closure notice reported the next day.",
   alternates: { canonical: "https://peptidedigest.co/what-happened-to-apex-peptides" },
   openGraph: {
     title: "What Happened to Apex Peptides?",
-    description: "Federal agents searched Apex-linked properties on September 23, 2026. The peptide storefront displayed a temporary-closure notice the next day; permanent closure is unconfirmed.",
+    description: "Federal agents searched Apex-linked properties on September 23, 2026. KCAU reported a temporary-closure notice on the peptide storefront the next day.",
     type: "article",
     publishedTime: "2026-09-25",
+    images: [{ url: heroUrl, width: hero.width, height: hero.height, alt: hero.alt }],
   },
   twitter: {
     card: "summary_large_image",
     title: "What Happened to Apex Peptides?",
-    description: "September 23 searches, reported FBI involvement and the September 24 temporary-closure notice.",
+    description: "September 23 searches, reported FBI involvement and KCAU's September 24 report of a temporary-closure notice.",
+    images: [{ url: heroUrl, alt: hero.alt }],
   },
 };
 
@@ -32,6 +38,7 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-apex-peptides#article",
       headline: "What Happened to Apex Peptides? Searches and Closure Questions",
+      image: { "@type": "ImageObject", url: heroUrl, width: hero.width, height: hero.height },
       datePublished: "2026-09-25",
       dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
@@ -43,11 +50,10 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "What happened to Apex Peptides?", acceptedAnswer: { "@type": "Answer", text: "On September 23, 2026, federal agents searched properties connected to several Apex businesses. The cited reports link Apex Peptides through business filings but do not establish a distinct search of its facility." } },
-        { "@type": "Question", name: "Is Apex Peptides shut down?", acceptedAnswer: { "@type": "Answer", text: "KCAU reported a temporary-closure notice on its website on September 24, with all but one product removed. The notice does not announce a permanent closure." } },
-        { "@type": "Question", name: "Who conducted the searches?", acceptedAnswer: { "@type": "Answer", text: "KTIV identifies the U.S. Postal Inspection Service as leading, with the FBI, IRS Criminal Investigation, Union County Sheriff’s Office and North Sioux City Police present." } },
-        { "@type": "Question", name: "Why were the Apex properties searched?", acceptedAnswer: { "@type": "Answer", text: "The cited reports do not disclose the reason for the searches or identify charges arising from them." } },
-        { "@type": "Question", name: "What does the closure notice establish about existing orders?", acceptedAnswer: { "@type": "Answer", text: "The September 24 report documents a temporary notice and a reduced catalog, not an order ledger or a company announcement about fulfillment or refunds." } },
+        { "@type": "Question", name: "What happened to Apex Peptides?", acceptedAnswer: { "@type": "Answer", text: "After September 23, 2026 searches at an Apex Waste Management warehouse and a Dakota Dunes home, KCAU saw a temporary closure notice and only one product on Apex Peptides’ website on September 24." } },
+        { "@type": "Question", name: "Is Apex Peptides permanently closed?", acceptedAnswer: { "@type": "Answer", text: "The website notice observed by KCAU on September 24 described a temporary closure. It did not announce a permanent shutdown or give a reopening date." } },
+        { "@type": "Question", name: "Where did the searches take place?", acceptedAnswer: { "@type": "Answer", text: "KTIV identified the Apex Waste Management warehouse at 503 Prosperity Way in North Sioux City and a home in Dakota Dunes. KCAU counted three searched properties but did not name a third in its report; none of these reports identified a separately searched Apex Peptides facility." } },
+        { "@type": "Question", name: "Which agencies participated?", acceptedAnswer: { "@type": "Answer", text: "KTIV reported that the U.S. Postal Inspection Service led the operation, with the FBI, IRS Criminal Investigation, Union County Sheriff’s Office and North Sioux City Police participating." } },
       ],
     },
   ],
@@ -68,23 +74,19 @@ export default function WhatHappenedApex() {
 
         <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">On September 24, Apex Peptides&apos; website displayed a temporary-closure notice, and all but one product had been removed from the site, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU observed</a>. Federal agents had searched an Apex-linked waste-management property the day before. The waste-property search and the storefront notice concern related businesses, not a documented search of a peptide facility.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">Apex Peptides’ website carried a temporary closure notice and just one listed product when Sioux City television station <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU 9 reported on it September 24</a>. Federal agents had searched an Apex Waste Management warehouse and a Dakota Dunes home the day before. Business filings <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">reviewed by KTIV</a> list the same primary Sergeant Bluff address for Apex Peptides and Apex Waste Management, explaining why the warehouse search enters the storefront story.</p>
 
           <IQONPartner vial="glutathione" variant="inline" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
 
-          <h2>What do local reports confirm?</h2>
-          <p>On September 23, agents searched 503 Prosperity Way in North Sioux City and a Dakota Dunes home. The Postal Inspection Service led, joined by the FBI, IRS Criminal Investigation and local officers. KTIV saw investigators load material but officials did not identify what they took or why. (<a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV</a>)</p>
-          <p>A <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">review of business filings</a> lists Apex Peptides alongside Apex Waste Management and Apex Research at a primary address in Sergeant Bluff, Iowa. The searched property was the waste-management site at 503 Prosperity Way; a nearby unfinished building at 498 carried five related registrations. KTIV did not report a search of 498 or a distinct peptide facility.</p>
-          <p>KSCJ reported that two people were seen led away in handcuffs. It said their identities and any charges had not been revealed as of Wednesday night. The report does not establish whether charges were later filed. (<a href="https://kscj.com/2026/09/23/few-details-revealed-about-apex-raid-in-north-sioux-city/">KSCJ</a>)</p>
+          <h2>Why a waste warehouse appears in the peptide story</h2>
+          <p>The searched warehouse stood at 503 Prosperity Way in North Sioux City, South Dakota, not at the shared primary address in Sergeant Bluff, Iowa. KTIV’s <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">filing review</a> also lists Apex Research at that Sergeant Bluff address and identifies Riley Isaacson as president of the waste-management and research businesses. Property records reviewed by the station identify the owner of the searched Dakota Dunes home as his twin brother, Ryan. A shared filing address connects business names; it does not identify what investigators sought at either property.</p>
+          <p>At the warehouse, agents carried out papers, boxes and a tote of small packaged items. Postal inspectors removed bags and boxes from the home. KCAU <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">described the warehouse as one of three searched properties</a>; the local accounts identify the warehouse and home, but do not name a third property or a separately searched Apex Peptides facility.</p>
 
-          <h2>Is Apex Peptides shut down?</h2>
-          <p>KCAU saw the temporary notice and a nearly empty catalog on September 24. Its reporter also found workers inside Apex Waste Management. Work at the waste business is a separate observation; the website notice documents the peptide storefront’s condition that day, not a permanent shutdown. (<a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU</a>)</p>
+          <h2>What officials said</h2>
+          <p>The U.S. Postal Inspection Service led the searches, with the FBI, IRS criminal investigators and local law enforcement participating, <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV reported</a>. Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">told local radio station KSCJ</a> that agents had visited multiple Sioux City-area locations; he declined to elaborate while the investigation was active.</p>
 
-          <h2>Why were the properties searched?</h2>
-          <p>Postal inspector Travis Fondow told KSCJ that agents had been at multiple locations and declined to explain the active investigation. That leaves the purpose of the search open; the participating agencies alone do not identify a particular charge. (<a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">KSCJ</a>)</p>
-
-          <h2>What could clarify the record?</h2>
-          <p>No cited account supplies a company order update or reopening date. A dated company statement could clarify storefront operations; an official case filing could explain the searches. Neither can be inferred from activity at the waste property. Our separate <Link href="/compliant-research-peptide-supplier">research supplier guide</Link> addresses how laboratories evaluate a different seller. Research products are not for human consumption.</p>
+          <h2>Workers returned; the storefront still showed a notice</h2>
+          <p>On September 24, KCAU visited the waste-management warehouse in the morning and found employees back inside. They declined to discuss the search. In the same day’s report, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU described</a> a temporary closure notice on Apex Peptides’ website and a catalog reduced to one product. The report does not say when the notice first appeared.</p>
           <div className="mt-12 pt-8 border-t border-gray-200 space-y-5">
             <h2 className="text-lg font-semibold text-gray-900">Frequently Asked Questions</h2>
             {(jsonLd["@graph"][2] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] }).mainEntity.map(({ name, acceptedAnswer }) => (
@@ -95,7 +97,6 @@ export default function WhatHappenedApex() {
             <h2 className="text-base font-semibold text-gray-900 mb-4">Related Coverage</h2>
             <Link href="/apex-peptides-raided-what-researchers-need-to-know" className="text-blue-700 underline">Apex Peptides update: the search timeline and business addresses</Link>
           </div>
-          <p>The distinction is consequential: a search at the waste-management property and a temporary notice on the peptide website are documented, but neither establishes a search of a peptide facility or a permanent closure. The record leaves the purpose of the searches and the storefront&apos;s subsequent status unresolved.</p>
 
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: September 23 searches</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 website and workplace observations</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
