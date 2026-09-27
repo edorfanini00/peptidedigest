@@ -95,6 +95,8 @@ export default function WhatHappenedApex() {
             <h2 className="text-base font-semibold text-gray-900 mb-4">Related Coverage</h2>
             <Link href="/apex-peptides-raided-what-researchers-need-to-know" className="text-blue-700 underline">Apex Peptides update: the search timeline and business addresses</Link>
           </div>
+          <p>The distinction is consequential: a search at the waste-management property and a temporary notice on the peptide website are documented, but neither establishes a search of a peptide facility or a permanent closure. The record leaves the purpose of the searches and the storefront&apos;s subsequent status unresolved.</p>
+
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: September 23 searches</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 website and workplace observations</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
 

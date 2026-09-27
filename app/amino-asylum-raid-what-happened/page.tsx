@@ -63,13 +63,12 @@ export default function AminoAsylumRaid() {
         <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
 
-          <p className="text-lg text-gray-800 font-medium leading-relaxed">PeptideExaminer reported a June 2025 raid and shutdown at Amino Asylum, but the public account has no named agency, warrant or case number. If you are looking for an Amino Asylum FDA action, the answer is not a confirmed prosecution. The guilty pleas often attached to this story were entered by people at Paradigm Peptides, a different business.</p>
+          <p className="text-lg text-gray-800 font-medium leading-relaxed">PeptideExaminer alleges that the FDA raided Amino Asylum&apos;s warehouse in June 2025 and reports a shutdown, but no identified agency record independently confirms the raid here. The guilty pleas often attached to this story were entered by people at Paradigm Peptides, a different business.</p>
 
           <IQONPartner vial="bac-water" variant="inline" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the June 2025 account say?</h2>
-          <p>PeptideExaminer described a warehouse raid, an offline storefront and customer reports of stalled orders. It also repeated claims about warning letters and product contents without linking an Amino Asylum-specific government document. Those reports make the site&apos;s account worth examining, but do not identify who searched the warehouse or what happened afterward. (<a href="https://peptideexaminer.com/vendors/amino-asylum">PeptideExaminer</a>)</p>
-          <p>The industry account does not identify an agency, warrant or case number. Without one, its warehouse description cannot establish the legal basis or outcome of the reported action.</p>
+          <p>The <a href="https://peptideexaminer.com/vendors/amino-asylum">vendor profile</a> also describes an offline storefront and customer reports of stalled orders. It repeats claims about warning letters and product contents without linking an Amino Asylum-specific government document. Its FDA allegation does not establish the legal basis or outcome of the reported action.</p>
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>Why do the Paradigm guilty pleas keep appearing in this story?</h2>
           <p>The December 2025 pleas belonged to Matthew Kawa and Jennifer Stechkober in the Paradigm Peptides case. The Justice Department identified Paradigm R.E. LLC as Kawa&apos;s business and described products advertised as SARMs that investigators found contained testosterone. It did not identify Amino Asylum as that defendant. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa">DOJ</a>)</p>
@@ -99,7 +98,7 @@ export default function AminoAsylumRaid() {
             </div>
           </div>
 
-          <p>The next meaningful update would identify the agency and premises in a record about Amino Asylum itself. Until then, the reported warehouse action remains separate from the documented Paradigm prosecution.</p>
+          <p>An agency record naming Amino Asylum and the premises would establish who conducted the reported search. Until then, the FDA allegation remains unconfirmed and separate from the documented Paradigm prosecution.</p>
 
           <IQONPartner vial="glutathione" />
 
