@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "2026 Peptide Enforcement: The Major Documented Actions",
     description: "What the dated record shows for Paradigm Peptides and Apex-linked searches, plus separate context on the undated Peptide Sciences notice.",
     type: "article",
-    publishedTime: "2026-09-24T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
 };
 
@@ -26,8 +26,8 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/peptide-enforcement-2026#article",
       headline: "2026 Peptide Enforcement: The Major Documented Actions",
-      datePublished: "2026-09-24T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/peptide-enforcement-2026" },
@@ -68,10 +68,11 @@ export default function EnforcementTimeline() {
           category="Industry"
           title={<>2026 Peptide Enforcement: The Major Documented Actions</>}
           dek={"Timeline of documented 2026 peptide enforcement actions, including the Paradigm Peptides sentence and Apex-linked searches, with separate context on the undated Peptide Sciences shutdown notice."}
-          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="gavel"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">A 2026 peptide enforcement timeline can mislead if every supplier headline is treated as a raid. Paradigm Peptides reached federal sentencing in July; FDA issued warning letters in August; agents searched an Apex-linked property in September. Separately, Peptide Sciences has an undated voluntary-closure notice, not a documented 2026 enforcement action. The legal stages and their evidence should not be collapsed into one crackdown.</p>
 

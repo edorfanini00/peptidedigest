@@ -19,7 +19,7 @@ interface CardArticle {
 const featuredArticle: CardArticle = {
   slug: "apex-peptides-raided-what-researchers-need-to-know",
   category: "Industry",
-  date: "September 24, 2026",
+  date: "September 25, 2026",
   readTime: "6 min read",
   title: "Apex Peptides Update: Federal Searches and a Temporary Closure Notice",
   excerpt:
@@ -31,7 +31,7 @@ const industryArticles: CardArticle[] = [
   {
     slug: "what-happened-to-apex-peptides",
     category: "Industry",
-    date: "September 24, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "What Happened to Apex Peptides? Searches and Closure Questions",
     excerpt:
@@ -41,7 +41,7 @@ const industryArticles: CardArticle[] = [
   {
     slug: "what-happened-to-peptide-sciences",
     category: "Industry",
-    date: "March 10, 2026",
+    date: "September 25, 2026",
     readTime: "7 min read",
     title: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
     excerpt:
@@ -51,7 +51,7 @@ const industryArticles: CardArticle[] = [
   {
     slug: "amino-asylum-raid-what-happened",
     category: "Industry",
-    date: "January 15, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "Amino Asylum Shutdown Reports: What Is Documented",
     excerpt:
@@ -61,7 +61,7 @@ const industryArticles: CardArticle[] = [
   {
     slug: "paradigm-peptides-prison-sentence",
     category: "Industry",
-    date: "August 1, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "Paradigm Peptides Owner Sentenced to 70 Months in Federal Prison",
     excerpt:
@@ -142,7 +142,7 @@ const regulatoryArticles: CardArticle[] = [
   {
     slug: "peptide-enforcement-2026",
     category: "Regulatory",
-    date: "September 24, 2026",
+    date: "September 25, 2026",
     readTime: "8 min read",
     title: "2026 Peptide Enforcement: The Major Documented Actions",
     excerpt:
@@ -152,7 +152,7 @@ const regulatoryArticles: CardArticle[] = [
   {
     slug: "compliant-research-peptide-supplier",
     category: "Guide",
-    date: "September 10, 2026",
+    date: "September 25, 2026",
     readTime: "6 min read",
     title: "What to Check in a Research Peptide Supplier",
     excerpt:

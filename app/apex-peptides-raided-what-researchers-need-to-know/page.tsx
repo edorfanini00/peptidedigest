@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Federal agents searched Apex-linked properties on September 23, 2026. The searched addresses, participating agencies and September 24 storefront notice.",
     type: "article",
-    publishedTime: "2026-09-24T12:00:00.000Z",
+    publishedTime: "2026-09-25",
     authors: ["The Peptide Digest"],
     tags: ["Apex Peptides", "peptide industry", "federal investigation", "research peptides"],
   },
@@ -40,8 +40,8 @@ const articleJsonLd = {
       headline: "Apex Peptides update: federal searches and a temporary closure notice",
       description:
         "Local reports place the Apex-linked searches on September 23, 2026. How the searched properties connect to Apex Peptides and what the temporary notice establishes.",
-      datePublished: "2026-09-24T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know" },
@@ -79,10 +79,11 @@ export default function ApexRaidedArticle() {
           category="Industry"
           title={<>Apex Peptides Update: Federal Searches and a Temporary Closure Notice</>}
           dek={"Local reports place the Apex-linked searches on September 23, 2026. How the searched properties connect to Apex Peptides and what the temporary notice establishes."}
-          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="apexRaid"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Federal agents searched the Apex Waste Management property at 503 Prosperity Way in North Sioux City on September 23, 2026. The next day, KCAU found a temporary-closure notice on Apex Peptides&apos; website. The searched waste property and the peptide website are distinct parts of the story.</p>
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: URL,
     type: "article",
-    publishedTime: "2026-09-25T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
   twitter: { card: "summary", title: TITLE, description: DESCRIPTION },
 };
@@ -71,8 +71,8 @@ const jsonLd = {
       "@id": `${URL}#article`,
       headline: TITLE,
       description: DESCRIPTION,
-      datePublished: "2026-09-25T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": URL },
@@ -121,6 +121,7 @@ export default function StateCrackdown2026() {
           image="alabamaCapitol"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date note: September 25, 2026 is the earliest verifiable site record; the precise first-publication time is unconfirmed.</p>
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">State medical boards in Alabama, Mississippi and South Carolina say a patient consent form does not turn a research-grade peptide into a treatment a clinician may provide. Their 2026 notices also push clinics to check who supplies the product. Ohio&apos;s pharmacy guidance, updated in late 2025, adds a direct restriction on clinics possessing drugs labeled for research purposes only. These are state professional rules and warnings, not a single new federal law.</p>
 

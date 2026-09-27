@@ -2,7 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://peptidedigest.co";
-  const now = new Date("2026-09-26");
+  // Calendar day of the substantive editorial update; no invented clock time.
+  const now = "2026-09-26";
 
   return [
     {

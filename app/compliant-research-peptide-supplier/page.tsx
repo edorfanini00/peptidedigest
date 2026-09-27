@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "What to Check in a Research Peptide Supplier",
     description: "Five editorial checks for a research peptide supplier’s documentation, claims and laboratory identity; none certifies compliance.",
     type: "article",
-    publishedTime: "2026-09-10T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
 };
 
@@ -26,8 +26,8 @@ const jsonLd = {
       "@type": "Article",
       "@id": "https://peptidedigest.co/compliant-research-peptide-supplier#article",
       headline: "What to Check in a Research Peptide Supplier: Documentation and Positioning",
-      datePublished: "2026-09-10T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/compliant-research-peptide-supplier" },
@@ -54,10 +54,11 @@ export default function CompliantSupplier() {
           category="Industry"
           title={<>What to Check in a Research Peptide Supplier</>}
           dek={"After distinct 2026 enforcement events, these five checks help assess a seller’s documentation and claims; they do not certify compliance."}
-          meta={<><time dateTime="2026-09-10">September 10, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="lcms"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">The first question for a research peptide supplier is not whether its homepage says &apos;compliant.&apos; It is whether the seller can connect the specific lot on offer to a verifiable laboratory report, and whether the rest of its marketing agrees with its research-only label. Neither a polished PDF nor a disclaimer settles both questions.</p>
 

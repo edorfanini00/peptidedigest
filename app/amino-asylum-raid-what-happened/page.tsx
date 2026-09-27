@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Amino Asylum Raid: What Happened",
     description: "PeptideExaminer reports a June 2025 warehouse action; no agency case document confirms it here. The Paradigm Peptides case is separate.",
     type: "article",
-    publishedTime: "2026-01-15T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
 };
 
@@ -26,8 +26,8 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/amino-asylum-raid-what-happened#article",
       headline: "Amino Asylum Raid Reports: What Happened and What Is Documented",
-      datePublished: "2026-01-15T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "amino asylum raid, amino asylum shut down, amino asylum FDA, amino asylum alternative, what happened to amino asylum",
@@ -56,10 +56,11 @@ export default function AminoAsylumRaid() {
           category="Industry"
           title={<>Amino Asylum Raid: What Happened and What Is Documented</>}
           dek={"PeptideExaminer reports a June 2025 Amino Asylum raid and shutdown. What its account says, why Paradigm is separate, and what record could confirm the action."}
-          meta={<><time dateTime="2026-01-15">January 15, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="padlock"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">PeptideExaminer reported a June 2025 raid and shutdown at Amino Asylum, but the public account has no named agency, warrant or case number. If you are looking for an Amino Asylum FDA action, the answer is not a confirmed prosecution. The guilty pleas often attached to this story were entered by people at Paradigm Peptides, a different business.</p>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Paradigm Peptides: Matthew Kawa Sentenced to 70 Months",
     description: "Matthew Kawa sentenced July 30, 2026. 70 months, $5M judgment, products sold as SARMs contained testosterone. The DOJ-documented facts of the Paradigm Peptides case.",
     type: "article",
-    publishedTime: "2026-08-01T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
 };
 
@@ -33,8 +33,8 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/paradigm-peptides-prison-sentence#article",
       headline: "Paradigm Peptides Sentence: Matthew Kawa Receives 70 Months",
-      datePublished: "2026-08-01T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "paradigm peptides shut down, paradigm peptides prison, Matthew Kawa sentenced, paradigm peptides alternative, what happened to paradigm peptides",
@@ -54,10 +54,11 @@ export default function ParadigmPeptidesSentence() {
           category="Criminal"
           title={<>Paradigm Peptides: Matthew Kawa Sentenced to 70 Months</>}
           dek={"The DOJ records Matthew Kawa's July 30, 2026 sentence of 70 months. The Paradigm Peptides case, the $5 million judgment and what the court orders establish."}
-          meta={<><time dateTime="2026-08-01">August 1, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="dojBuilding"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Paradigm Peptides owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026; Jennifer Stechkober received 16 months. The Justice Department said products sold as SARMs contained testosterone and that Kawa claimed quality testing he had not performed before sale. This is a completed criminal case against named defendants, not a rumor about a supplier raid.</p>

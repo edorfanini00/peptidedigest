@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "What Happened to Peptide Sciences?",
     description: "Peptide Sciences posted an undated voluntary-shutdown notice. What the notice says, what it does not say, and its warning about claimed successors.",
     type: "article",
-    publishedTime: "2026-03-10T12:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
 };
 
@@ -26,8 +26,8 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-peptide-sciences#article",
       headline: "What Happened to Peptide Sciences? Its Shutdown Notice Explained",
-      datePublished: "2026-03-10T12:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       keywords: "what happened to peptide sciences, peptide sciences shut down, peptide sciences alternative, peptide sciences DOJ, peptidesciences.com offline",
@@ -55,10 +55,11 @@ export default function PeptideSciencesShutdown() {
           category="Industry"
           title={<>What Happened to Peptide Sciences?</>}
           dek={"Peptide Sciences says it voluntarily shut down research-product sales. Read its notice, what it does not explain, and why claimed successors are not authorized."}
-          meta={<><time dateTime="2026-03-10">March 10, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="researchVials"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Peptide Sciences says it voluntarily shut down operations and discontinued sales of its research products. Its own notice warns that supposed successor sites using its name are unauthorized. It does not describe a DOJ-ordered closure or explain what will happen to each outstanding order.</p>

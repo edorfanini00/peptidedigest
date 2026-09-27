@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "What Happened to Apex Peptides?",
     description: "Federal agents searched Apex-linked properties on September 23, 2026. The peptide storefront displayed a temporary-closure notice the next day; permanent closure is unconfirmed.",
     type: "article",
-    publishedTime: "2026-09-24T14:00:00.000Z",
+    publishedTime: "2026-09-25",
   },
   twitter: {
     card: "summary_large_image",
@@ -32,8 +32,8 @@ const jsonLd = {
       "@type": "NewsArticle",
       "@id": "https://peptidedigest.co/what-happened-to-apex-peptides#article",
       headline: "What Happened to Apex Peptides? Searches and Closure Questions",
-      datePublished: "2026-09-24T14:00:00.000Z",
-      dateModified: "2026-09-26T20:29:10.000Z",
+      datePublished: "2026-09-25",
+      dateModified: "2026-09-26",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/what-happened-to-apex-peptides" },
@@ -62,10 +62,11 @@ export default function WhatHappenedApex() {
         <ArticleHero
           category="Industry"
           title={<>What Happened to Apex Peptides?</>}
-          meta={<><time dateTime="2026-09-24">September 24, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
           image="apexWarehouse"
         />
 
+        <p className="mx-auto max-w-3xl px-5 pb-4 text-xs text-[color:var(--color-muted)]">Editorial date correction: The published date reflects the earliest verifiable site record, September 25, 2026. Earlier displayed dates were not verified.</p>
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">On September 24, Apex Peptides&apos; website displayed a temporary-closure notice, and all but one product had been removed from the site, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU observed</a>. Federal agents had searched an Apex-linked waste-management property the day before. The waste-property search and the storefront notice concern related businesses, not a documented search of a peptide facility.</p>
 
