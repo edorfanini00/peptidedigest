@@ -23,7 +23,7 @@ const featuredArticle: CardArticle = {
   readTime: "6 min read",
   title: "Apex Peptides Update: Federal Searches and a Temporary Closure Notice",
   excerpt:
-    "A UPS delivery met federal agents at a North Sioux City warehouse on September 23. The next morning, Apex Peptides’ website announced a temporary closure.",
+    "Federal agents searched an Apex-linked warehouse on September 23. The next day, KCAU reported a temporary closure notice on Apex Peptides’ website.",
   image: "apexRaid",
 };
 
@@ -35,7 +35,7 @@ const industryArticles: CardArticle[] = [
     readTime: "6 min read",
     title: "What Happened to Apex Peptides? Searches and Closure Questions",
     excerpt:
-      "After searches at a warehouse and a nearby home, Apex Peptides’ website displayed a temporary closure notice and nearly empty catalog on September 24.",
+      "After the September 23 searches, KCAU reported a temporary closure notice and nearly empty Apex Peptides catalog the next day.",
     image: "apexWarehouse",
   },
   {
