@@ -7,7 +7,7 @@ export const story = {
   "date": "2026-09-28T08:00:00-04:00",
   "type": "NewsArticle",
   "category": "Regulatory",
-  "image": "fdaSign",
+  "image": "glp1CompoundingFacility",
   "vials": ["ghk", "bac-water"],
   "lead": "On April 30, 2026, the FDA proposed removing semaglutide, tirzepatide, and liraglutide from the 503B bulks list, the register that governs which compounds licensed outsourcing facilities may use in large-scale compounding.[1][2] If finalized, the rule would permanently eliminate any legal pathway for 503B outsourcing facilities to compound these drugs from bulk substances, even if a future shortage were declared.[1] FDA Commissioner Marty Makary stated directly: \"When FDA-approved drugs are available, outsourcing facilities cannot lawfully compound using bulk drug substances unless there is a clear clinical need.\"[1]",
   "sections": [
