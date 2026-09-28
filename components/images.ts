@@ -304,6 +304,28 @@ export const images = {
     sourceUrl: "https://peptidedigest.co",
     credit: "Photo: Illustration / The Peptide Digest",
   },
+  retatrutideTriumph: {
+    src: "/images/retatrutide-triumph-trial.webp",
+    width: 2528,
+    height: 1696,
+    alt: "Researcher in a white lab coat reviewing a clinical data binder at a stainless desk in a modern facility with large windows",
+    caption: "AI-generated editorial illustration of a pharmaceutical research setting, not a photograph of Lilly's trial or facilities.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
+  glp1CompoundingFacility: {
+    src: "/images/glp1-compounding-facility.webp",
+    width: 2528,
+    height: 1696,
+    alt: "Clean-room-gowned operator reviewing a document on a tablet beside shelves of amber pharmaceutical bottles in a sterile compounding room",
+    caption: "AI-generated editorial illustration of a pharmaceutical compounding facility, not a photograph of any facility named in this report.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;

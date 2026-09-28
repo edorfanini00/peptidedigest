@@ -72,6 +72,24 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "retatrutide-triumph-1-phase-3-results-2026",
+    category: "Clinical research",
+    date: "September 28, 2026",
+    readTime: "8 min read",
+    title: "Lilly reports Phase 3 obesity results for retatrutide: what TRIUMPH-1 showed",
+    excerpt: "All three doses met primary endpoints in 2,339 adults. At 12 mg, 45.3% of participants lost at least 30% of body weight by week 80. What the trial data establishes and what comes next.",
+    image: "retatrutideTriumph",
+  },
+  {
+    slug: "fda-glp1-compounding-exclusion-proposed-rule-2026",
+    category: "Regulatory",
+    date: "September 28, 2026",
+    readTime: "7 min read",
+    title: "FDA moves to permanently close bulk compounding of GLP-1 drugs: what the proposed rule means",
+    excerpt: "On April 30, 2026, FDA proposed excluding semaglutide, tirzepatide and liraglutide from the 503B bulks list permanently. What the rule targets, how it differs from the RUO letters, and what remains open.",
+    image: "glp1CompoundingFacility",
+  },
+  {
     slug: "enicepatide-phase-2-diabetes-results-september-2026",
     category: "Clinical research",
     date: "September 27, 2026",
