@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/retatrutide-triumph-1-phase-3-results-2026`,
+      lastModified: new Date("2026-09-28T08:00:00-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/fda-glp1-compounding-exclusion-proposed-rule-2026`,
+      lastModified: new Date("2026-09-28T08:00:00-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/enicepatide-phase-2-diabetes-results-september-2026`,
       lastModified: new Date("2026-09-27T12:24:43+00:00"),
       changeFrequency: "weekly",
