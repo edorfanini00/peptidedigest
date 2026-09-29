@@ -92,7 +92,7 @@ export default function ApexRaidedArticle() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Federal agents searched an Apex Waste Management warehouse in North Sioux City and a Dakota Dunes home on September 23. <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">Business filings reviewed by Sioux City television station KTIV</a> list the same primary Sergeant Bluff address for Apex Waste Management and Apex Peptides. The next day, <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU reported</a> a temporary closure notice on Apex Peptides’ website; its report does not establish when the notice first appeared.</p>
 
-          <IQONPartner vial="nad" variant="inline" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <IQONPartner vial="nad" variant="inline" />
 
           <h2>Agents at the warehouse</h2>
           <p>Federal authorities were at the Prosperity Way property by around 9 a.m., according to <a href="https://www.ktiv.com/2026/09/23/large-police-presence-north-sioux-city-business/">KTIV’s initial report</a>. By about 10 a.m., more than a dozen marked and unmarked vehicles were outside. Investigators carried evidence bags, totes and an industrial clipper into the building as the morning continued.</p>
@@ -144,7 +144,7 @@ export default function ApexRaidedArticle() {
               </Link>
             ))}
           </div>
-          <IQONPartner vial="glutathione" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <IQONPartner vial="glutathione" />
         </div>
       </main>
       <Footer />

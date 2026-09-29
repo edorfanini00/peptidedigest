@@ -76,7 +76,7 @@ export default function WhatHappenedApex() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Apex Peptides’ website carried a temporary closure notice and just one listed product when Sioux City television station <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU 9 reported on it September 24</a>. Federal agents had searched an Apex Waste Management warehouse and a Dakota Dunes home the day before. Business filings <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">reviewed by KTIV</a> list the same primary Sergeant Bluff address for Apex Peptides and Apex Waste Management, explaining why the warehouse search enters the storefront story.</p>
 
-          <IQONPartner vial="glutathione" variant="inline" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <IQONPartner vial="glutathione" variant="inline" />
 
           <h2>Why a waste warehouse appears in the peptide story</h2>
           <p>The searched warehouse stood at 503 Prosperity Way in North Sioux City, South Dakota, not at the shared primary address in Sergeant Bluff, Iowa. KTIV’s <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">filing review</a> also lists Apex Research at that Sergeant Bluff address and identifies Riley Isaacson as president of the waste-management and research businesses. Property records reviewed by the station identify the owner of the searched Dakota Dunes home as his twin brother, Ryan. A shared filing address connects business names; it does not identify what investigators sought at either property.</p>
@@ -101,7 +101,7 @@ export default function WhatHappenedApex() {
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: September 23 searches</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 website and workplace observations</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
 
-          <IQONPartner vial="bac-water" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+          <IQONPartner vial="bac-water" />
 
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-4">Updated September 26, 2026. Sources linked above. For information only, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.</p>
         </div>

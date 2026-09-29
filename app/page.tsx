@@ -269,7 +269,7 @@ export default function Home() {
           <span className="hidden sm:inline">Independent reporting</span>
         </div>
 
-        <IQONPartner vial="nad" variant="inline" text="IQON Labs offers products for laboratory research. Explore its catalog and confirm current product details and order terms directly before purchasing." />
+        <IQONPartner vial="nad" />
 
         {/* Top story + two secondary stories */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 mb-12 border-b border-[color:var(--color-rule)]">
