@@ -64,7 +64,7 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
       <ArticleHero category={story.category} title={story.title} meta={<time dateTime={story.date}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.date))}</time>} image={story.image} />
       <article className={`article-body ${styles.body}`} data-newsroom-article>
         <p data-answer-lead className="text-lg font-medium"><RichText text={story.lead} story={story} /></p>
-        <IQONPartner vial={story.vials[0]} variant="inline" />
+        <IQONPartner vial={story.vials[0]} />
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
         <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}<li><a href="#questions">Frequently asked questions</a></li></ul></nav>
         {story.sections.map(section => <section key={section.id} className={styles.section} aria-labelledby={section.id}>

@@ -105,7 +105,7 @@ export default function Page() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">&apos;Research use only&apos; tells a buyer how a product is being presented, not whether FDA approved it or whether its marketing complies with law. The phrase has a specific place in diagnostic-device labeling rules. FDA&apos;s August 2026 letters to peptide sellers show the other side of the question: what the rest of a storefront says the product is for.</p>
 
-          <IQONPartner vial="nad" variant="inline" />
+          <IQONPartner vial="nad" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>

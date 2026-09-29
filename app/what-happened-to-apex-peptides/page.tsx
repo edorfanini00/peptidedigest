@@ -76,7 +76,7 @@ export default function WhatHappenedApex() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Apex Peptides’ website carried a temporary closure notice and just one listed product when Sioux City television station <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU 9 reported on it September 24</a>. Federal agents had searched an Apex Waste Management warehouse and a Dakota Dunes home the day before. Business filings <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">reviewed by KTIV</a> list the same primary Sergeant Bluff address for Apex Peptides and Apex Waste Management, explaining why the warehouse search enters the storefront story.</p>
 
-          <IQONPartner vial="glutathione" variant="inline" />
+          <IQONPartner vial="glutathione" />
 
           <h2>Why a waste warehouse appears in the peptide story</h2>
           <p>The searched warehouse stood at 503 Prosperity Way in North Sioux City, South Dakota, not at the shared primary address in Sergeant Bluff, Iowa. KTIV’s <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">filing review</a> also lists Apex Research at that Sergeant Bluff address and identifies Riley Isaacson as president of the waste-management and research businesses. Property records reviewed by the station identify the owner of the searched Dakota Dunes home as his twin brother, Ryan. A shared filing address connects business names; it does not identify what investigators sought at either property.</p>

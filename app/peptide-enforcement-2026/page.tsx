@@ -76,7 +76,7 @@ export default function EnforcementTimeline() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">A 2026 peptide enforcement timeline can mislead if every supplier headline is treated as a raid. Paradigm Peptides reached federal sentencing in July; FDA issued warning letters in August; agents searched an Apex-linked property in September. Separately, Peptide Sciences has an undated voluntary-closure notice, not a documented 2026 enforcement action. The legal stages and their evidence should not be collapsed into one crackdown.</p>
 
-          <IQONPartner vial="glutathione" variant="inline" />
+          <IQONPartner vial="glutathione" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>
             Documented events

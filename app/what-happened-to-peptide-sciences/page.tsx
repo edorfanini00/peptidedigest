@@ -64,7 +64,7 @@ export default function PeptideSciencesShutdown() {
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Peptide Sciences says it voluntarily shut down operations and discontinued sales of its research products. Its own notice warns that supposed successor sites using its name are unauthorized. It does not describe a DOJ-ordered closure or explain what will happen to each outstanding order.</p>
 
-          <IQONPartner vial="ghk" variant="inline" />
+          <IQONPartner vial="ghk" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the company&apos;s notice actually establish?</h2>
           <p>The notice is direct about the decision: the company will no longer sell its research products. It gives no decision date, business rationale or reopening plan and does not address individual transactions. (<a href="https://www.peptidesciences.com/">Peptide Sciences</a>)</p>

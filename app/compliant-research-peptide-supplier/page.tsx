@@ -62,7 +62,7 @@ export default function CompliantSupplier() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">The first question for a research peptide supplier is not whether its homepage says &apos;compliant.&apos; It is whether the seller can connect the specific lot on offer to a verifiable laboratory report, and whether the rest of its marketing agrees with its research-only label. Neither a polished PDF nor a disclaimer settles both questions.</p>
 
-          <IQONPartner vial="ghk" variant="inline" />
+          <IQONPartner vial="ghk" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>1. Compare the disclaimer with the rest of the storefront</h2>
           <p>A seller can place &apos;research use only&apos; in the footer while product pages suggest effects on people. FDA&apos;s August 2026 letter to Peptide Partners cited health-related descriptions and a reconstitution solution offered alongside products it considered unapproved drugs. The agency assessed the whole storefront, not just the disclaimer. (<a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peptide-partners-llc-735063-08242026" className="text-blue-700 underline">FDA</a>)</p>

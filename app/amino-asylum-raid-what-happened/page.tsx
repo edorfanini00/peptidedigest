@@ -65,7 +65,7 @@ export default function AminoAsylumRaid() {
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">PeptideExaminer alleges that the FDA raided Amino Asylum&apos;s warehouse in June 2025 and reports a shutdown, but no identified agency record independently confirms the raid here. The guilty pleas often attached to this story were entered by people at Paradigm Peptides, a different business.</p>
 
-          <IQONPartner vial="bac-water" variant="inline" />
+          <IQONPartner vial="bac-water" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What does the June 2025 account say?</h2>
           <p>The <a href="https://peptideexaminer.com/vendors/amino-asylum">vendor profile</a> also describes an offline storefront and customer reports of stalled orders. It repeats claims about warning letters and product contents without linking an Amino Asylum-specific government document. Its FDA allegation does not establish the legal basis or outcome of the reported action.</p>

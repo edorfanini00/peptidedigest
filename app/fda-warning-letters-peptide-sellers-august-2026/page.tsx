@@ -104,7 +104,7 @@ export default function Page() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">FDA sent five online peptide sellers warning letters dated August 24, 2026 after reviewing their websites in July. Its central finding was that research-only disclaimers could not outweigh product descriptions and accompanying resources suggesting human drug use. The letters demand a response; they are not seizures, charges or convictions.</p>
 
-          <IQONPartner vial="bac-water" variant="inline" />
+          <IQONPartner vial="bac-water" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>

@@ -125,7 +125,7 @@ export default function StateCrackdown2026() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">State medical boards in Alabama, Mississippi and South Carolina say a patient consent form does not turn a research-grade peptide into a treatment a clinician may provide. Their 2026 notices also push clinics to check who supplies the product. Ohio&apos;s pharmacy guidance, updated in late 2025, adds a direct restriction on clinics possessing drugs labeled for research purposes only. These are state professional rules and warnings, not a single new federal law.</p>
 
-          <IQONPartner vial="nad" variant="inline" />
+          <IQONPartner vial="nad" />
 
           <div className="rounded-xl border border-gray-200 bg-white p-5">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3">Key facts</h2>

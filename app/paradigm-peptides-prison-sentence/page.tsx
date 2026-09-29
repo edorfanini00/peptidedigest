@@ -63,7 +63,7 @@ export default function ParadigmPeptidesSentence() {
 
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Paradigm Peptides owner Matthew Kawa was sentenced to 70 months in federal prison on July 30, 2026; Jennifer Stechkober received 16 months. The Justice Department said products sold as SARMs contained testosterone and that Kawa claimed quality testing he had not performed before sale. This is a completed criminal case against named defendants, not a rumor about a supplier raid.</p>
 
-          <IQONPartner vial="nad" variant="inline" />
+          <IQONPartner vial="nad" />
 
           <h2 className="text-xl font-semibold text-gray-900 pt-4" style={{ fontFamily: "var(--font-lora), Georgia, serif" }}>What happened between the sales and the sentence?</h2>
           <p>From Michigan City, Indiana, Kawa&apos;s online business shipped products across the United States. The DOJ case page identifies April 2019 through March 2024 as the relevant purchase period for people considering its victim-witness process. Kawa and Stechkober pleaded guilty on December 10, 2025; sentencing followed in July 2026. (<a href="https://www.justice.gov/usao-ndin/united-states-v-matthew-kawa" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">DOJ</a>)</p>

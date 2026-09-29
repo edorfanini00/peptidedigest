@@ -106,7 +106,7 @@ export default function Page() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">A peptide certificate of analysis can display &apos;98% purity&apos; and still leave the essential question unanswered: was the sample in that report drawn from the lot you are being offered? Start with the lot and report identifiers, then read the HPLC and mass-spectrometry results as different measurements. Neither turns a seller&apos;s PDF into a guarantee about every vial.</p>
 
-          <IQONPartner vial="glutathione" variant="inline" />
+          <IQONPartner vial="glutathione" />
 
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-5">
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</p>

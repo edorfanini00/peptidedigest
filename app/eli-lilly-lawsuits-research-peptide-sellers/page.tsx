@@ -114,7 +114,7 @@ export default function Page() {
         <div className="article-body">
           <p className="text-lg text-gray-800 font-medium leading-relaxed">Eli Lilly sued six sellers on August 12, 2026, alleging they marketed purported retatrutide despite the drug still being investigational. Four of the defendants are online research-product sellers. Lilly says the research-only label did not match how the products were offered to consumers. The complaints are civil allegations, not findings of liability or criminal charges.</p>
 
-          <IQONPartner vial="ghk" variant="inline" />
+          <IQONPartner vial="ghk" />
 
           <div className="rounded-lg border border-gray-200 bg-white p-5">
             <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-3">Key facts</h2>
