@@ -47,7 +47,7 @@ const articleJsonLd = {
       description:
         "Local reports place the Apex-linked searches on September 23, 2026. How the searched properties connect to Apex Peptides and what the temporary notice establishes.",
       datePublished: "2026-09-25",
-      dateModified: "2026-09-26",
+      dateModified: "2026-09-29",
       author: { "@type": "Organization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: "https://peptidedigest.co" },
       mainEntityOfPage: { "@type": "WebPage", "@id": "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know" },
@@ -84,7 +84,7 @@ export default function ApexRaidedArticle() {
           category="Industry"
           title={<>Apex Peptides Update: Federal Searches and a Temporary Closure Notice</>}
           dek={"Local reports place the Apex-linked searches on September 23, 2026. How the searched properties connect to Apex Peptides and what the temporary notice establishes."}
-          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 26, 2026</span></>}
+          meta={<><time dateTime="2026-09-25">September 25, 2026</time><span>Updated September 29, 2026</span></>}
           image="apexRaid"
         />
 
@@ -110,6 +110,17 @@ export default function ApexRaidedArticle() {
           <p>The U.S. Postal Inspection Service led the operation. FBI agents, IRS criminal investigators, the Union County Sheriff’s Office and North Sioux City Police also participated, <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV reported</a>.</p>
           <p>Postal inspector Travis Fondow <a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation/">confirmed to KSCJ</a> on September 24 that federal agents, including postal inspectors, had visited multiple Sioux City-area locations. He declined further detail because the investigation was active.</p>
           <p>The daylong search at the waste-management warehouse ended shortly after 4 p.m. on September 23. When <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU 9</a>, another Sioux City television station, visited the warehouse the next morning, employees were back inside and declined to discuss the operation. In its September 24 report, KCAU described a temporary closure notice on the website of Apex Peptides, the business linked to Apex Waste Management by the shared primary filing address, with all but one product removed. The report did not say when the notice first appeared.</p>
+          <h2>Latest: what has changed since the search</h2>
+          <p><strong>Updated September 29, 2026.</strong> Six days after the search, no charges have been announced and no court filing naming Apex Peptides or the Isaacson brothers has been made public. The Postal Inspection Service and FBI have not released anything beyond the postal inspector’s September 24 statement.</p>
+          <ul>
+            <li><strong>Five more Apex companies registered nearby.</strong> A <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV review of state filings</a> found five newer LLCs listing 498 Prosperity Way, near the searched warehouse: ApexRx Holdings (April 20, 2026), Apex Health Club (August 25), Apex Health Club Holdings (August 26), ApexTH&amp;I (September 9) and Apex HC (September 15). Filings list Ryan Isaacson, Riley Isaacson and Jared Miller as organizers. KTIV said that building is still under construction and does not appear to be operating.</li>
+            <li><strong>About two dozen Apex businesses.</strong> <a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid/">KCAU found</a> roughly two dozen South Dakota businesses associated with the Apex name, including Apex Peptides. KTIV reported that Apex Waste Management LLC was registered on December 4, 2025, less than a year before the search.</li>
+            <li><strong>Where the agents came from.</strong> The postal inspectors on scene were based in Minneapolis. FBI agents came from the Omaha and Minneapolis field offices, <a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV reported</a>.</li>
+            <li><strong>No comment from the family.</strong> KTIV saw one of the Isaacson twins at the 498 Prosperity Way property on the morning of September 24, carrying a suitcase and a duffel bag. Asked why the properties were searched, he said “No comment.” Calls to phone numbers linked to the Apex businesses went unanswered.</li>
+            <li><strong>Apex Peptides’ website.</strong> On September 24, KCAU described a temporary closure notice with all but one product removed. When The Peptide Digest checked apex-peptides.com on September 29, the site showed only an account login page, with no catalog visible.</li>
+          </ul>
+          <p>A search warrant is not a charge. None of the people or companies named here has been accused of a crime in any public filing. We will update this article if prosecutors file charges or officials release details.</p>
+
           <div className="mt-14 pt-10 border-t border-gray-200">
             <h2 className="text-xl font-semibold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
@@ -121,7 +132,7 @@ export default function ApexRaidedArticle() {
           <h2>Sources</h2>
           <ul className="list-disc pl-6"><li><a href="https://www.ktiv.com/2026/09/25/five-more-apex-tied-businesses-found-non-operational-building/">KTIV: Apex-linked businesses and search timeline</a></li><li><a href="https://www.kcau9.com/news/local-news/federal-investigators-remain-tight-lipped-after-wednesdays-raid">KCAU: September 24 follow-up</a></li><li><a href="https://kscj.com/2026/09/24/federal-authorities-continue-apex-investigation">KSCJ: postal inspector comment</a></li></ul>
           <p className="text-xs text-gray-400 pt-6 border-t border-gray-200 mt-8">
-            Updated September 26, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.
+            Updated September 29, 2026. Sources are linked in the text. This article is for information, not medical or legal advice. IQON Labs appears in commercial placements on this page. Research products are not for human consumption.
           </p>
         </div>
 
