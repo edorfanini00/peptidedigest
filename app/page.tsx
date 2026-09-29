@@ -72,6 +72,27 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "fda-pcac-peptide-compounding-vote-2026",
+    category: "Regulatory",
+    date: "2026-09-29",
+    readTime: "7 min read",
+    image: "fdaPcacMeeting",
+    title: "What the FDA's July 2026 peptide compounding vote actually changes",
+    excerpt:
+      "An FDA advisory panel recommended six peptides for the compounding drugs list, over the objection of the agency's own scientists. What the 8-6 votes mean, why pharmacies still cannot compound these compounds today, and what formal rulemaking requires next.",
+  },
+  {
+    slug: "kpv-peptide-research-what-studies-show",
+    category: "Compound research",
+    date: "2026-09-29",
+    readTime: "6 min read",
+    image: "kpvLabVial",
+    title:
+      "KPV peptide: what the research actually shows on gut inflammation and wound healing",
+    excerpt:
+      "KPV is a three-amino-acid fragment of alpha-MSH with a credible preclinical record in colitis models and wound biology. When the FDA reviewed it in July 2026, staff found no human trial data sufficient to establish effectiveness for its nominated uses.",
+  },
+  {
     slug: "retatrutide-triumph-1-phase-3-results-2026",
     category: "Clinical research",
     date: "September 28, 2026",

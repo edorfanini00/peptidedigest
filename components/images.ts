@@ -326,6 +326,28 @@ export const images = {
     credit: "Illustration: The Peptide Digest",
     kind: "illustration",
   },
+  fdaPcacMeeting: {
+    src: "/images/fda-pcac-meeting-2026.webp",
+    width: 2528,
+    height: 1696,
+    alt: "A modern glass and concrete federal government campus building exterior on an overcast day",
+    caption: "AI-generated editorial illustration of a federal administrative campus. Not a photograph of the FDA White Oak campus or any specific building.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
+  kpvLabVial: {
+    src: "/images/kpv-lab-vial.webp",
+    width: 2528,
+    height: 1696,
+    alt: "Blue-gloved researcher using tweezers to place a small clear unlabeled glass vial into a laboratory sample rack",
+    caption: "AI-generated editorial illustration of laboratory sample handling. Not a photograph of any specific compound or study.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;

@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/fda-pcac-peptide-compounding-vote-2026`,
+      lastModified: new Date("2026-09-29T08:00:00-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/kpv-peptide-research-what-studies-show`,
+      lastModified: new Date("2026-09-29T08:00:00-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/retatrutide-triumph-1-phase-3-results-2026`,
       lastModified: new Date("2026-09-28T08:00:00-04:00"),
       changeFrequency: "weekly",
