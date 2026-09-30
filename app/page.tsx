@@ -72,6 +72,17 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "fda-import-alert-66-80-glp1-api-border-enforcement",
+    category: "Regulatory",
+    date: "2026-09-30",
+    readTime: "7 min read",
+    image: "glp1ImportAlert",
+    title:
+      "FDA's GLP-1 import alert: what the September 2026 update adds and why one Green List manufacturer is under scrutiny",
+    excerpt:
+      "The FDA revised Import Alert 66-80 on September 21, expanding its detention authority to new peptide product codes and adding orforglipron to the Green List. The August revision also disclosed that a Chinese manufacturer allegedly relabeled unapproved semaglutide API from an unlisted facility and altered records.",
+  },
+  {
     slug: "fda-pcac-peptide-compounding-vote-2026",
     category: "Regulatory",
     date: "2026-09-29",
@@ -109,6 +120,17 @@ const regulatoryArticles: CardArticle[] = [
     title: "FDA moves to permanently close bulk compounding of GLP-1 drugs: what the proposed rule means",
     excerpt: "On April 30, 2026, FDA proposed excluding semaglutide, tirzepatide and liraglutide from the 503B bulks list permanently. What the rule targets, how it differs from the RUO letters, and what remains open.",
     image: "glp1CompoundingFacility",
+  },
+  {
+    slug: "mots-c-mitochondria-peptide-research",
+    category: "Compound research",
+    date: "2026-09-30",
+    readTime: "7 min read",
+    image: "motscMitochondria",
+    title:
+      "MOTS-c: the peptide your mitochondria make and what the research says it does",
+    excerpt:
+      "MOTS-c is encoded not by nuclear DNA but by the mitochondrial genome itself. Rodent studies show it activates AMPK through the folate-AICAR pathway, improving insulin sensitivity. A 2025 paper found it reduced beta-cell senescence in diabetes mice. Human data remains limited.",
   },
   {
     slug: "enicepatide-phase-2-diabetes-results-september-2026",

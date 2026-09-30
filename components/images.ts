@@ -348,6 +348,28 @@ export const images = {
     credit: "Illustration: The Peptide Digest",
     kind: "illustration",
   },
+  glp1ImportAlert: {
+    src: "/images/glp1-import-alert-border.webp",
+    width: 2528,
+    height: 1696,
+    alt: "US Customs and Border Protection officers reviewing tablets beside sealed shipping containers marked API — Active Pharmaceutical Ingredients at a dusk port-of-entry facility",
+    caption: "AI-generated editorial illustration of a pharmaceutical customs inspection. Not a photograph of any specific event or facility.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
+  motscMitochondria: {
+    src: "/images/mots-c-mitochondria-illustration.webp",
+    width: 2528,
+    height: 1696,
+    alt: "Scientific illustration of a mitochondrion with glowing inner membranes and luminous peptide molecules traveling toward a cell nucleus",
+    caption: "AI-generated editorial illustration of mitochondrial signaling. Not a photograph or verified molecular diagram.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
