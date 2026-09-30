@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/fda-import-alert-66-80-glp1-api-border-enforcement`,
+      lastModified: new Date("2026-09-30T08:00:00-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/mots-c-mitochondria-peptide-research`,
+      lastModified: new Date("2026-09-30T08:00:00-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/fda-pcac-peptide-compounding-vote-2026`,
       lastModified: new Date("2026-09-29T08:00:00-04:00"),
       changeFrequency: "weekly",
