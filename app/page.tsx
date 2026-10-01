@@ -72,6 +72,17 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "fda-second-pcac-peptides-february-2027",
+    category: "Regulatory",
+    date: "2026-10-01",
+    readTime: "8 min read",
+    image: "fdaPcacSecond",
+    title:
+      "Five more peptides are heading to FDA's advisory panel: what the February 2027 review covers",
+    excerpt:
+      "After the July 2026 session recommended six peptides, a second PCAC meeting scheduled before the end of February 2027 will evaluate GHK-Cu (injectable), Melanotan II, LL-37, Dihexa acetate, and PEG-MGF. What each compound is and what the advisory process actually decides.",
+  },
+  {
     slug: "fda-import-alert-66-80-glp1-api-border-enforcement",
     category: "Regulatory",
     date: "2026-09-30",
@@ -91,6 +102,17 @@ const regulatoryArticles: CardArticle[] = [
     title: "What the FDA's July 2026 peptide compounding vote actually changes",
     excerpt:
       "An FDA advisory panel recommended six peptides for the compounding drugs list, over the objection of the agency's own scientists. What the 8-6 votes mean, why pharmacies still cannot compound these compounds today, and what formal rulemaking requires next.",
+  },
+  {
+    slug: "ghk-cu-peptide-research-what-studies-show",
+    category: "Compound research",
+    date: "2026-10-01",
+    readTime: "8 min read",
+    image: "ghkCuCollagen",
+    title:
+      "GHK-Cu: what the research on this copper peptide actually shows",
+    excerpt:
+      "GHK-Cu is naturally found in human plasma and has two published randomized controlled trials — unusual for a research peptide. One found 77% wound closure in diabetic ulcers versus 45% for control. The 2023 split-face RCT found 22% firmness improvement and 16% fine-line reduction. Here is what the evidence establishes.",
   },
   {
     slug: "kpv-peptide-research-what-studies-show",

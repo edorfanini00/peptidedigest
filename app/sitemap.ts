@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/ghk-cu-peptide-research-what-studies-show`,
+      lastModified: new Date("2026-10-01T08:00:00-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/fda-second-pcac-peptides-february-2027`,
+      lastModified: new Date("2026-10-01T08:00:00-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${base}/fda-import-alert-66-80-glp1-api-border-enforcement`,
       lastModified: new Date("2026-09-30T08:00:00-04:00"),
       changeFrequency: "weekly",
