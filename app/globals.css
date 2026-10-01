@@ -289,3 +289,6 @@ main p, main li { overflow-wrap: break-word; }
 .article-body > ol { list-style: decimal outside; padding-left: 1.4rem; }
 
 .caption .credit, .caption .credit a { white-space: normal; overflow-wrap: anywhere; }
+
+/* sticky-offer-pad: keep footer clear of the mobile offer bar */
+@media (max-width: 767px) { body { padding-bottom: 76px; } }
