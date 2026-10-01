@@ -370,6 +370,28 @@ export const images = {
     credit: "Illustration: The Peptide Digest",
     kind: "illustration",
   },
+  ghkCuCollagen: {
+    src: "/images/ghk-cu-collagen-research.webp",
+    width: 2528,
+    height: 1696,
+    alt: "An unlabeled clear glass research vial containing pale blue solution beside a petri dish showing a tissue cross-section with dense collagen-like fibers on a white laboratory bench",
+    caption: "AI-generated editorial illustration of laboratory research materials. Not a photograph of any specific compound or study.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
+  fdaPcacSecond: {
+    src: "/images/fda-pcac-second-review.webp",
+    width: 2528,
+    height: 1696,
+    alt: "An empty government advisory meeting room with a long rectangular table, empty chairs, and a projection screen displaying a generic agenda document",
+    caption: "AI-generated editorial illustration of an advisory committee meeting room. Not a photograph of any FDA facility or actual meeting.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "Illustration: The Peptide Digest",
+    kind: "illustration",
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
