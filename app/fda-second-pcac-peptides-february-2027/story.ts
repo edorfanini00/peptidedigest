@@ -1,163 +1,142 @@
 import type { NewsroomStory } from "@/components/NewsroomArticle";
 
 export const story: NewsroomStory = {
-  slug: "fda-second-pcac-peptides-february-2027",
-  title:
-    "Five more peptides are heading to FDA's advisory panel: what the February 2027 review covers",
-  description:
-    "The FDA split its 2026 peptide review into two separate Pharmacy Compounding Advisory Committee meetings. After July's session covered seven compounds, a second meeting scheduled before February 2027 will evaluate GHK-Cu (injectable), Melanotan II, LL-37, Dihexa acetate, and PEG-MGF. Here is what each compound is and what the review process means.",
-  date: "2026-10-01T08:00:00-04:00",
-  type: "NewsArticle",
-  category: "Regulation",
-  image: "fdaPcacSecond",
-  vials: ["ghk", "epithalon"],
-  notice:
-    "This article covers FDA regulatory process and scheduled advisory committee activity. None of the compounds discussed are approved drugs. Their inclusion on a PCAC agenda is an evaluation step, not authorization to compound or use them clinically. Research-grade compounds are for laboratory use only.",
-  lead: "The FDA has scheduled a second Pharmacy Compounding Advisory Committee meeting before the end of February 2027 to evaluate five additional peptides for the 503A Bulk Drug Substances List — the list that lets licensed compounders legally prepare a substance against individual prescriptions.[1][2] The compounds on the agenda are GHK-Cu (injectable routes), Melanotan II, Cathelicidin (LL-37), Dihexa acetate, and Pegylated Mechano Growth Factor (PEG-MGF). The FDA announced this second session on April 15, 2026, when it removed twelve peptides from its Category 2 'may not be compounded' list and divided the follow-up review between two meetings.[1] The July 23–24, 2026 session covered seven compounds, six of which received favorable committee votes — recommendations the FDA has not yet acted on.[3] A fixed date, location, and public-comment docket for the February 2027 session have not been published as of October 2026.[1]",
-  sections: [
-    {
-      title: "How the FDA got here: two tracks, two meetings",
-      id: "background",
-      paragraphs: [
-        "In September 2023, the FDA placed nineteen peptides on its Category 2 interim list — substances the agency said 'may present significant safety risks' for compounding. Category 2 status effectively barred their use in preparations under Sections 503A and 503B of the Food, Drug, and Cosmetic Act.[4]",
-        "In February 2026, then-incoming HHS Secretary Robert F. Kennedy Jr. signaled publicly that these restrictions would be revisited. On April 15, 2026, the FDA formally removed twelve of those peptides from Category 2 and scheduled two separate PCAC sessions to evaluate them for the 503A Bulks List.[1] The twelve compounds were split into two groups for separate meetings rather than one extended session; the FDA did not publicly explain the split.",
-        "PCAC recommendations are advisory. The committee votes on whether available evidence supports adding a substance to the 503A Bulks List, but FDA retains final authority. Even a unanimous favorable vote requires the FDA to issue a proposed rule, accept public comment, and issue a final rule — a process that regulatory lawyers generally estimate takes six to eighteen months from PCAC vote to effective date.[2][3]",
-        "The July 2026 session produced favorable votes for six of seven compounds on the first-batch agenda. KPV, MOTS-c, Semax, and Epitalon cleared; Emideltide (DSIP) did not. All six had been recommended against by FDA career scientists before the committee reached its conclusions.[3] As of October 2026, the FDA has not published a proposed rule or interim enforcement policy for any of them.",
-      ],
-    },
-    {
-      title: "GHK-Cu (injectable): the split compound",
-      id: "ghk-cu",
-      paragraphs: [
-        "GHK-Cu presents a regulatory situation unique among the twelve compounds: its topical form is already on the FDA's 503A Category 1 list — meaning licensed compounders can currently prepare it for topical use. Only the injectable route is before the February 2027 panel.[1][6]",
-        "GHK-Cu is a naturally occurring copper-binding tripeptide (glycyl-L-histidyl-L-lysine complexed with Cu2+) found in human plasma, saliva, and wound fluid. Its plasma levels decline roughly 60 percent between ages 20 and 60. The compound has two published randomized controlled trials in humans, one on diabetic wound healing and one on skin aging — an unusually strong evidence base for a research peptide.[5]",
-        "The distinction between topical and injectable routes matters because compounding pharmacies are currently permitted to prepare topical GHK-Cu against individual prescriptions but not injectable forms. A favorable PCAC vote on the injectable route and subsequent FDA rulemaking would extend that permission to sterile injectable preparations.",
-      ],
-    },
-    {
-      title: "Melanotan II: the high-scrutiny compound",
-      id: "melanotan",
-      paragraphs: [
-        "Melanotan II is a synthetic cyclic heptapeptide analog of alpha-melanocyte-stimulating hormone (alpha-MSH), a melanocortin receptor agonist primarily studied for skin pigmentation effects. It was in FDA Category 2 from September 2023 and was removed in April 2026.[1][4]",
-        "Regulatory commentary has consistently flagged Melanotan II as the highest-scrutiny compound in the February 2027 batch. The compound has documented adverse event reports in the published literature, including nausea, facial flushing, blood pressure changes, and involuntary erections. It was the subject of a 2009 FDA consumer alert warning against purchase of online products.[4]",
-        "FDA career staff recommended against adding Melanotan II to the Category 2 list in the original 2023 review based on the adverse event record. The February 2027 committee will evaluate whether current evidence supports compounding use under 503A. A favorable PCAC vote would not eliminate the adverse event history; it would trigger a rulemaking process in which that history would be part of the public record.",
-        "The compound should be noted separately from GLP-1 receptor agonists like semaglutide, which work through entirely different receptors and mechanisms. Melanotan II has no role in blood sugar regulation.",
-      ],
-    },
-    {
-      title: "Cathelicidin LL-37: from immune defense to compounding candidate",
-      id: "ll37",
-      paragraphs: [
-        "Cathelicidin LL-37 is a 37-residue human host-defense peptide derived from the C-terminal fragment of the protein hCAP-18, encoded on chromosome 3.[1][2] It is one of the principal endogenous antimicrobial peptides in human skin, respiratory mucosa, and intestinal epithelium, active against bacteria, fungi, and some viruses through membrane disruption.",
-        "Beyond direct antimicrobial activity, LL-37 has immune-modulatory functions: it recruits leukocytes, stimulates angiogenesis, modulates Toll-like receptor signaling, and activates keratinocyte migration in wound models.[2] Laboratory research has examined it for wound healing, inflammatory skin conditions, and anti-biofilm applications.",
-        "LL-37 was removed from Category 2 in April 2026 alongside the other eleven peptides. Regulatory commentary from law firms tracking the space has noted that LL-37's endogenous origin and published mechanism data may give it a stronger position in the PCAC review than compounds with purely synthetic or less-characterized profiles.[2]",
-        "No large-scale completed clinical trials of LL-37 for any indication have been published. Most evidence comes from in-vitro and animal models. The compound was previously in Category 2 of the FDA's 503A interim list before April 2026.",
-      ],
-    },
-    {
-      title: "Dihexa acetate: the angiotensin-derived nootropic",
-      id: "dihexa",
-      paragraphs: [
-        "Dihexa is a modified hexapeptide derived from angiotensin IV (the four-to-eight sequence of angiotensin II), with the structure N-hexanoic acid-Tyr-Ile-6-aminohexanoic amide in its acetate salt form.[1][2] It was developed as part of research into the hepatocyte growth factor (HGF) and its receptor c-Met, a signaling axis with documented roles in synaptic density and memory formation.",
-        "Research interest has centered primarily on cognition. Studies in rodent models of Alzheimer's disease found that dihexa improved spatial memory and increased hippocampal spine density through HGF/c-Met pathway activation.[2] The compound has been commercially marketed for cognitive enhancement despite the absence of published human clinical trials.",
-        "Regulatory concern about dihexa has included its prior lack of human safety data and its commercial presence in a gray market before the 2023 Category 2 listing. The February 2027 PCAC review will evaluate whether available evidence supports compounding use; FDA career scientists' original assessment recommended against 503A inclusion across the entire 2023 Category 2 list.[4]",
-      ],
-    },
-    {
-      title: "PEG-MGF: the PEGylated muscle repair peptide",
-      id: "peg-mgf",
-      paragraphs: [
-        "Pegylated mechano growth factor (PEG-MGF) is a synthetic, PEGylated form of mechano growth factor, a splice variant of insulin-like growth factor 1 (IGF-1Ec) produced in skeletal muscle in response to mechanical loading and damage.[1][2]",
-        "MGF activates satellite cells — the muscle stem cells responsible for repair following mechanical stress — through a distinct receptor pathway from the IGF-1 Ea splice variant. PEGylation extends the compound's half-life in serum relative to non-PEGylated MGF, which degrades rapidly. Research has been primarily in animal models of muscle injury and aging.[2]",
-        "PEG-MGF occupies a niche research space relative to the other February 2027 compounds, with lower search and commercial visibility than GHK-Cu or Melanotan II. Its PCAC review will assess whether published evidence, which is predominantly preclinical, supports 503A compounding eligibility.",
-      ],
-    },
-    {
-      title: "What the advisory process means — and does not mean",
-      id: "process",
-      paragraphs: [
-        "A favorable PCAC vote in February 2027 would recommend that the FDA add one or more of these compounds to the 503A Bulks List. It would not immediately permit compounding, change their legal status, or constitute an FDA finding that they are safe or effective for any use.",
-        "The July 2026 session showed that PCAC and FDA career staff can reach opposite conclusions: staff recommended against all seven July peptides; the committee voted favorably on six. FDA is not legally required to follow PCAC's advice.[3]",
-        "The rulemaking timeline adds further distance between a favorable vote and practical compounding access. Under standard notice-and-comment procedures, the period between PCAC vote and a final rule has historically ranged from several months to more than a year.[2][3] Whether Secretary Kennedy would use the statutory authority in Section 503A(c) — permitting the Secretary to skip PCAC consultation 'to protect the public health' — to accelerate placement of these compounds into Category 1 remains, as of October 2026, unresolved speculation.[4]",
-        "Researchers and laboratories working with any of these compounds in the current period should note that their removal from Category 2 means the FDA is no longer treating them as presenting significant compounding safety risks, but it does not mean they are permitted for compounding, cleared for clinical use, or available in any legal form other than as research-use-only reagents from vendors operating under appropriate conditions.",
-      ],
-    },
+  "slug": "fda-second-pcac-peptides-february-2027",
+  "title": "FDA's second peptide review: what the February 2027 target means",
+  "description": "FDA plans a second peptide advisory review by the end of February 2027. The five substances, GHK-Cu's category history and what a committee vote can change.",
+  "date": "2026-10-01T08:00:00-04:00",
+  "dateModified": "2026-10-02T12:28:40Z",
+  "type": "Article",
+  "category": "Regulation",
+  "image": "fdaPcacSecond",
+  "vials": [
+    "ghk",
+    "epithalon"
   ],
-  faqs: [
+  "correction": "Correction, October 2, 2026: An earlier version treated a planned review window as a scheduled meeting, misstated the HHS secretary's chronology, and included unsupported scientific claims and a law-firm attribution. It also confused Category 1 with approval and gave an unsupported rulemaking timetable. This rewritten explainer corrects those errors using FDA records.",
+  "notice": "This article explains FDA's advisory and compounding processes. It is not a determination that a product may be used clinically. Research-grade peptides are for laboratory use only.",
+  "lead": "FDA plans to consult its Pharmacy Compounding Advisory Committee about five peptide substances before the end of February 2027. Its early announcement names the compounds but leaves the meeting time and location to be scheduled.[8] The committee would advise FDA about its compounding list; a recommendation would not approve a medicine.[9]",
+  "sections": [
     {
-      q: "Which five peptides are scheduled for the February 2027 FDA advisory panel?",
-      a: "GHK-Cu (injectable routes only; topical GHK-Cu is already on the Category 1 list), Melanotan II, Cathelicidin (LL-37), Dihexa acetate, and Pegylated Mechano Growth Factor (PEG-MGF). The FDA has not published a fixed date or public-comment docket for this session as of October 2026.",
-      refs: [1, 2],
+      "title": "Which peptides are in the second review?",
+      "id": "agenda",
+      "paragraphs": [
+        "FDA names Cathelicidin (LL-37), GHK-Cu, Dihexa acetate, Melanotan II and pegylated mechano growth factor (PEG-MGF). These are the five substances in its early meeting announcement. The February 2027 wording is a target window for consultation, not an announced meeting day.[8]",
+        "The distinction from July is concrete. Federal Register document 2026-07361, published April 16, set July 23 and 24, 2026 for a separate meeting and established docket FDA-2025-N-6895. That document concerns the July agenda, not the later five-substance session.[9] Our [July PCAC article](/fda-pcac-peptide-compounding-vote-2026) covers that earlier review."
+      ]
     },
     {
-      q: "Does a PCAC recommendation immediately permit compounding?",
-      a: "No. A favorable PCAC vote is advisory. The FDA is not required to follow it. Even after a favorable vote, formal notice-and-comment rulemaking is required before a substance is added to the 503A Bulks List. That process typically takes six to eighteen months or longer. The six July 2026 favorable votes have not yet resulted in any FDA proposed rule or enforcement policy change.",
-      refs: [2, 3],
+      "title": "What the 503A list actually does",
+      "id": "list",
+      "paragraphs": [
+        "A bulk drug substance is an ingredient used to make a compounded drug. Section 503A sets conditions under which qualifying compounded products can be exempt from certain federal requirements, including the normal drug approval requirement. That framework is different from FDA reviewing and approving a finished medicine.[9]",
+        "FDA's formal 503A bulks list is one route for an ingredient to meet the section's requirements when no applicable pharmacopeial monograph exists and it is not a component of an approved drug. The agency develops the list through rulemaking, with consultation and public input.[6]",
+        "The numbered interim categories have another purpose. Category 1 contains nominated substances under evaluation that may qualify for FDA's conditional enforcement policy. Category 2 identifies significant safety concerns. Moving out of one category does not by itself mean entry onto the final list.[6]"
+      ]
     },
     {
-      q: "What happened to the six peptides that got favorable votes in July 2026?",
-      a: "Six compounds from the July 2026 first-batch agenda received favorable advisory committee votes. As of October 2026, the FDA has not issued a proposed rule, Federal Register notice, interim enforcement policy, or draft guidance following those recommendations. The agency stated it will review the record. Emideltide (DSIP) did not receive a favorable vote.",
-      refs: [3],
+      "title": "Why GHK-Cu's category history needs the dates",
+      "id": "ghk-cu",
+      "paragraphs": [
+        "GHK-Cu illustrates how a nomination change can be mistaken for a scientific decision. FDA's May 14 list says the non-injectable entry was removed from Category 1 on April 22 because nominations had been withdrawn. On May 5, a nominator clarified that it intended to withdraw only the injectable nomination. FDA restored GHK-Cu for routes other than injection to Category 1.[5]",
+        "The scope is therefore broader than a shorthand reference to topical GHK-Cu, but it expressly excludes injection. Restoration records a change in the nomination; it does not show that FDA approved GHK-Cu as a medicine. Category 1 remains subject to the interim policy's conditions.[5][6]",
+        "The early PCAC announcement lists GHK-Cu without restricting that agenda entry to injection. Readers should use the eventual meeting notice and briefing materials to establish the precise questions FDA puts to the panel.[8] Our [GHK-Cu research explainer](/ghk-cu-peptide-research-what-studies-show) examines the clinical evidence separately."
+      ]
     },
     {
-      q: "Why was injectable GHK-Cu put on a separate review from topical GHK-Cu?",
-      a: "Topical GHK-Cu was placed on the FDA's 503A Category 1 list earlier, meaning it was already evaluated and approved for compounding in topical form. Injectable GHK-Cu has a different regulatory profile because sterile injectable preparations carry different safety and manufacturing standards than topical formulations. The FDA placed the injectable route on Category 2 in 2023 and removed it in April 2026; the February 2027 PCAC session will assess whether it should be added to the 503A Bulks List for injectable compounding.",
-      refs: [1, 6],
+      "title": "The safety questions remain part of the review",
+      "id": "safety",
+      "paragraphs": [
+        "FDA continues to publish safety concerns for substances whose nominations were withdrawn. For injectable GHK-Cu, it flags limited human data and possible immune reactions linked to peptide clumping or impurities. LL-37 also carries concerns about immune reactions and insufficient safety information.[7]",
+        "For Dihexa acetate and PEG-MGF, FDA says it has not identified human exposure data. Its Melanotan II entry cites published reports of serious adverse events, including melanoma and priapism, a prolonged erection. A case report records an event; it does not by itself establish its cause or frequency.[7]",
+        "These are substance-specific questions, not a ranking of which compound is most likely to receive a favorable vote. A familiar biological name or a change to a nomination cannot answer whether a proposed drug preparation has acceptable risks."
+      ]
     },
     {
-      q: "What is the current legal status of these five peptides for research use?",
-      a: "All five were removed from Category 2 in April 2026. They are not in the FDA's Category 1 list (except topical GHK-Cu). They remain outside the 503A Bulks List and cannot legally be compounded by pharmacies for patient use. Research-grade versions may be available from vendors operating under research-use-only conditions for laboratory purposes.",
-      refs: [1, 4],
+      "title": "How advice becomes an FDA decision",
+      "id": "process",
+      "paragraphs": [
+        "The committee supplies nonbinding scientific advice. FDA retains the decision, and its description of list development calls for notice-and-comment rulemaking: the agency publishes a proposal, receives comments and issues a final regulation.[6][8]",
+        "A meeting target is not a deadline for a final rule. Nor does a favorable committee recommendation guarantee the eventual wording or outcome. Readers following the process should distinguish the recommendation from a proposed rule and from the final regulation that would change the formal list.[6]",
+        "The April notice shows why the details matter. It identifies uses evaluated for individual substances and sets a particular meeting docket and participation deadlines. A headline saying that a peptide is under review leaves out the question the panel is being asked to consider.[9]"
+      ]
     },
+    {
+      "title": "The documents that will show what happens next",
+      "id": "next",
+      "paragraphs": [
+        "The next concrete milestone is the later meeting's own Federal Register notice. FDA's early announcement says a notice and public-comment docket are forthcoming. The notice should supply the arrangements and participation deadlines for that session.[8]",
+        "Briefing materials will then show the evidence and questions put before the panel. After the meeting, FDA's subsequent regulatory documents will determine what changes. Until those documents exist, the February 2027 target describes a planned consultation, not an approval date."
+      ]
+    }
   ],
-  sources: [
+  "faqs": [
     {
-      id: 1,
-      url: "https://chemverify.com/learn/fda-second-pcac-peptide-review-2027",
-      title: "The Next Tranche: Five More Peptides Headed to a Second FDA PCAC Review by February 2027. ChemVerify, June 2026.",
+      "q": "What does Category 3 mean?",
+      "a": "Category 3 covers substances nominated without enough supporting information for FDA to evaluate them. It is distinct from Category 2, which concerns significant safety risks, and does not qualify for the Category 1 interim policy.",
+      "refs": [
+        6
+      ]
     },
     {
-      id: 2,
-      url: "https://www.bipc.com/fda-voted-yes-on-six-peptides-now-what-the-regulatory-road-ahead",
-      title: "FDA Advisory Committee Voted Yes on Six Peptides. Now What? The Regulatory Road Ahead. Buchanan Ingersoll & Rooney, August 2026.",
+      "q": "Does the July docket also cover the later meeting?",
+      "a": "The April Federal Register notice establishes FDA-2025-N-6895 for the July meeting. FDA's early announcement for the later session says it intends to establish a public-comment docket through a forthcoming notice.",
+      "refs": [
+        8,
+        9
+      ]
     },
     {
-      id: 3,
-      url: "https://peptidenewsdigest.org/tag/pcac",
-      title: "PCAC News: Pharmacy Compounding Advisory Committee Votes. Peptide News Digest. July–August 2026 coverage of both PCAC days and post-vote status.",
-    },
-    {
-      id: 4,
-      url: "https://peptidelibrary.io/legal/are-peptides-legal-in-the-us",
-      title: "Are Peptides Legal in the US? (2026 FDA Category Guide). Peptide Library, 2026.",
-    },
-    {
-      id: 5,
-      url: "https://almanac.a1c.io/2026/06/19/the-copper-peptide-that-declines-with-age-and-drives-tissue-repair",
-      title: "The Copper Peptide That Declines With Age and Drives Tissue Repair. Almanac, June 2026.",
-    },
-    {
-      id: 6,
-      url: "https://www.thefdalawblog.com/2026/04/fdas-peptide-rally-what-compounders-and-industry-need-to-know-post-1-of-2/",
-      title: "FDA's Pep(tide) Rally! What Compounders and Industry Need to Know. FDA Law Blog, April 2026.",
-    },
+      "q": "Would inclusion on the bulks list make a compounded drug FDA-approved?",
+      "a": "No. The list concerns one condition for compounding under section 503A. That section can exempt qualifying compounded products from the usual drug approval requirement; inclusion is not approval of a finished medicine.",
+      "refs": [
+        9
+      ]
+    }
   ],
-  related: [
+  "related": [
     {
-      url: "/fda-pcac-peptide-compounding-vote-2026",
-      title: "What the FDA's July 2026 peptide compounding vote actually changes",
+      "url": "/fda-pcac-peptide-compounding-vote-2026",
+      "title": "What the FDA's July 2026 peptide compounding vote actually changes"
     },
     {
-      url: "/ghk-cu-peptide-research-what-studies-show",
-      title: "GHK-Cu: what the research on this copper peptide actually shows",
+      "url": "/ghk-cu-peptide-research-what-studies-show",
+      "title": "GHK-Cu research: what copper peptide studies show"
     },
     {
-      url: "/mots-c-mitochondria-peptide-research",
-      title: "MOTS-c: the peptide your mitochondria make and what the research says it does",
+      "url": "/mots-c-mitochondria-peptide-research",
+      "title": "MOTS-c: the peptide your mitochondria make and what the research says it does"
     },
     {
-      url: "/kpv-peptide-research-what-studies-show",
-      title: "KPV peptide: what the research actually shows on gut inflammation and wound healing",
-    },
+      "url": "/kpv-peptide-research-what-studies-show",
+      "title": "KPV peptide: what the research actually shows on gut inflammation and wound healing"
+    }
   ],
+  "sources": [
+    {
+      "id": 5,
+      "url": "https://www.fda.gov/media/94155/download?attachment=",
+      "title": "FDA. Bulk drug substances nominated under section 503A. Updated May 14, 2026."
+    },
+    {
+      "id": 6,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-used-compounding-under-section-503a-fdc-act",
+      "title": "FDA. Bulk drug substances used in compounding under section 503A."
+    },
+    {
+      "id": 7,
+      "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks",
+      "title": "FDA. Safety risks associated with certain bulk drug substances."
+    },
+    {
+      "id": 8,
+      "url": "https://www.fda.gov/advisory-committees/pharmacy-compounding-advisory-committee/meeting-pharmacy-compounding-advisory-committee",
+      "title": "FDA. Early announcement of a Pharmacy Compounding Advisory Committee meeting."
+    },
+    {
+      "id": 9,
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-16/html/2026-07361.htm",
+      "title": "Federal Register (April 16, 2026). Notice for the July PCAC meeting. Document 2026-07361."
+    }
+  ]
 };

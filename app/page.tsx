@@ -75,12 +75,10 @@ const regulatoryArticles: CardArticle[] = [
     slug: "fda-second-pcac-peptides-february-2027",
     category: "Regulatory",
     date: "2026-10-01",
-    readTime: "8 min read",
+    readTime: "6 min read",
     image: "fdaPcacSecond",
-    title:
-      "Five more peptides are heading to FDA's advisory panel: what the February 2027 review covers",
-    excerpt:
-      "After the July 2026 session recommended six peptides, a second PCAC meeting scheduled before the end of February 2027 will evaluate GHK-Cu (injectable), Melanotan II, LL-37, Dihexa acetate, and PEG-MGF. What each compound is and what the advisory process actually decides.",
+    title: "FDA's second peptide review: what the February 2027 target means",
+    excerpt: "FDA plans to review five substances before the end of February 2027. The meeting day remains unspecified in its early announcement. How the agenda, GHK-Cu category history and compounding process fit together.",
   },
   {
     slug: "fda-import-alert-66-80-glp1-api-border-enforcement",
@@ -107,12 +105,10 @@ const regulatoryArticles: CardArticle[] = [
     slug: "ghk-cu-peptide-research-what-studies-show",
     category: "Compound research",
     date: "2026-10-01",
-    readTime: "8 min read",
+    readTime: "6 min read",
     image: "ghkCuCollagen",
-    title:
-      "GHK-Cu: what the research on this copper peptide actually shows",
-    excerpt:
-      "GHK-Cu is naturally found in human plasma and has two published randomized controlled trials — unusual for a research peptide. One found 77% wound closure in diabetic ulcers versus 45% for control. The 2023 split-face RCT found 22% firmness improvement and 16% fine-line reduction. Here is what the evidence establishes.",
+    title: "GHK-Cu research: what copper peptide studies show",
+    excerpt: "Copper peptide studies measure different things: collagen production in cells, ulcer closure, skin changes after laser resurfacing and hair outcomes with a combination treatment. A guide to the results and their limits.",
   },
   {
     slug: "kpv-peptide-research-what-studies-show",
