@@ -29,6 +29,15 @@ const featuredArticle: CardArticle = {
 
 const industryArticles: CardArticle[] = [
   {
+    "slug": "body-science-supplements-garman-sentencing",
+    "category": "Industry",
+    "date": "October 2, 2026",
+    "readTime": "4 min read",
+    "title": "Body Science Supplements owner ordered to forfeit $180,000 in drug case",
+    "excerpt": "Federal prosecutors announced one year of probation and $180,000 forfeiture in a SARMs and SERMs case involving misleading labels and sales proceeds.",
+    "image": "supplementRecords"
+  },
+  {
     slug: "what-happened-to-apex-peptides",
     category: "Industry",
     date: "September 25, 2026",
@@ -71,6 +80,15 @@ const industryArticles: CardArticle[] = [
 ];
 
 const regulatoryArticles: CardArticle[] = [
+  {
+    "slug": "peptide-content-vs-purity-measurement",
+    "category": "Science",
+    "date": "October 2, 2026",
+    "readTime": "7 min read",
+    "title": "Peptide content vs purity: why the numbers answer different questions",
+    "excerpt": "A real laboratory comparison shows how water, counterions and a hidden structural impurity change the amount of peptide assigned to a sample.",
+    "image": "analyticalContent"
+  },
   {
     slug: "fda-second-pcac-peptides-february-2027",
     category: "Regulatory",

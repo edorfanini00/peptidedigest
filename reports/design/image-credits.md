@@ -140,3 +140,33 @@ These existing Higgsfield images were retained for the corrective rewrite. No im
 - Credit: The Peptide Digest; existing caption identifies an AI-generated editorial illustration and disclaims a documentary photograph. The image is not scientific evidence.
 - Historical cost quote and receipt-verified credits: **unknown**. The earlier publication ledger reports 3 credits for this image; the raw job receipt does not verify that number. No new charge in this corrective run.
 - Retained WebP SHA-256: `74a40258381940614a97d0f82c1c7614371882b4246bfdf81b1a344864748253`.
+
+## October 2, 2026 new drafts
+
+Both images were submitted by the parent run. No new generation or retry was made by the builder. Originals, create receipts, completed jobs and exact quotes are retained in /Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-02/run-0800. Native dimensions were measured from downloaded PNG files, not inferred from the requested resolution. Both originals were visually inspected.
+
+### analytical-content
+
+- Asset: `public/images/analytical-content-20261002.webp`
+- Provider/model: Higgsfield subscription CLI / nano_banana_pro
+- Requested parameters: 3:2, 2k
+- Exact pre-submission quote: {"credits":2}; quote is not a separate billing transaction receipt.
+- Completed job: `75fa6ab3-b649-4a79-8ca1-534f9beafa91`
+- Native PNG: 2528 × 1696, 9130289 bytes
+- Optimized WebP: 1600 × 1073, 68162 bytes; quality 84, no upscaling
+- Caption: AI-generated editorial illustration of laboratory measurement, not a photograph of an experiment.
+- Prompt: Photorealistic editorial photograph of a peptide analytical chemistry laboratory, close view of an analytical microbalance with a capped unbranded sample container inside its glass draft shield, liquid chromatograph in soft focus behind, warm natural light, realistic scientific instruments, no text, no labels, no molecular diagrams, no syringes, no pills, no people. Horizontal 3:2.
+- Credit: The Peptide Digest via Higgsfield. AI-generated editorial concept. No real business, event, person or experiment is represented.
+
+### supplement-records
+
+- Asset: `public/images/supplement-records-20261002.webp`
+- Provider/model: Higgsfield subscription CLI / nano_banana_pro
+- Requested parameters: 3:2, 2k
+- Exact pre-submission quote: {"credits":2}; quote is not a separate billing transaction receipt.
+- Completed job: `d05fe336-f41c-4032-a0cf-980d68c9cf8c`
+- Native PNG: 2528 × 1696, 7626009 bytes
+- Optimized WebP: 1600 × 1073, 75968 bytes; quality 84, no upscaling
+- Caption: AI-generated editorial illustration, not a photograph of the event or Body Science Supplements.
+- Prompt: Photorealistic editorial still life about the financial records in a research chemical misbranding prosecution. A modest unoccupied supplement store packing counter with generic unbranded cardboard shipping parcels, a closed account ledger and neatly arranged blank transaction papers, monitor seen from behind. Documentary photographic lighting, realistic ordinary commercial interior, restrained colors, no people, no readable text, no business branding, no seals, no police, no pills, no syringes, no product bottles. Not a depiction of an actual business or event. Horizontal 3:2.
+- Credit: The Peptide Digest via Higgsfield. AI-generated editorial concept. No real business, event, person or experiment is represented.
