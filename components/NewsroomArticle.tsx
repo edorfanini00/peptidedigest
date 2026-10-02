@@ -10,6 +10,7 @@ import styles from "./NewsroomArticle.module.css";
 
 export interface NewsroomStory {
   slug: string; title: string; description: string; date: string;
+  dateModified?: string; correction?: string;
   type: "Article" | "NewsArticle"; category: string; image: ImageKey;
   vials: [IQONVial, IQONVial]; lead: string; notice: string;
   sections: { title: string; id: string; paragraphs: string[] }[];
@@ -25,7 +26,7 @@ export function newsroomMetadata(story: NewsroomStory): Metadata {
     title: { absolute: `${story.title} | The Peptide Digest` }, description: story.description,
     alternates: { canonical: url },
     openGraph: { type: "article", url, title: story.title, description: story.description,
-      publishedTime: story.date, modifiedTime: story.date,
+      publishedTime: story.date, modifiedTime: story.dateModified ?? story.date,
       images: [{ url: base + image.src, width: image.width, height: image.height, alt: image.alt }] },
     twitter: { card: "summary_large_image", title: story.title, description: story.description,
       images: [base + image.src] },
@@ -49,7 +50,7 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
   const image = images[story.image];
   const schema = { "@context": "https://schema.org", "@graph": [
     { "@type": story.type, "@id": `${url}#article`, headline: story.title, description: story.description,
-      datePublished: story.date, dateModified: story.date,
+      datePublished: story.date, dateModified: story.dateModified ?? story.date,
       author: { "@type": "Organization", name: "The Peptide Digest", url: base },
       publisher: { "@type": "NewsMediaOrganization", name: "The Peptide Digest", url: base },
       image: { "@type": "ImageObject", url: base + image.src, width: image.width, height: image.height },
@@ -61,10 +62,14 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
   ] };
   return <><Nav /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <main className="article-shell">
-      <ArticleHero category={story.category} title={story.title} meta={<time dateTime={story.date}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.date))}</time>} image={story.image} />
+      <ArticleHero category={story.category} title={story.title} meta={<>
+        <time dateTime={story.date}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.date))}</time>
+        {story.dateModified && <> · Revised <time dateTime={story.dateModified}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.dateModified))}</time></>}
+      </>} image={story.image} />
       <article className={`article-body ${styles.body}`} data-newsroom-article>
         <p data-answer-lead className="text-lg font-medium"><RichText text={story.lead} story={story} /></p>
         <IQONPartner vial={story.vials[0]} />
+        {story.correction && <p data-correction-note className="text-sm text-[color:var(--color-muted)]">{story.correction}</p>}
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
         <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}<li><a href="#questions">Frequently asked questions</a></li></ul></nav>
         {story.sections.map(section => <section key={section.id} className={styles.section} aria-labelledby={section.id}>

@@ -392,6 +392,28 @@ export const images = {
     credit: "Illustration: The Peptide Digest",
     kind: "illustration",
   },
+  analyticalContent: {
+    "src": "/images/analytical-content-20261002.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "An unbranded capped sample container inside an analytical balance, with laboratory instruments behind it",
+    "caption": "AI-generated editorial illustration of laboratory measurement, not a photograph of an experiment.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  supplementRecords: {
+    "src": "/images/supplement-records-20261002.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "Unbranded shipping parcels, a closed ledger and transaction papers on an empty packing counter",
+    "caption": "AI-generated editorial illustration, not a photograph of the event or Body Science Supplements.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;

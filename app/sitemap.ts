@@ -7,14 +7,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/body-science-supplements-garman-sentencing`,
+      lastModified: new Date("2026-10-02T08:28:09-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-content-vs-purity-measurement`,
+      lastModified: new Date("2026-10-02T08:28:09-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/ghk-cu-peptide-research-what-studies-show`,
-      lastModified: new Date("2026-10-01T08:00:00-04:00"),
+      lastModified: new Date("2026-10-02T12:54:27Z"),
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${base}/fda-second-pcac-peptides-february-2027`,
-      lastModified: new Date("2026-10-01T08:00:00-04:00"),
+      lastModified: new Date("2026-10-02T12:28:40Z"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
