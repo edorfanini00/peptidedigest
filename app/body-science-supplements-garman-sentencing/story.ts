@@ -22,14 +22,14 @@ export const story: NewsroomStory = {
         "The case concerned selective androgen receptor modulators, known as SARMs, and selective estrogen receptor modulators, or SERMs, rather than peptides.[1] Prosecutors described sales through a supplement store and the internet, followed by transfers of the proceeds between business and personal accounts.[1]",
         "Garman opened Body Science Supplements in Lebanon, Pennsylvania, around March 30, 2019.[1] The store sold vitamins and supplements, but Garman and an associate also used the business and the Savior Research brands to sell unapproved and misbranded drugs.[1]",
         "Garman admitted that he conspired to distribute and did distribute SARMs and SERMs across state lines from 2019 to 2021, knowing the activity was unlawful under federal drug law.[1] Products sold online reached customers through the U.S. Mail and private carriers.[1]",
-        "Total product sales through the business and its associated brands exceeded $2.2 million.[1] Prosecutors said the large majority consisted of unapproved and misbranded drugs; that figure describes the operation's sales, not Garman's personal profit.[1]"
+        "Total product sales through the business and its associated brands exceeded $2.2 million.[1][6] Prosecutors said the large majority consisted of unapproved and misbranded drugs; that figure describes the operation's sales, not Garman's personal profit.[1]"
       ]
     },
     {
       "title": "The label contradicted the sales conduct",
       "id": "the-label-contradicted-the-sales-conduct",
       "paragraphs": [
-        "The words \"not for human consumption\" were part of the labeling prosecutors described as false and misleading.[1] Garman and an associate also gave customers advice about taking the products, a direct conflict with the label's stated purpose.[1]",
+        "The bottles carried conflicting messages: they were labeled as dietary supplements, for research purposes only and not for human consumption, as Pennsylvania news outlet PennLive reported in June.[6] Garman and an associate also gave customers advice about taking the products, a direct conflict with the labels' stated purpose.[1][6]",
         "Federal drug regulations assess intended use through more than the words printed on a package.[4] The rule at 21 CFR 201.128 identifies labeling claims, advertising, oral or written statements, and the circumstances of distribution as evidence of the responsible person's objective intent.[4]",
         "In this case, the government's account describes a seller who knew the products were intended to affect the body and helped customers use them.[1] The sales conduct matters because it helps establish what the products were being sold for, even when the label says otherwise.[1][4]",
         "FDA had warned about this market well before the sentencing announcement.[3] Its April 2023 consumer update says SARMs are unapproved drugs and cannot legally be marketed in the United States as dietary supplements or drugs.[3] The agency also warns of associations with serious health problems, including liver injury and increased risk of heart attack or stroke.[3]",
@@ -70,6 +70,11 @@ export const story: NewsroomStory = {
       "id": 4,
       "url": "https://www.law.cornell.edu/cfr/text/21/201.128",
       "title": "21 CFR 201.128: Meaning of intended uses"
+    },
+    {
+      "id": 6,
+      "url": "https://www.pennlive.com/crime/2026/06/central-pa-bodybuilder-busted-for-selling-22-million-in-drugs-not-for-human-consumption.html",
+      "title": "Jonathan Bergmueller, PennLive: June reporting on sales and conflicting product labels"
     }
   ],
   "related": [

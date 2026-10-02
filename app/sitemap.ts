@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/ghk-cu-peptide-research-what-studies-show`,
-      lastModified: new Date("2026-10-02T12:28:40Z"),
+      lastModified: new Date("2026-10-02T12:54:27Z"),
       changeFrequency: "monthly",
       priority: 0.85,
     },

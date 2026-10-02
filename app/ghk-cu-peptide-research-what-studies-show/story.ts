@@ -5,7 +5,7 @@ export const story: NewsroomStory = {
   "title": "GHK-Cu research: what copper peptide studies show",
   "description": "GHK-Cu research spans collagen experiments, wound healing and small skin and hair studies. What the results mean, and why formulation and study design matter.",
   "date": "2026-10-01T08:00:00-04:00",
-  "dateModified": "2026-10-02T12:28:40Z",
+  "dateModified": "2026-10-02T12:54:27Z",
   "type": "Article",
   "category": "Research",
   "image": "ghkCuCollagen",
@@ -29,9 +29,10 @@ export const story: NewsroomStory = {
       "title": "What the diabetic ulcer trial measured",
       "id": "human-trials",
       "paragraphs": [
-        "The 1994 Mulder trial tested a topical copper peptide gel in diabetic neuropathic ulcers. It was randomized, conducted at multiple centers and assessed by blinded evaluators. Participants also received structured wound care, including pressure relief and removal of damaged tissue.[2]",
-        "Median ulcer-area closure was 98.5 percent with the gel versus 60.8 percent with vehicle, its base formulation. The difference met the reported threshold of p < 0.05. These are changes in wound area, not percentages of patients completely healed.[2]",
-        "Among ulcers treated immediately after initial wound care, infections occurred in 7 percent with gel versus 34 percent with vehicle. Several authors were affiliated with ProCyte Corporation. These results concern the tested gel within that care program.[2]"
+        "The 1994 Mulder trial enrolled 181 people with diabetic neuropathic ulcers. It was randomized, conducted at multiple centers and assessed by blinded evaluators. Participants also received structured wound care, including pressure relief and removal of damaged tissue.[2]",
+        "The immediate treatment groups received gel or vehicle, its base formulation, for up to eight weeks after removal of damaged tissue, followed by six weeks of observation and wound measurements. A separate delayed treatment comparison began with four weeks of vehicle, then another eight weeks of treatment.[2]",
+        "Among participants with plantar ulcers, on the sole of the foot, who began treatment immediately, median ulcer-area closure at the end of the study was 98.5 percent with gel versus 60.8 percent with vehicle (p < 0.05). This was a subgroup result, not an average across all 181 participants, and it measured changes in wound area rather than the percentage of patients completely healed.[2]",
+        "In that immediate treatment plantar subgroup, ulcer infections occurred in 7 percent with gel versus 34 percent with vehicle. Overall adverse-event rates did not differ significantly between the gel and vehicle groups. Several authors were affiliated with ProCyte Corporation, the gel manufacturer. These results concern the tested gel within that wound-care program.[2]"
       ]
     },
     {
@@ -39,8 +40,8 @@ export const story: NewsroomStory = {
       "id": "skin",
       "paragraphs": [
         "A 2006 randomized study examined skin care with or without GHK-Cu after carbon dioxide laser resurfacing around the mouth. Thirteen people completed it. Blinded evaluators and computer analysis assessed redness, and the researchers evaluated wrinkles and skin appearance at 12 weeks.[3]",
-        "Both groups improved after the laser procedure. Adding GHK-Cu produced no statistically significant advantage in the objective assessments of redness, wrinkles or overall skin quality. Participants using GHK-Cu did report greater improvement in overall skin quality on a questionnaire.[3]",
-        "Those findings can coexist: satisfaction and an evaluator's measurement answer different questions. This small study concerned recovery after a procedure. It cannot settle whether a different formulation improves ordinary skin aging, and its favorable satisfaction result should not be presented as an objective wrinkle reduction.[3]"
+        "Both groups improved after the laser procedure. Adding GHK-Cu produced no statistically significant advantage in the objective assessments of redness, wrinkles or overall skin quality.[3]",
+        "Participants using GHK-Cu reported greater improvement in overall skin quality on a questionnaire. But they knew which products they received, received them free and had more contact with physicians for product guidance, all potential influences on satisfaction. With only 13 completers recovering from a procedure, the study leaves ordinary skin aging and other formulations unresolved.[3]"
       ]
     },
     {
@@ -122,7 +123,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 2,
-      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1524-475X.1994.20406.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17147644/",
       "title": "Mulder et al. (1994). Enhanced healing of ulcers in patients with diabetes."
     },
     {

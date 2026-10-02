@@ -125,7 +125,7 @@ These existing Higgsfield images were retained for the corrective rewrite. No im
 - Original output URL: https://d8j0ntlcm91z4.cloudfront.net/user_33ibdd5nxAJxCc3puNAhqvohS9s/hf_20261001_120414_6a179fde-a8f1-46cc-b623-e69d791f8ae7.png
 - Prompt from receipt: Macro close-up editorial photograph style illustration: a single small unlabeled clear glass research vial containing pale blue solution sitting on a clean white laboratory bench beside a petri dish containing a magnified dermal tissue cross-section showing dense collagen fibrils. Soft diffused light from the left. No text, no labels, no people. Scientific but accessible. Warm neutral background. Research laboratory setting.
 - Credit: The Peptide Digest; existing caption identifies an AI-generated editorial illustration and disclaims a documentary photograph. The image is not scientific evidence.
-- Historical cost quote and receipt-verified credits: **unknown**. The earlier publication ledger reports 3 credits for this image; the raw job receipt does not verify that number. No new charge in this corrective run.
+- Historical pre-submission cost quote: **still missing**. The October 2 run’s `media-transactions.json` records a 2-credit Nano Banana Pro spend at `2026-10-01T12:04:14.724765Z`, matching this generation timestamp within one second. This timestamp reconciliation corrects the earlier 3-credit claim; the transaction has no job ID, so an exact ID join is not claimed. No new charge in this corrective run.
 - Retained WebP SHA-256: `31fcef7a9343b785ae2f9d197df7b144fc1949857553db47bf5786b90e644a36`.
 
 ### `fdaPcacSecond`: `fda-pcac-second-review.webp`
@@ -138,7 +138,7 @@ These existing Higgsfield images were retained for the corrective rewrite. No im
 - Original output URL: https://d8j0ntlcm91z4.cloudfront.net/user_33ibdd5nxAJxCc3puNAhqvohS9s/hf_20261001_120738_d4b985fe-7fb7-4fd3-9a0c-0a23b69d4ed1.png
 - Prompt from receipt: Editorial photograph style illustration: a clean modern government advisory meeting room with a long rectangular table, several empty chairs, and a projection screen at the far end displaying a generic agenda document with the title '503A Bulk Substances Review' in plain text. No people. Soft institutional lighting. Neutral colors. No logos, no agency seals, no identifiable branding.
 - Credit: The Peptide Digest; existing caption identifies an AI-generated editorial illustration and disclaims a documentary photograph. The image is not scientific evidence.
-- Historical cost quote and receipt-verified credits: **unknown**. The earlier publication ledger reports 3 credits for this image; the raw job receipt does not verify that number. No new charge in this corrective run.
+- Historical pre-submission cost quote: **still missing**. The October 2 run’s `media-transactions.json` records a 2-credit Nano Banana Pro spend at `2026-10-01T12:07:38.398088Z`, matching this generation timestamp within one second. This timestamp reconciliation corrects the earlier 3-credit claim; the transaction has no job ID, so an exact ID join is not claimed. No new charge in this corrective run.
 - Retained WebP SHA-256: `74a40258381940614a97d0f82c1c7614371882b4246bfdf81b1a344864748253`.
 
 ## October 2, 2026 new drafts
