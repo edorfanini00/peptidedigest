@@ -7,7 +7,7 @@ export const story: NewsroomStory = {
   description:
     "FDA advisers recommended six peptides for the 503A compounding list in July 2026. What the vote means for rulemaking, prescription access and research use.",
   date: "2026-09-29T08:00:00-04:00",
-  dateModified: "2026-10-03T13:22:44.305Z",
+  dateModified: "2026-10-03T14:26:39.368Z",
   correction: "Correction: We corrected the compounding eligibility rules, research use labeling and regulatory chronology, including the May restoration of non-injectable GHK-Cu to Category 1. We also corrected the four review criteria, narrowed the evidence claims, and removed an unsupported panelist attribution, agency-silence claims and rulemaking timetable.",
   type: "NewsArticle",
   category: "Regulatory",
@@ -44,7 +44,7 @@ export const story: NewsroomStory = {
       ],
     },
     {
-      title: "What panel members said to justify yes votes",
+      title: "The case for inclusion and the close votes",
       id: "yes-vote-rationale",
       paragraphs: [
         "Supporters of inclusion emphasized patient access and argued that bringing the compounds into pharmacy compounding could improve oversight of a market already supplying them.[1]",

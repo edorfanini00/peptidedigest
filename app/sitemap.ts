@@ -56,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/fda-pcac-peptide-compounding-vote-2026`,
-      lastModified: new Date("2026-10-03T13:22:44.305Z"),
+      lastModified: new Date("2026-10-03T14:26:39.368Z"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
