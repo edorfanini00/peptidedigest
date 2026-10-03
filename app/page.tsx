@@ -81,6 +81,24 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    "slug": "eloratzp-phase-2-results-weight-loss-tolerability",
+    "category": "Clinical research",
+    "date": "October 3, 2026",
+    "readTime": "5 min read",
+    "title": "Lilly reports greater weight loss with EloraTZP, but higher withdrawal rates",
+    "excerpt": "Lilly's 48 week trial compared EloraTZP with tirzepatide alone. Greater average weight loss came with more adverse-event withdrawals and an important analysis assumption.",
+    "image": "eloratzpAssessment"
+  },
+  {
+    "slug": "endotoxin-vs-sterility-peptide-research",
+    "category": "Science",
+    "date": "October 3, 2026",
+    "readTime": "7 min read",
+    "title": "Endotoxin vs sterility: why sterile does not mean endotoxin free",
+    "excerpt": "Laboratory studies show why bacterial fragments can remain after filtration and how an endotoxin assay can miss material that still activates immune cells.",
+    "image": "endotoxinAssay"
+  },
+  {
     "slug": "peptide-content-vs-purity-measurement",
     "category": "Science",
     "date": "October 2, 2026",
@@ -117,7 +135,7 @@ const regulatoryArticles: CardArticle[] = [
     image: "fdaPcacMeeting",
     title: "What the FDA's July 2026 peptide compounding vote actually changes",
     excerpt:
-      "An FDA advisory panel recommended six peptides for the compounding drugs list, over the objection of the agency's own scientists. What the 8-6 votes mean, why pharmacies still cannot compound these compounds today, and what formal rulemaking requires next.",
+      "An FDA advisory panel recommended six peptides for the compounding list over staff objections. What the vote means for rulemaking, patient-specific prescriptions and research use.",
   },
   {
     slug: "ghk-cu-peptide-research-what-studies-show",

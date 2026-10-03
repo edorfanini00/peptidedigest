@@ -170,3 +170,29 @@ Both images were submitted by the parent run. No new generation or retry was mad
 - Caption: AI-generated editorial illustration, not a photograph of the event or Body Science Supplements.
 - Prompt: Photorealistic editorial still life about the financial records in a research chemical misbranding prosecution. A modest unoccupied supplement store packing counter with generic unbranded cardboard shipping parcels, a closed account ledger and neatly arranged blank transaction papers, monitor seen from behind. Documentary photographic lighting, realistic ordinary commercial interior, restrained colors, no people, no readable text, no business branding, no seals, no police, no pills, no syringes, no product bottles. Not a depiction of an actual business or event. Horizontal 3:2.
 - Credit: The Peptide Digest via Higgsfield. AI-generated editorial concept. No real business, event, person or experiment is represented.
+
+## October 3, 2026 newsroom illustrations
+
+Two supplied Higgsfield illustrations, generated and inspected by the parent. Optimized derivatives also visually inspected. No new generation or spending during implementation. Private provenance: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-03/run-0800/media-manifest.json`.
+
+### `endotoxinAssay`: `endotoxin-assay-20261003.webp`
+
+- Job `95ec8924-f7fd-45ae-8c8b-76c4508bbfb2`, completed; generated 2026-10-03T12:11:08.724435Z.
+- Model `nano_banana_pro`; requested 3:2, 2k, batch 1. Actual original 2528 × 1696, 7337605 bytes.
+- WebP derivative 1600 × 1073, 53704 bytes; resized without upscaling, aspect retained within integer-pixel rounding.
+- Original SHA-256: `d7c6cf0214a3cd3f52946423a5dc1db34e28c84c9f911d5aaddc1dcbcd0f308c`. Derivative SHA-256: `646a4144d41f9c2c1656fa4fd82e950121e4daf85083ed4ff5cc1f2b7b78894e`.
+- Exact quote 2 credits; spend 2 credits at 2026-10-03T12:11:08.799943Z, within one second of generation. Timestamp reconciliation only: transactions contain no job-ID join.
+- Caption: AI-generated editorial illustration of laboratory assays, not a photograph of the studies or an actual experiment.
+- Credit: The Peptide Digest. Prompt, intent, receipt, output URL and original retained in the private manifest.
+
+### `eloratzpAssessment`: `eloratzp-assessment-20261003.webp`
+
+- Job `4ad2235c-08b0-4dd3-82c0-dfdca031c0a7`, completed; generated 2026-10-03T12:11:54.348866Z.
+- Model `nano_banana_pro`; requested 3:2, 2k, batch 1. Actual original 2528 × 1696, 7974079 bytes.
+- WebP derivative 1600 × 1073, 54628 bytes; resized without upscaling, aspect retained within integer-pixel rounding.
+- Original SHA-256: `3123bd0257099da537ae0f230781ccd94b6bc494436917e65050b8236bf3dfbb`. Derivative SHA-256: `eb36c5f82cd3e5e171507617db832b19240dc9a9ec28400e110127f123ee0183`.
+- Exact quote 2 credits; spend 2 credits at 2026-10-03T12:11:54.522677Z, within one second of generation. Timestamp reconciliation only: transactions contain no job-ID join.
+- Caption: AI-generated editorial illustration of a fictional weight assessment room, not a photograph of the trial or a Lilly facility.
+- Credit: The Peptide Digest. Prompt, intent, receipt, output URL and original retained in the private manifest.
+
+Total quoted and reconciled cost: 4 credits, 2 per image. No retry, top-up or provider substitution.

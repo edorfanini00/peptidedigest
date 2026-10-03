@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/eloratzp-phase-2-results-weight-loss-tolerability`,
+      lastModified: new Date("2026-10-03T12:22:14Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/endotoxin-vs-sterility-peptide-research`,
+      lastModified: new Date("2026-10-03T12:19:36Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/body-science-supplements-garman-sentencing`,
       lastModified: new Date("2026-10-02T08:28:09-04:00"),
       changeFrequency: "monthly",
@@ -44,7 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/fda-pcac-peptide-compounding-vote-2026`,
-      lastModified: new Date("2026-09-29T08:00:00-04:00"),
+      lastModified: new Date("2026-10-03T14:26:39.368Z"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
