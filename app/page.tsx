@@ -135,7 +135,7 @@ const regulatoryArticles: CardArticle[] = [
     image: "fdaPcacMeeting",
     title: "What the FDA's July 2026 peptide compounding vote actually changes",
     excerpt:
-      "An FDA advisory panel recommended six peptides for the compounding drugs list, over the objection of the agency's own scientists. What the 8-6 votes mean, why pharmacies still cannot compound these compounds today, and what formal rulemaking requires next.",
+      "An FDA advisory panel recommended six peptides for the compounding list over staff objections. What the vote means for rulemaking, patient-specific prescriptions and research use.",
   },
   {
     slug: "ghk-cu-peptide-research-what-studies-show",
