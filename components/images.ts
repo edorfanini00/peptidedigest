@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  endotoxinAssay: {
+    "src": "/images/endotoxin-assay-20261003.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "AI-generated illustration of a multiwell assay plate and culture dish beside a laboratory microplate reader",
+    "caption": "AI-generated editorial illustration of laboratory assays, not a photograph of the studies or an actual experiment.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest",
+    "kind": "illustration"
+  },
+  eloratzpAssessment: {
+    "src": "/images/eloratzp-assessment-20261003.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "AI-generated illustration of a weighing scale and study folder in an empty fictional research assessment room",
+    "caption": "AI-generated editorial illustration of a fictional weight assessment room, not a photograph of the trial or a Lilly facility.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest",
+    "kind": "illustration"
+  },
   enicepatideComparison: {
     src: "/images/enicepatide-hba1c-analysis.webp",
     width: 1800,
