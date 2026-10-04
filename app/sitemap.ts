@@ -152,7 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: now,
+      lastModified: "2026-10-04",
       changeFrequency: "daily",
       priority: 1,
     },
