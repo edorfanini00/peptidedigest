@@ -81,6 +81,25 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    "slug": "icotrokinra-psoriasis-two-year-iconic-total-results",
+    "category": "Clinical research",
+    "date": "October 4, 2026",
+    "readTime": "6 min read",
+    "title": "Icotrokinra psoriasis results: what the two-year follow-up adds",
+    "excerpt": "J&J reports psoriasis follow-up through week 112. What the original randomized trial showed, why body site matters, and how to read the longer-term results.",
+    "image": "icotrokinraDermatology"
+  },
+  {
+    "slug": "d-vs-l-amino-acids-peptide-signaling",
+    "category": "Science",
+    "date": "October 4, 2026",
+    "readTime": "5 min read",
+    "title": "D vs L amino acids: how one flip changes a peptide signal",
+    "excerpt": "D and L amino acids can give a peptide different receptor preferences without changing its mass. What animal peptide experiments reveal about chirality.",
+    "image": "aplysiaSeaHare"
+  },
+
+  {
     "slug": "eloratzp-phase-2-results-weight-loss-tolerability",
     "category": "Clinical research",
     "date": "October 3, 2026",

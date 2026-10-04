@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/icotrokinra-psoriasis-two-year-iconic-total-results`,
+      lastModified: new Date("2026-10-04T16:30:15Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/d-vs-l-amino-acids-peptide-signaling`,
+      lastModified: new Date("2026-10-04T16:28:34Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/eloratzp-phase-2-results-weight-loss-tolerability`,
       lastModified: new Date("2026-10-03T12:22:14Z"),
       changeFrequency: "weekly",
@@ -140,7 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: now,
+      lastModified: "2026-10-04",
       changeFrequency: "daily",
       priority: 1,
     },

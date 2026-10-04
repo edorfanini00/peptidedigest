@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  icotrokinraDermatology: {
+    "src": "/images/icotrokinra-dermatology-20261004.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "AI-generated illustration of a dermatoscope and closed blank file in an empty fictional dermatology room",
+    "caption": "AI-generated editorial illustration of a fictional dermatology setting, not a photograph of the trial.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest",
+    "kind": "illustration"
+  },
+  aplysiaSeaHare: {
+    "src": "/images/aplysia-sea-hare-20261004.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "AI-generated representation of a mottled brown sea hare resting on a rock in shallow seawater",
+    "caption": "AI-generated editorial illustration representing a sea hare, the animal model in the cited research, not a photograph of the experiments.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest",
+    "kind": "illustration"
+  },
   endotoxinAssay: {
     "src": "/images/endotoxin-assay-20261003.webp",
     "width": 1600,
