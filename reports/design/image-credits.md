@@ -196,3 +196,32 @@ Two supplied Higgsfield illustrations, generated and inspected by the parent. Op
 - Credit: The Peptide Digest. Prompt, intent, receipt, output URL and original retained in the private manifest.
 
 Total quoted and reconciled cost: 4 credits, 2 per image. No retry, top-up or provider substitution.
+
+
+## October 4, 2026 newsroom illustrations
+
+Two parent-supplied and parent-approved Higgsfield illustrations. Builder inspected originals and optimized without upscaling. No builder generation or spending. Private provenance: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-04/run-1212/builder-media-manifest.json`.
+
+### icotrokinraDermatology
+
+- Asset: `public/images/icotrokinra-dermatology-20261004.webp`
+- Model: nano_banana_pro; requested 3:2, 2k; job `37244ebc-d697-4378-b81c-d2030b62b51d`.
+- Original: 2528 × 1696, 4867791 bytes; SHA-256 `1299f565f0ac22ed3e23619cdd9ef9f8417d5150fd28826b0dc566d8615ac55b`.
+- WebP: 1600 × 1073, 41100 bytes; quality 84; SHA-256 `e21c65ec03b3e750fda42fe7149bfca037a3ab648ae21c2ba21741a0aa7b8ae5`.
+- Pre-submission quote: 2 credits. Parent reconciled a 2-credit transaction by model, amount and timestamp; no direct job-ID linkage in transactions.
+- Caption: AI-generated editorial illustration of a fictional dermatology setting, not a photograph of the trial.
+- Credit: The Peptide Digest.
+- Prompt: Photorealistic editorial photograph of an empty dermatology examination room focused on a handheld dermatoscope resting on a clean ivory work surface beside an unmarked closed clinical file and magnifying examination lamp. Fine realistic optical glass detail and brushed metal, soft natural window light, warm white neutral palette, restrained newspaper health science photography. No people, skin closeups, patient data, text, letters, logos, brands, drugs, tablets, syringes, needles or vials. Fictional clinical setting, not any actual trial facility. Landscape composition 3:2.
+
+### aplysiaSeaHare
+
+- Asset: `public/images/aplysia-sea-hare-20261004.webp`
+- Model: nano_banana_pro; requested 3:2, 2k; job `599a507a-b7b9-454d-95d3-c96f9afcc2c0`.
+- Original: 2528 × 1696, 9039952 bytes; SHA-256 `53a23b394b6cbc925ffb0c5c4cd7f5f8bcdb4e3d07fdb27b976065595f3da940`.
+- WebP: 1600 × 1073, 178024 bytes; quality 84; SHA-256 `74c1f65dae8005340633f69f04c917cffdee3262d97d726b9a3fa734b7ddb85d`.
+- Pre-submission quote: 2 credits. Parent reconciled a 2-credit transaction by model, amount and timestamp; no direct job-ID linkage in transactions.
+- Caption: AI-generated editorial illustration representing a sea hare, the animal model in the cited research, not a photograph of the experiments.
+- Credit: The Peptide Digest.
+- Prompt: Photorealistic editorial macro photograph of a single California sea hare Aplysia californica resting on a natural rock in a clear shallow seawater research aquarium. Brown mottled soft body, folded side flaps and characteristic paired rolled rhinophores, scientifically plausible sea slug anatomy, fine natural texture, quiet observational marine biology photograph, soft side light, muted aquamarine water and warm stone. Wide 3:2 composition with subject in crisp focus. No illustration, no cartoon, no drawing, no molecular diagram, no typography, no labels, no human hands, no equipment obscuring animal. This is a generated representation of the model organism, not a documented experiment.
+
+Total parent-reconciled cost: 4 credits. No retries or top-ups.
