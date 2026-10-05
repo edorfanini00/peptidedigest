@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/semaglutide-kidney-biopsy-trial-remodel-results`,
+      lastModified: new Date("2026-10-05T12:28:24Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/what-is-amylin-amylin-analogs-vs-glp-1`,
+      lastModified: new Date("2026-10-05T12:28:24Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/icotrokinra-psoriasis-two-year-iconic-total-results`,
       lastModified: new Date("2026-10-04T16:30:15Z"),
       changeFrequency: "weekly",
@@ -152,7 +164,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-04",
+      lastModified: "2026-10-05",
       changeFrequency: "daily",
       priority: 1,
     },
