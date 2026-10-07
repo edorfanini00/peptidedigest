@@ -3,8 +3,8 @@ import type { NewsroomStory } from "@/components/NewsroomArticle";
 export const story: NewsroomStory = {
   "slug": "semaglutide-kidney-biopsy-trial-remodel-results",
   "title": "Semaglutide kidney trial misses its main MRI goals, but biopsies offer clues",
-  "description": "A year-long trial biopsied kidneys before and after semaglutide. Its main MRI tests were negative, but vessel, scarring and gene signals hint at how it works.",
-  "date": "2026-10-05T12:28:24Z",
+  "description": "REMODEL studied semaglutide in 106 people, including 33 in a kidney biopsy group. Main MRI tests were negative; vessel and gene signals offer clues.",
+  "date": "2026-10-07T08:15:35-04:00",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "semaglutideKidneyMri",
@@ -67,7 +67,7 @@ export const story: NewsroomStory = {
       "title": "How far the findings stretch",
       "id": "limits",
       "paragraphs": [
-        "No formal hypothesis testing, multiplicity adjustment or testing hierarchy was planned. The P values for the many secondary and exploratory outcomes are nominal, and the authors write that they \"should therefore be interpreted with caution.\" With so many outcomes examined, some could look positive by chance.[1]",
+        "No formal hypothesis testing, multiplicity adjustment or testing hierarchy was planned for the three coprimary MRI outcomes. The P values for the many secondary and exploratory outcomes are nominal, and the authors write that they \"should therefore be interpreted with caution.\" With so many outcomes examined, some could look positive by chance.[1]",
         "The links among imaging, tissue and clinical results are associations, because no mediation analysis was done. Filtration was not measured directly with a tracer such as iohexol, and the small number of women limits what the trial can say about them. REMODEL tracked mechanisms for a year and was never designed to show fewer kidney failures. That evidence comes from FLOW.[1][4]"
       ]
     },
@@ -100,7 +100,7 @@ export const story: NewsroomStory = {
   "faqs": [
     {
       "q": "Does semaglutide cause kidney damage?",
-      "a": "In FLOW, semaglutide lowered the risk of major kidney events by 24% versus placebo, and serious adverse events were less common than with placebo.[4] The Ozempic label warns of acute kidney injury reported after approval, mostly in people dehydrated by gastrointestinal side effects.[5] In the smaller REMODEL trial, serious acute kidney injury was recorded in 4 of 71 semaglutide participants and none of 35 on placebo.[2]",
+      "a": "In FLOW, semaglutide lowered the risk of major kidney events by 24% versus placebo, and serious adverse events were less common than with placebo. The Ozempic label warns of acute kidney injury reported after approval, mostly in people dehydrated by gastrointestinal side effects. In the smaller REMODEL trial, serious acute kidney injury was recorded in 4 of 71 semaglutide participants and none of 35 on placebo.",
       "refs": [
         4,
         5,
@@ -109,7 +109,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "Is semaglutide the same drug as Ozempic and Wegovy?",
-      "a": "Semaglutide is the active ingredient in both. REMODEL tested weekly semaglutide injections in people with type 2 diabetes and chronic kidney disease, the population covered by Ozempic's kidney indication.[1][5][6]",
+      "a": "Semaglutide is the active ingredient in both. REMODEL tested weekly semaglutide injections in people with type 2 diabetes and chronic kidney disease, the population covered by Ozempic's kidney indication.",
       "refs": [
         1,
         5,
@@ -148,8 +148,8 @@ export const story: NewsroomStory = {
     },
     {
       "id": 6,
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5e548d0-cc79-4c34-a3f5-e20a5b8b6564",
-      "title": "Wegovy (semaglutide) injection prescribing information (DailyMed)"
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b",
+      "title": "Wegovy (semaglutide) injection and tablets prescribing information (DailyMed)"
     },
     {
       "id": 7,

@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "what-is-amylin-amylin-analogs-vs-glp-1",
   "title": "What is amylin? How amylin analogs differ from GLP-1 drugs",
   "description": "Amylin is a hormone released with insulin. Here is how amylin analogs such as cagrilintide differ from GLP-1 drugs and what trials show.",
-  "date": "2026-10-05T12:28:24Z",
+  "date": "2026-10-07T08:15:35-04:00",
   "type": "Article",
   "category": "Science",
   "image": "amylinHistologyBench",
@@ -51,11 +51,11 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "Every trial below was funded by the company developing the drug.[10][14][16][18] The REDEFINE 4 results and CagriSema's regulatory timeline come from Novo Nordisk's own announcements.[12][13]",
         "The furthest along is CagriSema, a fixed combination of cagrilintide and the GLP-1 drug semaglutide.[13] In the phase 3 REDEFINE 1 trial, 3,417 adults without diabetes who had obesity, or overweight plus at least one related health problem, were randomized for 68 weeks. Body weight fell an estimated 20.4% with the combination versus 3.0% with placebo. Gastrointestinal side effects such as nausea affected 79.6% versus 39.9% and were mainly transient and mild to moderate.[10]",
-        "The design is what makes REDEFINE 1 useful for the amylin question. Alongside 2,108 people on the combination and 705 on placebo, it had a semaglutide-only arm and a cagrilintide-only arm of 302 people each.[10] Assuming participants stayed on treatment, weight fell 22.7% with the combination, 16.1% with semaglutide alone and 11.8% with cagrilintide alone.[11] Within one trial and one population, adding the amylin analog produced more weight loss than the GLP-1 drug by itself.[11]",
+        "The design is what makes REDEFINE 1 useful for the amylin question. Alongside 2,108 people on the combination and 705 on placebo, it had a semaglutide-only arm and a cagrilintide-only arm of 302 people each.[10] A separate analysis estimated what would happen if everyone continued treatment without rescue medication: weight fell an estimated 22.7% with the combination, 16.1% with semaglutide alone and 11.8% with cagrilintide alone. This hypothetical treatment continuation assumption differs from the analysis behind the 20.4% figure above, which includes treatment discontinuation and rescue interventions.[10][11] Within one trial and one population, adding the amylin analog produced more weight loss than the GLP-1 drug by itself.[11]",
         "Beating its own components is not the same as beating every rival. Novo Nordisk announced in February 2026 that in REDEFINE 4, an open-label trial of 809 people with obesity and at least one related condition, CagriSema missed its primary goal of showing it was not inferior to tirzepatide after 84 weeks. Weight fell 20.2% versus 23.6% in the treatment-regimen analysis, and 23.0% versus 25.5% if everyone had adhered to treatment.[12] The company says it submitted a New Drug Application for CagriSema in December 2025 and expects an FDA decision in the fourth quarter of 2026.[13]",
         "Novo is also putting both signals into one molecule. Zenagamtide, formerly called amycretin, activates GLP-1, amylin and calcitonin receptors.[14] In a 36-week phase 2 trial of 262 adults with type 2 diabetes, HbA1c (glycated hemoglobin, a measure of average blood sugar over recent months) started at an average of 7.8%. It fell by 0.9 percentage points in the lowest-dose group and 1.7 in the highest, which was 0.77 and 1.56 points more than placebo. Most side effects were gastrointestinal and mild to moderate.[14] A phase 3 trial comparing it with semaglutide in obesity is recruiting.[15]",
         "Lilly's eloralintide tests amylin activity without a GLP-1 partner. In a 48-week phase 2 trial of 263 adults with obesity, or overweight plus a weight-related condition, and no type 2 diabetes, mean weight fell 9% to 20% across eloralintide groups, compared with 0.4% on placebo. Nausea ranged from 11% to 64% across groups versus 14% on placebo, and fatigue was the other most common side effect.[16] A phase 3 trial in 1,980 adults without type 2 diabetes is recruiting.[17]",
-        "Petrelintide, a long-acting amylin analog from Zealand Pharma, was tested in ZUPREME 1, a phase 2 trial of 493 adults with obesity, or overweight plus high blood pressure or abnormal blood lipids, and no type 2 diabetes. After 28 weeks, weight fell 7.9% to 9.8% across treatment groups versus 1.7% with placebo, and nausea was reported by 20% of 404 people on petrelintide compared with 6% on placebo.[18] Roche is now the registered sponsor of a 3,900-person phase 3 trial against placebo, listed as not yet recruiting on 5 October 2026, and of a phase 2 trial pairing petrelintide with Roche's enicepatide.[19][22]",
+        "Petrelintide, a long-acting amylin analog from Zealand Pharma, was tested in ZUPREME 1, a phase 2 trial of 493 adults with obesity, or overweight plus high blood pressure or abnormal blood lipids, and no type 2 diabetes. After 28 weeks, weight fell 7.9% to 9.8% across treatment groups versus 1.7% with placebo, and nausea was reported by 20% of 404 people on petrelintide compared with 6% (5 of 81) on placebo.[18] Roche is now the registered sponsor of a 3,900-person phase 3 trial against placebo, listed as not yet recruiting on 7 October 2026, and of a phase 2 trial pairing petrelintide with Roche's enicepatide.[19][22]",
         "These figures come from different populations, durations and comparators, so they cannot be lined up to rank the drugs."
       ]
     },
@@ -64,15 +64,16 @@ export const story: NewsroomStory = {
       "id": "what-is-still-unknown",
       "paragraphs": [
         "The biggest gap is outcomes. REDEFINE 3 is testing whether CagriSema reduces cardiovascular deaths, heart attacks and strokes in 7,101 adults with established cardiovascular disease, and its primary completion is estimated for September 2027.[20]",
-        "Tolerability is the second open question. Amylin drugs are often discussed as a route to better-tolerated weight-loss treatment, yet nausea was still the most common side effect of eloralintide and petrelintide in their phase 2 trials.[21][16][18] Researchers are still working out how calcitonin receptor activity, drug exposure and the brain circuits involved decide whether eating less reflects normal fullness or an unpleasant, aversive signal.[21]",
-        "The next answers will come from specific documents. First is the FDA's decision on CagriSema, which Novo expects in the fourth quarter of 2026. After that come REDEFINE 3 and the phase 3 trials of eloralintide and petrelintide, whose primary completion dates the registry estimates for 2028.[13][17][19] For now the firm finding is narrow: in one large trial, adding an amylin analog to semaglutide increased weight loss, and most other claims made for the class are still being tested.[11]"
+        "A second trial will test whether metabolic changes translate into fewer serious cardiovascular events. Novo Nordisk's AMBIENCE trial, first posted on ClinicalTrials.gov on 6 October 2026, plans to compare zenagamtide with placebo in an estimated 8,500 adults with overweight or obesity and established atherosclerotic cardiovascular disease, meaning artery disease caused by plaque. Its main measure combines cardiovascular death, nonfatal heart attack, nonfatal stroke and hospitalization or an urgent visit for heart failure. The phase 3 study was not yet recruiting when checked on 7 October, with primary completion estimated for September 2030.[23]",
+        "Tolerability is the second open question. Amylin drugs are often discussed as a route to better-tolerated weight-loss treatment.[21] Yet nausea and fatigue were the most common side effects of eloralintide in its phase 2 trial, while nausea was the most common with petrelintide.[16][18] Researchers are still working out how calcitonin receptor activity, drug exposure and the brain circuits involved decide whether eating less reflects normal fullness or an unpleasant, aversive signal.[21]",
+        "The next answers will come from specific documents. First is the FDA's decision on CagriSema, which Novo expects in the fourth quarter of 2026. After that come REDEFINE 3 and the phase 3 trials of eloralintide and petrelintide, whose primary completion dates the registry estimates for 2028.[13][17][19] AMBIENCE extends the cardiovascular outcomes timeline to an estimated September 2030 primary completion; that is a study milestone, not a promised publication date.[23] For now the firm finding is narrow: in one large trial, adding an amylin analog to semaglutide increased weight loss, and most other claims made for the class are still being tested.[11]"
       ]
     }
   ],
   "faqs": [
     {
       "q": "Is amylin the same as amyloid?",
-      "a": "No. Amylin is the hormone, and amyloid describes protein that has aggregated into fibril deposits. Human amylin can form those deposits in the pancreas, especially in type 2 diabetes, which is how it got the name islet amyloid polypeptide. Pramlintide was designed as a non-aggregating version.[5][4]",
+      "a": "No. Amylin is the hormone, and amyloid describes protein that has aggregated into fibril deposits. Human amylin can form those deposits in the pancreas, especially in type 2 diabetes, which is how it got the name islet amyloid polypeptide. Pramlintide was designed as a non-aggregating version.",
       "refs": [
         5,
         4
@@ -80,7 +81,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "Is pramlintide (Symlin) still available?",
-      "a": "The FDA approved pramlintide, sold as Symlin, in March 2005 as an add-on to mealtime insulin, and its label carries a boxed warning about severe hypoglycemia. When we checked on 5 October 2026, the FDA's Drugs@FDA database listed every Symlin product as discontinued.[3][2]",
+      "a": "The FDA approved pramlintide, sold as Symlin, in March 2005 as an add-on to mealtime insulin, and its label carries a boxed warning about severe hypoglycemia. When we checked on 7 October 2026, the FDA's Drugs@FDA database listed every Symlin product as discontinued.",
       "refs": [
         3,
         2
@@ -154,7 +155,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 12,
-      "url": "http://novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916501",
+      "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916501",
       "title": "Novo Nordisk company announcement: REDEFINE 4 headline results, 23 February 2026"
     },
     {
@@ -210,6 +211,11 @@ export const story: NewsroomStory = {
       "id": 22,
       "url": "https://clinicaltrials.gov/study/NCT07589686",
       "title": "ClinicalTrials.gov NCT07589686: petrelintide with enicepatide (RO7795068), phase 2"
+    },
+    {
+      "id": 23,
+      "url": "https://clinicaltrials.gov/study/NCT07861100",
+      "title": "ClinicalTrials.gov NCT07861100: AMBIENCE phase 3 cardiovascular outcomes trial of zenagamtide"
     }
   ],
   "related": [
