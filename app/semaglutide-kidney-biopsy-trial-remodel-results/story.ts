@@ -57,7 +57,7 @@ export const story: NewsroomStory = {
       "title": "What the biopsies showed",
       "id": "biopsy-findings",
       "paragraphs": [
-        "Under the microscope, the inner layer of the most diseased arterioles made up a smaller share of the vessel with semaglutide, about 10% lower than with placebo, in an exploratory measure.[1]",
+        "Under the microscope, the inner layer of the most diseased arterioles made up a smaller share of the vessel with semaglutide than with placebo after 52 weeks, an exploratory structural finding.[1]",
         "The gene data pointed in a similar direction. The analysis used 22 matched before-and-after biopsy pairs (14 semaglutide, 8 placebo). Semaglutide changed gene activity in 7 of the 31 cell clusters analyzed. The most responsive were two populations of glomerular endothelial cells, which line the glomeruli, the kidney's tiny filtering units. Most of their affected genes tied to metabolic stress, inflammation and fibrosis were turned down.[1]",
         "The cell count did not change, which the authors read as a change in gene activity rather than numbers. But when the team checked whether the changed genes formed recognized biological pathways, none passed the statistical bar after correction for multiple testing.[1]",
         "An exploratory spatial analysis of 13 paired samples (8 semaglutide, 5 placebo) found a smaller share of natural killer and natural killer T immune cells near those endothelial cells after treatment. It treated placebo and pre-treatment biopsies as one untreated group, so it was not a clean randomized comparison.[1]"
@@ -75,8 +75,8 @@ export const story: NewsroomStory = {
       "title": "Is semaglutide hard on the kidneys?",
       "id": "kidney-safety",
       "paragraphs": [
-        "REMODEL's safety numbers are informative but too small for firm comparisons. Adverse events occurred in 36 of 71 people on semaglutide (50.7%) and 17 of 35 on placebo (48.6%). Serious adverse events affected 14 of 71 (19.7%) versus 5 of 35 (14.3%), which the authors describe as similar rates. Treatment was permanently stopped because of adverse events by 9 of 71 on semaglutide (12.7%) versus 1 of 35 (2.9%).[1]",
-        "Results posted on ClinicalTrials.gov list serious acute kidney injury in 4 of 71 semaglutide participants and none of 35 on placebo, plus one case of end-stage kidney disease on semaglutide.[2] Serious events judged possibly related to treatment affected one semaglutide participant, and no serious complications came from the biopsies.[1]",
+        "REMODEL's safety reporting covered up to 57 weeks, with 52 weeks of planned treatment and five weeks of follow-up.[1][2] Its safety numbers are informative but too small for firm comparisons. Adverse events occurred in 36 of 71 people on semaglutide (50.7%) and 17 of 35 on placebo (48.6%). Serious adverse events affected 14 of 71 (19.7%) versus 5 of 35 (14.3%), which the authors describe as similar rates. Treatment was permanently stopped because of adverse events by 9 of 71 on semaglutide (12.7%) versus 1 of 35 (2.9%).[1]",
+        "ClinicalTrials.gov reports treatment-emergent adverse events among randomized participants who received at least one dose, defining these as events beginning from the first dose through permanent treatment discontinuation. Within its reporting window of up to 57 weeks, serious acute kidney injury affected 4 of 71 semaglutide participants and none of 35 on placebo, plus one case of end-stage kidney disease among the 71 on semaglutide.[2] During the trial's treatment and follow-up period, serious events judged possibly related to treatment affected one semaglutide participant, and no biopsy-related serious adverse events were reported.[1]",
         "FLOW remains the larger reference. Serious adverse events there were reported in 49.6% of semaglutide participants and 53.8% of placebo participants.[4] The Ozempic label warns of postmarketing reports of acute kidney injury, mostly in patients who became dehydrated from nausea, vomiting or diarrhea.[5]"
       ]
     },
@@ -92,7 +92,7 @@ export const story: NewsroomStory = {
       "id": "what-comes-next",
       "paragraphs": [
         "The authors write that mechanisms of kidney protection \"may include reduced vascular resistance, prevention of fibrosis and improved underlying molecular programs promoting endothelial cell health.\"[1] Testing that, they say, requires adequately powered mediation analyses, possibly using FLOW's larger dataset. Neither the paper nor the trial record gives a timetable.[1][2]",
-        "One post hoc thread is worth watching. In people already taking an SGLT2 inhibitor, another diabetes drug class studied for kidney protection, semaglutide's eGFR advantage over placebo after 52 weeks was 8.1 ml/min per 1.73 m². In non-users it was 0.2. The authors call combination therapy an important research direction and caution that the subgroups were small.[1]",
+        "The authors also identify combination therapy with SGLT2 inhibitors, another diabetes drug class studied for kidney protection, as a research direction. Their small post hoc analysis was not powered to establish a subgroup difference.[1]",
         "FLOW established that semaglutide reduces major kidney events in people with type 2 diabetes and chronic kidney disease. REMODEL points the search for the reason toward the kidney's blood vessels and the cells lining its filters. Whether those changes produce the benefit is a question for a trial powered to test it.[1][4]"
       ]
     }
@@ -100,7 +100,7 @@ export const story: NewsroomStory = {
   "faqs": [
     {
       "q": "Does semaglutide cause kidney damage?",
-      "a": "In FLOW, semaglutide lowered the risk of major kidney events by 24% versus placebo, and serious adverse events were less common than with placebo. The Ozempic label warns of acute kidney injury reported after approval, mostly in people dehydrated by gastrointestinal side effects. In the smaller REMODEL trial, serious acute kidney injury was recorded in 4 of 71 semaglutide participants and none of 35 on placebo.",
+      "a": "In FLOW, semaglutide lowered the risk of major kidney events by 24% versus placebo, and serious adverse events were less common than with placebo. The Ozempic label warns of acute kidney injury reported after approval, mostly in people dehydrated by gastrointestinal side effects. In REMODEL's registry safety analysis, which included randomized participants who received at least one dose, treatment-emergent serious acute kidney injury was recorded in 4 of 71 semaglutide participants and none of 35 on placebo over a reporting window of up to 57 weeks.",
       "refs": [
         4,
         5,
