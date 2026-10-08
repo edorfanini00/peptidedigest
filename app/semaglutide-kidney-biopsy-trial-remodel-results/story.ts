@@ -30,7 +30,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "REMODEL was sponsored by Novo Nordisk, which makes semaglutide, and built as a mechanistic companion to FLOW.[1][2] Between April 2021 and October 2023, 106 adults with type 2 diabetes and chronic kidney disease at 28 sites in 8 countries were randomized two to one: 71 to weekly semaglutide injections and 35 to a matching placebo, for 52 weeks. The trial was double-blind, so neither participants nor investigators knew who got which.[1][2][3]",
         "Their average age was 65 and their average eGFR was 51 ml/min per 1.73 m². The median urine albumin-to-creatinine ratio (UACR), a measure of protein leaking into urine, was 187 mg/g. Only 25 of the 106 were women.[1]",
-        "Every participant had a multiparametric MRI, several kidney scans in one session, at the start and the end. Thirty-three of them (22 on semaglutide, 11 on placebo) also joined a biopsy group, scheduled to give kidney samples at the start and end of treatment. Joining required an eGFR of at least 40.[1][3]",
+        "The trial scheduled multiparametric MRI, several kidney scans in one session, at baseline and the end of treatment. Thirty-three participants (22 on semaglutide, 11 on placebo) also joined a biopsy group, scheduled to give kidney samples at the start and end of treatment. Joining required an eGFR of at least 40.[1][3]",
         "That tissue went through two newer techniques. Single-nucleus RNA sequencing (snRNAseq) reads which genes are switched on inside individual cell nuclei, so researchers can see how each cell type responds. Spatial transcriptomics reads genes in an intact tissue slice, preserving which cells sit next to which.[1]"
       ]
     },
@@ -38,6 +38,7 @@ export const story: NewsroomStory = {
       "title": "The main MRI tests came up empty",
       "id": "main-mri-results",
       "paragraphs": [
+        "The week-52 MRI comparisons below are model estimates that assume participants stayed on their assigned treatment and did not start medications the trial prohibited. Missing follow-up measurements, and values excluded under those rules, were filled in using observed data from the same treatment group, a statistical process called multiple imputation.[1]",
         "The three coprimary outcomes were kidney oxygenation, read from an MRI signal called R2*, global kidney perfusion, meaning blood flow relative to kidney size, and T1 mapping, used as an indicator of inflammation. None differed significantly between semaglutide and placebo after 52 weeks.[1]",
         "R2* in the kidney's outer layer was 2% lower with semaglutide, which points toward better oxygenation, and perfusion was about 10% higher. In both cases the 95% confidence interval included no difference (70 versus 35 and 65 versus 33 people analyzed). T1 did not change.[1][2]",
         "The authors offer reasons. They sized the trial from short-term studies that showed large oxygenation swings and now say those assumptions \"may have been optimistic.\" R2* is also sensitive to hydration and sodium balance, and T1 blends inflammation, perfusion and scarring, so improvements in one could cancel out another.[1]"
