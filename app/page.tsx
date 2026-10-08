@@ -83,7 +83,7 @@ const regulatoryArticles: CardArticle[] = [
   {
     "slug": "semaglutide-kidney-biopsy-trial-remodel-results",
     "category": "Clinical research",
-    "date": "October 7, 2026",
+    "date": "October 8, 2026",
     "readTime": "7 min read",
     "title": "Semaglutide kidney trial misses its main MRI goals, but biopsies offer clues",
     "excerpt": "REMODEL studied semaglutide in 106 people, including 33 in a kidney biopsy group. Main MRI tests were negative; vessel and gene signals offer clues.",
@@ -92,7 +92,7 @@ const regulatoryArticles: CardArticle[] = [
   {
     "slug": "what-is-amylin-amylin-analogs-vs-glp-1",
     "category": "Science",
-    "date": "October 7, 2026",
+    "date": "October 8, 2026",
     "readTime": "7 min read",
     "title": "What is amylin? How amylin analogs differ from GLP-1 drugs",
     "excerpt": "Amylin is a hormone released with insulin. Here is how amylin analogs such as cagrilintide differ from GLP-1 drugs and what trials show.",

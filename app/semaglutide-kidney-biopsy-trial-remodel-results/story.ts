@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "semaglutide-kidney-biopsy-trial-remodel-results",
   "title": "Semaglutide kidney trial misses its main MRI goals, but biopsies offer clues",
   "description": "REMODEL studied semaglutide in 106 people, including 33 in a kidney biopsy group. Main MRI tests were negative; vessel and gene signals offer clues.",
-  "date": "2026-10-07T08:15:35-04:00",
+  "date": "2026-10-08T10:00:12-04:00",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "semaglutideKidneyMri",
@@ -77,7 +77,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "REMODEL's safety reporting covered up to 57 weeks, with 52 weeks of planned treatment and five weeks of follow-up.[1][2] Its safety numbers are informative but too small for firm comparisons. Adverse events occurred in 36 of 71 people on semaglutide (50.7%) and 17 of 35 on placebo (48.6%). Serious adverse events affected 14 of 71 (19.7%) versus 5 of 35 (14.3%), which the authors describe as similar rates. Treatment was permanently stopped because of adverse events by 9 of 71 on semaglutide (12.7%) versus 1 of 35 (2.9%).[1]",
         "ClinicalTrials.gov reports treatment-emergent adverse events among randomized participants who received at least one dose, defining these as events beginning from the first dose through permanent treatment discontinuation. Within its reporting window of up to 57 weeks, serious acute kidney injury affected 4 of 71 semaglutide participants and none of 35 on placebo, plus one case of end-stage kidney disease among the 71 on semaglutide.[2] During the trial's treatment and follow-up period, serious events judged possibly related to treatment affected one semaglutide participant, and no biopsy-related serious adverse events were reported.[1]",
-        "FLOW remains the larger reference. Serious adverse events there were reported in 49.6% of semaglutide participants and 53.8% of placebo participants.[4] The Ozempic label warns of postmarketing reports of acute kidney injury, mostly in patients who became dehydrated from nausea, vomiting or diarrhea.[5]"
+        "FLOW remains the larger reference. Its posted registry results assessed safety in all randomized participants during their in-trial observation, from randomization to follow-up, withdrawal, last contact or death, over a reporting window of up to 238 weeks. Serious adverse events affected 877 of 1,767 semaglutide participants (49.6%) and 950 of 1,766 placebo participants (53.8%).[8] The Ozempic label warns of postmarketing reports of acute kidney injury, mostly in patients who became dehydrated from nausea, vomiting or diarrhea.[5]"
       ]
     },
     {
@@ -100,11 +100,12 @@ export const story: NewsroomStory = {
   "faqs": [
     {
       "q": "Does semaglutide cause kidney damage?",
-      "a": "In FLOW, semaglutide lowered the risk of major kidney events by 24% versus placebo, and serious adverse events were less common than with placebo. The Ozempic label warns of acute kidney injury reported after approval, mostly in people dehydrated by gastrointestinal side effects. In REMODEL's registry safety analysis, which included randomized participants who received at least one dose, treatment-emergent serious acute kidney injury was recorded in 4 of 71 semaglutide participants and none of 35 on placebo over a reporting window of up to 57 weeks.",
+      "a": "In FLOW, semaglutide lowered the risk of major kidney events by 24% versus placebo over a median 3.4 years of follow-up. Its posted registry safety results, covering all randomized participants over a reporting window of up to 238 weeks, recorded fewer participants with serious adverse events on semaglutide than on placebo. The Ozempic label warns of acute kidney injury reported after approval, mostly in people dehydrated by gastrointestinal side effects. In REMODEL's registry safety analysis, which included randomized participants who received at least one dose, treatment-emergent serious acute kidney injury was recorded in 4 of 71 semaglutide participants and none of 35 on placebo over a reporting window of up to 57 weeks.",
       "refs": [
         4,
         5,
-        2
+        2,
+        8
       ]
     },
     {
@@ -155,6 +156,11 @@ export const story: NewsroomStory = {
       "id": 7,
       "url": "https://novonordisk-us.com/media/news-archive/news-details.html?id=915253",
       "title": "Novo Nordisk: FDA approves Ozempic to reduce kidney disease risk in type 2 diabetes and CKD (28 January 2025)"
+    },
+    {
+      "id": 8,
+      "url": "https://clinicaltrials.gov/study/NCT03819153",
+      "title": "FLOW trial record and posted safety results, NCT03819153 (ClinicalTrials.gov)"
     }
   ],
   "related": [
