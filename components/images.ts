@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  semaglutideKidneyMri: {
+    "src": "/images/semaglutide-kidney-mri-suite-20261005.webp",
+    "width": 1600,
+    "height": 1074,
+    "alt": "AI-generated illustration of an empty MRI scanner room seen through a control room window",
+    "caption": "AI-generated editorial illustration of a fictional MRI suite, not a photograph of the trial or its sites.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest",
+    "kind": "illustration"
+  },
+  amylinHistologyBench: {
+    "src": "/images/amylin-histology-bench-20261005.webp",
+    "width": 1600,
+    "height": 1074,
+    "alt": "AI-generated illustration of a light microscope with a stained tissue slide on a laboratory bench",
+    "caption": "AI-generated editorial illustration of a laboratory scene, not a micrograph of amylin or a documented experiment.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest",
+    "kind": "illustration"
+  },
   icotrokinraDermatology: {
     "src": "/images/icotrokinra-dermatology-20261004.webp",
     "width": 1600,

@@ -225,3 +225,34 @@ Two parent-supplied and parent-approved Higgsfield illustrations. Builder inspec
 - Prompt: Photorealistic editorial macro photograph of a single California sea hare Aplysia californica resting on a natural rock in a clear shallow seawater research aquarium. Brown mottled soft body, folded side flaps and characteristic paired rolled rhinophores, scientifically plausible sea slug anatomy, fine natural texture, quiet observational marine biology photograph, soft side light, muted aquamarine water and warm stone. Wide 3:2 composition with subject in crisp focus. No illustration, no cartoon, no drawing, no molecular diagram, no typography, no labels, no human hands, no equipment obscuring animal. This is a generated representation of the model organism, not a documented experiment.
 
 Total parent-reconciled cost: 4 credits. No retries or top-ups.
+
+
+## October 5, 2026 newsroom illustrations
+
+Two parent-supplied and parent-approved Higgsfield illustrations, each submitted once after a no-submission cost quote. Parent removed generated pseudo-brand marks locally by inpainting/patching before optimization; builder copied the parent-optimized WebPs unchanged. No builder generation or spending. Private provenance: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-05/run-0800/parent-media-review.md`, `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-05/run-0800/media-intent.json`, `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-05/run-0800/retouch/`.
+
+### semaglutideKidneyMri
+
+- Asset: `public/images/semaglutide-kidney-mri-suite-20261005.webp`
+- Model: nano_banana_pro; requested 3:2, 2k; job `bb7c156a-7117-4d81-9eb3-1e712c8f47e5`.
+- Original: 2528 × 1696, 6737888 bytes; SHA-256 `0b6be71160bdb37660d7d5be950d3bacb928ddb2a0da3a0669afb95ab57a87f2`.
+- Retouch: a generated pseudo-brand wordmark on the scanner gantry and illegible marks on a side panel were removed by local OpenCV inpainting (`retouch_news.py`). Retouched PNG SHA-256 `648607049542b91ed1d53527791d71e43c920cee77b286787df5c12b28ac3acd`.
+- WebP: 1600 × 1074, 54602 bytes; SHA-256 `49a3531612cd78cd159718961a1566cfcb3964a73b63b820b3b5a6f7ac2c81d8`.
+- Pre-submission quote: 2 credits. Parent reconciled a 2-credit transaction by model, amount and timestamp; no direct job-ID linkage in transactions.
+- Caption: AI-generated editorial illustration of a fictional MRI suite, not a photograph of the trial or its sites.
+- Credit: The Peptide Digest.
+- Prompt: Photorealistic editorial photograph of an empty hospital MRI suite seen through the glass window of the control room at the end of the day. A large modern MRI scanner with its patient table retracted, soft cool ambient lighting, a blank powered-off control monitor and an empty desk chair in the foreground slightly out of focus. Clean neutral palette, restrained newspaper health science photography. No people, no patients, no body parts, no medical images on screens, no text, no letters, no logos, no brands, no drugs, no syringes, no needles, no vials. Fictional imaging suite, not any actual trial site. Landscape composition 3:2.
+
+### amylinHistologyBench
+
+- Asset: `public/images/amylin-histology-bench-20261005.webp`
+- Model: nano_banana_pro; requested 3:2, 2k; job `9709b781-9522-420f-878b-5139e90bbca0`.
+- Original: 2528 × 1696, 7998472 bytes; SHA-256 `a6b88657bbfb9c7f934d493937ff1bd09bed9f90981f91c72719e6d1548aef87`.
+- Retouch: illegible generated pseudo-engraving on the microscope tube was removed by patching from the adjacent plain tube band with feathering (`retouch_science.py`); a first inpainting attempt was rejected by the parent. Retouched PNG SHA-256 `175b251ba9346cbbbcad1d83e3fc6d3192bc0c951361e8549c8889b7da02d67e`.
+- WebP: 1600 × 1074, 73752 bytes; SHA-256 `42c25f01b6ada9cfe46228ba2bd90695b7d9628e87b80af86e6a1e106e7c5c7d`.
+- Pre-submission quote: 2 credits. Parent reconciled a 2-credit transaction by model, amount and timestamp; no direct job-ID linkage in transactions.
+- Caption: AI-generated editorial illustration of a laboratory scene, not a micrograph of amylin or a documented experiment.
+- Credit: The Peptide Digest.
+- Prompt: Photorealistic editorial photograph of a quiet histology laboratory bench: a professional upright light microscope with a single unlabeled glass slide on the stage holding a thin pink and purple stained tissue section, a closed wooden slide storage box and a neat notebook with a blank cover beside it, warm natural window light, shallow depth of field, calm warm ivory and walnut palette, restrained science magazine photography. No people, no hands, no screens, no text, no letters, no labels, no logos, no diagrams, no molecular models, no drugs, no pills, no syringes, no needles, no vials. Fictional laboratory, not a documented experiment. Landscape composition 3:2.
+
+Total quoted and parent-reconciled cost: 4 credits, 2 per image (balance 317.58 before, 313.58 after). No retries or top-ups.
