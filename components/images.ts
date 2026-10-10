@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  togetherPsoBiomarkers: {
+    src: "/images/together-pso-biomarker-lab-20261010.webp",
+    width: 1600,
+    height: 1073,
+    alt: "AI-generated illustration of unbranded laboratory equipment and a clear multiwell plate on a bench",
+    caption: "AI-generated editorial illustration of a fictional biomarker laboratory, not a photograph of the TOGETHER-PsO study or its equipment.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
+  cyclicPeptidePermeability: {
+    src: "/images/cyclic-peptide-permeability-20261010.webp",
+    width: 1600,
+    height: 1073,
+    alt: "AI-generated illustration of transparent membrane inserts beside a multiwell culture plate on a laboratory bench",
+    caption: "AI-generated editorial illustration of a fictional membrane permeability experiment, not a photograph of the cited studies.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
   semaglutideKidneyMri: {
     "src": "/images/semaglutide-kidney-mri-suite-20261005.webp",
     "width": 1600,

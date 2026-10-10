@@ -81,6 +81,24 @@ const industryArticles: CardArticle[] = [
 
 const regulatoryArticles: CardArticle[] = [
   {
+    slug: "taltz-zepbound-psoriasis-biomarker-results",
+    category: "Clinical research",
+    date: "October 10, 2026",
+    readTime: "6 min read",
+    title: "Taltz and Zepbound: what the new psoriasis biomarker results add",
+    excerpt: "Lilly's TOGETHER-PsO biomarker results offer clues to Taltz and Zepbound's psoriasis response. How the blood findings compare with the clinical trial.",
+    image: "togetherPsoBiomarkers",
+  },
+  {
+    slug: "cyclic-peptides-stability-cell-permeability",
+    category: "Science",
+    date: "October 10, 2026",
+    readTime: "6 min read",
+    title: "Cyclic peptides: why a ring can improve stability but not guarantee cell entry",
+    excerpt: "Why peptide cyclization can resist enzymes without guaranteeing cell entry. Bench studies show how ring chemistry, shape and membrane damage change the answer.",
+    image: "cyclicPeptidePermeability",
+  },
+  {
     "slug": "semaglutide-kidney-biopsy-trial-remodel-results",
     "category": "Clinical research",
     "date": "October 8, 2026",
