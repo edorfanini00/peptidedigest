@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/taltz-zepbound-psoriasis-biomarker-results`,
+      lastModified: new Date("2026-10-10T08:30:15-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/cyclic-peptides-stability-cell-permeability`,
+      lastModified: new Date("2026-10-10T08:30:15-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/semaglutide-kidney-biopsy-trial-remodel-results`,
       lastModified: new Date("2026-10-08T10:00:12-04:00"),
       changeFrequency: "weekly",
@@ -164,7 +176,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-08",
+      lastModified: "2026-10-10",
       changeFrequency: "daily",
       priority: 1,
     },
