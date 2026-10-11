@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   slug: "taltz-zepbound-psoriasis-biomarker-results",
   title: "Taltz and Zepbound: what the new psoriasis biomarker results add",
   description: "Lilly's TOGETHER-PsO biomarker results offer clues to Taltz and Zepbound's psoriasis response. How the blood findings compare with the clinical trial.",
-  date: "2026-10-10T08:30:15-04:00",
+  date: "2026-10-11T14:05:23-04:00",
   type: "NewsArticle",
   category: "Clinical research",
   image: "togetherPsoBiomarkers",

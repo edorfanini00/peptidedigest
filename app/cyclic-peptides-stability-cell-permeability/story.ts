@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   slug: "cyclic-peptides-stability-cell-permeability",
   title: "Cyclic peptides: why a ring can improve stability but not guarantee cell entry",
   description: "Why peptide cyclization can resist enzymes without guaranteeing cell entry. Bench studies show how ring chemistry, shape and membrane damage change the answer.",
-  date: "2026-10-10T08:30:15-04:00",
+  date: "2026-10-11T14:05:23-04:00",
   type: "Article",
   category: "Science",
   image: "cyclicPeptidePermeability",
