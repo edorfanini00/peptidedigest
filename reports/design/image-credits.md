@@ -256,3 +256,29 @@ Two parent-supplied and parent-approved Higgsfield illustrations, each submitted
 - Prompt: Photorealistic editorial photograph of a quiet histology laboratory bench: a professional upright light microscope with a single unlabeled glass slide on the stage holding a thin pink and purple stained tissue section, a closed wooden slide storage box and a neat notebook with a blank cover beside it, warm natural window light, shallow depth of field, calm warm ivory and walnut palette, restrained science magazine photography. No people, no hands, no screens, no text, no letters, no labels, no logos, no diagrams, no molecular models, no drugs, no pills, no syringes, no needles, no vials. Fictional laboratory, not a documented experiment. Landscape composition 3:2.
 
 Total quoted and parent-reconciled cost: 4 credits, 2 per image (balance 317.58 before, 313.58 after). No retries or top-ups.
+
+## October 10, 2026 newsroom illustrations
+
+Two parent-supplied Higgsfield nano_banana_pro illustrations, requested 3:2 at 2k. Originals visually accepted as fictional concepts, not actual study equipment. No writer generation or paid calls. Private source receipts, prompts, status and transaction evidence: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-10/run-0800/media/`. Exact captions approved in `media/visual-inspection.md`; optimization evidence in `writer/media-optimization.json`. Original compositions preserved with Sharp width resize to 1600 and WebP quality 84.
+
+### togetherPsoBiomarkers
+
+- Article: `/taltz-zepbound-psoriasis-biomarker-results`
+- Asset: `public/images/together-pso-biomarker-lab-20261010.webp`
+- Job: `c42a840a-7ec1-46f3-b5ff-69b3e3933190`; completed. Receipt: `media/news-create.json`; final status: `media/news-status.json`; prompt: `media/news-prompt.txt`.
+- Original: 2528 × 1696, 5983152 bytes; SHA256 `17e28029724dc0abe6cef3d6a8e77b3d9312d09add4212e4141b93353d41934e`.
+- Optimized: 1600 × 1073, 82116 bytes; SHA256 `8e21e12745314893a72ca472cb3a1ded4dcaf2c148050205a315a0980c2ea5db`.
+- Caption: AI-generated editorial illustration of a fictional biomarker laboratory, not a photograph of the TOGETHER-PsO study or its equipment.
+- Credit: The Peptide Digest. The pictured instrument is not asserted to be Olink or equipment used in TOGETHER-PsO.
+
+### cyclicPeptidePermeability
+
+- Article: `/cyclic-peptides-stability-cell-permeability`
+- Asset: `public/images/cyclic-peptide-permeability-20261010.webp`
+- Job: `b9050ad5-4611-48d3-981d-dafe2b5c7802`; completed. Receipt: `media/science-create.json`; final status: `media/science-status.json`; prompt: `media/science-prompt.txt`.
+- Original: 2528 × 1696, 7136394 bytes; SHA256 `a7b1ca7d4f5c8a0f427eacebfc7fc99dcbe79ab93ebe55e5293ae8ce955ada59`.
+- Optimized: 1600 × 1073, 60488 bytes; SHA256 `7d072c8bc98a203ba065ecdc77475a88d12b25cbc7266cbc58e63b8e565e1b9c`.
+- Caption: AI-generated editorial illustration of a fictional membrane permeability experiment, not a photograph of the cited studies.
+- Credit: The Peptide Digest. Apparatus is conceptual, not a reconstruction of the cited experiments.
+
+Parent-reconciled generation cost: 2 credits each, 4 total; transaction evidence `media/transactions-after-create.json`. No retries or top-ups.
