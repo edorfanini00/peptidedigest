@@ -14,13 +14,24 @@ export type IQONVial =
 const LINEUP: IQONVial[] = ["nad", "ghk", "epithalon", "ss31", "glutathione", "mots-c", "kpv", "semax"];
 
 /**
- * Offer must match IQON checkout: automatic Buy 1, Get 1 Free, no code
- * (SUMMER_SALE_PROMO in lib/promo/summer-sale.ts in the IQON repo).
+ * Offer must match IQON checkout: automatic Buy 1, Get 1 20% Off, no code
+ * (BOGO20 in lib/promo/summer-sale.ts in the IQON repo). In every pair of
+ * eligible items the lower-priced one is 20% off its price after other
+ * discounts; accessories excluded. All offer copy lives here; call sites
+ * cannot override it.
  */
 export const IQON_OFFER = {
-  headline: "Buy 1, Get 1 Free",
-  href: "https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo",
-};
+  headlineLead: "Buy 1, Get 1",
+  headlineAccent: "20% Off",
+  subhead: "Pick any two research compounds. Take 20% off the lower priced one.",
+  badge: "20% OFF",
+  noCode: "Applied automatically at checkout, no code needed",
+  stickyNoCode: "Applied automatically, no code needed",
+  cta: "Claim my 20% off →",
+  stickyCta: "Claim →",
+  terms: "In every pair, the lower priced item is 20% off after other discounts; accessories excluded. For research use only.",
+  href: "https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20",
+} as const;
 
 function lineupFrom(start: IQONVial): IQONVial[] {
   const i = Math.max(0, LINEUP.indexOf(start));
@@ -29,11 +40,11 @@ function lineupFrom(start: IQONVial): IQONVial[] {
 
 /**
  * IQON Labs offer card. The whole card is one link (bigger tap target).
- * Click psychology used: "FREE" as the dominant word, a concrete visual of the free item
- * (second vial tagged FREE), one first-person CTA, "no code needed" so there is no
- * guesswork, and no fake timers or fake scarcity.
+ * Click psychology used: the discount as the dominant red words, a concrete visual of the
+ * discounted item (second vial tagged 20% OFF), one first-person CTA, "no code needed" so
+ * there is no guesswork, and no fake timers or fake scarcity.
  */
-export function IQONPartner({ vial }: { vial: IQONVial; variant?: "feature" | "inline"; text?: string; cta?: string }) {
+export function IQONPartner({ vial }: { vial: IQONVial }) {
   const [a, b] = lineupFrom(vial);
   return (
     <a
@@ -48,10 +59,10 @@ export function IQONPartner({ vial }: { vial: IQONVial; variant?: "feature" | "i
 
       <div className="px-6 pt-6 text-center sm:px-10 sm:pt-8">
         <p className="font-serif text-[2.4rem] font-bold leading-[1.02] tracking-tight text-[color:var(--color-ink)] sm:text-5xl">
-          Buy 1, Get 1 <span className="text-[color:var(--color-accent)]">Free</span>
+          {IQON_OFFER.headlineLead} <span className="whitespace-nowrap text-[color:var(--color-accent)]">{IQON_OFFER.headlineAccent}</span>
         </p>
         <p className="mt-3 text-[15px] text-[color:var(--color-muted)]">
-          Pick any research compound. The second one is on us.
+          {IQON_OFFER.subhead}
         </p>
       </div>
 
@@ -60,8 +71,8 @@ export function IQONPartner({ vial }: { vial: IQONVial; variant?: "feature" | "i
           <Image src={`/iqon/${a}.png`} alt="IQON Labs research vial" width={200} height={268} className="h-auto w-full object-contain drop-shadow-[0_12px_14px_rgba(0,0,0,0.18)]" />
         </div>
         <div className="relative">
-          <span className="absolute -top-2 left-1/2 z-10 -translate-x-1/2 rotate-[-6deg] rounded-md bg-[color:var(--color-accent)] px-2.5 py-1 text-xs font-extrabold tracking-wider text-white shadow-md">
-            FREE
+          <span className="absolute -top-2 left-1/2 z-10 -translate-x-1/2 rotate-[-6deg] whitespace-nowrap rounded-md bg-[color:var(--color-accent)] px-2.5 py-1 text-xs font-extrabold tracking-wider text-white shadow-md">
+            {IQON_OFFER.badge}
           </span>
           <Image src={`/iqon/${b}.png`} alt="IQON Labs research vial" width={200} height={268} className="h-auto w-full scale-110 object-contain drop-shadow-[0_12px_14px_rgba(0,0,0,0.22)] transition-transform duration-300 group-hover:-translate-y-1" />
         </div>
@@ -69,13 +80,13 @@ export function IQONPartner({ vial }: { vial: IQONVial; variant?: "feature" | "i
 
       <div className="px-6 pb-6 pt-5 text-center sm:px-10 sm:pb-8">
         <p className="text-sm font-medium text-[color:var(--color-body)]">
-          Applied automatically at checkout, no code needed
+          {IQON_OFFER.noCode}
         </p>
         <span className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[color:var(--color-accent)] px-7 py-4 text-base font-bold text-white transition-colors group-hover:bg-[color:var(--color-ink)] sm:w-auto">
-          Claim my free vial →
+          {IQON_OFFER.cta}
         </span>
         <p className="mt-4 text-[11px] text-[color:var(--color-muted)]">
-          Lower priced item free; accessories excluded. For research use only.
+          {IQON_OFFER.terms}
         </p>
       </div>
     </a>
@@ -93,10 +104,10 @@ export function IQONStickyBar() {
       style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
     >
       <span className="text-sm font-semibold leading-tight">
-        IQON Labs: <span className="text-[#ff8a7a]">Buy 1, Get 1 Free</span>
-        <span className="block text-[11px] font-normal text-white/70">Applied automatically, no code needed</span>
+        IQON Labs: <span className="text-[#ff8a7a]">{IQON_OFFER.headlineLead} {IQON_OFFER.headlineAccent}</span>
+        <span className="block text-[11px] font-normal text-white/70">{IQON_OFFER.stickyNoCode}</span>
       </span>
-      <span className="shrink-0 rounded-full bg-[color:var(--color-accent)] px-4 py-2 text-sm font-bold">Claim →</span>
+      <span className="shrink-0 rounded-full bg-[color:var(--color-accent)] px-4 py-2 text-sm font-bold">{IQON_OFFER.stickyCta}</span>
     </a>
   );
 }
