@@ -282,3 +282,24 @@ Two parent-supplied Higgsfield nano_banana_pro illustrations, requested 3:2 at 2
 - Credit: The Peptide Digest. Apparatus is conceptual, not a reconstruction of the cited experiments.
 
 Parent-reconciled generation cost: 2 credits each, 4 total; transaction evidence `media/transactions-after-create.json`. No retries or top-ups.
+
+
+## October 12, 2026 newsroom illustrations
+
+### EB613 phase 3 plans put bone density at the center of an oral osteoporosis trial
+
+- Asset: `/images/eb613-bone-density-20261012.webp`; image key `eb613BoneDensity`. Used uniquely on this article and its homepage card.
+- Parent-supplied generated image, Higgsfield `nano_banana_pro`, requested 3:2, 2k; job `309f9755-c9b0-4450-9428-a7a93f270e26`. No generation or spending performed by implementation writer.
+- Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-12/run-0800/media/news-original.png`, actual 2528 × 1696 pixels. Optimized WebP: 1600 × 1073 pixels, 68208 bytes, quality 85.
+- Caption: AI-generated editorial illustration, not a photograph of the trial or a real study facility.
+- Credit: The Peptide Digest. Conceptual fictional equipment setting; no actual trial or experiment depicted.
+- Provenance: run `media/news-intent.json`, `news-create.json`, `news-status.json`, `transactions-after-both.json` and `parent-visual-review.md`. Parent receipt records 2 credits for this image; writer spent zero. Both originals visually inspected by writer before registration.
+
+### What a peptide aggregation assay can miss
+
+- Asset: `/images/peptide-aggregation-assay-20261012.webp`; image key `peptideAggregationAssay`. Used uniquely on this article and its homepage card.
+- Parent-supplied generated image, Higgsfield `nano_banana_pro`, requested 3:2, 2k; job `4aaa6854-1918-44df-aa33-99a5a5039114`. No generation or spending performed by implementation writer.
+- Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-12/run-0800/media/science-original.png`, actual 2528 × 1696 pixels. Optimized WebP: 1600 × 1073 pixels, 63604 bytes, quality 85.
+- Caption: AI-generated editorial illustration of fluorescence assay equipment, not a photograph of an experiment.
+- Credit: The Peptide Digest. Conceptual fictional equipment setting; no actual trial or experiment depicted.
+- Provenance: run `media/science-intent.json`, `science-create.json`, `science-status.json`, `transactions-after-both.json` and `parent-visual-review.md`. Parent receipt records 2 credits for this image; writer spent zero. Both originals visually inspected by writer before registration.

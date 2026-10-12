@@ -16,6 +16,27 @@ interface CardArticle {
   image: ImageKey;
 }
 
+const latestArticles: CardArticle[] = [
+  {
+    "slug": "eb613-oral-osteoporosis-phase-3-bone-density",
+    "category": "Clinical research",
+    "date": "October 12, 2026",
+    "readTime": "6 min read",
+    "title": "EB613 phase 3 plans put bone density at the center of an oral osteoporosis trial",
+    "excerpt": "Entera's planned EB613 phase 3 trial would test hip bone density. What the oral osteoporosis peptide's earlier study and FDA surrogate endpoint mean.",
+    "image": "eb613BoneDensity"
+  },
+  {
+    "slug": "peptide-aggregation-assay-measurement-pitfalls",
+    "category": "Science",
+    "date": "October 12, 2026",
+    "readTime": "8 min read",
+    "title": "What a peptide aggregation assay can miss",
+    "excerpt": "Peptide aggregation changes more than a fluorescence curve. Experiments show how starting aggregates, dye concentration and measurement choices affect results.",
+    "image": "peptideAggregationAssay"
+  }
+];
+
 const featuredArticle: CardArticle = {
   slug: "apex-peptides-raided-what-researchers-need-to-know",
   category: "Industry",
@@ -402,6 +423,13 @@ export default function Home() {
         </div>
 
         <IQONPartner vial="nad" />
+
+        <SectionLabel label="Latest reporting" id="latest" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12 mb-12">
+          {latestArticles.map((a) => (
+            <ArticleCard key={a.slug} a={a} sizes="(max-width: 768px) 100vw, 540px" />
+          ))}
+        </div>
 
         {/* Top story + two secondary stories */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 mb-12 border-b border-[color:var(--color-rule)]">
