@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/eb613-oral-osteoporosis-phase-3-bone-density`,
+      lastModified: new Date("2026-10-12T08:23:21-04:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-aggregation-assay-measurement-pitfalls`,
+      lastModified: new Date("2026-10-12T08:27:09-04:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/taltz-zepbound-psoriasis-biomarker-results`,
       lastModified: new Date("2026-10-11T14:05:23-04:00"),
       changeFrequency: "weekly",
@@ -176,7 +188,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-11",
+      lastModified: "2026-10-12",
       changeFrequency: "daily",
       priority: 1,
     },

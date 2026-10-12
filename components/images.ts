@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  peptideAggregationAssay: {
+    src: "/images/peptide-aggregation-assay-20261012.webp",
+    width: 1600,
+    height: 1073,
+    alt: "AI-generated illustration of a black microplate reader with an extended tray beside clear sample tubes on a laboratory bench",
+    caption: "AI-generated editorial illustration of fluorescence assay equipment, not a photograph of an experiment.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
+  eb613BoneDensity: {
+    src: "/images/eb613-bone-density-20261012.webp",
+    width: 1600,
+    height: 1073,
+    alt: "AI-generated illustration of an empty DXA bone density scanning room with a scanner table and monitor",
+    caption: "AI-generated editorial illustration, not a photograph of the trial or a real study facility.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest",
+    kind: "illustration",
+  },
   togetherPsoBiomarkers: {
     src: "/images/together-pso-biomarker-lab-20261010.webp",
     width: 1600,
