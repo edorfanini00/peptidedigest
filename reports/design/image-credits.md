@@ -303,3 +303,30 @@ Parent-reconciled generation cost: 2 credits each, 4 total; transaction evidence
 - Caption: AI-generated editorial illustration of fluorescence assay equipment, not a photograph of an experiment.
 - Credit: The Peptide Digest. Conceptual fictional equipment setting; no actual trial or experiment depicted.
 - Provenance: run `media/science-intent.json`, `science-create.json`, `science-status.json`, `transactions-after-both.json` and `parent-visual-review.md`. Parent receipt records 2 credits for this image; writer spent zero. Both originals visually inspected by writer before registration.
+
+
+## October 13, 2026 newsroom illustrations
+
+Parent-supplied Higgsfield images, visually inspected by parent and writer. No writer submissions, retries or spending. The two matching Nano Banana Pro spend entries in `media/transactions-after.json` confirm 2 credits each, 4 total. Parent review `media/parent-visual-review.md` records PASS for both. Images illustrate concepts, not documented study settings or verified instrument hardware.
+
+### glp1WithdrawalSupport
+
+- Article: `/glp1-discontinuation-weight-regain-meals-app-pilot-trial`; release: `/images/glp1-withdrawal-support-20261013.webp`. Unique article and homepage-card use.
+- Model `nano_banana_pro`; job `d7d874b3-fb77-4cff-a3f9-6c5ae9dc0de3`; completed; requested 3:2 at 2k.
+- Original `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-13/run-0800/media/news-original.png`: 2528 × 1696, 9199360 bytes; SHA256 `0980b52513866d9a41112b730d2d0057c71885eb858f05664bedc9efe986dcdc`.
+- Release: 1600 × 1073, 125092 bytes; SHA256 `add91de27b476a28d5fadbf1a3f1a9868aefdbf13c27d0885707c380d0c29c90`. Sharp resize width 1600, no enlargement, WebP quality 85; no crop. No upscale.
+- Caption: AI-generated editorial illustration, not a photograph of the study or a participant’s kitchen.
+- Credit: The Peptide Digest via Higgsfield.
+- Prompt: Very photorealistic editorial still-life photograph, horizontal 3:2. On an ordinary daylight kitchen table, a black smartphone with its screen off lies beside an unbranded closed weekly meal delivery carton and two realistic prepared food trays, one with vegetables and grain and one with a simple mixed meal. Subtle real plastic textures and paper fibers, credible modest domestic kitchen out of focus in background, natural window light, documentary magazine photography, 50mm lens, true-to-life colors, imperfect authentic objects, no glossy advertising look. The subject is a clinical study comparing a wellness app and delivered meals after prescription treatment ended, but do NOT depict any medicine, pills, needles, syringes, people, body transformations, scales, text, logos or brand names. This is a conceptual editorial illustration, not an actual trial site. Must look like a real camera photograph, not anime, cartoon, painting, 3D render, CGI or digital illustration.
+- Receipts under `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-13/run-0800/media/`: `requests.json`, `news-submission-intent.json`, `news-quote.json`, `news-create.json`, `news-status.json`, `transactions-after.json`, `parent-visual-review.md`. Actual cost 2 credits, confirmed by parent transaction review.
+
+### peptideDeamidationAnalysis
+
+- Article: `/peptide-deamidation-isoaspartate-mass-shift`; release: `/images/peptide-deamidation-analysis-20261013.webp`. Unique article and homepage-card use.
+- Model `nano_banana_pro`; job `c380ddba-8d05-4356-b090-11614e54d42f`; completed; requested 3:2 at 2k.
+- Original `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-13/run-0800/media/science-original.png`: 2528 × 1696, 8007774 bytes; SHA256 `62aa5d5ef4a1ba68e5fca091c347768898b4acf8e76eb52a223d0f3a3c96f28d`.
+- Release: 1600 × 1073, 89982 bytes; SHA256 `536dd11ba0acbb280cba12f7309ef7f287442a9adc775a019ecafd86cc2cc7ab`. Sharp resize width 1600, no enlargement, WebP quality 85; no crop. No upscale.
+- Caption: AI-generated editorial illustration of laboratory sample analysis, not a photograph of an experiment or verified instrument model.
+- Credit: The Peptide Digest via Higgsfield.
+- Prompt: Very photorealistic editorial laboratory photograph, horizontal 3:2. A real modern liquid chromatography tandem mass spectrometry instrument on a clean analytical laboratory bench, close view of its autosampler rack of tiny clear analytical sample tubes with plain caps and the stainless sample inlet, with a scientist's laboratory notebook lying closed at the edge. No people. Detailed credible tubing, brushed metal, subtle wear, shallow depth of field, soft daylight and neutral laboratory light, true camera optics and realistic materials, high-end science magazine documentary photography. The article explains peptide deamidation and how rearranged peptide backbones can be difficult to distinguish in laboratory measurements. Do not show molecular diagrams, invented scientific charts, readable labels, numbers, brand logos, pills, syringes, injection supplies, human use, neon effects or colored magic liquids. Not a photo of any actual experiment. Must look like a real camera photograph, never cartoon, anime, painterly illustration or stylized CGI.
+- Receipts under `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-13/run-0800/media/`: `requests.json`, `science-submission-intent.json`, `science-quote.json`, `science-create.json`, `science-status.json`, `transactions-after.json`, `parent-visual-review.md`. Actual cost 2 credits, confirmed by parent transaction review.
