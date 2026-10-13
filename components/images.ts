@@ -15,6 +15,37 @@ export interface EditorialImage {
 }
 
 export const images = {
+  // Higgsfield nano_banana_pro; job d7d874b3-fb77-4cff-a3f9-6c5ae9dc0de3; confirmed 2 credits.
+  // Original SHA256 0980b52513866d9a41112b730d2d0057c71885eb858f05664bedc9efe986dcdc
+  // Release SHA256 add91de27b476a28d5fadbf1a3f1a9868aefdbf13c27d0885707c380d0c29c90
+  // Full prompt, original dimensions, receipts and parent PASS: reports/design/image-credits.md
+  glp1WithdrawalSupport: {
+      "src": "/images/glp1-withdrawal-support-20261013.webp",
+      "width": 1600,
+      "height": 1073,
+      "alt": "AI-generated illustration of a phone with its screen off beside prepared meals and an unbranded carton on a kitchen table",
+      "caption": "AI-generated editorial illustration, not a photograph of the study or a participant’s kitchen.",
+      "photographer": "The Peptide Digest",
+      "sourceUrl": "https://peptidedigest.co",
+      "credit": "The Peptide Digest via Higgsfield",
+      "kind": "illustration"
+  },
+  // Higgsfield nano_banana_pro; job c380ddba-8d05-4356-b090-11614e54d42f; confirmed 2 credits.
+  // Original SHA256 62aa5d5ef4a1ba68e5fca091c347768898b4acf8e76eb52a223d0f3a3c96f28d
+  // Release SHA256 536dd11ba0acbb280cba12f7309ef7f287442a9adc775a019ecafd86cc2cc7ab
+  // Full prompt, original dimensions, receipts and parent PASS: reports/design/image-credits.md
+  peptideDeamidationAnalysis: {
+      "src": "/images/peptide-deamidation-analysis-20261013.webp",
+      "width": 1600,
+      "height": 1073,
+      "alt": "AI-generated illustration of capped analytical sample vials, tubing and a notebook on a laboratory bench",
+      "caption": "AI-generated editorial illustration of laboratory sample analysis, not a photograph of an experiment or verified instrument model.",
+      "photographer": "The Peptide Digest",
+      "sourceUrl": "https://peptidedigest.co",
+      "credit": "The Peptide Digest via Higgsfield",
+      "kind": "illustration"
+  },
+
   peptideAggregationAssay: {
     src: "/images/peptide-aggregation-assay-20261012.webp",
     width: 1600,

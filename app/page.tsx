@@ -18,6 +18,24 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
   {
+    "slug": "glp1-discontinuation-weight-regain-meals-app-pilot-trial",
+    "category": "Clinical research",
+    "date": "October 13, 2026",
+    "readTime": "7 min read",
+    "title": "GLP-1 withdrawal pilot finds less weight regain with meals or an app",
+    "excerpt": "A 39-person GLP-1 withdrawal pilot found less weight regain with meals or Noom. The four-month results, trial endpoints and funding explain its limits.",
+    "image": "glp1WithdrawalSupport"
+  },
+  {
+    "slug": "peptide-deamidation-isoaspartate-mass-shift",
+    "category": "Science",
+    "date": "October 13, 2026",
+    "readTime": "7 min read",
+    "title": "Peptide deamidation: how a small mass change can alter the backbone",
+    "excerpt": "Peptide deamidation adds about 0.984 daltons but can also form isoaspartate. Model experiments explain the chemistry and why mass alone can miss it.",
+    "image": "peptideDeamidationAnalysis"
+  },
+  {
     "slug": "eb613-oral-osteoporosis-phase-3-bone-density",
     "category": "Clinical research",
     "date": "October 12, 2026",
