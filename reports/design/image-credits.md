@@ -330,3 +330,47 @@ Parent-supplied Higgsfield images, visually inspected by parent and writer. No w
 - Credit: The Peptide Digest via Higgsfield.
 - Prompt: Very photorealistic editorial laboratory photograph, horizontal 3:2. A real modern liquid chromatography tandem mass spectrometry instrument on a clean analytical laboratory bench, close view of its autosampler rack of tiny clear analytical sample tubes with plain caps and the stainless sample inlet, with a scientist's laboratory notebook lying closed at the edge. No people. Detailed credible tubing, brushed metal, subtle wear, shallow depth of field, soft daylight and neutral laboratory light, true camera optics and realistic materials, high-end science magazine documentary photography. The article explains peptide deamidation and how rearranged peptide backbones can be difficult to distinguish in laboratory measurements. Do not show molecular diagrams, invented scientific charts, readable labels, numbers, brand logos, pills, syringes, injection supplies, human use, neon effects or colored magic liquids. Not a photo of any actual experiment. Must look like a real camera photograph, never cartoon, anime, painterly illustration or stylized CGI.
 - Receipts under `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-13/run-0800/media/`: `requests.json`, `science-submission-intent.json`, `science-quote.json`, `science-create.json`, `science-status.json`, `transactions-after.json`, `parent-visual-review.md`. Actual cost 2 credits, confirmed by parent transaction review.
+
+
+## October 14, 2026 — original newsroom illustrations
+
+Generated with the authorized existing Higgsfield subscription using `nano_banana_pro`, exact requested `aspect_ratio=3:2`, `resolution=2k`. No top-ups or provider substitution. Evidence root: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media`. Both originals were visually inspected by the writer. These are photorealistic conceptual still lifes, explicitly captioned AI-generated editorial illustrations; neither depicts a real study, participant or facility. Independent approval remains pending.
+
+### News
+
+Asset: `public/images/semaglutide-heart-research-20261014.webp`. Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media/news-original.png`. Native 2528×1696; optimized 1600×1073, 56684 bytes. The provider's native ratio is recorded truthfully despite the requested 3:2. Optimization: Sharp width1600, WebP quality85/effort6, no crop.
+
+Original SHA256: `71430da1e1cca4bd63c10412d00c68a417c80226e2c051c3550d774f2ae98ad2`. Release SHA256: `3f521d41c48c71755d1e5331f160b181896a6712747504b6191a113060f11313`.
+
+Exact prompt:
+
+> Very photorealistic editorial still life photograph in an unoccupied cardiovascular research imaging room. A realistic clinical ultrasound console with its screen powered off beside a modest anatomical heart teaching model on a clean light gray work surface. Window daylight, warm neutral editorial palette, natural lens perspective, subtle real surface wear, restrained composition with ample breathing room, 50mm photographic lens. No people, no animals, no needles, no syringes, no pills, no vials, no branding, no text, no readable data, no glowing effects, no CGI rendering or drawn illustration. This is an illustrative conceptual setting, not a recreation of any real experiment or facility. Landscape 3:2.
+
+### Science — rejected original, retained for provenance only
+
+PARENT REJECTED for incorrect squat/turban shell morphology; this asset is not in the final worktree. Rejected optimized copy retained at `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media/science-rejected-optimized.webp`.
+
+Former asset: `public/images/peptide-disulfide-shells-20261014.webp`. Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media/science-original.png`. Native 2528×1696; optimized 1600×1073, 80628 bytes. The provider's native ratio is recorded truthfully despite the requested 3:2. Optimization: Sharp width1600, WebP quality85/effort6, no crop.
+
+Original SHA256: `3b47dae420d5496a1c9876d2dc78a4473320ecd93ef1902067b3f8f40f08f7ba`. Release SHA256: `08fbf9bdba682c902b6fdeee0f791393e057dc392eb789a846cc55390c70379c`.
+
+Exact prompt:
+
+> Extremely photorealistic editorial macro photograph of three different small cone snail shells laid on a matte pale stone specimen tray beside an open unlabeled paper specimen envelope, in a natural history laboratory. Intricate naturally plausible shell texture, cream and brown geometric shell markings, small chips and organic imperfections, gentle side window daylight, shallow but sufficient depth of field with the shells sharp, warm off-white background. Authentic museum specimen photography aesthetic, not underwater. No live animals, no people, no labels, no letters, no molecular diagrams, no graphic overlays, no CGI, no illustration style, no syringes, no pills, no vials. A conceptual editorial illustration of cone snail peptide research, not documentation of a specific study or a species identification. Landscape 3:2.
+
+News: initial job `9ff21081-b622-4688-b545-29883c15fe8c` failed and was confirmed failed before retry; receipt and failure retained. Retry `527514df-434e-4f48-ae50-9c9007a41512` completed. Science: `05dc4150-8744-4cdc-a4ad-53bb609b33c2` completed. Each quote was2credits, saved before its submission intent and raw receipt. Gross attempted spend6credits (news4, science2), refund2, net4; both per-image4 and total8 caps respected including the failure. `transactions-final.json` confirms the three spends and refund. No ambiguous outstanding job.
+
+
+### Science — corrective replacement
+
+The parent rejected the first science image for subject fidelity; a concept caption could not cure the mismatch. One bounded correction was authorized. Completed job `5ac995ad-eab5-4d95-b80f-dd6533535e2f` used the same subscription/model, exact3:2/2k requested parameters and2credit quote. Total gross8 (news4, science4), refund2, net6. No spending remains authorized. Original rejection and all receipts retained. Parent inspected the replacement and cleared the image objection; see `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/parent-science-replacement-pass.md` (SHA256 `d80282993de28c96dc81e464e23ecc404e6212c8bec2a18ce634e28b7969c070`). This clears subject/photorealism only, not independent review or release gates.
+
+Final asset: `public/images/peptide-disulfide-cone-shell-20261014.webp`. Replacement original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media/science-corrected-original.png`. Native {'width': 2528, 'height': 1696}; optimized {'width': 1600, 'height': 1073, 'bytes': 72380}. Sharp width1600, WebP85/effort6, no crop.
+
+Original SHA256: `d856f6cd06d0f1e9536a9b2f4a636a796ee6b04698ff8b0c13c7162b46886227`. Release SHA256: `c3b65ea1c8f240e4002abe27336833b572401b0ac1e604188f185e942cf11075`.
+
+Exact corrective prompt:
+
+> Very photorealistic macro editorial photograph of ONE elongated cone snail shell, family Conidae, lying on its side on an unmarked pale natural-history specimen tray. Anatomically recognizable cone-shell silhouette: broad angular shoulder at one end topped by a short pointed spire, a long straight-sided conical body tapering gradually toward the narrow anterior end; length clearly greater than width, approximately twice as long as wide. The long narrow slit-like aperture is visible running along the side of the tapered body. Cream shell with a natural fine brown textile-like pattern. NOT a rounded turban shell, NOT a domed spiral shell, NOT a scallop, NOT a generic globular seashell. Three-quarter side view, complete shell fully visible, sharp natural surface texture, soft daylight from a window, restrained neutral background and authentic museum photography, shallow but sufficient depth of field. No people, no hands, no labels, no text, no branding, no scientific diagrams, no molecules, no syringes, no pills. A conceptual editorial specimen still life, not a real study specimen or a species identification. Landscape 3:2.
+
+Evidence: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media/correction-provenance.json`, `science-correction-request.json`, `science-correction-quote.json`, `science-correction-intent.json`, `science-correction-create.raw.json`, `science-correction-status-1.json`, `science-correction-transactions-after.json`.

@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  semaglutideHeartResearch: {
+    "src": "/images/semaglutide-heart-research-20261014.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "AI-generated illustration: An anatomical heart teaching model beside an ultrasound console with its screen off",
+    "caption": "AI-generated editorial illustration, not a photograph of the study or a real facility.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  disulfideConeShells: {
+    "src": "/images/peptide-disulfide-cone-shell-20261014.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "AI-generated illustration of an elongated cone snail shell with a narrow side aperture on a specimen tray",
+    "caption": "AI-generated editorial illustration of a cone snail shell, not a photograph of study material or a species identification.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+
   // Higgsfield nano_banana_pro; job d7d874b3-fb77-4cff-a3f9-6c5ae9dc0de3; confirmed 2 credits.
   // Original SHA256 0980b52513866d9a41112b730d2d0057c71885eb858f05664bedc9efe986dcdc
   // Release SHA256 add91de27b476a28d5fadbf1a3f1a9868aefdbf13c27d0885707c380d0c29c90

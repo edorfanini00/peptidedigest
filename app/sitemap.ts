@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/semaglutide-hfpef-animal-study-without-weight-loss`,
+      lastModified: new Date("2026-10-14T12:30:26+00:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-disulfide-bond-isomers-same-mass`,
+      lastModified: new Date("2026-10-14T12:30:26+00:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/glp1-discontinuation-weight-regain-meals-app-pilot-trial`,
       lastModified: new Date("2026-10-13T12:19:58+00:00"),
       changeFrequency: "weekly",
@@ -200,7 +212,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-13",
+      lastModified: "2026-10-14",
       changeFrequency: "daily",
       priority: 1,
     },

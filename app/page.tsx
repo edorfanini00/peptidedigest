@@ -18,6 +18,25 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
   {
+    "slug": "semaglutide-hfpef-animal-study-without-weight-loss",
+    "category": "Preclinical research",
+    "date": "October 14, 2026",
+    "readTime": "7 min read",
+    "title": "Semaglutide improved heart filling in animals without significant weight loss",
+    "excerpt": "A Cedars-Sinai semaglutide study found better heart filling in rats and minipigs without significant weight loss. How it differs from human HFpEF evidence.",
+    "image": "semaglutideHeartResearch"
+  },
+  {
+    "slug": "peptide-disulfide-bond-isomers-same-mass",
+    "category": "Science",
+    "date": "October 14, 2026",
+    "readTime": "7 min read",
+    "title": "Same mass, different disulfide bonds: the peptide identity problem",
+    "excerpt": "Peptides can share an intact mass while their disulfide bonds connect different cysteines. Three cone-snail studies explain how researchers tell them apart.",
+    "image": "disulfideConeShells"
+  },
+
+  {
     "slug": "glp1-discontinuation-weight-regain-meals-app-pilot-trial",
     "category": "Clinical research",
     "date": "October 13, 2026",
