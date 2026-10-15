@@ -374,3 +374,28 @@ Exact corrective prompt:
 > Very photorealistic macro editorial photograph of ONE elongated cone snail shell, family Conidae, lying on its side on an unmarked pale natural-history specimen tray. Anatomically recognizable cone-shell silhouette: broad angular shoulder at one end topped by a short pointed spire, a long straight-sided conical body tapering gradually toward the narrow anterior end; length clearly greater than width, approximately twice as long as wide. The long narrow slit-like aperture is visible running along the side of the tapered body. Cream shell with a natural fine brown textile-like pattern. NOT a rounded turban shell, NOT a domed spiral shell, NOT a scallop, NOT a generic globular seashell. Three-quarter side view, complete shell fully visible, sharp natural surface texture, soft daylight from a window, restrained neutral background and authentic museum photography, shallow but sufficient depth of field. No people, no hands, no labels, no text, no branding, no scientific diagrams, no molecules, no syringes, no pills. A conceptual editorial specimen still life, not a real study specimen or a species identification. Landscape 3:2.
 
 Evidence: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-14/run-0800/writer/media/correction-provenance.json`, `science-correction-request.json`, `science-correction-quote.json`, `science-correction-intent.json`, `science-correction-create.raw.json`, `science-correction-status-1.json`, `science-correction-transactions-after.json`.
+
+
+## October 15, 2026 newsroom illustrations
+
+Parent generated both assets with Higgsfield nano_banana_pro. Each completed job cost 2 credits; gross 4, net 4 total. No additional generation or spend by writer. Requested 3:2 / 2k; actual native output 2528 × 1696. Sharp resized each to 1600 × 1073 (integer rounding preserves aspect), WebP quality85/effort6, no crop or upsample. Parent and writer inspected original pixels. Rendered layout review remains with parent.
+
+### News
+
+Asset: `public/images/vk2735-trial-planning-20261015.webp` (67698 bytes). Completed job `18422975-c856-4294-94ce-0d0fdedbaf3c`. Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/parent-media/news-original.png`. Original SHA256 `8d52fb406c4e35694a985d3ddd5aff3d02dadb20db82ac532076117a7829e6aa`. Optimized SHA256 `8952ed68baac322280ebac8d6734a031e5048defae88cfa0121c23246441cafe`.
+
+Exact prompt:
+
+> Photorealistic editorial still life in an unbranded clinical research planning office, two closed plain study folders side by side on a natural oak desk, softly out of focus blank scheduling sheets and an unlit computer screen behind them, realistic paper texture, gentle morning window light, documentary camera realism, restrained warm neutral colors, horizontal composition with room around objects. No people, no readable words or numbers or fabricated data, no logos, no pills, no syringes, no medicines, no molecular diagrams. This is an illustrative scene, not a specific real facility or event.
+
+### Science
+
+Asset: `public/images/peptide-counterion-analysis-20261015.webp` (97022 bytes). Completed job `5876ffae-ffbf-4a5d-b0c0-e445823fd444`. Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/parent-media/science-original.png`. Original SHA256 `bd2c3331141ace3038092b490797d04a4a627bc872eaa7f4681699cd459b184e`. Optimized SHA256 `fb38c8332fdbddac9f6fbcb07242efaf4ed78d040197a1268f0dbbb48b79b3e1`.
+
+Exact prompt:
+
+> Very photorealistic close editorial photograph style of an unbranded ion chromatography instrument on a clean analytical laboratory bench, realistic compact instrument modules with a conductivity detector and fine translucent tubing, a small rack of plain capped clear analytical sample vials beside the instrument, subdued natural laboratory lighting, real material textures and reflections, warm neutral palette, horizontal composition. No people, no readable labels or numbers or graphs, no logos, no syringes or pills, no colorful glowing substances, no molecular diagrams, no cartoon or CGI appearance. Illustrative analytical equipment, not a documented experiment or specific facility.
+
+News depicts conceptual trial planning, not an actual Viking facility or event. Science depicts conceptual analytical equipment; the synthetic configuration is not a verified working instrument, detector or cited experimental apparatus. Both carry visible AI-generated editorial illustration captions.
+
+Full request, quotes, submission intents, raw creation and completion receipts, native dimensions, transforms, costs and hashes: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/writer/media/provenance.json`. Originals and transaction receipts: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/parent-media`. Prior failed writer quotes remain in `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/writer/media` and caused no submission or spend.

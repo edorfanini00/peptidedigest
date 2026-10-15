@@ -58,7 +58,7 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "The Peptide Digest", item: base },
       { "@type": "ListItem", position: 2, name: story.title, item: url } ] },
-    { "@type": "FAQPage", mainEntity: story.faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }
+    ...(story.faqs.length ? [{ "@type": "FAQPage", mainEntity: story.faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }] : [])
   ] };
   return <><Nav /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
     <main className="article-shell">
@@ -71,12 +71,12 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
         <IQONPartner vial={story.vials[0]} />
         {story.correction && <p data-correction-note className="text-sm text-[color:var(--color-muted)]">{story.correction}</p>}
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
-        <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}<li><a href="#questions">Frequently asked questions</a></li></ul></nav>
+        <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}{story.faqs.length > 0 && <li><a href="#questions">Frequently asked questions</a></li>}</ul></nav>
         {story.sections.map(section => <section key={section.id} className={styles.section} aria-labelledby={section.id}>
           <h2 id={section.id} className="scroll-mt-24">{section.title}</h2>
           {section.paragraphs.every(p => p.startsWith("- ")) ? <ul>{section.paragraphs.map((p, i) => <li key={i}><RichText text={p.slice(2)} story={story} /></li>)}</ul> : section.paragraphs.map((p, i) => <p key={i}><RichText text={p} story={story} /></p>)}
         </section>)}
-        <section className={styles.section} aria-labelledby="questions"><h2 id="questions" className="scroll-mt-24">Frequently asked questions</h2>{story.faqs.map((faq, i) => <div className={styles.faq} key={faq.q} data-faq><h3 id={`question-${i + 1}`}>{faq.q}</h3><p data-faq-answer>{faq.a}</p><p className="text-sm" aria-label="Answer sources"><RichText text={faq.refs.map(n => `[${n}]`).join(" ")} story={story} /></p></div>)}</section>
+        {story.faqs.length > 0 && <section className={styles.section} aria-labelledby="questions"><h2 id="questions" className="scroll-mt-24">Frequently asked questions</h2>{story.faqs.map((faq, i) => <div className={styles.faq} key={faq.q} data-faq><h3 id={`question-${i + 1}`}>{faq.q}</h3><p data-faq-answer>{faq.a}</p><p className="text-sm" aria-label="Answer sources"><RichText text={faq.refs.map(n => `[${n}]`).join(" ")} story={story} /></p></div>)}</section>}
         <section className={styles.section} aria-labelledby="sources"><h2 id="sources">Sources and further reading</h2><ol className="text-sm break-words">{story.sources.map(source => <li key={source.id} value={source.id}><a href={source.url}>{source.title}</a>{source.doi ? <>. DOI: <a href={`https://doi.org/${source.doi}`}>{source.doi}</a></> : null}</li>)}</ol></section>
         <section className={styles.section} aria-labelledby="related"><h2 id="related">Related reading</h2><ul>{story.related.map(link => <li key={link.url}><Link href={link.url}>{link.title}</Link></li>)}</ul></section>
         <IQONPartner vial={story.vials[1]} />

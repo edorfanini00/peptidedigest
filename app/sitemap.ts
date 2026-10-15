@@ -7,6 +7,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/vk2735-oral-phase-3-sunrise-trials`,
+      lastModified: new Date("2026-10-15T12:43:16+00:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-tfa-vs-acetate-counterion-assay-results`,
+      lastModified: new Date("2026-10-15T12:43:16+00:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
+    {
       url: `${base}/semaglutide-hfpef-animal-study-without-weight-loss`,
       lastModified: new Date("2026-10-14T12:30:26+00:00"),
       changeFrequency: "weekly",
@@ -212,7 +225,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-14",
+      lastModified: "2026-10-15",
       changeFrequency: "daily",
       priority: 1,
     },
