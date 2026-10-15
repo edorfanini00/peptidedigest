@@ -41,7 +41,7 @@ export const story: NewsroomStory = {
         "The preceding oral VENTURE Phase 2 study enrolled 280 participants and set its primary weight endpoint at 13 weeks.[2][3][4] SUNRISE extends the planned treatment period to 68 weeks and targets a larger enrollment in each of its two populations. The earlier study is registered as NCT06828055.[2][3][4]",
         "Viking reported weight reductions compared with placebo in the earlier trial.[1] Its October announcement also describes gastrointestinal events as the most commonly observed treatment emergent adverse events. Both the efficacy account and the tolerability description come from the developer of VK2735.[1]",
         "Over 68 weeks, weight change and treatment tolerability become connected questions.[1][2][3] Participants who stop treatment or miss measurements can affect how the eventual weight results are interpreted. Reporting withdrawals and adverse events alongside weight trajectories will help explain the experience of staying in treatment.[1][2][3]",
-        "The SUNRISE records describe safety and tolerability assessment alongside weight outcomes.[2][3] Their currently posted outcome modules list the primary weight endpoint; a fuller public safety assessment schedule remains to come.[2][3]"
+        "The SUNRISE records describe safety and tolerability assessment alongside weight outcomes.[2][3] Their currently posted outcome modules list the primary weight endpoint but do not specify the safety assessment schedule.[2][3]"
       ]
     },
     {

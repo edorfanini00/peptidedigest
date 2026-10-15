@@ -61,9 +61,9 @@ export const story: NewsroomStory = {
       "id": "negative-comparison",
       "paragraphs": [
         "A second 2025 paper, by Moore and colleagues, examined a different system: a synthetic peptide chemically attached to the antiviral drug cabotegravir and designed to form a gel that holds water.[3] The investigators compared its TFA and hydrochloride forms. For their cell tests, they used the material in dissolved form rather than exposing cells to a complete gel.[3]",
-        "At 72 hours, the MTS metabolic activity assay found no statistically significant difference between the two salts in NCTC 929 mouse fibroblasts across the tested concentrations of 20 to 500 micromolar.[3] The cells received dissolved peptide and drug conjugate, with metabolic activity measured relative to cells exposed to culture medium alone. Live/Dead fluorescence staining also showed similar patterns of viable cells. Some earlier metabolic measurements differed between salts, so the 72 hour finding does not describe every time point.[3]",
+        "In NCTC 929 mouse fibroblasts exposed to the dissolved conjugate, Live/Dead fluorescence staining showed similar patterns of viable cells for the two salts.[3] Metabolic activity measurements varied across the observations: some earlier comparisons differed between salts, while others did not.[3]",
         "The two assays supplied separate readouts of the cell response.[3] MTS metabolic activity sometimes rose above the readings from cells exposed to culture medium alone. That stronger signal does not necessarily mean a proportionate increase in living cells; Live/Dead staining assessed viability through fluorescence imaging.[3]",
-        "Changing the counterion produced no detectable difference in the final metabolic readout for this dissolved peptide and drug conjugate.[3] That finding is limited to the tested cell model and conditions. The comparison used TFA and hydrochloride; acetate was not tested.[3]"
+        "The counterion change did not produce a uniform shift across this study’s cell readouts.[3] That mixed pattern belongs to this dissolved peptide and drug conjugate in this model. It does not establish equivalence between peptide salts, and acetate was not tested.[3]"
       ]
     },
     {
