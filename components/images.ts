@@ -1,4 +1,4 @@
-// Editorial image registry. All photos are Unsplash License (free use).
+// Editorial image registry. Stock photo licenses and generated-image provenance are recorded below.
 // These are illustrative stock photographs, never photos of the events covered.
 // Full credits: reports/design/image-credits.md
 
@@ -15,6 +15,30 @@ export interface EditorialImage {
 }
 
 export const images = {
+  // October 15 Higgsfield originals: 2528 × 1696; resized without crop to 1600 × 1073.
+  vk2735TrialPlanning: {
+  "src": "/images/vk2735-trial-planning-20261015.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "AI-generated illustration of two closed study folders on a desk in a clinical research planning office",
+  "caption": "AI-generated editorial illustration, not a photograph of the trials or an actual Viking facility.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideCounterionAnalysis: {
+  "src": "/images/peptide-counterion-analysis-20261015.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "AI-generated illustration of conceptual analytical equipment and capped sample vials for peptide counterion research",
+  "caption": "AI-generated editorial illustration of conceptual analytical equipment, not a verified instrument or a photograph of the cited experiments.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   semaglutideHeartResearch: {
     "src": "/images/semaglutide-heart-research-20261014.webp",
     "width": 1600,

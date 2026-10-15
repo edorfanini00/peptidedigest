@@ -17,6 +17,25 @@ interface CardArticle {
 }
 
 const latestArticles: CardArticle[] = [
+{
+  "slug": "vk2735-oral-phase-3-sunrise-trials",
+  "category": "Clinical research",
+  "title": "Oral VK2735 Phase 3: what Viking’s two SUNRISE trials will test",
+  "image": "vk2735TrialPlanning",
+  "date": "October 15, 2026",
+  "readTime": "5 min read",
+  "excerpt": "Viking’s oral VK2735 Phase 3 program pairs trials in adults with and without type 2 diabetes. What the 68 week design measures and the registry says about timing."
+},
+{
+  "slug": "peptide-tfa-vs-acetate-counterion-assay-results",
+  "category": "Science",
+  "title": "TFA vs acetate peptide salts: why assay results can change",
+  "image": "peptideCounterionAnalysis",
+  "date": "October 15, 2026",
+  "readTime": "6 min read",
+  "excerpt": "The same peptide sequence can behave differently as a TFA, acetate or chloride salt. Three primary studies show why the assay determines the comparison."
+},
+
   {
     "slug": "semaglutide-hfpef-animal-study-without-weight-loss",
     "category": "Preclinical research",
