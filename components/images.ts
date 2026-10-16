@@ -15,6 +15,30 @@ export interface EditorialImage {
 }
 
 export const images = {
+  // October 16 originals: 2528 × 1696; proportional resize to 1600 × 1073.
+  tirzepatideHeartFailureAnalysis: {
+  "src": "/images/tirzepatide-heart-failure-20261016.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "AI-generated illustration of an empty cardiology room with a dark ultrasound screen and a stethoscope",
+  "caption": "AI-generated editorial illustration of a cardiology room, not a photograph of SURPASS CVOT or an actual study facility.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  ss31MembraneResearch: {
+  "src": "/images/ss31-membrane-research-20261016.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "AI-generated illustration of a quartz cuvette in a conceptual fluorescence measurement sample bay",
+  "caption": "AI-generated editorial illustration of a cuvette sample bay, not a verified instrument model or a photograph of the reported experiments.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   // October 15 Higgsfield originals: 2528 × 1696; resized without crop to 1600 × 1073.
   vk2735TrialPlanning: {
   "src": "/images/vk2735-trial-planning-20261015.webp",

@@ -7,6 +7,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/tirzepatide-heart-failure-surpass-cvot-analysis`,
+      lastModified: new Date("2026-10-16T12:33:44+00:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/ss31-cardiolipin-mitochondrial-mechanism`,
+      lastModified: new Date("2026-10-16T12:33:44+00:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
+    {
       url: `${base}/vk2735-oral-phase-3-sunrise-trials`,
       lastModified: new Date("2026-10-15T12:43:16+00:00"),
       changeFrequency: "weekly",
@@ -225,7 +238,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-15",
+      lastModified: "2026-10-16",
       changeFrequency: "daily",
       priority: 1,
     },
