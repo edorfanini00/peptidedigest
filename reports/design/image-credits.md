@@ -399,3 +399,37 @@ Exact prompt:
 News depicts conceptual trial planning, not an actual Viking facility or event. Science depicts conceptual analytical equipment; the synthetic configuration is not a verified working instrument, detector or cited experimental apparatus. Both carry visible AI-generated editorial illustration captions.
 
 Full request, quotes, submission intents, raw creation and completion receipts, native dimensions, transforms, costs and hashes: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/writer/media/provenance.json`. Originals and transaction receipts: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/parent-media`. Prior failed writer quotes remain in `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-15/run-0800/writer/media` and caused no submission or spend.
+
+## October 16, 2026 newsroom illustrations
+
+Parent generated and inspected two Higgsfield nano_banana_pro illustrations, requested 3:2 / 2k. Both native originals measure 2528 × 1696. Writer inspected the originals and resized proportionally to 1600 × 1073, integer rounding only, with Sharp WebP quality 85 / effort 6; no crop or upsample. Each completed job cost 2 credits, 4 gross and net credits total, with no retries or writer generation. Parent readiness: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/media-ready.json`. Rendered review remains with the parent.
+
+### News
+
+Repository asset: `public/images/tirzepatide-heart-failure-20261016.webp`. Registry key: `tirzepatideHeartFailureAnalysis`. Used by the article hero and its matching homepage card.
+
+Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/news-original.png` (5088191 bytes). SHA256 `c2c4e08ea6af0c4baad3723774a4ba02ec870e97e2916e4079812354412d9b00`. Writer source copy: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/writer/media/news-original.png`.
+
+Optimized: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/writer/media/news-1600.webp` (72926 bytes). SHA256 `9c7213ce3f7719ac0726f7b4de82d0e57d842e5dd09508360a6bec931493377c`.
+
+Job `6984829a-3987-4444-90d0-d201fe6e24f5`; receipt `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/news-job1.json`; quote `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/news-quote.json`; submission intent `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/news-submission-intent.json`.
+
+Exact prompt:
+
+> Very photorealistic editorial photograph style, an empty modern cardiology consultation room in soft early morning daylight, a realistic unbranded cardiac ultrasound console with a dark inactive monitor at the left, its probe resting safely in its holder, a neatly folded white examination sheet and a plain stethoscope on a light wood side table on the right, warm neutral colors, natural lens perspective, subtle authentic wear on equipment, exceptionally realistic materials, no people. Horizontal 3:2 composition. This is a conceptual editorial illustration about interpreting heart failure trial evidence, not a specific real trial or hospital. No readable text, no logos, no data or waveforms on any screen, no medicine, no syringes, no pills, no molecular graphics, no anatomy model, no CGI look, no painting or cartoon.
+
+### Science
+
+Repository asset: `public/images/ss31-membrane-research-20261016.webp`. Registry key: `ss31MembraneResearch`. Used by the article hero and its matching homepage card.
+
+Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/science-original.png` (5775775 bytes). SHA256 `3abe335f97a45acabeaeba6cd73c16c5844c4fcc3402cc9277fdd4452d81b767`. Writer source copy: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/writer/media/science-original.png`.
+
+Optimized: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/writer/media/science-1600.webp` (78830 bytes). SHA256 `763ba4c716f5260f36c43e33367c5fbc9b5d3205a77981149958a9beaf8a03eb`.
+
+Job `cd5cc3c6-1250-4a61-b4f1-7a775e4ccb7b`; receipt `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/science-job1.json`; quote `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/science-quote.json`; submission intent `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-16/run-0800/parent-media/science-submission-intent.json`.
+
+Exact prompt:
+
+> Very photorealistic editorial close photograph of an unbranded laboratory fluorescence spectrometer sample bay, a square transparent quartz cuvette seated upright inside a realistic black optical sample holder, second empty quartz cuvette resting on clean lint free tissue beside the equipment, no liquid spills, precise believable optical instrument materials, side window daylight, shallow depth of field but clear cuvette edges and sample bay, warm neutral laboratory surfaces. Horizontal 3:2 composition, documentary camera realism. Conceptual illustration of fluorescence measurements used to study peptide interactions with membranes, not a photograph of a reported experiment or specific instrument model. No people, no readable labels or words, no invented results, no screen graphics, no molecules, no syringes, no pills, no medicine packaging, no glowing liquid, no cartoon, painting or CGI aesthetic.
+
+Credit: The Peptide Digest via Higgsfield. Both images must be conspicuously captioned AI-generated editorial illustrations. The news image is a conceptual cardiology room, not a photograph of SURPASS CVOT or an actual study facility. The science image is a conceptual cuvette sample bay, not a verified instrument model or photograph of a reported experiment.

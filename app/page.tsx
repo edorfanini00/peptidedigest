@@ -14,9 +14,30 @@ interface CardArticle {
   title: string;
   excerpt: string;
   image: ImageKey;
+  imageLabel?: string;
 }
 
 const latestArticles: CardArticle[] = [
+{
+  "slug": "tirzepatide-heart-failure-surpass-cvot-analysis",
+  "category": "Clinical research",
+  "title": "Tirzepatide heart failure analysis finds a survival signal",
+  "image": "tirzepatideHeartFailureAnalysis",
+  "date": "October 16, 2026",
+  "readTime": "5 min read",
+  "excerpt": "An exploratory SURPASS CVOT analysis favored tirzepatide on a combined death and heart failure outcome. The component results explain its limits.",
+  "imageLabel": "AI-generated editorial illustration"
+},
+{
+  "slug": "ss31-cardiolipin-mitochondrial-mechanism",
+  "category": "Science",
+  "title": "SS31 and cardiolipin: how the mitochondrial peptide works",
+  "image": "ss31MembraneResearch",
+  "date": "October 16, 2026",
+  "readTime": "4 min read",
+  "excerpt": "How SS31 interacts with cardiolipin and mitochondrial proteins, what laboratory experiments reveal, and where the human evidence remains limited.",
+  "imageLabel": "AI-generated editorial illustration"
+},
 {
   "slug": "vk2735-oral-phase-3-sunrise-trials",
   "category": "Clinical research",
@@ -451,6 +472,7 @@ function ArticleCard({ a, sizes }: { a: CardArticle; sizes: string }) {
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         />
       </Link>
+      {a.imageLabel && <p className="-mt-2 mb-4 text-xs text-[color:var(--color-muted)]">{a.imageLabel}</p>}
       <CardMeta a={a} />
       <Link href={`/${a.slug}`} className="mt-2 flex-1">
         <h3 className="font-serif text-[1.3rem] leading-[1.25] font-semibold text-[color:var(--color-ink)] group-hover:text-[color:var(--color-accent)] transition-colors">
