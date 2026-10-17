@@ -44,7 +44,7 @@ export const story: NewsroomStory = {
       "id": "pfs-and-survival",
       "title": "Progression-free survival measures time to worsening or death",
       "paragraphs": [
-        "In ACTION-1, progression-free survival runs from randomization to either disease progression, assessed using standardized tumor-response criteria, or death from any cause, whichever comes first.[2] It asks how long participants remain alive without recorded progression.[2] Overall survival asks how long they remain alive, whether or not the cancer has progressed.[2]",
+        "In ACTION-1, progression-free survival runs from randomization to either disease progression, assessed using standardized tumor-response criteria, or death from any cause, whichever comes first.[2] It asks how long participants remain alive without recorded progression.[2] Overall survival asks how long they remain alive, whether or not the cancer has progressed.[16]",
         "BMS describes the interim PFS improvement as statistically significant and clinically meaningful.[1] Without a hazard ratio, confidence interval or median PFS for each arm, readers cannot judge its size or precision.[1] The release also omits the interim event count and data cutoff.[1] Participants will continue to be followed for overall survival; an overall-survival improvement has not been reported in this announcement.[1]",
         "The registry defines an event-driven PFS assessment, with analysis tied to a target number of progression or death events.[2] That planned target does not reveal how many events were included in the interim result.[2] Nor does the registry's enrollment total show how long participants were followed.[2]"
       ]
@@ -83,6 +83,11 @@ export const story: NewsroomStory = {
       "id": 3,
       "url": "https://rayzebio.com/wp-content/uploads/2024/06/Halperin-ACTION-1-ASCO-2024-Poster-UPLOAD.pdf",
       "title": "ACTION-1 phase 1b ASCO 2024 poster"
+    },
+    {
+      "id": 16,
+      "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/overall-survival",
+      "title": "National Cancer Institute: definition of overall survival"
     }
   ],
   "related": [
