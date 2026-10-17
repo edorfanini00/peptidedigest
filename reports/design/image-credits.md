@@ -433,3 +433,39 @@ Exact prompt:
 > Very photorealistic editorial close photograph of an unbranded laboratory fluorescence spectrometer sample bay, a square transparent quartz cuvette seated upright inside a realistic black optical sample holder, second empty quartz cuvette resting on clean lint free tissue beside the equipment, no liquid spills, precise believable optical instrument materials, side window daylight, shallow depth of field but clear cuvette edges and sample bay, warm neutral laboratory surfaces. Horizontal 3:2 composition, documentary camera realism. Conceptual illustration of fluorescence measurements used to study peptide interactions with membranes, not a photograph of a reported experiment or specific instrument model. No people, no readable labels or words, no invented results, no screen graphics, no molecules, no syringes, no pills, no medicine packaging, no glowing liquid, no cartoon, painting or CGI aesthetic.
 
 Credit: The Peptide Digest via Higgsfield. Both images must be conspicuously captioned AI-generated editorial illustrations. The news image is a conceptual cardiology room, not a photograph of SURPASS CVOT or an actual study facility. The science image is a conceptual cuvette sample bay, not a verified instrument model or photograph of a reported experiment.
+
+## October 17, 2026 newsroom illustrations
+
+Two parent-generated Higgsfield nano_banana_pro images, requested 3:2 / 2k. Native originals are 2528 × 1696; optimized WebPs are 1600 × 1073 with proportional integer rounding, Sharp quality85/effort6, no crop or upscale. Parent inspected and accepted both originals. Actual spend: 2 credits each, 4 total; no retries, topups or writer generation. Writer also inspected both originals.
+
+Parent readiness: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/media-ready.json`. Full provenance: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/writer/media/provenance.json`. Transaction evidence: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/transactions.json`. Parent retains rendered visual acceptance.
+
+### News
+
+Asset: `public/images/ryz101-radiopharmacy-20261017.webp`; registry key `ryz101Radiopharmacy`. The article hero and matching homepage card use this unique asset.
+
+Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/news-original.png`, 6321106 bytes, SHA256 `b6930cd67ef94f8dcc3054187f1733569047312b65fc426a564c504efa337a7e`. Output: 152436 bytes, SHA256 `cf16ebfe507a545a370040675c1b29b8a7b8ed98ae05a4a16672c5628d650cc9`.
+
+Job `ca346616-cc70-487a-9af6-757a2bdddc2b`; receipt `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/news-job3.json`; quote `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/news-quote.json`; intent `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/news-submission-intent.json`. Gross/net credits: 2/2.
+
+Exact prompt:
+
+> Very photorealistic editorial photograph style, a quiet modern radiopharmaceutical research laboratory, wide three quarter view of a shielded hot cell enclosure with thick amber tinted lead glass window and a pair of remote mechanical manipulators visible inside, brushed stainless steel work surfaces, subtle reflection and naturally imperfect material texture, a closed small metal shielding container within the enclosure. No people, no patient, no needles or syringes, no medicines or pills, no visible liquid handling instructions, no logos, no brand labels, no readable text, no glowing radiation, no molecular diagrams. Natural soft daylight mixed with neutral laboratory lighting, believable real engineering, restrained documentary color, 50mm editorial photography, no CGI or illustration aesthetic, no cartoons, no anime, no painterly style. This is a conceptual image about peptide targeted radiopharmaceutical research, not a depiction of any actual company facility or trial event.
+
+Visible caption: AI-generated editorial illustration of a conceptual radiopharmacy hot cell, not a photograph of an actual trial or a RayzeBio facility.
+
+### Science
+
+Asset: `public/images/peptide-oxidation-source-20261017.webp`; registry key `peptideOxidationSource`. The article hero and matching homepage card use this unique asset.
+
+Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/science-original.png`, 9731086 bytes, SHA256 `57d8d6f7673332bbcc4f6ccf03bdbdc74edce45702ea142c3620b2bc49453d54`. Output: 147996 bytes, SHA256 `9ac0bcaa95ace8d5b166e76bca7f6811b26fd32f3743ec83bfa1ff434c7d89ec`.
+
+Job `f76123b8-51fb-4f72-a0f9-24cec430f356`; receipt `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/science-job1.json`; quote `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/science-quote.json`; intent `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-17/run-0800/parent-media/science-submission-intent.json`. Gross/net credits: 2/2.
+
+Exact prompt:
+
+> Extremely photorealistic editorial macro photograph style of the stainless steel electrospray ion source housing of a laboratory mass spectrometer, instrument front with a small circular inspection window, realistic machined metal screws and connectors, clean narrow translucent laboratory tubing entering at the side, soft out of focus analytical laboratory background. Close up shows believable metal textures and subtle fingerprints on a practical working scientific instrument, neutral cool white light with warm ambient reflection. No needles or syringes, no medical treatment, no people, no pills, no brands, no readable text, no charts or invented data, no molecular diagrams, no glowing beams or particles, no futuristic machinery. Real camera photograph, shallow optical depth of field, not cartoon, not anime, not painting, not CGI render. Conceptual editorial image about checking whether peptide oxidation arises during analysis, not documentary evidence of an actual experiment or a specific instrument model.
+
+Visible caption: AI-generated editorial illustration of a conceptual electrospray source, not a photograph of an actual experiment or a validated instrument diagram.
+
+Credit: The Peptide Digest via Higgsfield. These are conceptual illustrations, not documentary evidence or verified equipment designs.
