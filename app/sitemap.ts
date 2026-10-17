@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/ryz101-action-1-phase-3-interim-results`,
+      lastModified: new Date("2026-10-17T12:27:45+00:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/methionine-oxidation-peptide-mass-spectrometry-artifacts`,
+      lastModified: new Date("2026-10-17T12:27:45+00:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/tirzepatide-heart-failure-surpass-cvot-analysis`,
       lastModified: new Date("2026-10-16T12:33:44+00:00"),
       changeFrequency: "weekly",
@@ -238,7 +250,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-16",
+      lastModified: "2026-10-17",
       changeFrequency: "daily",
       priority: 1,
     },

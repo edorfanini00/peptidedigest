@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  // October 17 parent-approved originals; resized proportionally without crop or upscale.
+  ryz101Radiopharmacy: {
+  "src": "/images/ryz101-radiopharmacy-20261017.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Conceptual radiopharmacy hot cell with an amber window and remote mechanical manipulators",
+  "caption": "AI-generated editorial illustration of a conceptual radiopharmacy hot cell, not a photograph of an actual trial or a RayzeBio facility.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideOxidationSource: {
+  "src": "/images/peptide-oxidation-source-20261017.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Conceptual mass spectrometer source housing with a circular inspection window and laboratory tubing",
+  "caption": "AI-generated editorial illustration of a conceptual electrospray source, not a photograph of an actual experiment or a validated instrument diagram.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   // October 16 originals: 2528 × 1696; proportional resize to 1600 × 1073.
   tirzepatideHeartFailureAnalysis: {
   "src": "/images/tirzepatide-heart-failure-20261016.webp",

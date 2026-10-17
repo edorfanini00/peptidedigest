@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "ryz101-action-1-phase-3-interim-results",
+  "category": "Clinical research",
+  "title": "RYZ101 ACTION-1: BMS reports positive Phase 3 interim results",
+  "image": "ryz101Radiopharmacy",
+  "date": "October 17, 2026",
+  "readTime": "5 min read",
+  "excerpt": "BMS reports a positive RYZ101 ACTION-1 interim analysis. The population, comparator and progression-free survival endpoint explain what the announcement means.",
+  "imageLabel": "AI-generated editorial illustration, not a photograph of an actual trial."
+},
+{
+  "slug": "methionine-oxidation-peptide-mass-spectrometry-artifacts",
+  "category": "Science",
+  "title": "Methionine oxidation: when peptide analysis changes the sample",
+  "image": "peptideOxidationSource",
+  "date": "October 17, 2026",
+  "readTime": "6 min read",
+  "excerpt": "An oxidized peptide peak can arise during mass spectrometry. Three studies explain the methionine mass shift, instrument artifacts and ways to trace the change.",
+  "imageLabel": "AI-generated editorial illustration, not a photograph of an actual experiment."
+},
+{
   "slug": "tirzepatide-heart-failure-surpass-cvot-analysis",
   "category": "Clinical research",
   "title": "Tirzepatide heart failure analysis finds a survival signal",
