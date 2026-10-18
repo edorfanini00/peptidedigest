@@ -27,7 +27,7 @@ export const story: NewsroomStory = {
       "title": "The measured gain was a growth rate",
       "id": "growth-result",
       "paragraphs": [
-        "APPROACH, published online in JAMA Pediatrics in November 2025, was a randomized, double-blind trial at 10 hospitals in seven countries. In it, 84 children aged two to 11 were assigned to navepegritide or placebo. There were 57 children in the active-treatment group and 27 in the placebo group. The trial followed the comparison for 52 weeks. Its identifier is NCT05598320. [2] [6]",
+        "APPROACH, published online in JAMA Pediatrics in November 2025, was a randomized, double-blind trial at 10 hospitals in seven countries. The paper describes it as phase 2b, while ClinicalTrials.gov lists phase 2/3. [2] [6] In it, 84 children aged two to 11 were assigned to navepegritide or placebo. There were 57 children in the active-treatment group and 27 in the placebo group. The trial followed the comparison for 52 weeks. Its identifier is NCT05598320. [2] [6]",
         "At week 52, the adjusted annualized growth rate was 5.89 centimeters per year with navepegritide and 4.41 with placebo. The reported adjusted difference was 1.49 centimeters per year, with a 95% confidence interval of 1.05 to 1.93. That interval describes uncertainty around the estimated group difference. It is not a range of gains that every child can expect. [2] [6]",
         "Annualized growth velocity expresses the height gained over the observation period as a yearly rate. Adult height was not measured. Two children in the navepegritide group withdrew before week 52. The analysis included all 84 randomized children and used multiple imputation to account for missing week-52 values. [2] [6]"
       ]
