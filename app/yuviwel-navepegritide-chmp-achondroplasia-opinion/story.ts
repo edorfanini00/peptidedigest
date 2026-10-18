@@ -20,7 +20,7 @@ export const story: NewsroomStory = {
       "id": "growth-plate",
       "paragraphs": [
         "Achondroplasia begins with a change in the FGFR3 gene that makes a growth-regulating signal overactive. At the growth plate, where cartilage is formed and replaced by bone, that signal restricts the growth of long bones. Navepegritide is a prodrug: it releases C-type natriuretic peptide, or CNP, which acts through the NPR-B receptor to counter downstream effects of excessive FGFR3 signaling. It changes the balance of signals governing growth rather than repairing the gene itself. [2]",
-        "That mechanism explains the focus on children whose growth plates remain open. It also gives the evidence a concrete test: whether children grow faster over a defined period. The positive opinion rests on a growth benefit; judging how much that changes a child’s eventual height or health requires different observations. [1] [2]"
+        "The proposed indication therefore centers on children whose growth plates remain open. In APPROACH, researchers tested whether the change in signaling translated into faster growth over a year. [1] [2]"
       ]
     },
     {
@@ -29,32 +29,33 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "APPROACH, published online in JAMA Pediatrics in November 2025, was a randomized, double-blind trial at 10 hospitals in seven countries. In it, 84 children aged two to 11 were assigned to navepegritide or placebo. There were 57 children in the active-treatment group and 27 in the placebo group. The trial followed the comparison for 52 weeks. Its identifier is NCT05598320. [2] [6]",
         "At week 52, the adjusted annualized growth rate was 5.89 centimeters per year with navepegritide and 4.41 with placebo. The reported adjusted difference was 1.49 centimeters per year, with a 95% confidence interval of 1.05 to 1.93. That interval describes uncertainty around the estimated group difference. It is not a range of gains that every child can expect. [2] [6]",
-        "The endpoint puts the height change observed during the trial on a yearly scale. It does not measure final adult height, and multiplying the first-year advantage by the number of years left to grow would turn a measured result into an unsupported forecast. Two children in the navepegritide group withdrew before week 52. The analysis included all 84 randomized children and used multiple imputation to account for missing week-52 values. [2] [6]"
+        "Annualized growth velocity expresses the height gained over the observation period as a yearly rate. Adult height was not measured. Two children in the navepegritide group withdrew before week 52. The analysis included all 84 randomized children and used multiple imputation to account for missing week-52 values. [2] [6]"
       ]
     },
     {
       "title": "Growing faster leaves other questions open",
       "id": "beyond-height",
       "paragraphs": [
-        "Height is only one part of achondroplasia. The condition can involve leg bowing, spinal problems and other complications that affect daily life. APPROACH therefore also examined body proportions, leg alignment and measures of physical functioning. Exploratory measures of lower-limb alignment favored navepegritide. These radiographic changes concern the position of bones; they do not themselves establish that children will need fewer operations later. [2]",
-        "The enrollment rules matter here. Participants had not previously received treatments intended to alter stature or growth. The trial excluded children with closed growth plates, severe untreated sleep apnea, or certain anticipated surgical needs. Its results therefore describe a selected group of children aged two to 11, a narrower population than the proposed indication of age two and older with open growth plates. [1] [2] [6]"
+        "Height is only one part of achondroplasia. The condition can involve leg bowing, spinal problems and other complications that affect daily life. APPROACH therefore also examined body proportions, leg alignment and measures of physical functioning. Exploratory measures of lower-limb alignment favored navepegritide. The images showed changes in bone alignment, while the longer-term effect on the need for surgery remains unknown. [2]",
+        "Participants had not previously received treatments intended to alter stature or growth. The trial excluded children with closed growth plates, severe untreated sleep apnea, or certain anticipated surgical needs. Its results therefore describe a selected group of children aged two to 11, a narrower population than the proposed indication of age two and older with open growth plates. [1] [2] [6]"
       ]
     },
     {
-      "title": "Safety belongs to its own observation period",
+      "title": "Side effects during the first year",
       "id": "safety",
       "paragraphs": [
-        "During the 52-week comparison, serious adverse events occurred in three of 57 children receiving navepegritide and three of 27 receiving placebo. Investigators judged none of the serious events to be treatment related. That narrower finding should not be read as an absence of treatment-related events: the paper’s safety table records those in 12 of 57 and seven of 27 children, respectively. [2]",
-        "Injection-site reactions occurred in 11 of 57 children with navepegritide and four of 27 with placebo, and were described as mild and transient. EMA also lists hypertrichosis, or abnormal hair growth, among the most common side effects. Its summary supplies no rate for that effect. A small one-year comparison leaves uncertainty about uncommon or delayed harms. [1] [2]",
-        "After week 52, the trial changed. All participants in the extension received navepegritide through week 104. Of the 82 who entered, 80 completed it. The extension follows what happens with continued treatment, but cannot provide a second year of comparison with children still receiving placebo. [6]"
+        "During the 52-week comparison, serious adverse events occurred in three of 57 children receiving navepegritide and three of 27 receiving placebo. Investigators considered none of those serious events treatment related. Across all levels of severity, treatment-related adverse events were reported in 12 of 57 children receiving navepegritide and seven of 27 receiving placebo. [2]",
+        "Injection-site reactions occurred in 11 of 57 children with navepegritide and four of 27 with placebo, and were described as mild and transient. EMA also lists hypertrichosis, or abnormal hair growth, among the most common side effects, without giving a frequency for that effect. The trial’s size and one-year comparison leave uncertainty about uncommon or delayed harms. [1] [2]",
+        "In the extension from week 52 through week 104, all 82 participants received navepegritide. Eighty completed that period, which had no placebo comparator. [6]"
       ]
     },
     {
       "title": "The next decision is authorization",
       "id": "next-decision",
       "paragraphs": [
-        "Ascendis Pharma funded APPROACH. Its involvement extended from designing and running the trial to handling the data and preparing the manuscript. The journal article and registry provide complementary detail about the same trial, not two independent replications. The company’s October 16 announcement says it expects a European Commission decision in the fourth quarter of 2026 and, if authorization is granted, an initial German launch in the first quarter of 2027. Those dates are company expectations, not completed regulatory or access milestones. [2] [6] [14]",
-        "Yuviwel’s advance is now specific: a positive European committee opinion, supported by evidence that navepegritide increased growth velocity over 52 weeks in the studied children. Authorization is the next regulatory question. The larger clinical question is how that early growth advantage develops as children get older. Longer follow-up must put the height measurements alongside physical function and medical complications, while continuing to look for harms. That is how a faster year of growth can be assessed against the course of childhood. [1] [2] [6]"
+        "Ascendis Pharma funded APPROACH and was involved in designing and running the trial, handling the data and preparing the manuscript. [2]",
+        "The European Commission’s authorization decision is pending. Ascendis said on October 16 that it expects a decision in the fourth quarter of 2026 and, if authorization is granted, an initial German launch in the first quarter of 2027. [1] [14]",
+        "As the children grow older, the central clinical question is whether faster growth is accompanied by easier movement and fewer medical complications. Longer follow-up also has to show how much of the early height advantage persists into adulthood. [2] [6]"
       ]
     }
   ],
