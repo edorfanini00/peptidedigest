@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "yuviwel-navepegritide-chmp-achondroplasia-opinion",
   "title": "Yuviwel receives a positive CHMP opinion: what the growth results show",
   "description": "Yuviwel’s positive CHMP opinion moves navepegritide toward EU authorization for achondroplasia. What the 52-week growth and safety results establish.",
-  "date": "2026-10-18T12:33:00+00:00",
+  "date": "2026-10-19T12:33:00+00:00",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "yuviwelGrowthMeasurement",

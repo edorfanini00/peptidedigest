@@ -8,13 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${base}/yuviwel-navepegritide-chmp-achondroplasia-opinion`,
-      lastModified: new Date("2026-10-18T12:33:00+00:00"),
+      lastModified: new Date("2026-10-19T12:33:00+00:00"),
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
       url: `${base}/albumin-binding-peptide-half-life`,
-      lastModified: new Date("2026-10-18T12:33:00+00:00"),
+      lastModified: new Date("2026-10-19T12:33:00+00:00"),
       changeFrequency: "monthly",
       priority: 0.85,
     },
@@ -262,7 +262,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-18",
+      lastModified: "2026-10-19",
       changeFrequency: "daily",
       priority: 1,
     },

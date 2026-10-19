@@ -23,7 +23,7 @@ const latestArticles: CardArticle[] = [
   "category": "Clinical research",
   "title": "Yuviwel receives a positive CHMP opinion: what the growth results show",
   "image": "yuviwelGrowthMeasurement",
-  "date": "October 18, 2026",
+  "date": "October 19, 2026",
   "readTime": "5 min read",
   "excerpt": "Yuviwel’s positive CHMP opinion moves navepegritide toward EU authorization for achondroplasia. What the 52-week growth and safety results establish.",
   "imageLabel": "AI-generated editorial illustration, not a photograph of an actual trial."
@@ -33,7 +33,7 @@ const latestArticles: CardArticle[] = [
   "category": "Science",
   "title": "How albumin binding extends peptide half-life, and what it can cost",
   "image": "albuminBindingDialysis",
-  "date": "October 18, 2026",
+  "date": "October 19, 2026",
   "readTime": "6 min read",
   "excerpt": "Albumin can extend peptide circulation through binding and cellular recycling. Three studies explain the measurements, mechanisms and tradeoffs in target activity.",
   "imageLabel": "AI-generated editorial illustration, not a photograph of an actual experiment or a validated instrument design."
