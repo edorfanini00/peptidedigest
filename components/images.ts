@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  // October 18 originals, proportionally resized without crop or upscale.
+  yuviwelGrowthMeasurement: {
+  "src": "/images/yuviwel-growth-measurement-20261018.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Quiet growth measurement room with standing height measures and a wooden stool",
+  "caption": "AI-generated editorial illustration of a growth measurement room, not a photograph of an actual trial or clinical facility.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  albuminBindingDialysis: {
+  "src": "/images/albumin-binding-dialysis-20261018.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Paired clear chambers on a laboratory bench illustrating the idea of equilibrium dialysis",
+  "caption": "AI-generated editorial illustration of a conceptual equilibrium dialysis setup, not a photograph of an actual experiment or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   // October 17 parent-approved originals; resized proportionally without crop or upscale.
   ryz101Radiopharmacy: {
   "src": "/images/ryz101-radiopharmacy-20261017.webp",

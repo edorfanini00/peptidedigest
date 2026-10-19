@@ -469,3 +469,31 @@ Exact prompt:
 Visible caption: AI-generated editorial illustration of a conceptual electrospray source, not a photograph of an actual experiment or a validated instrument diagram.
 
 Credit: The Peptide Digest via Higgsfield. These are conceptual illustrations, not documentary evidence or verified equipment designs.
+
+## October 18, 2026: growth measurement and albumin binding
+
+Parent generated both distinct originals through Higgsfield Nano Banana Pro, requested 3:2 at 2k. Actual native dimensions were 2528 × 1696. The writer inspected both originals and resized proportionally to 1600 × 1073 WebP without crop or upscale. No additional generation or retries. Actual parent transaction total: 4 credits (2 per image).
+
+### yuviwelGrowthMeasurement
+
+- Asset: `public/images/yuviwel-growth-measurement-20261018.webp`
+- Caption: AI-generated editorial illustration of a growth measurement room, not a photograph of an actual trial or clinical facility.
+- Generator receipt: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-18/run-0800/parent-media/news-job1.json`
+- Job: `bc8feb90-ddab-4ef9-8498-1661c396aa84`; actual credits: 2.
+- Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-18/run-0800/parent-media/news-original.png`; 2528 × 1696; 5238802 bytes; SHA256 `67901ecac0c4ebf8ca9c9200a49097aa229bb03f76f64e9fb6cdc726b855b8a8`.
+- WebP: 1600 × 1073; 51928 bytes; SHA256 `3a6c4fb1a16725825e5c9683ef4e18fd6499a95fe29129ee728e185241512a40`.
+- Processing: sharp, width 1600, without enlargement, WebP quality 84 / effort 6.
+- Full quote, submission intent, parent acceptance and transaction references: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-18/run-0800/writer/media-provenance.json`.
+- Credit: The Peptide Digest via Higgsfield. Editorial concept only; no actual trial, experiment, company facility or validated equipment claimed.
+
+### albuminBindingDialysis
+
+- Asset: `public/images/albumin-binding-dialysis-20261018.webp`
+- Caption: AI-generated editorial illustration of a conceptual equilibrium dialysis setup, not a photograph of an actual experiment or a validated instrument design.
+- Generator receipt: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-18/run-0800/parent-media/science-job1.json`
+- Job: `3398cf2f-2af4-4c2b-9aba-615e1c295a5d`; actual credits: 2.
+- Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-18/run-0800/parent-media/science-original.png`; 2528 × 1696; 5383740 bytes; SHA256 `e8717eb6f0aef8fa040dcd86bf4ed86e195dd6e0df1037208245fa90c106da88`.
+- WebP: 1600 × 1073; 67088 bytes; SHA256 `137ee0be8bce022fb3a4c8adda46c8d311fa3636cf8bda2e2085e383346983b0`.
+- Processing: sharp, width 1600, without enlargement, WebP quality 84 / effort 6.
+- Full quote, submission intent, parent acceptance and transaction references: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-18/run-0800/writer/media-provenance.json`.
+- Credit: The Peptide Digest via Higgsfield. Editorial concept only; no actual trial, experiment, company facility or validated equipment claimed.
