@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "albumin-binding-peptide-half-life",
   "title": "How albumin binding extends peptide half-life, and what it can cost",
   "description": "Albumin can extend peptide circulation through binding and cellular recycling. Three studies explain the measurements, mechanisms and tradeoffs in target activity.",
-  "date": "2026-10-19T12:33:00+00:00",
+  "date": "2026-10-19T12:09:57+00:00",
   "type": "Article",
   "category": "Science",
   "image": "albuminBindingDialysis",
