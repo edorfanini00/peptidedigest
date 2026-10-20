@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "samsung-polypeptide-tender-offer-closing-timeline",
+  "category": "Industry news",
+  "title": "Samsung’s PolyPeptide offer clears a hurdle as closing moves later",
+  "image": "peptideManufacturing20261020",
+  "date": "October 20, 2026",
+  "readTime": "4 min read",
+  "excerpt": "Samsung’s PolyPeptide tender passed its acceptance threshold. Why closing remains pending, what the revised timetable says and where factory expansion stands.",
+  "imageLabel": "AI-generated editorial illustration of manufacturing equipment, not a photograph of a Samsung or PolyPeptide facility."
+},
+{
+  "slug": "ic50-ec50-kd-peptide-potency-binding-affinity",
+  "category": "Research explained",
+  "title": "IC50 vs EC50: why peptide potency is not binding affinity",
+  "image": "peptideAssay20261020",
+  "date": "October 20, 2026",
+  "readTime": "5 min read",
+  "excerpt": "Learn what IC50, EC50, Kd and Ki measure, why peptide binding can diverge from cellular activity, and what to check before comparing assay numbers.",
+  "imageLabel": "AI-generated editorial illustration of laboratory assay equipment, not a photograph of the cited experiment or a validated instrument design."
+},
+{
   "slug": "yuviwel-navepegritide-chmp-achondroplasia-opinion",
   "category": "Clinical research",
   "title": "Yuviwel receives a positive CHMP opinion: what the growth results show",

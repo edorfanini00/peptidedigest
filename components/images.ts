@@ -672,6 +672,28 @@ export const images = {
     "credit": "The Peptide Digest via Higgsfield",
     "kind": "illustration"
   },
+  peptideManufacturing20261020: {
+    "src": "/images/peptide-manufacturing-20261020.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "Unbranded stainless steel process vessels and pipework in a naturally lit industrial room",
+    "caption": "AI-generated editorial illustration of manufacturing equipment, not a photograph of a Samsung or PolyPeptide facility.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  peptideAssay20261020: {
+    "src": "/images/peptide-assay-20261020.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "Unbranded laboratory microplates beside an instrument tray on a worn workbench",
+    "caption": "AI-generated editorial illustration of laboratory assay equipment, not a photograph of the cited experiment or a validated instrument design.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
