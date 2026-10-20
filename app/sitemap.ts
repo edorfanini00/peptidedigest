@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/samsung-polypeptide-tender-offer-closing-timeline`,
+      lastModified: new Date("2026-10-20T12:12:02Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/ic50-ec50-kd-peptide-potency-binding-affinity`,
+      lastModified: new Date("2026-10-20T12:12:02Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/yuviwel-navepegritide-chmp-achondroplasia-opinion`,
       lastModified: new Date("2026-10-19T12:09:57+00:00"),
       changeFrequency: "weekly",
@@ -42,7 +54,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
-
     {
       url: `${base}/vk2735-oral-phase-3-sunrise-trials`,
       lastModified: new Date("2026-10-15T12:43:16+00:00"),
@@ -55,7 +66,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
-
     {
       url: `${base}/semaglutide-hfpef-animal-study-without-weight-loss`,
       lastModified: new Date("2026-10-14T12:30:26+00:00"),
@@ -262,7 +272,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-19",
+      lastModified: "2026-10-20",
       changeFrequency: "daily",
       priority: 1,
     },
