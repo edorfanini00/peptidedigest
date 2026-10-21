@@ -506,3 +506,29 @@ Parent generated both distinct originals through Higgsfield Nano Banana Pro, req
 - `/images/peptide-assay-20261020.webp` — AI-generated editorial illustration of laboratory assay equipment, not a photograph of the cited experiment or a validated instrument design. Higgsfield subscription CLI, `nano_banana_pro`, requested 3:2 / 2k. Original PNG: 2528 × 1696; published WebP: 1600 × 1073 (downsampled, never upscaled). Quoted and charged: 2 credits; completed job `9f444041-a35a-4cc3-b6dd-b27b34d275d8`. Both images total 4 credits; two create calls, no retries. Credit: The Peptide Digest via Higgsfield.
   - Exact request: `{"model": "nano_banana_pro", "aspect_ratio": "3:2", "resolution": "2k", "prompt": "VERY PHOTOREALISTIC editorial macro still life about measuring peptide receptor activity in a laboratory. A white 96-well assay microplate on the extended sample drawer of a real-world style luminescence plate reader, viewed at bench height, with a second black microplate softly out of focus beside it. Precise regular wells, convincing matte plastic, fine dust-free surface texture, gently worn laboratory bench, natural window light, realistic shadows and optical depth, neutral warm editorial palette. Conceptual laboratory equipment scene, not a photograph of a particular experiment or institution. No people, no syringes, no pills, no vials, no labels or text, no glowing liquids, no molecular diagrams. Not CGI, not 3D render, not cartoon or painting. Landscape 3:2.", "max_credits": 4, "run_total_cap": 8, "topups": false, "retry": false}`
   - Private provenance: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-20/run-0800/writer/media/science-job.json`; original, dimensions, intent, quote and raw create receipt retained beside it.
+
+## October 21, 2026 newsroom illustrations
+
+Parent generated two distinct Higgsfield subscription Nano Banana Pro originals, requested 3:2 / 2k. Actual originals: 2528 × 1696. Writer inspected both and downsampled without crop or upscale to 1600 × 1073 WebP. Actual cost: 2 credits each, 4 total; no additional generation or spending during integration. Credit: The Peptide Digest via Higgsfield.
+
+### news
+
+- Asset: `public/images/pemvidutide-liver-markers-20261021.webp`
+- Caption: AI-generated editorial illustration of liver-assessment equipment, not a photograph of the IMPACT trial or an actual clinical facility.
+- Completed job: `3f162276-a033-4684-844a-574876039fc4`; actual cost: 2 credits.
+- Original SHA256: `f3beb4d3f005a2adbebf406abebd00c16921fe4e42461ef7e21bab9e394a301f`; 6726744 bytes.
+- WebP SHA256: `18dd024525b840ac799f6d9448adb5cff83ec6c3115a5c9c948fa349749c1e22`; 136804 bytes.
+- Processing: sharp resize width 1600, withoutEnlargement true, no crop, WebP quality 88 effort 6.
+- Exact request: `{"provider": "Higgsfield subscription CLI", "model": "nano_banana_pro", "aspect_ratio": "3:2", "resolution": "2k", "prompt": "VERY PHOTOREALISTIC editorial still life in a modern liver research laboratory. Close view of a real-looking ultrasound elastography probe resting in its cradle beside an unbranded clinical ultrasound console, with a small rack of capped specimen tubes softly out of focus in the background. No patient, no people, no screen data or readable text, no logos, no molecular diagram. Natural morning window light, restrained warm neutral colors, believable brushed metal and plastic surfaces, subtle optical grain, documentary camera realism. Horizontal composition, 3:2. Not illustration style, not CGI, not a drawing, not a cartoon. No syringes, no injections, no pills. Conceptual editorial image, not any actual company facility or clinical trial.", "max_credits": 4, "daily_cap_including_failures": 8, "topups": false, "submission_authorized_only_after_quote_within_cap": true}`
+- Provenance (original, quote, intent, create/status receipts and transactions): `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-21/run-0800/writer/integration/news/media-provenance.json`.
+
+### science
+
+- Asset: `public/images/peptide-immunogenicity-20261021.webp`
+- Caption: AI-generated editorial illustration of antibody-testing equipment, not a photograph of the cited studies or a validated instrument design.
+- Completed job: `7fdcc67f-47d6-4a99-bc03-a82485c11848`; actual cost: 2 credits.
+- Original SHA256: `62b18fc221074614b9ed53a72efe4054985c84776c06bcf15de8cee9722aacd7`; 5869457 bytes.
+- WebP SHA256: `b87610be89a0b631c1b5d4d21d47aff3973849056bbcaf4dd9228b7f121edaeb`; 109806 bytes.
+- Processing: sharp resize width 1600, withoutEnlargement true, no crop, WebP quality 88 effort 6.
+- Exact request: `{"provider": "Higgsfield subscription CLI", "model": "nano_banana_pro", "aspect_ratio": "3:2", "resolution": "2k", "prompt": "VERY PHOTOREALISTIC close-up editorial photograph style of an immunogenicity research bench. A clear rectangular 96-well microplate with subtle clear and pale amber wells rests beside a closed unbranded laboratory microplate reader; several neatly arranged capped sample tubes in a small rack, no product labels, no logos, no text, no people. Side lighting through a laboratory window, accurate ordinary object proportions, real glass and plastic reflections, shallow depth of field, warm ivory and muted steel palette. Horizontal 3:2 framing. No scientific molecular diagrams, no stylized CGI, no cartoon or painting. No syringes, needles, pills, patients or injection demonstrations. This is conceptual editorial imagery, not a documented study.", "max_credits": 4, "daily_cap_including_failures": 8, "topups": false, "submission_authorized_only_after_quote_within_cap": true}`
+- Provenance (original, quote, intent, create/status receipts and transactions): `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-10-21/run-0800/writer/integration/science/media-provenance.json`.
