@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  pemvidutideLiver20261021: {
+  "src": "/images/pemvidutide-liver-markers-20261021.webp",
+  "alt": "Ultrasound console and probe beside capped specimen tubes in a sunlit room",
+  "caption": "AI-generated editorial illustration of liver-assessment equipment, not a photograph of the IMPACT trial or an actual clinical facility.",
+  "width": 1600,
+  "height": 1073,
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideImmunogenicity20261021: {
+  "src": "/images/peptide-immunogenicity-20261021.webp",
+  "alt": "Conceptual laboratory plate reader with a microplate and capped sample tubes",
+  "caption": "AI-generated editorial illustration of antibody-testing equipment, not a photograph of the cited studies or a validated instrument design.",
+  "width": 1600,
+  "height": 1073,
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   // October 18 originals, proportionally resized without crop or upscale.
   yuviwelGrowthMeasurement: {
   "src": "/images/yuviwel-growth-measurement-20261018.webp",

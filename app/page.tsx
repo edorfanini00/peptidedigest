@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "pemvidutide-aasld-2026-liver-markers-biopsy",
+  "category": "Clinical research",
+  "title": "Pemvidutide heads to AASLD with liver-marker results beyond its early biopsies",
+  "image": "pemvidutideLiver20261021",
+  "date": "October 21, 2026",
+  "readTime": "4 min read",
+  "excerpt": "Altimmune plans a 48-week pemvidutide responder analysis at AASLD. How liver stiffness and blood markers differ from the IMPACT trial’s earlier biopsy results.",
+  "imageLabel": "AI-generated editorial illustration of liver-assessment equipment, not a photograph of the IMPACT trial or an actual clinical facility."
+},
+{
+  "slug": "peptide-immunogenicity-anti-drug-antibodies",
+  "category": "Research explained",
+  "title": "Peptide immunogenicity: what anti-drug antibodies can tell us",
+  "image": "peptideImmunogenicity20261021",
+  "date": "October 21, 2026",
+  "readTime": "4 min read",
+  "excerpt": "Anti-drug antibodies can bind a peptide without proving treatment failure. Learn how neutralization tests, drug exposure and clinical outcomes fit together.",
+  "imageLabel": "AI-generated editorial illustration of antibody-testing equipment, not a photograph of the cited studies or a validated instrument design."
+},
+{
   "slug": "samsung-polypeptide-tender-offer-closing-timeline",
   "category": "Industry news",
   "title": "Samsung’s PolyPeptide offer clears a hurdle as closing moves later",

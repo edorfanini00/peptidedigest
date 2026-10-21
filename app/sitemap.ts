@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/pemvidutide-aasld-2026-liver-markers-biopsy`,
+      lastModified: new Date("2026-10-21T12:45:56Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-immunogenicity-anti-drug-antibodies`,
+      lastModified: new Date("2026-10-21T12:45:56Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/samsung-polypeptide-tender-offer-closing-timeline`,
       lastModified: new Date("2026-10-20T12:12:02Z"),
       changeFrequency: "weekly",
@@ -272,7 +284,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: "2026-10-20",
+      lastModified: new Date("2026-10-21T12:45:56Z"),
       changeFrequency: "daily",
       priority: 1,
     },
