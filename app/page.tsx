@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "asc36o-oral-amylin-phase-1-human-absorption",
+  "category": "Clinical research",
+  "title": "Ascletis’ oral amylin ASC36o reaches Phase 1: the human absorption question",
+  "image": "oralAmylin20261022",
+  "date": "October 22, 2026",
+  "readTime": "4 min read",
+  "excerpt": "Ascletis says oral amylin ASC36o is in US Phase 1. Why its forthcoming human pharmacokinetic data matter more than animal exposure claims.",
+  "imageLabel": "AI-generated editorial illustration of a generic pharmacokinetics laboratory, not an Ascletis facility or study photograph. Instrument design is not validated; screen data are illustrative."
+},
+{
+  "slug": "peptide-cell-uptake-cytosolic-delivery-endosomal-escape",
+  "category": "Research explained",
+  "title": "Peptide cell uptake is not cytosolic delivery: why glowing cells can mislead",
+  "image": "cytosolicDelivery20261022",
+  "date": "October 22, 2026",
+  "readTime": "4 min read",
+  "excerpt": "A fluorescent cell can hold peptides in endosomes without delivering them to intracellular targets. What CAPA and SLEEQ experiments actually measure.",
+  "imageLabel": "AI-generated editorial illustration of fluorescence microscopy, not a photograph of the cited experiments or a validated instrument design. Screen signals are illustrative."
+},
+{
   "slug": "pemvidutide-aasld-2026-liver-markers-biopsy",
   "category": "Clinical research",
   "title": "Pemvidutide heads to AASLD with liver-marker results beyond its early biopsies",

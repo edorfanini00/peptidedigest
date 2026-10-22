@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  oralAmylin20261022: {
+  "src": "/images/oral-amylin-20261022.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Conceptual analytical instrument with a sample tray and a blurred chromatogram display",
+  "caption": "AI-generated editorial illustration of a generic pharmacokinetics laboratory, not an Ascletis facility or study photograph. Instrument design is not validated; screen data are illustrative.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  cytosolicDelivery20261022: {
+  "src": "/images/cytosolic-delivery-20261022.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Conceptual fluorescence microscope with a culture dish and blurred green signals on a monitor",
+  "caption": "AI-generated editorial illustration of fluorescence microscopy, not a photograph of the cited experiments or a validated instrument design. Screen signals are illustrative.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   pemvidutideLiver20261021: {
   "src": "/images/pemvidutide-liver-markers-20261021.webp",
   "alt": "Ultrasound console and probe beside capped specimen tubes in a sunlit room",
