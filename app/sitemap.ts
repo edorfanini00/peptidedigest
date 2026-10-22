@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/asc36o-oral-amylin-phase-1-human-absorption`,
+      lastModified: new Date("2026-10-22T12:26:11Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-cell-uptake-cytosolic-delivery-endosomal-escape`,
+      lastModified: new Date("2026-10-22T12:26:11Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/pemvidutide-aasld-2026-liver-markers-biopsy`,
       lastModified: new Date("2026-10-21T12:45:56Z"),
       changeFrequency: "weekly",
@@ -284,7 +296,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-21T12:45:56Z"),
+      lastModified: new Date("2026-10-22T12:26:11Z"),
       changeFrequency: "daily",
       priority: 1,
     },
