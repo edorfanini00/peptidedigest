@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  icotrokinraUc20261023: {
+  "src": "/images/icotrokinra-uc-20261023.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Optical microscope and a rack of glass slides beside blurred laboratory equipment",
+  "caption": "AI-generated editorial illustration of a generic pathology concept, not a photograph of ANTHEM-UC or an actual trial facility.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideIonSuppression20261023: {
+  "src": "/images/peptide-ion-suppression-20261023.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Metal instrument fittings and thin tubing beside capped laboratory sample vials",
+  "caption": "AI-generated editorial illustration of generic analytical hardware, not a photograph of the cited experiments or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   oralAmylin20261022: {
   "src": "/images/oral-amylin-20261022.webp",
   "width": 1600,

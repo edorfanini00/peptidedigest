@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/icotrokinra-ulcerative-colitis-76-week-anthem-uc",
+      lastModified: new Date("2026-10-23T12:16:05Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/peptide-lc-ms-ion-suppression-matrix-effects",
+      lastModified: new Date("2026-10-23T12:16:05Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/asc36o-oral-amylin-phase-1-human-absorption`,
       lastModified: new Date("2026-10-22T12:26:11Z"),
       changeFrequency: "weekly",
@@ -296,7 +308,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-22T12:26:11Z"),
+      lastModified: new Date("2026-10-23T12:16:05Z"),
       changeFrequency: "daily",
       priority: 1,
     },
