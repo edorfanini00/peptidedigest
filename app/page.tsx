@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "icotrokinra-ulcerative-colitis-76-week-anthem-uc",
+  "category": "Clinical research",
+  "title": "Icotrokinra in ulcerative colitis: what 76 week remission results mean",
+  "image": "icotrokinraUc20261023",
+  "date": "October 23, 2026",
+  "readTime": "4 min read",
+  "excerpt": "ANTHEM-UC followup found remission at 76 weeks among selected responders. How the extension differs from icotrokinra’s randomized ulcerative colitis trial.",
+  "imageLabel": "AI-generated editorial illustration of a generic pathology concept, not a photograph of ANTHEM-UC or an actual trial facility."
+},
+{
+  "slug": "peptide-lc-ms-ion-suppression-matrix-effects",
+  "category": "Research explained",
+  "title": "Why peptide LC-MS signal can change without a concentration change",
+  "image": "peptideIonSuppression20261023",
+  "date": "October 23, 2026",
+  "readTime": "4 min read",
+  "excerpt": "Ion suppression can weaken peptide LC-MS signals. How matrix effects, sample recovery and isotope standards change the meaning of a chromatographic peak.",
+  "imageLabel": "AI-generated editorial illustration of generic analytical hardware, not a photograph of the cited experiments or a validated instrument design."
+},
+{
   "slug": "asc36o-oral-amylin-phase-1-human-absorption",
   "category": "Clinical research",
   "title": "Ascletis’ oral amylin ASC36o reaches Phase 1: the human absorption question",
