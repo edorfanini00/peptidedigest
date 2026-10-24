@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  cyclicLibrary20261024: {
+    "src": "/images/cyclic-library-20261024.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "Resin-filled laboratory columns and clear sample tubes beside a multiwell plate, with chromatography equipment in the background",
+    "caption": "AI-generated editorial illustration of peptide library screening equipment, not a photograph of the cited studies or a validated apparatus.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  receptorTrafficking20261024: {
+    "src": "/images/receptor-trafficking-20261024.webp",
+    "width": 1600,
+    "height": 1073,
+    "alt": "Inverted laboratory microscope with a clear culture dish on its stage and closed dishes beside it",
+    "caption": "AI-generated editorial illustration of cell imaging equipment, not a photograph of the cited experiments or a validated instrument design.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
   icotrokinraUc20261023: {
   "src": "/images/icotrokinra-uc-20261023.webp",
   "width": 1600,

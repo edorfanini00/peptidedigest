@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/cyclic-peptide-libraries-proteome-screening",
+      lastModified: new Date("2026-10-24T12:16:01Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/peptide-receptor-desensitization-internalization",
+      lastModified: new Date("2026-10-24T12:16:01Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/icotrokinra-ulcerative-colitis-76-week-anthem-uc",
       lastModified: new Date("2026-10-23T12:16:05Z"),
       changeFrequency: "weekly",
@@ -308,7 +320,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-23T12:16:05Z"),
+      lastModified: new Date("2026-10-24T12:16:01Z"),
       changeFrequency: "daily",
       priority: 1,
     },
