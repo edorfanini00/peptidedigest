@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "cyclic-peptide-libraries-proteome-screening",
+  "category": "Research explained",
+  "title": "Cyclic peptide libraries: how protein fragments become binding candidates",
+  "image": "cyclicLibrary20261024",
+  "date": "October 24, 2026",
+  "readTime": "5 min read",
+  "excerpt": "How researchers build and decode cyclic peptide libraries, what a 15,217-member proteome study found, and why a binding hit still needs validation.",
+  "imageLabel": "AI-generated editorial illustration of peptide library screening equipment, not a photograph of the cited studies or a validated apparatus."
+},
+{
+  "slug": "peptide-receptor-desensitization-internalization",
+  "category": "Research explained",
+  "title": "Receptor desensitization: why a peptide's signal can fade after binding",
+  "image": "receptorTrafficking20261024",
+  "date": "October 24, 2026",
+  "readTime": "5 min read",
+  "excerpt": "Binding affinity cannot explain how a cell responds over time. GLP-1 receptor experiments separate desensitization, internalization and recycling.",
+  "imageLabel": "AI-generated editorial illustration of cell imaging equipment, not a photograph of the cited experiments or a validated instrument design."
+},
+{
   "slug": "icotrokinra-ulcerative-colitis-76-week-anthem-uc",
   "category": "Clinical research",
   "title": "Icotrokinra in ulcerative colitis: what 76 week remission results mean",
