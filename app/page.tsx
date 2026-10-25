@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "gilead-pepstar-hcxt-2001-oral-peptide-deal",
+  "category": "Industry news",
+  "title": "Gilead's $1.275 billion PepStar deal: what HCXT-2001 adds",
+  "image": "gileadHcxt20261025",
+  "date": "October 25, 2026",
+  "readTime": "4 min read",
+  "excerpt": "Gilead agreed to pay $1.275 billion upfront at closing for HCXT-2001. What the oral IL-23 receptor peptide adds, and how it differs from emvistegrast.",
+  "imageLabel": "AI-generated editorial illustration of a fictional Gilead campus sign, not a photograph of the event or an actual Gilead facility."
+},
+{
+  "slug": "leucine-isoleucine-peptide-mass-spectrometry",
+  "category": "Research explained",
+  "title": "Leucine vs isoleucine: what peptide mass spectrometry can resolve",
+  "image": "leuIleMassSpec20261025",
+  "date": "October 25, 2026",
+  "readTime": "5 min read",
+  "excerpt": "Leucine and isoleucine have the same exact mass. How specialized peptide fragmentation can distinguish them, and why a mass match leaves sequence ambiguity.",
+  "imageLabel": "AI-generated editorial illustration of mass spectrometry equipment, not a photograph of the cited experiments or a validated instrument design."
+},
+{
   "slug": "cyclic-peptide-libraries-proteome-screening",
   "category": "Research explained",
   "title": "Cyclic peptide libraries: how protein fragments become binding candidates",
