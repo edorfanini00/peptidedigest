@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  gileadHcxt20261025: {
+  "src": "/images/gilead-hcxt-20261025.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "A metal Gilead Sciences sign beside a landscaped modern office building in an imagined campus setting",
+  "caption": "AI-generated editorial illustration of a fictional Gilead campus sign, not a photograph of the event or an actual Gilead facility.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  leuIleMassSpec20261025: {
+  "src": "/images/leu-ile-mass-spec-20261025.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Close view of stainless steel analytical instrument fittings and thin tubing behind a clear laboratory housing",
+  "caption": "AI-generated editorial illustration of mass spectrometry equipment, not a photograph of the cited experiments or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   cyclicLibrary20261024: {
     "src": "/images/cyclic-library-20261024.webp",
     "width": 1600,

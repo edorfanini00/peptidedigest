@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/gilead-pepstar-hcxt-2001-oral-peptide-deal",
+      lastModified: new Date("2026-10-25T12:30:28Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/leucine-isoleucine-peptide-mass-spectrometry",
+      lastModified: new Date("2026-10-25T12:30:28Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/cyclic-peptide-libraries-proteome-screening",
       lastModified: new Date("2026-10-24T12:16:01Z"),
       changeFrequency: "monthly",
@@ -320,7 +332,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-24T12:16:01Z"),
+      lastModified: new Date("2026-10-25T12:30:28Z"),
       changeFrequency: "daily",
       priority: 1,
     },
