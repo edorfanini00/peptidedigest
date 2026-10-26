@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "elicio-eli-002-amplify-7p-esmo-results",
+  "category": "Clinical research",
+  "title": "ELI-002 at ESMO: what AMPLIFY-7P shows after missing its main endpoint",
+  "image": "elicioImmuneAssay20261026",
+  "date": "October 26, 2026",
+  "readTime": "5 min read",
+  "excerpt": "ELI-002 7P missed its primary pancreatic cancer trial endpoint. The ESMO analysis explains the ctDNA subgroup signal, immune responses and Phase 3 questions.",
+  "imageLabel": "AI-generated editorial illustration of immune assay equipment, not a photograph of AMPLIFY-7P or a validated instrument design."
+},
+{
+  "slug": "peptide-n-terminal-acetylation-c-terminal-amidation",
+  "category": "Research explained",
+  "title": "Peptide acetylation and amidation: why changing the ends changes the assay",
+  "image": "terminalSynthesis20261026",
+  "date": "October 26, 2026",
+  "readTime": "5 min read",
+  "excerpt": "N-terminal acetylation and C-terminal amidation change peptide charge and recognition. Studies show why greater stability does not guarantee greater activity.",
+  "imageLabel": "AI-generated editorial illustration of peptide synthesis materials, not a photograph of the cited experiments or a validated synthesis setup."
+},
+{
   "slug": "gilead-pepstar-hcxt-2001-oral-peptide-deal",
   "category": "Industry news",
   "title": "Gilead's $1.275 billion PepStar deal: what HCXT-2001 adds",
