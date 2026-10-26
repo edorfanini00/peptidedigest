@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  elicioImmuneAssay20261026: {
+  "src": "/images/elicio-immune-assay-20261026.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "An imagined immunology plate reader with a white multiwell assay plate in its loading tray",
+  "caption": "AI-generated editorial illustration of immune assay equipment, not a photograph of AMPLIFY-7P or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  terminalSynthesis20261026: {
+  "src": "/images/terminal-peptide-synthesis-20261026.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Glass vessels containing pale peptide synthesis resin held in metal clamps on a laboratory bench",
+  "caption": "AI-generated editorial illustration of peptide synthesis materials, not a photograph of the cited experiments or a validated synthesis setup.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   gileadHcxt20261025: {
   "src": "/images/gilead-hcxt-20261025.webp",
   "width": 1600,

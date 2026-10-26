@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/elicio-eli-002-amplify-7p-esmo-results",
+      lastModified: new Date("2026-10-26T12:19:53+00:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/peptide-n-terminal-acetylation-c-terminal-amidation",
+      lastModified: new Date("2026-10-26T12:19:53+00:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/gilead-pepstar-hcxt-2001-oral-peptide-deal",
       lastModified: new Date("2026-10-25T12:30:28Z"),
       changeFrequency: "weekly",
@@ -332,7 +344,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-25T12:30:28Z"),
+      lastModified: new Date("2026-10-26T12:19:53+00:00"),
       changeFrequency: "daily",
       priority: 1,
     },
