@@ -19,7 +19,7 @@ export const story: NewsroomStory = {
       "id": "what-changed",
       "paragraphs": [
         "The primary endpoint failure was first announced on June 15. Friday's presentation at the European Society for Medical Oncology congress in Madrid brought additional analyses and a peer-reviewed account of the study. It was a new examination of the same trial, rather than a second randomized test.[1][2][4]",
-        "The study enrolled 144 people with pancreatic ductal adenocarcinoma, a form of pancreatic cancer, carrying mutations in KRAS. They had completed standard treatment, including surgery and chemotherapy, and had no recurrence visible on imaging. Researchers randomly assigned 96 to camupepimut and 48 to observation. The trial was open label: participants and investigators knew the assignment. Elicio sponsored and designed the study with the academic investigators.[1]",
+        "The study, registered as NCT05726864, enrolled 144 people with pancreatic ductal adenocarcinoma, a form of pancreatic cancer, carrying mutations in KRAS. They had completed standard treatment, including surgery and chemotherapy, and had no recurrence visible on imaging. Researchers randomly assigned 96 to camupepimut and 48 to observation. The trial was open label: participants and investigators knew the assignment. Elicio sponsored and designed the study with the academic investigators.[1]",
         "This setting matters. The vaccine was being tested after treatment of the known cancer, with the aim of delaying recurrence. Results from this population cannot answer how the vaccine would perform against an untreated tumor or widespread metastatic disease.[1][3]"
       ]
     },
@@ -28,8 +28,7 @@ export const story: NewsroomStory = {
       "id": "primary-result",
       "paragraphs": [
         "Disease-free survival, or DFS, measures time from randomization until cancer recurs or a participant dies. At the April 20, 2026 data cutoff, median follow-up was 19.4 months. Median DFS was 23.8 months with camupepimut and 21.2 months with observation; the hazard ratio was 0.85, with P=0.5329. The prespecified primary endpoint was not met.[1]",
-        "A hazard ratio compares how quickly events occur in the two groups over follow-up. A value below one points toward fewer events in the vaccine arm, but the estimate alone does not establish a treatment effect. Here, the statistical test did not support the trial's planned claim of improvement. The difference between the two medians is not a promise of extra recurrence-free time for an individual patient.[1][5]",
-        "The registry, NCT05726864, combines earlier development cohorts with the randomized Phase 2 study. Its overall enrollment field should not be substituted for the 144 participants in this published comparison. The registry had no posted results when checked for this report.[3]"
+        "A hazard ratio compares how quickly events occur in the two groups over follow-up. A value below one points toward fewer events in the vaccine arm, but the estimate alone does not establish a treatment effect. Here, the statistical test did not support the trial's planned claim of improvement. The difference between the two medians is not a promise of extra recurrence-free time for an individual patient.[1][5]"
       ]
     },
     {
@@ -53,12 +52,11 @@ export const story: NewsroomStory = {
       ]
     },
     {
-      "title": "Safety and recurrence were observed on different clocks",
+      "title": "What participants experienced",
       "id": "safety-observation",
       "paragraphs": [
-        "The publication reports adverse events that began or worsened during the defined treatment period in both groups, including serious events. Vaccine-related reactions included dizziness and influenza-like illness. These findings need to be read in the context of people recovering from pancreatic surgery and chemotherapy, whose symptoms can have several causes.[1]",
-        "The statistical analysis plan defines the adverse-event collection period from the first treatment visit through 30 days after the treatment period. For treatment-emergent events, it excludes new events more than 30 days after the last treatment. Safety analyses use participants who received vaccine or observation study treatment, according to actual treatment received.[5]",
-        "That window is separate from the trial's median 19.4 months of efficacy follow-up. The paper's safety findings therefore should not be paraphrased as a demonstration of freedom from harm over that entire interval. Overall-survival results were still immature in the published analysis.[1][5]"
+        "Vaccine-related reactions reported in AMPLIFY-7P included dizziness and influenza-like illness. Serious adverse events occurred in both groups, in a population that had recently undergone pancreatic surgery and chemotherapy.[1]",
+        "The safety analysis grouped participants by the treatment they actually received. Adverse events were collected from the first treatment visit through 30 days after the treatment period; the definition of treatment-emergent events excluded new events more than 30 days after the last treatment. This safety window differs from the median 19.4 months of recurrence follow-up. Overall-survival results were still immature.[1][5]"
       ]
     },
     {
