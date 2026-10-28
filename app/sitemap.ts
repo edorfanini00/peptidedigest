@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/fluorescent-peptide-labels-change-experiment",
+      lastModified: new Date("2026-10-28T12:16:09Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/scrambled-peptide-controls-not-inactive",
+      lastModified: new Date("2026-10-28T12:16:09Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/elicio-eli-002-amplify-7p-esmo-results",
       lastModified: new Date("2026-10-26T12:19:53+00:00"),
       changeFrequency: "weekly",
@@ -344,7 +356,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-26T12:19:53+00:00"),
+      lastModified: new Date("2026-10-28T12:16:09Z"),
       changeFrequency: "daily",
       priority: 1,
     },

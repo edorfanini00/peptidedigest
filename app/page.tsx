@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "fluorescent-peptide-labels-change-experiment",
+  "category": "Research explained",
+  "title": "Fluorescent peptide labels can change the experiment they reveal",
+  "image": "fluorescentLabels20261028",
+  "date": "October 28, 2026",
+  "readTime": "5 min read",
+  "excerpt": "A fluorescent tag can change peptide membrane binding, shape and distribution. Three studies explain why a brighter signal needs a chemical check.",
+  "imageLabel": "AI-generated editorial illustration of microscopy equipment, not a photograph of the cited experiments or a validated instrument design."
+},
+{
+  "slug": "scrambled-peptide-controls-not-inactive",
+  "category": "Research explained",
+  "title": "Why a scrambled peptide control is not automatically inactive",
+  "image": "scrambledControls20261028",
+  "date": "October 28, 2026",
+  "readTime": "5 min read",
+  "excerpt": "Scrambling preserves amino acid composition, but can change assembly and cell responses. Three experiments show what a useful negative control must establish.",
+  "imageLabel": "AI-generated editorial illustration of laboratory samples, not a photograph or result of the cited experiments."
+},
+{
   "slug": "elicio-eli-002-amplify-7p-esmo-results",
   "category": "Clinical research",
   "title": "ELI-002 at ESMO: what AMPLIFY-7P shows after missing its main endpoint",
