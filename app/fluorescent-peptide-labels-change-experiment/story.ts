@@ -12,7 +12,7 @@ export const story: NewsroomStory = {
     "nad",
     "glutathione"
   ],
-  "lead": "A fluorescent label can change how a peptide behaves. Experiments have found altered membrane interactions, different molecular shapes and a reversal between cell and animal imaging results after changing the attached dye. The signal describes the labeled construct; whether that construct represents the original peptide is a separate experimental question.[1][2][3]",
+  "lead": "A fluorescent label can change how a peptide behaves. Experiments have found altered membrane interactions, different molecular shapes and a reversal between cell and animal imaging results after changing the attached dye. The signal locates fluorescent material; whether that material represents the original peptide is a separate experimental question.[1][2][3]",
   "notice": "IQON Labs' research use only catalog is separate from these experiments. The studies do not evaluate the catalog.",
   "sections": [
     {
@@ -47,7 +47,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "In a 2021 Cancers paper, Takakura and colleagues coupled the same experimental peptide to cyanine dyes or their sulfonated counterparts. Sulfonation changed the conjugates' physicochemical properties. In cultured human pancreatic cancer cells, the less hydrophilic Cy3 and Cy5 conjugates produced stronger cellular fluorescence than the corresponding sulfonated versions.[3]",
         "The ordering changed in mice carrying tumors derived from the same pancreatic cancer cell line. The Cy5 conjugate gave little tumor fluorescence, whereas the sulfoCy5 conjugate produced a clearer tumor signal. The cell culture result had not identified a universally better label. Distribution through an animal introduced a different set of conditions.[3]",
-        "Chemical analysis made the images harder to interpret still. Both Cy5 versions broke down rapidly in mouse plasma. The authors concluded that the animal fluorescence mainly reflected degradation products. A fluorescent fragment can remain visible after the original labeled peptide has disappeared, so an image of retained light need not locate intact peptide.[3]",
+        "In a separate experiment, the researchers incubated the Cy5 and sulfoCy5 conjugates in plasma collected from mice. Chromatography, which separates a mixture's components, showed rapid breakdown of both conjugates. On that basis, the authors suggested that degradation products accounted for much of the fluorescence in the animal images.[3]",
         "The paper was corrected in 2022 to remove a peptide name and sequence published without the inventors' agreement. It now identifies the material as peptide A. The correction states that the scientific conclusions were unchanged, but the missing sequence limits how fully a reader can reconstruct the molecule from the article.[4]"
       ]
     },
@@ -57,7 +57,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "These experiments point to different checks for different claims. Comparing a labeled peptide with its unlabeled counterpart in a functional assay asks whether the reporter preserves the behavior of interest. Comparing several labels can reveal dependence on dye chemistry. Separating and identifying intact conjugate and fragments addresses whether the light still belongs to the intended molecule.[1][2][3]",
         "None of those checks alone settles [where material sits inside a cell](/peptide-cell-uptake-cytosolic-delivery-endosomal-escape). That requires evidence about cellular compartments. The earlier question is whether the chemical object being tracked still represents the peptide the experiment set out to study.[1][3]",
-        "In the mouse imaging study, a visible signal outlasted the original labeled peptide. Linking the location of light to the identity and function of its carrier is what turns an image into evidence about the molecule.[3]"
+        "For the clearer sulfoCy5 tumor image, the unresolved question is how much light came from intact conjugate and how much from breakdown products. Chemical analysis of the fluorescent material in the tumor would help distinguish delivery of the labeled peptide from accumulation of its fragments.[3]"
       ]
     }
   ],
