@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  fluorescentLabels20261028: {
+  "src": "/images/fluorescent-labels-20261028.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Close view of a microscope objective above an unmarked glass slide with a faint green reflection",
+  "caption": "AI-generated editorial illustration of microscopy equipment, not a photograph of the cited experiments or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  scrambledControls20261028: {
+  "src": "/images/scrambled-controls-20261028.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Two clear laboratory cuvettes holding transparent samples on a warm ivory bench",
+  "caption": "AI-generated editorial illustration of laboratory samples, not a photograph or result of the cited experiments.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   elicioImmuneAssay20261026: {
   "src": "/images/elicio-immune-assay-20261026.webp",
   "width": 1600,
