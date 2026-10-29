@@ -12,14 +12,14 @@ export const story: NewsroomStory = {
     "nad",
     "ss31"
   ],
-  "lead": "The experimental triple agonist retatrutide lowered the apnea-hypopnea index in adults with obstructive sleep apnea and obesity in two Phase 3 trials, by roughly 24 and 22 events per hour more than placebo at 80 weeks with the 9 mg and 12 mg doses in participants who did not have type 2 diabetes, and by roughly 14 and 15 events per hour more in participants who did, according to results published by the New England Journal of Medicine on October 20, 2026. The same paper reports smaller differences when the analysis counts every randomized participant, and both trials were funded by Eli Lilly.",
+  "lead": "The experimental triple agonist retatrutide lowered the apnea-hypopnea index in adults with obstructive sleep apnea and obesity in two Phase 3 trials, by roughly 24 and 22 events per hour more than placebo at 80 weeks with the 9 mg and 12 mg doses in participants who did not have type 2 diabetes, and by roughly 14 and 15 events per hour more in participants who did, according to results published by the New England Journal of Medicine on October 20, 2026. The same paper also reports intention-to-treat results that stay within 0.6 events per hour of those figures at every dose in both trials, and both trials were funded by Eli Lilly.",
   "notice": "Retatrutide is investigational and is not approved for obstructive sleep apnea or any other use. IQON Labs' research use only catalog is not connected to Lilly's trials.",
   "sections": [
     {
       "title": "What the two trials tested",
       "id": "what-the-trials-tested",
       "paragraphs": [
-        "Retatrutide is an investigational molecule that activates three hormone receptors at once: GIP, GLP-1 and glucagon. It is given once weekly by subcutaneous injection and is not approved for any use.",
+        "Retatrutide is an investigational molecule that activates three hormone receptors at once: glucose-dependent insulinotropic polypeptide (GIP), glucagon-like peptide-1 (GLP-1) and glucagon. It is given once weekly by subcutaneous injection and is not approved for any use.",
         "The sleep data come from protocols nested inside two much larger studies. TRIUMPH-1 (NCT05929066) enrolled 2,335 people to test weight change and related conditions, and TRIUMPH-2 (NCT05929079) enrolled 1,152 people with type 2 diabetes. Within those basket trials, the obstructive sleep apnea portions randomized 243 participants without type 2 diabetes and 448 with it. Both registrations list change from baseline in the apnea-hypopnea index at week 80 as a primary outcome for the sleep subset, confirming that the breathing endpoint was pre-specified rather than discovered afterward.",
         "Participants had moderate-to-severe obstructive sleep apnea and a body mass index of at least 27. The apnea-hypopnea index is the average number of times per hour of sleep that breathing stops (an apnea) or becomes too shallow (a hypopnea). The trial populations started high: a mean of 58.6 events per hour in the first trial and 55.9 in the second, which is in the severe range. Mean body weight at entry was 119.6 kg and 115.9 kg."
       ]
@@ -48,7 +48,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "The paper reports the sleep results twice, using two different ways of handling participants whose treatment stopped or failed.",
         "The primary analysis uses a hybrid-treatment estimand. For participants who had an event suggesting treatment failure, it applies a hypothetical strategy, which estimates what the outcome would have been had the participant stayed on treatment, and for other intercurrent events it applies a treatment policy strategy, which uses the observed outcome regardless. The intention-to-treat analysis counts every participant in the group they were assigned to, whether or not they kept taking the drug.",
-        "Under intention-to-treat, the differences from placebo were minus 13.2, minus 24.7 and minus 22.5 events per hour in TRIUMPH-1-OSA and minus 8.8, minus 13.9 and minus 15.0 events per hour in TRIUMPH-2-OSA. Those figures are close to the primary results at the 9 mg and 12 mg doses and meaningfully smaller at 4 mg in the first trial.",
+        "Under intention-to-treat, the differences from placebo were minus 13.2, minus 24.7 and minus 22.5 events per hour in TRIUMPH-1-OSA and minus 8.8, minus 13.9 and minus 15.0 events per hour in TRIUMPH-2-OSA. Every one of those figures is within 0.6 events per hour of its primary counterpart, so the two analyses agree closely: the intention-to-treat values run marginally larger in TRIUMPH-1-OSA and marginally smaller in TRIUMPH-2-OSA.",
         "Neither number is wrong. They answer different questions. The primary analysis asks what the drug does under continued treatment. The intention-to-treat analysis asks what happened to everyone who was randomized, including people who stopped. Headlines that quote one figure without the other are publishing the answer to a question the reader may not have asked."
       ]
     },
@@ -125,6 +125,7 @@ export const story: NewsroomStory = {
     { id: 2, url: "https://pubmed.ncbi.nlm.nih.gov/42904878/", title: "PubMed 42904878: abstract record for the TRIUMPH-1-OSA and TRIUMPH-2-OSA publication" },
     { id: 3, url: "https://clinicaltrials.gov/study/NCT05929066", title: "ClinicalTrials.gov NCT05929066: TRIUMPH-1 registration, listing change from baseline in the apnea-hypopnea index at Week 80 as a primary outcome for the sleep subset" },
     { id: 4, url: "https://clinicaltrials.gov/study/NCT05929079", title: "ClinicalTrials.gov NCT05929079: TRIUMPH-2 registration in participants with type 2 diabetes" },
-    { id: 5, url: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peak-performance-peptides-735127-08242026", title: "FDA warning letter to Peak Performance Peptides, MARCS-CMS 735127 (August 24, 2026)" }
+    { id: 5, url: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/peak-performance-peptides-735127-08242026", title: "FDA warning letter to Peak Performance Peptides, MARCS-CMS 735127 (August 24, 2026)" },
+    { id: 6, url: "https://mcdermottlaw.com/insights/federal-regulators-and-state-boards-crack-down-on-ruo-peptides", title: "McDermott Will & Emery client alert: Federal regulators and state boards crack down on RUO peptides" }
   ]
 };
