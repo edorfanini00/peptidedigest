@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "hhs-peptide-compounding-policy-2026",
+  "category": "Regulatory",
+  "title": "HHS peptide policy: what it allows and who it leaves out",
+  "image": "hhsPeptidePolicy20261029",
+  "date": "October 29, 2026",
+  "readTime": "6 min read",
+  "excerpt": "HHS filed a policy on October 28, 2026 that lets licensed pharmacies and physicians compound six peptides without federal enforcement action. Research-use-only sellers are not covered.",
+  "imageLabel": "AI-generated editorial illustration of a compounding pharmacy workspace, not a photograph of a named facility."
+},
+{
+  "slug": "retatrutide-sleep-apnea-triumph-osa-results",
+  "category": "Clinical research",
+  "title": "Retatrutide reduced sleep apnea severity in two Phase 3 trials",
+  "image": "retatrutideOsa20261029",
+  "date": "October 29, 2026",
+  "readTime": "7 min read",
+  "excerpt": "Two Phase 3 trials cut the apnea-hypopnea index at 80 weeks in obstructive sleep apnea. The published paper reports two different sets of results and explains why.",
+  "imageLabel": "AI-generated editorial illustration of sleep study monitoring equipment, not a photograph of a trial site."
+},
+{
   "slug": "fluorescent-peptide-labels-change-experiment",
   "category": "Research explained",
   "title": "Fluorescent peptide labels can change the experiment they reveal",

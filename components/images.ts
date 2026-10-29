@@ -851,6 +851,28 @@ export const images = {
     "credit": "The Peptide Digest via Higgsfield",
     "kind": "illustration"
   },
+  hhsPeptidePolicy20261029: {
+    src: "/images/hhs-peptide-compounding-policy-20261029.webp",
+    width: 1600,
+    height: 1074,
+    alt: "An unbranded stainless steel compounding bench holding empty glass vials beside a blank analytical report sheet",
+    caption: "AI-generated editorial illustration of a compounding pharmacy workspace, not a photograph of a named facility or an actual product.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest via Higgsfield",
+    kind: "illustration"
+  },
+  retatrutideOsa20261029: {
+    src: "/images/retatrutide-sleep-apnea-triumph-osa-20261029.webp",
+    width: 1600,
+    height: 1074,
+    alt: "A sleep laboratory monitor showing respiratory waveform traces beside a coiled sensor cable on a clean counter",
+    caption: "AI-generated editorial illustration of sleep study monitoring equipment, not a photograph of a trial site or a study result.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://peptidedigest.co",
+    credit: "The Peptide Digest via Higgsfield",
+    kind: "illustration"
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
