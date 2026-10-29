@@ -8,13 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: "https://peptidedigest.co/hhs-peptide-compounding-policy-2026",
-      lastModified: new Date("2026-10-29T12:35:00Z"),
+      lastModified: new Date("2026-10-29T12:30:00Z"),
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
       url: "https://peptidedigest.co/retatrutide-sleep-apnea-triumph-osa-results",
-      lastModified: new Date("2026-10-29T12:35:00Z"),
+      lastModified: new Date("2026-10-29T12:30:00Z"),
       changeFrequency: "weekly",
       priority: 0.85,
     },
@@ -368,7 +368,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-29T12:35:00Z"),
+      lastModified: new Date("2026-10-29T12:30:00Z"),
       changeFrequency: "daily",
       priority: 1,
     },

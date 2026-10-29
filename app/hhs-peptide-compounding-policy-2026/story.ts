@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "hhs-peptide-compounding-policy-2026",
   "title": "HHS peptide policy: what it allows and who it leaves out",
   "description": "HHS filed a policy on October 28, 2026 that lets licensed pharmacies and physicians compound six peptides without federal enforcement action. Research-use-only sellers are not covered.",
-  "date": "2026-10-29T12:35:00Z",
+  "date": "2026-10-29T12:30:00Z",
   "type": "NewsArticle",
   "category": "Regulatory",
   "image": "hhsPeptidePolicy20261029",

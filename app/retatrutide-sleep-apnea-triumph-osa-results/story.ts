@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "retatrutide-sleep-apnea-triumph-osa-results",
   "title": "Retatrutide reduced sleep apnea severity in two Phase 3 trials",
   "description": "Two Phase 3 trials cut the apnea-hypopnea index at 80 weeks in obstructive sleep apnea. The published paper reports two different sets of results and explains why.",
-  "date": "2026-10-29T12:35:00Z",
+  "date": "2026-10-29T12:30:00Z",
   "type": "Article",
   "category": "Clinical research",
   "image": "retatrutideOsa20261029",
