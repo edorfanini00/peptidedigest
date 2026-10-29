@@ -1,0 +1,145 @@
+{
+  "base_commit": "3b72e8c474a182f6718bfbd37d548d0b5ab387af",
+  "capture_notes": "Phone captures are 390px viewport with touch emulation verified immediately before and after each capture by the release harness.",
+  "files": {
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-body.png": {
+      "bytes": 160487,
+      "sha256": "56e8da604f8b047ca6338f64487ebe159f2af7346154b9f5927deb6cfac12b94"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-faq.png": {
+      "bytes": 129400,
+      "sha256": "96adc869991fa0023d1aaa2ea58ef24154740497805324f6501764850db51d29"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-hero.png": {
+      "bytes": 383783,
+      "sha256": "fd5c7d52028efd322c3a60a5aafd7c4c1838f1ab823e633a5c039f1ccf6a8aa8"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-iqon-closing.png": {
+      "bytes": 103954,
+      "sha256": "59aa274225224cbaf688c2f65d27942f50aae404011ee1632edf87d84c0fdfd9"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-iqon-early.png": {
+      "bytes": 128389,
+      "sha256": "e8c5b7806640c29c5180ce55927b05ff7465c4a1dad1fc575a745ce2ef31de27"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-middle-or-list.png": {
+      "bytes": 158415,
+      "sha256": "d9336cab4e318bc9aab583f0fa67bec044d283f93ecf0b7ccad4dc71519ac7ff"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-sources.png": {
+      "bytes": 167839,
+      "sha256": "389f02f47698a70a4968e2a7edaeb98adb3821291626667a3b3606aedeeaeeea"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/1440-title-top.png": {
+      "bytes": 359453,
+      "sha256": "e9a64e7350b9f4b986c205d2b91710e594c47dae7782f149b5746b67986be493"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-body.png": {
+      "bytes": 356233,
+      "sha256": "52f1a4f046ac93dc9c61dc658f4bcc5bc8af1e25e188ac936c8748ae1ae26942"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-faq.png": {
+      "bytes": 339134,
+      "sha256": "4e020861c1b69774a91a7eabc5b1029bf0fd8b2f9d97e6a1219a07d4c7b836dd"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-hero.png": {
+      "bytes": 758742,
+      "sha256": "6f24777ae7a74945ccdc8c4d2dd999e4af3fe0c5781db07a257bd5be4a3324c1"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-iqon-closing.png": {
+      "bytes": 349317,
+      "sha256": "28f1d458c17c2a7d3c9f8d91830812bc4898adf0bf36f7ac1d137bc280d6a34b"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-iqon-early.png": {
+      "bytes": 365165,
+      "sha256": "33b6fe31f8fc83f57396145274f9e8c96d87c77a1852c01d1688e54e6cd63629"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-middle-or-list.png": {
+      "bytes": 332560,
+      "sha256": "e98916f0b732bbeae03a11cced4a42d55699b1ea07586d2bc6a10fa39400d274"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-sources.png": {
+      "bytes": 421710,
+      "sha256": "45ea76aadfff031e2898a8e5c90f43d4e66a9342724b889741929ba0679d6760"
+    },
+    "2026-10-29/hhs-peptide-compounding-policy-2026/390-title-top.png": {
+      "bytes": 696092,
+      "sha256": "4eb2cc7e81e14455485ba5bb8659e3ce327bb797784927482621875a66a0960f"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-body.png": {
+      "bytes": 160092,
+      "sha256": "7894a02cae149e078f5caa34f031f0e86dad00c60f37db09daa9b805325f0a9a"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-faq.png": {
+      "bytes": 128544,
+      "sha256": "1deec090ea21404dfe45e2750eab106c4154af73cc3d1ef335c40a85734173d6"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-hero.png": {
+      "bytes": 502736,
+      "sha256": "ccfa4f3d01eea9cae77053b3e1e8aae6f5bf335e90dac08985c6b26446651dba"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-iqon-closing.png": {
+      "bytes": 101676,
+      "sha256": "23ad2be3779daf438ae8cb6a5d9a6c8c24f72ef8f51f2981e7e44220bbd16623"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-iqon-early.png": {
+      "bytes": 131427,
+      "sha256": "c6986f67b37abd53c8a67ed79c24997130a8cbe80350a47dcd345b58352421db"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-middle-or-list.png": {
+      "bytes": 162809,
+      "sha256": "8c121dadab79b3e6fffabfa4cae8a00fa15349acb581ce9a8a71c032f241de4d"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-sources.png": {
+      "bytes": 140803,
+      "sha256": "63ca014fd52d21208a79ee24bf8afa4eb951798c51fc99ff70760d351fab18c8"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/1440-title-top.png": {
+      "bytes": 446859,
+      "sha256": "f1a50fb2c47ac27db6b5f78a0f2e96229e4f729404669f74451c09870b0f3894"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-body.png": {
+      "bytes": 350444,
+      "sha256": "ec7dc630fd0c29f08df7334979b36dd6cc42fc93dbd14f7aa596e11ce74f6976"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-faq.png": {
+      "bytes": 295812,
+      "sha256": "10e49779661c6ae45bc0d574d6b0b936b4c3632e94e1a80375a189154b94986c"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-hero.png": {
+      "bytes": 956368,
+      "sha256": "dfc253cf4a9c3b2e4b02ca0ab945c45f533d153d6ec998ee5058293f83b2fc35"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-iqon-closing.png": {
+      "bytes": 347852,
+      "sha256": "4720aa4e3892391a79282b5f69e4214a44e92713841ad4ff6477eebbf5c5eb42"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-iqon-early.png": {
+      "bytes": 380935,
+      "sha256": "57e11f2589ced722bcb7c6d29417077e602b95cfc8f84f8e3c8914ebd5a72ea4"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-middle-or-list.png": {
+      "bytes": 373781,
+      "sha256": "7ba2fae86f5f561d33f922713d5c68b930854b65f02d9cc80e0d8bfca24ec68d"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-sources.png": {
+      "bytes": 354980,
+      "sha256": "4b88e07f7689d894261a0e9fa7d35e985dc7a7622800b6b0e614428f6c7a9d90"
+    },
+    "2026-10-29/retatrutide-sleep-apnea-triumph-osa-results/390-title-top.png": {
+      "bytes": 889321,
+      "sha256": "47e13f5af7a871e53d9a3a77648ca30efd684736efe44b95e3991c3c5350e5a0"
+    }
+  },
+  "freeze_sha256": "d02a6055a80d0735e1005f395b73ef86e79626c931f700a3b1c084a827f2d3d8",
+  "local_server": "http://127.0.0.1:3231 (parent-owned next start, worktree /Users/edorfanini/Projects/peptidedigest-newsroom-20261029)",
+  "parent_premerge_qa": {
+    "checks": 20947,
+    "failures": 0,
+    "renders": 112,
+    "screenshots": 812
+  },
+  "reviewed_commit": "99b95d1b619c203b64eb5aa8b1ad264fe59c0c82",
+  "run": "peptide-digest-newsroom 2026-10-29 run-0800",
+  "scope": "immutable screenshot-only release evidence; not a review verdict, not deployment approval"
+}
