@@ -19,7 +19,7 @@ export const story: NewsroomStory = {
       "title": "The peptide and where it came from",
       "id": "where-it-came-from",
       "paragraphs": [
-        "Opistoporin 1 was isolated more than two decades ago from the venom of Opistophthalmus carinatus, a southern African scorpion, and shown to act against bacteria and fungi [5]. It is 44 amino acids long, which makes it expensive to synthesise and, in the earlier work, toxic enough at effective concentrations to limit interest.",
+        "Opistoporin 1 was isolated more than two decades ago from the venom of Opistophthalmus carinatus, a southern African scorpion, and shown to act against bacteria and fungi [5]. It is 44 amino acids long, and the later work says its progress was held back by toxicity, length and the cost of synthesis [6].",
         "In 2024 a University of Pretoria group screened 116 antimicrobial peptides reported from African wildlife, including scorpions, frogs, ticks and primates, drawing on published studies and sequence-based prediction. They set aside peptides that had already been studied thoroughly and looked for short sequences that would be cheaper to manufacture. Forty-six candidates remained [2][4].",
         "Opis16a is the N-terminal 16 residues of opistoporin 1. The design kept every tryptophan in that stretch for hydrophobicity, four of the original lysines for positive charge, and an amidated C-terminus to hold net charge at +4 [1]."
       ]
@@ -38,8 +38,8 @@ export const story: NewsroomStory = {
       "id": "how-it-kills",
       "paragraphs": [
         "Gram-negative bacteria carry an outer membrane studded with lipopolysaccharide, then a thin cell wall, then an inner membrane. Opis16a binds lipopolysaccharide, destabilises the outer membrane, and then depolarises and permeabilises the inner membrane. In Escherichia coli and in a multidrug-resistant clinical isolate of Acinetobacter baumannii, bacterial killing followed within minutes [1].",
-        "The paper reports a minimum inhibitory concentration of 8 micrograms per millilitre of Opis16a against a multidrug-resistant clinical isolate of Acinetobacter baumannii, the lowest concentration that stops visible growth, and activity against Escherichia coli [1]. The group’s earlier work tested the peptide against a wider panel that also covered Klebsiella pneumoniae and Enterobacter cloacae [2].",
-        "Selectivity is the part that decides whether a membrane-active peptide can become a drug. Opis16a produced no detectable haemolysis of human red blood cells at the concentrations tested, with a half-maximal haemolytic concentration above 256 micrograms per millilitre, and low toxicity against HaCaT keratinocytes and HepG2 liver cells [1][2]. Venom peptides such as melittin are potent antibacterial molecules that fail on exactly this point."
+        "The paper reports a minimum inhibitory concentration of 8 micrograms per millilitre of Opis16a against a multidrug-resistant clinical isolate of Acinetobacter baumannii, the lowest concentration that stops visible growth, and activity against Escherichia coli [1]. The group’s earlier work tested the peptide against a wider panel that also covered Klebsiella pneumoniae and Enterobacter cloacae [3].",
+        "Selectivity is the part that decides whether a membrane-active peptide can become a drug. Opis16a produced no detectable haemolysis of human red blood cells at the concentrations tested, with a half-maximal haemolytic concentration above 256 micrograms per millilitre, and low toxicity against HaCaT keratinocytes and HepG2 liver cells [3][6]. Venom peptides such as melittin are potent antibacterial molecules that fail on exactly this point."
       ]
     },
     {

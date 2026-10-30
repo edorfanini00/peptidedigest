@@ -31,7 +31,7 @@ export const story: NewsroomStory = {
         "A1C fell 2.2 points on both retatrutide doses and 1.8 points on semaglutide, from the same starting average [1]. On body weight, the 9 mg dose produced a 19.5% reduction, or 20.1 kg, and the 12 mg dose 20.9%, or 21.5 kg. Semaglutide produced 9.4%, or 9.5 kg.",
         "Lilly also reports larger reductions in non-HDL cholesterol, triglycerides and systolic blood pressure on retatrutide than on semaglutide [1][4].",
         "Two statistical details sit inside those headline figures. Superiority for the 12 mg dose on A1C was significant at p<0.001 with control for multiple comparisons. Superiority for the 9 mg dose on A1C was nominal: Lilly's own endnote says that comparison was a prespecified secondary endpoint that was not included in the family-wise error control, while its noninferiority did meet that bar [2]. The weight differences for both doses were significant under that control.",
-        "Every number in the release uses the efficacy estimand. That is a hypothetical estimate of what would have happened if every randomised participant had stayed on the treatment they were assigned for the full 80 weeks, allowing for dose interruptions and adjustments, with outcomes for people who stopped imputed rather than dropped [2]. Lilly has not published the treatment-regimen version, which describes what happened under the treatment people actually took, including discontinuation, and is the closer analogue to what a clinic sees when patients stop a drug because of nausea."
+        "Every number in the release uses the efficacy estimand. That is a hypothetical estimate of what would have happened if every randomised participant had stayed on the treatment they were assigned for the full 80 weeks, allowing for dose interruptions and adjustments and without adding another glucose-lowering medicine [2]. It is not a record of what happened to the people who stopped. Lilly has not published the treatment-regimen version, which describes what happened under the treatment people actually took, including discontinuation, and is the closer analogue to what a clinic sees when patients stop a drug because of nausea."
       ]
     },
     {
@@ -92,7 +92,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "What does the efficacy estimand mean in these results?",
-      "a": "It estimates what would have happened if every randomised participant had remained on their assigned treatment for the full 80 weeks, with outcomes for people who discontinued imputed rather than excluded. A treatment-regimen analysis instead reflects the treatment people actually took, including discontinuation, and usually produces smaller differences. Lilly published efficacy-estimand figures in the topline release.",
+      "a": "It estimates what would have happened if every randomised participant had remained on their assigned treatment for the full 80 weeks without adding another glucose-lowering medicine. It is a hypothetical estimate, not a record of what happened after people discontinued. A treatment-regimen analysis instead reflects the treatment people actually took, including discontinuation, and usually produces smaller differences. Lilly published efficacy-estimand figures in the topline release.",
       "refs": [2, 3]
     },
     {
