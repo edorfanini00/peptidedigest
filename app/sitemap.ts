@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/retatrutide-transcend-t2d-2-ozempic-head-to-head",
+      lastModified: new Date("2026-10-30T11:45:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/scorpion-venom-peptide-opis16a-truncation",
+      lastModified: new Date("2026-10-30T11:45:00Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/hhs-peptide-compounding-policy-2026",
       lastModified: new Date("2026-10-29T12:30:00Z"),
       changeFrequency: "weekly",
@@ -368,7 +380,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-29T12:30:00Z"),
+      lastModified: new Date("2026-10-30T11:45:00Z"),
       changeFrequency: "daily",
       priority: 1,
     },

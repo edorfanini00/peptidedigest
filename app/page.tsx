@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "retatrutide-transcend-t2d-2-ozempic-head-to-head",
+  "category": "Clinical research",
+  "title": "Retatrutide beats Ozempic in the first Phase 3 head-to-head diabetes trial",
+  "image": "retatrutideTranscend20261030",
+  "date": "October 30, 2026",
+  "readTime": "6 min read",
+  "excerpt": "In 1,298 adults with type 2 diabetes, retatrutide cut A1C by 2.2 points and body weight by about 20% at 80 weeks. Ozempic 2 mg produced 1.8 points and 9.4%. Retatrutide is not approved.",
+  "imageLabel": "AI-generated editorial illustration of a diabetes clinic consultation desk, not a photograph of a trial site."
+},
+{
+  "slug": "scorpion-venom-peptide-opis16a-truncation",
+  "category": "Research explained",
+  "title": "A scorpion peptide cut to 16 amino acids kills resistant bacteria. Cut to 8, it stops working",
+  "image": "scorpionOpis16a20261030",
+  "date": "October 30, 2026",
+  "readTime": "6 min read",
+  "excerpt": "Researchers screened 116 antimicrobial peptides from African wildlife and shortened a scorpion venom peptide to 16 residues. New work explains how it breaks Gram-negative membranes and why the 8-residue version failed.",
+  "imageLabel": "AI-generated editorial illustration of a microbiology bench, not a photograph of the cited experiment."
+},
+{
   "slug": "hhs-peptide-compounding-policy-2026",
   "category": "Regulatory",
   "title": "HHS peptide policy: what it allows and who it leaves out",
