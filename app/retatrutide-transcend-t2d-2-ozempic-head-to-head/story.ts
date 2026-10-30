@@ -12,14 +12,14 @@ export const story: NewsroomStory = {
     "ss31",
     "glutathione"
   ],
-  "lead": "Retatrutide lowered A1C by 2.2 percentage points and body weight by roughly 20% over 80 weeks in adults with type 2 diabetes, against 1.8 points and 9.4% for Ozempic 2 mg, in the first Phase 3 trial to compare the two drugs directly. Eli Lilly announced the topline result on October 28. Retatrutide is not approved anywhere, the trial was open-label, and Lilly does not plan to file for approval until the first quarter of 2027.",
+  "lead": "Retatrutide lowered A1C by 2.2 percentage points and body weight by roughly 20% over 80 weeks in adults with type 2 diabetes, against 1.8 points and 9.4% for Ozempic 2 mg, in the first Phase 3 trial to compare the two drugs directly. Eli Lilly announced the topline result on October 28. Retatrutide is not approved anywhere, the trial was open-label, and Lilly does not plan to file for approval until early 2027.",
   "notice": "IQON Labs publishes a separate research use only catalog. Nothing in this report is a suggestion to obtain or use an investigational medicine, and no research reagent is a substitute for a prescribed treatment.",
   "sections": [
     {
       "title": "What the trial was",
       "id": "what-the-trial-was",
       "paragraphs": [
-        "The trial is TRANSCEND-T2D-2, registered as NCT06260722 and run at 77 sites, most of them in the United States [3]. It enrolled 1,298 adults whose type 2 diabetes was not controlled on metformin with or without an SGLT2 inhibitor [1][5]. Average A1C at the start was 8.3%, with an entry range of 7.0% to 10.5%. Average weight was 102.4 kg and average body mass index 36.8.",
+        "The trial is TRANSCEND-T2D-2, registered as NCT06260722 and run at 77 sites, most of them in the United States [3]. It enrolled 1,298 adults whose type 2 diabetes was not controlled on metformin, with or without an SGLT2 inhibitor, a class of diabetes tablet [1][5]. Average A1C at the start was 8.3%, with an entry range of 7.0% to 10.5%. Average weight was 102.4 kg and average body mass index 36.8.",
         "Participants were assigned at random in a 2:2:1 ratio to weekly retatrutide 9 mg, weekly retatrutide 12 mg, or weekly semaglutide 2 mg, the highest Ozempic dose approved for type 2 diabetes [1][5]. Retatrutide started at 2 mg and rose every four weeks. The comparison ran for 80 weeks; the study began in February 2024 and the registry records primary completion in August 2026 [3].",
         "The primary endpoint was change in A1C for the 12 mg dose against semaglutide, tested first for noninferiority and then for superiority. Noninferiority of the 9 mg dose on A1C was a key secondary endpoint [1]."
       ]
@@ -40,7 +40,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "An A1C of 6.5% is the usual threshold for diagnosing diabetes. Both arms in this trial started at an average of 8.3%. Subtracting the reported group means puts the retatrutide arms near 6.1% and the semaglutide arm near 6.5%. That is arithmetic on averages, not a forecast for any individual patient, whose starting point and response will differ.",
         "The 0.4-point gap is smaller than the 2.2-point fall either drug produced. Most of the benefit available from this class of medicine was already delivered by the comparator, which is what a head-to-head trial is designed to reveal: not whether a drug works, but what a newer one adds to an effective one.",
-        "The weight difference is larger in absolute terms, about 24 kg between the 12 mg arm and semaglutide on group means. Lilly frames that as more than double, and the percentage figures behind the phrase are 20.9% against 9.4%."
+        "The weight difference is larger in absolute terms: 21.5 kg on the 12 mg arm against 9.5 kg on semaglutide, a gap of about 12 kg on group means. Lilly frames that as more than double, and the percentage figures behind the phrase are 20.9% against 9.4%."
       ]
     },
     {
@@ -65,9 +65,9 @@ export const story: NewsroomStory = {
       "title": "From a readout to a prescription",
       "id": "readout-to-prescription",
       "paragraphs": [
-        "Retatrutide remains investigational. Lilly says it plans to file for FDA approval in the first quarter of 2027, and no regulator has approved the molecule for any use [1][4].",
+        "Retatrutide remains investigational. Lilly plans to file for FDA approval in the first quarter of 2027, and no regulator has approved the molecule for any use [5].",
         "The FDA's position on the gray market is explicit. Its page on unapproved GLP-1 drugs states that retatrutide and cagrilintide cannot be used in compounding under federal law and have not been found safe and effective for any condition, and it lists warnings the agency has sent to telehealth companies marketing the drug, to ingredient distributors selling it to compounders, and to outsourcing facilities repackaging it [6]. A warning letter dated March 31, 2026 to Gram Peptides treated the company's \"Retatrutide\", sold there as \"GLP-1-R peptide\", as an unapproved new drug under federal law [7].",
-        "The compounding policy HHS filed on October 28 does not change that. Its enforcement discretion runs to a six-item list in Appendix A, and retatrutide is not on the list [8]. A reader who encounters retatrutide for sale online is looking at a product the agency says cannot legally be sold for human use."
+        "The compounding policy HHS filed on October 28 does not change that. Its enforcement discretion runs only to the peptide bulk drug substances listed in its Appendix A, and retatrutide is not among them [8]. A reader who encounters retatrutide for sale online is looking at a product the agency says cannot legally be sold for human use."
       ]
     },
     {
@@ -82,8 +82,8 @@ export const story: NewsroomStory = {
   "faqs": [
     {
       "q": "Has the FDA approved retatrutide?",
-      "a": "No. Retatrutide is investigational. Lilly has said it plans to submit for US approval in the first quarter of 2027, and no regulator has approved it for any indication.",
-      "refs": [1, 4]
+      "a": "No. Retatrutide is investigational, and no regulator has approved it for any indication. Lilly plans to submit for US approval in the first quarter of 2027.",
+      "refs": [1, 5]
     },
     {
       "q": "Can retatrutide be bought legally or made by a compounding pharmacy?",

@@ -38,7 +38,7 @@ export const story: NewsroomStory = {
       "id": "how-it-kills",
       "paragraphs": [
         "Gram-negative bacteria carry an outer membrane studded with lipopolysaccharide, then a thin cell wall, then an inner membrane. Opis16a binds lipopolysaccharide, destabilises the outer membrane, and then depolarises and permeabilises the inner membrane. In Escherichia coli and in a multidrug-resistant clinical isolate of Acinetobacter baumannii, bacterial killing followed within minutes [1].",
-        "The minimum inhibitory concentration, the lowest concentration that stops visible growth, was 8 micrograms per millilitre against E. coli ATCC 700928, A. baumannii ATCC 19606 and A. baumannii NICD 15283. The peptide also inhibited Klebsiella pneumoniae and Enterobacter cloacae in the panel the authors tested [1].",
+        "The paper reports a minimum inhibitory concentration of 8 micrograms per millilitre for Opis16a, the lowest concentration that stops visible growth, with activity against Escherichia coli and a multidrug-resistant clinical isolate of Acinetobacter baumannii [1]. The wider panel, set out in the group’s earlier work, also covered Klebsiella pneumoniae and Enterobacter cloacae [2].",
         "Selectivity is the part that decides whether a membrane-active peptide can become a drug. Opis16a produced no detectable haemolysis of human red blood cells at the concentrations tested, with a half-maximal haemolytic concentration above 256 micrograms per millilitre, and low toxicity against HaCaT keratinocytes and HepG2 liver cells [1][2]. Venom peptides such as melittin are potent antibacterial molecules that fail on exactly this point."
       ]
     },
@@ -54,7 +54,7 @@ export const story: NewsroomStory = {
       "title": "What the wax-moth result does and does not show",
       "id": "insect-model",
       "paragraphs": [
-        "Galleria mellonella larvae are a standard early infection model in antibacterial research: cheap, ethically simple, and able to show whether a compound reaches bacteria inside a living animal. At a dose of 10 milligrams per kilogram, 87% of infected larvae treated with Opis16a survived, against 83% treated with polymyxin B at the same dose. The paper describes a threefold improvement in survival over untreated infected larvae [1][2].",
+        "Galleria mellonella larvae are a standard early infection model in antibacterial research: cheap, ethically simple, and able to show whether a compound reaches bacteria inside a living animal. At a dose of 10 milligrams per kilogram, 87% of infected larvae treated with Opis16a survived, against 83% treated with polymyxin B at the same dose [2].",
         "An insect model cannot show mammalian pharmacokinetics, tissue repair, immune interactions or human safety. Wax-moth larvae lack the adaptive immune system that shapes how a wound infection behaves in a patient, and the dose that protects a larva says nothing about a dose that would be safe in a person."
       ]
     },
