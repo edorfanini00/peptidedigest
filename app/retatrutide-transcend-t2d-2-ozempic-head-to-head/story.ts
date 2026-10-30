@@ -19,7 +19,7 @@ export const story: NewsroomStory = {
       "title": "What the trial was",
       "id": "what-the-trial-was",
       "paragraphs": [
-        "The trial is TRANSCEND-T2D-2, registered as NCT06260722 and run at 77 sites, most of them in the United States [3]. It enrolled 1,298 adults whose type 2 diabetes was not controlled on metformin, with or without an SGLT2 inhibitor, a class of diabetes tablet [1][5]. Average A1C at the start was 8.3%, with an entry range of 7.0% to 10.5%. Average weight was 102.4 kg and average body mass index 36.8.",
+        "The trial is TRANSCEND-T2D-2, registered as NCT06260722 and run at 77 sites, 38 of them in the United States [3]. It enrolled 1,298 adults whose type 2 diabetes was not controlled on metformin, with or without an SGLT2 inhibitor, a class of diabetes tablet [1][5]. Average A1C at the start was 8.3%, with an entry range of 7.0% to 10.5%. Average weight was 102.4 kg and average body mass index 36.8.",
         "Participants were assigned at random in a 2:2:1 ratio to weekly retatrutide 9 mg, weekly retatrutide 12 mg, or weekly semaglutide 2 mg, the highest Ozempic dose approved for type 2 diabetes [1][5]. Retatrutide started at 2 mg and rose every four weeks. The comparison ran for 80 weeks; the study began in February 2024 and the registry records primary completion in August 2026 [3].",
         "The primary endpoint was change in A1C for the 12 mg dose against semaglutide, tested first for noninferiority and then for superiority. Noninferiority of the 9 mg dose on A1C was a key secondary endpoint [1]."
       ]
@@ -31,7 +31,7 @@ export const story: NewsroomStory = {
         "A1C fell 2.2 points on both retatrutide doses and 1.8 points on semaglutide, from the same starting average [1]. On body weight, the 9 mg dose produced a 19.5% reduction, or 20.1 kg, and the 12 mg dose 20.9%, or 21.5 kg. Semaglutide produced 9.4%, or 9.5 kg.",
         "Lilly also reports larger reductions in non-HDL cholesterol, triglycerides and systolic blood pressure on retatrutide than on semaglutide [1][4].",
         "Two statistical details sit inside those headline figures. Superiority for the 12 mg dose on A1C was significant at p<0.001 with control for multiple comparisons. Superiority for the 9 mg dose on A1C was nominal: Lilly's own endnote says that comparison was a prespecified secondary endpoint that was not included in the family-wise error control, while its noninferiority did meet that bar [2]. The weight differences for both doses were significant under that control.",
-        "Every number in the release uses the efficacy estimand, which estimates what happened to participants while they stayed on the treatment they were assigned, and excludes data from people who stopped [2]. Lilly has not published the treatment-regimen version, which counts everyone randomised and is the closer analogue to what a clinic sees when patients discontinue a drug because of nausea."
+        "Every number in the release uses the efficacy estimand. That is a hypothetical estimate of what would have happened if every randomised participant had stayed on the treatment they were assigned for the full 80 weeks, allowing for dose interruptions and adjustments, with outcomes for people who stopped imputed rather than dropped [2]. Lilly has not published the treatment-regimen version, which describes what happened under the treatment people actually took, including discontinuation, and is the closer analogue to what a clinic sees when patients stop a drug because of nausea."
       ]
     },
     {
@@ -48,7 +48,7 @@ export const story: NewsroomStory = {
       "id": "tolerability",
       "paragraphs": [
         "More participants stopped retatrutide because of adverse events: 4.8% on 9 mg and 7.9% on 12 mg, against 2.7% on semaglutide [1][4].",
-        "Diarrhea was more common on retatrutide, at 28.3% and 32.7% against 26.4%, as were nausea at 21.2% and 23.8% against 21.3%, vomiting at 10.2% and 15.0% against 13.2%, and dysesthesia at 4.8% and 6.5% against 2.7%. Constipation and dyspepsia were less common on retatrutide than on semaglutide: 14.2% and 13.1% against 19.8%, and 10.4% and 8.5% against 11.6%. Urinary tract infections were similar across arms [4].",
+        "The direction of the difference depends on the event and the dose. Diarrhea was higher on both retatrutide doses, at 28.3% and 32.7% against 26.4%, and dysesthesia was higher on both, at 4.8% and 6.5% against 2.7%. Nausea was higher only at 12 mg, at 23.8% against 21.3%, and slightly below semaglutide at 9 mg, at 21.2%. Vomiting was 15.0% at 12 mg against 13.2%, and 10.2% at 9 mg. Constipation was lower on both doses, at 14.2% and 13.1% against 19.8%, and dyspepsia was 10.4% at 9 mg and 8.5% at 12 mg against 11.6%. Urinary tract infections were similar across arms [4].",
         "The release reports rates, not severity distributions or time to onset, and it does not say how many of those events were serious. Lilly says detailed results will be presented at a medical meeting and published in a peer-reviewed journal. That presentation is where the safety table will be, and it is the document that will matter more than the topline."
       ]
     },
@@ -92,7 +92,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "What does the efficacy estimand mean in these results?",
-      "a": "It estimates the treatment effect while participants remained on the treatment they were assigned, so data collected after someone stopped are excluded. A treatment-regimen analysis counts every randomised participant and usually produces smaller differences. Lilly published efficacy-estimand figures in the topline release.",
+      "a": "It estimates what would have happened if every randomised participant had remained on their assigned treatment for the full 80 weeks, with outcomes for people who discontinued imputed rather than excluded. A treatment-regimen analysis instead reflects the treatment people actually took, including discontinuation, and usually produces smaller differences. Lilly published efficacy-estimand figures in the topline release.",
       "refs": [2, 3]
     },
     {

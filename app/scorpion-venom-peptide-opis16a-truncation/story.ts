@@ -38,7 +38,7 @@ export const story: NewsroomStory = {
       "id": "how-it-kills",
       "paragraphs": [
         "Gram-negative bacteria carry an outer membrane studded with lipopolysaccharide, then a thin cell wall, then an inner membrane. Opis16a binds lipopolysaccharide, destabilises the outer membrane, and then depolarises and permeabilises the inner membrane. In Escherichia coli and in a multidrug-resistant clinical isolate of Acinetobacter baumannii, bacterial killing followed within minutes [1].",
-        "The paper reports a minimum inhibitory concentration of 8 micrograms per millilitre for Opis16a, the lowest concentration that stops visible growth, with activity against Escherichia coli and a multidrug-resistant clinical isolate of Acinetobacter baumannii [1]. The wider panel, set out in the group’s earlier work, also covered Klebsiella pneumoniae and Enterobacter cloacae [2].",
+        "The paper reports a minimum inhibitory concentration of 8 micrograms per millilitre of Opis16a against a multidrug-resistant clinical isolate of Acinetobacter baumannii, the lowest concentration that stops visible growth, and activity against Escherichia coli [1]. The group’s earlier work tested the peptide against a wider panel that also covered Klebsiella pneumoniae and Enterobacter cloacae [2].",
         "Selectivity is the part that decides whether a membrane-active peptide can become a drug. Opis16a produced no detectable haemolysis of human red blood cells at the concentrations tested, with a half-maximal haemolytic concentration above 256 micrograms per millilitre, and low toxicity against HaCaT keratinocytes and HepG2 liver cells [1][2]. Venom peptides such as melittin are potent antibacterial molecules that fail on exactly this point."
       ]
     },
@@ -130,6 +130,7 @@ export const story: NewsroomStory = {
     { id: 2, url: "https://www.nature.com/articles/d44148-026-00345-z", title: "Nature: Can a scorpion-venom peptide tackle drug-resistant wound infections? (October 29, 2026)", doi: "10.1038/d44148-026-00345-z" },
     { id: 3, url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12169475", title: "van der Walt M et al. Enhanced Gram-Negative Membrane Disruption and In Vivo Efficacy via Lysine-Arginine Enrichment of Opis16a. ACS Medicinal Chemistry Letters (2025)" },
     { id: 4, url: "https://doi.org/10.1021/acsomega.4c01277", title: "van der Walt M et al. QSAR Reveals Decreased Lipophilicity of Polar Residues Determines the Selectivity of Antimicrobial Peptide Activity. ACS Omega 9, 26030-26049 (2024)", doi: "10.1021/acsomega.4c01277" },
-    { id: 5, url: "https://doi.org/10.1046/j.1432-1033.2002.03177.x", title: "Moerman L et al. Antibacterial and antifungal properties of alpha-helical, cationic peptides in the venom of scorpions from southern Africa. European Journal of Biochemistry 269, 4799-4810 (2002)", doi: "10.1046/j.1432-1033.2002.03177.x" }
+    { id: 5, url: "https://doi.org/10.1046/j.1432-1033.2002.03177.x", title: "Moerman L et al. Antibacterial and antifungal properties of alpha-helical, cationic peptides in the venom of scorpions from southern Africa. European Journal of Biochemistry 269, 4799-4810 (2002)", doi: "10.1046/j.1432-1033.2002.03177.x" },
+    { id: 6, url: "https://www.nature.com/articles/s44259-026-00266-9_reference.pdf", title: "van der Walt M et al. accepted manuscript PDF of the npj Antimicrobials and Resistance paper, including the peptide design table and the limitations discussion (2026)", doi: "10.1038/s44259-026-00266-9" }
   ]
 };
