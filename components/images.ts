@@ -873,6 +873,28 @@ export const images = {
     credit: "The Peptide Digest via Higgsfield",
     kind: "illustration"
   },
+  retatrutideTranscend20261030: {
+    "src": "/images/retatrutide-ozempic-transcend-20261030.webp",
+    width: 1600,
+    height: 1073,
+    "alt": "A tabletop blood glucose meter, an unreadable printed laboratory report and folded reading glasses on an oak desk in daylight",
+    "caption": "AI-generated editorial illustration of a diabetes clinic consultation desk, not a photograph of a trial site, a participant or a study result.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  scorpionOpis16a20261030: {
+    "src": "/images/scorpion-venom-peptide-opis16a-20261030.webp",
+    width: 1600,
+    height: 1073,
+    "alt": "Streaked bacterial colonies on agar in glass Petri dishes beside an inoculation loop on a dark laboratory bench",
+    "caption": "AI-generated editorial illustration of a microbiology bench, not a photograph of the cited experiment or its results.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
