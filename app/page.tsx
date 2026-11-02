@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "richard-norton-peptide-death-coroner-finding",
+  "category": "Regulation and safety",
+  "title": "Richard Norton's death was triggered by a peptide injection, coroner finds",
+  "image": "nortonCoronerCourthouse20261102",
+  "date": "November 2, 2026",
+  "readTime": "7 min read",
+  "excerpt": "A Victorian coroner found the actor died of anaphylaxis after injecting a prescribed CJC1295 and ipamorelin blend, and asked Australia's regulator to consider a Schedule 10 ban.",
+  "imageLabel": "AI-generated editorial illustration of a courthouse exterior, not a photograph of the Coroners Court of Victoria."
+},
+{
+  "slug": "tradipitant-glp1-vomiting-phase-3-semaglutide",
+  "category": "Clinical research",
+  "title": "Can a motion sickness pill stop semaglutide vomiting? What Vanda's Phase 3 trial found",
+  "image": "tradipitantGlp1Vomiting20261102",
+  "date": "November 2, 2026",
+  "readTime": "6 min read",
+  "excerpt": "After a single 1 mg semaglutide dose, vomiting hit 43.0% of people on tradipitant and 58.5% on placebo. The data come from Vanda's release, and the pill is approved only for motion sickness.",
+  "imageLabel": "AI-generated editorial illustration of a clinical research day room, not a photograph of a trial site."
+},
+{
   "slug": "retatrutide-transcend-t2d-2-ozempic-head-to-head",
   "category": "Clinical research",
   "title": "Retatrutide beats Ozempic in the first Phase 3 head-to-head diabetes trial",

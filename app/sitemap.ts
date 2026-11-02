@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: "https://peptidedigest.co/richard-norton-peptide-death-coroner-finding",
+      lastModified: new Date("2026-11-02T13:40:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://peptidedigest.co/tradipitant-glp1-vomiting-phase-3-semaglutide",
+      lastModified: new Date("2026-11-02T13:40:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/retatrutide-transcend-t2d-2-ozempic-head-to-head",
       lastModified: new Date("2026-10-30T11:45:00Z"),
       changeFrequency: "weekly",
@@ -380,7 +392,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-10-30T11:45:00Z"),
+      lastModified: new Date("2026-11-02T13:40:00Z"),
       changeFrequency: "daily",
       priority: 1,
     },

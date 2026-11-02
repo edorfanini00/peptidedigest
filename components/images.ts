@@ -895,6 +895,28 @@ export const images = {
     "credit": "The Peptide Digest via Higgsfield",
     "kind": "illustration"
   },
+  nortonCoronerCourthouse20261102: {
+    "src": "/images/norton-coroner-courthouse-20261102.webp",
+    width: 1600,
+    height: 1074,
+    "alt": "Exterior of a modern sandstone and glass courthouse building with bare trees on a wet, empty forecourt under an overcast sky",
+    "caption": "AI-generated editorial illustration of a courthouse exterior, not a photograph of the Coroners Court of Victoria or any event in this report.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  tradipitantGlp1Vomiting20261102: {
+    "src": "/images/tradipitant-glp1-vomiting-study-20261102.webp",
+    width: 1600,
+    height: 1074,
+    "alt": "An overbed table holding a blue kidney-shaped basin, a notebook with a pencil and a glass of water beside an empty recliner in a quiet clinical room",
+    "caption": "AI-generated editorial illustration of a clinical research day room, not a photograph of a trial site, a participant or a study result.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
