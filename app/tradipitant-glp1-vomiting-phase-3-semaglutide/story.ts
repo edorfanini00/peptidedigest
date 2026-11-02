@@ -28,7 +28,7 @@ export const story: NewsroomStory = {
       "id": "what-study-3601-tested",
       "paragraphs": [
         "Study 3601, registered as NCT07446439, is a randomized, quadruple-blind trial comparing tradipitant capsules with placebo capsules taken twice a day for about two weeks [2]. The registry lists adults aged 18 to 65 with a body mass index from 25 to under 40 and no diabetes or other serious chronic disease. People with conditions that independently cause gastrointestinal symptoms were excluded [2].",
-        "The challenge was intentionally severe. Every participant received a single 1 mg dose of semaglutide without the weeks of escalation used in practice, a dose Wegovy's label reaches only after 12 weeks [1][5]. Vanda describes this as a rigorous test of prevention under a strong vomiting stimulus [1].",
+        "The challenge was intentionally severe. Every participant received a single 1 mg dose of semaglutide without the weeks of escalation used in practice, a dose Wegovy's label schedules only from week 9, after eight weeks of escalation [1][5]. Vanda describes this as a rigorous test of prevention under a strong vomiting stimulus [1].",
         "The registered primary outcome is the share of participants with at least one vomiting episode over one week, recorded in a daily symptom diary. The key secondary outcome adds severity: at least one vomiting episode together with a worst nausea score of 3 or more [2]. In Vanda's earlier Phase 2 study, that score sat on a 0 to 5 scale where 3 meant moderate or worse [3]."
       ]
     },
@@ -36,7 +36,7 @@ export const story: NewsroomStory = {
       "title": "The results, in absolute numbers",
       "id": "results-absolute-numbers",
       "paragraphs": [
-        "- Participants analysed: 306, with 142 on tradipitant and 164 on placebo [1].",
+        "- Participants in the results: 142 on tradipitant and 164 on placebo, 306 in all [1].",
         "- Any vomiting, the primary endpoint: 43.0% (61 of 142) on tradipitant vs 58.5% (96 of 164) on placebo, p=0.006. That is 15.5 points lower in absolute terms, which Vanda reports as a 27% relative reduction [1].",
         "- Vomiting with worst nausea of 3 or more, the key secondary endpoint: 33.1% (47 of 142) vs 50.6% (83 of 164), p=0.002, or 17.5 points lower [1].",
         "- More than 2 vomiting episodes on more than one day: 6.3% (9 of 142) vs 15.9% (26 of 164) [1].",
@@ -48,7 +48,7 @@ export const story: NewsroomStory = {
       "id": "biggest-effects",
       "paragraphs": [
         "The last two measures carry the largest relative reductions, 60% and 81%. Vanda states they are post hoc and exploratory, meaning they were chosen after the data were in hand, so they describe a pattern rather than confirm one. The p values for the primary and key secondary results were adjusted for trial site [1].",
-        "Timing matters too. Almost every vomiting episode in both groups happened by day 2, peaking on day 1, which is where the gap between drug and placebo was widest [1]. That fits a drug used around the first doses rather than for months."
+        "Timing matters too. Almost every vomiting episode in both groups happened by day 2, peaking on day 1, and the gap between drug and placebo was widest on days 1 and 2 [1]. That fits a drug used around the first doses rather than for months."
       ]
     },
     {
@@ -64,17 +64,17 @@ export const story: NewsroomStory = {
       "title": "What the trial does not show yet",
       "id": "what-it-does-not-show",
       "paragraphs": [
-        "The numbers above come from Vanda's own announcement. No peer-reviewed paper or registry results have been posted, and the registry entry, last updated in April 2026, still lists the trial as recruiting with an estimated 280 participants, fewer than the 306 the release reports [1][2]. Vanda has not published a full safety table for the study, saying only that tradipitant was generally well tolerated with no new safety signals [1].",
+        "The numbers above come from Vanda's own announcement. No peer-reviewed paper or registry results have been posted, and the registry entry, last updated in April 2026, still lists the trial as recruiting with an estimated 280 participants, fewer than the 306 participants (142 plus 164) in the release's results [1][2]. Vanda has not published a full safety table for the study, saying only that tradipitant was generally well tolerated with no new safety signals [1].",
         "The approved label gives a fuller picture of side effects. In single-dose motion sickness trials, somnolence was reported by 6% of people on the 85 mg dose versus 4% on placebo, and by 12% on 170 mg versus 6%, and fatigue rose in the same way. The label warns that tradipitant can impair driving, and that strong CYP3A4 inhibitors, drugs that slow its breakdown in the liver, can increase exposure [6]. Those findings come from single doses for motion, not from two weeks alongside semaglutide.",
         "The effect also shrank between studies. In Vanda's Phase 2 study, registered as NCT06804603 [4], 116 people received the same single unescalated 1 mg semaglutide dose, and vomiting fell from 58.6% on placebo to 29.3% on tradipitant [3]. In the larger Phase 3, the placebo rate was almost identical but the tradipitant rate was 43.0% [1]. Vanda has not explained the difference in its release.",
-        "Most of all, the trial tested the worst case. Real patients climb from 0.25 mg over months, with lower rates of vomiting at each step [5]. Vanda says a pooled exposure analysis of its two trials showed the benefit held steady across the semaglutide concentrations it observed, and it uses that to argue the effect should carry over to normal dosing [1]. Whether it does is the question a treatment-length trial in people escalating normally would answer."
+        "Most of all, the trial tested the worst case. Real patients climb from 0.25 mg over months, on a schedule the label uses to reduce gastrointestinal reactions [5]. Vanda says a pooled exposure analysis of its two trials showed the benefit held steady across the semaglutide concentrations it observed, and it uses that to argue the effect should carry over to normal dosing [1]. Whether it does is the question a treatment-length trial in people escalating normally would answer."
       ]
     },
     {
       "title": "What happens next",
       "id": "what-happens-next",
       "paragraphs": [
-        "Vanda says it will discuss the results with the FDA and plans to submit a supplemental new drug application to add prevention of GLP-1-associated vomiting to Nereus's label [1]. Until the FDA approves that, tradipitant's only approved use is preventing motion-induced vomiting [6].",
+        "Vanda says it will discuss the results with the FDA and plans to submit a supplemental new drug application to add prevention of GLP-1-associated vomiting to Nereus's label [1]. Unless the FDA approves that, tradipitant's only approved use is preventing motion-induced vomiting [6].",
         "The FDA's review, and any published paper with the full safety data, will show whether a 15-point drop in vomiting under a harsh single-dose test holds up as a reason to add a second drug at the start of GLP-1 treatment. For now the better-established tool remains the one in the label: slow escalation [5]."
       ]
     }

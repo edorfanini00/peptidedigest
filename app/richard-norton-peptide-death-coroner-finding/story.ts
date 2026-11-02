@@ -12,16 +12,16 @@ export const story: NewsroomStory = {
     "kpv",
     "nad"
   ],
-  "lead": "Australian actor and martial artist Richard Norton died in March 2025 after an injection of the peptide blend CJC1295 and ipamorelin set off anaphylaxis and then cardiac arrest, a Victorian coroner has found. In a finding dated October 28, 2026, Coroner David Ryan also recommended that Australia's Therapeutic Goods Administration consider much tighter controls on such peptides, up to a Schedule 10 listing that would prohibit their supply for human use outside narrow exceptions such as clinical trials [1].",
+  "lead": "Australian actor and martial artist Richard Norton died in March 2025 after an injection of the peptide blend CJC1295 and ipamorelin set off anaphylaxis and then cardiac arrest, a Victorian coroner has found. In a finding dated October 28, 2026, Coroner David Ryan also recommended that Australia's Therapeutic Goods Administration consider further restrictions on such peptides, such as a Schedule 10 listing that could ban their human use subject to specific exceptions such as clinical trials [1].",
   "notice": "IQON Labs publishes a separate research use only catalog. Nothing in this report is a suggestion to obtain or use any peptide, and no research reagent is a substitute for medical care.",
   "sections": [
     {
-      "title": "Eleven days from prescription to collapse",
-      "id": "eleven-days",
+      "title": "Nine days from prescription to collapse",
+      "id": "nine-days",
       "paragraphs": [
-        "Norton, 75, had asthma, osteoarthritis and two previous shoulder reconstructions when he consulted Melbourne doctor Jerzy Muchnicki in early 2025. He told Muchnicki another practitioner had previously prescribed him peptides for fatigue, slow physical recovery, shoulder pain and loss of lean muscle mass [1][3].",
+        "Norton, 75, had asthma, osteoarthritis and two previous shoulder reconstructions when he consulted Dr Jerzy Muchnicki in early 2025. He told Muchnicki another practitioner had previously prescribed him peptides for fatigue, slow physical recovery, shoulder pain and loss of lean muscle mass [1][3].",
         "Muchnicki ordered blood tests and a CT scan of Norton's coronary artery calcium. On March 15, Norton signed an informed consent form for peptide therapy that listed anaphylaxis among the risks of CJC1295 and ipamorelin. On March 19, Muchnicki prescribed the blend, made by a licensed compounding pharmacy in Queensland [1].",
-        "On March 25, Norton told Muchnicki he was feeling good and that the treatment was improving his symptoms. Three days later, at about 4pm on March 28, he called the clinic to say he had dropped and broken a vial and needed a replacement. He also told a nurse that he had been taking double the prescribed dose. The nurse told him to return to the prescribed dose from the following week, and Muchnicki approved the replacement by phone the same afternoon [1].",
+        "On March 25, Norton told Muchnicki he was feeling good and that the treatment was improving his symptoms. Three days later, at about 4pm on March 28, he spoke with a nurse at Muchnicki's clinic, saying he had dropped and broken a vial and needed a replacement. He also told the nurse that he had been taking double the prescribed dose. The nurse told him to return to the prescribed dose from the following week, and Muchnicki, reached by the nurse over the phone, authorised the replacement [1].",
         "Hospital records later described a pattern that had been building since the first injection: local redness and swelling at first, then whole-body flushing over the last few days. On the morning of March 28 he had flushing, chest tightness and shortness of breath that eased after he used his asthma reliever [1].",
         "At about 9pm that night he injected again, his second dose of the day. He told his wife Judy he felt hot and flushed, then collapsed. Her GP called emergency services at 9.10pm and she began CPR. Paramedics arrived at about 9.22pm to find him in cardiac arrest, restarted his heart at 9.55pm and took him to the Alfred Hospital. He developed ischaemic bowel, was judged unsuitable for further intervention, and died on March 30 at 10.17am [1]."
       ]
@@ -30,10 +30,10 @@ export const story: NewsroomStory = {
       "title": "What the autopsy found",
       "id": "what-the-autopsy-found",
       "paragraphs": [
-        "At the Alfred, clinicians recorded raised tryptase and troponin levels and assessed that Norton had most likely suffered a cardiac arrest caused by anaphylaxis from the peptide injection [1].",
+        "At the Alfred, clinicians recorded raised tryptase and troponin levels and assessed that Norton had likely suffered a cardiac arrest caused by anaphylaxis from the peptide injection [1].",
         "Forensic pathologist Daniel Hussey of the Victorian Institute of Forensic Medicine found evidence of anaphylaxis at autopsy. Anaphylaxis is a severe allergic reaction in which immune cells called mast cells release their contents into surrounding tissue, which can swell the airway and drop blood pressure far enough to stop the heart. Hussey favoured the peptide injections as a possible cause because the allergic symptoms began after Norton started the therapy and escalated before his collapse [1].",
         "The autopsy also found hypertrophic cardiomyopathy, a thickening of the heart muscle that raises the risk of fatal rhythm problems, and Hussey said both it and Norton's asthma could have contributed. Post-mortem toxicology could not detect the specific peptides. The drugs it did find matched the emergency treatment he received, such as midazolam, amiodarone and atropine. The medical cause of death was recorded as complications of an out-of-hospital cardiac arrest due to anaphylaxis, with asthma and hypertrophic cardiomyopathy as contributing conditions [1].",
-        "Coroners in Victoria decide facts on the balance of probabilities and do not determine criminal or civil liability. On that standard, Ryan wrote: \"I am satisfied that Richard's death was triggered by his injection of the peptide CJC1295/Ipamorelin\" [1]."
+        "Coroners in Victoria decide facts on the balance of probabilities and do not determine criminal or civil liability. On that standard, Ryan wrote: \"I am satisfied that Richard's death was triggered by his injection of the peptide CJC1295/Ipamorelin.\" His next sentence adds: \"Richard had been taking amounts of the medication in excess of the dose prescribed by his medical practitioner\" [1]."
       ]
     },
     {
@@ -49,7 +49,7 @@ export const story: NewsroomStory = {
       "title": "What the coroner wants the TGA to consider",
       "id": "coroner-recommendation",
       "paragraphs": [
-        "In Australia, CJC1295 and ipamorelin are Schedule 4 prescription-only medicines, but they are not on the Australian Register of Therapeutic Goods, which makes them unapproved goods that the TGA has never evaluated for quality, safety or efficacy. Doctors can reach them through routes such as the Authorised Prescriber Scheme, and are generally expected to have considered registered treatments first. The TGA told the court it had received six other reports of anaphylaxis or hypersensitivity in people using these peptides, three of them involving CJC1295 and ipamorelin [1].",
+        "In Australia, CJC1295 and ipamorelin are Schedule 4 prescription-only medicines, but they are not on the Australian Register of Therapeutic Goods, which makes them unapproved goods that the TGA has never evaluated for quality, safety or efficacy. Doctors can reach them through routes such as the Authorised Prescriber Scheme, and are generally expected to have considered registered treatments first. The TGA told the court it had received six reports of anaphylaxis or hypersensitivity in people using CJC1295 and ipamorelin or other unapproved peptides, including three cases of anaphylaxis with CJC1295 and ipamorelin, not counting Norton's [1].",
         "Ryan was not persuaded that such products should remain prescribable. \"It is not clear to me how their safe use can be clinically indicated,\" he wrote, given uncertain benefits and risks \"as yet not fully known\" [1]. He recommended that the TGA review their benefits and risks and consider moving them to Schedule 10, the category for \"substances of such danger to health as to warrant prohibition of supply and use\", with room for clinical trials and other research to continue [1].",
         "Ryan directed that the finding go to the TGA, Ahpra, Alfred Health, Muchnicki and Norton's family. A recommendation is not an order: any scheduling change would be for the TGA and the national scheduling process to decide [1]."
       ]
@@ -77,7 +77,7 @@ export const story: NewsroomStory = {
       "id": "what-happens-next",
       "paragraphs": [
         "The next document to watch is the TGA's response. The coroner has asked it to look again at a group of peptides that Australian law currently allows doctors to prescribe, on the strength of a death in which the prescription, the pharmacy and the consent form were all in place [1].",
-        "For Victoria's health department, the measure is whether anaphylaxis notifications linked to peptides keep rising after a month in which it recorded five [2]. For anyone following the debate elsewhere, the case shows the risk the coroner named did not depend on a black-market supplier: it arrived through a doctor's prescription and a licensed compounding pharmacy."
+        "For Victoria's health department, the measure is whether anaphylaxis notifications linked to peptides keep rising after a month in which it recorded five [2]. For anyone following the debate elsewhere, the product in this case did not come from a black-market supplier. It came through a doctor's prescription and a licensed compounding pharmacy, although the coroner also found Norton had been taking more than the prescribed dose [1]."
       ]
     }
   ],
@@ -94,7 +94,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "Were other substances involved?",
-      "a": "Post-mortem toxicology found only drugs consistent with the emergency treatment Norton received and could not detect the specific peptides. Police found an opened pouch containing a vial of CJC1295 and ipamorelin and a sealed, unused pouch of another peptide that had been prescribed the same afternoon.",
+      "a": "Post-mortem toxicology found only drugs consistent with the emergency treatment Norton received and could not detect the specific peptides. After his death, his wife gave police his medication containers, including an unsealed pouch with a vial of CJC1295 and ipamorelin and a sealed pouch holding an unused vial of another peptide Muchnicki had prescribed on March 28.",
       "refs": [1]
     },
     {
