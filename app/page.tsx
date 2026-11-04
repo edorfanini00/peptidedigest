@@ -18,6 +18,26 @@ interface CardArticle {
 }
 
 const latestArticles: CardArticle[] = [
+{
+  "slug": "hhs-peptide-compounding-opposition-safety-debate",
+  "category": "Regulation and safety",
+  "date": "November 4, 2026",
+  "readTime": "5 min read",
+  "title": "Why ASHP and safety groups challenge the HHS peptide policy",
+  "excerpt": "ASHP acknowledged safeguards in the HHS peptide compounding policy. Earlier letters and a petition show why evidence and enforcement remain disputed.",
+  "image": "peptideOpposition20261104",
+  "imageLabel": "AI-generated editorial illustration of laboratory work, not a photograph of a named facility or an event in this report."
+},
+{
+  "slug": "retatrutide-vial-testing-us-australia-findings",
+  "category": "Regulation and safety",
+  "date": "November 4, 2026",
+  "readTime": "5 min read",
+  "title": "What US and Australian tests found in vials labelled retatrutide",
+  "excerpt": "Reported retatrutide vial tests found an apparent identity mismatch, bacteria and label-amount discrepancies. Each finding answers a different question.",
+  "image": "retatrutideTesting20261104",
+  "imageLabel": "AI-generated editorial illustration of a vial on an evidence bag, not a photograph of the tested samples or a validated instrument design."
+},
   {
     slug: "what-are-peptides",
     category: "Explainer",

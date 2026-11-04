@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  peptideOpposition20261104: {
+  "src": "/images/hhs-peptide-enforcement-discretion-conditions-20261103.webp",
+  "width": 1600,
+  "height": 1074,
+  "alt": "Masked worker with a blue cap and gloves beside a steel laboratory hood, vial rack and clipboard",
+  "caption": "AI-generated editorial illustration of laboratory work, not a photograph of a named facility or an event in this report.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  retatrutideTesting20261104: {
+  "src": "/images/vial-labelled-retatrutide-testing-20261103.webp",
+  "width": 1600,
+  "height": 1074,
+  "alt": "Unlabelled capped vial standing on a transparent bag with blue printing beside a purple gloved hand and blurred laboratory equipment",
+  "caption": "AI-generated editorial illustration of a vial on an evidence bag, not a photograph of the tested samples or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   peptideBasicsSynthesizer: {
     src: "/images/peptide-synthesizer-explainer.jpg", width: 1600, height: 1066,
     alt: "Blue-lit reaction vessels inside a Liberty Blue automated peptide synthesizer",

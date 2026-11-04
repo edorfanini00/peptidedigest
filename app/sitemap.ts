@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/hhs-peptide-compounding-opposition-safety-debate`,
+      lastModified: new Date("2026-11-04T13:16:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/retatrutide-vial-testing-us-australia-findings`,
+      lastModified: new Date("2026-11-04T13:16:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/what-are-peptides`,
       lastModified: new Date("2026-11-04T04:11:55Z"),
       changeFrequency: "monthly",
@@ -404,7 +416,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-04T04:11:55Z"),
+      lastModified: new Date("2026-11-04T13:16:00Z"),
       changeFrequency: "daily",
       priority: 1,
     },
