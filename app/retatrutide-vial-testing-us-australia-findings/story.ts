@@ -19,24 +19,24 @@ export const story: NewsroomStory = {
       "id": "brooklyn-sample",
       "title": "The Brooklyn sample raised two separate alarms",
       "paragraphs": [
-        "The Brooklyn vial carried a research-use-only warning.[1] For the CBS News investigation published October 21, University of Iowa scientist Jason Galpin identified phenylacetic acid, which he described as a filler.[1] Further testing by Iowa’s Carl Ross found the bacterial colonies and prompted an infection warning.[1]",
-        "Two samples bought online were consistent with a basic retatrutide standard Galpin had created.[1] CBS distinguished that standard from Lilly’s clinical-trial drug.[1]"
+        "The Brooklyn vial carried a research-use-only warning. For the CBS News investigation published October 21, University of Iowa scientist Jason Galpin identified phenylacetic acid, which he described as a filler. Further testing by Iowa’s Carl Ross found the bacterial colonies and prompted an infection warning.[1]",
+        "Two samples bought online were consistent with a basic retatrutide standard Galpin had created. CBS distinguished that standard from Lilly’s clinical-trial drug.[1]"
       ]
     },
     {
       "id": "australian-samples",
       "title": "In Australia, label amounts went both ways",
       "paragraphs": [
-        "Testing reported by ABC on August 28 involved three vials examined by Leeder Analytical at the request of ABC and the University of Queensland.[2] UQ’s School of Public Health and PED Test Australia paid for and arranged the work.[2] One vial contained less than its label indicated; two contained much higher concentrations.[2]",
-        "The same laboratory also supplied its broader 2026 summary: 18 retatrutide-labelled samples, only one matching its label claim.[2] About 30% were above the stated concentration and about 30% below; one contained none of the peptide.[2] The published breakdown leaves some samples unaccounted for.[2] It also does not establish that the three-vial project is separate from the 18-sample total.[2] These small, selected samples cannot establish how often label discrepancies occur across the market.[2]"
+        "Testing reported by ABC on August 28 involved three vials examined by Leeder Analytical at the request of ABC and the University of Queensland. UQ’s School of Public Health and PED Test Australia paid for and arranged the work. One vial contained less than its label indicated; two contained much higher concentrations.[2]",
+        "The same laboratory also supplied its broader 2026 summary: 18 retatrutide-labelled samples, only one matching its label claim. About 30% were above the stated concentration and about 30% below; one contained none of the peptide. The published breakdown leaves some samples unaccounted for. It also does not establish that the three-vial project is separate from the 18-sample total. These small, selected samples cannot establish how often label discrepancies occur across the market.[2]"
       ]
     },
     {
       "id": "different-measurements",
       "title": "Identity, purity and amount answer different questions",
       "paragraphs": [
-        "The distinction is built into laboratory methods.[3] A 2023 paper by USP researchers separates peptide identity, purity and strength as quality attributes.[3] Identity testing asks what molecule is present: the paper describes mass spectrometry and nuclear magnetic resonance among the methods used to examine sequence or structural features.[3]",
-        "Chromatographic purity addresses the material separated and measured by a particular method.[3] Strength, or assay, addresses the quantity of the intended peptide.[3] The USP paper lists separate tests for peptide impurities, residual solvents and other components.[3] A percentage from one method therefore needs its definition and scope before it can be interpreted as a statement about a vial’s contents.[3] The [content-versus-purity explainer](/peptide-content-vs-purity-measurement) develops that distinction.",
+        "The distinction is built into laboratory methods. A 2023 paper by USP researchers separates peptide identity, purity and strength as quality attributes. Identity testing asks what molecule is present: the paper describes mass spectrometry and nuclear magnetic resonance among the methods used to examine sequence or structural features.[3]",
+        "Chromatographic purity addresses the material separated and measured by a particular method. Strength, or assay, addresses the quantity of the intended peptide. The USP paper lists separate tests for peptide impurities, residual solvents and other components. A percentage from one method therefore needs its definition and scope before it can be interpreted as a statement about a vial’s contents.[3] The [content-versus-purity explainer](/peptide-content-vs-purity-measurement) develops that distinction.",
         "The investigations illustrate why the categories matter. The US sample raised an identity question, then a separate bacterial concern.[1] The Australian label comparisons concerned amounts.[2] An answer to one question cannot supply the others. The same distinction applies when interpreting a [certificate of analysis](/how-to-read-peptide-coa): the listed test methods define what has been examined.[3]"
       ]
     },
