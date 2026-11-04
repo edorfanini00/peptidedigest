@@ -18,6 +18,24 @@ interface CardArticle {
 }
 
 const latestArticles: CardArticle[] = [
+  {
+    slug: "what-are-peptides",
+    category: "Explainer",
+    date: "November 3, 2026",
+    readTime: "8 min read",
+    title: "What are peptides? Structure, synthesis and laboratory testing",
+    excerpt: "Amino acid chains, the size boundary with proteins, laboratory synthesis and what analytical tests can establish. A sourced introduction to peptide chemistry.",
+    image: "peptideBasicsSynthesizer",
+  },
+  {
+    slug: "peptide-calculator",
+    category: "Laboratory tool",
+    date: "November 3, 2026",
+    readTime: "5 min read",
+    title: "Peptide calculator: concentration and portion math",
+    excerpt: "Check research solution concentration, portion volume and portions per vial. Includes a worked example and the limits of the calculation.",
+    image: "peptideMathPipettes",
+  },
 {
   "slug": "richard-norton-peptide-death-coroner-finding",
   "category": "Regulation and safety",
