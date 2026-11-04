@@ -15,6 +15,20 @@ export interface EditorialImage {
 }
 
 export const images = {
+  peptideBasicsSynthesizer: {
+    src: "/images/peptide-synthesizer-explainer.jpg", width: 1600, height: 1066,
+    alt: "Blue-lit reaction vessels inside a Liberty Blue automated peptide synthesizer",
+    caption: "An automated peptide synthesizer. The growing chain stays attached to a solid support during repeated reaction cycles. Cropped and resized from the original; image adaptation licensed CC BY-SA 4.0.",
+    photographer: "Chrumps", sourceUrl: "https://commons.wikimedia.org/wiki/File:Liberty_Blue_CEM.jpg",
+    credit: "Chrumps / Wikimedia Commons (CC BY-SA 4.0)",
+  },
+  peptideMathPipettes: {
+    src: "/images/peptide-calculator-pipettes.jpg", width: 1600, height: 1200,
+    alt: "Four adjustable laboratory micropipettes on a pale surface",
+    caption: "Laboratory micropipettes for measuring small liquid volumes. Rotated and resized from the original; image adaptation licensed CC BY-SA 4.0.",
+    photographer: "Retama", sourceUrl: "https://commons.wikimedia.org/wiki/File:Micropipettes.jpg",
+    credit: "Retama / Wikimedia Commons (CC BY-SA 4.0)",
+  },
   fluorescentLabels20261028: {
   "src": "/images/fluorescent-labels-20261028.webp",
   "width": 1600,

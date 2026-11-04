@@ -1,5 +1,7 @@
 "use client";
 
+type AnalyticsWindow = Window & { gtag?: (...args: unknown[]) => void };
+
 interface IQONLinkProps {
   href?: string;
   className?: string;
@@ -16,8 +18,8 @@ export function IQONLink({
   rel = "noopener noreferrer",
 }: IQONLinkProps) {
   function handleClick() {
-    if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
-      (window as any).gtag("event", "iqon_shop_click", {
+    if (typeof window !== "undefined" && typeof (window as AnalyticsWindow).gtag === "function") {
+      (window as AnalyticsWindow).gtag!("event", "iqon_shop_click", {
         event_category: "outbound",
         event_label: href,
         transport_type: "beacon",

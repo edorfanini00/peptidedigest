@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/what-are-peptides`,
+      lastModified: new Date("2026-11-04T03:30:32Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-calculator`,
+      lastModified: new Date("2026-11-04T03:30:32Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: "https://peptidedigest.co/richard-norton-peptide-death-coroner-finding",
       lastModified: new Date("2026-11-02T13:40:00Z"),
       changeFrequency: "weekly",

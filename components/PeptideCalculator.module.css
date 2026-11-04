@@ -1,0 +1,20 @@
+.tool { margin: 2rem 0; padding: clamp(1rem, 4vw, 2rem); border: 1px solid var(--color-rule); background: #faf6ef; border-radius: 4px; }
+.tool h2 { font-family: var(--font-lora), Georgia, serif; font-size: clamp(1.6rem, 4vw, 2rem); line-height: 1.2; margin: .5rem 0 1rem; }
+.eyebrow { font-size: .7rem; text-transform: uppercase; letter-spacing: .13em; color: var(--color-accent); font-weight: 700; }
+.fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.fields label { display: block; font-size: .9rem; font-weight: 650; line-height: 1.4; margin-bottom: .5rem; }
+.fields input { display: block; width: 100%; min-width: 0; background: #fffdf9; border: 1px solid #a69b8e; border-radius: 3px; padding: .7rem; font-size: 1.15rem; color: var(--color-ink); }
+.fields input[aria-invalid=true] { border: 2px solid var(--color-accent); }
+.tool input:focus-visible, .tool button:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+.tool button { min-height: 44px; padding: .6rem .9rem; border: 1px solid var(--color-accent); color: var(--color-accent); background: transparent; border-radius: 3px; font-size: .85rem; font-weight: 600; cursor: pointer; }
+.note { font-size: .85rem; line-height: 1.6; margin: 1rem 0; }
+.hint { font-size: .75rem; line-height: 1.5; color: #62584c; margin: .4rem 0 0; }
+.error { font-size: .85rem; line-height: 1.5; color: #8c2418; margin: .5rem 0; }
+.results { border-top: 1px solid var(--color-rule); margin-top: 1.5rem; padding-top: 1rem; }
+.results h3 { font-size: 1rem; margin: 0 0 1rem; }
+.results dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1rem; }
+.results dt { font-size: .8rem; margin-bottom: .4rem; }
+.results dd { margin: 0; font-size: 1.45rem; font-weight: 650; line-height: 1.4; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.results small { display: block; font-size: .8rem; font-weight: 400; }
+@media (min-width: 641px) { .fields label { min-height: 2.8em; } }
+@media (max-width: 640px) { .fields, .results dl { grid-template-columns: minmax(0, 1fr); } .results dl > div { padding-bottom: .7rem; border-bottom: 1px solid var(--color-rule); } }

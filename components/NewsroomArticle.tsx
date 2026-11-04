@@ -45,7 +45,7 @@ function RichText({ text, story }: { text: string; story: NewsroomStory }) {
     return <Fragment key={index}>{part}</Fragment>;
   });
 }
-export function NewsroomArticle({ story }: { story: NewsroomStory }) {
+export function NewsroomArticle({ story, children }: { story: NewsroomStory; children?: React.ReactNode }) {
   const url = `${base}/${story.slug}`;
   const image = images[story.image];
   const schema = { "@context": "https://schema.org", "@graph": [
@@ -71,6 +71,7 @@ export function NewsroomArticle({ story }: { story: NewsroomStory }) {
         <IQONPartner vial={story.vials[0]} />
         {story.correction && <p data-correction-note className="text-sm text-[color:var(--color-muted)]">{story.correction}</p>}
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
+        {children}
         <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}{story.faqs.length > 0 && <li><a href="#questions">Frequently asked questions</a></li>}</ul></nav>
         {story.sections.map(section => <section key={section.id} className={styles.section} aria-labelledby={section.id}>
           <h2 id={section.id} className="scroll-mt-24">{section.title}</h2>

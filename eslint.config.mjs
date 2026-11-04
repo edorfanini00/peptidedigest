@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Historical editorial snapshots, not application source.
+    "reports/copy-review/before/**",
   ]),
 ]);
 
