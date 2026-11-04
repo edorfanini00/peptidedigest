@@ -147,6 +147,8 @@ export default function Page() {
               <li><Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA&apos;s August 24, 2026 Warning Letters to Online Peptide Sellers</Link></li>
               <li><Link href="/state-crackdown-research-peptides-2026" className={a}>Which States Are Cracking Down on Research-Grade Peptides in 2026?</Link></li>
               <li><Link href="/eli-lilly-lawsuits-research-peptide-sellers" className={a}>Eli Lilly&apos;s lawsuits against research peptide sellers</Link></li>
+              <li><Link href="/what-are-peptides" className={a}>What are peptides? Structure, synthesis and laboratory testing</Link></li>
+              <li><Link href="/peptide-calculator" className={a}>Peptide calculator: concentration and portion math</Link></li>
             </ul>
           </div>
 

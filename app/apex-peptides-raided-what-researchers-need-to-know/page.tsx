@@ -145,6 +145,8 @@ export default function ApexRaidedArticle() {
               { slug: "what-happened-to-apex-peptides", category: "Industry", title: "What Happened to Apex Peptides? Searches and Closure Questions", date: "September 25, 2026" },
               { slug: "peptide-enforcement-2026", category: "Industry", title: "2026 Peptide Enforcement: The Major Documented Actions", date: "September 24, 2026" },
               { slug: "compliant-research-peptide-supplier", category: "Industry", title: "What to Check in a Research Peptide Supplier", date: "September 10, 2026" },
+              { slug: "what-are-peptides", category: "Explainer", title: "What are peptides? Structure, synthesis and laboratory testing", date: "November 3, 2026" },
+              { slug: "peptide-calculator", category: "Laboratory tool", title: "Peptide calculator: concentration and portion math", date: "November 3, 2026" },
             ].map((r) => (
               <Link key={r.slug} href={`/${r.slug}`} className="flex items-start gap-4 group">
                 <span className="shrink-0 text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 bg-orange-50 text-orange-700">{r.category}</span>
