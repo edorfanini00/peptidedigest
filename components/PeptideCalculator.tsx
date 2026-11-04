@@ -4,10 +4,10 @@ import { useState } from "react";
 import { calculateSolution, formatLabNumber, solutionFields, type SolutionField } from "@/lib/peptide-math";
 import styles from "./PeptideCalculator.module.css";
 
-const example = { mass: "5", volume: "2", aliquot: "250" };
+const example = { mass: "5", volume: "2", portion: "250" };
 export function PeptideCalculator() {
   const [values, setValues] = useState(example);
-  const result = calculateSolution(values.mass, values.volume, values.aliquot);
+  const result = calculateSolution(values.mass, values.volume, values.portion);
   return <section className={`not-prose ${styles.tool}`} aria-labelledby="calculator-heading" data-calculator>
     <p className={styles.eyebrow}>Research bench · solution math</p>
     <h2 id="calculator-heading">What is the concentration of your solution?</h2>
@@ -34,10 +34,10 @@ export function PeptideCalculator() {
         <h3>Calculated results</h3>
         <dl>
           <div><dt>Concentration</dt><dd><span data-result="mg-per-ml">{formatLabNumber(result.mgPerMl)}</span> mg/mL <small><span data-result="mcg-per-ml">{formatLabNumber(result.mcgPerMl)}</span> mcg/mL</small></dd></div>
-          <div><dt>Volume per aliquot</dt><dd><span data-result="aliquot-ml">{formatLabNumber(result.aliquotMl)}</span> mL <small><span data-result="aliquot-ul">{formatLabNumber(result.aliquotUl)}</span> µL</small></dd></div>
-          <div><dt>Aliquots per vial</dt><dd><span data-result="aliquots">{formatLabNumber(result.aliquots)}</span> <small><span data-result="full-aliquots">{result.fullAliquots.toLocaleString("en-US")}</span> complete aliquots before losses</small></dd></div>
+          <div><dt>How much to draw</dt><dd><span data-result="portion-ml">{formatLabNumber(result.portionMl)}</span> mL <small><span data-result="portion-ul">{formatLabNumber(result.portionUl)}</span> µL</small></dd></div>
+          <div><dt>Portions per vial</dt><dd><span data-result="portions">{formatLabNumber(result.portions)}</span> <small><span data-result="full-portions">{result.fullPortions.toLocaleString("en-US")}</span> complete portions before losses</small></dd></div>
         </dl>
-        <p className={styles.hint}>Displayed values are rounded to six significant figures, except the complete-aliquot count. A fractional aliquot count means some material remains after the last complete aliquot.</p>
+        <p className={styles.hint}>Displayed values are rounded to six significant figures, except the complete-portion count. A fractional portion count means some material remains after the last complete portion.</p>
       </> : <p className={styles.error}>Results paused. {Object.values(result.errors).join(" ")}</p>}
     </div>
     <p className={styles.note}>Numbers are calculated in your browser. This tool does not select a solvent, assess stability or check whether a volume is within your equipment’s working range.</p>

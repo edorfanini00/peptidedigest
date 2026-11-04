@@ -5,6 +5,7 @@ export const story: NewsroomStory = {
   title: "What are peptides? Structure, synthesis and laboratory testing",
   description: "Peptides are amino acid chains joined by peptide bonds. Learn how they differ from proteins, how laboratories make them, and what testing can establish.",
   date: "2026-11-04T03:30:32Z",
+  dateModified: "2026-11-04T04:11:55Z",
   type: "Article",
   category: "Explainer",
   image: "peptideBasicsSynthesizer",
@@ -24,7 +25,7 @@ export const story: NewsroomStory = {
     {
       title: "What holds a peptide chain together?", id: "peptide-bonds", paragraphs: [
         "The link is an amide bond, called a peptide bond when it connects amino acids. In the basic chemical description, an amino group reacts with a carboxyl group and water is released. Repeating that connection creates a chain. A chain of two amino acids is a dipeptide; three make a tripeptide.[1]",
-        "A sequence records the order of those amino acids. By convention, it is written from the amino end, called the N-terminus, toward the carboxyl end, called the C-terminus. Reading the same list backward describes a different sequence.[1]",
+        "A sequence records the order of those amino acids. By convention, it is written from the amino end, called the N-terminus, toward the carboxyl end, called the C-terminus. Reading the list backward can describe a different sequence. A palindromic sequence, however, reads the same in both directions.[1]",
         "That order is part of the molecule's identity, not merely a way to label a bottle. The same amino acid composition can produce different behavior when the sequence changes. Our explainer on [scrambled peptide controls](/scrambled-peptide-controls-not-inactive) follows that problem into laboratory experiments.[1]",
       ],
     },
@@ -92,7 +93,7 @@ export const story: NewsroomStory = {
     { id: 4, url: "https://www.fda.gov/media/87374/download", title: "FDA: Research use only diagnostic products (2013)" },
   ],
   related: [
-    { url: "/peptide-calculator", title: "Peptide calculator: concentration and aliquot math" },
+    { url: "/peptide-calculator", title: "Peptide calculator: concentration and portion math" },
     { url: "/peptide-content-vs-purity-measurement", title: "Peptide content versus purity" },
     { url: "/how-to-read-peptide-coa", title: "How to read a peptide certificate of analysis" },
     { url: "/what-does-research-use-only-mean", title: "What research use only means" },

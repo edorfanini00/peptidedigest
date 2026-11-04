@@ -32,8 +32,8 @@ const latestArticles: CardArticle[] = [
     category: "Laboratory tool",
     date: "November 3, 2026",
     readTime: "5 min read",
-    title: "Peptide calculator: concentration and aliquot math",
-    excerpt: "Check research solution concentration, aliquot volume and aliquots per vial. Includes a worked example and the limits of the calculation.",
+    title: "Peptide calculator: concentration and portion math",
+    excerpt: "Check research solution concentration, portion volume and portions per vial. Includes a worked example and the limits of the calculation.",
     image: "peptideMathPipettes",
   },
 {

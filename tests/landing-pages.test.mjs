@@ -4,7 +4,7 @@ import fs from "node:fs";
 import ts from "typescript";
 
 const root = new URL("../", import.meta.url);
-const banned = /\b(?:dose|dosing|dosage|inject|injection|units|insulin\s+syringe|IU|subcutaneous|per\s+day)\b|TB[-\s]?500|BPC[-\s]?157|Thymosin/i;
+const banned = /\b(?:dose|dosing|dosage|inject|injection|units|insulin\s+syringe|IU|subcutaneous|per\s+day)\b|TB[-\s]?500|BPC[-\s]?157|Thymosin|aliquot|\bservings?\b/i;
 for (const slug of ["what-are-peptides", "peptide-calculator"]) {
   test(`${slug}: evergreen contract, references and discovery`, async () => {
     const path = new URL(`app/${slug}/story.ts`, root);
