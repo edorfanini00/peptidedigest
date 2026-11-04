@@ -1,0 +1,650 @@
+{
+  "base": "a2ea5cdc7dcb178ebea8cbbc59d125d6db181ba7",
+  "origin": "http://localhost:3137",
+  "productionBaseline": "https://peptidedigest.co",
+  "capturedAt": "2026-11-04T05:11:01.604Z",
+  "preservation": [
+    {
+      "file": "app/apex-peptides-raided-what-researchers-need-to-know/page.tsx",
+      "identicalOutsideRelated": true,
+      "baselineSha256OutsideRelated": "6742e096b0476eacdc564e8f133e1153d82845d4467baf2a59a0941a0027e7dc",
+      "headSha256OutsideRelated": "6742e096b0476eacdc564e8f133e1153d82845d4467baf2a59a0941a0027e7dc"
+    },
+    {
+      "file": "app/peptide-content-vs-purity-measurement/story.ts",
+      "identicalOutsideRelated": true,
+      "baselineSha256OutsideRelated": "fff3278843a7ddcdfed7324cfad3e57baa5bfe515f0b9268a0a17297c6882472",
+      "headSha256OutsideRelated": "fff3278843a7ddcdfed7324cfad3e57baa5bfe515f0b9268a0a17297c6882472"
+    },
+    {
+      "file": "app/how-to-read-peptide-coa/page.tsx",
+      "identicalOutsideRelated": true,
+      "baselineSha256OutsideRelated": "089fb355c74b58e2dc71db75574d619f52880b03ba2fb1a04c22c629a3dea5f4",
+      "headSha256OutsideRelated": "089fb355c74b58e2dc71db75574d619f52880b03ba2fb1a04c22c629a3dea5f4"
+    },
+    {
+      "file": "app/what-does-research-use-only-mean/page.tsx",
+      "identicalOutsideRelated": true,
+      "baselineSha256OutsideRelated": "6e293500aeb7e4d92c2442e9c91e69ca01e2bc16776a050599274a6ce3079ad9",
+      "headSha256OutsideRelated": "6e293500aeb7e4d92c2442e9c91e69ca01e2bc16776a050599274a6ce3079ad9"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/apex-peptides-raided-what-researchers-need-to-know",
+      "status": 200,
+      "canonicals": [
+        "https://peptidedigest.co/apex-peptides-raided-what-researchers-need-to-know"
+      ],
+      "newRelatedLinks": [
+        {
+          "href": "/what-are-peptides",
+          "text": "ExplainerWhat are peptides? Structure, synthesis and laboratory testingNovember 3, 2026"
+        },
+        {
+          "href": "/peptide-calculator",
+          "text": "Laboratory toolPeptide calculator: concentration and portion mathNovember 3, 2026"
+        }
+      ],
+      "productionBaselineStatus": 200,
+      "titleSchemaAndBodyWithoutRelatedMatchProduction": true,
+      "renderedBodySha256OutsideRelated": "79d727aa3a269757c278fb9b5f9268b7ecf89abc4b8e43c9a5c6b29b239ec2f3"
+    },
+    {
+      "route": "/peptide-content-vs-purity-measurement",
+      "status": 200,
+      "canonicals": [
+        "https://peptidedigest.co/peptide-content-vs-purity-measurement"
+      ],
+      "newRelatedLinks": [
+        {
+          "href": "/what-are-peptides",
+          "text": "What are peptides? Structure, synthesis and laboratory testing"
+        },
+        {
+          "href": "/peptide-calculator",
+          "text": "Peptide calculator: concentration and portion math"
+        }
+      ],
+      "productionBaselineStatus": 200,
+      "titleSchemaAndBodyWithoutRelatedMatchProduction": true,
+      "renderedBodySha256OutsideRelated": "17618576c91112cea29e00bd265bab7a94ca1c4c2ad81c34a80609554fb5eba1"
+    },
+    {
+      "route": "/how-to-read-peptide-coa",
+      "status": 200,
+      "canonicals": [
+        "https://peptidedigest.co/how-to-read-peptide-coa"
+      ],
+      "newRelatedLinks": [
+        {
+          "href": "/what-are-peptides",
+          "text": "What are peptides? Structure, synthesis and laboratory testing"
+        },
+        {
+          "href": "/peptide-calculator",
+          "text": "Peptide calculator: concentration and portion math"
+        }
+      ],
+      "productionBaselineStatus": 200,
+      "titleSchemaAndBodyWithoutRelatedMatchProduction": true,
+      "renderedBodySha256OutsideRelated": "805e9d7c971be65bcf4f09cf902be2e37e191f34492d82ddb41a580752e15dcd"
+    },
+    {
+      "route": "/what-does-research-use-only-mean",
+      "status": 200,
+      "canonicals": [
+        "https://peptidedigest.co/what-does-research-use-only-mean"
+      ],
+      "newRelatedLinks": [
+        {
+          "href": "/what-are-peptides",
+          "text": "What are peptides? Structure, synthesis and laboratory testing"
+        },
+        {
+          "href": "/peptide-calculator",
+          "text": "Peptide calculator: concentration and portion math"
+        }
+      ],
+      "productionBaselineStatus": 200,
+      "titleSchemaAndBodyWithoutRelatedMatchProduction": true,
+      "renderedBodySha256OutsideRelated": "4b305dc9621f96a6eb6dd2fcf88d503863527dcd4855ed7abff937f41f7e79a0"
+    },
+    {
+      "route": "/what-are-peptides",
+      "status": 200,
+      "canonicals": [
+        "https://peptidedigest.co/what-are-peptides"
+      ]
+    },
+    {
+      "route": "/peptide-calculator",
+      "status": 200,
+      "canonicals": [
+        "https://peptidedigest.co/peptide-calculator"
+      ]
+    }
+  ],
+  "sitemap": [
+    {
+      "route": "/what-are-peptides",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-calculator",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/richard-norton-peptide-death-coroner-finding",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/tradipitant-glp1-vomiting-phase-3-semaglutide",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/retatrutide-transcend-t2d-2-ozempic-head-to-head",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/scorpion-venom-peptide-opis16a-truncation",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/hhs-peptide-compounding-policy-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/retatrutide-sleep-apnea-triumph-osa-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/fluorescent-peptide-labels-change-experiment",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/scrambled-peptide-controls-not-inactive",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/elicio-eli-002-amplify-7p-esmo-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-n-terminal-acetylation-c-terminal-amidation",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/gilead-pepstar-hcxt-2001-oral-peptide-deal",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/leucine-isoleucine-peptide-mass-spectrometry",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/cyclic-peptide-libraries-proteome-screening",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-receptor-desensitization-internalization",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/icotrokinra-ulcerative-colitis-76-week-anthem-uc",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-lc-ms-ion-suppression-matrix-effects",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/asc36o-oral-amylin-phase-1-human-absorption",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-cell-uptake-cytosolic-delivery-endosomal-escape",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/pemvidutide-aasld-2026-liver-markers-biopsy",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-immunogenicity-anti-drug-antibodies",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/samsung-polypeptide-tender-offer-closing-timeline",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/ic50-ec50-kd-peptide-potency-binding-affinity",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/yuviwel-navepegritide-chmp-achondroplasia-opinion",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/albumin-binding-peptide-half-life",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/ryz101-action-1-phase-3-interim-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/methionine-oxidation-peptide-mass-spectrometry-artifacts",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/tirzepatide-heart-failure-surpass-cvot-analysis",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/ss31-cardiolipin-mitochondrial-mechanism",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/vk2735-oral-phase-3-sunrise-trials",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-tfa-vs-acetate-counterion-assay-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/semaglutide-hfpef-animal-study-without-weight-loss",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-disulfide-bond-isomers-same-mass",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/glp1-discontinuation-weight-regain-meals-app-pilot-trial",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-deamidation-isoaspartate-mass-shift",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/eb613-oral-osteoporosis-phase-3-bone-density",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-aggregation-assay-measurement-pitfalls",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/taltz-zepbound-psoriasis-biomarker-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/cyclic-peptides-stability-cell-permeability",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/semaglutide-kidney-biopsy-trial-remodel-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/what-is-amylin-amylin-analogs-vs-glp-1",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/icotrokinra-psoriasis-two-year-iconic-total-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/d-vs-l-amino-acids-peptide-signaling",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/eloratzp-phase-2-results-weight-loss-tolerability",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/endotoxin-vs-sterility-peptide-research",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/body-science-supplements-garman-sentencing",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-content-vs-purity-measurement",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/ghk-cu-peptide-research-what-studies-show",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/fda-second-pcac-peptides-february-2027",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/fda-import-alert-66-80-glp1-api-border-enforcement",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/mots-c-mitochondria-peptide-research",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/fda-pcac-peptide-compounding-vote-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/kpv-peptide-research-what-studies-show",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/retatrutide-triumph-1-phase-3-results-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/fda-glp1-compounding-exclusion-proposed-rule-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/enicepatide-phase-2-diabetes-results-september-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-adsorption-glass-plastic-lab-results",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/compliant-research-peptide-supplier",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/empower-pharmacy-fda-warning-letter-september-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-freeze-thaw-stability-lab-evidence",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/how-to-read-peptide-coa",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/what-does-research-use-only-mean",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/eli-lilly-lawsuits-research-peptide-sellers",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/fda-warning-letters-peptide-sellers-august-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/state-crackdown-research-peptides-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/apex-peptides-raided-what-researchers-need-to-know",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/what-happened-to-apex-peptides",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/what-happened-to-peptide-sciences",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/amino-asylum-raid-what-happened",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/paradigm-peptides-prison-sentence",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    },
+    {
+      "route": "/peptide-enforcement-2026",
+      "status": 200,
+      "canonicalCount": 1,
+      "excludedTermScanPassed": true
+    }
+  ],
+  "browser": [
+    {
+      "route": "/apex-peptides-raided-what-researchers-need-to-know",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "apex-peptides-raided-what-researchers-need-to-know-390.png"
+    },
+    {
+      "route": "/peptide-content-vs-purity-measurement",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "peptide-content-vs-purity-measurement-390.png"
+    },
+    {
+      "route": "/how-to-read-peptide-coa",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "how-to-read-peptide-coa-390.png"
+    },
+    {
+      "route": "/what-does-research-use-only-mean",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "what-does-research-use-only-mean-390.png"
+    },
+    {
+      "route": "/apex-peptides-raided-what-researchers-need-to-know",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "apex-peptides-raided-what-researchers-need-to-know-1440.png"
+    },
+    {
+      "route": "/peptide-content-vs-purity-measurement",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "peptide-content-vs-purity-measurement-1440.png"
+    },
+    {
+      "route": "/how-to-read-peptide-coa",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "how-to-read-peptide-coa-1440.png"
+    },
+    {
+      "route": "/what-does-research-use-only-mean",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "bothLinkNavigationsPassed": true,
+      "screenshot": "what-does-research-use-only-mean-1440.png"
+    }
+  ],
+  "summary": {
+    "changedRoutes": 4,
+    "newLinks": 8,
+    "targetRoutes": 2,
+    "sitemapRoutesChecked": 73,
+    "renderedChecks": 8,
+    "passed": true
+  }
+}

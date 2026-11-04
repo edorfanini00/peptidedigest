@@ -152,6 +152,8 @@ export default function Page() {
               <li><Link href="/compliant-research-peptide-supplier" className={a}>What to look for in a research peptide supplier</Link></li>
               <li><Link href="/fda-warning-letters-peptide-sellers-august-2026" className={a}>FDA&apos;s August 24, 2026 warning letters to online peptide sellers</Link></li>
               <li><Link href="/peptide-enforcement-2026" className={a}>2026 Peptide Enforcement: The Major Documented Actions</Link></li>
+              <li><Link href="/what-are-peptides" className={a}>What are peptides? Structure, synthesis and laboratory testing</Link></li>
+              <li><Link href="/peptide-calculator" className={a}>Peptide calculator: concentration and portion math</Link></li>
             </ul>
           </div>
 

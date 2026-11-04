@@ -117,6 +117,14 @@ export const story: NewsroomStory = {
     {
       "url": "/peptide-adsorption-glass-plastic-lab-results",
       "title": "How container surfaces can change peptide recovery"
+    },
+    {
+      "url": "/what-are-peptides",
+      "title": "What are peptides? Structure, synthesis and laboratory testing"
+    },
+    {
+      "url": "/peptide-calculator",
+      "title": "Peptide calculator: concentration and portion math"
     }
   ]
 };
