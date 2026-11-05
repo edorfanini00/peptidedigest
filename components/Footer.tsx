@@ -9,7 +9,7 @@ export function Footer() {
             The Peptide Digest
           </div>
           <p className="text-sm text-[color:var(--color-muted)] max-w-sm leading-relaxed">
-            Independent coverage of peptide science, regulatory developments, and industry news. For informational purposes only.
+            Coverage of peptide research, scientific progress and industry news. For informational purposes only.
           </p>
         </div>
         <div className="flex gap-10 text-sm text-[color:var(--color-muted)]">
@@ -21,6 +21,7 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <span className="kicker text-[color:var(--color-ink)] mb-1">Site</span>
             <Link href="/#about" className="hover:text-[color:var(--color-ink)] transition-colors">About</Link>
+            <Link href="/editorial-standards" className="hover:text-[color:var(--color-ink)] transition-colors">Editorial standards</Link>
             <a href="mailto:hello@peptidedigest.com" className="hover:text-[color:var(--color-ink)] transition-colors">Contact</a>
           </div>
         </div>

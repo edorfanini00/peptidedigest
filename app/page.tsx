@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
@@ -5,6 +6,10 @@ import { Footer } from "@/components/Footer";
 import { SectionLabel } from "@/components/Editorial";
 import { images, type ImageKey } from "@/components/images";
 import { IQONPartner } from "@/components/IQONPartner";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://peptidedigest.co" },
+};
 
 interface CardArticle {
   slug: string;
@@ -812,11 +817,27 @@ export default function Home() {
       <Nav />
 
       <main className="max-w-6xl mx-auto px-5 sm:px-6 pt-6 sm:pt-10 pb-6">
-        {/* Masthead date line */}
+        {/* Publication introduction */}
         <div className="flex items-center justify-between border-b-2 border-[color:var(--color-ink)] pb-2 mb-8 text-xs text-[color:var(--color-muted)]">
-          <span className="kicker">Research · Regulation · Industry</span>
-          <span className="hidden sm:inline">Independent reporting</span>
+          <span className="kicker">Research · Science · Industry</span>
         </div>
+
+        <section aria-labelledby="publication-title" className="max-w-[48rem] mb-8 sm:mb-10">
+          <h1 id="publication-title" className="font-serif font-semibold text-[color:var(--color-ink)] text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] leading-[1.1] tracking-[-0.025em]">
+            The Peptide Digest
+          </h1>
+          <p className="mt-4 font-serif text-[1.2rem] sm:text-[1.4rem] leading-relaxed text-[color:var(--color-body)]">
+            Peptide research, scientific progress and industry news, explained clearly.
+          </p>
+          <p className="mt-3 text-[1rem] sm:text-[1.05rem] leading-relaxed text-[color:var(--color-muted)]">
+            Explore new findings, understand the evidence and follow the developments shaping peptide science.
+          </p>
+          <nav aria-label="Start here" className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm leading-relaxed text-[color:var(--color-link)]">
+            <Link href="/what-are-peptides" className="underline underline-offset-4">What are peptides?</Link>
+            <Link href="/how-to-read-peptide-coa" className="underline underline-offset-4">How to read a COA</Link>
+            <Link href="/peptide-calculator" className="underline underline-offset-4">Peptide calculator</Link>
+          </nav>
+        </section>
 
         <IQONPartner vial="nad" />
 
@@ -856,9 +877,9 @@ export default function Home() {
               <span>{featuredArticle.readTime}</span>
             </div>
             <Link href={`/${featuredArticle.slug}`}>
-              <h1 className="mt-3 font-serif font-bold text-[color:var(--color-ink)] text-[2rem] sm:text-[2.6rem] lg:text-[2.9rem] leading-[1.08] tracking-[-0.015em] group-hover:text-[color:var(--color-accent)] transition-colors">
+              <h2 className="mt-3 font-serif font-bold text-[color:var(--color-ink)] text-[2rem] sm:text-[2.6rem] lg:text-[2.9rem] leading-[1.08] tracking-[-0.015em] group-hover:text-[color:var(--color-accent)] transition-colors">
                 {featuredArticle.title}
-              </h1>
+              </h2>
             </Link>
             <p className="mt-4 font-serif text-[1.15rem] sm:text-[1.25rem] leading-[1.5] text-[color:var(--color-muted)] max-w-[40rem]">
               {featuredArticle.excerpt}
@@ -900,11 +921,12 @@ export default function Home() {
         <div id="about" className="scroll-mt-20 border-t border-[color:var(--color-rule)] pt-10 max-w-[42rem]">
           <h2 className="font-serif text-2xl font-semibold text-[color:var(--color-ink)] mb-3">About The Peptide Digest</h2>
           <p className="text-[color:var(--color-body)] text-[1.05rem] leading-relaxed">
-            The Peptide Digest is an independent publication covering the science, regulation, and market developments around research peptides. We follow the regulatory and enforcement landscape closely and aim to give researchers and industry observers clear, factual information without hype or agenda.
+            The Peptide Digest is a publication covering peptide research, scientific progress and industry news. We explain new findings and the evidence behind them, alongside the regulatory and market developments shaping peptide science.
           </p>
           <p className="text-[color:var(--color-muted)] text-xs mt-3">
             Content is for informational purposes only. Nothing here constitutes medical advice or an endorsement of any product.
           </p>
+          <Link href="/editorial-standards" className="inline-block mt-4 text-sm text-[color:var(--color-link)] underline underline-offset-4">Editorial standards</Link>
         </div>
       </main>
 
