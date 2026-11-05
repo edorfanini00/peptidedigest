@@ -44,6 +44,9 @@ test("every built sitemap page has one route canonical and a consistent publicat
     const footer = html.match(/<footer\b[\s\S]*?<\/footer>/)?.[0];
     assert.ok(footer?.includes('href="/editorial-standards"'), `${url}: policy discovery`);
     assert.doesNotMatch(footer, /independent/i);
+    assert.doesNotMatch(html, /mailto:hello@peptidedigest\.com/);
+    assert.doesNotMatch(footer, />Contact<|mailto:/i);
+    assert.match(footer, /href="\/editorial-standards#updates-and-corrections"[^>]*>Corrections policy<\/a>/);
     for (const [type, suffix] of [["NewsMediaOrganization", "organization"], ["WebSite", "website"]]) {
       const matches = nodes.filter(node => node["@id"] === `${base}/#${suffix}`);
       assert.equal(matches.length, 1, `${url}: ${suffix}`);
@@ -63,6 +66,7 @@ test("every built sitemap page has one route canonical and a consistent publicat
       assert.match(html, /AI tools assist with research, drafting and production/);
       assert.match(html, /These checks are not medical review/);
       assert.match(html, /promotional placements linking to IQON Labs/);
+      assert.match(html, /<h2 id="updates-and-corrections"[^>]*>Updates and corrections<\/h2>/);
     } else if (pathname !== "/") {
       assert.match(html, /<a\b[^>]*class="byline-author[^>]*href="\/editorial-standards"[^>]*>By The Peptide Digest Staff<\/a>/);
       const article = nodes.find(node => ["Article", "NewsArticle"].includes(node["@type"]));
@@ -70,5 +74,22 @@ test("every built sitemap page has one route canonical and a consistent publicat
       assert.match(html, /property="og:type" content="article"/);
       assert.ok(!html.includes('<title>The Peptide Digest | Research, Science &amp; Industry News</title>'), `${url}: article title override`);
     }
+  }
+});
+
+test("default social metadata points to a real PNG with accurate dimensions", () => {
+  const png = fs.readFileSync(new URL("../public/og-default.png", import.meta.url));
+  assert.deepEqual(png.subarray(0, 8), Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
+  assert.equal(png.toString("ascii", 12, 16), "IHDR");
+  assert.equal(png.readUInt32BE(16), 1200);
+  assert.equal(png.readUInt32BE(20), 630);
+  for (const file of ["index.html", "editorial-standards.html"]) {
+    const html = read(file);
+    for (const property of ["og:image", "twitter:image"]) {
+      assert.match(html, new RegExp(`(?:property|name)="${property}" content="https://peptidedigest\\.co/og-default\\.png"`));
+    }
+    assert.match(html, /property="og:image:width" content="1200"/);
+    assert.match(html, /property="og:image:height" content="630"/);
+    assert.match(html, /property="og:image:type" content="image\/png"/);
   }
 });

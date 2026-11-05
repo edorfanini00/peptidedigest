@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url,
     title: "Editorial standards | The Peptide Digest",
     description,
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "The Peptide Digest" }],
+    images: [{ url: "/og-default.png", width: 1200, height: 630, type: "image/png", alt: "The Peptide Digest" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -57,7 +57,7 @@ export default function EditorialStandards() {
           <p>AI tools assist with research, drafting and production. Articles are checked against cited sources before publication. These checks are not medical review.</p>
           <p>AI generated illustrations are labeled as such. They are not documentary photographs of the events, facilities or studies described.</p>
 
-          <h2>Updates and corrections</h2>
+          <h2 id="updates-and-corrections" className="scroll-mt-24">Updates and corrections</h2>
           <p>Our policy is to mark material new facts or factual corrections with a visible update or correction note and a corresponding modification date. We do not change dates merely to make a page look fresh.</p>
 
           <h2>Commercial links</h2>

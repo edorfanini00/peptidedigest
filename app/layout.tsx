@@ -48,6 +48,7 @@ export const metadata: Metadata = {
         url: "/og-default.png",
         width: 1200,
         height: 630,
+        type: "image/png",
         alt: "The Peptide Digest",
       },
     ],

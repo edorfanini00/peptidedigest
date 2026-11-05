@@ -22,7 +22,7 @@ export function Footer() {
             <span className="kicker text-[color:var(--color-ink)] mb-1">Site</span>
             <Link href="/#about" className="hover:text-[color:var(--color-ink)] transition-colors">About</Link>
             <Link href="/editorial-standards" className="hover:text-[color:var(--color-ink)] transition-colors">Editorial standards</Link>
-            <a href="mailto:hello@peptidedigest.com" className="hover:text-[color:var(--color-ink)] transition-colors">Contact</a>
+            <Link href="/editorial-standards#updates-and-corrections" className="hover:text-[color:var(--color-ink)] transition-colors">Corrections policy</Link>
           </div>
         </div>
       </div>
