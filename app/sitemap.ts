@@ -7,6 +7,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/editorial-standards`,
+      lastModified: new Date("2026-11-05T15:08:55Z"),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
       url: `${base}/lilly-nad-compounded-tirzepatide-claims`,
       lastModified: new Date("2026-11-05T12:35:00Z"),
       changeFrequency: "weekly",
@@ -428,7 +434,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-05T12:35:00Z"),
+      lastModified: new Date("2026-11-05T15:08:55Z"),
       changeFrequency: "daily",
       priority: 1,
     },

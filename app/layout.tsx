@@ -21,11 +21,11 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Peptide Digest — Research, Science & Industry News",
+    default: "The Peptide Digest | Research, Science & Industry News",
     template: "%s | The Peptide Digest",
   },
   description:
-    "Independent coverage of peptide research, regulatory developments, and industry news. Fact-based reporting on the compounds most studied in labs worldwide.",
+    "Peptide research, scientific progress and industry news, explained clearly.",
   metadataBase: new URL("https://peptidedigest.co"),
   icons: {
     icon: [
@@ -35,22 +35,20 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
-  alternates: {
-    canonical: "https://peptidedigest.co",
-  },
   openGraph: {
     siteName: "The Peptide Digest",
     type: "website",
     locale: "en_US",
     url: "https://peptidedigest.co",
-    title: "The Peptide Digest — Research, Science & Industry News",
+    title: "The Peptide Digest | Research, Science & Industry News",
     description:
-      "Independent coverage of peptide research, regulatory developments, and industry news.",
+      "Peptide research, scientific progress and industry news, explained clearly.",
     images: [
       {
         url: "/og-default.png",
         width: 1200,
         height: 630,
+        type: "image/png",
         alt: "The Peptide Digest",
       },
     ],
@@ -58,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Peptide Digest",
-    description: "Independent coverage of peptide research, regulatory developments, and industry news.",
+    description: "Peptide research, scientific progress and industry news, explained clearly.",
   },
   robots: {
     index: true,
@@ -81,9 +79,11 @@ const jsonLd = {
       "@type": "NewsMediaOrganization",
       "@id": "https://peptidedigest.co/#organization",
       name: "The Peptide Digest",
+      alternateName: "Peptide Digest",
       url: "https://peptidedigest.co",
+      publishingPrinciples: "https://peptidedigest.co/editorial-standards",
       description:
-        "Independent publication covering peptide research, regulatory developments, and industry news.",
+        "Publication covering peptide research, scientific progress and industry news.",
       logo: {
         "@type": "ImageObject",
         url: "https://peptidedigest.co/logo.png",
@@ -94,6 +94,7 @@ const jsonLd = {
       "@id": "https://peptidedigest.co/#website",
       url: "https://peptidedigest.co",
       name: "The Peptide Digest",
+      alternateName: "Peptide Digest",
       publisher: { "@id": "https://peptidedigest.co/#organization" },
     },
   ],
