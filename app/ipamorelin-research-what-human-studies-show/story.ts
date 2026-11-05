@@ -12,15 +12,15 @@ export const story: NewsroomStory = {
     "mots-c",
     "semax"
   ],
-  "lead": "Ipamorelin has two published human studies behind it, and the larger one missed its primary endpoint. The most detailed account of that record is not a marketing page but FDA's own advisory committee file, which counts two deaths among ipamorelin-treated surgical patients, higher rates of low potassium and high blood sugar than placebo, and no safety data at all for the subcutaneous route that most users describe. The compound remains on FDA's category 2 list for outsourcing facilities, and it is not among the peptides covered by the HHS enforcement discretion policy published on October 30.[1][2][3][4]",
+  "lead": "Ipamorelin has two published human studies behind it, and the larger one missed its primary endpoint. The most detailed account of that record is not a marketing page but FDA's own advisory committee file, which counts two deaths among ipamorelin-treated surgical patients, higher rates of low potassium and high blood sugar than placebo, and no safety data at all for the subcutaneous route that most users describe. The compound remains on FDA's category 2 list for outsourcing facilities, and it is not among the peptides covered by the HHS enforcement discretion policy announced on October 30.[1][2][3][4][6]",
   "notice": "Research explainer. No dosing, administration or purchase guidance is given, and nothing here is a claim about human benefit for any research product.",
   "sections": [
     {
       "id": "what-it-is",
       "title": "A five amino acid secretagogue, and where the selectivity claim comes from",
       "paragraphs": [
-        "Ipamorelin is a synthetic pentapeptide with the sequence Aib-His-D-2-Nal-D-Phe-Lys-NH2. Novo Nordisk researchers described it in 1998 as a growth hormone secretagogue, a compound that prompts the pituitary to release growth hormone by acting on the ghrelin receptor rather than by mimicking growth hormone releasing hormone.[5]",
-        "The paper that introduced it also produced the claim that now travels furthest online. In anaesthetised rats and conscious swine, ipamorelin released growth hormone with potency comparable to an older secretagogue, GHRP-6. The difference was in what else moved. GHRP-6 and GHRP-2 raised ACTH and cortisol in swine. Ipamorelin did not raise them to levels significantly different from control, and none of the secretagogues tested affected FSH, LH, prolactin or TSH.[5]",
+        "Ipamorelin is a synthetic pentapeptide with the sequence Aib-His-D-2-Nal-D-Phe-Lys-NH2. Novo Nordisk researchers described it in 1998 as a growth hormone secretagogue, a compound that prompts the pituitary to release growth hormone through a receptor separate from the growth hormone releasing hormone receptor.[5] FDA's later review describes that target as the ghrelin receptor.[1]",
+        "The paper that introduced it also produced the claim that now travels furthest online. In anaesthetised rats and conscious swine, ipamorelin released growth hormone with potency comparable to an older secretagogue, GHRP-6. The difference was in what else moved. GHRP-6 and GHRP-2 raised ACTH, the adrenocorticotropic hormone that signals the adrenal glands to produce cortisol, and they raised cortisol itself. Ipamorelin did not raise either to levels significantly different from control, and none of the secretagogues tested affected FSH or LH, the two hormones that drive reproductive function, prolactin or TSH, which controls the thyroid.[5]",
         "That is a real finding, and it is animal pharmacology. It is the origin of the phrase \"clean pulse, no cortisol spike\" that appears in peptide forums and on seller pages. The published human studies of ipamorelin measured growth hormone, not a cortisol response, so they neither confirm nor refute the marketing version of the claim.[2][3]"
       ]
     },
@@ -47,7 +47,7 @@ export const story: NewsroomStory = {
       "paragraphs": [
         "FDA's briefing document for the July 2026 Pharmacy Compounding Advisory Committee meeting goes through the same trial in more detail than the abstract does, and the numbers are worth reading together. Serious adverse events occurred in 10 of 56 ipamorelin patients (17.9%) and 9 of 58 placebo patients (15.5%). Low potassium was reported in 12.5% of the ipamorelin group against 3.4% of the placebo group, insomnia in 10.7% against 5.2%, and high blood sugar at discharge in 14.3% against 8.6%.[1]",
         "Two patients in the ipamorelin group died. Both had undergone bowel resection for colon cancer and developed complications of anastomotic leak, a failure of the surgical join. FDA lists the primary causes as hyperkalemia in a patient with aortic clots, sepsis, a perforated ulcer and renal failure, and sepsis in a patient with pneumonia. The agency states that it is unclear whether the deaths were related to ipamorelin, and that their occurrence alongside the higher rates of low potassium and high blood sugar raises concern about use in compounding.[1]",
-        "The review adds three further problems that no amount of chemistry on a certificate of analysis answers. There are no clinical studies of immunogenicity or aggregation, the tendency of peptide molecules to clump in ways that can provoke an immune response, and no safety data at all for subcutaneous administration, the route the nomination proposed. Separately, stimulating the growth hormone and IGF-1 axis carries the risks listed on every approved recombinant growth hormone label, including glucose intolerance, raised intracranial pressure and fluid retention, and FDA said it had insufficient data to conclude that ipamorelin avoids them. Nonclinical studies were too limited in scope and duration, and the agency noted that ghrelin receptor activity could carry reinforcing effects relevant to addiction and reproductive health.[1]",
+        "The review adds three further problems that no amount of chemistry on a certificate of analysis answers. There are no clinical studies of immunogenicity or aggregation, the tendency of peptide molecules to clump in ways that can provoke an immune response, and no safety data at all for subcutaneous administration, the route the nomination proposed. Separately, stimulating the growth hormone and IGF-1 axis, where IGF-1 is insulin-like growth factor 1, the hormone the liver produces in response to growth hormone, carries the risks listed in the warnings and precautions of every approved recombinant growth hormone label. Those include glucose intolerance, raised intracranial pressure and fluid retention, and FDA said it had insufficient data to conclude that ipamorelin avoids them. Nonclinical studies were too limited in scope and duration, and the agency noted that ghrelin receptor activity could carry reinforcing effects relevant to addiction and reproductive health.[1]",
         "FDA's conclusion was a proposal not to add ipamorelin, in either its free base or acetate form, to the list of bulk substances that can be used in 503A compounding. That is a regulatory judgment about evidence, not a finding of harm in any individual, and the agency said so in its own framing.[1]"
       ]
     },
@@ -56,7 +56,7 @@ export const story: NewsroomStory = {
       "title": "Where it stands after the October policy",
       "paragraphs": [
         "Ipamorelin acetate has been in category 2 of FDA's interim policy for outsourcing facilities since September 29, 2023. FDA uses that category for bulk substances it considers may present significant safety risks, and its note on ipamorelin cites the immunogenicity risk from aggregation or peptide related impurities, the difficulty of characterising a peptide built from unnatural amino acids, and the published study that recorded serious adverse events including death when the drug was given intravenously for gastric motility.[4]",
-        "The HHS enforcement discretion policy that took effect on October 30 is narrower than headlines suggested, and it does not reach this compound. The policy names six peptide bulk substances in its Appendix A and sets ten conditions for state licensed pharmacies, federal facilities and licensed physicians who compound with them. Ipamorelin is not among the named substances, so the interim discretion does not create a pathway for it, and the substances that are named have still not been added to the 503A bulks list.[6]",
+        "The HHS enforcement discretion policy announced on October 30 is narrower than headlines suggested, and it does not reach this compound. Its Appendix A names six peptide bulk substances, and the discretion applies only to licensed pharmacies, federal facilities and physicians that meet all ten of the policy's conditions. Ipamorelin is not on that list, and the policy did not add any substance to the 503A bulks list.[6][9]",
         "In Australia the picture is different again. A Victorian coroner found in October 2026 that the actor Richard Norton died of anaphylaxis after injecting a prescribed CJC1295 and ipamorelin blend, and recommended that the Therapeutic Goods Administration consider further restrictions. Our report on [that finding](/richard-norton-peptide-death-coroner-finding) sets out what the coroner did and did not determine.[7]"
       ]
     },
@@ -73,8 +73,8 @@ export const story: NewsroomStory = {
       "id": "what-would-change",
       "title": "What would change the answer",
       "paragraphs": [
-        "Three kinds of evidence would move ipamorelin from a plausible mechanism to a supported one. A randomised trial using the subcutaneous route with a clinical endpoint and a safety window long enough to capture immune reactions. Immunogenicity and aggregation testing on the actual compounded formulation. And long term data on growth hormone and IGF-1 exposure, the axis where approved products already carry boxed warnings about neoplasia, glucose intolerance and fluid retention.[1]",
-        "None of those exists in the public record reviewed for this article, and the compounding file that would have created an incentive to generate them closed with a recommendation against listing. Until that changes, the honest summary is the one the evidence supports: a small molecule with an interesting animal profile, two small human studies, one failed endpoint, and a safety file that FDA has read more carefully than anyone selling it."
+        "Three kinds of evidence would move ipamorelin from a plausible mechanism to a supported one. A randomised trial using the subcutaneous route with a clinical endpoint and a safety window long enough to capture immune reactions. Immunogenicity and aggregation testing on the actual compounded formulation. And long term data on growth hormone and IGF-1 exposure, the axis where approved products already carry warnings and precautions about neoplasia, glucose intolerance and fluid retention.[1]",
+        "None of those exists in the public record reviewed for this article, and the compounding file that would have created an incentive to generate them closed with a recommendation against listing. Until that changes, the honest summary is the one the evidence supports: a small molecule with an interesting animal profile, two small human studies, one failed endpoint, and a safety file more detailed than anything currently offered to buyers."
       ]
     }
   ],
@@ -86,8 +86,8 @@ export const story: NewsroomStory = {
     },
     {
       "q": "Does the HHS peptide compounding policy cover ipamorelin?",
-      "a": "No. The interim policy published on October 30, 2026 names six peptide bulk substances in its Appendix A and applies only to licensed pharmacies, federal facilities and physicians that meet ten listed conditions. Ipamorelin is not one of the named substances, and the policy did not add any substance to the 503A bulks list.",
-      "refs": [6]
+      "a": "No. The interim policy announced on October 30, 2026 names six peptide bulk substances in its Appendix A and applies only to licensed pharmacies, federal facilities and physicians that meet all ten of its conditions. Ipamorelin is not on that list, and the policy did not add any substance to the 503A bulks list.",
+      "refs": [6, 9]
     },
     {
       "q": "Does ipamorelin raise cortisol?",
@@ -131,8 +131,8 @@ export const story: NewsroomStory = {
     },
     {
       "id": 6,
-      "url": "https://www.hhs.gov/sites/default/files/hhs-503a-peptide-enforcement-discretion-policy.pdf",
-      "title": "HHS: Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances, with Appendix A (October 2026)"
+      "url": "https://www.hklaw.com/en/insights/publications/2026/11/hhs-issues-interim-enforcement-discretion-policy-for-compounding",
+      "title": "Holland and Knight alert: HHS issues interim enforcement discretion policy for compounding of six peptides (November 4, 2026), listing the six substances, the ten conditions and the policy's limits"
     },
     {
       "id": 7,
@@ -143,6 +143,11 @@ export const story: NewsroomStory = {
       "id": 8,
       "url": "https://www.reddit.com/r/Biohacking/comments/1w0pjc7/my_experience_with_cjcipamorelin/",
       "title": "Public forum thread in which a user describes effects and reactions after injections of a CJC-1295 and ipamorelin product"
+    },
+    {
+      "id": 9,
+      "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22192/enforcement-discretion-policy-regarding-503a-compounding-using-certain-peptide-bulk-drug-substances",
+      "title": "Federal Register: Enforcement Discretion Policy Regarding 503A Compounding Using Certain Peptide Bulk Drug Substances, notice of availability (FR Doc. 2026-22192, published October 30, 2026)"
     }
   ],
   "related": [
