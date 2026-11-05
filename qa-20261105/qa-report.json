@@ -1,0 +1,845 @@
+{
+ "startedAt": "2026-11-05T13:47:13.198Z",
+ "checks": {
+  "/lilly-nad-compounded-tirzepatide-claims": {
+   "phone390_status": {
+    "value": 200,
+    "ok": true
+   },
+   "phone390_emulation": {
+    "value": {
+     "touch": 1,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+     "coarse": true,
+     "width": 390
+    },
+    "ok": true
+   },
+   "phone390_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_canonical_value": {
+    "value": "https://peptidedigest.co/lilly-nad-compounded-tirzepatide-claims",
+    "ok": true
+   },
+   "phone390_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "phone390_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_broken_images": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ],
+     [
+      "NewsArticle",
+      "BreadcrumbList",
+      "FAQPage"
+     ]
+    ],
+    "ok": true
+   },
+   "phone390_iqon_card_links": {
+    "value": 3,
+    "ok": true
+   },
+   "phone390_faq_section": {
+    "value": 2,
+    "ok": true
+   },
+   "phone390_article_type": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_faqpage_matches_visible": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_breadcrumb": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_emulation_after_capture": {
+    "value": {
+     "touch": 1,
+     "coarse": true,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1"
+    },
+    "ok": true
+   },
+   "desktop1440_status": {
+    "value": 200,
+    "ok": true
+   },
+   "desktop1440_emulation": {
+    "value": {
+     "touch": 0,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+     "coarse": false,
+     "width": 1440
+    },
+    "ok": true
+   },
+   "desktop1440_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_canonical_value": {
+    "value": "https://peptidedigest.co/lilly-nad-compounded-tirzepatide-claims",
+    "ok": true
+   },
+   "desktop1440_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "desktop1440_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_broken_images": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ],
+     [
+      "NewsArticle",
+      "BreadcrumbList",
+      "FAQPage"
+     ]
+    ],
+    "ok": true
+   },
+   "desktop1440_iqon_card_links": {
+    "value": 3,
+    "ok": true
+   },
+   "desktop1440_faq_section": {
+    "value": 2,
+    "ok": true
+   },
+   "desktop1440_article_type": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_faqpage_matches_visible": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_breadcrumb": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_emulation_after_capture": {
+    "value": {
+     "touch": 0,
+     "coarse": false,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+    },
+    "ok": true
+   },
+   "hero_image_http": {
+    "value": 200,
+    "ok": true
+   },
+   "hero_image_sha256": {
+    "value": "d3bd104f4895aa67130f50aa4bea1244c616691005291e3fecb36f5f1d7e863f",
+    "ok": true
+   },
+   "hero_image_bytes": {
+    "value": 54832,
+    "ok": true
+   }
+  },
+  "/ipamorelin-research-what-human-studies-show": {
+   "phone390_status": {
+    "value": 200,
+    "ok": true
+   },
+   "phone390_emulation": {
+    "value": {
+     "touch": 1,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+     "coarse": true,
+     "width": 390
+    },
+    "ok": true
+   },
+   "phone390_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_canonical_value": {
+    "value": "https://peptidedigest.co/ipamorelin-research-what-human-studies-show",
+    "ok": true
+   },
+   "phone390_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "phone390_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_broken_images": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ],
+     [
+      "Article",
+      "BreadcrumbList",
+      "FAQPage"
+     ]
+    ],
+    "ok": true
+   },
+   "phone390_iqon_card_links": {
+    "value": 3,
+    "ok": true
+   },
+   "phone390_faq_section": {
+    "value": 2,
+    "ok": true
+   },
+   "phone390_article_type": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_faqpage_matches_visible": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_breadcrumb": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_emulation_after_capture": {
+    "value": {
+     "touch": 1,
+     "coarse": true,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1"
+    },
+    "ok": true
+   },
+   "desktop1440_status": {
+    "value": 200,
+    "ok": true
+   },
+   "desktop1440_emulation": {
+    "value": {
+     "touch": 0,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+     "coarse": false,
+     "width": 1440
+    },
+    "ok": true
+   },
+   "desktop1440_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_canonical_value": {
+    "value": "https://peptidedigest.co/ipamorelin-research-what-human-studies-show",
+    "ok": true
+   },
+   "desktop1440_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "desktop1440_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_broken_images": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ],
+     [
+      "Article",
+      "BreadcrumbList",
+      "FAQPage"
+     ]
+    ],
+    "ok": true
+   },
+   "desktop1440_iqon_card_links": {
+    "value": 3,
+    "ok": true
+   },
+   "desktop1440_faq_section": {
+    "value": 2,
+    "ok": true
+   },
+   "desktop1440_article_type": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_faqpage_matches_visible": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_breadcrumb": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_emulation_after_capture": {
+    "value": {
+     "touch": 0,
+     "coarse": false,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+    },
+    "ok": true
+   },
+   "hero_image_http": {
+    "value": 200,
+    "ok": true
+   },
+   "hero_image_sha256": {
+    "value": "bf410f2b43451c689126d456aecc0ec1660d47911df27338e710c23784e3ddd0",
+    "ok": true
+   },
+   "hero_image_bytes": {
+    "value": 40050,
+    "ok": true
+   }
+  },
+  "/": {
+   "phone390_status": {
+    "value": 200,
+    "ok": true
+   },
+   "phone390_emulation": {
+    "value": {
+     "touch": 1,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+     "coarse": true,
+     "width": 390
+    },
+    "ok": true
+   },
+   "phone390_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_canonical_value": {
+    "value": "https://peptidedigest.co",
+    "ok": true
+   },
+   "phone390_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "phone390_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_broken_images": {
+    "value": [
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Felicio-immune-assay-20261026.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fterminal-peptide-synthesis-20261026.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fgilead-hcxt-20261025.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fleu-ile-mass-spec-20261025.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcyclic-library-20261024.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Freceptor-trafficking-20261024.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ficotrokinra-uc-20261023.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-ion-suppression-20261023.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Foral-amylin-20261022.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcytosolic-delivery-20261022.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpemvidutide-liver-markers-20261021.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-immunogenicity-20261021.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-manufacturing-20261020.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-assay-20261020.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fyuviwel-growth-measurement-20261018.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falbumin-binding-dialysis-20261018.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fryz101-radiopharmacy-20261017.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-oxidation-source-20261017.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftirzepatide-heart-failure-20261016.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fss31-membrane-research-20261016.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fvk2735-trial-planning-20261015.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-counterion-analysis-20261015.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-heart-research-20261014.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-disulfide-cone-shell-20261014.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-withdrawal-support-20261013.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-deamidation-analysis-20261013.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feb613-bone-density-20261012.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-aggregation-assay-20261012.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsupplement-records-20261002.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fapex-warehouse-illustration.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fresearch-vials.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpadlock-door.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fdoj-building.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftogether-pso-biomarker-lab-20261010.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcyclic-peptide-permeability-20261010.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-kidney-mri-suite-20261005.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Famylin-histology-bench-20261005.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ficotrokinra-dermatology-20261004.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Faplysia-sea-hare-20261004.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feloratzp-assessment-20261003.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fendotoxin-assay-20261003.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fanalytical-content-20261002.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-second-review.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-import-alert-border.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-meeting-2026.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fghk-cu-collagen-research.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fkpv-lab-vial.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fretatrutide-triumph-trial.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-compounding-facility.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmots-c-mitochondria-illustration.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fenicepatide-hba1c-analysis.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-adsorption-detail.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fempower-aseptic-controls.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-storage-laboratory.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fhplc-system.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmagnifier-paper.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flilly-hq.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-white-oak.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falabama-capitol.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fgavel-book.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flc-ms-lab.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fglutathione.png&w=640&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fmots-c.png&w=640&q=75"
+    ],
+    "ok": false
+   },
+   "phone390_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ]
+    ],
+    "ok": true
+   },
+   "phone390_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_emulation_after_capture": {
+    "value": {
+     "touch": 1,
+     "coarse": true,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1"
+    },
+    "ok": true
+   },
+   "desktop1440_status": {
+    "value": 200,
+    "ok": true
+   },
+   "desktop1440_emulation": {
+    "value": {
+     "touch": 0,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+     "coarse": false,
+     "width": 1440
+    },
+    "ok": true
+   },
+   "desktop1440_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_canonical_value": {
+    "value": "https://peptidedigest.co",
+    "ok": true
+   },
+   "desktop1440_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "desktop1440_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_broken_images": {
+    "value": [
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpemvidutide-liver-markers-20261021.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-immunogenicity-20261021.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-manufacturing-20261020.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-assay-20261020.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fyuviwel-growth-measurement-20261018.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falbumin-binding-dialysis-20261018.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fryz101-radiopharmacy-20261017.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-oxidation-source-20261017.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftirzepatide-heart-failure-20261016.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fss31-membrane-research-20261016.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fvk2735-trial-planning-20261015.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-counterion-analysis-20261015.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-heart-research-20261014.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-disulfide-cone-shell-20261014.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-withdrawal-support-20261013.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-deamidation-analysis-20261013.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feb613-bone-density-20261012.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-aggregation-assay-20261012.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsupplement-records-20261002.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fapex-warehouse-illustration.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fresearch-vials.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpadlock-door.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fdoj-building.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftogether-pso-biomarker-lab-20261010.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcyclic-peptide-permeability-20261010.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-kidney-mri-suite-20261005.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Famylin-histology-bench-20261005.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ficotrokinra-dermatology-20261004.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Faplysia-sea-hare-20261004.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feloratzp-assessment-20261003.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fendotoxin-assay-20261003.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fanalytical-content-20261002.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-second-review.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-import-alert-border.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-meeting-2026.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fghk-cu-collagen-research.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fkpv-lab-vial.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fretatrutide-triumph-trial.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-compounding-facility.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmots-c-mitochondria-illustration.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fenicepatide-hba1c-analysis.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-adsorption-detail.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fempower-aseptic-controls.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-storage-laboratory.webp&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fhplc-system.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmagnifier-paper.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flilly-hq.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-white-oak.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falabama-capitol.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fgavel-book.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flc-ms-lab.jpg&w=3840&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fglutathione.png&w=640&q=75",
+     "http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fmots-c.png&w=640&q=75"
+    ],
+    "ok": false
+   },
+   "desktop1440_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ]
+    ],
+    "ok": true
+   },
+   "desktop1440_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_emulation_after_capture": {
+    "value": {
+     "touch": 0,
+     "coarse": false,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+    },
+    "ok": true
+   },
+   "homepage_card_A": {
+    "value": true,
+    "ok": true
+   },
+   "homepage_card_B": {
+    "value": true,
+    "ok": true
+   }
+  },
+  "/hhs-peptide-compounding-opposition-safety-debate": {
+   "phone390_status": {
+    "value": 200,
+    "ok": true
+   },
+   "phone390_emulation": {
+    "value": {
+     "touch": 1,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+     "coarse": true,
+     "width": 390
+    },
+    "ok": true
+   },
+   "phone390_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_canonical_value": {
+    "value": "https://peptidedigest.co/hhs-peptide-compounding-opposition-safety-debate",
+    "ok": true
+   },
+   "phone390_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "phone390_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "phone390_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_broken_images": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "phone390_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "phone390_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ],
+     [
+      "NewsArticle",
+      "BreadcrumbList"
+     ]
+    ],
+    "ok": true
+   },
+   "phone390_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "phone390_emulation_after_capture": {
+    "value": {
+     "touch": 1,
+     "coarse": true,
+     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1"
+    },
+    "ok": true
+   },
+   "desktop1440_status": {
+    "value": 200,
+    "ok": true
+   },
+   "desktop1440_emulation": {
+    "value": {
+     "touch": 0,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+     "coarse": false,
+     "width": 1440
+    },
+    "ok": true
+   },
+   "desktop1440_canonical_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_canonical_value": {
+    "value": "https://peptidedigest.co/hhs-peptide-compounding-opposition-safety-debate",
+    "ok": true
+   },
+   "desktop1440_h1_count": {
+    "value": 1,
+    "ok": true
+   },
+   "desktop1440_banned_terms": {
+    "value": false,
+    "ok": true
+   },
+   "desktop1440_overflow": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_broken_images": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_img_alts": {
+    "value": 0,
+    "ok": true
+   },
+   "desktop1440_console_errors": {
+    "value": [],
+    "ok": true
+   },
+   "desktop1440_jsonld_types": {
+    "value": [
+     [
+      "NewsMediaOrganization",
+      "WebSite"
+     ],
+     [
+      "NewsArticle",
+      "BreadcrumbList"
+     ]
+    ],
+    "ok": true
+   },
+   "desktop1440_gtag_aw": {
+    "value": true,
+    "ok": true
+   },
+   "desktop1440_emulation_after_capture": {
+    "value": {
+     "touch": 0,
+     "coarse": false,
+     "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+    },
+    "ok": true
+   }
+  },
+  "/sitemap.xml": {
+   "status": {
+    "value": 200,
+    "ok": true
+   },
+   "contains/lilly-nad-compounded-tirzepatide-claims": {
+    "value": true,
+    "ok": true
+   },
+   "contains/ipamorelin-research-what-human-studies-show": {
+    "value": true,
+    "ok": true
+   }
+  },
+  "internal_links": {
+   "/richard-norton-peptide-death-coroner-finding": {
+    "value": 200,
+    "ok": true
+   },
+   "/hhs-peptide-compounding-policy-2026": {
+    "value": 200,
+    "ok": true
+   },
+   "/eli-lilly-lawsuits-research-peptide-sellers": {
+    "value": 200,
+    "ok": true
+   },
+   "/peptide-immunogenicity-anti-drug-antibodies": {
+    "value": 200,
+    "ok": true
+   },
+   "/what-does-research-use-only-mean": {
+    "value": 200,
+    "ok": true
+   },
+   "/state-crackdown-research-peptides-2026": {
+    "value": 200,
+    "ok": true
+   }
+  }
+ },
+ "issues": [
+  "/ :: phone390_broken_images :: [\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Felicio-immune-assay-20261026.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fterminal-peptide-synthesis-20261026.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fgilead-hcxt-20261025.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fleu-ile-mass-spec-20261025.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcyclic-library-20261024.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Freceptor-trafficking-20261024.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ficotrokinra-uc-20261023.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-ion-suppression-20261023.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Foral-amylin-20261022.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcytosolic-delivery-20261022.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpemvidutide-liver-markers-20261021.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-immunogenicity-20261021.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-manufacturing-20261020.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-assay-20261020.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fyuviwel-growth-measurement-20261018.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falbumin-binding-dialysis-20261018.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fryz101-radiopharmacy-20261017.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-oxidation-source-20261017.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftirzepatide-heart-failure-20261016.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fss31-membrane-research-20261016.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fvk2735-trial-planning-20261015.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-counterion-analysis-20261015.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-heart-research-20261014.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-disulfide-cone-shell-20261014.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-withdrawal-support-20261013.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-deamidation-analysis-20261013.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feb613-bone-density-20261012.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-aggregation-assay-20261012.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsupplement-records-20261002.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fapex-warehouse-illustration.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fresearch-vials.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpadlock-door.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fdoj-building.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftogether-pso-biomarker-lab-20261010.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcyclic-peptide-permeability-20261010.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-kidney-mri-suite-20261005.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Famylin-histology-bench-20261005.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ficotrokinra-dermatology-20261004.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Faplysia-sea-hare-20261004.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feloratzp-assessment-20261003.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fendotoxin-assay-20261003.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fanalytical-content-20261002.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-second-review.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-import-alert-border.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-meeting-2026.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fghk-cu-collagen-research.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fkpv-lab-vial.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fretatrutide-triumph-trial.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-compounding-facility.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmots-c-mitochondria-illustration.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fenicepatide-hba1c-analysis.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-adsorption-detail.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fempower-aseptic-controls.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-storage-laboratory.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fhplc-system.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmagnifier-paper.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flilly-hq.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-white-oak.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falabama-capitol.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fgavel-book.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flc-ms-lab.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fglutathione.png&w=640&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fmots-c.png&w=640&q=75\"]",
+  "/ :: desktop1440_broken_images :: [\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpemvidutide-liver-markers-20261021.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-immunogenicity-20261021.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-manufacturing-20261020.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-assay-20261020.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fyuviwel-growth-measurement-20261018.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falbumin-binding-dialysis-20261018.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fryz101-radiopharmacy-20261017.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-oxidation-source-20261017.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftirzepatide-heart-failure-20261016.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fss31-membrane-research-20261016.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fvk2735-trial-planning-20261015.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-counterion-analysis-20261015.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-heart-research-20261014.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-disulfide-cone-shell-20261014.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-withdrawal-support-20261013.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-deamidation-analysis-20261013.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feb613-bone-density-20261012.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-aggregation-assay-20261012.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsupplement-records-20261002.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fapex-warehouse-illustration.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fresearch-vials.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpadlock-door.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fdoj-building.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ftogether-pso-biomarker-lab-20261010.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fcyclic-peptide-permeability-20261010.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fsemaglutide-kidney-mri-suite-20261005.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Famylin-histology-bench-20261005.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ficotrokinra-dermatology-20261004.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Faplysia-sea-hare-20261004.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Feloratzp-assessment-20261003.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fendotoxin-assay-20261003.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fanalytical-content-20261002.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-second-review.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-import-alert-border.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-pcac-meeting-2026.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fghk-cu-collagen-research.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fkpv-lab-vial.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fretatrutide-triumph-trial.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fglp1-compounding-facility.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmots-c-mitochondria-illustration.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fenicepatide-hba1c-analysis.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-adsorption-detail.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fempower-aseptic-controls.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fpeptide-storage-laboratory.webp&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fhplc-system.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fmagnifier-paper.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flilly-hq.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Ffda-white-oak.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Falabama-capitol.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Fgavel-book.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fimages%2Flc-ms-lab.jpg&w=3840&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fglutathione.png&w=640&q=75\",\"http://127.0.0.1:3125/_next/image?url=%2Fiqon%2Fmots-c.png&w=640&q=75\"]"
+ ],
+ "finishedAt": "2026-11-05T13:48:20.553Z",
+ "issueCount": 2
+}

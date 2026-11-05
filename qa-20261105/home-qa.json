@@ -1,0 +1,92 @@
+{
+ "phone390": {
+  "httpStatus": 200,
+  "before": {
+   "touch": 1,
+   "coarse": true,
+   "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+   "width": 390
+  },
+  "after": {
+   "touch": 1,
+   "coarse": true
+  },
+  "consoleErrors": [],
+  "status": "ok",
+  "imgTotal": 80,
+  "brokenCount": 0,
+  "broken": [],
+  "newCardLinks": [
+   {
+    "href": "/lilly-nad-compounded-tirzepatide-claims",
+    "text": ""
+   },
+   {
+    "href": "/lilly-nad-compounded-tirzepatide-claims",
+    "text": "Why \"personalized\" compounded tirzepatide claims failed a Lilly ad challenge\n\nAn advertisi"
+   },
+   {
+    "href": "/ipamorelin-research-what-human-studies-show",
+    "text": ""
+   },
+   {
+    "href": "/ipamorelin-research-what-human-studies-show",
+    "text": "Ipamorelin research: what the human studies actually show\n\nTwo small human studies, a fail"
+   }
+  ],
+  "cardImgs": [],
+  "overflow": false,
+  "canonical": [
+   "https://peptidedigest.co"
+  ],
+  "h1": [
+   "Apex Peptides Update: Federal Searches and a Temporary Closure Notice"
+  ],
+  "scrollHeight": 43611
+ },
+ "desktop1440": {
+  "httpStatus": 200,
+  "before": {
+   "touch": 0,
+   "coarse": false,
+   "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+   "width": 1440
+  },
+  "after": {
+   "touch": 0,
+   "coarse": false
+  },
+  "consoleErrors": [],
+  "status": "ok",
+  "imgTotal": 80,
+  "brokenCount": 0,
+  "broken": [],
+  "newCardLinks": [
+   {
+    "href": "/lilly-nad-compounded-tirzepatide-claims",
+    "text": ""
+   },
+   {
+    "href": "/lilly-nad-compounded-tirzepatide-claims",
+    "text": "Why \"personalized\" compounded tirzepatide claims failed a Lilly ad challenge\n\nAn advertisi"
+   },
+   {
+    "href": "/ipamorelin-research-what-human-studies-show",
+    "text": ""
+   },
+   {
+    "href": "/ipamorelin-research-what-human-studies-show",
+    "text": "Ipamorelin research: what the human studies actually show\n\nTwo small human studies, a fail"
+   }
+  ],
+  "cardImgs": [],
+  "overflow": false,
+  "canonical": [
+   "https://peptidedigest.co"
+  ],
+  "h1": [
+   "Apex Peptides Update: Federal Searches and a Temporary Closure Notice"
+  ],
+  "scrollHeight": 24999
+ }
+}
