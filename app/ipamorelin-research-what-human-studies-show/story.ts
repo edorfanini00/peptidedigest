@@ -136,7 +136,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 7,
-      "url": "https://www.peptidedigest.co/richard-norton-peptide-death-coroner-finding",
+      "url": "https://peptidedigest.co/richard-norton-peptide-death-coroner-finding",
       "title": "The Peptide Digest: Richard Norton's death was triggered by a peptide injection, coroner finds (November 2, 2026)"
     },
     {
