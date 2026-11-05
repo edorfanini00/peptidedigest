@@ -19,6 +19,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "lilly-nad-compounded-tirzepatide-claims",
+  "category": "Regulation and safety",
+  "date": "November 5, 2026",
+  "readTime": "6 min read",
+  "title": "Why \"personalized\" compounded tirzepatide claims failed a Lilly ad challenge",
+  "excerpt": "An advertising review panel told Good Life Meds to drop personalized and health benefit claims for its compounded Tirzepatide+ product. What the record shows.",
+  "image": "tirzepatideAdReview20261105",
+  "imageLabel": "AI-generated editorial illustration of a desk where advertising copy is reviewed, not a photograph of the cited decision or of any company office."
+},
+{
+  "slug": "ipamorelin-research-what-human-studies-show",
+  "category": "Research explainer",
+  "date": "November 5, 2026",
+  "readTime": "8 min read",
+  "title": "Ipamorelin research: what the human studies actually show",
+  "excerpt": "Two small human studies, a failed endpoint and a two-death safety file. What the evidence for ipamorelin supports, and why the new HHS policy does not cover it.",
+  "image": "ipamorelinAssay20261105",
+  "imageLabel": "AI-generated editorial illustration of a clinical laboratory bench, not a photograph of a named laboratory, instrument or study result."
+},
+{
   "slug": "hhs-peptide-compounding-opposition-safety-debate",
   "category": "Regulation and safety",
   "date": "November 4, 2026",
