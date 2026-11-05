@@ -64,6 +64,7 @@ test("every built sitemap page has one route canonical and a consistent publicat
       assert.match(html, /These checks are not medical review/);
       assert.match(html, /promotional placements linking to IQON Labs/);
     } else if (pathname !== "/") {
+      assert.match(html, /<a\b[^>]*class="byline-author[^>]*href="\/editorial-standards"[^>]*>By The Peptide Digest Staff<\/a>/);
       const article = nodes.find(node => ["Article", "NewsArticle"].includes(node["@type"]));
       assert.ok(article?.headline && article.datePublished, `${url}: article schema retained`);
       assert.match(html, /property="og:type" content="article"/);

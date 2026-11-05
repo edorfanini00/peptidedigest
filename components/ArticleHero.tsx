@@ -29,7 +29,7 @@ export function ArticleHero({ category, title, dek, meta, image }: ArticleHeroPr
         {dek ? <p className="dek">{dek}</p> : null}
 
         <div className="byline">
-          <span className="byline-author">By The Peptide Digest Staff</span>
+          <Link href="/editorial-standards" className="byline-author hover:underline focus-visible:outline-2 focus-visible:outline-offset-4">By The Peptide Digest Staff</Link>
           <span className="byline-meta">{meta}</span>
         </div>
       </div>
