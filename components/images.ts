@@ -953,6 +953,28 @@ export const images = {
     "credit": "The Peptide Digest via Higgsfield",
     "kind": "illustration"
   },
+  ipamorelinAssay20261105: {
+    "src": "/images/ipamorelin-assay-20261105.webp",
+    width: 1600,
+    height: 1073,
+    "alt": "A benchtop laboratory instrument with a rack of capped sample tubes on a stainless steel bench in soft daylight",
+    "caption": "AI-generated editorial illustration of a clinical laboratory bench, not a photograph of a named laboratory, instrument or study result.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
+  tirzepatideAdReview20261105: {
+    "src": "/images/tirzepatide-ad-review-20261105.webp",
+    width: 1600,
+    height: 1073,
+    "alt": "Folded reading glasses and a red pencil resting on a printed page on a wooden desk beside a window",
+    "caption": "AI-generated editorial illustration of a desk where advertising copy is reviewed, not a photograph of the cited decision or of any company office.",
+    "photographer": "The Peptide Digest",
+    "sourceUrl": "https://peptidedigest.co",
+    "credit": "The Peptide Digest via Higgsfield",
+    "kind": "illustration"
+  },
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;

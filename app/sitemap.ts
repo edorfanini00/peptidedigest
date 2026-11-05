@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/lilly-nad-compounded-tirzepatide-claims`,
+      lastModified: new Date("2026-11-05T12:35:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/ipamorelin-research-what-human-studies-show`,
+      lastModified: new Date("2026-11-05T12:45:00Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/hhs-peptide-compounding-opposition-safety-debate`,
       lastModified: new Date("2026-11-04T13:16:00Z"),
       changeFrequency: "weekly",
@@ -416,7 +428,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-04T13:16:00Z"),
+      lastModified: new Date("2026-11-05T12:35:00Z"),
       changeFrequency: "daily",
       priority: 1,
     },
