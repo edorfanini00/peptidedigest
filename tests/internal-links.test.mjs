@@ -12,6 +12,21 @@ const routes = [
   "what-does-research-use-only-mean",
 ];
 
+test("article sources use the canonical host for publication self-citations", async () => {
+  for (const entry of fs.readdirSync(new URL("app/", root), { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const storyPath = new URL(`app/${entry.name}/story.ts`, root);
+    if (!fs.existsSync(storyPath)) continue;
+    const { outputText } = ts.transpileModule(fs.readFileSync(storyPath, "utf8"), {
+      compilerOptions: { module: ts.ModuleKind.ES2022 },
+    });
+    const { story } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString("base64")}`);
+    for (const source of story.sources) {
+      assert.notEqual(new URL(source.url).hostname, "www.peptidedigest.co", `${entry.name}: source ${source.id} must use peptidedigest.co`);
+    }
+  }
+});
+
 for (const slug of routes) {
   test(`${slug}: related reading links to both new evergreen pages`, async () => {
     const storyPath = new URL(`app/${slug}/story.ts`, root);
