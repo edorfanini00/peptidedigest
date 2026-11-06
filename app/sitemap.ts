@@ -7,6 +7,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/retatrutide-knee-osteoarthritis-triumph-4-results`,
+      lastModified: new Date("2026-11-06T13:09:00Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-self-assembly-honeycomb-water-channels`,
+      lastModified: new Date("2026-11-06T13:09:00Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
+    {
       url: `${base}/editorial-standards`,
       lastModified: new Date("2026-11-05T15:08:55Z"),
       changeFrequency: "monthly",
@@ -434,7 +447,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-05T15:08:55Z"),
+      lastModified: new Date("2026-11-06T13:09:00Z"),
       changeFrequency: "daily",
       priority: 1,
     },

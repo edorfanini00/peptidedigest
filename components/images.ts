@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  retatrutideKnee20261106: {
+  "src": "/images/retatrutide-knee-triumph4-20261106.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Knee teaching model on a desk beside a black measuring device and a closed notebook",
+  "caption": "AI generated editorial illustration, not a photograph of the trial or a validated anatomical model.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideHoneycomb20261106: {
+  "src": "/images/peptide-honeycomb-microscopy-20261106.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Open metal sample holder with copper mesh discs and engraved numerals beside tweezers and a silver cylinder",
+  "caption": "AI generated editorial illustration of microscopy equipment, not the study apparatus or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   peptideOpposition20261104: {
   "src": "/images/hhs-peptide-enforcement-discretion-conditions-20261103.webp",
   "width": 1600,

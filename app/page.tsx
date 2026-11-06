@@ -24,6 +24,27 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "retatrutide-knee-osteoarthritis-triumph-4-results",
+  "category": "Clinical research",
+  "date": "November 6, 2026",
+  "readTime": "6 min read",
+  "title": "Retatrutide eased knee osteoarthritis pain in TRIUMPH 4",
+  "excerpt": "The TRIUMPH 4 trial found about two points more knee pain improvement with retatrutide than placebo at 68 weeks. What the ACR abstract shows.",
+  "image": "retatrutideKnee20261106",
+  "imageLabel": "AI generated editorial illustration, not a photograph of the trial or a validated anatomical model."
+},
+{
+  "slug": "peptide-self-assembly-honeycomb-water-channels",
+  "category": "Materials science",
+  "date": "November 6, 2026",
+  "readTime": "7 min read",
+  "title": "How nine amino acids build peptide fibers with water channels",
+  "excerpt": "Peptide self assembly links short amino acid chains into ordered fibers and hydrogels. A honeycomb study reveals how sequence controls water channels.",
+  "image": "peptideHoneycomb20261106",
+  "imageLabel": "AI generated editorial illustration of microscopy equipment, not the study apparatus or a validated instrument design."
+},
+
+{
   "slug": "lilly-nad-compounded-tirzepatide-claims",
   "category": "Regulation and safety",
   "date": "November 5, 2026",
