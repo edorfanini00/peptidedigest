@@ -27,6 +27,12 @@ async function values(mass, volume, portion) { await field('mass').fill(mass); a
 async function resultText(name, expected) { await result(name).waitFor(); eq(await result(name).innerText(), expected, name); }
 async function capture(name, fullPage = false) { await page.screenshot({ path: `${out}/${name}.png`, fullPage }); }
 async function hydrate() { await page.waitForFunction(() => Array.from(document.scripts).some(s => s.src.includes('/_next/'))); await page.waitForTimeout(200); }
+async function countAccessibility(invalid) {
+  eq(await field('count').getAttribute('aria-invalid'), String(invalid), 'supply invalid state');
+  eq(await field('count').getAttribute('aria-describedby'), `lab-count-help${invalid ? ' lab-count-error' : ''}`, 'supply help and current error association');
+  eq(await page.locator('#lab-count-error').count(), invalid ? 1 : 0, 'error ID exists only while relevant');
+  eq(await page.locator('[data-calculator] [aria-describedby]').evaluateAll(nodes => nodes.flatMap(n => n.getAttribute('aria-describedby').split(/\s+/).filter(id => !document.getElementById(id)))), [], 'all calculator description references resolve');
+}
 try {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${base}/peptide-calculator`, { waitUntil: 'networkidle' });
@@ -89,7 +95,24 @@ try {
   await values('1', '4', '300');
   await page.getByText('Plan a laboratory supply', { exact: true }).click(); await field('count').fill('4');
   ok((await page.locator('[data-supply-result]').innerText()).includes('2 vials before losses')); ok((await page.locator('[data-supply-result]').innerText()).includes('800 mcg'));
-  await field('count').fill('1.1'); ok(!(await page.locator('[data-supply-result]').innerText()).includes('vials before losses'));
+  await field('count').fill('1.5'); ok(!(await page.locator('[data-supply-result]').innerText()).includes('vials before losses'));
+  await countAccessibility(true);
+  eq(await page.locator('#lab-count-error').innerText(), 'Enter a whole number from 1 to 1,000,000,000 portions.');
+  eq(await page.locator('[data-supply-result]').getAttribute('role'), 'status');
+  eq(await page.locator('[data-supply-result]').getAttribute('aria-live'), 'polite');
+  await field('count').focus();
+  await field('count').evaluate(n => n.scrollIntoView({ block: 'center' }));
+  await capture('supply-invalid-associated');
+  await fs.writeFile(`${out}/supply-invalid-dom.json`, JSON.stringify(await field('count').evaluate(n => ({ value: n.value, invalid: n.getAttribute('aria-invalid'), descriptions: n.getAttribute('aria-describedby').split(/\s+/).map(id => ({ id, text: document.getElementById(id)?.textContent })) })), null, 2));
+  await field('count').fill('4'); await countAccessibility(false);
+  ok((await page.locator('[data-supply-result]').innerText()).includes('2 vials before losses'));
+  ok((await page.locator('[data-supply-result]').innerText()).includes('800 mcg'));
+  await resultText('portion-ml', '1.2'); await resultText('full-portions', '3');
+  await field('count').fill(''); await countAccessibility(false);
+  await field('count').fill('1.5'); await field('portion').fill(''); await countAccessibility(false);
+  eq(await page.locator('[data-supply-result]').innerText(), 'Complete the calculator above to estimate supply.');
+  await values('', '', ''); await countAccessibility(false);
+  await values('1', '4', '300'); await countAccessibility(true);
   for (const bad of ['', '0', '-1', 'Infinity', 'NaN', '0x10', '1e3', '1,5', '5mg', '.', '5001', '1.' + '0'.repeat(1000)]) {
     await values('5', '2', bad); eq(await page.locator('[data-result]').count(), 0, `no stale result for ${bad.slice(0, 30)}`);
   }

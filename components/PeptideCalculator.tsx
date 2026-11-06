@@ -21,6 +21,7 @@ export function PeptideCalculator() {
   const result = calculateSolution(values.mass, values.volume, portionMcg);
   const display = result.ok ? formatSolutionResults(values.mass, values.volume, portionMcg) : null;
   const supply = result.ok ? calculateSupply(values.mass, portionMcg, count) : null;
+  const supplyError = count.trim() && supply && !supply.ok ? supply.error : undefined;
   const isEmpty = Object.values(values).every(value => !value.trim());
   const update = (field: SolutionField, value: string) => {
     setValues(previous => ({ ...previous, [field]: value }));
@@ -107,10 +108,10 @@ export function PeptideCalculator() {
       <div className={styles.supplyContent}>
         <p>Use the same vial mass and target portion above. Each portion comes from one vial; remainders are not pooled.</p>
         <label htmlFor="lab-count">Total complete portions needed</label>
-        <input id="lab-count" type="text" inputMode="numeric" autoComplete="off" value={count} placeholder="Enter a whole number" onChange={event => setCount(event.target.value)} aria-describedby="lab-count-help" aria-invalid={!!count.trim() && !!supply && !supply.ok} />
+        <input id="lab-count" type="text" inputMode="numeric" autoComplete="off" value={count} placeholder="Enter a whole number" onChange={event => setCount(event.target.value)} aria-describedby={`lab-count-help${supplyError ? " lab-count-error" : ""}`} aria-invalid={!!supplyError} />
         <p id="lab-count-help" className={styles.hint}>1 to 1,000,000,000 portions. Enter your own total; no schedule is assumed.</p>
         <div role="status" aria-live="polite" data-supply-result>
-          {supply?.ok ? <><p className={styles.supplyTotal}><strong>{supply.containers}</strong> {supply.containers === "1" ? "vial" : "vials"} before losses</p><p>{supply.completePortions} complete portions available. After the requested {count.trim()} portions: <strong>{supply.remainingMcg} mcg</strong> remaining across these vials.</p><p className={styles.hint}>Each fully used vial leaves {supply.perContainerRemainderMcg} mcg after its last complete portion. Transfer losses can increase the number of vials needed.</p></> : <p className={styles.hint}>{!result.ok ? "Complete the calculator above to estimate supply." : count.trim() ? supply?.error : "Enter a total to estimate the number of vials."}</p>}
+          {supply?.ok ? <><p className={styles.supplyTotal}><strong>{supply.containers}</strong> {supply.containers === "1" ? "vial" : "vials"} before losses</p><p>{supply.completePortions} complete portions available. After the requested {count.trim()} portions: <strong>{supply.remainingMcg} mcg</strong> remaining across these vials.</p><p className={styles.hint}>Each fully used vial leaves {supply.perContainerRemainderMcg} mcg after its last complete portion. Transfer losses can increase the number of vials needed.</p></> : <p id={supplyError ? "lab-count-error" : undefined} className={styles.hint}>{!result.ok ? "Complete the calculator above to estimate supply." : count.trim() ? supply?.error : "Enter a total to estimate the number of vials."}</p>}
         </div>
       </div>
     </details>
