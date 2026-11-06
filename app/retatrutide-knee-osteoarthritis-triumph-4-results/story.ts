@@ -19,6 +19,7 @@ export const story: NewsroomStory = {
       "title": "A trial built around painful knees",
       "id": "trial-population",
       "paragraphs": [
+        "Lilly first announced the trial's topline results on December 11, 2025. This week's news is the conference announcement ahead of the November 8 presentation, with the ACR abstract providing a closer look at the trial analysis.[8][3][1]",
         "TRIUMPH 4 enrolled 445 adults with knee osteoarthritis and a body mass index of at least 27. Their pain scores at entry had to fall between 4 and 9 on the WOMAC pain scale, which measures osteoarthritis symptoms. The average starting pain score was 5.95. Participants had persistent knee pain and moderate changes on knee X rays; the registration excluded people with diabetes.[1][2]",
         "Random assignment divided participants among two retatrutide arms and placebo. The trial doses, 9 mg and 12 mg, identify the research groups: 148 people entered each active arm and 149 entered the placebo arm. Participants and investigators were masked to allocation. Change in knee pain and percentage change in body weight at week 68 were the two primary outcomes.[1][2]",
         "Retatrutide activates receptors for three hormones: glucose dependent insulinotropic polypeptide, glucagon like peptide 1 and glucagon. The study asked whether this investigational treatment could improve pain and weight together in this particular population. Its knee outcome is separate from the broader obesity results covered in our [TRIUMPH 1 report](/retatrutide-triumph-1-phase-3-results-2026).[1][3]"
@@ -83,6 +84,11 @@ export const story: NewsroomStory = {
       "id": 3,
       "url": "https://www.prnewswire.com/news-releases/lilly-to-showcase-new-retatrutide-taltz-ixekizumab-and-zepbound-tirzepatide-data-at-acr-convergence-2026-advancing-science-at-the-intersection-of-rheumatologic-conditions-and-obesity-302930037.html",
       "title": "Eli Lilly, November 5, 2026: ACR Convergence announcement"
+    },
+    {
+      "id": 8,
+      "url": "https://www.prnewswire.com/news-releases/lillys-triple-agonist-retatrutide-delivered-weight-loss-of-up-to-an-average-of-71-2-lbs-along-with-substantial-relief-from-osteoarthritis-pain-in-first-successful-phase-3-trial-302638804.html",
+      "title": "Eli Lilly, December 11, 2025: initial TRIUMPH 4 topline announcement"
     }
   ],
   "related": [
