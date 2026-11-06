@@ -45,7 +45,8 @@ function RichText({ text, story }: { text: string; story: NewsroomStory }) {
     return <Fragment key={index}>{part}</Fragment>;
   });
 }
-export function NewsroomArticle({ story, children }: { story: NewsroomStory; children?: React.ReactNode }) {
+export function NewsroomArticle({ story, children, calculatorFirst = false }: { story: NewsroomStory; children?: React.ReactNode; calculatorFirst?: boolean }) {
+  const toolFirst = calculatorFirst && story.slug === "peptide-calculator";
   const url = `${base}/${story.slug}`;
   const image = images[story.image];
   const schema = { "@context": "https://schema.org", "@graph": [
@@ -61,8 +62,9 @@ export function NewsroomArticle({ story, children }: { story: NewsroomStory; chi
     ...(story.faqs.length ? [{ "@type": "FAQPage", mainEntity: story.faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }] : [])
   ] };
   return <><Nav /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
-    <main className="article-shell">
-      <ArticleHero category={story.category} title={story.title} meta={<>
+    <main className={`article-shell ${toolFirst ? styles.toolShell : ""}`}>
+      {toolFirst && <div className={styles.toolFirst}>{children}</div>}
+      <ArticleHero headingLevel={toolFirst ? "h2" : "h1"} category={story.category} title={story.title} meta={<>
         <time dateTime={story.date}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.date))}</time>
         {story.dateModified && <> · Revised <time dateTime={story.dateModified}>{new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", month: "long", day: "numeric", year: "numeric" }).format(new Date(story.dateModified))}</time></>}
       </>} image={story.image} />
@@ -71,7 +73,7 @@ export function NewsroomArticle({ story, children }: { story: NewsroomStory; chi
         <IQONPartner vial={story.vials[0]} />
         {story.correction && <p data-correction-note className="text-sm text-[color:var(--color-muted)]">{story.correction}</p>}
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
-        {children}
+        {!toolFirst && children}
         <nav aria-label="In this article" className="not-prose border-y border-[color:var(--color-rule)] py-5 my-8"><p className="kicker mb-3">In this article</p><ul className="space-y-2 text-sm">{story.sections.map(s => <li key={s.id}><a href={`#${s.id}`} className="text-[color:var(--color-accent)] underline">{s.title}</a></li>)}{story.faqs.length > 0 && <li><a href="#questions">Frequently asked questions</a></li>}</ul></nav>
         {story.sections.map(section => <section key={section.id} className={styles.section} aria-labelledby={section.id}>
           <h2 id={section.id} className="scroll-mt-24">{section.title}</h2>

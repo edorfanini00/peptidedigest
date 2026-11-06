@@ -5,13 +5,13 @@ export const story: NewsroomStory = {
   title: "Peptide calculator: concentration and portion math",
   description: "Calculate research solution concentration in mg/mL and mcg/mL, portion volume in mL and µL, and portions per vial. Includes formulas and a worked example.",
   date: "2026-11-04T03:30:32Z",
-  dateModified: "2026-11-04T04:11:55Z",
+  dateModified: "2026-11-05T23:45:00Z",
   type: "Article",
   category: "Laboratory tool",
   image: "peptideMathPipettes",
   vials: ["ghk", "kpv"],
-  lead: "This peptide calculator divides peptide mass by solution volume to find concentration, then calculates the volume needed for a chosen portion. Enter mass in mg, volume in mL and the amount per portion in mcg. The calculation assumes a fully dissolved, uniform solution with no material loss.[6][7]",
-  notice: "Lab solution math for in-vitro research only, not guidance for human or animal use. The starting numbers below are a worked arithmetic example, not a recommended preparation.",
+  lead: "This peptide calculator divides peptide mass by solution volume to find concentration, then calculates the volume needed for a chosen portion. Enter mass in mg, final solution volume in mL and the amount per portion in mg or mcg. The calculation assumes a fully dissolved, uniform solution with no material loss.[6][7]",
+  notice: "Lab solution math for in-vitro research only, not guidance for human or animal use. The optional worked example uses fictional quantities, not a recommended preparation.",
   sections: [
     {
       title: "Key facts", id: "key-facts", paragraphs: [
@@ -37,15 +37,15 @@ export const story: NewsroomStory = {
     },
     {
       title: "Which input mistakes change the answer?", id: "common-mistakes", paragraphs: [
-        "Confusing mg with mcg changes the entered amount by a factor of 1,000. The form uses mg for the vial and mcg for the portion, so read both labels before copying a number. We use mcg as the plain-text spelling of micrograms and µL for microliters.[6]",
-        "Another mistake is treating added diluent volume as a measured final volume. Dissolution can change the volume of the mixture. The tool initially assumes the two are equal; if volume displacement matters in your preparation, enter the measured final solution volume in the volume field instead.[7]",
+        "Confusing mg with mcg changes the entered amount by a factor of 1,000. The form uses mg for the vial and a choice of mg or mcg for the portion. Switching the target measure preserves a valid entered quantity, so read both labels before copying a number. We use mcg as the plain-text spelling of micrograms and µL for microliters.[6]",
+        "Another mistake is treating added diluent volume as a measured final volume. Dissolution can change the volume of the mixture. Enter the measured final solution volume in the volume field.[7]",
         "Total powder mass may include water, counterions or residual solvents. It is not necessarily the same as the mass of the target peptide. A chromatographic purity figure does not, by itself, resolve that difference. Our [content-versus-purity explainer](/peptide-content-vs-purity-measurement) describes how laboratories assign an amount.[3]",
         "Rounding also matters. Calculations use the entered values before display rounding, and the complete-portion count is rounded down. Keep the original measurements in your laboratory record rather than treating the displayed digits as evidence of measurement precision.",
       ],
     },
     {
       title: "Why does the calculator reject some values?", id: "input-limits", paragraphs: [
-        "The form accepts positive decimal numbers within its displayed ranges: 0.001 to 1,000 mg for mass, 0.001 to 1,000 mL for volume, and 0.001 to 1,000,000 mcg for a portion. These are software limits, not evidence that a particular preparation is practical.",
+        "The form accepts positive decimal numbers within its displayed ranges: 0.001 to 1,000 mg for mass, 0.001 to 1,000 mL for volume, and 0.001 to 1,000,000 mcg (0.000001 to 1,000 mg) for a portion. Entries are limited to 120 significant digits and 256 characters. These are software limits, not evidence that a particular preparation is practical.",
         "Blank entries, zero, negative values and non-numeric text pause the results. Use a period for decimals and omit commas. The tool also rejects a portion larger than the total entered peptide mass. Correct the marked field to resume the calculation.",
       ],
     },
@@ -59,7 +59,7 @@ export const story: NewsroomStory = {
   faqs: [
     { q: "What is the concentration of 5 mg in 2 mL?", a: "If the final solution volume is 2 mL and the peptide is fully dissolved, 5 mg divided by 2 mL is 2.5 mg/mL, or 2,500 mcg/mL. This is an arithmetic example, not a recommended preparation.", refs: [6, 7] },
     { q: "How much solution contains a 250 mcg portion in that example?", a: "At 2,500 mcg/mL, 250 mcg corresponds to 0.1 mL, or 100 µL. A starting mass of 5 mg gives 20 such portions mathematically, before any losses.", refs: [6, 7] },
-    { q: "Should I enter diluent volume or final solution volume?", a: "The concentration formula requires final solution volume. The tool assumes it equals the added diluent volume. If dissolution changes the volume enough to matter, use the measured final solution volume instead.", refs: [7] },
+    { q: "Should I enter diluent volume or final solution volume?", a: "The concentration formula requires final solution volume. Enter the measured final solution volume, which can differ from the added diluent volume.", refs: [7] },
     { q: "Does a high purity percentage confirm the mass in a vial?", a: "No. Chromatographic purity and peptide content describe different measurements. Water, counterions and other constituents can affect the mass accounting. The calculator cannot establish the actual amount of peptide present.", refs: [3] },
   ],
   sources: [

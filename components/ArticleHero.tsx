@@ -3,6 +3,7 @@ import Link from "next/link";
 import { images, type ImageKey } from "@/components/images";
 
 interface ArticleHeroProps {
+  headingLevel?: "h1" | "h2";
   category: string;
   title: React.ReactNode;
   dek?: string | null;
@@ -11,7 +12,7 @@ interface ArticleHeroProps {
   image: ImageKey;
 }
 
-export function ArticleHero({ category, title, dek, meta, image }: ArticleHeroProps) {
+export function ArticleHero({ category, title, dek, meta, image, headingLevel: Heading = "h1" }: ArticleHeroProps) {
   const img = images[image];
   return (
     <header className="article-hero">
@@ -24,7 +25,7 @@ export function ArticleHero({ category, title, dek, meta, image }: ArticleHeroPr
           <span className="kicker text-[color:var(--color-accent)]">{category}</span>
         </nav>
 
-        <h1 className="headline">{title}</h1>
+        <Heading className="headline">{title}</Heading>
 
         {dek ? <p className="dek">{dek}</p> : null}
 

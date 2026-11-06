@@ -27,3 +27,10 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+
+/* Only the calculator route opts into the wider tool before the article. */
+.toolShell { max-width: 68rem; padding-top: 1.75rem; }
+.toolShell > .toolFirst { max-width: none; margin-bottom: 4rem; }
+.toolShell > header { max-width: 53rem; margin-inline: auto; }
+@media (max-width: 700px) { .toolShell { padding: 1.5rem 1rem 3rem; } }
+@media (max-width: 639px) { .toolShell :global(.lead-figure) { margin-inline: -1rem; } }
