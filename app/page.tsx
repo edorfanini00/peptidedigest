@@ -24,6 +24,27 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "rapid-peptide-mapping-antibodies-direct-infusion",
+  "category": "Analytical science",
+  "date": "November 7, 2026",
+  "readTime": "6 min read",
+  "title": "Peptide mapping gets faster by skipping chromatography",
+  "excerpt": "A new direct infusion method compared 275 antibody samples in about 12 hours. How faster peptide mapping works and where it fits in research.",
+  "image": "rapidPeptideMapping20261107",
+  "imageLabel": "AI generated editorial illustration, not the study apparatus or a validated instrument design."
+},
+{
+  "slug": "solid-phase-peptide-synthesis-chain-building",
+  "category": "Peptide chemistry",
+  "date": "November 7, 2026",
+  "readTime": "7 min read",
+  "title": "How solid phase peptide synthesis builds a chain, one bond at a time",
+  "excerpt": "Solid phase peptide synthesis builds chains on a resin. Follow the coupling cycle, understand missing residues, and see why purification comes afterward.",
+  "image": "solidPhaseSynthesis20261107",
+  "imageLabel": "AI generated editorial illustration of synthesis equipment, not the cited experiments or a validated apparatus."
+},
+
+{
   "slug": "retatrutide-knee-osteoarthritis-triumph-4-results",
   "category": "Clinical research",
   "date": "November 6, 2026",
