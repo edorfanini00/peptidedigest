@@ -48,7 +48,7 @@ export const story: NewsroomStory = {
       "title": "A larger test makes the opportunity concrete",
       "id": "larger-test",
       "paragraphs": [
-        "The researchers also tested 1,152 samples across four antibodies in a formulation study with Johnson & Johnson. The design included untreated controls, heat stress at 40 degrees Celsius for two weeks, and a separate light exposure of 100 watts per square meter for three hours. Different buffers and added formulation ingredients supplied the experimental variation.[1]",
+        "The researchers also tested 1,152 samples across four antibodies in a formulation study with Johnson & Johnson. The design compared untreated samples with samples exposed to heat or light, across different buffers and added formulation ingredients.[1]",
         "Data acquisition took 35.5 hours, followed by four hours of analysis. Of the 1,152 samples, 1,077 produced sequence coverage above 96 percent. Nine had little or no starting material, and 66 samples with high iron concentrations had visible iron particles after digestion and lower coverage. Reporting those unsuccessful samples shows where the preparation still needed adjustment.[1]",
         "Sequence coverage describes how much of the amino acid sequence is represented by the detected peptides. It does not mean that the same percentage of every rare impurity was measured. The value of this larger experiment is practical: a laboratory could compare many combinations of conditions while retaining detailed information about the antibody fragments.[1]"
       ]
