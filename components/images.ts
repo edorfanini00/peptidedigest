@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  rapidPeptideMapping20261107: {
+  "src": "/images/rapid-peptide-mapping-20261107.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Black multiwell plate beside a metal sample inlet on laboratory equipment",
+  "caption": "AI generated editorial illustration, not the study apparatus or a validated instrument design.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  solidPhaseSynthesis20261107: {
+  "src": "/images/solid-phase-peptide-synthesis-20261107.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Pale resin-like beads inside a clamped glass column above a white porous support",
+  "caption": "AI generated editorial illustration of synthesis equipment, not the cited experiments or a validated apparatus.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   retatrutideKnee20261106: {
   "src": "/images/retatrutide-knee-triumph4-20261106.webp",
   "width": 1600,

@@ -7,6 +7,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/rapid-peptide-mapping-antibodies-direct-infusion`,
+      lastModified: new Date("2026-11-07T13:13:03Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/solid-phase-peptide-synthesis-chain-building`,
+      lastModified: new Date("2026-11-07T13:13:03Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
+    {
       url: `${base}/retatrutide-knee-osteoarthritis-triumph-4-results`,
       lastModified: new Date("2026-11-06T13:09:00Z"),
       changeFrequency: "weekly",
@@ -447,7 +460,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-06T13:09:00Z"),
+      lastModified: new Date("2026-11-07T13:13:03Z"),
       changeFrequency: "daily",
       priority: 1,
     },
