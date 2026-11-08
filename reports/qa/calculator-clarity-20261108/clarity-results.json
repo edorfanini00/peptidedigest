@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "checks": 86,
+  "metrics": [
+    {
+      "width": 360,
+      "inputBox": {
+        "x": 36.390625,
+        "y": 344.78125,
+        "width": 233.765625,
+        "height": 48
+      },
+      "bannerBox": {
+        "x": 16,
+        "y": 191.4375,
+        "width": 328,
+        "height": 84.359375
+      },
+      "linkBox": {
+        "x": 227.875,
+        "y": 211.609375,
+        "width": 103.125,
+        "height": 44
+      },
+      "calculateBox": {
+        "x": 35.390625,
+        "y": 687.53125,
+        "width": 289.21875,
+        "height": 48
+      }
+    },
+    {
+      "width": 390,
+      "inputBox": {
+        "x": 36.390625,
+        "y": 344.78125,
+        "width": 263.765625,
+        "height": 48
+      },
+      "bannerBox": {
+        "x": 16,
+        "y": 191.4375,
+        "width": 358,
+        "height": 84.359375
+      },
+      "linkBox": {
+        "x": 257.875,
+        "y": 211.609375,
+        "width": 103.125,
+        "height": 44
+      },
+      "calculateBox": {
+        "x": 35.390625,
+        "y": 687.53125,
+        "width": 319.21875,
+        "height": 48
+      }
+    },
+    {
+      "width": 430,
+      "inputBox": {
+        "x": 36.390625,
+        "y": 344.78125,
+        "width": 303.765625,
+        "height": 48
+      },
+      "bannerBox": {
+        "x": 16,
+        "y": 191.4375,
+        "width": 398,
+        "height": 84.359375
+      },
+      "linkBox": {
+        "x": 297.875,
+        "y": 211.609375,
+        "width": 103.125,
+        "height": 44
+      },
+      "calculateBox": {
+        "x": 35.390625,
+        "y": 687.53125,
+        "width": 359.21875,
+        "height": 48
+      }
+    },
+    {
+      "width": 1440,
+      "inputBox": {
+        "x": 226,
+        "y": 387.765625,
+        "width": 404.546875,
+        "height": 48
+      },
+      "bannerBox": {
+        "x": 200,
+        "y": 223.171875,
+        "width": 1040,
+        "height": 86
+      },
+      "linkBox": {
+        "x": 1093.046875,
+        "y": 244.171875,
+        "width": 125.953125,
+        "height": 44
+      },
+      "calculateBox": {
+        "x": 225,
+        "y": 733.734375,
+        "width": 460,
+        "height": 48
+      }
+    },
+    {
+      "mobileTextScale": "200%",
+      "viewport": 390,
+      "documentWidth": 536,
+      "sharedShellLimitation": true
+    }
+  ],
+  "errors": []
+}

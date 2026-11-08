@@ -5,7 +5,7 @@ const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright')
 const base = process.env.BASE_URL || 'http://localhost:4873';
 const out = process.env.EVIDENCE_DIR || '/tmp/pd-calculator-browser';
 await fs.mkdir(out, { recursive: true });
-const browser = await chromium.launch({ channel: process.env.BROWSER_CHANNEL || "chrome" });
+const browser = await chromium.launch({ channel: process.env.BROWSER_CHANNEL || "chrome", proxy: { server: "http://127.0.0.1:9", bypass: "127.0.0.1,localhost" } });
 const errors = [];
 const metrics = [];
 let checks = 0;
@@ -24,7 +24,7 @@ page.on('console', message => { if (message.type() === 'error') errors.push(mess
 const field = name => page.locator(`#lab-${name}`);
 const result = name => page.locator(`[data-result="${name}"]`);
 async function values(mass, volume, portion) { await field('mass').fill(mass); await field('volume').fill(volume); await field('portion').fill(portion); }
-async function resultText(name, expected) { await result(name).waitFor(); eq(await result(name).innerText(), expected, name); }
+async function resultText(name, expected) { if (await result(name).count() && !await result(name).isVisible()) await page.getByText('Concentration & complete portions', { exact: true }).click(); await result(name).waitFor(); eq(await result(name).innerText(), expected, name); }
 async function capture(name, fullPage = false) { await page.screenshot({ path: `${out}/${name}.png`, fullPage }); }
 async function hydrate() { await page.waitForFunction(() => Array.from(document.scripts).some(s => s.src.includes('/_next/'))); await page.waitForTimeout(200); }
 async function countAccessibility(invalid) {
@@ -40,7 +40,7 @@ try {
   eq(await field('mass').inputValue(), '', 'initial mass is empty (fails on old implementation)');
   eq(await page.locator('[data-result]').count(), 0, 'no initial mathematical output');
   for (const width of [360, 390, 430, 1440]) {
-    await page.setViewportSize({ width, height: width === 1440 ? 1000 : 844 });
+    await page.setViewportSize({ width, height: width === 1440 ? 900 : 844 });
     await page.getByRole('button', { name: 'Clear all', exact: true }).click();
     await page.evaluate(() => { document.documentElement.style.scrollBehavior = 'auto'; window.scrollTo(0, 0); });
     const inputBox = await field('mass').boundingBox();
@@ -58,14 +58,14 @@ try {
     if (width === 1440) { await page.evaluate(() => window.scrollTo(0, 0)); } else { await page.locator('[data-results]').evaluate(n => window.scrollTo(0, n.getBoundingClientRect().top + scrollY - 78)); }
     await capture(`result-${width}`);
     // Load genuine image assets before full-page screenshots; no asset replacement.
-    for (const img of await page.locator('main img').all()) { await img.scrollIntoViewIfNeeded(); await img.evaluate(n => n.decode()); }
+    for (const img of await page.locator('main img').all()) { console.log('Decode image', await img.getAttribute('src')); await img.scrollIntoViewIfNeeded(); await img.evaluate(n => Promise.race([n.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error('Image decode timed out: ' + n.src)), 10000))])); }
     await page.evaluate(() => window.scrollTo(0, 0));
     await capture(`full-${width}`, true);
     const banner = page.locator('aside[aria-label="IQONIC app"]');
     await banner.evaluate(n => window.scrollTo(0, n.getBoundingClientRect().top + scrollY - 80));
     const appLink = banner.getByRole('link');
     const appBox = await appLink.boundingBox();
-    ok(appBox.y >= 56 && appBox.y + appBox.height < (width === 1440 ? 1000 : 844) - 76, `app CTA clear of sticky surfaces at ${width}`);
+    ok(appBox.y >= 56 && appBox.y + appBox.height < (width === 1440 ? 900 : 844) - 76, `app CTA clear of sticky surfaces at ${width}`);
     ok(await appLink.evaluate(n => { const r = n.getBoundingClientRect(); return n.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)); }), `app CTA hit test at ${width}`);
     eq(await appLink.getAttribute('href'), 'https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner');
     await banner.screenshot({ path: `${out}/iqonic-banner-${width}.png` });
@@ -75,21 +75,22 @@ try {
   await page.getByRole('button', { name: 'Clear all', exact: true }).click();
   await field('mass').pressSequentially('7.5'); await field('volume').pressSequentially('1.5'); await field('portion').pressSequentially('125');
   eq(await field('mass').inputValue(), '7.5'); await resultText('portion-ml', '0.025'); await resultText('full-portions', '60');
+  await page.getByText('Shortcuts & input limits', { exact: true }).click();
   await page.getByRole('group', { name: 'Peptide mass in vial shortcuts' }).getByRole('button', { name: '10 mg', exact: true }).click();
   eq(await field('mass').inputValue(), '10'); await field('mass').fill('12.5');
   eq(await page.getByRole('button', { name: '10 mg', exact: true }).getAttribute('aria-pressed'), 'false');
   await page.getByRole('group', { name: 'Final solution volume shortcuts' }).getByRole('button', { name: '2 mL', exact: true }).click();
   await field('volume').fill('2.5'); await resultText('portion-ml', '0.025');
-  const selector = page.getByLabel('Target mass unit');
+  const selector = page.getByLabel('Amount unit');
   await selector.selectOption('mg'); eq(await field('portion').inputValue(), '0.125'); await resultText('portion-ml', '0.025');
   await selector.selectOption('mcg'); eq(await field('portion').inputValue(), '125');
   await values('1', '4', '300'); await resultText('portion-ml', '1.2'); await resultText('full-portions', '3');
   await page.getByText('See the equations', { exact: true }).click();
-  ok((await page.locator('[data-calculator] details[open]').first().innerText()).includes('(300 mcg × 4 mL) ÷ (1 mg × 1,000 mcg/mg)'), 'actual-input equation');
+  ok((await page.locator('details').filter({ has: page.getByText('See the equations', { exact: true }) }).innerText()).includes('(300 mcg × 4 mL) ÷ (1 mg × 1,000 mcg/mg)'), 'actual-input equation');
   await page.getByText('See the equations', { exact: true }).click();
   await values('3', '1', '100');
   await page.getByText('See the equations', { exact: true }).click();
-  const equations = await page.locator('[data-calculator] details[open]').first().innerText();
+  const equations = await page.locator('details').filter({ has: page.getByText('See the equations', { exact: true }) }).innerText();
   ok(equations.includes('≈0.0333333 mL')); ok(!equations.includes('= ≈'), 'equation has only one relation symbol');
   await page.getByText('See the equations', { exact: true }).click();
   await values('1', '4', '300');
@@ -132,10 +133,18 @@ try {
   eq(await field('mass').inputValue(), ''); eq(await field('volume').inputValue(), ''); eq(await field('portion').inputValue(), ''); eq(await selector.inputValue(), 'mcg');
   eq(await page.locator('[data-calculator] details[open]').count(), 0); eq(await field('mass').evaluate(n => n === document.activeElement), true);
   // Actual bounded Tab taps follow DOM order, with visible focus and uncovered controls.
-  for (const width of [360, 390, 430, 1440]) {
+  for (const expanded of [false, true]) for (const width of [360, 390, 430, 1440]) {
     await page.setViewportSize({ width, height: 844 });
     await page.getByRole('button', { name: 'Clear all', exact: true }).click();
-    await page.keyboard.press('Shift+Tab');
+    if (expanded) {
+      await page.getByRole('button', { name: 'Load example', exact: true }).click();
+      for (const name of ['Shortcuts & input limits', 'Concentration & complete portions', 'See the equations', 'Plan a laboratory supply']) await page.getByText(name, { exact: true }).click();
+      for (const control of await page.locator('[data-calculator] button, [data-calculator] select, [data-calculator] summary').all()) {
+        if (await control.isVisible()) ok((await control.boundingBox()).height >= 44, `expanded touch target ${await control.innerText()}`);
+      }
+      await field('mass').focus();
+      await page.keyboard.press('Shift+Tab');
+    } else await page.keyboard.press('Shift+Tab');
     const focusables = await page.locator('[data-calculator] button, [data-calculator] input, [data-calculator] select, [data-calculator] summary').evaluateAll(nodes => nodes.filter(n => n.checkVisibility()).map(n => n.id || n.textContent.trim()));
     for (let i = 0; i < focusables.length; i++) {
       const actual = await page.evaluate(() => document.activeElement.id || document.activeElement.textContent.trim());
@@ -145,7 +154,7 @@ try {
       await page.keyboard.press('Tab');
     }
   }
-  eq(await page.getByRole('link', { name: /Explore the app/ }).getAttribute('href'), 'https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner');
+  eq(await page.getByRole('link', { name: /Get IQONIC/ }).getAttribute('href'), 'https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner');
   const iqonLinks = await page.locator('a[href*="iqonhealth.com/shop"]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')));
   eq(iqonLinks.length, 3); ok(iqonLinks.every(href => href === 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20'));
   eq(await page.locator('link[rel=canonical]').count(), 1); eq(await page.locator('link[rel=canonical]').getAttribute('href'), 'https://peptidedigest.co/peptide-calculator');

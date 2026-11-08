@@ -1,0 +1,274 @@
+{
+  "status": "PASS",
+  "checks": [
+    "no provider request before activation",
+    "no automatic banner event",
+    "hydration selects exact verified provider link",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "anchor default remains uncancelled",
+    "real Tab focus reaches banner",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "anchor default remains uncancelled",
+    "modifier navigation matches an untracked native anchor under network guard",
+    "one event per primary activation, none when suppressed",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "anchor default remains uncancelled",
+    "modifier navigation matches an untracked native anchor under network guard",
+    "one event per primary activation, none when suppressed",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "anchor default remains uncancelled",
+    "modifier navigation matches an untracked native anchor under network guard",
+    "one event per primary activation, none when suppressed",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "static allowlist excludes inputs, URL queries, identifiers and referrer",
+    "anchor default remains uncancelled",
+    "shop link does not emit banner event",
+    "existing shop event preserved",
+    "calculator controls do not emit banner events",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "absent: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "throws: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "gpc: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "dnt: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "optout: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "consent-default: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "consent-update: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "ad_storage: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "ad_user_data: no event, native navigation succeeds",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "ad_personalization: no event, native navigation succeeds",
+    "GPC before hydration retains direct App Store URL",
+    "native destination navigation",
+    "one event per primary activation, none when suppressed",
+    "anchor default remains uncancelled",
+    "JS off: native navigation",
+    "blocked scripts: native navigation",
+    "no unhandled page errors",
+    "actual pointer and keyboard provider requests were intercepted",
+    "outbound provider URL is the exact static allowlist",
+    "noreferrer omits source URL and its sensitive query",
+    "outbound provider URL is the exact static allowlist",
+    "noreferrer omits source URL and its sensitive query",
+    "outbound provider URL is the exact static allowlist",
+    "noreferrer omits source URL and its sensitive query"
+  ],
+  "intercepted": [
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://app.appsflyer.com",
+      "pathname": "/id6765689488",
+      "url": "https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner",
+      "referrer": ""
+    },
+    {
+      "origin": "https://app.appsflyer.com",
+      "pathname": "/id6765689488",
+      "url": "https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.iqonhealth.com",
+      "pathname": "/shop",
+      "url": "https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://app.appsflyer.com",
+      "pathname": "/id6765689488",
+      "url": "https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    },
+    {
+      "origin": "https://www.googletagmanager.com",
+      "pathname": "/gtag/js",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-18474455082",
+      "referrer": "http://127.0.0.1:4876/"
+    },
+    {
+      "origin": "https://apps.apple.com",
+      "pathname": "/us/app/iqonic/id6765689488",
+      "url": "https://apps.apple.com/us/app/iqonic/id6765689488",
+      "referrer": ""
+    }
+  ],
+  "errors": [],
+  "provider": "Parent-authorized AppsFlyer route; real first open/dashboard attribution pending"
+}
