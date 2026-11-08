@@ -1021,6 +1021,28 @@ export const images = {
     "credit": "The Peptide Digest via Higgsfield",
     "kind": "illustration"
   },
+  peptideCO2Hydrogel20261108: {
+  "src": "/images/peptide-co2-hydrogel-20261108.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "A translucent red gel slab with a purple circular region in a glass dish beside a perforated metal plate on a laboratory bench",
+  "caption": "AI-generated editorial illustration of a gas-responsive gel concept, not a photograph of the experiment or a validated apparatus.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideStapling20261108: {
+  "src": "/images/peptide-stapling-helix-20261108.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "An open ivory helical teaching model with a red brace joining neighboring turns on a worn laboratory desk",
+  "caption": "AI-generated editorial illustration of a conceptual teaching model, not an experimentally resolved molecular structure or a depiction of the two-chain study model.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://peptidedigest.co",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
 } satisfies Record<string, EditorialImage>;
 
 export type ImageKey = keyof typeof images;
