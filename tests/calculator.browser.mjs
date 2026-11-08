@@ -67,7 +67,7 @@ try {
     const appBox = await appLink.boundingBox();
     ok(appBox.y >= 56 && appBox.y + appBox.height < (width === 1440 ? 1000 : 844) - 76, `app CTA clear of sticky surfaces at ${width}`);
     ok(await appLink.evaluate(n => { const r = n.getBoundingClientRect(); return n.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)); }), `app CTA hit test at ${width}`);
-    eq(await appLink.getAttribute('href'), 'https://apps.apple.com/us/app/iqonic/id6765689488');
+    eq(await appLink.getAttribute('href'), 'https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner');
     await banner.screenshot({ path: `${out}/iqonic-banner-${width}.png` });
     metrics.push({ width, firstInputY: inputBox.y, firstInputBottom: inputBox.y + inputBox.height });
   }
@@ -145,7 +145,7 @@ try {
       await page.keyboard.press('Tab');
     }
   }
-  eq(await page.getByRole('link', { name: /Explore the app/ }).getAttribute('href'), 'https://apps.apple.com/us/app/iqonic/id6765689488');
+  eq(await page.getByRole('link', { name: /Explore the app/ }).getAttribute('href'), 'https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner');
   const iqonLinks = await page.locator('a[href*="iqonhealth.com/shop"]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')));
   eq(iqonLinks.length, 3); ok(iqonLinks.every(href => href === 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20'));
   eq(await page.locator('link[rel=canonical]').count(), 1); eq(await page.locator('link[rel=canonical]').getAttribute('href'), 'https://peptidedigest.co/peptide-calculator');

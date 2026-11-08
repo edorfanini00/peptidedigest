@@ -10,7 +10,8 @@
     "test:peptide-math": "node --test tests/peptide-math.test.mjs",
     "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit",
-    "test:calculator:browser": "node tests/calculator.browser.mjs"
+    "test:calculator:browser": "node tests/calculator.browser.mjs",
+    "test:iqonic:browser": "node tests/iqonic-attribution.browser.mjs"
   },
   "dependencies": {
     "next": "^16.3.6",

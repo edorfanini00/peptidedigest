@@ -1,0 +1,54 @@
+[
+  {
+    "width": 360,
+    "baseline_size": [
+      328,
+      216
+    ],
+    "final_size": [
+      328,
+      216
+    ],
+    "pixel_identical": true,
+    "difference_bounds": null
+  },
+  {
+    "width": 390,
+    "baseline_size": [
+      358,
+      196
+    ],
+    "final_size": [
+      358,
+      196
+    ],
+    "pixel_identical": true,
+    "difference_bounds": null
+  },
+  {
+    "width": 430,
+    "baseline_size": [
+      398,
+      172
+    ],
+    "final_size": [
+      398,
+      172
+    ],
+    "pixel_identical": true,
+    "difference_bounds": null
+  },
+  {
+    "width": 1440,
+    "baseline_size": [
+      1040,
+      123
+    ],
+    "final_size": [
+      1040,
+      123
+    ],
+    "pixel_identical": true,
+    "difference_bounds": null
+  }
+]

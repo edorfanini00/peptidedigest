@@ -1,0 +1,28 @@
+{
+  "checks": 359,
+  "metrics": [
+    {
+      "width": 360,
+      "firstInputY": 366.65625,
+      "firstInputBottom": 420.65625
+    },
+    {
+      "width": 390,
+      "firstInputY": 366.65625,
+      "firstInputBottom": 420.65625
+    },
+    {
+      "width": 430,
+      "firstInputY": 342.34375,
+      "firstInputBottom": 396.34375
+    },
+    {
+      "width": 1440,
+      "firstInputY": 386.25,
+      "firstInputBottom": 440.25
+    }
+  ],
+  "errors": [],
+  "analytics": "External requests intercepted only in QA browser",
+  "status": "PASS"
+}
