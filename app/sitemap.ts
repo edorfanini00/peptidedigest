@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/peptide-coatings-co2-responsive-gold-hydrogels`,
+      lastModified: new Date("2026-11-08T14:05:22Z"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-stapling-chemical-bridge-helix-design`,
+      lastModified: new Date("2026-11-08T14:05:22Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/rapid-peptide-mapping-antibodies-direct-infusion`,
       lastModified: new Date("2026-11-07T13:13:03Z"),
       changeFrequency: "weekly",
@@ -460,7 +472,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-07T13:13:03Z"),
+      lastModified: new Date("2026-11-08T14:05:22Z"),
       changeFrequency: "daily",
       priority: 1,
     },

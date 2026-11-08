@@ -24,6 +24,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "peptide-coatings-co2-responsive-gold-hydrogels",
+  "category": "Materials science",
+  "date": "November 8, 2026",
+  "readTime": "6 min read",
+  "title": "Peptide coatings turn CO2 into a color signal",
+  "excerpt": "Short peptide coatings make gold nanoparticles respond to CO2. A new study carries their color change into hydrogels that can be patterned and reset.",
+  "image": "peptideCO2Hydrogel20261108",
+  "imageLabel": "AI-generated editorial illustration of a gas-responsive gel concept, not a photograph of the experiment or a validated apparatus."
+},
+{
+  "slug": "peptide-stapling-chemical-bridge-helix-design",
+  "category": "Peptide chemistry",
+  "date": "November 8, 2026",
+  "readTime": "6 min read",
+  "title": "Peptide stapling: how a chemical bridge helps hold a helix",
+  "excerpt": "Peptide stapling joins selected positions with a chemical bridge. Learn how placement, linker length and the target-facing surface shape a useful peptide helix.",
+  "image": "peptideStapling20261108",
+  "imageLabel": "AI-generated editorial illustration of a conceptual teaching model, not an experimentally resolved molecular structure or a depiction of the two-chain study model."
+},
+{
   "slug": "rapid-peptide-mapping-antibodies-direct-infusion",
   "category": "Analytical science",
   "date": "November 7, 2026",
