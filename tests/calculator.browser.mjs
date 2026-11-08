@@ -117,7 +117,7 @@ try {
   for (const bad of ['', '0', '-1', 'Infinity', 'NaN', '0x10', '1e3', '1,5', '5mg', '.', '5001', '1.' + '0'.repeat(1000)]) {
     await values('5', '2', bad); eq(await page.locator('[data-result]').count(), 0, `no stale result for ${bad.slice(0, 30)}`);
   }
-  await field('portion').fill('1e3'); await selector.selectOption('mg'); eq(await field('portion').inputValue(), ''); ok((await page.locator('[data-calculator]').innerText()).includes('Invalid target cleared'));
+  await field('portion').fill('1e3'); await selector.selectOption('mg'); eq(await field('portion').inputValue(), '1e3'); eq(await selector.inputValue(), 'mcg'); ok((await page.locator('#lab-portion-error').innerText()).includes('before changing units'));
   await selector.selectOption('mcg');
   await values('0.001', '1', '0.10000000000000005'); await resultText('full-portions', '9'); await resultText('portions', '≈10');
   await selector.selectOption('mg'); eq(await field('portion').inputValue(), '0.00010000000000000005'); await resultText('full-portions', '9');

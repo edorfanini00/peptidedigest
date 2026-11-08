@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useSyncExternalStore } from "react";
 import { calculateSolution, calculateSupply, convertTarget, formatSolutionResults, solutionFields, type SolutionField, type TargetUnit } from "@/lib/peptide-math";
 import styles from "./PeptideCalculator.module.css";
 import { IQONICBanner } from "./IQONICBanner";
@@ -9,8 +9,14 @@ const equationResult = (value: string) => value.startsWith("≈") ? value : `= $
 const empty = { mass: "", volume: "", portion: "" };
 const example = { mass: "5", volume: "2", portion: "250" };
 const shortcuts = { mass: ["1", "5", "10", "20"], volume: ["1", "2", "3", "5"] };
+// The server snapshot keeps native submission unavailable until React has
+// committed the client handlers, including when scripts are delayed or fail.
+const subscribeToHydration = () => () => {};
+const clientReady = () => true;
+const serverReady = () => false;
 
 export function PeptideCalculator() {
+  const ready = useSyncExternalStore(subscribeToHydration, clientReady, serverReady);
   const [values, setValues] = useState(empty);
   const [unit, setUnit] = useState<TargetUnit>("mcg");
   const [count, setCount] = useState("");
@@ -36,8 +42,12 @@ export function PeptideCalculator() {
   };
   function changeUnit(next: TargetUnit) {
     const converted = convertTarget(values.portion, unit, next);
-    setValues(previous => ({ ...previous, portion: converted ?? "" }));
-    setNotice(values.portion.trim() && converted === null ? "Invalid target cleared. Enter a new target in the selected measure." : "");
+    if (values.portion.trim() && converted === null) {
+      setNotice(`Correct the amount before changing units. Your entry is still in ${unit}.`);
+      return;
+    }
+    setValues(previous => ({ ...previous, portion: converted ?? previous.portion }));
+    setNotice("");
     setUnit(next);
   }
   function reset() {
@@ -67,25 +77,25 @@ export function PeptideCalculator() {
         <button type="button" className={styles.clear} onClick={reset}>Clear all</button>
         <div className={styles.fields}>
           {(Object.keys(solutionFields) as SolutionField[]).map((field, index) => {
-            const error = !result.ok && (touched[field] || submitted) ? result.errors[field] : undefined;
+            const error = field === "portion" && notice ? notice : !result.ok && (touched[field] || submitted) ? result.errors[field] : undefined;
             const label = field === "mass" ? "Peptide in the vial" : field === "volume" ? "Final mixed volume" : "Amount to measure";
             const measure = field === "mass" ? "mg" : field === "volume" ? "mL" : unit;
             const range = field === "portion" && unit === "mg" ? "0.000001 to 1,000 mg" : solutionFields[field].range;
             return <div key={field} className={styles.field}>
               <label htmlFor={`lab-${field}`}><span className={styles.step} aria-hidden="true">{index + 1}</span>{label}</label>
               <div className={styles.inputRow}>
-                <input ref={field === "mass" ? massInput : undefined} id={`lab-${field}`} name={field} type="text" inputMode="decimal" autoComplete="off" spellCheck={false}
+                <input ref={field === "mass" ? massInput : undefined} id={`lab-${field}`} type="text" inputMode="decimal" autoComplete="off" spellCheck={false}
                   placeholder="Enter amount" value={values[field]} onFocus={event => event.currentTarget.select()} onChange={event => update(field, event.target.value)}
                   aria-label={`${label} (${measure})`} aria-invalid={!!error} aria-describedby={`lab-${field}-help${error ? ` lab-${field}-error` : ""}`} />
-                {field === "portion" ? <select aria-label="Amount unit" value={unit} onChange={event => changeUnit(event.target.value as TargetUnit)}><option value="mcg">mcg</option><option value="mg">mg</option></select> : <span>{measure}</span>}
+                {field === "portion" ? <select aria-label="Amount unit" aria-describedby={notice ? "lab-portion-error" : undefined} value={unit} onChange={event => changeUnit(event.target.value as TargetUnit)}><option value="mcg">mcg</option><option value="mg">mg</option></select> : <span>{measure}</span>}
               </div>
               <p id={`lab-${field}-help`} className={styles.hint}>{field === "mass" ? "Peptide amount on the vial label." : field === "volume" ? "Measured total after mixing, not just liquid added." : "Your chosen amount. This tool does not choose it."}</p>
-              {error && <p id={`lab-${field}-error`} className={styles.error}>{field === "portion" && unit === "mg" && !error.includes("exceeds") ? `Enter a decimal number from ${range}.` : error}</p>}
+              {error && <p id={`lab-${field}-error`} role={field === "portion" && notice ? "status" : undefined} className={styles.error}>{field === "portion" && unit === "mg" && !notice && !error.includes("exceeds") ? `Enter a decimal number from ${range}.` : error}</p>}
             </div>;
           })}
         </div>
-        <button type="submit" className={styles.calculate}>Calculate units <span aria-hidden="true">→</span></button>
-        <p className={styles.liveHint}>Results update as you type.</p>
+        <button type="submit" disabled={!ready} className={styles.calculate}>Calculate units <span aria-hidden="true">→</span></button>
+        <p className={styles.liveHint}>{ready ? "Results update as you type." : "JavaScript is needed to calculate. Formulas are below."}</p>
         <details className={styles.disclosure} open={shortcutsOpen} onToggle={event => setShortcutsOpen(event.currentTarget.open)}>
           <summary>Shortcuts &amp; input limits</summary>
           {(["mass", "volume"] as const).map(field => <div key={field} className={styles.shortcutGroup}>
@@ -97,7 +107,6 @@ export function PeptideCalculator() {
           <p className={styles.hint}>Amount to measure: {unit === "mg" ? "0.000001 to 1,000 mg" : solutionFields.portion.range}. Shortcuts are numbers only, not suggested preparations.</p>
         </details>
         <div className={styles.example}><button type="button" onClick={() => { setValues(example); setUnit("mcg"); setCount(""); setNotice(""); }}>Load example</button><span>Optional arithmetic example.<br />Not a suggested preparation.</span></div>
-        <p role="status" className={styles.error}>{notice}</p>
       </form>
       <div className={styles.output}>
         <div ref={resultPanel} tabIndex={-1} role="status" aria-live="polite" aria-atomic="true" className={styles.results} data-results aria-label="Calculation result">

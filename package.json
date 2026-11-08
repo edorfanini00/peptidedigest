@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit",
     "test:calculator:browser": "node tests/calculator.browser.mjs",
     "test:clarity:browser": "node tests/clarity.browser.mjs",
+    "test:calculator:fallback": "node tests/calculator-fallback.browser.mjs",
     "test:iqonic:browser": "node tests/iqonic-attribution.browser.mjs"
   },
   "dependencies": {

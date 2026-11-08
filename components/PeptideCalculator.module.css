@@ -47,6 +47,7 @@
 .detailResults { padding: 0 .5rem .75rem; }
 .tool .calculate { display: flex; align-items: center; justify-content: space-between; width: 100%; background: var(--color-accent); color: white; min-height: 48px; padding-inline: 1rem; margin-top: 1.25rem; font-size: .95rem; }
 .tool .calculate:hover { background: #7b2117; }
+.tool .calculate:disabled { opacity: .55; cursor: not-allowed; }
 .liveHint { text-align: center; font-size: .7rem; color: var(--color-muted); margin-top: .35rem; }
 .shortcutGroup { margin-bottom: .8rem; }
 .results { scroll-margin-block: max(90px, 5rem); }
