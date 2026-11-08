@@ -9,7 +9,7 @@ const equationResult = (value: string) => value.startsWith("≈") ? value : `= $
 const empty = { mass: "", volume: "", portion: "" };
 const example = { mass: "5", volume: "2", portion: "250" };
 const shortcuts = { mass: ["1", "5", "10", "20"], volume: ["1", "2", "3", "5"] };
-// The server snapshot keeps native submission unavailable until React has
+// The server snapshot keeps entry and native submission unavailable until React has
 // committed the client handlers, including when scripts are delayed or fail.
 const subscribeToHydration = () => () => {};
 const clientReady = () => true;
@@ -84,10 +84,10 @@ export function PeptideCalculator() {
             return <div key={field} className={styles.field}>
               <label htmlFor={`lab-${field}`}><span className={styles.step} aria-hidden="true">{index + 1}</span>{label}</label>
               <div className={styles.inputRow}>
-                <input ref={field === "mass" ? massInput : undefined} id={`lab-${field}`} type="text" inputMode="decimal" autoComplete="off" spellCheck={false}
+                <input ref={field === "mass" ? massInput : undefined} id={`lab-${field}`} disabled={!ready} type="text" inputMode="decimal" autoComplete="off" spellCheck={false}
                   placeholder="Enter amount" value={values[field]} onFocus={event => event.currentTarget.select()} onChange={event => update(field, event.target.value)}
                   aria-label={`${label} (${measure})`} aria-invalid={!!error} aria-describedby={`lab-${field}-help${error ? ` lab-${field}-error` : ""}`} />
-                {field === "portion" ? <select aria-label="Amount unit" aria-describedby={notice ? "lab-portion-error" : undefined} value={unit} onChange={event => changeUnit(event.target.value as TargetUnit)}><option value="mcg">mcg</option><option value="mg">mg</option></select> : <span>{measure}</span>}
+                {field === "portion" ? <select disabled={!ready} aria-label="Amount unit" aria-describedby={notice ? "lab-portion-error" : undefined} value={unit} onChange={event => changeUnit(event.target.value as TargetUnit)}><option value="mcg">mcg</option><option value="mg">mg</option></select> : <span>{measure}</span>}
               </div>
               <p id={`lab-${field}-help`} className={styles.hint}>{field === "mass" ? "Peptide amount on the vial label." : field === "volume" ? "Measured total after mixing, not just liquid added." : "Your chosen amount. This tool does not choose it."}</p>
               {error && <p id={`lab-${field}-error`} role={field === "portion" && notice ? "status" : undefined} className={styles.error}>{field === "portion" && unit === "mg" && !notice && !error.includes("exceeds") ? `Enter a decimal number from ${range}.` : error}</p>}
@@ -156,7 +156,7 @@ export function PeptideCalculator() {
       <div className={styles.supplyContent}>
         <p>Use the same vial mass and target portion above. Each portion comes from one vial; remainders are not pooled.</p>
         <label htmlFor="lab-count">Total complete portions needed</label>
-        <input id="lab-count" type="text" inputMode="numeric" autoComplete="off" value={count} placeholder="Enter a whole number" onChange={event => setCount(event.target.value)} aria-describedby={`lab-count-help${supplyError ? " lab-count-error" : ""}`} aria-invalid={!!supplyError} />
+        <input id="lab-count" disabled={!ready} type="text" inputMode="numeric" autoComplete="off" value={count} placeholder="Enter a whole number" onChange={event => setCount(event.target.value)} aria-describedby={`lab-count-help${supplyError ? " lab-count-error" : ""}`} aria-invalid={!!supplyError} />
         <p id="lab-count-help" className={styles.hint}>1 to 1,000,000,000 portions. Enter your own total; no schedule is assumed.</p>
         <div role="status" aria-live="polite" data-supply-result>
           {supply?.ok ? <><p className={styles.supplyTotal}><strong>{supply.containers}</strong> {supply.containers === "1" ? "vial" : "vials"} before losses</p><p>{supply.completePortions} complete portions available. After the requested {count.trim()} portions: <strong>{supply.remainingMcg} mcg</strong> remaining across these vials.</p><p className={styles.hint}>Each fully used vial leaves {supply.perContainerRemainderMcg} mcg after its last complete portion. Transfer losses can increase the number of vials needed.</p></> : <p id={supplyError ? "lab-count-error" : undefined} className={styles.hint}>{!result.ok ? "Complete the calculator above to estimate supply." : count.trim() ? supply?.error : "Enter a total to estimate the number of vials."}</p>}

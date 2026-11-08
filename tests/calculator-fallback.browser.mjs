@@ -1,4 +1,4 @@
-// Acceptance corrections: retain malformed inputs and never natively serialize quantities.
+// Acceptance corrections: protect unready entry, retain malformed inputs, and never serialize quantities.
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import { chromium } from 'playwright';
@@ -42,7 +42,30 @@ try {
     const response = await page.goto(`${base}/peptide-calculator`, { waitUntil: mode === 'delayed-next' ? 'commit' : 'load' });
     record.cspHeader = response.headers()['content-security-policy'] || null;
     record.cspMeta = await page.locator('meta[http-equiv="Content-Security-Policy" i]').count();
-    await fill(page);
+    await page.locator('#lab-mass').waitFor({ state: 'visible' });
+    armed = true;
+    const controls = ['#lab-mass', '#lab-volume', '#lab-portion', 'select[aria-label="Amount unit"]', '#lab-count'];
+    await page.locator('summary').filter({ hasText: 'Plan a laboratory supply' }).click();
+    record.earlyEntry = [];
+    for (const selector of controls) {
+      const control = page.locator(selector);
+      eq(await control.isDisabled(), true, `${mode}/${action}: ${selector} unavailable before readiness`);
+      await control.scrollIntoViewIfNeeded();
+      const box = await control.boundingBox();
+      await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      if (selector.startsWith('select')) {
+        await page.keyboard.press('ArrowDown');
+        await page.keyboard.press('Escape');
+      } else await page.keyboard.type('625');
+      if (action === 'enter') await page.keyboard.press('Enter');
+      const value = await control.inputValue();
+      record.earlyEntry.push({ selector, value, disabled: await control.isDisabled() });
+      eq(value, selector.startsWith('select') ? 'mcg' : '', `${mode}/${action}: real early entry cannot change ${selector}`);
+      eq(await control.evaluate(n => n === document.activeElement), false, `${mode}/${action}: unavailable control cannot receive pointer focus`);
+    }
+    await page.getByRole('button', { name: 'Clear all', exact: true }).focus();
+    await page.keyboard.press('Tab');
+    eq(await page.locator('[data-calculator] input, [data-calculator] select').evaluateAll(ns => ns.includes(document.activeElement)), false, `${mode}/${action}: Tab skips unavailable quantity controls`);
     const button = page.getByRole('button', { name: 'Calculate units', exact: true });
     record.disabledBeforeAction = await button.isDisabled();
     record.formData = await page.locator('form[aria-label="Solution calculator"]').evaluate(n => [...new FormData(n).entries()]);
@@ -53,11 +76,10 @@ try {
     eq((await page.locator('[data-calculator]').innerText()).includes('Formulas are below'), true, `${mode}: visible unavailable explanation`);
     await button.scrollIntoViewIfNeeded();
     if (action === 'click') await page.screenshot({ path: `${out}/${mode}-fallback.png` });
-    armed = true;
     if (action === 'click') {
       // A real mouse click still reaches the disabled button surface; no synthetic submit.
       const box = await button.boundingBox(); await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
-    } else await page.locator('#lab-portion').press('Enter');
+    } else await page.keyboard.press('Enter');
     await page.waitForTimeout(250);
     eq(record.navigationEvents, [], `${mode}/${action}: zero CDP attempted navigation, even if network would block it`);
     eq(record.committedNavigations, [], `${mode}/${action}: no document reload`);
@@ -68,11 +90,29 @@ try {
       releaseScripts();
       await page.waitForLoadState('networkidle');
       await page.waitForFunction(() => !document.querySelector('button[type="submit"]').disabled);
+      record.afterHydration = [];
+      for (const selector of controls) {
+        const control = page.locator(selector);
+        eq(await control.isEnabled(), true, `hydration enables ${selector}`);
+        const value = await control.inputValue();
+        record.afterHydration.push({ selector, value });
+        eq(value, selector.startsWith('select') ? 'mcg' : '', `hydration starts ${selector} without discarded early entry`);
+      }
+      // This is the first permitted entry; no forced fill or disabled-attribute removal.
       await fill(page);
-      await page.locator('#lab-portion').press('Enter');
-      eq(await page.locator('[data-result="u100"]').innerText(), '10', 'delayed hydration recovers working Enter');
+      await page.getByLabel('Amount unit').selectOption('mg');
+      eq(await page.locator('#lab-portion').inputValue(), '0.25', 'newly enabled selector converts exactly');
+      if (action === 'click') await button.click();
+      else await page.locator('#lab-portion').press('Enter');
+      eq(await page.locator('[data-result="u100"]').innerText(), '10', `delayed hydration recovers working ${action}`);
       eq(await page.locator('[data-results]').evaluate(n => n === document.activeElement), true, 'delayed hydration result receives focus');
+      const supplySummary = page.locator('summary').filter({ hasText: 'Plan a laboratory supply' });
+      if (!await page.locator('#lab-count').isVisible()) await supplySummary.click();
+      await page.locator('#lab-count').fill('21');
+      eq((await page.locator('[data-supply-result]').innerText()).includes('2 vials'), true, 'newly enabled supply input calculates');
+      eq(await page.locator('form[aria-label="Solution calculator"]').evaluate(n => [...new FormData(n).entries()]), [], 'hydrated controls still cannot serialize quantities');
       eq(record.navigationEvents, [], 'hydrated Enter remains local');
+      eq(record.requests.filter(r => r.navigation || /[?&](mass|volume|portion|count)=/.test(r.url) || r.body), [], 'hydrated calculation sends no quantities');
     }
     releaseScripts();
     await context.close();
