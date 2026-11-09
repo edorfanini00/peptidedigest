@@ -24,6 +24,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "argenx-unnatural-products-peptide-discovery-deal",
+  "category": "Biotech business",
+  "date": "November 9, 2026",
+  "readTime": "5 min read",
+  "title": "Argenx adds peptide discovery to its immunology plans with UNP deal",
+  "excerpt": "Argenx agrees to acquire Unnatural Products. What its macrocyclic peptide platform adds to antibody discovery, and how the proposed deal builds on their collaboration.",
+  "image": "argenxUNP20261109",
+  "imageLabel": "AI-generated conceptual editorial illustration of antibody and peptide teaching props, not an argenx or UNP facility or validated molecular structures."
+},
+{
+  "slug": "what-is-retatrutide",
+  "category": "Clinical science explained",
+  "date": "November 9, 2026",
+  "readTime": "6 min read",
+  "title": "What is retatrutide? The triple agonist and its trials explained",
+  "excerpt": "Retatrutide is Lilly’s investigational triple receptor agonist. Understand its mechanism, TRIUMPH and TRANSCEND trials, comparisons and current approval status.",
+  "image": "retatrutideOverview20261109",
+  "imageLabel": "AI-generated conceptual editorial illustration of three receptor teaching props, not actual receptor or retatrutide structures or a clinical trial scene."
+},
+{
   "slug": "peptide-coatings-co2-responsive-gold-hydrogels",
   "category": "Materials science",
   "date": "November 8, 2026",
