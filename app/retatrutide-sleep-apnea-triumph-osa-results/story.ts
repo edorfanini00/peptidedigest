@@ -5,6 +5,8 @@ export const story: NewsroomStory = {
   "title": "Retatrutide reduced sleep apnea severity in two Phase 3 trials",
   "description": "Two Phase 3 trials cut the apnea-hypopnea index at 80 weeks in obstructive sleep apnea. The published paper reports two different sets of results and explains why.",
   "date": "2026-10-29T12:30:00Z",
+  "dateModified": "2026-11-08T20:25:00-05:00",
+  "correction": "Correction, November 8, 2026: The trial registrations prespecify threshold-based sleep apnea outcomes. We corrected a statement that no such thresholds were tested; the abstract's group-average index changes are not remission rates. We also clarified how the primary hybrid analysis handles intercurrent events.",
   "type": "Article",
   "category": "Clinical research",
   "image": "retatrutideOsa20261029",
@@ -31,7 +33,7 @@ export const story: NewsroomStory = {
         "Participants were assigned to retatrutide at 4 mg, 9 mg or 12 mg, or placebo, in addition to lifestyle counseling. The primary endpoint compared the 9 mg and 12 mg doses against placebo on change in the apnea-hypopnea index at 80 weeks.",
         "In TRIUMPH-1-OSA, the mean index fell by 22.9 events per hour on 4 mg, 34.3 on 9 mg and 31.7 on 12 mg, against 9.9 on placebo. The differences from placebo were minus 13.0 events per hour for 4 mg (95% confidence interval, minus 23.0 to minus 3.0), minus 24.4 for 9 mg (minus 34.1 to minus 14.7) and minus 21.9 for 12 mg (minus 32.2 to minus 11.5).",
         "In TRIUMPH-2-OSA, the mean index fell by 19.2, 24.7 and 25.4 events per hour on 4 mg, 9 mg and 12 mg, against 10.3 on placebo. The differences from placebo were minus 8.9 (minus 15.9 to minus 2.0), minus 14.4 (minus 21.6 to minus 7.2) and minus 15.1 (minus 22.5 to minus 7.7) events per hour.",
-        "Those are large reductions against a severe baseline. They are also averages across groups of a few hundred people each, with confidence intervals that widen at the lower dose, and the trial did not test whether the treated groups reached any particular threshold that clinicians use to define remission."
+        "These are group-average changes in the apnea-hypopnea index, not the proportion of participants reaching a remission threshold. The trial registries also prespecify threshold-based outcomes, including an index below 5 or an index of 5 to 14 with an Epworth Sleepiness Scale score of 10 or less. The abstract does not give those threshold results.[2][3][4]"
       ]
     },
     {
@@ -49,7 +51,7 @@ export const story: NewsroomStory = {
         "The paper reports the sleep results twice, using two different ways of handling participants whose treatment stopped or failed.",
         "The primary analysis uses a hybrid-treatment estimand. For participants who had an event suggesting treatment failure, it applies a hypothetical strategy, which estimates what the outcome would have been had the participant stayed on treatment, and for other intercurrent events it applies a treatment policy strategy, which uses the observed outcome regardless. The intention-to-treat analysis counts every participant in the group they were assigned to, whether or not they kept taking the drug.",
         "Under intention-to-treat, the differences from placebo were minus 13.2, minus 24.7 and minus 22.5 events per hour in TRIUMPH-1-OSA and minus 8.8, minus 13.9 and minus 15.0 events per hour in TRIUMPH-2-OSA. Every one of those figures is within 0.6 events per hour of its primary counterpart, so the two analyses agree closely: the intention-to-treat values run marginally larger in TRIUMPH-1-OSA and marginally smaller in TRIUMPH-2-OSA.",
-        "Neither number is wrong. They answer different questions. The primary analysis asks what the drug does under continued treatment. The intention-to-treat analysis asks what happened to everyone who was randomized, including people who stopped. Headlines that quote one figure without the other are publishing the answer to a question the reader may not have asked."
+        "Neither number is wrong. They answer different questions. The primary analysis combines a hypothetical strategy for events suggesting treatment failure with a treatment-policy strategy for other events. The intention-to-treat analysis estimates the effect across everyone who was randomized, including people who stopped. Headlines that quote one figure without the other are publishing the answer to a question the reader may not have asked."
       ]
     },
     {
@@ -96,7 +98,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "Why does the paper report two different sets of results?",
-      "a": "One analysis estimates the effect under continued treatment, using a hybrid strategy for participants whose treatment stopped or failed, and the other counts every randomized participant. Both are pre-specified and they answer different questions.",
+      "a": "The primary analysis uses a hybrid estimand: a hypothetical strategy for participants with events suggesting treatment failure and a treatment-policy strategy for other events. The intention-to-treat analysis includes every randomized participant in the assigned group. Both appear in the paper, and they answer different questions.",
       "refs": [1]
     },
     {

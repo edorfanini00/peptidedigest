@@ -5,6 +5,8 @@ export const story: NewsroomStory = {
   "title": "Retatrutide eased knee osteoarthritis pain in TRIUMPH 4",
   "description": "The TRIUMPH 4 trial found about two points more knee pain improvement with retatrutide than placebo at 68 weeks. What the ACR abstract shows.",
   "date": "2026-11-06T13:09:00Z",
+  "dateModified": "2026-11-08T20:25:00-05:00",
+  "correction": "Update, November 8, 2026: We revised the conference timing language after the scheduled session date. No new trial results were added.",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "retatrutideKnee20261106",
@@ -60,10 +62,10 @@ export const story: NewsroomStory = {
       ]
     },
     {
-      "title": "What the November presentation can add",
+      "title": "The conference abstract",
       "id": "next-presentation",
       "paragraphs": [
-        "The American College of Rheumatology lists abstract 0871 for Sunday, November 8, from 11:15 to 11:30 a.m. Eastern time. That presentation is still ahead. The available abstract already supplies the randomized comparison, while the conference discussion offers an opportunity to examine the analysis and clinical interpretation in more detail.[1][3]",
+        "The American College of Rheumatology scheduled abstract 0871 for November 8. The available conference abstract reports the randomized comparison and its statistical analysis.[1]",
         "For knee osteoarthritis research, the useful advance is concrete: a treatment aimed at metabolic disease improved pain and physical function substantially more than placebo in people who also had overweight or obesity. The next question is how those symptom gains hold up over time and fit with the full tolerability record. TRIUMPH 4 gives that discussion a measured clinical result to build on.[1][2]"
       ]
     }

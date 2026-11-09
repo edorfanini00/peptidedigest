@@ -2,8 +2,8 @@ import type { NewsroomStory } from "@/components/NewsroomArticle";
 
 export const story: NewsroomStory = {
   "slug": "what-is-amylin-amylin-analogs-vs-glp-1",
-  "title": "What is amylin? How amylin analogs differ from GLP-1 drugs",
-  "description": "Amylin is a hormone released with insulin. Here is how amylin analogs such as cagrilintide differ from GLP-1 drugs and what trials show.",
+  "title": "Amylin vs GLP-1: how the hormones and drugs differ",
+  "description": "Amylin vs GLP-1: amylin is a hormone released with insulin, GLP-1 is a gut hormone. How amylin analogs such as cagrilintide differ from GLP-1 drugs and what trials show.",
   "date": "2026-10-08T10:00:12-04:00",
   "type": "Article",
   "category": "Science",

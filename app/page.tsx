@@ -595,8 +595,8 @@ const regulatoryArticles: CardArticle[] = [
     "category": "Science",
     "date": "October 8, 2026",
     "readTime": "7 min read",
-    "title": "What is amylin? How amylin analogs differ from GLP-1 drugs",
-    "excerpt": "Amylin is a hormone released with insulin. Here is how amylin analogs such as cagrilintide differ from GLP-1 drugs and what trials show.",
+    "title": "Amylin vs GLP-1: how the hormones and drugs differ",
+    "excerpt": "Amylin vs GLP-1: amylin is a hormone released with insulin, GLP-1 is a gut hormone. How amylin analogs such as cagrilintide differ from GLP-1 drugs and what trials show.",
     "image": "amylinHistologyBench"
   },
 
