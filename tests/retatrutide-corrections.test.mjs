@@ -1,4 +1,4 @@
-// Source-level checks for the November 8, 2026 retatrutide corrections.
+// Source-level checks for the November 8 and 9, 2026 retatrutide corrections.
 // Built-output checks (schema, visible note, sitemap XML) run after npm run build.
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -11,9 +11,10 @@ const output = new URL(".next/server/app/", root);
 const base = "https://peptidedigest.co";
 const baseCommit = "90281dfd40ede0534e30edbbe0ce1d442ff7b542";
 const corrected = "2026-11-08T20:25:00-05:00";
+const safetyCorrected = "2026-11-09T09:32:00-05:00";
 const stories = {
-  "retatrutide-triumph-1-phase-3-results-2026": { date: "2026-09-28T08:00:00-04:00", image: "retatrutideTriumph", note: /^Correction and update, November 8, 2026: / },
-  "retatrutide-transcend-t2d-2-ozempic-head-to-head": { date: "2026-10-30T11:45:00Z", image: "retatrutideTranscend20261030", note: /^Correction, November 8, 2026: / },
+  "retatrutide-triumph-1-phase-3-results-2026": { date: "2026-09-28T08:00:00-04:00", image: "retatrutideTriumph", modified: safetyCorrected, note: /^Correction, November 9, 2026: / },
+  "retatrutide-transcend-t2d-2-ozempic-head-to-head": { date: "2026-10-30T11:45:00Z", image: "retatrutideTranscend20261030", modified: safetyCorrected, note: /^Correction, November 9, 2026: / },
   "retatrutide-sleep-apnea-triumph-osa-results": { date: "2026-10-29T12:30:00Z", image: "retatrutideOsa20261029", note: /^Correction, November 8, 2026: / },
   "retatrutide-knee-osteoarthritis-triumph-4-results": { date: "2026-11-06T13:09:00Z", image: "retatrutideKnee20261106", note: /^Update, November 8, 2026: / },
 };
@@ -61,7 +62,8 @@ test("corrected stories keep URL, publication date and image, and carry one genu
     assert.deepEqual(story.vials, before.vials, `${slug}: IQON placements unchanged`);
     assert.equal(story.notice, before.notice);
     assert.equal(story.title, before.title, `${slug}: title intent unchanged`);
-    assert.equal(story.dateModified, corrected);
+    assert.equal(story.dateModified, expected.modified ?? corrected);
+    assert.ok(Date.parse(story.dateModified) <= Date.now(), "revision is in the past");
     assert.ok(Date.parse(story.dateModified) > Date.parse(story.date), `${slug}: revision follows publication`);
     assert.match(story.correction, expected.note);
     assert.deepEqual(story.related, before.related, `${slug}: related reading unchanged`);
@@ -95,7 +97,7 @@ const assertSitemapPreserved = (now, before) => {
   for (const path of additions) assert.equal(now[path], published, `${path}: publication date`);
   for (const [path, date] of Object.entries(now)) {
     if (additions.includes(path) || path === "") assert.equal(date, published, `${path || "/"}: November 9 publication`);
-    else if (slugs.includes(path)) assert.equal(date, new Date(corrected).toISOString(), path);
+    else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
     else assert.equal(date, before[path], `${path || "/"}: untouched date`);
   }
   assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T14:00:12.000Z");
@@ -259,7 +261,7 @@ test("knee story drops expired future framing without asserting the session happ
 test("corrections leave untouched passages byte-identical to the base", async () => {
   const changed = {
     [T1]: new Set(["what-the-doses-produced", "adverse-events", "mechanism-difference", "what-this-establishes"]),
-    [T2D2]: new Set(["a1c-difference", "what-to-watch"]),
+    [T2D2]: new Set(["a1c-difference", "what-to-watch", "numbers-dose-by-dose", "tolerability"]),
     [OSA]: new Set(["what-they-found", "two-answers"]),
     [KNEE]: new Set(["next-presentation"]),
   };
@@ -278,16 +280,18 @@ const decode = s => s.replace(/<!-- -->/g, "").replace(/<[^>]+>/g, "").replace(/
 test("built pages render the dated note, revision time and matching schema", { skip: !fs.existsSync(output) && "run npm run build first" }, async () => {
   for (const slug of slugs) {
     const [story, html] = [await load(slug), built(slug)];
+    const modified = stories[slug].modified ?? corrected;
+    const revisionDay = stories[slug].modified ? 9 : 8;
     const article = graph(html).find(n => n["@id"] === `${base}/${slug}#article`);
     assert.equal(article.datePublished, stories[slug].date);
-    assert.equal(article.dateModified, corrected);
+    assert.equal(article.dateModified, modified);
     assert.equal(article.headline, story.title);
     assert.deepEqual(article.citation, story.sources.map(s => s.url));
     assert.match(html, new RegExp(`<meta property="article:published_time" content="${stories[slug].date}"`));
-    assert.match(html, new RegExp(`<meta property="article:modified_time" content="${corrected}"`));
+    assert.match(html, new RegExp(`<meta property="article:modified_time" content="${modified}"`));
     const notes = [...html.matchAll(/<p data-correction-note[^>]*>([\s\S]*?)<\/p>/g)].map(([, t]) => decode(t));
     assert.deepEqual(notes, [story.correction], `${slug}: one visible note`);
-    assert.match(html, new RegExp(`Revised <time dateTime="${corrected}">November 8, 2026</time>`));
+    assert.match(html, new RegExp(`Revised <time dateTime="${modified}">November ${revisionDay}, 2026</time>`));
     const faq = graph(html).find(n => n["@type"] === "FAQPage");
     const visible = [...html.matchAll(/<h3 id="question-\d+">([\s\S]*?)<\/h3><p data-faq-answer="[^"]*">([\s\S]*?)<\/p>/g)].map(([, q, a]) => [decode(q), decode(a)]);
     assert.deepEqual(visible, story.faqs.map(f => [f.q, f.a]), `${slug}: visible FAQ`);
@@ -297,8 +301,41 @@ test("built pages render the dated note, revision time and matching schema", { s
     assert.deepEqual(canonical, [`${base}/${slug}`]);
   }
   const sitemap = fs.readFileSync(new URL("sitemap.xml.body", output), "utf8");
-  for (const slug of slugs) assert.match(sitemap, new RegExp(`<loc>${base}/${slug}</loc>\\s*<lastmod>2026-11-09T01:25:00.000Z</lastmod>`));
+  for (const slug of slugs) assert.match(sitemap, new RegExp(`<loc>${base}/${slug}</loc>\\s*<lastmod>${new Date(stories[slug].modified ?? corrected).toISOString()}</lastmod>`));
   const amylin = built("what-is-amylin-amylin-analogs-vs-glp-1");
   assert.doesNotMatch(amylin, /data-correction-note|Revised <time/);
   assert.equal(graph(amylin).find(n => n.datePublished).dateModified, "2026-10-08T10:00:12-04:00");
+});
+
+const assertSafetyNarrowed = (triumph, transcend) => {
+  const safety = [
+    ...section(triumph, "adverse-events").paragraphs,
+    triumph.faqs.find(f => /dysesthesia/.test(f.q)).a,
+    ...section(transcend, "tolerability").paragraphs,
+  ].join("\n");
+  assert.doesNotMatch(safety, /\d+(?:\.\d+)?\s*(?:%|percent)/i, "no safety rates without verified interval and population");
+  assert.doesNotMatch(safety, /background rather than a drug effect/i, "no unsupported infection attribution");
+  assert.doesNotMatch(allText(transcend), /Every number in the release uses the efficacy estimand/);
+  assert.match(section(transcend, "tolerability").paragraphs[0], /more common in both retatrutide groups than in the semaglutide group/, "comparative discontinuation signal retained");
+  for (const risk of ["nausea", "diarrhea", "constipation", "vomiting", "dysesthesia", "infections", "stopped treatment"])
+    assert.match(safety, new RegExp(risk, "i"), `clinically meaningful risk remains: ${risk}`);
+};
+
+test("AUDIT-01 retains qualitative risks and limits estimands to efficacy", async () => {
+  const a = await load(T1), b = await load(T2D2);
+  assertSafetyNarrowed(a, b);
+  for (const mutate of [
+    x => { section(x, "adverse-events").paragraphs[0] += " Nausea occurred in 42.4 percent."; },
+    x => { x.faqs.find(f => /dysesthesia/.test(f.q)).a += " It occurred in 12.5%."; },
+    x => { section(x, "adverse-events").paragraphs[2] += " This is background rather than a drug effect."; },
+  ]) {
+    const draft = structuredClone(a); mutate(draft);
+    assert.throws(() => assertSafetyNarrowed(draft, b), { code: "ERR_ASSERTION" });
+  }
+  const softened = structuredClone(b);
+  section(softened, "tolerability").paragraphs[0] = "Adverse events led participants to stop in both groups.";
+  assert.throws(() => assertSafetyNarrowed(a, softened), { code: "ERR_ASSERTION" });
+  const draft = structuredClone(b);
+  section(draft, "numbers-dose-by-dose").paragraphs[3] = "Every number in the release uses the efficacy estimand.";
+  assert.throws(() => assertSafetyNarrowed(a, draft), { code: "ERR_ASSERTION" });
 });

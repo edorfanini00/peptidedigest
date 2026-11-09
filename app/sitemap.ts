@@ -113,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://peptidedigest.co/retatrutide-transcend-t2d-2-ozempic-head-to-head",
-      lastModified: new Date("2026-11-08T20:25:00-05:00"),
+      lastModified: new Date("2026-11-09T09:32:00-05:00"),
       changeFrequency: "weekly",
       priority: 0.85,
     },
@@ -413,7 +413,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/retatrutide-triumph-1-phase-3-results-2026`,
-      lastModified: new Date("2026-11-08T20:25:00-05:00"),
+      lastModified: new Date("2026-11-09T09:32:00-05:00"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

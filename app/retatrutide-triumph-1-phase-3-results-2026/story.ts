@@ -5,8 +5,8 @@ export const story = {
   "title": "Lilly reports Phase 3 obesity results for retatrutide: what TRIUMPH-1 showed",
   "description": "Lilly's triple agonist retatrutide met all endpoints in the 2,339-person TRIUMPH-1 Phase 3 trial, with 12 mg producing 28.3% average weight loss at 80 weeks in the efficacy estimand. What the results and the later NEJM paper show.",
   "date": "2026-09-28T08:00:00-04:00",
-  "dateModified": "2026-11-08T20:25:00-05:00",
-  "correction": "Correction and update, November 8, 2026: The weight-change figures quoted from Lilly's May 21 announcement use the efficacy estimand, not the treatment-regimen estimand, and are changes from baseline. We corrected the TRIUMPH-5 registry reference, clarified that TRIUMPH-3's registered primary endpoint is weight change in people with cardiovascular disease, and replaced an outdated availability statement with FDA's position. We also removed unsupported comparisons with other drugs' trials and a dose-planning suggestion. Updated to include the September 29 primary publication.",
+  "dateModified": "2026-11-09T09:32:00-05:00",
+  "correction": "Correction, November 9, 2026: We replaced adverse-event and discontinuation percentages, including the dysesthesia FAQ figures, with qualitative descriptions because we could not verify the safety observation window and analysis population. We removed an unsupported inference that respiratory infections were unrelated to treatment. The efficacy results are unchanged. Correction and update, November 8, 2026: The weight-change figures quoted from Lilly's May 21 announcement use the efficacy estimand, not the treatment-regimen estimand, and are changes from baseline. We corrected the TRIUMPH-5 registry reference, clarified that TRIUMPH-3's registered primary endpoint is weight change in people with cardiovascular disease, and replaced an outdated availability statement with FDA's position. We also removed unsupported comparisons with other drugs' trials and a dose-planning suggestion. Updated to include the September 29 primary publication.",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "retatrutideTriumph",
@@ -34,9 +34,9 @@ export const story = {
       "title": "Adverse events: what appeared and what to watch",
       "id": "adverse-events",
       "paragraphs": [
-        "The most common adverse events were gastrointestinal, consistent with other incretin-based therapies: nausea (42.4 percent on 12 mg versus 14.8 percent on placebo), diarrhea (32.0 versus 13.5), constipation (26.1 versus 10.9), and vomiting (25.3 versus 4.8).[1] Discontinuation rates due to adverse events rose with dose: 4.1 percent (4 mg), 6.9 percent (9 mg), and 11.3 percent (12 mg), compared with 4.9 percent for placebo.[1]",
-        "One signal worth watching is dysesthesia, an abnormal skin sensation. Dysesthesia occurred in 12.5 percent of the 12 mg group and 12.3 percent of the 9 mg group, versus 0.9 percent on placebo.[1] Lilly reports that most cases were mild to moderate, most resolved during treatment, and most participants continued taking retatrutide.[1] It is a finding to monitor in larger and longer data.[1]",
-        "Upper respiratory tract infections also appeared across groups: 14.2 percent (4 mg), 12.2 percent (9 mg), 13.1 percent (12 mg), versus 11.6 percent on placebo.[1] These rates are similar across all treatment arms and close to placebo, suggesting this is background rather than a drug effect.[1]"
+        "Lilly reported gastrointestinal symptoms among the most common adverse events, including nausea, diarrhea, constipation and vomiting. Some participants stopped treatment because of adverse events, with discontinuations increasing across the retatrutide dose groups.[1]",
+        "Dysesthesia, an abnormal skin sensation, was also reported. Lilly says most cases were mild to moderate, most resolved during treatment, and most participants continued taking retatrutide.[1] The finding remains relevant when weighing tolerability alongside weight loss.",
+        "Upper respiratory tract infections occurred in both retatrutide and placebo groups.[1] Their occurrence alone does not establish whether treatment caused them."
       ]
     },
     {
@@ -65,7 +65,7 @@ export const story = {
     },
     {
       "q": "What is dysesthesia and why does it matter here?",
-      "a": "Dysesthesia describes an abnormal skin sensation, such as tingling, numbness, or a burning feeling. It appeared in 12.5 percent of the 12 mg retatrutide group versus 0.9 percent on placebo. Lilly says most cases were mild to moderate and most resolved during treatment. It is one finding to watch in larger, longer datasets.",
+      "a": "Dysesthesia describes an abnormal skin sensation, such as tingling, numbness, or a burning feeling. Lilly reported it in TRIUMPH-1 and says most cases were mild to moderate and most resolved during treatment. It remains a tolerability finding to follow in larger, longer datasets.",
       "refs": [1]
     },
     {

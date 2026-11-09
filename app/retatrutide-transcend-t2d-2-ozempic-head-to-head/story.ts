@@ -5,8 +5,8 @@ export const story: NewsroomStory = {
   "title": "Retatrutide beats Ozempic in the first Phase 3 head-to-head diabetes trial",
   "description": "In 1,298 adults with type 2 diabetes, retatrutide cut A1C by 2.2 points and body weight by about 20% at 80 weeks, against 1.8 points and 9.4% for Ozempic 2 mg. Retatrutide is not approved, and the trial was open-label.",
   "date": "2026-10-30T11:45:00Z",
-  "dateModified": "2026-11-08T20:25:00-05:00",
-  "correction": "Correction, November 8, 2026: Semaglutide's reported A1C reduction was 1.8 percentage points, not 2.2. We corrected the interpretation of the head-to-head comparison and removed an unsupported claim about how far experimental peptides usually progress.",
+  "dateModified": "2026-11-09T09:32:00-05:00",
+  "correction": "Correction, November 9, 2026: We replaced adverse-event and discontinuation percentages with qualitative descriptions because we could not verify the safety observation window and analysis population. We also clarified that the efficacy estimand describes efficacy outcomes. The efficacy results are unchanged. Correction, November 8, 2026: Semaglutide's reported A1C reduction was 1.8 percentage points, not 2.2. We corrected the interpretation of the head-to-head comparison and removed an unsupported claim about how far experimental peptides usually progress.",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "retatrutideTranscend20261030",
@@ -33,7 +33,7 @@ export const story: NewsroomStory = {
         "A1C fell 2.2 points on both retatrutide doses and 1.8 points on semaglutide, from the same starting average [1]. On body weight, the 9 mg dose produced a 19.5% reduction, or 20.1 kg, and the 12 mg dose 20.9%, or 21.5 kg. Semaglutide produced 9.4%, or 9.5 kg.",
         "Lilly also reports larger reductions in non-HDL cholesterol, triglycerides and systolic blood pressure on retatrutide than on semaglutide [1][4].",
         "Two statistical details sit inside those headline figures. Superiority for the 12 mg dose on A1C was significant at p<0.001 with control for multiple comparisons. Superiority for the 9 mg dose on A1C was nominal: Lilly's own endnote says that comparison was a prespecified secondary endpoint that was not included in the family-wise error control, while its noninferiority did meet that bar [2]. The weight differences for both doses were significant under that control.",
-        "Every number in the release uses the efficacy estimand. That is a hypothetical estimate of what would have happened if every randomised participant had stayed on the treatment they were assigned for the full 80 weeks, allowing for dose interruptions and adjustments and without adding another glucose-lowering medicine [2]. It is not a record of what happened to the people who stopped. Lilly has not published the treatment-regimen version, which describes what happened under the treatment people actually took, including discontinuation, and is the closer analogue to what a clinic sees when patients stop a drug because of nausea."
+        "The A1C and weight results above use the efficacy estimand. That is a hypothetical estimate of what would have happened if every randomised participant had stayed on the treatment they were assigned for the full 80 weeks, allowing for dose interruptions and adjustments and without adding another glucose-lowering medicine [2]. It is not a record of what happened to the people who stopped. Lilly has not published the treatment-regimen version, which describes what happened under the treatment people actually took, including discontinuation, and is the closer analogue to what a clinic sees when patients stop a drug because of nausea."
       ]
     },
     {
@@ -49,9 +49,9 @@ export const story: NewsroomStory = {
       "title": "The trade-off in tolerability",
       "id": "tolerability",
       "paragraphs": [
-        "More participants stopped retatrutide because of adverse events: 4.8% on 9 mg and 7.9% on 12 mg, against 2.7% on semaglutide [1][4].",
-        "The direction of the difference depends on the event and the dose. Diarrhea was higher on both retatrutide doses, at 28.3% and 32.7% against 26.4%, and dysesthesia was higher on both, at 4.8% and 6.5% against 2.7%. Nausea was higher only at 12 mg, at 23.8% against 21.3%, and slightly below semaglutide at 9 mg, at 21.2%. Vomiting was 15.0% at 12 mg against 13.2%, and 10.2% at 9 mg. Constipation was lower on both doses, at 14.2% and 13.1% against 19.8%, and dyspepsia was 10.4% at 9 mg and 8.5% at 12 mg against 11.6%. Urinary tract infections were similar across arms [4].",
-        "The release reports rates, not severity distributions or time to onset, and it does not say how many of those events were serious. Lilly says detailed results will be presented at a medical meeting and published in a peer-reviewed journal. That presentation is where the safety table will be, and it is the document that will matter more than the topline."
+        "Lilly reported that stopping treatment because of adverse events was more common in both retatrutide groups than in the semaglutide group [1]. Tolerability remains part of the trade-off alongside the larger A1C and weight reductions.",
+        "The most common adverse events with retatrutide were gastrointestinal: diarrhea, nausea, constipation, vomiting and dyspepsia, or indigestion. Lilly also reported dysesthesia, an abnormal skin sensation, and urinary tract infections. The company says most of these events were mild to moderate and typically resolved during treatment [1].",
+        "That description does not establish the frequency of serious adverse events. Lilly, which is developing retatrutide, says detailed results will be presented at a medical meeting and published in a peer-reviewed journal [1]. Those results will help readers assess tolerability beyond the topline summary."
       ]
     },
     {
