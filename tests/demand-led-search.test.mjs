@@ -50,7 +50,7 @@ test("TRIUMPH-1 links to each later retatrutide Phase 3 story once", async () =>
     assert.ok(urls.includes(url), `existing link ${url} is kept`);
   }
   // Adding links is not a revision; the November 9 safety correction is (see retatrutide-corrections.test.mjs).
-  assert.equal(story.dateModified, "2026-11-09T09:32:00-05:00");
+  assert.equal(story.dateModified, "2026-11-09T10:18:00-05:00");
   assert.match(story.correction, /^Correction, November 9, 2026: /);
 });
 

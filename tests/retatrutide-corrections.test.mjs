@@ -11,7 +11,7 @@ const output = new URL(".next/server/app/", root);
 const base = "https://peptidedigest.co";
 const baseCommit = "90281dfd40ede0534e30edbbe0ce1d442ff7b542";
 const corrected = "2026-11-08T20:25:00-05:00";
-const safetyCorrected = "2026-11-09T09:32:00-05:00";
+const safetyCorrected = "2026-11-09T10:18:00-05:00";
 const stories = {
   "retatrutide-triumph-1-phase-3-results-2026": { date: "2026-09-28T08:00:00-04:00", image: "retatrutideTriumph", modified: safetyCorrected, note: /^Correction, November 9, 2026: / },
   "retatrutide-transcend-t2d-2-ozempic-head-to-head": { date: "2026-10-30T11:45:00Z", image: "retatrutideTranscend20261030", modified: safetyCorrected, note: /^Correction, November 9, 2026: / },
@@ -338,4 +338,58 @@ test("AUDIT-01 retains qualitative risks and limits estimands to efficacy", asyn
   const draft = structuredClone(b);
   section(draft, "numbers-dose-by-dose").paragraphs[3] = "Every number in the release uses the efficacy estimand.";
   assert.throws(() => assertSafetyNarrowed(a, draft), { code: "ERR_ASSERTION" });
+});
+
+const mechanismUrl = "https://www.nature.com/articles/s41421-024-00700-0";
+const surmountUrl = "https://pubmed.ncbi.nlm.nih.gov/35658024/";
+const assertCitationCorrections = (triumph, transcend) => {
+  const mechanism = section(triumph, "mechanism-difference").paragraphs;
+  for (const phrase of ["Tirzepatide adds GIP.", "In obese mice,"]) {
+    const claim = sentences(mechanism[0]).find(s => s.includes(phrase));
+    assert.ok(claim, phrase);
+    assert.deepEqual(cited(triumph, claim), [mechanismUrl], `${phrase} resolves to the mechanism paper`);
+  }
+  assert.match(mechanism[0], /preclinical finding/);
+  assert.match(mechanism[0], /does not establish how much that mechanism contributes to weight loss in people/);
+  assert.doesNotMatch(mechanism[0], /rather than primarily reducing food intake/);
+  const design = sentences(mechanism[1]).find(s => /SURMOUNT-1/.test(s));
+  assert.match(design, /separate groups of participants/);
+  assert.match(design, /80 and 72 weeks, respectively/);
+  assert.deepEqual(cited(triumph, design), [url.lillyT1, surmountUrl]);
+  assert.equal(triumph.sources.find(s => s.url === mechanismUrl)?.doi, "10.1038/s41421-024-00700-0");
+  assert.equal(triumph.sources.find(s => s.url === surmountUrl)?.doi, "10.1056/NEJMoa2206038");
+  const faq = triumph.faqs.find(f => /28.3%/.test(f.q));
+  assert.match(faq.a, /separate studies with different participants/);
+  assert.match(faq.a, /80 and 72 weeks, respectively/);
+  assert.doesNotMatch(mechanism[1] + faq.a, /different entry criteria|different comparator arms|under different.*study designs/);
+  assert.deepEqual(faqRefs(triumph, faq.q), [url.lillyT1, surmountUrl, url.triumph5]);
+  const estimand = transcend.faqs.find(f => /efficacy estimand/.test(f.q));
+  assert.match(estimand.a, /including discontinuation/);
+  assert.doesNotMatch(estimand.a, /usually|typically|smaller differences|larger differences|will (?:reduce|increase)/i);
+  assert.match(triumph.correction, /mechanism and SURMOUNT-1 citations/);
+  assert.match(transcend.correction, /unsupported generalization in the estimand FAQ/);
+};
+
+test("citation corrections bind mechanism and trial duration claims to the exact appropriate sources", async () => {
+  assertCitationCorrections(await load(T1), await load(T2D2));
+});
+
+test("citation guards reject registry rebinding, unsupported comparisons and estimand direction", async () => {
+  const c = await load(T1), d = await load(T2D2);
+  const cases = [
+    ["mechanism rebound to registry", x => { section(x, "mechanism-difference").paragraphs[0] = section(x, "mechanism-difference").paragraphs[0].replaceAll("[8]", "[2]"); }],
+    ["SURMOUNT rebound to registry", x => { section(x, "mechanism-difference").paragraphs[1] = section(x, "mechanism-difference").paragraphs[1].replace("[9]", "[2]"); }],
+    ["FAQ rebound to registry", x => { x.faqs.find(f => /28.3%/.test(f.q)).refs = [1, 2, 4]; }],
+    ["source URL swapped", x => { x.sources.find(s => s.url === mechanismUrl).url = url.triumph1; }],
+    ["incorrect SURMOUNT DOI", x => { x.sources.find(s => s.url === surmountUrl).doi = "10.1056/NEJMoa2604169"; }],
+    ["different eligibility restored", x => { section(x, "mechanism-difference").paragraphs[1] += " They had different entry criteria."; }],
+    ["exclusive food intake contrast", x => { section(x, "mechanism-difference").paragraphs[0] += " This acts rather than primarily reducing food intake."; }],
+  ];
+  for (const [label, mutate] of cases) {
+    const draft = structuredClone(c); mutate(draft);
+    assert.throws(() => assertCitationCorrections(draft, d), { code: "ERR_ASSERTION" }, label);
+  }
+  const draft = structuredClone(d);
+  draft.faqs.find(f => /efficacy estimand/.test(f.q)).a += " It usually produces smaller differences.";
+  assert.throws(() => assertCitationCorrections(c, draft), { code: "ERR_ASSERTION" }, "unsupported estimand direction");
 });

@@ -5,8 +5,8 @@ export const story: NewsroomStory = {
   "title": "Retatrutide beats Ozempic in the first Phase 3 head-to-head diabetes trial",
   "description": "In 1,298 adults with type 2 diabetes, retatrutide cut A1C by 2.2 points and body weight by about 20% at 80 weeks, against 1.8 points and 9.4% for Ozempic 2 mg. Retatrutide is not approved, and the trial was open-label.",
   "date": "2026-10-30T11:45:00Z",
-  "dateModified": "2026-11-09T09:32:00-05:00",
-  "correction": "Correction, November 9, 2026: We replaced adverse-event and discontinuation percentages with qualitative descriptions because we could not verify the safety observation window and analysis population. We also clarified that the efficacy estimand describes efficacy outcomes. The efficacy results are unchanged. Correction, November 8, 2026: Semaglutide's reported A1C reduction was 1.8 percentage points, not 2.2. We corrected the interpretation of the head-to-head comparison and removed an unsupported claim about how far experimental peptides usually progress.",
+  "dateModified": "2026-11-09T10:18:00-05:00",
+  "correction": "Correction, November 9, 2026: We replaced adverse-event and discontinuation percentages with qualitative descriptions because we could not verify the safety observation window and analysis population. We also clarified that the efficacy estimand describes efficacy outcomes. We removed an unsupported generalization in the estimand FAQ about the direction of treatment-regimen results. The efficacy results are unchanged. Correction, November 8, 2026: Semaglutide's reported A1C reduction was 1.8 percentage points, not 2.2. We corrected the interpretation of the head-to-head comparison and removed an unsupported claim about how far experimental peptides usually progress.",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "retatrutideTranscend20261030",
@@ -94,7 +94,7 @@ export const story: NewsroomStory = {
     },
     {
       "q": "What does the efficacy estimand mean in these results?",
-      "a": "It estimates what would have happened if every randomised participant had remained on their assigned treatment for the full 80 weeks without adding another glucose-lowering medicine. It is a hypothetical estimate, not a record of what happened after people discontinued. A treatment-regimen analysis instead reflects the treatment people actually took, including discontinuation, and usually produces smaller differences. Lilly published efficacy-estimand figures in the topline release.",
+      "a": "It estimates what would have happened if every randomised participant had remained on their assigned treatment for the full 80 weeks without adding another glucose-lowering medicine. It is a hypothetical estimate, not a record of what happened after people discontinued. A treatment-regimen analysis instead reflects the treatment people actually took, including discontinuation. Lilly published efficacy-estimand figures in the topline release.",
       "refs": [2, 3]
     },
     {
