@@ -49,7 +49,9 @@ test("TRIUMPH-1 links to each later retatrutide Phase 3 story once", async () =>
   for (const url of ["/enicepatide-phase-2-diabetes-results-september-2026", "/what-does-research-use-only-mean"]) {
     assert.ok(urls.includes(url), `existing link ${url} is kept`);
   }
-  assert.equal(story.dateModified, undefined);
+  // Adding links is not a revision; the November 8 factual correction is (see retatrutide-corrections.test.mjs).
+  assert.equal(story.dateModified, "2026-11-08T20:25:00-05:00");
+  assert.match(story.correction, /^Correction and update, November 8, 2026: /);
 });
 
 test("retatrutide related reading resolves to existing routes without excluded names", async () => {

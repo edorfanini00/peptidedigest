@@ -5,6 +5,8 @@ export const story: NewsroomStory = {
   "title": "Retatrutide beats Ozempic in the first Phase 3 head-to-head diabetes trial",
   "description": "In 1,298 adults with type 2 diabetes, retatrutide cut A1C by 2.2 points and body weight by about 20% at 80 weeks, against 1.8 points and 9.4% for Ozempic 2 mg. Retatrutide is not approved, and the trial was open-label.",
   "date": "2026-10-30T11:45:00Z",
+  "dateModified": "2026-11-08T20:25:00-05:00",
+  "correction": "Correction, November 8, 2026: Semaglutide's reported A1C reduction was 1.8 percentage points, not 2.2. We corrected the interpretation of the head-to-head comparison and removed an unsupported claim about how far experimental peptides usually progress.",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "retatrutideTranscend20261030",
@@ -39,7 +41,7 @@ export const story: NewsroomStory = {
       "id": "a1c-difference",
       "paragraphs": [
         "An A1C of 6.5% is the usual threshold for diagnosing diabetes. Both arms in this trial started at an average of 8.3%. Subtracting the reported group means puts the retatrutide arms near 6.1% and the semaglutide arm near 6.5%. That is arithmetic on averages, not a forecast for any individual patient, whose starting point and response will differ.",
-        "The 0.4-point gap is smaller than the 2.2-point fall either drug produced. Most of the benefit available from this class of medicine was already delivered by the comparator, which is what a head-to-head trial is designed to reveal: not whether a drug works, but what a newer one adds to an effective one.",
+        "The reported efficacy-estimand A1C reductions were 2.2 percentage points in both retatrutide groups and 1.8 percentage points with semaglutide. This direct comparison measures the additional effect against an active treatment in the studied diabetes population, rather than the benefit of the drug class as a whole [1][2].",
         "The weight difference is larger in absolute terms: 21.5 kg on the 12 mg arm against 9.5 kg on semaglutide, a gap of about 12 kg on group means. Lilly frames that as more than double, and the percentage figures behind the phrase are 20.9% against 9.4%."
       ]
     },
@@ -75,7 +77,7 @@ export const story: NewsroomStory = {
       "id": "what-to-watch",
       "paragraphs": [
         "Three things will settle the picture. The full TRANSCEND-T2D-2 results, including the treatment-regimen analysis and the complete safety table, when they appear at a conference and in a journal. TRIUMPH-5, because tirzepatide is the drug retatrutide would actually displace in weight management. And the FDA review itself, which decides whether any of this becomes a label rather than a press release.",
-        "The result that landed this week is a genuine step: the first time a Phase 3 trial has put a triple agonist against an approved incretin and measured the difference at 80 weeks. What it has not done is make the drug available, and the distance between an 80-week readout and a pharmacy shelf is where most experimental peptides stop."
+        "The result that landed this week is a genuine step: the first time a Phase 3 trial has put a triple agonist against an approved incretin and measured the difference at 80 weeks. What it has not done is make the drug available."
       ]
     }
   ],
