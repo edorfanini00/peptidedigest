@@ -97,6 +97,18 @@ export const story = {
   "notice": "Retatrutide is an investigational compound not approved for any use. IQON Labs offers a separate research use only catalog; the catalog is not connected to Lilly's clinical trials.",
   "related": [
     {
+      "url": "/retatrutide-sleep-apnea-triumph-osa-results",
+      "title": "Retatrutide reduced sleep apnea severity in two Phase 3 trials"
+    },
+    {
+      "url": "/retatrutide-transcend-t2d-2-ozempic-head-to-head",
+      "title": "Retatrutide beats Ozempic in the first Phase 3 head-to-head diabetes trial"
+    },
+    {
+      "url": "/retatrutide-knee-osteoarthritis-triumph-4-results",
+      "title": "Retatrutide eased knee osteoarthritis pain in TRIUMPH 4"
+    },
+    {
       "url": "/enicepatide-phase-2-diabetes-results-september-2026",
       "title": "Roche reports Phase 2 enicepatide results in adults with type 2 diabetes"
     },
