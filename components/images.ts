@@ -15,6 +15,29 @@ export interface EditorialImage {
 }
 
 export const images = {
+  argenxUNP20261109: {
+  "src": "/images/argenx-unp-discovery-20261109.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Ivory Y-shaped ceramic teaching prop beside a terracotta bead ring on a sunlit wooden desk",
+  "caption": "AI-generated conceptual editorial illustration of antibody and peptide teaching props, not an argenx or UNP facility or validated molecular structures.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  retatrutideOverview20261109: {
+  "src": "/images/retatrutide-overview-20261109.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Three notched wooden teaching blocks in sage, blue and terracotta beside a pale beaded strand",
+  "caption": "AI-generated conceptual editorial illustration of three receptor teaching props, not actual receptor or retatrutide structures or a clinical trial scene.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+
   rapidPeptideMapping20261107: {
   "src": "/images/rapid-peptide-mapping-20261107.webp",
   "width": 1600,

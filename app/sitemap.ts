@@ -7,6 +7,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/argenx-unnatural-products-peptide-discovery-deal`,
+      lastModified: new Date("2026-11-09T08:00:00-05:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/what-is-retatrutide`,
+      lastModified: new Date("2026-11-09T08:00:00-05:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+
+    {
       url: `${base}/peptide-coatings-co2-responsive-gold-hydrogels`,
       lastModified: new Date("2026-11-08T14:05:22Z"),
       changeFrequency: "weekly",
@@ -100,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://peptidedigest.co/retatrutide-transcend-t2d-2-ozempic-head-to-head",
-      lastModified: new Date("2026-11-08T20:25:00-05:00"),
+      lastModified: new Date("2026-11-09T10:18:00-05:00"),
       changeFrequency: "weekly",
       priority: 0.85,
     },
@@ -400,7 +413,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/retatrutide-triumph-1-phase-3-results-2026`,
-      lastModified: new Date("2026-11-08T20:25:00-05:00"),
+      lastModified: new Date("2026-11-09T10:18:00-05:00"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
@@ -472,7 +485,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-08T14:05:22Z"),
+      lastModified: new Date("2026-11-09T08:00:00-05:00"),
       changeFrequency: "daily",
       priority: 1,
     },

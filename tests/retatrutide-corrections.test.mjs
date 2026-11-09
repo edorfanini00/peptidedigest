@@ -1,4 +1,4 @@
-// Source-level checks for the November 8, 2026 retatrutide corrections.
+// Source-level checks for the November 8 and 9, 2026 retatrutide corrections.
 // Built-output checks (schema, visible note, sitemap XML) run after npm run build.
 import test from "node:test";
 import assert from "node:assert/strict";
@@ -11,9 +11,10 @@ const output = new URL(".next/server/app/", root);
 const base = "https://peptidedigest.co";
 const baseCommit = "90281dfd40ede0534e30edbbe0ce1d442ff7b542";
 const corrected = "2026-11-08T20:25:00-05:00";
+const safetyCorrected = "2026-11-09T10:18:00-05:00";
 const stories = {
-  "retatrutide-triumph-1-phase-3-results-2026": { date: "2026-09-28T08:00:00-04:00", image: "retatrutideTriumph", note: /^Correction and update, November 8, 2026: / },
-  "retatrutide-transcend-t2d-2-ozempic-head-to-head": { date: "2026-10-30T11:45:00Z", image: "retatrutideTranscend20261030", note: /^Correction, November 8, 2026: / },
+  "retatrutide-triumph-1-phase-3-results-2026": { date: "2026-09-28T08:00:00-04:00", image: "retatrutideTriumph", modified: safetyCorrected, note: /^Correction, November 9, 2026: / },
+  "retatrutide-transcend-t2d-2-ozempic-head-to-head": { date: "2026-10-30T11:45:00Z", image: "retatrutideTranscend20261030", modified: safetyCorrected, note: /^Correction, November 9, 2026: / },
   "retatrutide-sleep-apnea-triumph-osa-results": { date: "2026-10-29T12:30:00Z", image: "retatrutideOsa20261029", note: /^Correction, November 8, 2026: / },
   "retatrutide-knee-osteoarthritis-triumph-4-results": { date: "2026-11-06T13:09:00Z", image: "retatrutideKnee20261106", note: /^Update, November 8, 2026: / },
 };
@@ -61,7 +62,8 @@ test("corrected stories keep URL, publication date and image, and carry one genu
     assert.deepEqual(story.vials, before.vials, `${slug}: IQON placements unchanged`);
     assert.equal(story.notice, before.notice);
     assert.equal(story.title, before.title, `${slug}: title intent unchanged`);
-    assert.equal(story.dateModified, corrected);
+    assert.equal(story.dateModified, expected.modified ?? corrected);
+    assert.ok(Date.parse(story.dateModified) <= Date.now(), "revision is in the past");
     assert.ok(Date.parse(story.dateModified) > Date.parse(story.date), `${slug}: revision follows publication`);
     assert.match(story.correction, expected.note);
     assert.deepEqual(story.related, before.related, `${slug}: related reading unchanged`);
@@ -70,17 +72,61 @@ test("corrected stories keep URL, publication date and image, and carry one genu
   }
 });
 
-test("sitemap revises only the four corrected stories", () => {
-  const entries = source => Object.fromEntries([...source.matchAll(/url: (?:`\$\{base\}|")(?:https:\/\/peptidedigest\.co)?\/?([^`"]*)[`"],\s*lastModified: new Date\("([^"]+)"\)/g)].map(([, path, date]) => [path, date]));
-  const now = entries(fs.readFileSync(new URL("app/sitemap.ts", root), "utf8"));
-  const before = entries(execFileSync("git", ["show", `${baseCommit}:app/sitemap.ts`], { cwd: root, encoding: "utf8" }));
-  assert.deepEqual(Object.keys(now).sort(), Object.keys(before).sort(), "same sitemap routes");
-  assert.ok(Object.keys(now).length > 50);
+const additions = ["argenx-unnatural-products-peptide-discovery-deal", "what-is-retatrutide"];
+const published = "2026-11-09T13:00:00.000Z";
+
+// Evaluate the real sitemap so the homepage and string-valued dates are covered too.
+const sitemapEntries = async source => {
+  const sitemap = (await import(`data:text/javascript;base64,${Buffer.from(transpile(source)).toString("base64")}`)).default();
+  const entries = sitemap.map(({ url, lastModified }) => {
+    assert.ok(url === base || url.startsWith(`${base}/`), `canonical sitemap URL: ${url}`);
+    assert.ok(lastModified instanceof Date || typeof lastModified === "string", `${url}: date present`);
+    return [url.slice(base.length).replace(/^\//, ""), new Date(lastModified).toISOString()];
+  });
+  assert.equal(new Set(entries.map(([path]) => path)).size, entries.length, "no duplicate sitemap routes");
+  return Object.fromEntries(entries);
+};
+const sitemapSnapshots = async () => ({
+  now: await sitemapEntries(fs.readFileSync(new URL("app/sitemap.ts", root), "utf8")),
+  before: await sitemapEntries(execFileSync("git", ["show", `${baseCommit}:app/sitemap.ts`], { cwd: root, encoding: "utf8" })),
+});
+const assertSitemapPreserved = (now, before) => {
+  assert.equal(Object.keys(before).length, 84, "complete historical sitemap baseline");
+  assert.deepEqual(Object.keys(now).filter(path => !additions.includes(path)).sort(), Object.keys(before).sort(), "all historical sitemap routes preserved");
+  assert.deepEqual(Object.keys(now).filter(path => !Object.hasOwn(before, path)).sort(), [...additions].sort(), "only authorized new routes");
+  for (const path of additions) assert.equal(now[path], published, `${path}: publication date`);
   for (const [path, date] of Object.entries(now)) {
-    if (slugs.includes(path)) assert.equal(date, corrected, path);
+    if (additions.includes(path) || path === "") assert.equal(date, published, `${path || "/"}: November 9 publication`);
+    else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
     else assert.equal(date, before[path], `${path || "/"}: untouched date`);
   }
-  assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T10:00:12-04:00");
+  assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T14:00:12.000Z");
+};
+
+test("sitemap preserves historical corrections and permits only the November 9 additions and homepage date", async () => {
+  const { now, before } = await sitemapSnapshots();
+  assertSitemapPreserved(now, before);
+});
+
+test("sitemap guard rejects missing routes, unauthorized additions and changed dates", async () => {
+  const { now, before } = await sitemapSnapshots();
+  assertSitemapPreserved(now, before);
+  const cases = [
+    ["missing historical route", draft => { delete draft["what-is-amylin-amylin-analogs-vs-glp-1"]; }],
+    ["changed historical date", draft => { draft["what-is-amylin-amylin-analogs-vs-glp-1"] = published; }],
+    ["changed historical string date", draft => { draft["how-to-read-peptide-coa"] = published; }],
+    ["extra unknown route", draft => { draft["synthetic-unauthorized-route"] = published; }],
+    ["missing authorized addition", draft => { delete draft[additions[0]]; }],
+    ["changed addition date", draft => { draft[additions[1]] = before[""]; }],
+    ["missing homepage", draft => { delete draft[""]; }],
+    ["changed homepage date", draft => { draft[""] = before[""]; }],
+    ["changed correction date", draft => { draft[T1] = published; }],
+  ];
+  for (const [name, mutate] of cases) {
+    const draft = { ...now };
+    mutate(draft);
+    assert.throws(() => assertSitemapPreserved(draft, before), { code: "ERR_ASSERTION" }, name);
+  }
 });
 
 test("TRIUMPH-1 labels each analysis with the estimand its source uses", async () => {
@@ -215,7 +261,7 @@ test("knee story drops expired future framing without asserting the session happ
 test("corrections leave untouched passages byte-identical to the base", async () => {
   const changed = {
     [T1]: new Set(["what-the-doses-produced", "adverse-events", "mechanism-difference", "what-this-establishes"]),
-    [T2D2]: new Set(["a1c-difference", "what-to-watch"]),
+    [T2D2]: new Set(["a1c-difference", "what-to-watch", "numbers-dose-by-dose", "tolerability"]),
     [OSA]: new Set(["what-they-found", "two-answers"]),
     [KNEE]: new Set(["next-presentation"]),
   };
@@ -234,16 +280,18 @@ const decode = s => s.replace(/<!-- -->/g, "").replace(/<[^>]+>/g, "").replace(/
 test("built pages render the dated note, revision time and matching schema", { skip: !fs.existsSync(output) && "run npm run build first" }, async () => {
   for (const slug of slugs) {
     const [story, html] = [await load(slug), built(slug)];
+    const modified = stories[slug].modified ?? corrected;
+    const revisionDay = stories[slug].modified ? 9 : 8;
     const article = graph(html).find(n => n["@id"] === `${base}/${slug}#article`);
     assert.equal(article.datePublished, stories[slug].date);
-    assert.equal(article.dateModified, corrected);
+    assert.equal(article.dateModified, modified);
     assert.equal(article.headline, story.title);
     assert.deepEqual(article.citation, story.sources.map(s => s.url));
     assert.match(html, new RegExp(`<meta property="article:published_time" content="${stories[slug].date}"`));
-    assert.match(html, new RegExp(`<meta property="article:modified_time" content="${corrected}"`));
+    assert.match(html, new RegExp(`<meta property="article:modified_time" content="${modified}"`));
     const notes = [...html.matchAll(/<p data-correction-note[^>]*>([\s\S]*?)<\/p>/g)].map(([, t]) => decode(t));
     assert.deepEqual(notes, [story.correction], `${slug}: one visible note`);
-    assert.match(html, new RegExp(`Revised <time dateTime="${corrected}">November 8, 2026</time>`));
+    assert.match(html, new RegExp(`Revised <time dateTime="${modified}">November ${revisionDay}, 2026</time>`));
     const faq = graph(html).find(n => n["@type"] === "FAQPage");
     const visible = [...html.matchAll(/<h3 id="question-\d+">([\s\S]*?)<\/h3><p data-faq-answer="[^"]*">([\s\S]*?)<\/p>/g)].map(([, q, a]) => [decode(q), decode(a)]);
     assert.deepEqual(visible, story.faqs.map(f => [f.q, f.a]), `${slug}: visible FAQ`);
@@ -253,8 +301,95 @@ test("built pages render the dated note, revision time and matching schema", { s
     assert.deepEqual(canonical, [`${base}/${slug}`]);
   }
   const sitemap = fs.readFileSync(new URL("sitemap.xml.body", output), "utf8");
-  for (const slug of slugs) assert.match(sitemap, new RegExp(`<loc>${base}/${slug}</loc>\\s*<lastmod>2026-11-09T01:25:00.000Z</lastmod>`));
+  for (const slug of slugs) assert.match(sitemap, new RegExp(`<loc>${base}/${slug}</loc>\\s*<lastmod>${new Date(stories[slug].modified ?? corrected).toISOString()}</lastmod>`));
   const amylin = built("what-is-amylin-amylin-analogs-vs-glp-1");
   assert.doesNotMatch(amylin, /data-correction-note|Revised <time/);
   assert.equal(graph(amylin).find(n => n.datePublished).dateModified, "2026-10-08T10:00:12-04:00");
+});
+
+const assertSafetyNarrowed = (triumph, transcend) => {
+  const safety = [
+    ...section(triumph, "adverse-events").paragraphs,
+    triumph.faqs.find(f => /dysesthesia/.test(f.q)).a,
+    ...section(transcend, "tolerability").paragraphs,
+  ].join("\n");
+  assert.doesNotMatch(safety, /\d+(?:\.\d+)?\s*(?:%|percent)/i, "no safety rates without verified interval and population");
+  assert.doesNotMatch(safety, /background rather than a drug effect/i, "no unsupported infection attribution");
+  assert.doesNotMatch(allText(transcend), /Every number in the release uses the efficacy estimand/);
+  assert.match(section(transcend, "tolerability").paragraphs[0], /more common in both retatrutide groups than in the semaglutide group/, "comparative discontinuation signal retained");
+  for (const risk of ["nausea", "diarrhea", "constipation", "vomiting", "dysesthesia", "infections", "stopped treatment"])
+    assert.match(safety, new RegExp(risk, "i"), `clinically meaningful risk remains: ${risk}`);
+};
+
+test("AUDIT-01 retains qualitative risks and limits estimands to efficacy", async () => {
+  const a = await load(T1), b = await load(T2D2);
+  assertSafetyNarrowed(a, b);
+  for (const mutate of [
+    x => { section(x, "adverse-events").paragraphs[0] += " Nausea occurred in 42.4 percent."; },
+    x => { x.faqs.find(f => /dysesthesia/.test(f.q)).a += " It occurred in 12.5%."; },
+    x => { section(x, "adverse-events").paragraphs[2] += " This is background rather than a drug effect."; },
+  ]) {
+    const draft = structuredClone(a); mutate(draft);
+    assert.throws(() => assertSafetyNarrowed(draft, b), { code: "ERR_ASSERTION" });
+  }
+  const softened = structuredClone(b);
+  section(softened, "tolerability").paragraphs[0] = "Adverse events led participants to stop in both groups.";
+  assert.throws(() => assertSafetyNarrowed(a, softened), { code: "ERR_ASSERTION" });
+  const draft = structuredClone(b);
+  section(draft, "numbers-dose-by-dose").paragraphs[3] = "Every number in the release uses the efficacy estimand.";
+  assert.throws(() => assertSafetyNarrowed(a, draft), { code: "ERR_ASSERTION" });
+});
+
+const mechanismUrl = "https://www.nature.com/articles/s41421-024-00700-0";
+const surmountUrl = "https://pubmed.ncbi.nlm.nih.gov/35658024/";
+const assertCitationCorrections = (triumph, transcend) => {
+  const mechanism = section(triumph, "mechanism-difference").paragraphs;
+  for (const phrase of ["Tirzepatide adds GIP.", "In obese mice,"]) {
+    const claim = sentences(mechanism[0]).find(s => s.includes(phrase));
+    assert.ok(claim, phrase);
+    assert.deepEqual(cited(triumph, claim), [mechanismUrl], `${phrase} resolves to the mechanism paper`);
+  }
+  assert.match(mechanism[0], /preclinical finding/);
+  assert.match(mechanism[0], /does not establish how much that mechanism contributes to weight loss in people/);
+  assert.doesNotMatch(mechanism[0], /rather than primarily reducing food intake/);
+  const design = sentences(mechanism[1]).find(s => /SURMOUNT-1/.test(s));
+  assert.match(design, /separate groups of participants/);
+  assert.match(design, /80 and 72 weeks, respectively/);
+  assert.deepEqual(cited(triumph, design), [url.lillyT1, surmountUrl]);
+  assert.equal(triumph.sources.find(s => s.url === mechanismUrl)?.doi, "10.1038/s41421-024-00700-0");
+  assert.equal(triumph.sources.find(s => s.url === surmountUrl)?.doi, "10.1056/NEJMoa2206038");
+  const faq = triumph.faqs.find(f => /28.3%/.test(f.q));
+  assert.match(faq.a, /separate studies with different participants/);
+  assert.match(faq.a, /80 and 72 weeks, respectively/);
+  assert.doesNotMatch(mechanism[1] + faq.a, /different entry criteria|different comparator arms|under different.*study designs/);
+  assert.deepEqual(faqRefs(triumph, faq.q), [url.lillyT1, surmountUrl, url.triumph5]);
+  const estimand = transcend.faqs.find(f => /efficacy estimand/.test(f.q));
+  assert.match(estimand.a, /including discontinuation/);
+  assert.doesNotMatch(estimand.a, /usually|typically|smaller differences|larger differences|will (?:reduce|increase)/i);
+  assert.match(triumph.correction, /mechanism and SURMOUNT-1 citations/);
+  assert.match(transcend.correction, /unsupported generalization in the estimand FAQ/);
+};
+
+test("citation corrections bind mechanism and trial duration claims to the exact appropriate sources", async () => {
+  assertCitationCorrections(await load(T1), await load(T2D2));
+});
+
+test("citation guards reject registry rebinding, unsupported comparisons and estimand direction", async () => {
+  const c = await load(T1), d = await load(T2D2);
+  const cases = [
+    ["mechanism rebound to registry", x => { section(x, "mechanism-difference").paragraphs[0] = section(x, "mechanism-difference").paragraphs[0].replaceAll("[8]", "[2]"); }],
+    ["SURMOUNT rebound to registry", x => { section(x, "mechanism-difference").paragraphs[1] = section(x, "mechanism-difference").paragraphs[1].replace("[9]", "[2]"); }],
+    ["FAQ rebound to registry", x => { x.faqs.find(f => /28.3%/.test(f.q)).refs = [1, 2, 4]; }],
+    ["source URL swapped", x => { x.sources.find(s => s.url === mechanismUrl).url = url.triumph1; }],
+    ["incorrect SURMOUNT DOI", x => { x.sources.find(s => s.url === surmountUrl).doi = "10.1056/NEJMoa2604169"; }],
+    ["different eligibility restored", x => { section(x, "mechanism-difference").paragraphs[1] += " They had different entry criteria."; }],
+    ["exclusive food intake contrast", x => { section(x, "mechanism-difference").paragraphs[0] += " This acts rather than primarily reducing food intake."; }],
+  ];
+  for (const [label, mutate] of cases) {
+    const draft = structuredClone(c); mutate(draft);
+    assert.throws(() => assertCitationCorrections(draft, d), { code: "ERR_ASSERTION" }, label);
+  }
+  const draft = structuredClone(d);
+  draft.faqs.find(f => /efficacy estimand/.test(f.q)).a += " It usually produces smaller differences.";
+  assert.throws(() => assertCitationCorrections(c, draft), { code: "ERR_ASSERTION" }, "unsupported estimand direction");
 });
