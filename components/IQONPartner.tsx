@@ -93,6 +93,33 @@ export function IQONPartner({ vial }: { vial: IQONVial }) {
   );
 }
 
+/**
+ * Compact store offer above the calculator inputs. Only the "Shop IQON Health" text is a
+ * link, so the module stays short and never competes with Calculate; the global
+ * iqon_shop_click listener in layout.tsx tracks it without a local handler.
+ */
+export function IQONCalculatorOffer() {
+  return (
+    <aside
+      aria-label="IQON Health offer"
+      className="not-prose mb-4 flex flex-wrap items-center gap-x-3 rounded-2xl border border-[color:var(--color-rule)] bg-white px-4 py-2 sm:mb-5 sm:gap-x-4 sm:px-5"
+    >
+      <p className="basis-full text-[15px] font-bold leading-snug text-[color:var(--color-ink)] sm:basis-auto">
+        IQON Labs: {IQON_OFFER.headlineLead} <span className="whitespace-nowrap text-[color:var(--color-accent)]">{IQON_OFFER.headlineAccent}</span>
+      </p>
+      <p className="min-w-0 flex-1 text-xs leading-snug text-[color:var(--color-muted)] sm:text-[13px]">{IQON_OFFER.stickyNoCode}</p>
+      <a
+        href={IQON_OFFER.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full bg-[color:var(--color-ink)] px-3.5 text-[13px] font-bold text-white no-underline transition-colors hover:bg-[color:var(--color-accent)] focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-[color:var(--color-accent)] sm:px-4 sm:text-sm"
+      >
+        Shop IQON Health <span aria-hidden="true">↗</span>
+      </a>
+    </aside>
+  );
+}
+
 /** Slim sticky bottom bar on phones, the highest-visibility spot on mobile. */
 export function IQONStickyBar() {
   return (

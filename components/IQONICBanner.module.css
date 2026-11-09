@@ -1,16 +1,8 @@
-.banner { margin: 0 0 1.25rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; border: 1px solid #d9ccba; border-radius: 16px; padding: 1rem 1.25rem; background: #f0e6d8; }
-.icon { flex-shrink: 0; width: 52px; height: 52px; border-radius: 13px; }
-.copy { min-width: 0; flex: 1 1 6rem; }
-.brand { font-size: .95rem; font-weight: 750; letter-spacing: .06em; color: var(--color-ink); }
-.copy > p:last-child { font-size: .85rem; line-height: 1.4; color: #625647; margin-top: .15rem; }
-.banner a { max-width: 100%; display: flex; align-items: center; justify-content: center; gap: .5rem; background: var(--color-accent); color: #fff; min-height: 44px; padding: .65rem 1rem; border-radius: 10px; font-size: .85rem; font-weight: 650; text-decoration: none; }
-.banner a:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 4px; }
-.banner a:hover { background: #7b2117; }
-@media (max-width: 700px) {
-  .banner { padding: .85rem .75rem; gap: .65rem; margin-bottom: 1rem; }
-  .icon { width: 44px; height: 44px; border-radius: 11px; }
-  .brand { font-size: .8rem; }
-  .copy > p:last-child { font-size: .75rem; }
-  .banner a { font-size: .75rem; padding-inline: .7rem; gap: .3rem; }
-}
-@media (max-width: 340px) { .banner a { width: 100%; } }
+/* Secondary app row below the calculator workspace: a text link, not a competing button. */
+.banner { margin: 1rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .75rem; padding: 0 .5rem; }
+.icon { flex-shrink: 0; width: 28px; height: 28px; border-radius: 7px; }
+.copy { min-width: 0; flex: 1 1 9rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .4rem; font-size: .8rem; line-height: 1.4; color: var(--color-muted); }
+.brand { font-weight: 700; letter-spacing: .04em; color: var(--color-ink); }
+.banner a { display: inline-flex; align-items: center; gap: .3rem; min-height: 44px; color: var(--color-accent); font-size: .85rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.banner a:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; border-radius: 4px; }
+.banner a:hover { color: #7b2117; }

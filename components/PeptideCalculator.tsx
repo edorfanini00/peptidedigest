@@ -4,6 +4,7 @@ import { useRef, useState, useSyncExternalStore } from "react";
 import { calculateSolution, calculateSupply, convertTarget, formatSolutionResults, solutionFields, type SolutionField, type TargetUnit } from "@/lib/peptide-math";
 import styles from "./PeptideCalculator.module.css";
 import { IQONICBanner } from "./IQONICBanner";
+import { IQONCalculatorOffer } from "./IQONPartner";
 
 const equationResult = (value: string) => value.startsWith("≈") ? value : `= ${value}`;
 const empty = { mass: "", volume: "", portion: "" };
@@ -71,7 +72,7 @@ export function PeptideCalculator() {
       <h1 id="calculator-heading">Peptide calculator</h1>
       <p>Convert your amount to <strong>U-100 units</strong> and mL.</p>
     </div>
-    <IQONICBanner />
+    <IQONCalculatorOffer />
     <div className={styles.workspace}>
       <form className={styles.controls} onSubmit={event => { event.preventDefault(); calculate(); }} aria-label="Solution calculator" aria-describedby="lab-purpose">
         <button type="button" className={styles.clear} onClick={reset}>Clear all</button>
@@ -151,6 +152,7 @@ export function PeptideCalculator() {
         </details>}
       </div>
     </div>
+    <IQONICBanner />
     <details className={styles.supply} open={supplyOpen} onToggle={event => setSupplyOpen(event.currentTarget.open)}>
       <summary><span>Plan a laboratory supply</span><span className={styles.optional}>Optional</span></summary>
       <div className={styles.supplyContent}>

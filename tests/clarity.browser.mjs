@@ -23,22 +23,38 @@ try {
     await page.setViewportSize({ width, height });
     await page.goto(`${base}/peptide-calculator`, { waitUntil: 'networkidle' });
     await top();
+    // Commercial hierarchy: the compact store offer sits above the inputs; the
+    // existing app CTA is a secondary text row after the calculator workspace.
+    const store = page.locator('aside[aria-label="IQON Health offer"]');
+    const shop = store.getByRole('link', { name: 'Shop IQON Health', exact: true });
     const banner = page.locator('aside[aria-label="IQONIC app"]');
     const link = banner.getByRole('link');
-    const inputBox = await field('mass').boundingBox(), bannerBox = await banner.boundingBox(), linkBox = await link.boundingBox();
+    eq(await store.count(), 1, 'one compact store offer');
     eq(await banner.count(), 1, 'one app banner');
-    ok(bannerBox.y > 56 && bannerBox.y + bannerBox.height < inputBox.y, `app banner above inputs at ${width}`);
+    eq(await shop.getAttribute('href'), 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20', 'exact static store URL');
+    const inputBox = await field('mass').boundingBox(), storeBox = await store.boundingBox(), shopBox = await shop.boundingBox(), bannerBox = await banner.boundingBox();
+    const workspaceBottom = await page.locator('[data-calculator] form, [data-results]').evaluateAll(nodes => Math.max(...nodes.map(n => n.getBoundingClientRect().bottom)));
+    const supplyBox = await page.locator('[data-calculator] > details').boundingBox();
+    ok(storeBox.y > 56 && storeBox.y + storeBox.height < inputBox.y, `store offer above inputs at ${width}`);
+    ok(storeBox.height <= (width === 1440 ? 72 : 90), `store offer stays compact at ${width}`);
+    ok(bannerBox.y >= workspaceBottom && bannerBox.y + bannerBox.height <= supplyBox.y, `app row after workspace, before optional supply at ${width}`);
     ok(inputBox.y <= 450 && inputBox.y + inputBox.height < height - 76, `first input useful at ${width}`);
-    ok(linkBox.y + linkBox.height < height - 76, `fully visible app CTA at ${width}`);
+    ok(shopBox.y + shopBox.height < height - 76, `fully visible store CTA at ${width}`);
+    const fills = await page.evaluate(() => ['aside[aria-label="IQON Health offer"] a', 'aside[aria-label="IQONIC app"] a'].map(s => getComputedStyle(document.querySelector(s)).backgroundColor));
+    ok(fills[0] !== 'rgba(0, 0, 0, 0)' && fills[1] === 'rgba(0, 0, 0, 0)', 'store CTA is a button; app CTA is an unfilled text link');
     const calculateButton = page.getByRole('button', { name: 'Calculate units', exact: true });
     const calculateBox = await calculateButton.boundingBox();
     if (width !== 1440) {
       ok(calculateBox.y + calculateBox.height < height - 61, `Calculate fully above sticky offer initially at ${width}`);
       ok(await calculateButton.evaluate(n => { const r = n.getBoundingClientRect(); return n.contains(document.elementFromPoint(r.x + r.width / 2, r.bottom - 2)); }), 'Calculate bottom hit test');
     }
-    for (const element of [link, field('mass')]) ok(await element.evaluate(n => { const r = n.getBoundingClientRect(); return n.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)); }), 'first-fold hit test');
-    await banner.locator('img').evaluate(n => n.decode());
+    for (const element of [shop, field('mass')]) ok(await element.evaluate(n => { const r = n.getBoundingClientRect(); return n.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)); }), 'first-fold hit test');
+    await banner.evaluate(n => window.scrollTo(0, n.getBoundingClientRect().top + scrollY - 200));
+    await banner.locator('img').evaluate(n => Promise.race([n.decode(), new Promise((_, reject) => setTimeout(() => reject(new Error('Icon decode timed out')), 10000))]));
     ok(await banner.locator('img').evaluate(n => n.naturalWidth > 0), 'real brand icon loaded');
+    ok(await link.evaluate(n => { const r = n.getBoundingClientRect(); return n.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)); }), `secondary app CTA hit test at ${width}`);
+    await screenshot(`app-secondary-${width}`);
+    await top();
     eq(await page.locator('[data-result]').count(), 0, 'default empty');
     eq(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, 'no horizontal clipping');
     await screenshot(`empty-${width}`);
@@ -48,7 +64,7 @@ try {
     await page.getByRole('button', { name: 'Calculate units', exact: true }).click();
     ok(await page.locator('[data-results]').evaluate(n => n === document.activeElement), 'Calculate focuses live result');
     await screenshot(`completed-result-${width}`);
-    metrics.push({ width, inputBox, bannerBox, linkBox, calculateBox });
+    metrics.push({ width, inputBox, storeBox, shopBox, bannerBox, workspaceBottom, calculateBox });
   }
   await page.setViewportSize({ width: 390, height: 844 });
   await values('1', '1', '1000'); await text('u100', '100');

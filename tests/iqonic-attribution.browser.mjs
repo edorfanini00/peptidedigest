@@ -110,14 +110,22 @@ try {
     await activate(page, link => link.click(options), count, destination, outcome);
   }
   await page.locator('#native-reference').evaluate(node => node.remove());
-  const shop = page.locator('a[href*="iqonhealth.com/shop"]').first();
-  const shopPopupPromise = context.waitForEvent('page');
-  await shop.click();
-  const shopPopup = await shopPopupPromise;
-  await shopPopup.waitForLoadState();
-  await shopPopup.close();
+  // The compact store CTA uses only the existing global iqon_shop_click listener.
+  const shopHref = 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20';
+  const shop = page.locator('aside[aria-label="IQON Health offer"] a');
+  eq(await shop.getAttribute('href'), shopHref, 'store CTA keeps the exact static URL after private inputs');
+  eq([await shop.getAttribute('target'), await shop.getAttribute('rel')], ['_blank', 'noopener noreferrer'], 'store CTA target/rel');
+  for (const [options, count] of [[{}, 1], [{ modifiers: ['ControlOrMeta'] }, 2]]) {
+    const shopPopupPromise = context.waitForEvent('page');
+    await shop.click(options);
+    const shopPopup = await shopPopupPromise;
+    await shopPopup.waitForLoadState();
+    await shopPopup.close();
+    const shopEvents = await page.evaluate(() => window.__events.filter(event => event[1] === 'iqon_shop_click'));
+    eq(shopEvents.length, count, 'exactly one existing shop event per store activation');
+    eq(shopEvents.at(-1), ['event', 'iqon_shop_click', { event_category: 'outbound', event_label: shopHref, transport_type: 'beacon' }], 'shop event payload has only the static URL');
+  }
   eq(await page.evaluate(() => window.__events.filter(event => event[1] === 'iqonic_banner_click').length), 5, 'shop link does not emit banner event');
-  eq(await page.evaluate(() => window.__events.filter(event => event[1] === 'iqon_shop_click').length), 1, 'existing shop event preserved');
   await page.getByRole('button', { name: 'Clear all', exact: true }).click();
   eq(await page.evaluate(() => window.__events.filter(event => event[1] === 'iqonic_banner_click').length), 5, 'calculator controls do not emit banner events');
 
@@ -170,6 +178,12 @@ try {
   for (const request of providerRequests) {
     eq(request.url, destination, 'outbound provider URL is the exact static allowlist');
     eq(request.referrer, '', 'noreferrer omits source URL and its sensitive query');
+  }
+  const shopRequests = intercepted.filter(request => request.origin === 'https://www.iqonhealth.com');
+  eq(shopRequests.length > 0, true, 'store navigation was intercepted');
+  for (const request of shopRequests) {
+    eq(request.url, 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20', 'store URL carries no calculator inputs or page query');
+    eq(request.referrer, '', 'store noreferrer omits source URL and its sensitive query');
   }
   await fs.writeFile(`${out}/attribution-results.json`, JSON.stringify({ status: 'PASS', checks, intercepted, errors, provider: 'Parent-authorized AppsFlyer route; real first open/dashboard attribution pending' }, null, 2));
   console.log(`PASS ${checks.length} attribution browser assertions; external traffic intercepted or proxy-blocked`);

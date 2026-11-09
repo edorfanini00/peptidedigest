@@ -145,7 +145,9 @@ try {
       await field('mass').focus();
       await page.keyboard.press('Shift+Tab');
     } else await page.keyboard.press('Shift+Tab');
-    const focusables = await page.locator('[data-calculator] button, [data-calculator] input, [data-calculator] select, [data-calculator] summary').evaluateAll(nodes => nodes.filter(n => n.checkVisibility()).map(n => n.id || n.textContent.trim()));
+    // Start at the store link above Clear all so links, including the app row, are in the walk.
+    await page.keyboard.press('Shift+Tab');
+    const focusables = await page.locator('[data-calculator] a, [data-calculator] button, [data-calculator] input, [data-calculator] select, [data-calculator] summary').evaluateAll(nodes => nodes.filter(n => n.checkVisibility()).map(n => n.id || n.textContent.trim()));
     for (let i = 0; i < focusables.length; i++) {
       const actual = await page.evaluate(() => document.activeElement.id || document.activeElement.textContent.trim());
       eq(actual, focusables[i], `DOM Tab order at ${width}`);
@@ -156,7 +158,7 @@ try {
   }
   eq(await page.getByRole('link', { name: /Get IQONIC/ }).getAttribute('href'), 'https://app.appsflyer.com/id6765689488?pid=peptidedigest&c=calculator_banner&af_channel=web&af_ad=iqonic_banner');
   const iqonLinks = await page.locator('a[href*="iqonhealth.com/shop"]').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')));
-  eq(iqonLinks.length, 3); ok(iqonLinks.every(href => href === 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20'));
+  eq(iqonLinks.length, 4, 'calculator store CTA plus two offer cards and sticky bar'); ok(iqonLinks.every(href => href === 'https://www.iqonhealth.com/shop?utm_source=peptidedigest&utm_medium=referral&utm_campaign=bogo20'));
   eq(await page.locator('link[rel=canonical]').count(), 1); eq(await page.locator('link[rel=canonical]').getAttribute('href'), 'https://peptidedigest.co/peptide-calculator');
   eq(await page.locator('h1').count(), 1);
   eq(await page.locator('input').evaluateAll(nodes => nodes.filter(n => !n.labels?.length).length), 0);
