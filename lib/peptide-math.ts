@@ -146,11 +146,20 @@ export function formatSolutionResults(mass: string, volume: string, portionMcg: 
   const concentrationD = m.denominator * v.numerator;
   const volumeN = p.numerator * concentrationD;
   const volumeD = p.denominator * concentrationN * BigInt(1000);
+  const u100N = volumeN * BigInt(100);
+  const aboveU100Scale = u100N > volumeD * BigInt(100);
+  const belowU100Unit = u100N < volumeD;
   return {
     mgPerMl: formatRatio(concentrationN, concentrationD),
     mcgPerMl: formatRatio(concentrationN * BigInt(1000), concentrationD),
     portionMl: formatRatio(volumeN, volumeD),
     portionUl: formatRatio(volumeN * BigInt(1000), volumeD),
+    u100: formatRatio(u100N, volumeD),
+    aboveU100Scale,
+    belowU100Unit,
+    // Geometry only: bound the quotient before converting to Number. Never
+    // divide separately converted BigInts or infer capacity from rounded text.
+    scalePercent: aboveU100Scale || belowU100Unit ? null : Number(u100N * BigInt(1000000) / volumeD) / 1000000,
     portions: formatRatio(m.numerator * BigInt(1000) * p.denominator, m.denominator * p.numerator),
   };
 }
