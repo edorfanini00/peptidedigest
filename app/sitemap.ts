@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/elastin-hydration-water-entropic-elasticity`,
+      lastModified: new Date("2026-11-10T08:18:59-05:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/circular-dichroism-peptide-secondary-structure`,
+      lastModified: new Date("2026-11-10T08:18:59-05:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/argenx-unnatural-products-peptide-discovery-deal`,
       lastModified: new Date("2026-11-09T08:00:00-05:00"),
       changeFrequency: "weekly",
@@ -485,7 +497,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-09T08:00:00-05:00"),
+      lastModified: new Date("2026-11-10T08:18:59-05:00"),
       changeFrequency: "daily",
       priority: 1,
     },

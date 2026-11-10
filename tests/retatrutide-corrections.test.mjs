@@ -74,6 +74,9 @@ test("corrected stories keep URL, publication date and image, and carry one genu
 
 const additions = ["argenx-unnatural-products-peptide-discovery-deal", "what-is-retatrutide"];
 const published = "2026-11-09T13:00:00.000Z";
+const november10Additions = ["elastin-hydration-water-entropic-elasticity", "circular-dichroism-peptide-secondary-structure"];
+const november10Published = new Date("2026-11-10T08:18:59-05:00").toISOString();
+const authorizedAdditions = [...additions, ...november10Additions];
 
 // Evaluate the real sitemap so the homepage and string-valued dates are covered too.
 const sitemapEntries = async source => {
@@ -92,18 +95,20 @@ const sitemapSnapshots = async () => ({
 });
 const assertSitemapPreserved = (now, before) => {
   assert.equal(Object.keys(before).length, 84, "complete historical sitemap baseline");
-  assert.deepEqual(Object.keys(now).filter(path => !additions.includes(path)).sort(), Object.keys(before).sort(), "all historical sitemap routes preserved");
-  assert.deepEqual(Object.keys(now).filter(path => !Object.hasOwn(before, path)).sort(), [...additions].sort(), "only authorized new routes");
-  for (const path of additions) assert.equal(now[path], published, `${path}: publication date`);
+  assert.deepEqual(Object.keys(now).filter(path => !authorizedAdditions.includes(path)).sort(), Object.keys(before).sort(), "all historical sitemap routes preserved");
+  assert.deepEqual(Object.keys(now).filter(path => !Object.hasOwn(before, path)).sort(), [...authorizedAdditions].sort(), "only authorized new routes");
+  for (const path of additions) assert.equal(now[path], published, `${path}: November 9 publication date`);
+  for (const path of november10Additions) assert.equal(now[path], november10Published, `${path}: November 10 publication date`);
   for (const [path, date] of Object.entries(now)) {
-    if (additions.includes(path) || path === "") assert.equal(date, published, `${path || "/"}: November 9 publication`);
+    if (november10Additions.includes(path) || path === "") assert.equal(date, november10Published, `${path || "/"}: November 10 publication`);
+    else if (additions.includes(path)) assert.equal(date, published, `${path}: November 9 publication unchanged`);
     else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
     else assert.equal(date, before[path], `${path || "/"}: untouched date`);
   }
   assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T14:00:12.000Z");
 };
 
-test("sitemap preserves historical corrections and permits only the November 9 additions and homepage date", async () => {
+test("sitemap preserves historical corrections and permits only the November 9 and 10 additions and current homepage date", async () => {
   const { now, before } = await sitemapSnapshots();
   assertSitemapPreserved(now, before);
 });
@@ -118,6 +123,8 @@ test("sitemap guard rejects missing routes, unauthorized additions and changed d
     ["extra unknown route", draft => { draft["synthetic-unauthorized-route"] = published; }],
     ["missing authorized addition", draft => { delete draft[additions[0]]; }],
     ["changed addition date", draft => { draft[additions[1]] = before[""]; }],
+    ["missing November 10 addition", draft => { delete draft[november10Additions[0]]; }],
+    ["changed November 10 date", draft => { draft[november10Additions[1]] = published; }],
     ["missing homepage", draft => { delete draft[""]; }],
     ["changed homepage date", draft => { draft[""] = before[""]; }],
     ["changed correction date", draft => { draft[T1] = published; }],

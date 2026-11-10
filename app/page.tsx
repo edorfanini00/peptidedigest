@@ -24,6 +24,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "elastin-hydration-water-entropic-elasticity",
+  "category": "Materials science",
+  "date": "November 10, 2026",
+  "readTime": "6 min read",
+  "title": "Why water helps elastin spring back",
+  "excerpt": "A new elastin simulation separates water and protein entropy. Why hydration helps explain recoil, and how the fragment model builds on experiments.",
+  "image": "elastinHydration20261110",
+  "imageLabel": "AI generated conceptual illustration of a wet ribbon, not elastin itself, a molecular structure or the computational study’s apparatus."
+},
+{
+  "slug": "circular-dichroism-peptide-secondary-structure",
+  "category": "Analytical science",
+  "date": "November 10, 2026",
+  "readTime": "6 min read",
+  "title": "Circular dichroism: what a peptide’s curve reveals about its shape",
+  "excerpt": "Circular dichroism helps estimate peptide secondary structure. Learn what helix and sheet signals mean, why reference data matter, and what a curve cannot reveal.",
+  "image": "circularDichroism20261110",
+  "imageLabel": "AI generated illustration of an optical cuvette and laboratory instrument, not a photograph of a specific experiment or a verified instrument model."
+},
+{
   "slug": "argenx-unnatural-products-peptide-discovery-deal",
   "category": "Biotech business",
   "date": "November 9, 2026",

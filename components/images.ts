@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  elastinHydration20261110: {
+  "src": "/images/elastin-hydration-water-20261110.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Transparent wet ribbon held between metal grips above a glass dish of water",
+  "caption": "AI generated conceptual illustration of a wet ribbon, not elastin itself, a molecular structure or the computational study’s apparatus.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  circularDichroism20261110: {
+  "src": "/images/circular-dichroism-cuvette-20261110.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Optical cuvette containing clear liquid in a cream holder beside a blurred laboratory instrument",
+  "caption": "AI generated illustration of an optical cuvette and laboratory instrument, not a photograph of a specific experiment or a verified instrument model.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   argenxUNP20261109: {
   "src": "/images/argenx-unp-discovery-20261109.webp",
   "width": 1600,
