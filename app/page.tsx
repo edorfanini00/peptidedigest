@@ -24,6 +24,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "tirzepatide-resistance-exercise-lean-mass-strength-trial",
+  "category": "Clinical research",
+  "date": "November 12, 2026",
+  "readTime": "6 min read",
+  "title": "Tirzepatide trial: resistance exercise improved strength while limiting lean tissue loss",
+  "excerpt": "In a 40 week randomized trial, resistance exercise improved strength and reduced lean tissue loss during tirzepatide treatment, despite similar weight loss.",
+  "image": "tirzepatideExercise20261111",
+  "imageLabel": "AI generated editorial illustration of an exercise science room, not a photograph of the T-REx trial site."
+},
+{
+  "slug": "peptide-nmr-structure-spectra-ensembles",
+  "category": "Analytical science",
+  "date": "November 12, 2026",
+  "readTime": "6 min read",
+  "title": "Peptide NMR: how a spectrum becomes a structure",
+  "excerpt": "NMR connects peptide signals to local chemical environments and spatial constraints. Learn why structural models, ensembles and purity measurements differ.",
+  "image": "peptideNmr20261111",
+  "imageLabel": "AI generated editorial illustration of an NMR laboratory, not a photograph of a particular facility or a verified instrument model."
+},
+{
   "slug": "elastin-hydration-water-entropic-elasticity",
   "category": "Materials science",
   "date": "November 10, 2026",

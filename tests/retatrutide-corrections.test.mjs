@@ -76,7 +76,11 @@ const additions = ["argenx-unnatural-products-peptide-discovery-deal", "what-is-
 const published = "2026-11-09T13:00:00.000Z";
 const november10Additions = ["elastin-hydration-water-entropic-elasticity", "circular-dichroism-peptide-secondary-structure"];
 const november10Published = new Date("2026-11-10T08:18:59-05:00").toISOString();
-const authorizedAdditions = [...additions, ...november10Additions];
+const november12Additions = ["tirzepatide-resistance-exercise-lean-mass-strength-trial", "peptide-nmr-structure-spectra-ensembles"];
+const november12Published = new Date("2026-11-12T08:15:00-05:00").toISOString();
+const homepagePublished = new Date("2026-11-12T08:15:00-05:00").toISOString();
+const unpublishedNovember11Draft = new Date("2026-11-11T08:19:17-05:00").toISOString();
+const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions];
 
 // Evaluate the real sitemap so the homepage and string-valued dates are covered too.
 const sitemapEntries = async source => {
@@ -99,8 +103,12 @@ const assertSitemapPreserved = (now, before) => {
   assert.deepEqual(Object.keys(now).filter(path => !Object.hasOwn(before, path)).sort(), [...authorizedAdditions].sort(), "only authorized new routes");
   for (const path of additions) assert.equal(now[path], published, `${path}: November 9 publication date`);
   for (const path of november10Additions) assert.equal(now[path], november10Published, `${path}: November 10 publication date`);
+  for (const path of november12Additions) assert.equal(now[path], november12Published, `${path}: November 12 publication date`);
+  assert.equal(now[""], homepagePublished, "/: homepage November 12 content update");
   for (const [path, date] of Object.entries(now)) {
-    if (november10Additions.includes(path) || path === "") assert.equal(date, november10Published, `${path || "/"}: November 10 publication`);
+    if (november12Additions.includes(path)) assert.equal(date, november12Published, `${path}: November 12 publication`);
+    else if (path === "") assert.equal(date, homepagePublished, "/: November 12 homepage update");
+    else if (november10Additions.includes(path)) assert.equal(date, november10Published, `${path}: November 10 publication unchanged`);
     else if (additions.includes(path)) assert.equal(date, published, `${path}: November 9 publication unchanged`);
     else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
     else assert.equal(date, before[path], `${path || "/"}: untouched date`);
@@ -108,7 +116,7 @@ const assertSitemapPreserved = (now, before) => {
   assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T14:00:12.000Z");
 };
 
-test("sitemap preserves historical corrections and permits only the November 9 and 10 additions and current homepage date", async () => {
+test("sitemap preserves historical corrections and permits only the November 9, 10 and 12 additions and current homepage date", async () => {
   const { now, before } = await sitemapSnapshots();
   assertSitemapPreserved(now, before);
 });
@@ -125,8 +133,12 @@ test("sitemap guard rejects missing routes, unauthorized additions and changed d
     ["changed addition date", draft => { draft[additions[1]] = before[""]; }],
     ["missing November 10 addition", draft => { delete draft[november10Additions[0]]; }],
     ["changed November 10 date", draft => { draft[november10Additions[1]] = published; }],
+    ["missing November 12 addition", draft => { delete draft[november12Additions[0]]; }],
+    ["changed November 12 date", draft => { draft[november12Additions[1]] = november10Published; }],
+    ["November 12 addition left at unpublished November 11 draft time", draft => { draft[november12Additions[0]] = unpublishedNovember11Draft; }],
     ["missing homepage", draft => { delete draft[""]; }],
     ["changed homepage date", draft => { draft[""] = before[""]; }],
+    ["homepage left at unpublished November 11 draft time", draft => { draft[""] = unpublishedNovember11Draft; }],
     ["changed correction date", draft => { draft[T1] = published; }],
   ];
   for (const [name, mutate] of cases) {

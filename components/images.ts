@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  tirzepatideExercise20261111: {
+  "src": "/images/tirzepatide-resistance-exercise-20261111.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Resistance exercise bench and cable equipment in a bright room with warm wood finishes",
+  "caption": "AI generated editorial illustration of an exercise science room, not a photograph of the T-REx trial site.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideNmr20261111: {
+  "src": "/images/peptide-nmr-spectrometer-20261111.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Large upright NMR spectrometer in a bright contemporary analytical laboratory",
+  "caption": "AI generated editorial illustration of an NMR laboratory, not a photograph of a particular facility or a verified instrument model.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   elastinHydration20261110: {
   "src": "/images/elastin-hydration-water-20261110.webp",
   "width": 1600,
