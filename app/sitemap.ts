@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/tirzepatide-resistance-exercise-lean-mass-strength-trial`,
+      lastModified: new Date("2026-11-12T08:15:00-05:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/peptide-nmr-structure-spectra-ensembles`,
+      lastModified: new Date("2026-11-12T08:15:00-05:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/elastin-hydration-water-entropic-elasticity`,
       lastModified: new Date("2026-11-10T08:18:59-05:00"),
       changeFrequency: "weekly",
@@ -497,7 +509,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-10T08:18:59-05:00"),
+      lastModified: new Date("2026-11-12T08:15:00-05:00"),
       changeFrequency: "daily",
       priority: 1,
     },
