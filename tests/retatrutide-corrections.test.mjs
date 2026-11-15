@@ -78,9 +78,11 @@ const november10Additions = ["elastin-hydration-water-entropic-elasticity", "cir
 const november10Published = new Date("2026-11-10T08:18:59-05:00").toISOString();
 const november12Additions = ["tirzepatide-resistance-exercise-lean-mass-strength-trial", "peptide-nmr-structure-spectra-ensembles"];
 const november12Published = new Date("2026-11-12T08:15:00-05:00").toISOString();
-const homepagePublished = new Date("2026-11-12T08:15:00-05:00").toISOString();
+const november15Additions = ["semaglutide-hfpef-exercise-filling-pressure-trial", "how-body-makes-peptide-hormones-glp1-prohormone-convertases"];
+const november15Published = new Date("2026-11-15T07:50:00-05:00").toISOString();
+const homepagePublished = november15Published;
 const unpublishedNovember11Draft = new Date("2026-11-11T08:19:17-05:00").toISOString();
-const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions];
+const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions, ...november15Additions];
 
 // Evaluate the real sitemap so the homepage and string-valued dates are covered too.
 const sitemapEntries = async source => {
@@ -104,10 +106,12 @@ const assertSitemapPreserved = (now, before) => {
   for (const path of additions) assert.equal(now[path], published, `${path}: November 9 publication date`);
   for (const path of november10Additions) assert.equal(now[path], november10Published, `${path}: November 10 publication date`);
   for (const path of november12Additions) assert.equal(now[path], november12Published, `${path}: November 12 publication date`);
-  assert.equal(now[""], homepagePublished, "/: homepage November 12 content update");
+  for (const path of november15Additions) assert.equal(now[path], november15Published, `${path}: November 15 publication date`);
+  assert.equal(now[""], homepagePublished, "/: homepage November 15 content update");
   for (const [path, date] of Object.entries(now)) {
-    if (november12Additions.includes(path)) assert.equal(date, november12Published, `${path}: November 12 publication`);
-    else if (path === "") assert.equal(date, homepagePublished, "/: November 12 homepage update");
+    if (november15Additions.includes(path)) assert.equal(date, november15Published, `${path}: November 15 publication`);
+    else if (november12Additions.includes(path)) assert.equal(date, november12Published, `${path}: November 12 publication unchanged`);
+    else if (path === "") assert.equal(date, homepagePublished, "/: November 15 homepage update");
     else if (november10Additions.includes(path)) assert.equal(date, november10Published, `${path}: November 10 publication unchanged`);
     else if (additions.includes(path)) assert.equal(date, published, `${path}: November 9 publication unchanged`);
     else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
@@ -116,7 +120,7 @@ const assertSitemapPreserved = (now, before) => {
   assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T14:00:12.000Z");
 };
 
-test("sitemap preserves historical corrections and permits only the November 9, 10 and 12 additions and current homepage date", async () => {
+test("sitemap preserves historical corrections and permits only the November 9, 10, 12 and 15 additions and current homepage date", async () => {
   const { now, before } = await sitemapSnapshots();
   assertSitemapPreserved(now, before);
 });
@@ -136,6 +140,9 @@ test("sitemap guard rejects missing routes, unauthorized additions and changed d
     ["missing November 12 addition", draft => { delete draft[november12Additions[0]]; }],
     ["changed November 12 date", draft => { draft[november12Additions[1]] = november10Published; }],
     ["November 12 addition left at unpublished November 11 draft time", draft => { draft[november12Additions[0]] = unpublishedNovember11Draft; }],
+    ["missing November 15 addition", draft => { delete draft[november15Additions[0]]; }],
+    ["changed November 15 date", draft => { draft[november15Additions[1]] = november12Published; }],
+    ["homepage left at November 12 publication", draft => { draft[""] = november12Published; }],
     ["missing homepage", draft => { delete draft[""]; }],
     ["changed homepage date", draft => { draft[""] = before[""]; }],
     ["homepage left at unpublished November 11 draft time", draft => { draft[""] = unpublishedNovember11Draft; }],

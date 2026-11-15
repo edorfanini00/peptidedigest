@@ -668,3 +668,26 @@ Two Higgsfield Nano Banana Pro images, quoted and charged 2 subscription credits
 
 - `tirzepatide-resistance-exercise-20261111.webp`: AI generated editorial illustration of an exercise science room, not a photograph of the T-REx trial site. Job `82920ca2-2114-4c15-a5e0-7b29c203470c`. Original SHA256 `9d070e9d90fa8b8a87a4c27e59d0af362e5a5f7f8d5b6765f6dd9f0b220329e4`; optimized SHA256 `043073f8e0f90617edd0bbb705bd661f8070eeb0daf6ab37df4330c43974b55a`.
 - `peptide-nmr-spectrometer-20261111.webp`: AI generated editorial illustration of an NMR laboratory, not a photograph of a particular facility or a verified instrument model. Job `2885d448-207a-4b20-b1b5-2b697ca479c5`. Original SHA256 `7dec8959ec4cd7a7db58848cf909cf42f12cfda7f6ca75ee0d3b641ba1e47aad`; optimized SHA256 `77d616d3af415f8309df74965d039a3447755f94c5638b9991381a850fe2cb71`.
+
+
+## Newsroom recovery illustrations, November 15, 2026
+
+Generated and paid on November 13, 2026; reused without new submission or spending. Full request, submission, status and download receipts are preserved in the November 13 evidence directory.
+
+### semaglutide-hfpef-exercise-20261115.webp
+
+- Model: nano_banana_pro; requested 3:2 at 2k. Job: `6bb8a58b-4a74-42cc-958e-54676f2205e0`; completed; quote 2 credits.
+- Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-11-13/run-0800/media/a-original.png`; 2528 x 1696; SHA256 `187709f333e7a2daaee005508f6003ff3203b15fb9111e3ad7ac15e9282af973`.
+- Derivative: `/images/semaglutide-hfpef-exercise-20261115.webp`; 1600 x 1073 WebP, quality 83, 124756 bytes; SHA256 `eb2326ed4704451688c61c979b1523c75be306ef9ad9c06ef4672a45ae84fb0c`.
+- Credit: The Peptide Digest via Higgsfield. Caption: AI-generated editorial illustration of an exercise physiology room, not a photograph of the trial site or the Mayo Clinic.
+- Inspection: Retain complete composition. Incidental Apple logo on laptop lid accepted as permitted by brief; no brand endorsement implied. Bright cream/oak room, plants, coherent recumbent cycle, no people, needles or hospital-bed cues.
+- Full prompt: Photorealistic editorial illustration, horizontal 3:2. An inviting, empty, contemporary exercise physiology research laboratory at a university, bright natural morning daylight through tall windows, warm cream walls and pale oak floor and cabinetry. The clear central subject is a modern recumbent cycle ergometer for exercise testing, with a tidy desk and a closed laptop nearby and a few potted green plants. Calm, spacious, optimistic atmosphere, crisp documentary photographic detail, eye-level composition suitable for a science magazine. No people, no bodies, no hospital beds, no recliners, no catheters, no monitors with waveforms, no syringes, no pills, no drug packaging, no text, no logos, no brands, no diagrams. Generic illustrative setting, not a particular hospital, clinic or trial site.
+
+### peptide-hormone-processing-lab-20261115.webp
+
+- Model: nano_banana_pro; requested 3:2 at 2k. Job: `ffc06fc8-2ffa-44e0-96f7-b280784be1b3`; completed; quote 2 credits.
+- Original: `/Users/edorfanini/.hermes/workspace/peptide-digest-newsroom/2026-11-13/run-0800/media/b-original.png`; 2528 x 1696; SHA256 `a0eb69aa6c194e2efbff96f2d87629f6cecd583741629800cddd28af29743316`.
+- Derivative: `/images/peptide-hormone-processing-lab-20261115.webp`; 1600 x 1073 WebP, quality 83, 92364 bytes; SHA256 `8893296be49491c42e22f04e15dada91e2012d558d2edf4dbb6dc6ff0c0c06f9`.
+- Credit: The Peptide Digest via Higgsfield. Caption: AI-generated concept illustration of a molecular biology bench, not a specific laboratory.
+- Inspection: Retain complete composition. Bright sunlight and warm wood, microscope and pale pink culture plates; tiny manufactured tube labels not used as factual data. No people, dosing props or invented molecular diagrams.
+- Full prompt: Photorealistic editorial illustration, horizontal 3:2. A bright, welcoming modern molecular biology laboratory bench in warm natural daylight. The clear central subject is a research inverted light microscope beside a stack of clear multiwell cell culture plates with pale pink medium, a rack of pipettes and neatly arranged sample tubes, on a clean white bench with pale wood shelving and large windows behind. Warm neutral palette, crisp documentary photographic detail, shallow depth of field, inviting and optimistic scientific atmosphere suitable for a science magazine. No people, no hands, no animals, no syringes, no pills, no drug packaging, no molecular models, no diagrams, no screens with data, no lettering, no text, no logos, no brands. Generic conceptual illustration, not a particular laboratory.

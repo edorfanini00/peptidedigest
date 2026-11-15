@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  semaglutideHfpef20261115: {
+  "src": "/images/semaglutide-hfpef-exercise-20261115.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Recumbent cycle ergometer in a sunlit exercise physiology room with wood cabinets and plants",
+  "caption": "AI-generated editorial illustration of an exercise physiology room, not a photograph of the trial site or the Mayo Clinic.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  peptideHormones20261115: {
+  "src": "/images/peptide-hormone-processing-lab-20261115.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Inverted microscope beside culture plates, pipettes and sample tubes on a sunlit laboratory bench",
+  "caption": "AI-generated concept illustration of a molecular biology bench, not a specific laboratory.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   tirzepatideExercise20261111: {
   "src": "/images/tirzepatide-resistance-exercise-20261111.webp",
   "width": 1600,

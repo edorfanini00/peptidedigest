@@ -24,6 +24,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "semaglutide-hfpef-exercise-filling-pressure-trial",
+  "category": "Clinical research",
+  "date": "November 15, 2026",
+  "readTime": "6 min read",
+  "title": "Semaglutide HFpEF trial finds lower heart filling pressure during exercise",
+  "excerpt": "In CAMEO-SEMA, semaglutide lowered exercise filling pressure in people with HFpEF and obesity. What the randomized trial reveals about congestion and weight loss.",
+  "image": "semaglutideHfpef20261115",
+  "imageLabel": "AI-generated editorial illustration of an exercise physiology room, not a photograph of the trial site or the Mayo Clinic."
+},
+{
+  "slug": "how-body-makes-peptide-hormones-glp1-prohormone-convertases",
+  "category": "Peptide biology",
+  "date": "November 15, 2026",
+  "readTime": "5 min read",
+  "title": "How the body makes peptide hormones: the cuts that release GLP-1",
+  "excerpt": "The body cuts GLP-1 from proglucagon using processing enzymes. How PC1/3 and PC2 shape hormone production, and how that logic led to the preclinical BRP discovery.",
+  "image": "peptideHormones20261115",
+  "imageLabel": "AI-generated concept illustration of a molecular biology bench, not a specific laboratory."
+},
+{
   "slug": "tirzepatide-resistance-exercise-lean-mass-strength-trial",
   "category": "Clinical research",
   "date": "November 12, 2026",
