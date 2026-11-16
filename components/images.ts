@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  cagrisemaRedefine920261116: {
+  "src": "/images/cagrisema-redefine9-lab-20261116.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Automated liquid-handling robot with clear pipette tips and multiwell plates in a sunlit laboratory",
+  "caption": "AI-generated editorial illustration, not a photograph of Novo Nordisk or any trial site.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  avexitideAntagonist20261116: {
+  "src": "/images/avexitide-glucose-sensor-20261116.webp",
+  "width": 1600,
+  "height": 1073,
+  "alt": "Round white glucose sensor disc beside a breakfast plate and glass of water on a sunlit kitchen counter",
+  "caption": "AI-generated concept illustration, not a specific person or product.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   semaglutideHfpef20261115: {
   "src": "/images/semaglutide-hfpef-exercise-20261115.webp",
   "width": 1600,
