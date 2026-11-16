@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/cagrisema-lower-dose-redefine-9-results`,
+      lastModified: new Date("2026-11-16T08:00:00-05:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/glp-1-antagonist-avexitide-post-bariatric-hypoglycemia`,
+      lastModified: new Date("2026-11-16T08:00:00-05:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/semaglutide-hfpef-exercise-filling-pressure-trial`,
       lastModified: new Date("2026-11-15T07:50:00-05:00"),
       changeFrequency: "weekly",
@@ -521,7 +533,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-15T07:50:00-05:00"),
+      lastModified: new Date("2026-11-16T08:00:00-05:00"),
       changeFrequency: "daily",
       priority: 1,
     },

@@ -24,6 +24,26 @@ interface CardArticle {
 
 const latestArticles: CardArticle[] = [
 {
+  "slug": "cagrisema-lower-dose-redefine-9-results",
+  "category": "Clinical research",
+  "title": "CagriSema lower-dose trial finds large weight loss in REDEFINE 9",
+  "image": "cagrisemaRedefine920261116",
+  "date": "November 16, 2026",
+  "readTime": "6 min read",
+  "excerpt": "Lower CagriSema doses produced substantial weight loss in REDEFINE 9. What both analyses show, why dose flexibility matters and what the trial cannot compare.",
+  "imageLabel": "AI-generated editorial illustration, not a photograph of Novo Nordisk or any trial site."
+},
+{
+  "slug": "glp-1-antagonist-avexitide-post-bariatric-hypoglycemia",
+  "category": "Peptide biology",
+  "title": "GLP-1 antagonists: why avexitide may help after gastric bypass",
+  "image": "avexitideAntagonist20261116",
+  "date": "November 16, 2026",
+  "readTime": "6 min read",
+  "excerpt": "A GLP-1 antagonist blocks rather than activates the receptor. How avexitide targets post-bariatric hypoglycemia, and what the LUCIDITY phase 3 results show.",
+  "imageLabel": "AI-generated concept illustration, not a specific person or product."
+},
+{
   "slug": "semaglutide-hfpef-exercise-filling-pressure-trial",
   "category": "Clinical research",
   "date": "November 15, 2026",
