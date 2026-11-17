@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/survodutide-synchronize-cvot-heart-safety`,
+      lastModified: new Date("2026-11-17T08:00:00-05:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/is-orforglipron-a-peptide-glp1-pill-attain-osa`,
+      lastModified: new Date("2026-11-17T08:00:00-05:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/cagrisema-lower-dose-redefine-9-results`,
       lastModified: new Date("2026-11-16T08:00:00-05:00"),
       changeFrequency: "weekly",
@@ -533,7 +545,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-16T08:00:00-05:00"),
+      lastModified: new Date("2026-11-17T08:00:00-05:00"),
       changeFrequency: "daily",
       priority: 1,
     },

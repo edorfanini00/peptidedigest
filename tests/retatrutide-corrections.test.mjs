@@ -82,9 +82,11 @@ const november15Additions = ["semaglutide-hfpef-exercise-filling-pressure-trial"
 const november15Published = new Date("2026-11-15T07:50:00-05:00").toISOString();
 const november16Additions = ["cagrisema-lower-dose-redefine-9-results", "glp-1-antagonist-avexitide-post-bariatric-hypoglycemia"];
 const november16Published = new Date("2026-11-16T08:00:00-05:00").toISOString();
-const homepagePublished = november16Published;
+const november17Additions = ["survodutide-synchronize-cvot-heart-safety", "is-orforglipron-a-peptide-glp1-pill-attain-osa"];
+const november17Published = new Date("2026-11-17T08:00:00-05:00").toISOString();
+const homepagePublished = november17Published;
 const unpublishedNovember11Draft = new Date("2026-11-11T08:19:17-05:00").toISOString();
-const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions, ...november15Additions, ...november16Additions];
+const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions, ...november15Additions, ...november16Additions, ...november17Additions];
 
 // Evaluate the real sitemap so the homepage and string-valued dates are covered too.
 const sitemapEntries = async source => {
@@ -110,12 +112,14 @@ const assertSitemapPreserved = (now, before) => {
   for (const path of november12Additions) assert.equal(now[path], november12Published, `${path}: November 12 publication date`);
   for (const path of november15Additions) assert.equal(now[path], november15Published, `${path}: November 15 publication date`);
   for (const path of november16Additions) assert.equal(now[path], november16Published, `${path}: November 16 publication date`);
-  assert.equal(now[""], homepagePublished, "/: homepage November 16 content update");
+  for (const path of november17Additions) assert.equal(now[path], november17Published, `${path}: November 17 publication date`);
+  assert.equal(now[""], homepagePublished, "/: homepage November 17 content update");
   for (const [path, date] of Object.entries(now)) {
-    if (november16Additions.includes(path)) assert.equal(date, november16Published, `${path}: November 16 publication`);
+    if (november17Additions.includes(path)) assert.equal(date, november17Published, `${path}: November 17 publication`);
+    else if (november16Additions.includes(path)) assert.equal(date, november16Published, `${path}: November 16 publication unchanged`);
     else if (november15Additions.includes(path)) assert.equal(date, november15Published, `${path}: November 15 publication unchanged`);
     else if (november12Additions.includes(path)) assert.equal(date, november12Published, `${path}: November 12 publication unchanged`);
-    else if (path === "") assert.equal(date, homepagePublished, "/: November 16 homepage update");
+    else if (path === "") assert.equal(date, homepagePublished, "/: November 17 homepage update");
     else if (november10Additions.includes(path)) assert.equal(date, november10Published, `${path}: November 10 publication unchanged`);
     else if (additions.includes(path)) assert.equal(date, published, `${path}: November 9 publication unchanged`);
     else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
@@ -124,7 +128,7 @@ const assertSitemapPreserved = (now, before) => {
   assert.equal(now["what-is-amylin-amylin-analogs-vs-glp-1"], "2026-10-08T14:00:12.000Z");
 };
 
-test("sitemap preserves historical corrections and permits only the November 9, 10, 12, 15 and 16 additions and current homepage date", async () => {
+test("sitemap preserves historical corrections and permits only the November 9, 10, 12, 15, 16 and 17 additions and current homepage date", async () => {
   const { now, before } = await sitemapSnapshots();
   assertSitemapPreserved(now, before);
 });
@@ -148,6 +152,9 @@ test("sitemap guard rejects missing routes, unauthorized additions and changed d
     ["changed November 15 date", draft => { draft[november15Additions[1]] = november12Published; }],
     ["missing November 16 addition", draft => { delete draft[november16Additions[0]]; }],
     ["changed November 16 date", draft => { draft[november16Additions[1]] = november15Published; }],
+    ["missing November 17 addition", draft => { delete draft[november17Additions[0]]; }],
+    ["changed November 17 date", draft => { draft[november17Additions[1]] = november16Published; }],
+    ["homepage left at November 16 publication", draft => { draft[""] = november16Published; }],
     ["homepage left at November 15 publication", draft => { draft[""] = november15Published; }],
     ["homepage left at November 12 publication", draft => { draft[""] = november12Published; }],
     ["missing homepage", draft => { delete draft[""]; }],
@@ -162,21 +169,21 @@ test("sitemap guard rejects missing routes, unauthorized additions and changed d
   }
 });
 
-test("November 16 additions preserve every existing non-home sitemap block byte-for-byte", () => {
-  const releaseBase = "f51a02534b51a442a9bc220e2ebc9e13e80be2fe";
+test("November 17 additions preserve every existing non-home sitemap block byte-for-byte", () => {
+  const releaseBase = "ad77792a7cd44609f14e3404dd97e10dc6573bc3";
   const before = execFileSync("git", ["show", `${releaseBase}:app/sitemap.ts`], { cwd: root, encoding: "utf8" });
   const now = fs.readFileSync(new URL("app/sitemap.ts", root), "utf8");
   const blocks = [...before.matchAll(/    \{\n[\s\S]*?    \},/g)].map(([block]) => block).filter(block => !block.includes("url: base,"));
-  assert.equal(blocks.length, 91, "all previous non-home routes, including November 15");
+  assert.equal(blocks.length, 93, "all previous non-home routes, including November 15 and 16");
   const preserve = source => {
     for (const block of blocks) assert.ok(source.includes(block), "unchanged sitemap block: " + block.split("\n")[1]);
   };
   preserve(now);
   assert.throws(() => preserve(now.replace(blocks[0], blocks[0].replace("priority: 0.85", "priority: 0.8"))), { code: "ERR_ASSERTION" }, "historical non-date byte mutation rejected");
-  for (const slug of november15Additions) {
+  for (const slug of [...november15Additions, ...november16Additions]) {
     for (const file of ["page.tsx", "story.ts"]) {
       const relative = `app/${slug}/${file}`;
-      assert.deepEqual(fs.readFileSync(new URL(relative, root)), execFileSync("git", ["show", `${releaseBase}:${relative}`], { cwd: root }), `${relative}: unchanged November 15 source`);
+      assert.deepEqual(fs.readFileSync(new URL(relative, root)), execFileSync("git", ["show", `${releaseBase}:${relative}`], { cwd: root }), `${relative}: unchanged November 15 or 16 source`);
     }
   }
 });
