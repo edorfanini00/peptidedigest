@@ -1,4 +1,4 @@
-import { IQONStickyBar } from "@/components/IQONPartner";
+import { ContextualStickyBar } from "@/components/ContextualStickyBar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Lora } from "next/font/google";
@@ -140,7 +140,7 @@ export default function RootLayout({
           `}
         </Script>
         {children}
-        <IQONStickyBar />
+        <ContextualStickyBar />
       </body>
     </html>
   );

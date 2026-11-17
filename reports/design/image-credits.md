@@ -1,5 +1,13 @@
 # Image credits — peptidedigest.co
 
+## November 17, 2026 demand-led comparison
+
+- `/weight-loss-peptides-how-compounds-differ`: `public/images/weight-loss-peptide-pathways-20261117.webp`.
+- Unique AI-generated editorial illustration of bead chains as a peptide teaching analogy, not accurate molecular structures. Warm natural daylight; no medicine, patient, syringe or product claim.
+- Higgsfield subscription CLI, Nano Banana Pro, job `472adcb4-d535-400b-8136-851d44d32a7b`, completed November 17, 2026. Exact quote: 2 credits; one submission, no retry or top-up. Requested 3:2 / 2k; native PNG 2528 × 1696; optimized WebP 1600 × 1073, no upscale.
+- Credit: The Peptide Digest via Higgsfield. Prompt, pre-submission intent, quote, receipt and original preserved outside the repository at `/Users/edorfanini/.hermes/workspace/peptide-demand-publication-20261117/`.
+- Existing COA and GHK-Cu images retained byte-for-byte.
+
 All images are from Unsplash under the [Unsplash License](https://unsplash.com/license) (free commercial use, attribution not required but provided). Downloaded via images.unsplash.com, resized to ≤1600px wide, each under 250 KB.
 
 Every image is **illustrative stock**. Captions on the site say so; none depicts the events, companies, people, or buildings covered.

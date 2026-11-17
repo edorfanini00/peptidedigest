@@ -15,6 +15,17 @@ export interface EditorialImage {
 }
 
 export const images = {
+  weightLossPathways20261117: {
+    src: "/images/weight-loss-peptide-pathways-20261117.webp",
+    width: 1600,
+    height: 1073,
+    alt: "Colored bead chains beside a notebook and magnifying glass on a sunlit table",
+    caption: "AI-generated editorial illustration. Bead chains are a teaching analogy, not accurate molecular structures.",
+    photographer: "The Peptide Digest",
+    sourceUrl: "https://higgsfield.ai/",
+    credit: "The Peptide Digest via Higgsfield",
+    kind: "illustration",
+  },
   cagrisemaRedefine920261116: {
   "src": "/images/cagrisema-redefine9-lab-20261116.webp",
   "width": 1600,
