@@ -76,7 +76,7 @@ export const story: NewsroomStory = {
       ]
     },
     {
-      "title": "What the result adds to the chemistry",
+      "title": "Side effects and approval status",
       "id": "safety-status-and-next-question",
       "paragraphs": [
         "Gastrointestinal events were the most commonly reported adverse events in ATTAIN-OSA and were more frequent with orforglipron than placebo. Being a nonpeptide pill does not remove tolerability concerns. Separately, Foundayo's prescribing information includes warnings about severe gastrointestinal reactions and pancreatitis, as well as a boxed warning concerning potential thyroid C-cell tumor risk. The relevance of that receptor-related tumor risk to humans remains undetermined.[2][7]",
@@ -90,7 +90,7 @@ export const story: NewsroomStory = {
   "sources": [
     {
       "id": 1,
-      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7703558/fullTextXML",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7703558",
       "title": "Kawai and colleagues, structural basis of LY3502970 activation, PNAS (2020)",
       "doi": "10.1073/pnas.2014879117"
     },
@@ -113,7 +113,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 5,
-      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13316212/fullTextXML",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13316212",
       "title": "Malhotra and colleagues, ATTAIN-OSA rationale and design (2026)",
       "doi": "10.1016/j.conctc.2026.101660"
     },
@@ -154,7 +154,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 13,
-      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06649045",
+      "url": "https://clinicaltrials.gov/study/NCT06649045",
       "title": "ClinicalTrials.gov, ATTAIN-OSA NCT06649045: orforglipron and LY3502970 identity"
     }
   ]

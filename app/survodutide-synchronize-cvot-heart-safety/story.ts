@@ -87,7 +87,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 2,
-      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06077864",
+      "url": "https://clinicaltrials.gov/study/NCT06077864",
       "title": "ClinicalTrials.gov, SYNCHRONIZE-CVOT NCT06077864"
     },
     {
@@ -112,7 +112,7 @@ export const story: NewsroomStory = {
     },
     {
       "id": 7,
-      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8171296/fullTextXML",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8171296",
       "title": "Lafferty and colleagues, Proglucagon-Derived Peptides as Therapeutics (2021)"
     }
   ]
