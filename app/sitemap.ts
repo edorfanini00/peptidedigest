@@ -7,6 +7,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/weight-loss-peptides-how-compounds-differ`,
+      lastModified: new Date("2026-11-17T18:57:08Z"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/cagrisema-lower-dose-redefine-9-results`,
       lastModified: new Date("2026-11-16T08:00:00-05:00"),
       changeFrequency: "weekly",
@@ -425,7 +431,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/ghk-cu-peptide-research-what-studies-show`,
-      lastModified: new Date("2026-10-02T12:54:27Z"),
+      lastModified: new Date("2026-11-17T18:57:08Z"),
       changeFrequency: "monthly",
       priority: 0.85,
     },
@@ -503,7 +509,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/how-to-read-peptide-coa`,
-      lastModified: now,
+      lastModified: new Date("2026-11-17T18:57:08Z"),
       changeFrequency: "monthly",
       priority: 0.85,
     },
@@ -533,7 +539,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base,
-      lastModified: new Date("2026-11-16T08:00:00-05:00"),
+      lastModified: new Date("2026-11-17T18:57:08Z"),
       changeFrequency: "daily",
       priority: 1,
     },

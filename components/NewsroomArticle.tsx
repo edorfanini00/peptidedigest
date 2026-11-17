@@ -5,14 +5,16 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
 import { images, type ImageKey } from "@/components/images";
-import { IQONPartner, type IQONVial } from "@/components/IQONPartner";
+import { ArticlePlacement } from "@/components/ArticlePlacement";
+import type { IQONVial } from "@/lib/article-commercial-context";
 import styles from "./NewsroomArticle.module.css";
 
 export interface NewsroomStory {
   slug: string; title: string; description: string; date: string;
   dateModified?: string; correction?: string;
   type: "Article" | "NewsArticle"; category: string; image: ImageKey;
-  vials: [IQONVial, IQONVial]; lead: string; notice: string;
+  /** Archive-only compatibility. New pages declare policy in ARTICLE_COMMERCIAL_CONTEXT. */
+  vials?: [IQONVial, IQONVial]; lead: string; notice: string;
   sections: { title: string; id: string; paragraphs: string[] }[];
   faqs: { q: string; a: string; refs: number[] }[];
   sources: { id: number; url: string; title: string; doi?: string }[];
@@ -70,7 +72,7 @@ export function NewsroomArticle({ story, children, calculatorFirst = false }: { 
       </>} image={story.image} />
       <article className={`article-body ${styles.body}`} data-newsroom-article>
         <p data-answer-lead className="text-lg font-medium"><RichText text={story.lead} story={story} /></p>
-        <IQONPartner vial={story.vials[0]} />
+        <ArticlePlacement slug={story.slug} placement="early" legacyVial={story.vials?.[0]} />
         {story.correction && <p data-correction-note className="text-sm text-[color:var(--color-muted)]">{story.correction}</p>}
         <p className="text-sm text-[color:var(--color-muted)]">{story.notice}</p>
         {!toolFirst && children}
@@ -82,7 +84,7 @@ export function NewsroomArticle({ story, children, calculatorFirst = false }: { 
         {story.faqs.length > 0 && <section className={styles.section} aria-labelledby="questions"><h2 id="questions" className="scroll-mt-24">Frequently asked questions</h2>{story.faqs.map((faq, i) => <div className={styles.faq} key={faq.q} data-faq><h3 id={`question-${i + 1}`}>{faq.q}</h3><p data-faq-answer>{faq.a}</p><p className="text-sm" aria-label="Answer sources"><RichText text={faq.refs.map(n => `[${n}]`).join(" ")} story={story} /></p></div>)}</section>}
         <section className={styles.section} aria-labelledby="sources"><h2 id="sources">Sources and further reading</h2><ol className="text-sm break-words">{story.sources.map(source => <li key={source.id} value={source.id}><a href={source.url}>{source.title}</a>{source.doi ? <>. DOI: <a href={`https://doi.org/${source.doi}`}>{source.doi}</a></> : null}</li>)}</ol></section>
         <section className={styles.section} aria-labelledby="related"><h2 id="related">Related reading</h2><ul>{story.related.map(link => <li key={link.url}><Link href={link.url}>{link.title}</Link></li>)}</ul></section>
-        <IQONPartner vial={story.vials[1]} />
+        <ArticlePlacement slug={story.slug} placement="closing" legacyVial={story.vials?.[1]} />
       </article>
     </main><Footer /></>;
 }

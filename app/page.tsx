@@ -23,6 +23,16 @@ interface CardArticle {
 }
 
 const latestArticles: CardArticle[] = [
+  {
+    slug: "weight-loss-peptides-how-compounds-differ",
+    category: "Science explained",
+    date: "November 17, 2026",
+    readTime: "7 min read",
+    title: "Weight loss peptides: how the compounds differ",
+    excerpt: "GLP-1, GIP, glucagon and amylin: understand the differences between peptide molecules, receptor targets and approved medicines.",
+    image: "weightLossPathways20261117",
+    imageLabel: "AI-generated editorial illustration. Bead chains are a teaching analogy, not accurate molecular structures.",
+  },
 {
   "slug": "cagrisema-lower-dose-redefine-9-results",
   "category": "Clinical research",
@@ -782,8 +792,8 @@ const regulatoryArticles: CardArticle[] = [
     date: "2026-10-01",
     readTime: "6 min read",
     image: "ghkCuCollagen",
-    title: "GHK-Cu research: what copper peptide studies show",
-    excerpt: "Copper peptide studies measure different things: collagen production in cells, ulcer closure, skin changes after laser resurfacing and hair outcomes with a combination treatment. A guide to the results and their limits.",
+    title: "GHK-Cu and copper peptides for skin: what studies show",
+    excerpt: "How GHK-Cu differs from palmitoylated peptides and acetyl hexapeptide-8, and why an ingredient's chemistry, formulation and human evidence belong together.",
   },
   {
     slug: "kpv-peptide-research-what-studies-show",
@@ -866,9 +876,9 @@ const regulatoryArticles: CardArticle[] = [
     category: "Guide",
     date: "September 25, 2026",
     readTime: "6 min read",
-    title: "How to Read a Research Peptide Certificate of Analysis (COA)",
+    title: "How to read a peptide COA: purity, identity and amount",
     excerpt:
-      "Purity, identity, lot numbers and the lab's name: what each part of a peptide COA tells you, and how to check that the report is real.",
+      "Follow a peptide certificate of analysis from its sample and lot numbers through HPLC purity, identity testing, quantity and verification with the issuing lab.",
     image: "hplc",
   },
   {

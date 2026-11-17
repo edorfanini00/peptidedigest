@@ -1,15 +1,7 @@
 import Image from "next/image";
 
-export type IQONVial =
-  | "nad"
-  | "bac-water"
-  | "glutathione"
-  | "ghk"
-  | "epithalon"
-  | "ss31"
-  | "mots-c"
-  | "kpv"
-  | "semax";
+import { APPROVED_RESEARCH_ASSETS, type IQONVial } from "@/lib/article-commercial-context";
+export type { IQONVial } from "@/lib/article-commercial-context";
 
 const LINEUP: IQONVial[] = ["nad", "ghk", "epithalon", "ss31", "glutathione", "mots-c", "kpv", "semax"];
 
@@ -68,13 +60,13 @@ export function IQONPartner({ vial }: { vial: IQONVial }) {
 
       <div className="mx-auto mt-6 grid max-w-[16rem] grid-cols-2 items-end gap-4 bg-gradient-to-b from-white to-[#efebe4] px-6 pb-5 pt-4 sm:max-w-xs">
         <div className="relative">
-          <Image src={`/iqon/${a}.png`} alt="IQON Labs research vial" width={200} height={268} className="h-auto w-full object-contain drop-shadow-[0_12px_14px_rgba(0,0,0,0.18)]" />
+          <Image src={`/iqon/${a}.png`} alt={`IQON Labs ${APPROVED_RESEARCH_ASSETS[a].name} research vial`} width={200} height={268} className="h-auto w-full object-contain drop-shadow-[0_12px_14px_rgba(0,0,0,0.18)]" />
         </div>
         <div className="relative">
           <span className="absolute -top-2 left-1/2 z-10 -translate-x-1/2 rotate-[-6deg] whitespace-nowrap rounded-md bg-[color:var(--color-accent)] px-2.5 py-1 text-xs font-extrabold tracking-wider text-white shadow-md">
             {IQON_OFFER.badge}
           </span>
-          <Image src={`/iqon/${b}.png`} alt="IQON Labs research vial" width={200} height={268} className="h-auto w-full scale-110 object-contain drop-shadow-[0_12px_14px_rgba(0,0,0,0.22)] transition-transform duration-300 group-hover:-translate-y-1" />
+          <Image src={`/iqon/${b}.png`} alt={`IQON Labs ${APPROVED_RESEARCH_ASSETS[b].name} research vial`} width={200} height={268} className="h-auto w-full scale-110 object-contain drop-shadow-[0_12px_14px_rgba(0,0,0,0.22)] transition-transform duration-300 group-hover:-translate-y-1" />
         </div>
       </div>
 
