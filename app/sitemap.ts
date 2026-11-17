@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
+      url: `${base}/survodutide-synchronize-cvot-heart-safety`,
+      lastModified: new Date("2026-11-17T08:00:00-05:00"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/is-orforglipron-a-peptide-glp1-pill-attain-osa`,
+      lastModified: new Date("2026-11-17T08:00:00-05:00"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/weight-loss-peptides-how-compounds-differ`,
       lastModified: new Date("2026-11-17T18:57:08Z"),
       changeFrequency: "monthly",

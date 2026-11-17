@@ -34,6 +34,26 @@ const latestArticles: CardArticle[] = [
     imageLabel: "AI-generated editorial illustration. Bead chains are a teaching analogy, not accurate molecular structures.",
   },
 {
+  "slug": "survodutide-synchronize-cvot-heart-safety",
+  "category": "Clinical research",
+  "title": "Survodutide clears heart-safety test in SYNCHRONIZE-CVOT",
+  "image": "survodutideCvot20261117",
+  "date": "November 17, 2026",
+  "readTime": "6 min read",
+  "excerpt": "Survodutide met its cardiovascular safety goal in SYNCHRONIZE-CVOT. How glucagon and GLP-1 work together, what non-inferiority means and the tolerability trade-off.",
+  "imageLabel": "AI-generated editorial illustration, not a photograph of Boehringer Ingelheim or any trial site."
+},
+{
+  "slug": "is-orforglipron-a-peptide-glp1-pill-attain-osa",
+  "category": "Drug discovery",
+  "title": "Is orforglipron a peptide? How the GLP-1 pill works",
+  "image": "orforglipronChemistry20261117",
+  "date": "November 17, 2026",
+  "readTime": "7 min read",
+  "excerpt": "Orforglipron is a nonpeptide small molecule that activates the GLP-1 receptor. How its chemistry differs from oral semaglutide, and what ATTAIN-OSA found.",
+  "imageLabel": "AI-generated concept illustration of a chemistry laboratory, not Lilly or a specific product."
+},
+{
   "slug": "cagrisema-lower-dose-redefine-9-results",
   "category": "Clinical research",
   "title": "CagriSema lower-dose trial finds large weight loss in REDEFINE 9",
