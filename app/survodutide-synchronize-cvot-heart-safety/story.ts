@@ -4,15 +4,11 @@ export const story: NewsroomStory = {
   "slug": "survodutide-synchronize-cvot-heart-safety",
   "title": "Survodutide clears heart-safety test in SYNCHRONIZE-CVOT",
   "description": "Survodutide met its cardiovascular safety goal in SYNCHRONIZE-CVOT. How glucagon and GLP-1 work together, what non-inferiority means and the tolerability trade-off.",
-  "date": "2026-11-17T08:00:00-05:00",
+  "date": "2026-11-20T08:00:00-05:00",
   "type": "NewsArticle",
   "category": "Clinical research",
   "image": "survodutideCvot20261117",
-  "vials": [
-    "glutathione",
-    "epithalon"
-  ],
-  "notice": "This article reports clinical research, not dosing or treatment guidance. Survodutide is investigational and is not an IQON Labs product. Reader offers are separate from the research discussed here.",
+  "notice": "This article reports clinical research, not dosing or treatment guidance. Survodutide is investigational.",
   "faqs": [],
   "related": [
     {

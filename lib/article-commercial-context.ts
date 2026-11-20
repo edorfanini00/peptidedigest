@@ -40,6 +40,20 @@ export const ARTICLE_COMMERCIAL_CONTEXT: Readonly<Record<string, ArticleCommerci
       { url: "/what-are-peptides", title: "Peptide structure and terminology" },
     ],
   },
+  "/survodutide-synchronize-cvot-heart-safety": {
+    mode: "informational", reason: "Investigational medicine and cardiovascular outcomes coverage; a research-material offer would imply treatment suitability.",
+    reading: [
+      { url: "/how-body-makes-peptide-hormones-glp1-prohormone-convertases", title: "How GLP-1 and glucagon come from the same precursor" },
+      { url: "/weight-loss-peptides-how-compounds-differ", title: "How GLP-1, GIP, glucagon and amylin medicines differ" },
+    ],
+  },
+  "/is-orforglipron-a-peptide-glp1-pill-attain-osa": {
+    mode: "informational", reason: "Approved medicine and sleep apnea trial coverage; a research-material offer would imply treatment suitability.",
+    reading: [
+      { url: "/what-are-peptides", title: "What makes a molecule a peptide" },
+      { url: "/weight-loss-peptides-how-compounds-differ", title: "How weight-loss peptides and other GLP-1 medicines differ" },
+    ],
+  },
 };
 
 export const RESEARCH_CATALOG = {

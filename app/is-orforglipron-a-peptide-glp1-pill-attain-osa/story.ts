@@ -4,15 +4,11 @@ export const story: NewsroomStory = {
   "slug": "is-orforglipron-a-peptide-glp1-pill-attain-osa",
   "title": "Is orforglipron a peptide? How the GLP-1 pill works",
   "description": "Orforglipron is a nonpeptide small molecule that activates the GLP-1 receptor. How its chemistry differs from oral semaglutide, and what ATTAIN-OSA found.",
-  "date": "2026-11-17T08:00:00-05:00",
+  "date": "2026-11-20T08:00:00-05:00",
   "type": "Article",
   "category": "Drug discovery",
   "image": "orforglipronChemistry20261117",
-  "vials": [
-    "semax",
-    "ss31"
-  ],
-  "notice": "This explainer covers drug chemistry and clinical research, not treatment or dosing advice. Orforglipron is not an IQON Labs product. Reader offers are separate from the medicines and trials discussed here.",
+  "notice": "This explainer covers drug chemistry and clinical research, not treatment or dosing advice.",
   "faqs": [],
   "related": [
     {
@@ -24,7 +20,7 @@ export const story: NewsroomStory = {
       "title": "How cells make the peptide hormone GLP-1"
     }
   ],
-  "lead": "Orforglipron is not a peptide. It is a small-molecule drug that activates the receptor for GLP-1, a peptide hormone. The receptor's name describes the signal it normally receives, not the chemical structure of every drug that can switch it on. In the new ATTAIN-OSA phase 3 trials, this oral approach improved sleep-disordered breathing compared with placebo, extending its clinical evidence beyond weight management.[1][2]",
+  "lead": "Orforglipron is not a peptide. It is a small-molecule drug that activates the receptor for GLP-1, a peptide hormone. The receptor's name describes the signal it normally receives, not the chemical structure of every drug that can switch it on. In the ATTAIN-OSA phase 3 trials published November 9, this oral approach improved sleep-disordered breathing compared with placebo, extending its clinical evidence beyond weight management.[1][2]",
   "sections": [
     {
       "title": "Peptide describes a structure, not a job",
