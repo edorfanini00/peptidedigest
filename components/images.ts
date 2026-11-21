@@ -15,6 +15,28 @@ export interface EditorialImage {
 }
 
 export const images = {
+  survodutideCvot20261117: {
+  "src": "/images/survodutide-heart-safety-20261117.webp",
+  "width": 1600,
+  "height": 1067,
+  "alt": "An anatomical heart teaching model beside plain binders on an oak desk in a sunlit research office",
+  "caption": "AI-generated editorial illustration, not a photograph of Boehringer Ingelheim or any trial site.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
+  orforglipronChemistry20261117: {
+  "src": "/images/orforglipron-chemistry-20261117.webp",
+  "width": 1600,
+  "height": 1067,
+  "alt": "Glass rotary evaporator and round-bottom flasks beside beakers and an open notebook in a bright chemistry laboratory",
+  "caption": "AI-generated concept illustration of a chemistry laboratory, not Lilly or a specific product.",
+  "photographer": "The Peptide Digest",
+  "sourceUrl": "https://higgsfield.ai/",
+  "credit": "The Peptide Digest via Higgsfield",
+  "kind": "illustration"
+},
   weightLossPathways20261117: {
     src: "/images/weight-loss-peptide-pathways-20261117.webp",
     width: 1600,
