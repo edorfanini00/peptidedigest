@@ -28,7 +28,7 @@ const latestArticles: CardArticle[] = [
   "category": "Clinical research",
   "title": "Survodutide clears heart-safety test in SYNCHRONIZE-CVOT",
   "image": "survodutideCvot20261117",
-  "date": "November 20, 2026",
+  "date": "November 21, 2026",
   "readTime": "6 min read",
   "excerpt": "Survodutide met its cardiovascular safety goal in SYNCHRONIZE-CVOT. How glucagon and GLP-1 work together, what non-inferiority means and the tolerability trade-off.",
   "imageLabel": "AI-generated editorial illustration, not a photograph of Boehringer Ingelheim or any trial site."
@@ -38,7 +38,7 @@ const latestArticles: CardArticle[] = [
   "category": "Drug discovery",
   "title": "Is orforglipron a peptide? How the GLP-1 pill works",
   "image": "orforglipronChemistry20261117",
-  "date": "November 20, 2026",
+  "date": "November 21, 2026",
   "readTime": "7 min read",
   "excerpt": "Orforglipron is a nonpeptide small molecule that activates the GLP-1 receptor. How its chemistry differs from oral semaglutide, and what ATTAIN-OSA found.",
   "imageLabel": "AI-generated concept illustration of a chemistry laboratory, not Lilly or a specific product."

@@ -4,7 +4,7 @@ export const story: NewsroomStory = {
   "slug": "is-orforglipron-a-peptide-glp1-pill-attain-osa",
   "title": "Is orforglipron a peptide? How the GLP-1 pill works",
   "description": "Orforglipron is a nonpeptide small molecule that activates the GLP-1 receptor. How its chemistry differs from oral semaglutide, and what ATTAIN-OSA found.",
-  "date": "2026-11-20T08:00:00-05:00",
+  "date": "2026-11-21T07:55:00-05:00",
   "type": "Article",
   "category": "Drug discovery",
   "image": "orforglipronChemistry20261117",
