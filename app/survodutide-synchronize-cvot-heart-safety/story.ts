@@ -94,7 +94,7 @@ export const story: NewsroomStory = {
     {
       "id": 4,
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11664303",
-      "title": "Le Roux and colleagues, rationale and design of SYNCHRONIZE-1 and -2 (2024)"
+      "title": "Wharton and colleagues, rationale and design of SYNCHRONIZE-1 and -2 (2024)"
     },
     {
       "id": 5,
