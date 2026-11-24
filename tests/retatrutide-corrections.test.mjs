@@ -85,15 +85,17 @@ const november16Published = new Date("2026-11-16T08:00:00-05:00").toISOString();
 const demandAdditions = ["weight-loss-peptides-how-compounds-differ"];
 const demandRewrites = ["how-to-read-peptide-coa", "ghk-cu-peptide-research-what-studies-show"];
 const demandPublished = new Date("2026-11-17T18:57:08Z").toISOString();
-const november21Additions = ["survodutide-synchronize-cvot-heart-safety", "is-orforglipron-a-peptide-glp1-pill-attain-osa"];
-const november21Published = new Date("2026-11-21T07:55:00-05:00").toISOString();
-// Unpublished November 20 recovery head (879bf18); its date must not survive the November 21 publication.
+const november24Additions = ["survodutide-synchronize-cvot-heart-safety", "is-orforglipron-a-peptide-glp1-pill-attain-osa"];
+const november24Published = new Date("2026-11-24T09:00:00-05:00").toISOString();
+// Unpublished November 20 recovery head (879bf18); its date must not survive the November 24 publication.
+// Unpublished November 21 recovery head (7d6a691, PR #58); its date must not survive the November 24 publication.
+const unpublishedNovember21Recovery = new Date("2026-11-21T07:55:00-05:00").toISOString();
 const unpublishedNovember20Recovery = new Date("2026-11-20T08:00:00-05:00").toISOString();
 // Recovered unpublished November 17 newsroom drafts; their old draft time must not survive.
 const unpublishedNovember17Draft = new Date("2026-11-17T08:00:00-05:00").toISOString();
-const homepagePublished = november21Published;
+const homepagePublished = november24Published;
 const unpublishedNovember11Draft = new Date("2026-11-11T08:19:17-05:00").toISOString();
-const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions, ...november15Additions, ...november16Additions, ...demandAdditions, ...november21Additions];
+const authorizedAdditions = [...additions, ...november10Additions, ...november12Additions, ...november15Additions, ...november16Additions, ...demandAdditions, ...november24Additions];
 
 // Evaluate the real sitemap so the homepage and string-valued dates are covered too.
 const sitemapEntries = async source => {
@@ -120,15 +122,15 @@ const assertSitemapPreserved = (now, before) => {
   for (const path of november15Additions) assert.equal(now[path], november15Published, `${path}: November 15 publication date`);
   for (const path of november16Additions) assert.equal(now[path], november16Published, `${path}: November 16 publication date`);
   for (const path of [...demandAdditions, ...demandRewrites]) assert.equal(now[path], demandPublished, `${path}: substantive November 17 content`);
-  for (const path of november21Additions) assert.equal(now[path], november21Published, `${path}: November 21 publication date`);
-  assert.equal(now[""], homepagePublished, "/: homepage November 21 content update");
+  for (const path of november24Additions) assert.equal(now[path], november24Published, `${path}: November 24 publication date`);
+  assert.equal(now[""], homepagePublished, "/: homepage November 24 content update");
   for (const [path, date] of Object.entries(now)) {
-    if (november21Additions.includes(path)) assert.equal(date, november21Published, `${path}: November 21 publication`);
+    if (november24Additions.includes(path)) assert.equal(date, november24Published, `${path}: November 24 publication`);
     else if ([...demandAdditions, ...demandRewrites].includes(path)) assert.equal(date, demandPublished, path);
     else if (november16Additions.includes(path)) assert.equal(date, november16Published, `${path}: November 16 publication`);
     else if (november15Additions.includes(path)) assert.equal(date, november15Published, `${path}: November 15 publication unchanged`);
     else if (november12Additions.includes(path)) assert.equal(date, november12Published, `${path}: November 12 publication unchanged`);
-    else if (path === "") assert.equal(date, homepagePublished, "/: November 21 homepage update");
+    else if (path === "") assert.equal(date, homepagePublished, "/: November 24 homepage update");
     else if (november10Additions.includes(path)) assert.equal(date, november10Published, `${path}: November 10 publication unchanged`);
     else if (additions.includes(path)) assert.equal(date, published, `${path}: November 9 publication unchanged`);
     else if (slugs.includes(path)) assert.equal(date, new Date(stories[path].modified ?? corrected).toISOString(), path);
@@ -171,15 +173,18 @@ test("sitemap guard rejects missing routes, unauthorized additions and changed d
     ["missing homepage", draft => { delete draft[""]; }],
     ["changed homepage date", draft => { draft[""] = before[""]; }],
     ["homepage left at unpublished November 11 draft time", draft => { draft[""] = unpublishedNovember11Draft; }],
-    ["missing November 21 addition", draft => { delete draft[november21Additions[0]]; }],
-    ["missing second November 21 addition", draft => { delete draft[november21Additions[1]]; }],
-    ["changed November 21 date", draft => { draft[november21Additions[1]] = demandPublished; }],
-    ["November 21 addition left at unpublished November 17 draft time", draft => { draft[november21Additions[0]] = unpublishedNovember17Draft; }],
-    ["November 21 addition left at unpublished November 20 recovery time", draft => { draft[november21Additions[0]] = unpublishedNovember20Recovery; }],
-    ["second November 21 addition left at unpublished November 20 recovery time", draft => { draft[november21Additions[1]] = unpublishedNovember20Recovery; }],
+    ["missing November 24 addition", draft => { delete draft[november24Additions[0]]; }],
+    ["missing second November 24 addition", draft => { delete draft[november24Additions[1]]; }],
+    ["changed November 24 date", draft => { draft[november24Additions[1]] = demandPublished; }],
+    ["November 24 addition left at unpublished November 17 draft time", draft => { draft[november24Additions[0]] = unpublishedNovember17Draft; }],
+    ["November 24 addition left at unpublished November 20 recovery time", draft => { draft[november24Additions[0]] = unpublishedNovember20Recovery; }],
+    ["second November 24 addition left at unpublished November 20 recovery time", draft => { draft[november24Additions[1]] = unpublishedNovember20Recovery; }],
     ["homepage left at November 17 demand publication", draft => { draft[""] = demandPublished; }],
     ["homepage left at unpublished November 17 draft time", draft => { draft[""] = unpublishedNovember17Draft; }],
     ["homepage left at unpublished November 20 recovery time", draft => { draft[""] = unpublishedNovember20Recovery; }],
+    ["November 24 addition left at unpublished November 21 recovery time", draft => { draft[november24Additions[0]] = unpublishedNovember21Recovery; }],
+    ["second November 24 addition left at unpublished November 21 recovery time", draft => { draft[november24Additions[1]] = unpublishedNovember21Recovery; }],
+    ["homepage left at unpublished November 21 recovery time", draft => { draft[""] = unpublishedNovember21Recovery; }],
     ["changed correction date", draft => { draft[T1] = published; }],
   ];
   for (const [name, mutate] of cases) {
@@ -212,7 +217,7 @@ test("historical sitemap blocks remain byte-identical outside the two authorized
   }
 });
 
-test("November 21 additions preserve every main sitemap block, including the November 16 and 17 demand routes, byte-for-byte", () => {
+test("November 24 additions preserve every main sitemap block, including the November 16 and 17 demand routes, byte-for-byte", () => {
   const mainBase = "1aec705e9d9752f437ba5ff951be35e1d535d29d";
   const before = execFileSync("git", ["show", `${mainBase}:app/sitemap.ts`], { cwd: root, encoding: "utf8" });
   const now = fs.readFileSync(new URL("app/sitemap.ts", root), "utf8");
@@ -221,9 +226,9 @@ test("November 21 additions preserve every main sitemap block, including the Nov
   const preserve = source => { for (const block of blocks) assert.ok(source.includes(block), "unchanged sitemap block: " + block.split("\n")[1]); };
   preserve(now);
   assert.throws(() => preserve(now.replace(blocks[0], blocks[0].replace("priority: 0.85", "priority: 0.8"))), { code: "ERR_ASSERTION" }, "demand route non-date byte mutation rejected");
-  assert.throws(() => preserve(now.replace(blocks[1], blocks[1].replace(/lastModified: [^\n]+/, `lastModified: new Date("2026-11-21T07:55:00-05:00"),`))), { code: "ERR_ASSERTION" }, "November 16 date churn rejected");
-  for (const slug of november21Additions) {
-    assert.ok(now.includes(`url: \`\${base}/${slug}\`,\n      lastModified: new Date("2026-11-21T07:55:00-05:00"),`), `${slug}: exact November 21 sitemap block`);
+  assert.throws(() => preserve(now.replace(blocks[1], blocks[1].replace(/lastModified: [^\n]+/, `lastModified: new Date("2026-11-24T09:00:00-05:00"),`))), { code: "ERR_ASSERTION" }, "November 16 date churn rejected");
+  for (const slug of november24Additions) {
+    assert.ok(now.includes(`url: \`\${base}/${slug}\`,\n      lastModified: new Date("2026-11-24T09:00:00-05:00"),`), `${slug}: exact November 24 sitemap block`);
   }
   for (const slug of [...november16Additions, ...demandAdditions, ...demandRewrites]) {
     for (const file of ["page.tsx", "story.ts"]) {
